@@ -1,0 +1,49 @@
+{
+  "id": "dragons-and-ballz",
+  "title": "Dragons and BallZ",
+  "description": "Ein eigenständiges Foundry-VTT-System für das homebrew Dragon-Ball-Regelwerk 'Dragons and BallZ'.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13.347",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Kirai124"
+    }
+  ],
+  "esmodules": [
+    "dragons-and-ballz.mjs"
+  ],
+  "styles": [
+    "css/dragons-and-ballz.css"
+  ],
+  "languages": [
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {}
+    }
+  },
+  "packs": [],
+  "packFolders": [],
+  "url": "https://github.com/Kirai124/Dragons-and-BallZ",
+  "manifest": "https://raw.githubusercontent.com/Kirai124/Dragons-and-BallZ/main/system.json",
+  "download": "https://github.com/Kirai124/Dragons-and-BallZ/archive/refs/heads/main.zip",
+  "license": "LICENSE.txt",
+  "background": "",
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  }
+}

@@ -1,0 +1,50 @@
+.dragons-and-ballz.sheet.actor {
+  font-family: "Signika", sans-serif;
+}
+
+.dragons-and-ballz .sheet-header {
+  gap: 0.75rem;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.dragons-and-ballz .sheet-header .profile-img {
+  border: 2px solid #782e22;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.dragons-and-ballz .sheet-header .header-fields {
+  flex: 1;
+  gap: 0.25rem;
+}
+
+.dragons-and-ballz .sheet-header input[name="name"] {
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+}
+
+.dragons-and-ballz .sheet-header .hint {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.dragons-and-ballz .sheet-body {
+  padding: 0.5rem;
+}
+
+.dragons-and-ballz .placeholder-note {
+  font-style: italic;
+  color: #782e22;
+  border: 1px dashed #782e22;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.dragons-and-ballz textarea {
+  width: 100%;
+  resize: vertical;
+}

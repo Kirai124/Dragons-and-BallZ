@@ -1,0 +1,21 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+  <header class="sheet-header flexrow">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" width="80" height="80">
+    <div class="header-fields flexcol">
+      <input name="name" type="text" value="{{actor.name}}" placeholder="Name des Charakters">
+      <p class="hint">Dragons and BallZ &middot; Grundgerüst v0.1</p>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+    <p class="placeholder-note">
+      Dieser Charakterbogen ist ein erstes Grundgerüst. Rassen, Werte,
+      Techniken und Automatisierung folgen in den nächsten Ausbaustufen.
+    </p>
+
+    <label for="system.notes">Notizen</label>
+    <textarea name="system.notes" rows="10">{{system.notes}}</textarea>
+  </section>
+
+</form>
