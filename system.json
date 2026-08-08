@@ -2,7 +2,7 @@
   "id": "dragons-and-ballz",
   "title": "Dragons and BallZ",
   "description": "Ein eigenständiges Foundry-VTT-System für das homebrew Dragon-Ball-Regelwerk 'Dragons and BallZ'.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "compatibility": {
     "minimum": "13.347",
     "verified": "14"
