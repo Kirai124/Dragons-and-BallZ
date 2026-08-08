@@ -47,12 +47,19 @@ export default class CharacterSheet extends HandlebarsApplicationMixin(ActorShee
       ...system.abilities[key]
     }));
 
-    // Skills als Liste fürs Template, inkl. Label aus der Config
-    context.skills = Object.entries(DBZ.skills).map(([key, config]) => ({
-      key,
-      label: config.label,
-      ...system.skills[key]
-    })).sort((a, b) => game.i18n.localize(a.label).localeCompare(game.i18n.localize(b.label)));
+    // Skills als Liste fürs Template, inkl. Label + Attributs-Abkürzung
+    context.skills = Object.entries(DBZ.skills).map(([key, config]) => {
+      const skill = system.skills[key];
+      return {
+        key,
+        label: config.label,
+        abilityAbbr: DBZ.abilityAbbreviations[config.ability],
+        isNone: skill.value === 0,
+        isProficient: skill.value === 1,
+        isExpert: skill.value === 2,
+        ...skill
+      };
+    }).sort((a, b) => game.i18n.localize(a.label).localeCompare(game.i18n.localize(b.label)));
 
     context.alignments = DBZ.alignments;
 

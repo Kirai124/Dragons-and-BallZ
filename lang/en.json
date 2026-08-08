@@ -14,6 +14,11 @@
   "DBZ.AbilityIntAbbr": "INT",
   "DBZ.AbilityWisAbbr": "WIS",
   "DBZ.AbilityChaAbbr": "CHA",
+  "DBZ.AbilityScore": "Ability Score",
+  "DBZ.AbilityScoreMax": "Ability Score Maximum",
+  "DBZ.SavingThrowProficiency": "Saving Throw Proficiency",
+  "DBZ.Save": "Save",
+  "DBZ.Max": "Max",
 
   "DBZ.SkillAcr": "Acrobatics",
   "DBZ.SkillAni": "Animal Handling",
@@ -36,6 +41,8 @@
   "DBZ.SkillSte": "Stealth",
   "DBZ.SkillSur": "Survival",
   "DBZ.SkillTec": "Technology",
+  "DBZ.SkillProficiency": "Skill Proficiency",
+  "DBZ.Skills": "Skills",
 
   "DBZ.AlignmentLG": "Lawful Good",
   "DBZ.AlignmentNG": "Neutral Good",
@@ -45,5 +52,22 @@
   "DBZ.AlignmentCN": "Chaotic Neutral",
   "DBZ.AlignmentLE": "Lawful Evil",
   "DBZ.AlignmentNE": "Neutral Evil",
-  "DBZ.AlignmentCE": "Chaotic Evil"
+  "DBZ.AlignmentCE": "Chaotic Evil",
+
+  "DBZ.Race": "Race",
+  "DBZ.Level": "Level",
+  "DBZ.Alignment": "Alignment",
+  "DBZ.Background": "Background",
+
+  "DBZ.HP": "Hit Points",
+  "DBZ.Stamina": "Stamina",
+  "DBZ.Ki": "Ki",
+  "DBZ.GodKi": "God Ki",
+  "DBZ.Temp": "Temp",
+  "DBZ.Power": "Power",
+  "DBZ.KiRank": "Ki Rank",
+  "DBZ.Proficiency": "Proficiency",
+  "DBZ.AC": "AC",
+  "DBZ.Speed": "Speed",
+  "DBZ.PowerLevel": "Power Level"
 }

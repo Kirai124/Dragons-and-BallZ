@@ -1,150 +1,164 @@
 <form class="{{cssClass}} flexcol" autocomplete="off">
 
+  {{!-- Kopfbereich: Portrait, Name, Rasse/Level/Alignment --}}
   <header class="sheet-header flexrow">
-    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" width="80" height="80">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" width="90" height="90">
+
     <div class="header-fields flexcol">
-      <input name="name" type="text" value="{{actor.name}}" placeholder="Name des Charakters">
-      <div class="header-subline flexrow">
-        <div class="field">
-          <label>Level</label>
-          <input type="number" name="system.attributes.level" value="{{system.attributes.level}}" min="1" max="20">
+      <input class="charname" name="name" type="text" value="{{actor.name}}" placeholder="Name des Charakters">
+
+      <div class="header-details flexrow">
+        <div class="detail-field">
+          <label>{{localize "DBZ.Race"}}</label>
+          <input type="text" name="system.details.race" value="{{system.details.race}}" placeholder="—">
         </div>
-        <div class="field">
-          <label>Rasse</label>
-          <input type="text" name="system.details.race" value="{{system.details.race}}">
+        <div class="detail-field small">
+          <label>{{localize "DBZ.Level"}}</label>
+          <input type="number" name="system.attributes.level" value="{{system.attributes.level}}" data-dtype="Number">
         </div>
-        <div class="field">
-          <label>Alignment</label>
+        <div class="detail-field">
+          <label>{{localize "DBZ.Alignment"}}</label>
           <select name="system.details.alignment">
             <option value="">—</option>
-            {{#each alignments as |label key|}}
-              <option value="{{key}}" {{#if (eq ../system.details.alignment key)}}selected{{/if}}>{{localize label}}</option>
-            {{/each}}
+            {{selectOptions alignments selected=system.details.alignment localize=true}}
           </select>
         </div>
-        <div class="field">
-          <label>Zeni (Ƶ)</label>
-          <input type="number" name="system.details.zeni.value" value="{{system.details.zeni.value}}">
+        <div class="detail-field">
+          <label>{{localize "DBZ.Background"}}</label>
+          <input type="text" name="system.details.background" value="{{system.details.background}}" placeholder="—">
         </div>
       </div>
     </div>
   </header>
 
-  <section class="sheet-body">
-
-    <section class="resources flexrow">
-      <div class="resource hp">
-        <label>HP</label>
-        <div class="resource-values">
-          <input type="number" name="system.attributes.hp.value" value="{{system.attributes.hp.value}}">
-          <span>/</span>
-          <input type="number" name="system.attributes.hp.max" value="{{system.attributes.hp.max}}">
-        </div>
+  {{!-- Ressourcenleisten: HP / Stamina / Ki / God Ki --}}
+  <section class="resources flexrow">
+    <div class="resource resource-hp">
+      <label>{{localize "DBZ.HP"}}</label>
+      <div class="resource-values">
+        <input type="number" name="system.attributes.hp.value" value="{{system.attributes.hp.value}}" data-dtype="Number">
+        <span>/</span>
+        <input type="number" name="system.attributes.hp.max" value="{{system.attributes.hp.max}}" data-dtype="Number">
       </div>
-      <div class="resource stamina">
-        <label>Stamina</label>
-        <div class="resource-values">
-          <input type="number" name="system.attributes.stamina.value" value="{{system.attributes.stamina.value}}">
-          <span>/</span>
-          <input type="number" name="system.attributes.stamina.max" value="{{system.attributes.stamina.max}}">
-        </div>
+      <div class="resource-extra">
+        <label>{{localize "DBZ.Temp"}}</label>
+        <input type="number" name="system.attributes.hp.temp" value="{{system.attributes.hp.temp}}" data-dtype="Number" placeholder="0">
       </div>
-      <div class="resource ki">
-        <label>Ki</label>
-        <div class="resource-values">
-          <input type="number" name="system.attributes.ki.value" value="{{system.attributes.ki.value}}">
-          <span>/</span>
-          <input type="number" name="system.attributes.ki.max" value="{{system.attributes.ki.max}}">
-        </div>
-      </div>
-      <div class="resource godki">
-        <label>God Ki</label>
-        <div class="resource-values">
-          <input type="number" name="system.attributes.godki.value" value="{{system.attributes.godki.value}}">
-          <span>/</span>
-          <input type="number" name="system.attributes.godki.max" value="{{system.attributes.godki.max}}">
-        </div>
-      </div>
-    </section>
-
-    <section class="combat-stats flexrow">
-      <div class="stat">
-        <label>AC</label>
-        <input type="number" name="system.attributes.ac.value" value="{{system.attributes.ac.value}}">
-      </div>
-      <div class="stat">
-        <label>Power</label>
-        <input type="number" name="system.attributes.power.value" value="{{system.attributes.power.value}}">
-      </div>
-      <div class="stat readonly">
-        <label>Ki-Rang</label>
-        <span>{{system.attributes.kirank}}</span>
-      </div>
-      <div class="stat readonly">
-        <label>Proficiency</label>
-        <span>+{{system.attributes.prof}}</span>
-      </div>
-      <div class="stat readonly powerlevel">
-        <label>Power Level</label>
-        <span>{{system.attributes.powerlevel}}</span>
-      </div>
-    </section>
-
-    <section class="movement flexrow">
-      <div class="stat">
-        <label>Walk</label>
-        <input type="number" name="system.attributes.movement.walk" value="{{system.attributes.movement.walk}}">
-      </div>
-      <div class="stat">
-        <label>Fly</label>
-        <input type="number" name="system.attributes.movement.fly" value="{{system.attributes.movement.fly}}">
-      </div>
-      <div class="stat">
-        <label>Swim</label>
-        <input type="number" name="system.attributes.movement.swim" value="{{system.attributes.movement.swim}}">
-      </div>
-    </section>
-
-    <div class="columns flexrow">
-
-      <section class="abilities">
-        <h3>Attribute</h3>
-        {{#each abilities as |ability|}}
-          <div class="ability">
-            <label class="ability-label">{{localize ability.label}}</label>
-            <input type="number" name="system.abilities.{{ability.key}}.value" value="{{ability.value}}">
-            <span class="ability-mod">{{numberFormat ability.mod decimals=0 sign=true}}</span>
-            <label class="save-toggle">
-              <input type="checkbox" name="system.abilities.{{ability.key}}.proficient" {{#if ability.proficient}}checked{{/if}}>
-              Save {{numberFormat ability.save decimals=0 sign=true}}
-            </label>
-          </div>
-        {{/each}}
-      </section>
-
-      <section class="skills-list">
-        <h3>Skills</h3>
-        {{#each skills as |skill|}}
-          <div class="skill-row">
-            <select name="system.skills.{{skill.key}}.value">
-              <option value="0" {{#if (eq skill.value 0)}}selected{{/if}}>—</option>
-              <option value="1" {{#if (eq skill.value 1)}}selected{{/if}}>●</option>
-              <option value="2" {{#if (eq skill.value 2)}}selected{{/if}}>●●</option>
-            </select>
-            <span class="skill-name">{{localize skill.label}}</span>
-            <span class="skill-ability">({{skill.ability}})</span>
-            <span class="skill-mod">{{numberFormat skill.mod decimals=0 sign=true}}</span>
-          </div>
-        {{/each}}
-      </section>
-
     </div>
 
-    <section class="notes">
-      <h3>Notizen</h3>
-      <textarea name="system.notes" rows="8">{{{system.notes}}}</textarea>
-    </section>
+    <div class="resource resource-stamina">
+      <label>{{localize "DBZ.Stamina"}}</label>
+      <div class="resource-values">
+        <input type="number" name="system.attributes.stamina.value" value="{{system.attributes.stamina.value}}" data-dtype="Number">
+        <span>/</span>
+        <input type="number" name="system.attributes.stamina.max" value="{{system.attributes.stamina.max}}" data-dtype="Number">
+      </div>
+      <div class="resource-extra">
+        <label>{{localize "DBZ.Temp"}}</label>
+        <input type="number" name="system.attributes.stamina.temp" value="{{system.attributes.stamina.temp}}" data-dtype="Number" placeholder="0">
+      </div>
+    </div>
 
+    <div class="resource resource-ki">
+      <label>{{localize "DBZ.Ki"}}</label>
+      <div class="resource-values">
+        <input type="number" name="system.attributes.ki.value" value="{{system.attributes.ki.value}}" data-dtype="Number">
+        <span>/</span>
+        <input type="number" name="system.attributes.ki.max" value="{{system.attributes.ki.max}}" data-dtype="Number">
+      </div>
+      <div class="resource-extra">
+        <label>{{localize "DBZ.Temp"}}</label>
+        <input type="number" name="system.attributes.ki.temp" value="{{system.attributes.ki.temp}}" data-dtype="Number" placeholder="0">
+      </div>
+    </div>
+
+    <div class="resource resource-godki">
+      <label>{{localize "DBZ.GodKi"}}</label>
+      <div class="resource-values">
+        <input type="number" name="system.attributes.godki.value" value="{{system.attributes.godki.value}}" data-dtype="Number">
+        <span>/</span>
+        <input type="number" name="system.attributes.godki.max" value="{{system.attributes.godki.max}}" data-dtype="Number">
+      </div>
+    </div>
+  </section>
+
+  {{!-- Kennwerte-Leiste: Power / Ki-Rang / Proficiency / AC / Power Level --}}
+  <section class="stat-strip flexrow">
+    <div class="stat">
+      <label>{{localize "DBZ.Power"}}</label>
+      <input type="number" name="system.attributes.power.value" value="{{system.attributes.power.value}}" data-dtype="Number">
+    </div>
+    <div class="stat readonly">
+      <label>{{localize "DBZ.KiRank"}}</label>
+      <span>{{system.attributes.kirank}}</span>
+    </div>
+    <div class="stat readonly">
+      <label>{{localize "DBZ.Proficiency"}}</label>
+      <span>{{numberFormat system.attributes.prof sign=true}}</span>
+    </div>
+    <div class="stat">
+      <label>{{localize "DBZ.AC"}}</label>
+      <input type="number" name="system.attributes.ac.value" value="{{system.attributes.ac.value}}" data-dtype="Number">
+    </div>
+    <div class="stat">
+      <label>{{localize "DBZ.Speed"}}</label>
+      <input type="number" name="system.attributes.movement.walk" value="{{system.attributes.movement.walk}}" data-dtype="Number">
+    </div>
+    <div class="stat readonly powerlevel">
+      <label>{{localize "DBZ.PowerLevel"}}</label>
+      <span>{{numberFormat system.attributes.powerlevel}}</span>
+    </div>
+  </section>
+
+  {{!-- Hauptbereich: Attribute links, Skills rechts --}}
+  <section class="sheet-body flexrow">
+
+    <div class="abilities-column flexcol">
+      {{#each abilities as |ability|}}
+      <div class="ability-score">
+        <a class="ability-label" data-action="rollAbility" data-ability="{{ability.key}}">{{localize ability.abbr}}</a>
+        <div class="ability-score-input">
+          <input type="number" name="system.abilities.{{ability.key}}.value" value="{{ability.value}}" data-dtype="Number">
+        </div>
+        <div class="ability-mod">{{numberFormat ability.mod sign=true}}</div>
+        <div class="ability-save">
+          <label class="save-label">
+            <input type="checkbox" name="system.abilities.{{ability.key}}.proficient" {{checked ability.proficient}}>
+            {{localize "DBZ.Save"}} {{numberFormat ability.save sign=true}}
+          </label>
+        </div>
+        <div class="ability-max">
+          <label>{{localize "DBZ.Max"}}</label>
+          <input type="number" name="system.abilities.{{ability.key}}.max" value="{{ability.max}}" data-dtype="Number">
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    <div class="skills-column flexcol">
+      <h3>{{localize "DBZ.Skills"}}</h3>
+      <ol class="skills-list">
+        {{#each skills as |skill|}}
+        <li class="skill" data-skill="{{skill.key}}">
+          <select name="system.skills.{{skill.key}}.value" data-dtype="Number">
+            <option value="0" {{#if skill.isNone}}selected{{/if}}>—</option>
+            <option value="1" {{#if skill.isProficient}}selected{{/if}}>●</option>
+            <option value="2" {{#if skill.isExpert}}selected{{/if}}>●●</option>
+          </select>
+          <a class="skill-name" data-action="rollSkill" data-skill="{{skill.key}}">{{localize skill.label}}</a>
+          <span class="skill-ability">({{localize skill.abilityAbbr}})</span>
+          <span class="skill-mod">{{numberFormat skill.mod sign=true}}</span>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+
+  </section>
+
+  {{!-- Notizen --}}
+  <section class="notes-section flexcol">
+    <h3>{{localize "DBZ.Notes"}}</h3>
+    <textarea name="system.notes">{{system.notes}}</textarea>
   </section>
 
 </form>
