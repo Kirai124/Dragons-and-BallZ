@@ -4,18 +4,147 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" width="80" height="80">
     <div class="header-fields flexcol">
       <input name="name" type="text" value="{{actor.name}}" placeholder="Name des Charakters">
-      <p class="hint">Dragons and BallZ &middot; Grundgerüst v0.1</p>
+      <div class="header-subline flexrow">
+        <div class="field">
+          <label>Level</label>
+          <input type="number" name="system.attributes.level" value="{{system.attributes.level}}" min="1" max="20">
+        </div>
+        <div class="field">
+          <label>Rasse</label>
+          <input type="text" name="system.details.race" value="{{system.details.race}}">
+        </div>
+        <div class="field">
+          <label>Alignment</label>
+          <select name="system.details.alignment">
+            <option value="">—</option>
+            {{#each alignments as |label key|}}
+              <option value="{{key}}" {{#if (eq ../system.details.alignment key)}}selected{{/if}}>{{localize label}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="field">
+          <label>Zeni (Ƶ)</label>
+          <input type="number" name="system.details.zeni.value" value="{{system.details.zeni.value}}">
+        </div>
+      </div>
     </div>
   </header>
 
   <section class="sheet-body">
-    <p class="placeholder-note">
-      Dieser Charakterbogen ist ein erstes Grundgerüst. Rassen, Werte,
-      Techniken und Automatisierung folgen in den nächsten Ausbaustufen.
-    </p>
 
-    <label for="system.notes">Notizen</label>
-    <textarea name="system.notes" rows="10">{{system.notes}}</textarea>
+    <section class="resources flexrow">
+      <div class="resource hp">
+        <label>HP</label>
+        <div class="resource-values">
+          <input type="number" name="system.attributes.hp.value" value="{{system.attributes.hp.value}}">
+          <span>/</span>
+          <input type="number" name="system.attributes.hp.max" value="{{system.attributes.hp.max}}">
+        </div>
+      </div>
+      <div class="resource stamina">
+        <label>Stamina</label>
+        <div class="resource-values">
+          <input type="number" name="system.attributes.stamina.value" value="{{system.attributes.stamina.value}}">
+          <span>/</span>
+          <input type="number" name="system.attributes.stamina.max" value="{{system.attributes.stamina.max}}">
+        </div>
+      </div>
+      <div class="resource ki">
+        <label>Ki</label>
+        <div class="resource-values">
+          <input type="number" name="system.attributes.ki.value" value="{{system.attributes.ki.value}}">
+          <span>/</span>
+          <input type="number" name="system.attributes.ki.max" value="{{system.attributes.ki.max}}">
+        </div>
+      </div>
+      <div class="resource godki">
+        <label>God Ki</label>
+        <div class="resource-values">
+          <input type="number" name="system.attributes.godki.value" value="{{system.attributes.godki.value}}">
+          <span>/</span>
+          <input type="number" name="system.attributes.godki.max" value="{{system.attributes.godki.max}}">
+        </div>
+      </div>
+    </section>
+
+    <section class="combat-stats flexrow">
+      <div class="stat">
+        <label>AC</label>
+        <input type="number" name="system.attributes.ac.value" value="{{system.attributes.ac.value}}">
+      </div>
+      <div class="stat">
+        <label>Power</label>
+        <input type="number" name="system.attributes.power.value" value="{{system.attributes.power.value}}">
+      </div>
+      <div class="stat readonly">
+        <label>Ki-Rang</label>
+        <span>{{system.attributes.kirank}}</span>
+      </div>
+      <div class="stat readonly">
+        <label>Proficiency</label>
+        <span>+{{system.attributes.prof}}</span>
+      </div>
+      <div class="stat readonly powerlevel">
+        <label>Power Level</label>
+        <span>{{system.attributes.powerlevel}}</span>
+      </div>
+    </section>
+
+    <section class="movement flexrow">
+      <div class="stat">
+        <label>Walk</label>
+        <input type="number" name="system.attributes.movement.walk" value="{{system.attributes.movement.walk}}">
+      </div>
+      <div class="stat">
+        <label>Fly</label>
+        <input type="number" name="system.attributes.movement.fly" value="{{system.attributes.movement.fly}}">
+      </div>
+      <div class="stat">
+        <label>Swim</label>
+        <input type="number" name="system.attributes.movement.swim" value="{{system.attributes.movement.swim}}">
+      </div>
+    </section>
+
+    <div class="columns flexrow">
+
+      <section class="abilities">
+        <h3>Attribute</h3>
+        {{#each abilities as |ability|}}
+          <div class="ability">
+            <label class="ability-label">{{localize ability.label}}</label>
+            <input type="number" name="system.abilities.{{ability.key}}.value" value="{{ability.value}}">
+            <span class="ability-mod">{{numberFormat ability.mod decimals=0 sign=true}}</span>
+            <label class="save-toggle">
+              <input type="checkbox" name="system.abilities.{{ability.key}}.proficient" {{#if ability.proficient}}checked{{/if}}>
+              Save {{numberFormat ability.save decimals=0 sign=true}}
+            </label>
+          </div>
+        {{/each}}
+      </section>
+
+      <section class="skills-list">
+        <h3>Skills</h3>
+        {{#each skills as |skill|}}
+          <div class="skill-row">
+            <select name="system.skills.{{skill.key}}.value">
+              <option value="0" {{#if (eq skill.value 0)}}selected{{/if}}>—</option>
+              <option value="1" {{#if (eq skill.value 1)}}selected{{/if}}>●</option>
+              <option value="2" {{#if (eq skill.value 2)}}selected{{/if}}>●●</option>
+            </select>
+            <span class="skill-name">{{localize skill.label}}</span>
+            <span class="skill-ability">({{skill.ability}})</span>
+            <span class="skill-mod">{{numberFormat skill.mod decimals=0 sign=true}}</span>
+          </div>
+        {{/each}}
+      </section>
+
+    </div>
+
+    <section class="notes">
+      <h3>Notizen</h3>
+      <textarea name="system.notes" rows="8">{{{system.notes}}}</textarea>
+    </section>
+
   </section>
 
 </form>

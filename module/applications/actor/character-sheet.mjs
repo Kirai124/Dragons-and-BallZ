@@ -1,3 +1,5 @@
+import { DBZ } from "../../config.mjs";
+
 const { HandlebarsApplicationMixin } = foundry.applications.api;
 const { ActorSheetV2 } = foundry.applications.sheets;
 
@@ -31,9 +33,29 @@ export default class CharacterSheet extends HandlebarsApplicationMixin(ActorShee
   /** @override */
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
+    const system = this.actor.system;
+
     context.actor = this.actor;
-    context.system = this.actor.system;
+    context.system = system;
     context.source = this.actor.toObject().system;
+
+    // Attribute als Liste fürs Template, inkl. Label/Abkürzung aus der Config
+    context.abilities = Object.entries(DBZ.abilities).map(([key, label]) => ({
+      key,
+      label,
+      abbr: DBZ.abilityAbbreviations[key],
+      ...system.abilities[key]
+    }));
+
+    // Skills als Liste fürs Template, inkl. Label aus der Config
+    context.skills = Object.entries(DBZ.skills).map(([key, config]) => ({
+      key,
+      label: config.label,
+      ...system.skills[key]
+    })).sort((a, b) => game.i18n.localize(a.label).localeCompare(game.i18n.localize(b.label)));
+
+    context.alignments = DBZ.alignments;
+
     return context;
   }
 }

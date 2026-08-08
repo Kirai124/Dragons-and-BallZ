@@ -1,15 +1,18 @@
+import { DBZ } from "./module/config.mjs";
 import CharacterData from "./module/data/actor/character.mjs";
 import DragonsBallZActor from "./module/documents/actor.mjs";
 import CharacterSheet from "./module/applications/actor/character-sheet.mjs";
 
 Hooks.once("init", function () {
-  console.log("Dragons and BallZ | Initialisiere System (Grundgerüst)");
+  console.log("Dragons and BallZ | Initialisiere System (Basiswerte)");
 
   game.dragonsandballz = {
     documents: {
       DragonsBallZActor
     }
   };
+
+  CONFIG.DBZ = DBZ;
 
   // Document-Klassen
   CONFIG.Actor.documentClass = DragonsBallZActor;

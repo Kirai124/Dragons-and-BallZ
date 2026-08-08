@@ -48,3 +48,188 @@
   width: 100%;
   resize: vertical;
 }
+
+/* Header */
+
+.dragons-and-ballz .header-subline {
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.dragons-and-ballz .header-subline .field {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+}
+
+.dragons-and-ballz .header-subline .field label {
+  color: #666;
+  font-weight: bold;
+}
+
+.dragons-and-ballz .header-subline input,
+.dragons-and-ballz .header-subline select {
+  width: 90px;
+}
+
+/* Resources */
+
+.dragons-and-ballz .resources {
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dragons-and-ballz .resource {
+  flex: 1;
+  border: 1px solid #782e22;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+.dragons-and-ballz .resource label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #782e22;
+}
+
+.dragons-and-ballz .resource-values {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.dragons-and-ballz .resource-values input {
+  width: 45px;
+  text-align: center;
+}
+
+.dragons-and-ballz .resource.godki label,
+.dragons-and-ballz .resource.godki {
+  border-color: #d4af37;
+}
+.dragons-and-ballz .resource.godki label { color: #b8860b; }
+
+/* Combat stats & movement */
+
+.dragons-and-ballz .combat-stats,
+.dragons-and-ballz .movement {
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dragons-and-ballz .stat {
+  flex: 1;
+  text-align: center;
+  background: #f4f0e8;
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+.dragons-and-ballz .stat label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.dragons-and-ballz .stat input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+.dragons-and-ballz .stat.readonly span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.dragons-and-ballz .stat.powerlevel {
+  background: #2b2b2b;
+}
+.dragons-and-ballz .stat.powerlevel label,
+.dragons-and-ballz .stat.powerlevel span {
+  color: #ffcf40;
+}
+
+/* Two-column layout: Abilities | Skills */
+
+.dragons-and-ballz .columns {
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.dragons-and-ballz .abilities,
+.dragons-and-ballz .skills-list {
+  flex: 1;
+  background: #faf8f4;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.dragons-and-ballz .columns h3,
+.dragons-and-ballz .notes h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #782e22;
+  padding-bottom: 0.15rem;
+}
+
+.dragons-and-ballz .ability {
+  display: grid;
+  grid-template-columns: 1fr 45px 40px 1fr;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0;
+}
+
+.dragons-and-ballz .ability-label {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.dragons-and-ballz .ability input[type="number"] {
+  text-align: center;
+}
+
+.dragons-and-ballz .ability-mod {
+  text-align: center;
+  font-weight: bold;
+}
+
+.dragons-and-ballz .save-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.dragons-and-ballz .skill-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px 40px;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.1rem 0;
+  font-size: 0.85rem;
+}
+
+.dragons-and-ballz .skill-ability {
+  color: #777;
+  font-size: 0.75rem;
+}
+
+.dragons-and-ballz .skill-mod {
+  text-align: right;
+  font-weight: bold;
+}
+
+.dragons-and-ballz .notes {
+  margin-top: 0.5rem;
+}
