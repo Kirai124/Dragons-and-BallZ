@@ -1,7 +1,6 @@
 {
   "DBZ.SheetCharacter": "Character Sheet (Dragons and BallZ)",
   "DBZ.Notes": "Notes",
-
   "DBZ.AbilityStr": "Strength",
   "DBZ.AbilityDex": "Dexterity",
   "DBZ.AbilityCon": "Constitution",
@@ -19,7 +18,6 @@
   "DBZ.SavingThrowProficiency": "Saving Throw Proficiency",
   "DBZ.Save": "Save",
   "DBZ.Max": "Max",
-
   "DBZ.SkillAcr": "Acrobatics",
   "DBZ.SkillAni": "Animal Handling",
   "DBZ.SkillArc": "Arcana",
@@ -43,7 +41,6 @@
   "DBZ.SkillTec": "Technology",
   "DBZ.SkillProficiency": "Skill Proficiency",
   "DBZ.Skills": "Skills",
-
   "DBZ.AlignmentLG": "Lawful Good",
   "DBZ.AlignmentNG": "Neutral Good",
   "DBZ.AlignmentCG": "Chaotic Good",
@@ -53,12 +50,10 @@
   "DBZ.AlignmentLE": "Lawful Evil",
   "DBZ.AlignmentNE": "Neutral Evil",
   "DBZ.AlignmentCE": "Chaotic Evil",
-
   "DBZ.Race": "Race",
   "DBZ.Level": "Level",
   "DBZ.Alignment": "Alignment",
   "DBZ.Background": "Background",
-
   "DBZ.HP": "Hit Points",
   "DBZ.Stamina": "Stamina",
   "DBZ.Ki": "Ki",
@@ -69,5 +64,17 @@
   "DBZ.Proficiency": "Proficiency",
   "DBZ.AC": "AC",
   "DBZ.Speed": "Speed",
-  "DBZ.PowerLevel": "Power Level"
+  "DBZ.PowerLevel": "Power Level",
+  "DBZ.Resources": "Resources",
+  "DBZ.Combat": "Combat",
+  "DBZ.Abilities": "Abilities",
+  "DBZ.RacialFeatures": "Racial Features",
+  "DBZ.Subrace": "Subrace",
+  "DBZ.NoRace": "No race selected",
+  "DBZ.SelectRace": "Select race",
+  "DBZ.AddRace": "Add",
+  "DBZ.SelectSubrace": "Select subrace",
+  "DBZ.AddSubrace": "Add",
+  "DBZ.NoRaceFeatures": "No racial features yet.",
+  "DBZ.RemoveRace": "Remove race"
 }

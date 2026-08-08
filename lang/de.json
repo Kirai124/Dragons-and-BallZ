@@ -1,7 +1,6 @@
 {
   "DBZ.SheetCharacter": "Charakterbogen (Dragons and BallZ)",
   "DBZ.Notes": "Notizen",
-
   "DBZ.AbilityStr": "Stärke",
   "DBZ.AbilityDex": "Geschicklichkeit",
   "DBZ.AbilityCon": "Konstitution",
@@ -19,7 +18,6 @@
   "DBZ.SavingThrowProficiency": "Rettungswurf-Übung",
   "DBZ.Save": "RW",
   "DBZ.Max": "Max",
-
   "DBZ.SkillAcr": "Akrobatik",
   "DBZ.SkillAni": "Tierumgang",
   "DBZ.SkillArc": "Arkane Kunde",
@@ -43,7 +41,6 @@
   "DBZ.SkillTec": "Technologie",
   "DBZ.SkillProficiency": "Skill-Übung",
   "DBZ.Skills": "Fertigkeiten",
-
   "DBZ.AlignmentLG": "Rechtschaffen Gut",
   "DBZ.AlignmentNG": "Neutral Gut",
   "DBZ.AlignmentCG": "Chaotisch Gut",
@@ -53,12 +50,10 @@
   "DBZ.AlignmentLE": "Rechtschaffen Böse",
   "DBZ.AlignmentNE": "Neutral Böse",
   "DBZ.AlignmentCE": "Chaotisch Böse",
-
   "DBZ.Race": "Rasse",
   "DBZ.Level": "Level",
   "DBZ.Alignment": "Gesinnung",
   "DBZ.Background": "Hintergrund",
-
   "DBZ.HP": "Trefferpunkte",
   "DBZ.Stamina": "Stamina",
   "DBZ.Ki": "Ki",
@@ -69,5 +64,17 @@
   "DBZ.Proficiency": "Übungsbonus",
   "DBZ.AC": "RK",
   "DBZ.Speed": "Bewegung",
-  "DBZ.PowerLevel": "Power Level"
+  "DBZ.PowerLevel": "Power Level",
+  "DBZ.Resources": "Ressourcen",
+  "DBZ.Combat": "Kampf",
+  "DBZ.Abilities": "Attribute",
+  "DBZ.RacialFeatures": "Rassenmerkmale",
+  "DBZ.Subrace": "Subrace",
+  "DBZ.NoRace": "Keine Rasse gewählt",
+  "DBZ.SelectRace": "Rasse wählen",
+  "DBZ.AddRace": "Hinzufügen",
+  "DBZ.SelectSubrace": "Subrace wählen",
+  "DBZ.AddSubrace": "Hinzufügen",
+  "DBZ.NoRaceFeatures": "Noch keine Rassenmerkmale.",
+  "DBZ.RemoveRace": "Rasse entfernen"
 }

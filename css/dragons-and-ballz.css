@@ -1,322 +1,657 @@
-/* ==========================================================================
-   Dragons and BallZ - Sheet Styling
-   Farbpalette/Look an dnd5e angelehnt (Parchment/Maroon/Gold), aber mit
-   eigenen Ressourcenfarben passend zum Regelwerk (HP/Stamina/Ki/God Ki).
-   ========================================================================== */
+/* Dragons and BallZ
+ * Character sheet visual language follows the supplied dnd5e v13 sheet:
+ * parchment body, banner header, filigree/card sections, gold rules and
+ * compact Roboto/Modesto-style labels, with DBZ resource colors.
+ */
+.dragons-and-ballz.dnd5e2.sheet.actor.character {
+  --dbz-red: #7b1f2a;
+  --dbz-red-dark: #4c1119;
+  --dbz-gold: #b29a63;
+  --dbz-gold-light: #d4c49d;
+  --dbz-paper: #eee8df;
+  --dbz-paper-dark: #ded6ca;
+  --dbz-card: rgba(255,255,255,.72);
+  --dbz-ink: #241f1b;
+  --dbz-muted: #71695e;
+  --dbz-hp: #3b9b5a;
+  --dbz-stamina: #d8872b;
+  --dbz-ki: #3d73aa;
+  --dbz-godki: #b28a2e;
 
-.dragons-and-ballz {
-  --dbz-color-dark: #191813;
-  --dbz-color-parchment: #f1ebe8;
-  --dbz-color-card: #f8f4f1;
-  --dbz-color-maroon: #741b2b;
-  --dbz-color-maroon-dark: #4a1119;
-  --dbz-color-gold: #9f9275;
-  --dbz-color-gold-light: #c9c0a0;
-  --dbz-color-tan: #7a7971;
-  --dbz-color-faint: #c9c7b8;
-
-  --dbz-color-hp: #3ba55d;
-  --dbz-color-stamina: #d98a2b;
-  --dbz-color-ki: #3a6ea5;
-  --dbz-color-godki: #b5862f;
-
-  font-family: "Signika", sans-serif;
-  color: var(--dbz-color-dark);
+  min-width: 900px;
+  min-height: 700px;
+  color: var(--dbz-ink);
+  background:
+    linear-gradient(rgba(255,255,255,.18),rgba(255,255,255,.18)),
+    repeating-linear-gradient(0deg, rgba(90,70,50,.035) 0 1px, transparent 1px 4px),
+    var(--dbz-paper);
+  border: 0;
+  box-shadow: 0 8px 28px rgba(0,0,0,.3);
 }
 
-.dragons-and-ballz .flexrow { display: flex; flex-direction: row; }
-.dragons-and-ballz .flexcol { display: flex; flex-direction: column; }
-
-.dragons-and-ballz input,
-.dragons-and-ballz select,
-.dragons-and-ballz textarea {
-  font-family: inherit;
-  color: var(--dbz-color-dark);
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid var(--dbz-color-faint);
-  border-radius: 3px;
+.dragons-and-ballz .window-content {
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
 }
 
-.dragons-and-ballz label {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: var(--dbz-color-tan);
+.dragons-and-ballz form.dbz-character-sheet {
+  min-height: 100%;
+  gap: 0;
 }
 
-/* ---------------- Header ---------------- */
+/* Header -------------------------------------------------------------- */
 
 .dragons-and-ballz .sheet-header {
-  gap: 0.75rem;
-  padding: 0.5rem;
-  align-items: flex-start;
-  border-bottom: 2px solid var(--dbz-color-gold);
+  height: 170px;
+  flex: 0 0 170px;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  border: 0;
+  background:
+    radial-gradient(circle at 18% 35%, rgba(255,255,255,.14), transparent 28%),
+    linear-gradient(120deg, #351016 0%, var(--dbz-red) 48%, #241013 100%);
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,.18);
 }
 
-.dragons-and-ballz .sheet-header .profile-img {
-  border: 2px solid var(--dbz-color-maroon);
-  border-radius: 4px;
+.dragons-and-ballz .sheet-header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 34px;
+  background: linear-gradient(transparent, rgba(0,0,0,.28));
+  pointer-events: none;
+}
+
+.dragons-and-ballz .sheet-header > .left {
+  padding: 26px 28px 22px 36px;
+  display: flex;
+  align-items: center;
+}
+
+.dragons-and-ballz .identity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+
+.dragons-and-ballz .profile-img {
+  width: 108px;
+  height: 108px;
   object-fit: cover;
+  border: 2px solid var(--dbz-gold-light);
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.45);
   cursor: pointer;
 }
 
-.dragons-and-ballz .header-fields { flex: 1; gap: 0.4rem; }
-
-.dragons-and-ballz .charname {
-  font-family: "Modesto Condensed", "Signika", serif;
-  font-size: 1.6rem;
-  font-weight: bold;
-  border: none;
-  background: transparent;
-  color: var(--dbz-color-maroon-dark);
-}
-
-.dragons-and-ballz .header-details {
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.dragons-and-ballz .detail-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
-
-.dragons-and-ballz .detail-field.small input { width: 3rem; }
-.dragons-and-ballz .detail-field input,
-.dragons-and-ballz .detail-field select { padding: 2px 4px; }
-
-/* ---------------- Ressourcenleisten ---------------- */
-
-.dragons-and-ballz .resources {
-  gap: 0.5rem;
-  padding: 0.5rem;
-  background: var(--dbz-color-parchment);
-}
-
-.dragons-and-ballz .resource {
+.dragons-and-ballz .identity-fields {
+  min-width: 0;
   flex: 1;
-  border-radius: 4px;
-  padding: 0.35rem 0.5rem;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.15rem;
 }
 
-.dragons-and-ballz .resource label { color: rgba(255,255,255,0.85); }
-
-.dragons-and-ballz .resource-hp { background: var(--dbz-color-hp); }
-.dragons-and-ballz .resource-stamina { background: var(--dbz-color-stamina); }
-.dragons-and-ballz .resource-ki { background: var(--dbz-color-ki); }
-.dragons-and-ballz .resource-godki { background: var(--dbz-color-godki); }
-
-.dragons-and-ballz .resource-values {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.dragons-and-ballz .resource-values input {
-  width: 2.75rem;
-  text-align: center;
-  background: rgba(255,255,255,0.85);
-}
-
-.dragons-and-ballz .resource-values span { color: rgba(255,255,255,0.85); }
-
-.dragons-and-ballz .resource-extra {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.dragons-and-ballz .resource-extra input {
-  width: 2rem;
-  text-align: center;
-  background: rgba(255,255,255,0.7);
-}
-
-/* ---------------- Kennwerte-Leiste ---------------- */
-
-.dragons-and-ballz .stat-strip {
-  gap: 0.5rem;
-  padding: 0.4rem 0.5rem;
-  border-bottom: 1px solid var(--dbz-color-gold);
-  background: var(--dbz-color-card);
-}
-
-.dragons-and-ballz .stat {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid var(--dbz-color-gold-light);
-  border-radius: 4px;
-  padding: 0.2rem;
-  background: #fff;
-}
-
-.dragons-and-ballz .stat input {
+.dragons-and-ballz .document-name {
   width: 100%;
-  text-align: center;
-  border: none;
+  padding: 0;
+  border: 0;
   background: transparent;
-  font-weight: bold;
+  color: #fff;
+  font-family: "Modesto Condensed", "Roboto Condensed", serif;
+  font-size: 42px;
+  line-height: 1;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.65);
+  letter-spacing: 1px;
 }
 
-.dragons-and-ballz .stat.readonly span {
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: var(--dbz-color-maroon-dark);
+.dragons-and-ballz .document-name:focus {
+  box-shadow: none;
 }
 
-.dragons-and-ballz .stat.powerlevel {
-  border-color: var(--dbz-color-maroon);
-  background: #fff6f2;
+.dragons-and-ballz .subtitle-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 15px;
 }
 
-.dragons-and-ballz .stat.powerlevel span {
-  font-size: 0.95rem;
+.dragons-and-ballz .header-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 70px;
+  gap: 2px;
 }
 
-/* ---------------- Attribute (Abilities) ---------------- */
+.dragons-and-ballz .header-field > span {
+  color: #d8c9a7;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.dragons-and-ballz .header-field strong,
+.dragons-and-ballz .header-field input,
+.dragons-and-ballz .header-field select {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dragons-and-ballz .header-field input,
+.dragons-and-ballz .header-field select {
+  min-height: 22px;
+  padding: 1px 4px;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,.35);
+  border-radius: 0;
+  background: transparent;
+}
+
+.dragons-and-ballz .sheet-header > .right {
+  padding: 24px 28px 24px 12px;
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 8px 14px;
+}
+
+.dragons-and-ballz .level-badge {
+  grid-row: 1 / span 2;
+  width: 78px;
+  height: 78px;
+  border: 2px solid var(--dbz-gold-light);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: rgba(0,0,0,.25);
+  box-shadow: inset 0 0 0 5px rgba(0,0,0,.12);
+}
+
+.dragons-and-ballz .level-badge .label {
+  color: #d8c9a7;
+  font-size: 9px;
+  letter-spacing: .08em;
+}
+
+.dragons-and-ballz .level-badge .value {
+  color: #fff;
+  font-family: "Modesto Condensed", serif;
+  font-size: 30px;
+}
+
+.dragons-and-ballz .header-metric {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255,255,255,.24);
+  padding-bottom: 4px;
+}
+
+.dragons-and-ballz .header-metric span {
+  color: #d8c9a7;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.dragons-and-ballz .header-metric strong {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+
+/* Body ---------------------------------------------------------------- */
 
 .dragons-and-ballz .sheet-body {
   flex: 1;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 12px;
+  padding: 14px;
+  overflow: auto;
 }
 
-.dragons-and-ballz .abilities-column {
-  gap: 0.4rem;
-  width: 220px;
-  flex-shrink: 0;
+.dragons-and-ballz .sidebar,
+.dragons-and-ballz .main {
+  min-width: 0;
+}
+
+.dragons-and-ballz .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dragons-and-ballz .main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dragons-and-ballz .filigree-box {
+  position: relative;
+  padding: 10px;
+  border: 1px solid var(--dbz-gold);
+  background: var(--dbz-card);
+  box-shadow: 0 2px 4px rgba(0,0,0,.12);
+  border-radius: 3px;
+}
+
+.dragons-and-ballz .filigree-box::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(178,154,99,.25);
+  pointer-events: none;
+}
+
+.dragons-and-ballz .filigree-box > h3 {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 8px;
+  padding: 0 2px 5px;
+  border-bottom: 1px solid var(--dbz-gold);
+  color: var(--dbz-red);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+
+.dragons-and-ballz .filigree-box > h3 i {
+  color: var(--dbz-gold);
+}
+
+/* Resources ------------------------------------------------------------ */
+
+.dragons-and-ballz .meter {
+  margin: 7px 0;
+  padding: 6px 7px;
+  border-radius: 3px;
+  color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.2);
+}
+
+.dragons-and-ballz .meter.hp { background: var(--dbz-hp); }
+.dragons-and-ballz .meter.stamina { background: var(--dbz-stamina); }
+.dragons-and-ballz .meter.ki { background: var(--dbz-ki); }
+.dragons-and-ballz .meter.godki { background: var(--dbz-godki); }
+
+.dragons-and-ballz .meter-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  opacity: .9;
+}
+
+.dragons-and-ballz .meter-values {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.dragons-and-ballz .meter-values input {
+  width: 42px;
+  padding: 1px;
+  border: 0;
+  background: rgba(255,255,255,.85);
+  text-align: center;
+  font-weight: 700;
+}
+
+.dragons-and-ballz .meter-values span {
+  opacity: .75;
+}
+
+.dragons-and-ballz .meter .temp {
+  display: block;
+  width: 100%;
+  margin-top: 3px;
+  padding: 1px;
+  border: 0;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* Combat / Race -------------------------------------------------------- */
+
+.dragons-and-ballz .lozenge-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.dragons-and-ballz .lozenge {
+  padding: 6px 3px;
+  text-align: center;
+  border: 1px solid var(--dbz-gold-light);
+  background: rgba(255,255,255,.65);
+}
+
+.dragons-and-ballz .lozenge strong {
+  display: block;
+  color: var(--dbz-red-dark);
+  font-size: 20px;
+}
+
+.dragons-and-ballz .lozenge span {
+  display: block;
+  color: var(--dbz-muted);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.dragons-and-ballz .combat-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 7px;
+}
+
+.dragons-and-ballz .combat-inputs label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--dbz-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.dragons-and-ballz .combat-inputs input {
+  width: 55px;
+  padding: 2px;
+  text-align: center;
+}
+
+.dragons-and-ballz .race-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 7px;
+  margin-bottom: 7px;
+  background: rgba(123,31,42,.08);
+  border: 1px solid rgba(123,31,42,.22);
+}
+
+.dragons-and-ballz .race-pill strong,
+.dragons-and-ballz .race-pill span {
+  display: block;
+}
+
+.dragons-and-ballz .race-pill span {
+  color: var(--dbz-muted);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.dragons-and-ballz .empty-race,
+.dragons-and-ballz .muted {
+  color: var(--dbz-muted);
+  font-style: italic;
+  font-size: 12px;
+}
+
+.dragons-and-ballz .race-picker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.dragons-and-ballz .race-picker select {
+  min-width: 0;
+  font-size: 11px;
+}
+
+.dragons-and-ballz .gold-button {
+  padding: 3px 6px;
+  border: 1px solid var(--dbz-gold);
+  background: linear-gradient(#d8c69c,#ae9459);
+  color: #241f1b;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dragons-and-ballz .icon-button {
+  border: 0;
+  background: transparent;
+  color: var(--dbz-muted);
+  cursor: pointer;
+}
+
+.dragons-and-ballz .icon-button:hover { color: var(--dbz-red); }
+
+/* Abilities ------------------------------------------------------------ */
+
+.dragons-and-ballz .ability-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 7px;
 }
 
 .dragons-and-ballz .ability-score {
   display: grid;
-  grid-template-columns: 2.2rem 3rem 2.2rem;
-  grid-template-rows: auto auto;
-  align-items: center;
-  border: 1px solid var(--dbz-color-gold-light);
-  border-radius: 4px;
-  padding: 0.3rem;
-  background: var(--dbz-color-card);
-  gap: 0.15rem 0.3rem;
-}
-
-.dragons-and-ballz .ability-label {
-  font-family: "Modesto Condensed", "Signika", serif;
-  font-weight: bold;
-  color: var(--dbz-color-maroon);
-  font-size: 1rem;
-  grid-row: 1 / span 2;
-}
-
-.dragons-and-ballz .ability-score-input input {
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
+  min-width: 0;
+  border: 1px solid var(--dbz-gold-light);
+  background: rgba(255,255,255,.62);
   text-align: center;
-  font-size: 1.1rem;
-  font-weight: bold;
 }
 
-.dragons-and-ballz .ability-mod {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: var(--dbz-color-maroon-dark);
-}
-
-.dragons-and-ballz .ability-save {
-  grid-column: 1 / span 3;
-  font-size: 0.75rem;
-}
-
-.dragons-and-ballz .save-label {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  text-transform: none;
-  color: var(--dbz-color-dark);
-}
-
-.dragons-and-ballz .ability-max {
-  grid-column: 1 / span 3;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.dragons-and-ballz .ability-max input { width: 3rem; text-align: center; }
-
-/* ---------------- Skills ---------------- */
-
-.dragons-and-ballz .skills-column {
-  flex: 1;
-  overflow-y: auto;
-}
-
-.dragons-and-ballz .skills-column h3,
-.dragons-and-ballz .notes-section h3 {
-  font-family: "Modesto Condensed", "Signika", serif;
-  color: var(--dbz-color-maroon);
-  border-bottom: 1px solid var(--dbz-color-gold);
-  padding-bottom: 0.15rem;
-  margin: 0 0 0.35rem 0;
-}
-
-.dragons-and-ballz .skills-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  columns: 2;
-  column-gap: 1rem;
-}
-
-.dragons-and-ballz .skill {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.15rem 0;
-  break-inside: avoid;
-  font-size: 0.85rem;
-}
-
-.dragons-and-ballz .skill select {
-  width: 2.6rem;
-  text-align: center;
-  padding: 1px;
-}
-
-.dragons-and-ballz .skill-name {
-  flex: 1;
-  color: var(--dbz-color-dark);
+.dragons-and-ballz .ability-score .label {
+  grid-column: 1 / span 2;
+  padding: 5px 2px 2px;
+  color: var(--dbz-red);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
   text-decoration: none;
 }
 
-.dragons-and-ballz .skill-name:hover { color: var(--dbz-color-maroon); }
-
-.dragons-and-ballz .skill-ability {
-  color: var(--dbz-color-tan);
-  font-size: 0.75rem;
+.dragons-and-ballz .ability-score .score input {
+  width: 100%;
+  padding: 2px;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
 }
 
-.dragons-and-ballz .skill-mod {
-  font-weight: bold;
-  width: 1.75rem;
+.dragons-and-ballz .ability-score .mod {
+  align-self: center;
+  padding-right: 4px;
+  color: var(--dbz-red-dark);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.dragons-and-ballz .ability-score .save {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 3px;
+  border-top: 1px solid var(--dbz-gold-light);
+  color: var(--dbz-muted);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.dragons-and-ballz .ability-score .save strong {
+  color: var(--dbz-ink);
+}
+
+.dragons-and-ballz .ability-score .max {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 3px;
+  color: var(--dbz-muted);
+  font-size: 9px;
+}
+
+.dragons-and-ballz .ability-score .max input {
+  width: 35px;
+  padding: 1px;
+  text-align: center;
+}
+
+/* Skills & Features ---------------------------------------------------- */
+
+.dragons-and-ballz .content-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, .9fr) minmax(400px, 1.5fr);
+  gap: 12px;
+}
+
+.dragons-and-ballz .skills ul {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.dragons-and-ballz .skills li {
+  display: grid;
+  grid-template-columns: 30px 1fr 32px 28px;
+  align-items: center;
+  min-width: 0;
+  gap: 3px;
+  padding: 2px 0;
+  border-bottom: 1px dotted rgba(100,80,60,.22);
+  font-size: 11px;
+}
+
+.dragons-and-ballz .skills select {
+  width: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 10px;
+}
+
+.dragons-and-ballz .skills a {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--dbz-ink);
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dragons-and-ballz .skills a:hover { color: var(--dbz-red); }
+
+.dragons-and-ballz .skills .ability {
+  color: var(--dbz-muted);
+  font-size: 8px;
+  text-align: center;
+}
+
+.dragons-and-ballz .skills strong {
   text-align: right;
 }
 
-/* ---------------- Notizen ---------------- */
-
-.dragons-and-ballz .notes-section {
-  padding: 0 0.5rem 0.5rem 0.5rem;
+.dragons-and-ballz .racial-features {
+  max-height: 430px;
+  overflow: auto;
 }
 
+.dragons-and-ballz .race-feature-group {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.dragons-and-ballz .feature-heading {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 5px;
+  border-bottom: 1px solid var(--dbz-gold);
+  color: var(--dbz-red-dark);
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.dragons-and-ballz .feature-heading > span {
+  color: var(--dbz-muted);
+  font-size: 8px;
+}
+
+.dragons-and-ballz .feature-heading .icon-button {
+  margin-left: auto;
+}
+
+.dragons-and-ballz .race-feature {
+  padding: 5px 4px;
+  border-bottom: 1px dotted rgba(100,80,60,.25);
+}
+
+.dragons-and-ballz .race-feature h4 {
+  margin: 0 0 2px;
+  color: var(--dbz-red);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+}
+
+.dragons-and-ballz .race-feature .description {
+  color: var(--dbz-ink);
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.dragons-and-ballz .race-feature p {
+  margin: 0 0 3px;
+}
+
+.dragons-and-ballz .race-feature ul {
+  margin: 2px 0 4px 14px;
+}
+
+/* Notes ---------------------------------------------------------------- */
+
 .dragons-and-ballz .notes-section textarea {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  min-height: 70px;
+  min-height: 80px;
   resize: vertical;
+  border: 1px solid var(--dbz-gold-light);
+  background: rgba(255,255,255,.65);
+}
+
+@media (max-width: 1050px) {
+  .dragons-and-ballz .ability-grid { grid-template-columns: repeat(3, 1fr); }
+  .dragons-and-ballz .content-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 850px) {
+  .dragons-and-ballz.sheet.actor.character { min-width: 760px; }
+  .dragons-and-ballz .sheet-body { grid-template-columns: 200px 1fr; }
+  .dragons-and-ballz .sheet-header { grid-template-columns: 1fr 210px; }
 }

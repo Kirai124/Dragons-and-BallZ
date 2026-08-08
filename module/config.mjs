@@ -1,3 +1,5 @@
+import { DBZ_RACES } from "./data/races.mjs";
+
 /**
  * Zentrale Konfiguration für Dragons and BallZ.
  * Analog zu CONFIG.DND5E in dnd5e, aber mit den eigenen Werten aus dem Regelwerk.
@@ -82,3 +84,10 @@ DBZ.kiRankThresholds = [
   { level: 5, rank: 2 },
   { level: 1, rank: 1 }
 ];
+
+/* -------------------------------------------- */
+/* Rassen / Subraces                            */
+/* -------------------------------------------- */
+
+DBZ.races = DBZ_RACES;
+DBZ.raceById = Object.fromEntries(DBZ_RACES.map(r => [r.id, r]));

@@ -112,6 +112,14 @@ export default class CharacterData extends foundry.abstract.TypeDataModel {
     // -------------------------------------------------------------
     schema.details = new SchemaField({
       race: new StringField({ required: false, blank: true, initial: "" }),
+      subrace: new StringField({ required: false, blank: true, initial: "" }),
+      raceSkillChoices: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
+      raceData: new SchemaField({
+        primaryId: new StringField({ required: true, blank: true, initial: "" }),
+        primaryCategory: new StringField({ required: true, blank: true, initial: "" }),
+        subraceIds: new StringField({ required: true, blank: true, initial: "" }),
+        replacementLimit: new NumberField({ required: true, integer: true, min: 0, initial: 0 })
+      }),
       background: new StringField({ required: false, blank: true, initial: "" }),
       alignment: new StringField({ required: false, blank: true, initial: "" }),
       xp: new SchemaField({
