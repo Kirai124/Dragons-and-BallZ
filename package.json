@@ -1,0 +1,13 @@
+{
+  "name": "dragons-and-ballz",
+  "version": "0.4.0-dnd5e-base",
+  "description": "Dragons and BallZ - Foundry VTT system",
+  "scripts": {
+    "build:css": "lessc less/dragons-and-ballz.less css/dragons-and-ballz.css --source-map",
+    "watch": "less-watch-compiler less/ css/dragons-and-ballz.css.watch --source-map"
+  },
+  "devDependencies": {
+    "less": "^4.6.7",
+    "less-watch-compiler": "^1.17.5"
+  }
+}

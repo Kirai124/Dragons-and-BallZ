@@ -1,8 +1,8 @@
 {
   "id": "dragons-and-ballz",
   "title": "Dragons and BallZ",
-  "description": "Ein eigenständiges Foundry-VTT-System für das homebrew Dragon-Ball-Regelwerk 'Dragons and BallZ'.",
-  "version": "0.3.0",
+  "description": "Ein eigenständiges Foundry-VTT-System für das homebrew Dragon-Ball-Regelwerk 'Dragons and BallZ' (Basis: dnd5e-Engine, Inhalte werden schrittweise ersetzt).",
+  "version": "0.4.0-dnd5e-base",
   "compatibility": {
     "minimum": "13.347",
     "verified": "14"
@@ -20,22 +20,127 @@
   ],
   "languages": [
     {
-      "lang": "de",
-      "name": "Deutsch",
-      "path": "lang/de.json"
-    },
-    {
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
     }
   ],
   "documentTypes": {
+    "ActiveEffect": {
+      "condition": {},
+      "enchantment": {}
+    },
     "Actor": {
-      "character": {}
+      "character": {
+        "htmlFields": ["details.biography.value", "details.biography.public", "bastion.description"]
+      },
+      "encounter": {
+        "htmlFields": ["description.full", "description.summary"]
+      },
+      "group": {
+        "htmlFields": ["description.full", "description.summary"]
+      },
+      "npc": {
+        "htmlFields": ["details.biography.value", "details.biography.public"]
+      },
+      "vehicle": {
+        "htmlFields": ["details.biography.value", "details.biography.public"]
+      }
+    },
+    "ChatMessage": {
+      "attack": { "filePathFields": { "targets.*.img": ["IMAGE", "VIDEO"] } },
+      "bastionAttack": {},
+      "bastionOrder": {},
+      "bastionTurn": {},
+      "check": { "filePathFields": { "targets.*.img": ["IMAGE", "VIDEO"] } },
+      "damage": { "filePathFields": { "targets.*.img": ["IMAGE", "VIDEO"] } },
+      "generic": { "filePathFields": { "targets.*.img": ["IMAGE", "VIDEO"] } },
+      "healing": { "filePathFields": { "targets.*.img": ["IMAGE", "VIDEO"] } },
+      "hitDie": { "filePathFields": { "targets.*.img": ["IMAGE", "VIDEO"] } },
+      "hitPoints": { "filePathFields": { "targets.*.img": ["IMAGE", "VIDEO"] } },
+      "item": {
+        "filePathFields": { "item.img": ["IMAGE"], "targets.*.img": ["IMAGE", "VIDEO"] },
+        "htmlFields": ["description"]
+      },
+      "prompt": {},
+      "request": {},
+      "rest": {},
+      "save": { "filePathFields": { "targets.*.img": ["IMAGE", "VIDEO"] } },
+      "timePassed": {},
+      "turn": {},
+      "usage": {
+        "filePathFields": { "activity.img": ["IMAGE"], "item.img": ["IMAGE"], "targets.*.img": ["IMAGE", "VIDEO"] },
+        "htmlFields": ["activity.chatFlavor", "description"]
+      }
     },
     "Item": {
-      "race": {}
+      "weapon": {
+        "filePathFields": { "activities.*.img": ["IMAGE"] },
+        "htmlFields": ["activities.*.description.value", "description.value", "description.chat", "unidentified.description"]
+      },
+      "equipment": {
+        "filePathFields": { "activities.*.img": ["IMAGE"] },
+        "htmlFields": ["activities.*.description.value", "description.value", "description.chat", "unidentified.description"]
+      },
+      "consumable": {
+        "filePathFields": { "activities.*.img": ["IMAGE"] },
+        "htmlFields": ["activities.*.description.value", "description.value", "description.chat", "unidentified.description"]
+      },
+      "tool": {
+        "filePathFields": { "activities.*.img": ["IMAGE"] },
+        "htmlFields": ["activities.*.description.value", "description.value", "description.chat", "unidentified.description"]
+      },
+      "loot": {
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "race": {
+        "filePathFields": { "advancement.*.icon": ["IMAGE"] },
+        "htmlFields": ["advancement.*.hint", "description.value", "description.chat"]
+      },
+      "background": {
+        "filePathFields": { "advancement.*.icon": ["IMAGE"] },
+        "htmlFields": ["advancement.*.hint", "description.value", "description.chat"]
+      },
+      "class": {
+        "filePathFields": { "advancement.*.icon": ["IMAGE"] },
+        "htmlFields": ["advancement.*.hint", "description.value", "description.chat"]
+      },
+      "subclass": {
+        "filePathFields": { "advancement.*.icon": ["IMAGE"] },
+        "htmlFields": ["advancement.*.hint", "description.value", "description.chat"]
+      },
+      "spell": {
+        "filePathFields": { "activities.*.img": ["IMAGE"] },
+        "htmlFields": ["activities.*.description.value", "description.value", "description.chat"]
+      },
+      "feat": {
+        "filePathFields": { "activities.*.img": ["IMAGE"], "advancement.*.icon": ["IMAGE"] },
+        "htmlFields": ["activities.*.description.value", "advancement.*.hint", "description.value", "description.chat"]
+      },
+      "container": {
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "backpack": {
+        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+      },
+      "facility": {
+        "filePathFields": { "activities.*.img": ["IMAGE"] },
+        "htmlFields": ["activities.*.description.value", "description.value", "description.chat"]
+      }
+    },
+    "JournalEntryPage": {
+      "class": {
+        "htmlFields": ["details.value", "details.additionalHitPoints", "description.additionalTraits", "description.additionalEquipment", "description.subclass"]
+      },
+      "map": {},
+      "rule": { "htmlFields": ["tooltip"] },
+      "spells": {},
+      "subclass": { "htmlFields": ["details.value"] }
+    },
+    "RegionBehavior": {
+      "dnd5e.applyActiveEffect": {},
+      "dnd5e.difficultTerrain": {},
+      "dnd5e.rotateArea": {}
     }
   },
   "packs": [],

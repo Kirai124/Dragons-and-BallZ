@@ -1,214 +1,377 @@
-import { DBZ } from "../../config.mjs";
+import HitDice from "../../documents/actor/hit-dice.mjs";
+import Proficiency from "../../documents/actor/proficiency.mjs";
+import { defaultUnits, simplifyBonus } from "../../utils.mjs";
+import FormulaField from "../fields/formula-field.mjs";
+import LocalDocumentField from "../fields/local-document-field.mjs";
+import CreatureTypeField from "../shared/creature-type-field.mjs";
+import MovementField from "../shared/movement-field.mjs";
+import RollConfigField from "../shared/roll-config-field.mjs";
+import SensesField from "../shared/senses-field.mjs";
+import SimpleTraitField from "./fields/simple-trait-field.mjs";
+import AttributesFields from "./templates/attributes.mjs";
+import CreatureTemplate from "./templates/creature.mjs";
+import DetailsFields from "./templates/details.mjs";
+import TraitsFields from "./templates/traits.mjs";
 
-const { StringField, NumberField, SchemaField, BooleanField, HTMLField } = foundry.data.fields;
-
-/**
- * Ein einzelnes Attribut (Ability Score) samt Maximum und
- * Rettungswurf-Proficiency.
- * @param {number} initial  Startwert des Attributs.
- */
-function abilityField(initial = 10) {
-  return new SchemaField({
-    value: new NumberField({ required: true, integer: true, min: 1, initial, label: "DBZ.AbilityScore" }),
-    max: new NumberField({ required: true, integer: true, initial: 20, label: "DBZ.AbilityScoreMax" }),
-    proficient: new BooleanField({ required: true, initial: false, label: "DBZ.SavingThrowProficiency" })
-  });
-}
-
-/**
- * Ein einzelner Skill. value: 0 = nicht geübt, 1 = geübt (Proficiency),
- * 2 = Expertise (doppelte Proficiency), siehe z.B. "Earthling: Master of Many".
- */
-function skillField() {
-  return new SchemaField({
-    value: new NumberField({ required: true, integer: true, initial: 0, min: 0, max: 2, label: "DBZ.SkillProficiency" })
-  });
-}
+const {
+  ArrayField, BooleanField, HTMLField, IntegerSortField, NumberField, SchemaField, SetField, StringField
+} = foundry.data.fields;
 
 /**
- * Eine Ressource mit aktuellem Wert, Maximum und optional Temp-Wert.
- * Stamina, Ki: siehe Kapitel 1. God Ki gesondert (kein "temp").
+ * @import { ActorFavorites5e, CharacterActorSystemData, ResourceData } from "./_types.mjs";
  */
-function resourceField({ initial = 0, temp = true } = {}) {
-  const schema = {
-    value: new NumberField({ required: true, integer: true, initial, min: 0 }),
-    max: new NumberField({ required: true, integer: true, initial, min: 0 })
-  };
-  if (temp) schema.temp = new NumberField({ required: true, integer: true, initial: 0, min: 0 });
-  return new SchemaField(schema);
-}
 
 /**
- * Data model für Spielercharaktere in Dragons and BallZ.
- *
- * Deckt die Basissysteme aus Kapitel 1 des Regelwerks ab: Attribute,
- * Stamina, Ki, God Ki, Power, Ki-Rang, die 3 neuen Skills sowie das
- * eigene Proficiency-Bonus-Schema. Rassen-/Klassen-/Techniken-Werte
- * (Items) folgen in späteren Schritten und werden hier per Active
- * Effects/Item-Daten einwirken, sobald diese Item-Typen existieren.
+ * System data definition for Characters.
+ * @extends {CreatureTemplate<CharacterActorSystemData>}
+ * @mixes CharacterActorSystemData
  */
-export default class CharacterData extends foundry.abstract.TypeDataModel {
+export default class CharacterData extends CreatureTemplate {
+
+  /* -------------------------------------------- */
+  /*  Model Configuration                         */
+  /* -------------------------------------------- */
 
   /** @override */
+  static LOCALIZATION_PREFIXES = ["DND5E.BONUSES", "DND5E.ROLL", "DND5E.CHARACTER"];
+
+  /* -------------------------------------------- */
+
+  /** @inheritDoc */
+  static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
+    supportsAdvancement: true
+  }, { inplace: false }));
+
+  /* -------------------------------------------- */
+
+  /** @inheritDoc */
+  static _systemType = "character";
+
+  /* -------------------------------------------- */
+
+  /** @inheritDoc */
   static defineSchema() {
-    const schema = {};
-
-    // -------------------------------------------------------------
-    // Attribute (Strength, Dexterity, Constitution, Intelligence,
-    // Wisdom, Charisma) - Kapitel 2: "Determining Your Ability Scores"
-    // -------------------------------------------------------------
-    schema.abilities = new SchemaField({
-      str: abilityField(10),
-      dex: abilityField(10),
-      con: abilityField(10),
-      int: abilityField(10),
-      wis: abilityField(10),
-      cha: abilityField(10)
+    return this.mergeSchema(super.defineSchema(), {
+      attributes: new SchemaField({
+        ...AttributesFields.common,
+        ...AttributesFields.creature,
+        hp: new SchemaField({
+          ...AttributesFields.hitPoints,
+          bloodied: new NumberField({
+            nullable: false, min: 0, max: 100, persisted: false, initial: () => CONFIG.DND5E.bloodied.threshold,
+            label: "DND5E.HITPOINTS.Bloodied.label"
+          }),
+          max: new NumberField({
+            nullable: true, integer: true, min: 0, initial: null, label: "DND5E.HitPointsOverride",
+            hint: "DND5E.HitPointsOverrideHint"
+          }),
+          bonuses: new SchemaField({
+            level: new FormulaField({ deterministic: true, label: "DND5E.HitPointsBonusLevel" }),
+            overall: new FormulaField({ deterministic: true, label: "DND5E.HitPointsBonusOverall" })
+          })
+        }, { label: "DND5E.HitPoints" }),
+        death: new RollConfigField({
+          ability: false,
+          success: new NumberField({
+            required: true, nullable: false, integer: true, min: 0, initial: 0, label: "DND5E.DeathSaveSuccesses"
+          }),
+          failure: new NumberField({
+            required: true, nullable: false, integer: true, min: 0, initial: 0, label: "DND5E.DeathSaveFailures"
+          }),
+          bonuses: new SchemaField({}, { persisted: false })
+        }, { label: "DND5E.DeathSave", labelPrefix: "DND5E.DEATH.FIELDS.attributes.death.roll." }),
+        inspiration: new BooleanField({ required: true, label: "DND5E.Inspiration" }),
+        piety: new SchemaField({
+          value: new NumberField({
+            min: 1, initial: null, nullable: true, integer: true, label: "DND5E.PIETY.FIELDS.value.label", placeholder: "0"
+          }),
+        })
+      }, { label: "DND5E.Attributes" }),
+      bastion: new SchemaField({
+        name: new StringField({ required: true }),
+        description: new HTMLField()
+      }),
+      details: new SchemaField({
+        ...DetailsFields.common,
+        ...DetailsFields.creature,
+        background: new LocalDocumentField(foundry.documents.BaseItem, {
+          required: true, fallback: true, label: "DND5E.Background"
+        }),
+        originalClass: new StringField({ required: true, label: "DND5E.ClassOriginal" }),
+        xp: new SchemaField({
+          value: new NumberField({
+            required: true, nullable: false, integer: true, min: 0, initial: 0, label: "DND5E.ExperiencePoints.Current"
+          })
+        }, { label: "DND5E.ExperiencePoints.Label" }),
+        appearance: new StringField({ required: true, label: "DND5E.Appearance" }),
+        trait: new StringField({ required: true, label: "DND5E.PersonalityTraits" }),
+        gender: new StringField({ label: "DND5E.Gender" }),
+        eyes: new StringField({ label: "DND5E.Eyes" }),
+        height: new StringField({ label: "DND5E.Height" }),
+        faith: new StringField({ label: "DND5E.Faith" }),
+        hair: new StringField({ label: "DND5E.Hair" }),
+        skin: new StringField({ label: "DND5E.Skin" }),
+        age: new StringField({ label: "DND5E.Age" }),
+        weight: new StringField({ label: "DND5E.Weight" })
+      }, { label: "DND5E.Details" }),
+      traits: new SchemaField({
+        ...TraitsFields.common,
+        ...TraitsFields.creature,
+        weaponProf: new SimpleTraitField({
+          mastery: new SchemaField({
+            value: new SetField(new StringField()),
+            bonus: new SetField(new StringField())
+          })
+        }, { label: "DND5E.TraitWeaponProf" }),
+        armorProf: new SimpleTraitField({}, { label: "DND5E.TraitArmorProf" })
+      }, { label: "DND5E.Traits" }),
+      resources: new SchemaField({
+        primary: makeResourceField({ label: "DND5E.ResourcePrimary" }),
+        secondary: makeResourceField({ label: "DND5E.ResourceSecondary" }),
+        tertiary: makeResourceField({ label: "DND5E.ResourceTertiary" })
+      }, { label: "DND5E.Resources" }),
+      favorites: new ArrayField(new SchemaField({
+        type: new StringField({ required: true, blank: false }),
+        id: new StringField({ required: true, blank: false }),
+        sort: new IntegerSortField()
+      }), { label: "DND5E.Favorites" })
     });
-
-    // -------------------------------------------------------------
-    // Ressourcen & Kampfwerte
-    // -------------------------------------------------------------
-    schema.attributes = new SchemaField({
-      hp: resourceField({ initial: 10 }),
-      // Stamina: 1 + Konstitution-Modifikator auf Level 1, +1 pro Level-Up
-      stamina: resourceField({ initial: 1 }),
-      // Ki: Konstitution-Mod + Weisheits-Mod + Klassen-Ki-Modifikator pro Level
-      ki: resourceField({ initial: 0 }),
-      // God Ki: max 3, kein Temp-Wert, siehe "God Ki" Kapitel 1
-      godki: resourceField({ initial: 0, temp: false }),
-      // Power: kann negativ sein (siehe "Power" Kapitel 1)
-      power: new SchemaField({
-        value: new NumberField({ required: true, integer: true, initial: 0 })
-      }),
-      // AC ist je nach Klasse unterschiedlich berechnet (Unarmored Defense
-      // Varianten). Bis Klassen-Items existieren, bleibt dies ein manuell
-      // gesetzter Wert mit sinnvollem Default (10 + Dex).
-      ac: new SchemaField({
-        value: new NumberField({ required: true, integer: true, initial: 10 })
-      }),
-      movement: new SchemaField({
-        walk: new NumberField({ required: true, integer: true, initial: 30, min: 0 }),
-        fly: new NumberField({ required: true, integer: true, initial: 0, min: 0 }),
-        swim: new NumberField({ required: true, integer: true, initial: 0, min: 0 })
-      }),
-      // Provisorisch bis Klassen-Items mit echten Class-Level existieren.
-      level: new NumberField({ required: true, integer: true, initial: 1, min: 1, max: 20 }),
-      hitdie: new StringField({ required: true, initial: "d8" })
-    });
-
-    // -------------------------------------------------------------
-    // Skills: 18 Standard-Skills + Spirit, Ki Control, Technology
-    // -------------------------------------------------------------
-    schema.skills = new SchemaField(
-      Object.keys(DBZ.skills).reduce((obj, key) => {
-        obj[key] = skillField();
-        return obj;
-      }, {})
-    );
-
-    // -------------------------------------------------------------
-    // Details
-    // -------------------------------------------------------------
-    schema.details = new SchemaField({
-      race: new StringField({ required: false, blank: true, initial: "" }),
-      subrace: new StringField({ required: false, blank: true, initial: "" }),
-      raceSkillChoices: new NumberField({ required: true, integer: true, min: 0, initial: 0 }),
-      raceData: new SchemaField({
-        primaryId: new StringField({ required: true, blank: true, initial: "" }),
-        primaryCategory: new StringField({ required: true, blank: true, initial: "" }),
-        subraceIds: new StringField({ required: true, blank: true, initial: "" }),
-        replacementLimit: new NumberField({ required: true, integer: true, min: 0, initial: 0 })
-      }),
-      background: new StringField({ required: false, blank: true, initial: "" }),
-      alignment: new StringField({ required: false, blank: true, initial: "" }),
-      xp: new SchemaField({
-        value: new NumberField({ required: true, integer: true, initial: 0, min: 0 })
-      }),
-      zeni: new SchemaField({
-        value: new NumberField({ required: true, integer: true, initial: 0, min: 0 })
-      })
-    });
-
-    schema.notes = new HTMLField({ required: false, blank: true, initial: "" });
-
-    return schema;
   }
 
   /* -------------------------------------------- */
-  /*  Derived Data                                 */
+  /*  Properties                                  */
   /* -------------------------------------------- */
 
-  /** @override */
+  /**
+   * Whether this Actor type represents a player character.
+   * @returns {boolean}
+   */
+  get isCharacter() {
+    return true;
+  }
+
+  /* -------------------------------------------- */
+  /*  Data Migration                              */
+  /* -------------------------------------------- */
+
+  /** @inheritDoc */
+  static _migrateData(source) {
+    super._migrateData(source);
+    AttributesFields._migrateArmorClass(source.attributes);
+    AttributesFields._migrateInitiative(source.attributes);
+    MovementField._migrate(source.attributes?.movement);
+    return source;
+  }
+
+  /* -------------------------------------------- */
+  /*  Data Preparation                            */
+  /* -------------------------------------------- */
+
+  /** @inheritDoc */
+  prepareBaseData() {
+    this.attributes.hd = new HitDice(this.parent);
+
+    for ( const item of this.parent.items ) {
+      if ( item.type === "class" ) this.details.level += item.system.levels;
+    }
+
+    // Character proficiency bonus
+    this.attributes.prof = Proficiency.calculateMod(this.details.level);
+
+    // Experience required for next level
+    const { xp, level } = this.details;
+    xp.max = level >= CONFIG.DND5E.maxLevel ? Infinity : this.parent.getLevelExp(level || 1);
+    xp.min = level ? this.parent.getLevelExp(level - 1) : 0;
+    if ( Number.isFinite(xp.max) ) {
+      const required = xp.max - xp.min;
+      const pct = Math.round((xp.value - xp.min) * 100 / required);
+      xp.pct = Math.clamp(pct, 0, 100);
+    } else if ( game.settings.get("dnd5e", "levelingMode") === "xpBoons" ) {
+      const overflow = xp.value - this.parent.getLevelExp(CONFIG.DND5E.maxLevel);
+      xp.boonsEarned = Math.max(0, Math.floor(overflow / CONFIG.DND5E.epicBoonInterval));
+      const progress = overflow - (CONFIG.DND5E.epicBoonInterval * xp.boonsEarned);
+      xp.pct = Math.clamp(Math.round((progress / CONFIG.DND5E.epicBoonInterval) * 100), 0, 100);
+    } else {
+      xp.pct = 100;
+    }
+
+    AttributesFields.prepareBaseArmorClass.call(this);
+    AttributesFields.prepareBaseEncumbrance.call(this);
+    MovementField._shim(this.attributes.movement);
+    SensesField._shim(this.attributes.senses);
+    this.shimBonusData();
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Prepare movement & senses values derived from race item.
+   */
+  prepareEmbeddedData() {
+    super.prepareEmbeddedData();
+    if ( this.details.race instanceof Item ) {
+      AttributesFields.prepareRace.call(this, this.details.race);
+      this.details.type = this.details.race.system.type;
+    } else {
+      this.details.type = new CreatureTypeField({ swarm: false }).initialize({ value: "humanoid" }, this);
+    }
+    for ( const key of Object.keys(CONFIG.DND5E.movementTypes) ) this.attributes.movement.speeds[key] ??= 0;
+    for ( const key of Object.keys(CONFIG.DND5E.senses) ) this.attributes.senses.ranges[key] ??= 0;
+    this.attributes.movement.units ??= defaultUnits("length");
+    this.attributes.senses.units ??= defaultUnits("length");
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Prepare remaining character data.
+   */
   prepareDerivedData() {
-    this._prepareAbilities();
-    this._prepareProficiencyAndRank();
-    this._prepareSkills();
-    this._preparePowerLevel();
-  }
+    const rollData = this.parent.getRollData({ deterministic: true });
+    const { originalSaves, originalSkills } = this.parent.getOriginalStats();
 
-  /**
-   * Modifikatoren und Rettungswürfe für alle 6 Attribute.
-   * Standard-5e-Formel, siehe "Ability Scores And Modifiers"-Tabelle
-   * in Kapitel 2 (deckungsgleich mit floor((score-10)/2)).
-   */
-  _prepareAbilities() {
-    const prof = this.attributes.prof ?? 0;
-    for (const key of Object.keys(this.abilities)) {
-      const ability = this.abilities[key];
-      ability.mod = Math.floor((ability.value - 10) / 2);
-      // "Bonus zu allen Saving Throws ohne Proficiency = halber Proficiency Bonus"
-      ability.saveBonus = ability.proficient ? prof : Math.floor(prof / 2);
-      ability.save = ability.mod + ability.saveBonus;
+    this.details.tier = Math.ceil((this.details.level - 4) / 6) + 1;
+
+    AttributesFields.prepareExhaustionLevel.call(this);
+    this.prepareAbilities({ rollData, originalSaves });
+    this.prepareCurrency();
+    this.prepareSkills({ rollData, originalSkills });
+    this.prepareTools({ rollData });
+    AttributesFields.prepareSpellcastingAbility.call(this);
+    AttributesFields.prepareArmorClass.call(this, rollData);
+    AttributesFields.prepareConcentration.call(this, rollData);
+    AttributesFields.prepareEncumbrance.call(this, rollData);
+    AttributesFields.prepareInitiative.call(this, rollData);
+    AttributesFields.prepareMovement.call(this, rollData);
+    TraitsFields.prepareLanguages.call(this);
+    TraitsFields.prepareResistImmune.call(this);
+
+    // Hit Points
+    const hpOptions = {};
+    if ( this.attributes.hp.max === null ) {
+      hpOptions.advancement = Object.values(this.parent.classes)
+        .map(c => c.advancement.byType.HitPoints?.[0]).filter(a => a);
+      hpOptions.bonus = (simplifyBonus(this.attributes.hp.bonuses.level, rollData) * this.details.level)
+        + simplifyBonus(this.attributes.hp.bonuses.overall, rollData);
+      hpOptions.mod = this.abilities[CONFIG.DND5E.defaultAbilities.hitPoints ?? "con"]?.mod ?? 0;
     }
+    AttributesFields.prepareHitPoints.call(this, this.attributes.hp, hpOptions);
   }
 
-  /**
-   * Eigenes Proficiency-Bonus-Schema (Kapitel 2: "Character Advancement"):
-   * +3 auf Level 1-3, +4 auf 4-6, +5 auf 7-9, +6 auf 10-12, +7 auf 13-15,
-   * +8 auf 16-18, +9 auf 19-20. Entspricht 3 + floor((level-1)/3).
-   *
-   * Ki-Rang (Kapitel 1: "Ki Rank"): Rang 1 ab Level 1, Rang 2 ab Level 5,
-   * Rang 3 ab Level 10, Rang 4 ab Level 15.
-   */
-  _prepareProficiencyAndRank() {
-    const level = this.attributes.level;
-    this.attributes.prof = 3 + Math.floor((level - 1) / 3);
+  /* -------------------------------------------- */
+  /*  Socket Event Handlers                       */
+  /* -------------------------------------------- */
 
-    let kiRank = 1;
-    for (const threshold of DBZ.kiRankThresholds) {
-      if (level >= threshold.level) {
-        kiRank = threshold.rank;
-        break;
+  /** @inheritDoc */
+  async _preCreate(data, options, user) {
+    if ( (await super._preCreate(data, options, user)) === false ) return false;
+    await TraitsFields.preCreateSize.call(this, data, options, user);
+
+    if ( this.parent._stats?.compendiumSource?.startsWith("Compendium.") ) return;
+    this.parent.updateSource({
+      prototypeToken: {
+        actorLink: true,
+        disposition: CONST.TOKEN_DISPOSITIONS.FRIENDLY,
+        sight: { enabled: true }
       }
-    }
-    this.attributes.kirank = kiRank;
+    });
   }
 
-  /**
-   * Skill-Modifikatoren: Attributsmodifikator + (Proficiency-Bonus * Grad),
-   * wobei Grad 0 (ungeübt), 1 (geübt) oder 2 (Expertise) ist.
-   */
-  _prepareSkills() {
-    const prof = this.attributes.prof;
-    for (const [key, config] of Object.entries(DBZ.skills)) {
-      const skill = this.skills[key];
-      if (!skill) continue;
-      const abilityMod = this.abilities[config.ability]?.mod ?? 0;
-      skill.ability = config.ability;
-      skill.mod = abilityMod + (prof * skill.value);
-    }
+  /* -------------------------------------------- */
+
+  /** @inheritDoc */
+  async _preUpdate(changes, options, user) {
+    if ( (await super._preUpdate(changes, options, user)) === false ) return false;
+    await AttributesFields.preUpdateHP.call(this, changes, options, user);
+    await TraitsFields.preUpdateSize.call(this, changes, options, user);
   }
 
-  /**
-   * Power Level (Kapitel 1): Maximum Hit Points * (Current Ki / 2) *
-   * (Current Power + 1). Reiner Anzeigewert, fließt in keine andere
-   * Berechnung ein.
-   */
-  _preparePowerLevel() {
-    const hpMax = this.attributes.hp.max;
-    const kiValue = this.attributes.ki.value;
-    const power = this.attributes.power.value;
-    this.attributes.powerlevel = Math.round(hpMax * (kiValue / 2) * (power + 1));
+  /* -------------------------------------------- */
+
+  /** @inheritDoc */
+  _onUpdate(changed, options, userId) {
+    super._onUpdate(changed, options, userId);
+    AttributesFields.onUpdateHP.call(this, changed, options, userId);
+    AttributesFields.onUpdateDeathSaves.call(this, changed, options, userId);
   }
+
+  /* -------------------------------------------- */
+  /*  Helpers                                     */
+  /* -------------------------------------------- */
+
+  /**
+   * Level used to determine cantrip scaling.
+   * @param {Item5e} spell  Spell for which to fetch the cantrip level.
+   * @returns {number}
+   */
+  cantripLevel(spell) {
+    return this.details.level;
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Checks whether the item with the given relative UUID has been favorited
+   * @param {string} favoriteId  The relative UUID of the item to check.
+   * @returns {boolean}
+   */
+  hasFavorite(favoriteId) {
+    return !!this.favorites.find(f => f.id === favoriteId);
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Add a favorite item to this actor.
+   * If the given item is already favorite, this method has no effect.
+   * @param {ActorFavorites5e} favorite  The favorite to add.
+   * @returns {Promise<Actor5e>}
+   * @throws If the item intended to be favorited does not belong to this actor.
+   */
+  addFavorite(favorite) {
+    if ( this.hasFavorite(favorite.id) ) return Promise.resolve(this.parent);
+
+    if ( favorite.id.startsWith(".") && fromUuidSync(favorite.id, { relative: this.parent }) === null ) {
+      // Assume that an ID starting with a "." is a relative ID.
+      throw new Error(`The item with id ${favorite.id} is not owned by actor ${this.parent.id}`);
+    }
+
+    let maxSort = 0;
+    const favorites = this.favorites.map(f => {
+      if ( f.sort > maxSort ) maxSort = f.sort;
+      return { ...f };
+    });
+    favorites.push({ ...favorite, sort: maxSort + CONST.SORT_INTEGER_DENSITY });
+    return this.parent.update({ "system.favorites": favorites });
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Removes the favorite with the given relative UUID or resource ID
+   * @param {string} favoriteId  The relative UUID or resource ID of the favorite to remove.
+   * @returns {Promise<Actor5e>}
+   */
+  removeFavorite(favoriteId) {
+    if ( favoriteId.startsWith("resources.") ) return this.parent.update({ [`system.${favoriteId}.max`]: 0 });
+    const favorites = this.favorites.filter(f => f.id !== favoriteId);
+    return this.parent.update({ "system.favorites": favorites });
+  }
+}
+
+/* -------------------------------------------- */
+
+/**
+ * Produce the schema field for a simple trait.
+ * @param {object} schemaOptions  Options passed to the outer schema.
+ * @returns {ResourceData}
+ */
+function makeResourceField(schemaOptions={}) {
+  return new SchemaField({
+    value: new NumberField({required: true, integer: true, initial: 0, labels: "DND5E.ResourceValue"}),
+    max: new NumberField({required: true, integer: true, initial: 0, labels: "DND5E.ResourceMax"}),
+    sr: new BooleanField({required: true, labels: "DND5E.REST.Short.Recovery"}),
+    lr: new BooleanField({required: true, labels: "DND5E.REST.Long.Recovery"}),
+    label: new StringField({required: true, labels: "DND5E.ResourceLabel"})
+  }, schemaOptions);
 }
