@@ -226,7 +226,7 @@ export default class MultiActorSheet extends BaseActorSheet {
       <div class="form-group">
         <label>${_loc("DND5E.Group.Config.Art.Label")}</label>
         <div class="form-fields">
-          <select name="flags.dnd5e.showTokenPortrait" data-dtype="Boolean">
+          <select name="flags.dragons-and-ballz.showTokenPortrait" data-dtype="Boolean">
             ${foundry.applications.handlebars.selectOptions(artOptions, { hash: { selected: showTokenPortrait } })}
           </select>
         </div>

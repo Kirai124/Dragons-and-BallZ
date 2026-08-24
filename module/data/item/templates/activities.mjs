@@ -235,7 +235,7 @@ export default class ActivitiesTemplate extends SystemDataModel {
     if ( this.#shouldCreateInitialActivity(source) ) this.#createInitialActivity(source);
     const uses = source.system?.uses ?? {};
     if ( source._id && source.type && ("value" in uses) && uses.max ) {
-      foundry.utils.setProperty(source, "flags.dnd5e.migratedUses", uses.value);
+      foundry.utils.setProperty(source, "flags.dragons-and-ballz.migratedUses", uses.value);
     }
   }
 
@@ -425,9 +425,9 @@ export default class ActivitiesTemplate extends SystemDataModel {
       return riders;
     }, { activity: new Set(), effect: new Set() });
     if ( !riders.activity.size && !riders.effect.size ) {
-      foundry.utils.setProperty(changed, "flags.dnd5e.riders", _del);
+      foundry.utils.setProperty(changed, "flags.dragons-and-ballz.riders", _del);
     } else {
-      foundry.utils.setProperty(changed, "flags.dnd5e.riders", Object.entries(riders)
+      foundry.utils.setProperty(changed, "flags.dragons-and-ballz.riders", Object.entries(riders)
         .reduce((updates, [key, value]) => {
           if ( value.size ) updates[key] = Array.from(value);
           else updates[key] = _del;

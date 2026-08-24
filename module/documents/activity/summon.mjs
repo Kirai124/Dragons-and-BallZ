@@ -142,7 +142,7 @@ export default class SummonActivity extends ActivityMixin(BaseSummonActivityData
     if ( !summonUuid ) return;
     const fetchOptions = {
       folderId: this.actor?.folder?.id ?? null,
-      origin: { key: "flags.dnd5e.summon.origin", value: this.item?.uuid }
+      origin: { key: "flags.dragons-and-ballz.summon.origin", value: this.item?.uuid }
     };
     const actor = await dnd5e.documents.Actor5e.fetchExisting(summonUuid, fetchOptions);
 
@@ -258,7 +258,7 @@ export default class SummonActivity extends ActivityMixin(BaseSummonActivityData
     const prof = rollData.attributes?.prof ?? 0;
 
     // Add flags
-    actorUpdates["flags.dnd5e.summon"] = {
+    actorUpdates["flags.dragons-and-ballz.summon"] = {
       level: this.relevantLevel,
       mod: rollData.mod,
       origin: this.item.uuid,

@@ -100,9 +100,9 @@ export default class BaseEnchantActivityData extends BaseActivityData {
   static transformEffectsData(source, options) {
     const effects = [];
     for ( const effect of source.effects ) {
-      if ( (effect.type !== "enchantment") && (effect.flags?.dnd5e?.type !== "enchantment") ) continue;
-      effects.push({ _id: effect._id, ...(effect.flags?.dnd5e?.enchantment ?? {}) });
-      delete effect.flags?.dnd5e?.enchantment;
+      if ( (effect.type !== "enchantment") && (effect.flags?.["dragons-and-ballz"]?.type !== "enchantment") ) continue;
+      effects.push({ _id: effect._id, ...(effect.flags?.["dragons-and-ballz"]?.enchantment ?? {}) });
+      delete effect.flags?.["dragons-and-ballz"]?.enchantment;
     }
     return effects;
   }

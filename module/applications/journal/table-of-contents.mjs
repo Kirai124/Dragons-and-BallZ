@@ -109,7 +109,7 @@ export default class TableOfContentsCompendium extends foundry.applications.side
     context.chapters = [];
     const specialEntries = [];
     for ( const entry of documents ) {
-      const flags = entry.flags?.dnd5e;
+      const flags = entry.flags?.["dragons-and-ballz"];
       if ( !flags ) continue;
       const keys = Object.keys(flags);
       if ( flags.tocHidden || !keys.length || ((keys.length === 1) && (keys[0] === "navigation")) ) continue;
@@ -130,7 +130,7 @@ export default class TableOfContentsCompendium extends foundry.applications.side
         name: flags.title ?? entry.name,
         pages: Array.from(entry.pages).map(({ flags, id, name, sort }) => ({
           id, sort, flags,
-          name: flags.dnd5e?.title ?? name,
+          name: flags["dragons-and-ballz"]?.title ?? name,
           entryId: entry.id
         }))
       };
@@ -241,13 +241,13 @@ export default class TableOfContentsCompendium extends foundry.applications.side
    */
   static async _getEntryBreakdown(compendium) {
     const docs = await compendium.getIndex({
-      fields: ["flags.dnd5e.type", "flags.dnd5e.append", "flags.dnd5e.position"]
+      fields: ["flags.dragons-and-ballz.type", "flags.dragons-and-ballz.append", "flags.dragons-and-ballz.position"]
     });
 
     const counts = {};
     const chapterOptions = docs
       .reduce((arr, doc) => {
-        const flags = doc.flags.dnd5e ?? {};
+        const flags = doc.flags["dragons-and-ballz"] ?? {};
         if ( flags.type ) {
           counts[`${flags.type}-${flags.position ?? 0}`] ??= 0;
           counts[`${flags.type}-${flags.position ?? 0}`] += 1;

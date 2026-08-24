@@ -304,7 +304,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
       uses: this.transformUsesData(source, options)
     }, options);
     foundry.utils.setProperty(source, `system.activities.${activityData._id}`, activityData);
-    foundry.utils.setProperty(source, "flags.dnd5e.persistSourceMigration", true);
+    foundry.utils.setProperty(source, "flags.dragons-and-ballz.persistSourceMigration", true);
   }
 
   /* -------------------------------------------- */
@@ -467,7 +467,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
    */
   static transformEffectsData(source, options) {
     return source.effects
-      .filter(e => !e.transfer && (e.type !== "enchantment") && (e.flags?.dnd5e?.type !== "enchantment"))
+      .filter(e => !e.transfer && (e.type !== "enchantment") && (e.flags?.["dragons-and-ballz"]?.type !== "enchantment"))
       .map(e => ({ _id: e._id }));
   }
 
@@ -842,7 +842,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
   getRollData(options={}) {
     const rollData = this.item.getRollData(options);
     rollData.activity = { ...this };
-    rollData.consumed = this.item.flags.dnd5e?.consumed;
+    rollData.consumed = this.item.flags["dragons-and-ballz"]?.consumed;
     rollData.mod = this.actor?.system.abilities?.[options.roll?.ability ?? this.ability]?.mod ?? 0;
     return rollData;
   }

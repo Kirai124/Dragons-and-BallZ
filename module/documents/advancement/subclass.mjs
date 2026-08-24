@@ -64,12 +64,12 @@ export default class SubclassAdvancement extends Advancement {
   async apply(level, { retainedData={}, uuid }={}, options={}) {
     if ( options.initial ) return;
 
-    const useRetained = uuid === foundry.utils.getProperty(retainedData, "flags.dnd5e.sourceId");
+    const useRetained = uuid === foundry.utils.getProperty(retainedData, "flags.dragons-and-ballz.sourceId");
     let itemData = useRetained ? retainedData : null;
     if ( !itemData ) {
       itemData = await this.createItemData(uuid);
-      delete itemData.flags?.dnd5e?.advancementOrigin;
-      delete itemData.flags?.dnd5e?.advancementRoot;
+      delete itemData.flags?.["dragons-and-ballz"]?.advancementOrigin;
+      delete itemData.flags?.["dragons-and-ballz"]?.advancementRoot;
       foundry.utils.setProperty(itemData, "system.classIdentifier", this.item.identifier);
     }
     if ( itemData ) {
@@ -86,7 +86,7 @@ export default class SubclassAdvancement extends Advancement {
     this.actor.updateSource({ items: [data] });
     this.updateSource({
       value: {
-        document: data._id, uuid: data._stats?.compendiumSource ?? data.flags?.dnd5e?.sourceId
+        document: data._id, uuid: data._stats?.compendiumSource ?? data.flags?.["dragons-and-ballz"]?.sourceId
       }
     });
   }

@@ -98,7 +98,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     // Migrate backpack -> container.
     if ( data.type === "backpack" ) {
       data.type = "container";
-      foundry.utils.setProperty(data, "flags.dnd5e.persistSourceMigration", true);
+      foundry.utils.setProperty(data, "flags.dragons-and-ballz.persistSourceMigration", true);
     }
 
     /**
@@ -150,7 +150,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
    * @type {boolean}
    */
   get canDelete() {
-    return !this.flags.dnd5e?.cachedFor;
+    return !this.flags["dragons-and-ballz"]?.cachedFor;
   }
 
   /* -------------------------------------------- */
@@ -161,7 +161,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
    */
   get canDuplicate() {
     return !this.system.metadata?.singleton && !["class", "subclass"].includes(this.type)
-      && !this.flags.dnd5e?.cachedFor;
+      && !this.flags["dragons-and-ballz"]?.cachedFor;
   }
 
   /* --------------------------------------------- */
@@ -206,7 +206,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
    * @type {ActiveEffect5e|null}
    */
   get dependentOrigin() {
-    return fromUuidSync(this.flags.dnd5e?.dependentOn, { relative: this, strict: false }) ?? null;
+    return fromUuidSync(this.flags["dragons-and-ballz"]?.dependentOn, { relative: this, strict: false }) ?? null;
   }
 
   /* -------------------------------------------- */
@@ -535,7 +535,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
    * @returns {Item5e}
    */
   scaledClone(scaling, options={}) {
-    return this.clone({ "flags.dnd5e": { scaling } }, { keepId: true, ...options });
+    return this.clone({ "flags.dragons-and-ballz": { scaling } }, { keepId: true, ...options });
   }
 
   /* -------------------------------------------- */
@@ -1359,9 +1359,9 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     const itemData = (spell instanceof Item5e) ? spell.toObject() : spell;
     const flags = itemData.flags ?? {};
     if ( Number.isNumeric(config.level) ) {
-      flags.dnd5e ??= {};
-      flags.dnd5e.scaling = Math.max(0, config.level - spell.system.level);
-      flags.dnd5e.spellLevel = {
+      flags["dragons-and-ballz"] ??= {};
+      flags["dragons-and-ballz"].scaling = Math.max(0, config.level - spell.system.level);
+      flags["dragons-and-ballz"].spellLevel = {
         value: config.level,
         base: spell.system.level
       };

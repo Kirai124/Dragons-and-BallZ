@@ -59,7 +59,7 @@ export default class JournalNavigationConfig extends DocumentSheet5e {
     context.fields = ["previous", "up", "next"].map(name => ({
       field: new StringField(),
       label: _loc(`DND5E.JOURNALENTRY.Navigation.${name.capitalize()}`),
-      name: `flags.dnd5e.navigation.${name}`,
+      name: `flags.dragons-and-ballz.navigation.${name}`,
       options: entryOptions,
       value: data[name]
     }));
@@ -74,10 +74,10 @@ export default class JournalNavigationConfig extends DocumentSheet5e {
   _processFormData(event, form, formData) {
     const submitData = super._processFormData(event, form, formData);
 
-    const navigation = submitData.flags.dnd5e.navigation;
-    const keys = Object.keys(this.document.flags.dnd5e ?? {});
+    const navigation = submitData.flags["dragons-and-ballz"].navigation;
+    const keys = Object.keys(this.document.flags["dragons-and-ballz"] ?? {});
     if ( Object.values(navigation).some(v => v) ) {
-      submitData.flags.dnd5e.navigation = Object.entries(navigation).reduce((obj, [k, v]) => {
+      submitData.flags["dragons-and-ballz"].navigation = Object.entries(navigation).reduce((obj, [k, v]) => {
         if ( v ) obj[k] = v;
         else obj[k] = _del;
         return obj;

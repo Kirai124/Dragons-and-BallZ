@@ -134,7 +134,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
    */
   get dependentOrigin() {
     if ( !(this.parent instanceof Item) ) return null;
-    return this.item.effects.get(this.flags.dnd5e?.dependentOn) ?? null;
+    return this.item.effects.get(this.flags["dragons-and-ballz"]?.dependentOn) ?? null;
   }
 
   /* -------------------------------------------- */
@@ -274,10 +274,10 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
   _initializeSource(data, options={}) {
     if ( data instanceof foundry.abstract.DataModel ) data = data.toObject();
 
-    if ( data.flags?.dnd5e?.type === "enchantment" ) {
+    if ( data.flags?.["dragons-and-ballz"]?.type === "enchantment" ) {
       data.type = "enchantment";
-      delete data.flags.dnd5e.type;
-      foundry.utils.setProperty(data, "flags.dnd5e.persistSourceMigration", true);
+      delete data.flags["dragons-and-ballz"].type;
+      foundry.utils.setProperty(data, "flags.dragons-and-ballz.persistSourceMigration", true);
     }
 
     else if ( (data.type !== "condition")
@@ -285,7 +285,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
       foundry.utils.mergeObject(data, {
         type: "condition",
         "system.type": data.statuses[0],
-        "flags.dnd5e.persistSourceMigration": true
+        "flags.dragons-and-ballz.persistSourceMigration": true
       });
     }
 
@@ -299,16 +299,16 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
     source = super.migrateData(source);
 
     for ( const change of source.changes ?? [] ) {
-      if ( change.key === "flags.dnd5e.initiativeAdv" ) {
+      if ( change.key === "flags.dragons-and-ballz.initiativeAdv" ) {
         change.key = "system.attributes.init.roll.mode";
         change.type = "add";
         change.value = 1;
       }
     }
 
-    if ( source.flags?.dnd5e?.riders?.statuses && !source.system?.rider?.statuses ) {
-      foundry.utils.setProperty(source, "system.rider.statuses", source.flags.dnd5e.riders.statuses);
-      delete source.flags.dnd5e.riders.statuses;
+    if ( source.flags?.["dragons-and-ballz"]?.riders?.statuses && !source.system?.rider?.statuses ) {
+      foundry.utils.setProperty(source, "system.rider.statuses", source.flags["dragons-and-ballz"].riders.statuses);
+      delete source.flags["dragons-and-ballz"].riders.statuses;
     }
 
     return source;
@@ -327,7 +327,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
       && !change.effect._checkCondition(change, options.replacementData) ) return {};
 
     // Handle special actor flags
-    if ( change.key.startsWith("flags.dnd5e.") ) change = change.effect._prepareFlagChange(model, change);
+    if ( change.key.startsWith("flags.dragons-and-ballz.") ) change = change.effect._prepareFlagChange(model, change);
 
     // Properly handle formulas that don't exist as part of the data model
     if ( ActiveEffect5e.FORMULA_FIELDS.has(change.key) ) {
@@ -567,7 +567,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
    */
   _prepareFlagChange(actor, change) {
     const { key, value } = change;
-    const data = CONFIG.DND5E.characterFlags[key.replace("flags.dnd5e.", "")];
+    const data = CONFIG.DND5E.characterFlags[key.replace("flags.dragons-and-ballz.", "")];
     if ( !data ) return change;
 
     // Set flag to initial value if it isn't present
@@ -728,7 +728,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
       const activityData = item.system.activities.get(id)?.toObject();
       if ( !activityData ) continue;
       activityData._id = foundry.utils.randomID();
-      foundry.utils.setProperty(activityData, "flags.dnd5e.dependentOn", this.id);
+      foundry.utils.setProperty(activityData, "flags.dragons-and-ballz.dependentOn", this.id);
       riderActivities[activityData._id] = activityData;
     }
     if ( !foundry.utils.isEmpty(riderActivities) ) {
@@ -746,13 +746,13 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
       const effectData = item.effects.get(id)?.toObject();
       if ( effectData ) {
         delete effectData._id;
-        delete effectData.flags?.dnd5e?.rider;
+        delete effectData.flags?.["dragons-and-ballz"]?.rider;
         effectData.origin = this.origin;
       }
       return effectData;
     }));
     riderEffects = riderEffects.filter(_ => _);
-    riderEffects.forEach(e => foundry.utils.setProperty(e, "flags.dnd5e.dependentOn", this.id));
+    riderEffects.forEach(e => foundry.utils.setProperty(e, "flags.dragons-and-ballz.dependentOn", this.id));
     batchedUpdates.push({
       action: "create", documentName: "ActiveEffect", data: riderEffects, parent: this.item, keepId: true
     });
@@ -763,8 +763,8 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
         (await Promise.all(profile.riders.item.map(uuid => fromUuid(uuid)))).filter(_ => _), {
           transformAll: item => {
             const itemData = item.clone({}, { keepId: true }).toObject();
-            foundry.utils.setProperty(itemData, "flags.dnd5e.dependentOn", this.uuid);
-            foundry.utils.setProperty(itemData, "flags.dnd5e.enchantment.origin", this.uuid);
+            foundry.utils.setProperty(itemData, "flags.dragons-and-ballz.dependentOn", this.uuid);
+            foundry.utils.setProperty(itemData, "flags.dragons-and-ballz.enchantment.origin", this.uuid);
             return itemData;
           }
         }
@@ -1009,7 +1009,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
         type: _loc(`TYPES.Item.${item.type}`)
       })}</p><hr><p>@Embed[${item.uuid} inline]</p>`,
       duration: activity.duration.getEffectData(),
-      "flags.dnd5e": {
+      "flags.dragons-and-ballz": {
         activity: {
           type: activity.type, id: activity.id, uuid: activity.uuid
         },
@@ -1025,7 +1025,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
       }
     }, data, {inplace: false});
     delete effectData.id;
-    if ( item.type === "spell" ) effectData["flags.dnd5e.spellLevel"] = item.system.level;
+    if ( item.type === "spell" ) effectData["flags.dragons-and-ballz.spellLevel"] = item.system.level;
 
     return effectData;
   }

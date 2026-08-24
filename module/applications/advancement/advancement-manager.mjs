@@ -679,7 +679,7 @@ export default class AdvancementManager extends Application5e {
         // Apply changes based on step type
         if ( (type === "delete") && this.step.item ) {
           if ( this.step.flow?.retainedData?.retainedItems ) {
-            this.step.flow.retainedData.retainedItems[this.step.item.flags.dnd5e?.sourceId] = this.step.item.toObject();
+            this.step.flow.retainedData.retainedItems[this.step.item.flags["dragons-and-ballz"]?.sourceId] = this.step.item.toObject();
           }
           this.clone.items.delete(this.step.item.id);
         } else if ( (type === "delete") && this.step.advancement ) {

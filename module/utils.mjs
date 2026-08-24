@@ -1432,8 +1432,8 @@ export function getHumanReadableAttributeLabel(attr, { actor, item, prefixItemNa
   }
 
   // Flags
-  else if ( attr.startsWith("flags.dnd5e.") ) {
-    const key = attr.replace("flags.dnd5e.", "");
+  else if ( attr.startsWith("flags.dragons-and-ballz.") ) {
+    const key = attr.replace("flags.dragons-and-ballz.", "");
     if ( key in CONFIG.DND5E.characterFlags ) label = CONFIG.DND5E.characterFlags[key].name;
   }
 

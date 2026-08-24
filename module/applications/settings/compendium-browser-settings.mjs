@@ -177,7 +177,7 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
         let tag = "";
         // Special case handling for D&D SRD.
         if ( packageName === "dnd5e" ) {
-          tag = flags?.dnd5e?.sourceBook?.replace("SRD ", "");
+          tag = flags?.["dragons-and-ballz"]?.sourceBook?.replace("SRD ", "");
         }
         return {
           tag, title,

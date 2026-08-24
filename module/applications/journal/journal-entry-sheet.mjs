@@ -119,7 +119,7 @@ export default class JournalEntrySheet5e extends foundry.applications.sheets.jou
   static #canConfigureTableOfContents() {
     const flags = this.entry.collection.metadata?.flags ?? {};
     return this.isEditable && this.entry.isOwner && this.entry.inCompendium
-      && ((flags.display === "table-of-contents") || (flags.dnd5e?.display === "table-of-contents"));
+      && ((flags.display === "table-of-contents") || (flags["dragons-and-ballz"]?.display === "table-of-contents"));
   }
 
   /* -------------------------------------------- */

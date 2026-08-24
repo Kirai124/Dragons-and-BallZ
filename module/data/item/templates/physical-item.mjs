@@ -310,7 +310,7 @@ export default class PhysicalItemTemplate extends SystemDataModel {
   async asGear() {
     if ( !this.properties?.has("gear") ) return this.parent;
     let clone;
-    const change = { "flags.dnd5e.gearSource": this.parent.uuid };
+    const change = { "flags.dragons-and-ballz.gearSource": this.parent.uuid };
     const flags = this.parent.getFlag("dragons-and-ballz", "gear") ?? {};
     if ( this.metadata.compendiumGearSource && this.parent._stats.compendiumSource && (flags.preserve !== true) ) {
       const item = await fromUuid(this.parent._stats.compendiumSource);
@@ -361,7 +361,7 @@ export default class PhysicalItemTemplate extends SystemDataModel {
     // If persevered name specified, display preserved name outside with special name(?) inside
     //   (e.g. "Stacy (Longsword +1)")
     if ( flags.preserveName ) {
-      const namePattern = enchantment?.flags.dnd5e?.namePattern;
+      const namePattern = enchantment?.flags["dragons-and-ballz"]?.namePattern;
       const nameOuter = flags.preserveName === true ? this.parent._source.name : flags.preserveName;
       const nameInner = namePattern ? namePattern.replace("{}", name) : name;
       if ( nameOuter !== nameInner ) {

@@ -66,7 +66,7 @@ export default class JournalTOCConfig extends DocumentSheet5e {
     const { TableOfContentsCompendium } = dnd5e.applications.journal;
     const { chapterOptions } = await TableOfContentsCompendium._getEntryBreakdown(this.compendium);
 
-    const data = this.document.flags.dnd5e ?? {};
+    const data = this.document.flags["dragons-and-ballz"] ?? {};
     const appendedSpecial = (data.type === "special") && Number.isNumeric(data.append);
     context.fields = [
       {
@@ -175,8 +175,8 @@ export default class JournalTOCConfig extends DocumentSheet5e {
       const currentlyHidden = this.#getHiddenPages();
       const formHidden = new Set(submitData.hiddenPages);
       const pageUpdates = [
-        ...formHidden.difference(currentlyHidden).map(_id => ({ _id, "flags.dnd5e.tocHidden": true })),
-        ...currentlyHidden.difference(formHidden).map(_id => ({ _id, "flags.dnd5e.tocHidden": _del }))
+        ...formHidden.difference(currentlyHidden).map(_id => ({ _id, "flags.dragons-and-ballz.tocHidden": true })),
+        ...currentlyHidden.difference(formHidden).map(_id => ({ _id, "flags.dragons-and-ballz.tocHidden": _del }))
       ];
       if ( pageUpdates.length ) update._pageUpdates = pageUpdates;
     }
@@ -188,9 +188,9 @@ export default class JournalTOCConfig extends DocumentSheet5e {
 
   /** @inheritDoc */
   async _processSubmitData(event, form, submitData, options={}) {
-    if ( "_pageUpdates" in (submitData.flags?.dnd5e ?? {}) ) {
-      await this.document.updateEmbeddedDocuments("JournalEntryPage", submitData.flags.dnd5e._pageUpdates);
-      delete submitData.flags.dnd5e._pageUpdates;
+    if ( "_pageUpdates" in (submitData.flags?.["dragons-and-ballz"] ?? {}) ) {
+      await this.document.updateEmbeddedDocuments("JournalEntryPage", submitData.flags["dragons-and-ballz"]._pageUpdates);
+      delete submitData.flags["dragons-and-ballz"]._pageUpdates;
     }
     await super._processSubmitData(event, form, submitData, options);
     this.compendium.render();
@@ -206,7 +206,7 @@ export default class JournalTOCConfig extends DocumentSheet5e {
    */
   #getHiddenPages() {
     return this.document.pages.reduce((hidden, page) => {
-      if ( page.flags.dnd5e?.tocHidden ) hidden.add(page.id);
+      if ( page.flags["dragons-and-ballz"]?.tocHidden ) hidden.add(page.id);
       return hidden;
     }, new Set());
   }

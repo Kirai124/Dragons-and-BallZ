@@ -78,7 +78,7 @@ export default class ChatMessage5e extends ChatMessage {
   /** @inheritDoc */
   static migrateData(source) {
     source = super.migrateData(source);
-    const legacy = source.flags?.dnd5e;
+    const legacy = source.flags?.["dragons-and-ballz"];
     if ( !legacy ) return source;
 
     // The snapshot of a deleted item is kept alongside every other deleted item.

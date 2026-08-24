@@ -84,7 +84,7 @@ export default class CompendiumTOCConfig extends Application5e {
         name: node.folder?.name ?? _loc("DND5E.TABLEOFCONTENTS.NoFolder"),
         entries: node.entries.map(o => {
           const entry = this.compendium.index.get(o._id);
-          const data = entry.flags?.dnd5e ?? {};
+          const data = entry.flags?.["dragons-and-ballz"] ?? {};
           const fields = [{
             field: new StringField(),
             localize: true,
@@ -144,8 +144,8 @@ export default class CompendiumTOCConfig extends Application5e {
     for ( const [id, flags] of Object.entries(submitData) ) {
       const update = { _id: id };
       for ( const key of ["type", "position", "append"] ) {
-        if ( (flags[key] || (flags[key] === 0)) && flags.type ) update[`flags.dnd5e.${key}`] = flags[key];
-        else update[`flags.dnd5e.${key}`] = _del;
+        if ( (flags[key] || (flags[key] === 0)) && flags.type ) update[`flags.dragons-and-ballz.${key}`] = flags[key];
+        else update[`flags.dragons-and-ballz.${key}`] = _del;
       }
       updates.push(update);
     }

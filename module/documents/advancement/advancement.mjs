@@ -342,9 +342,9 @@ export default class Advancement extends PseudoDocumentMixin(BaseAdvancementData
     return source.clone({
       _stats,
       _id: id ?? foundry.utils.randomID(),
-      "flags.dnd5e.sourceId": uuid,
-      "flags.dnd5e.advancementOrigin": advancementOrigin,
-      "flags.dnd5e.advancementRoot": this.item.getFlag("dragons-and-ballz", "advancementRoot") ?? advancementOrigin
+      "flags.dragons-and-ballz.sourceId": uuid,
+      "flags.dragons-and-ballz.advancementOrigin": advancementOrigin,
+      "flags.dragons-and-ballz.advancementRoot": this.item.getFlag("dragons-and-ballz", "advancementRoot") ?? advancementOrigin
     }, { keepId: true }).toObject();
   }
 

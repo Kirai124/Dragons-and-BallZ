@@ -121,7 +121,7 @@ export default function ActivityMixin(Base) {
      * @type {ActiveEffect5e|null}
      */
     get dependentOrigin() {
-      return this.item.effects.get(this.flags?.dnd5e?.dependentOn) ?? null;
+      return this.item.effects.get(this.flags?.["dragons-and-ballz"]?.dependentOn) ?? null;
     }
 
     /* -------------------------------------------- */
@@ -257,7 +257,7 @@ export default function ActivityMixin(Base) {
 
       // Create concentration effect & end previous effects
       if ( usageConfig.concentration?.begin ) {
-        const effect = await item.actor.beginConcentrating(activity, { "flags.dnd5e.scaling": usageConfig.scaling });
+        const effect = await item.actor.beginConcentrating(activity, { "flags.dragons-and-ballz.scaling": usageConfig.scaling });
         if ( effect ) {
           results.effects ??= [];
           results.effects.push(effect);
@@ -291,7 +291,7 @@ export default function ActivityMixin(Base) {
       if ( usageConfig.subsequentActions !== false ) {
         const deltas = results.message?.system?.deltas ?? results.message?.data?.system?.deltas;
         const consumed = this.createConsumedFlag(this.actor, deltas);
-        if ( consumed ) item.updateSource({ "flags.dnd5e.consumed": consumed });
+        if ( consumed ) item.updateSource({ "flags.dragons-and-ballz.consumed": consumed });
         activity._triggerSubsequentActions(usageConfig, results);
       }
 
@@ -484,7 +484,7 @@ export default function ActivityMixin(Base) {
         const { effects } = this.actor.concentration;
         const limit = this.actor.system.attributes?.concentration?.limit ?? 0;
         if ( limit && (limit <= effects.size) ) config.concentration.end ??= effects.find(e => {
-          const data = e.flags.dnd5e?.item?.data ?? {};
+          const data = e.flags["dragons-and-ballz"]?.item?.data ?? {};
           return (data === this.id) || (data._id === this.id);
         })?.id ?? effects.first()?.id ?? null;
       }
@@ -518,9 +518,9 @@ export default function ActivityMixin(Base) {
 
       if ( usageConfig.scaling ) {
         foundry.utils.setProperty(messageConfig, "data.system.scaling", usageConfig.scaling);
-        if ( usageConfig.scaling !== item.flags.dnd5e?.scaling ) {
+        if ( usageConfig.scaling !== item.flags["dragons-and-ballz"]?.scaling ) {
           item.actor._embeddedPreparation = true;
-          item.updateSource({ "flags.dnd5e.scaling": usageConfig.scaling });
+          item.updateSource({ "flags.dragons-and-ballz.scaling": usageConfig.scaling });
           delete item.actor._embeddedPreparation;
           item.prepareFinalAttributes();
         }
@@ -993,7 +993,7 @@ export default function ActivityMixin(Base) {
       const consumed = this.createConsumedFlag(message.getAssociatedActor(), message.system.deltas);
       const scaling = message.system.scaling ?? 0;
       const item = (consumed || scaling) ? this.item.clone({
-        "flags.dnd5e": { consumed, scaling }
+        "flags.dragons-and-ballz": { consumed, scaling }
       }, { keepId: true }) : this.item;
       const activity = item.system.activities.get(this.id);
       const action = target.dataset.action ?? message.system.getButton(target)?.action;

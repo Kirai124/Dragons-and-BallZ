@@ -78,7 +78,7 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
   async _finalizeMessageConfig(usageConfig, messageConfig, results) {
     await super._finalizeMessageConfig(usageConfig, messageConfig, results);
     if ( usageConfig.transform?.profile ) {
-      foundry.utils.setProperty(messageConfig.data, "flags.dnd5e.transform.profile", usageConfig.transform.profile);
+      foundry.utils.setProperty(messageConfig.data, "flags.dragons-and-ballz.transform.profile", usageConfig.transform.profile);
     }
   }
 
@@ -88,7 +88,7 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
   _usageChatButtons(message) {
     if ( !this.availableProfiles.length ) return super._usageChatButtons(message);
     const form = this.transform.mode === "form"
-      ? this.effects.find(e => e._id === message.data?.flags?.dnd5e?.transform?.profile)?.getEffect()?.name
+      ? this.effects.find(e => e._id === message.data?.flags?.["dragons-and-ballz"]?.transform?.profile)?.getEffect()?.name
         ?? _loc("DND5E.TRANSFORM.NoForm") : null;
     return [{
       action: "transformActor",
@@ -115,7 +115,7 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
         const uuid = this.transform.mode ? await this.queryActor(profile) : profile.uuid;
         if ( uuid ) {
           if ( results.message instanceof ChatMessage ) results.message.setFlag("dragons-and-ballz", "transform.uuid", uuid);
-          else foundry.utils.setProperty(results.message, "flags.dnd5e.transform.uuid", uuid);
+          else foundry.utils.setProperty(results.message, "flags.dragons-and-ballz.transform.uuid", uuid);
         }
       }
     }
@@ -149,8 +149,8 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
   /** @override */
   async _triggerSubsequentActions(config, results) {
     if ( this.transform.mode !== "form" ) return;
-    const profile = results.message?.flags?.dnd5e?.transform?.profile
-      ?? results.message?.data?.flags?.dnd5e?.transform?.profile;
+    const profile = results.message?.flags?.["dragons-and-ballz"]?.transform?.profile
+      ?? results.message?.data?.flags?.["dragons-and-ballz"]?.transform?.profile;
     this.#transformToForm(profile);
   }
 

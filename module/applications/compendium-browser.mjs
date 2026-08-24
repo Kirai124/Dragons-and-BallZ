@@ -1144,7 +1144,7 @@ export default class CompendiumBrowser extends Application5e {
         && sources.has(p.collection)
 
         // If types are set and specified in compendium flag, only include those that include the correct types
-        && (!types.size || !p.metadata.flags.dnd5e?.types || new Set(p.metadata.flags.dnd5e.types).intersects(types)))
+        && (!types.size || !p.metadata.flags["dragons-and-ballz"]?.types || new Set(p.metadata.flags["dragons-and-ballz"].types).intersects(types)))
 
       // Generate an index based on the needed fields
       .map(async p => await Promise.all((await p.getIndex({ fields: Array.from(indexFields) }))
@@ -1159,7 +1159,7 @@ export default class CompendiumBrowser extends Application5e {
         // Remove any documents that don't match the specified types or the provided filters
         .filter(i =>
           (!types.size || (types.has(i.type)
-            && (!p.metadata.flags.dnd5e?.types || p.metadata.flags.dnd5e.types.includes(i.type))))
+            && (!p.metadata.flags["dragons-and-ballz"]?.types || p.metadata.flags["dragons-and-ballz"].types.includes(i.type))))
             && (!filters.length || Filter.performCheck(i, filters))
         )
       ));

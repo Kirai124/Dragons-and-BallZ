@@ -397,7 +397,7 @@ export default class AttributesFields {
     const keys = CONFIG.DND5E.actorSizes.orderedKeys;
     const index = keys.findIndex(k => k === this.traits.size);
     const sizeConfig = CONFIG.DND5E.actorSizes[
-      keys[this.parent.flags.dnd5e?.powerfulBuild ? Math.min(index + 1, keys.length - 1) : index]
+      keys[this.parent.flags["dragons-and-ballz"]?.powerfulBuild ? Math.min(index + 1, keys.length - 1) : index]
     ];
     const sizeMod = sizeConfig?.capacityMultiplier ?? sizeConfig?.token ?? 1;
     let maximumMultiplier;
@@ -480,7 +480,7 @@ export default class AttributesFields {
    */
   static prepareInitiative(rollData) {
     const init = this.attributes.init ??= {};
-    const flags = this.parent.flags.dnd5e ?? {};
+    const flags = this.parent.flags["dragons-and-ballz"] ?? {};
     const globalCheckBonus = simplifyBonus(this.rolls?.ability?.check?.bonus, rollData);
 
     // Compute initiative modifier
@@ -556,7 +556,7 @@ export default class AttributesFields {
       return acc + (level * speed);
     }, 0);
     if ( ((this.attributes.ac?.equippedArmor?.system.strength ?? 0) > (this.abilities?.str?.value ?? Infinity))
-      && !this.parent.flags.dnd5e?.ignoreArmorSpeedReduction && this.isCreature ) {
+      && !this.parent.flags["dragons-and-ballz"]?.ignoreArmorSpeedReduction && this.isCreature ) {
       reduction += CONFIG.DND5E.armorSpeedReduction;
     }
     reduction = convertLength(reduction, CONFIG.DND5E.defaultUnits.length.imperial, units);

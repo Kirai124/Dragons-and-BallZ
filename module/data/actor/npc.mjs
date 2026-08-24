@@ -648,7 +648,7 @@ export default class NPCData extends CreatureTemplate {
       ...Array.from(value).map(t => Trait.keyLabel(t, { trait })).filter(_ => _),
       ...splitSemicolons(custom ?? "")
     ].sort((lhs, rhs) => lhs.localeCompare(rhs, game.i18n.lang)));
-    const o = this.parent.flags.dnd5e?.statBlockOverride ?? {};
+    const o = this.parent.flags["dragons-and-ballz"]?.statBlockOverride ?? {};
 
     const prepareSpeed = () => {
       const standard = formatter.format([
