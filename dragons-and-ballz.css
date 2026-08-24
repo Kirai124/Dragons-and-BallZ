@@ -15678,3 +15678,277 @@ document-embed.spells ul li {
 .dnd5e2.sheet.actor.character .dbz-status-strip.overloaded {
   border-color: color-mix(in srgb, var(--dnd5e-color-red) 70%, transparent);
 }
+
+/* DBZ v1.1.0 official D&D5e visual alignment overrides */
+/* Dragons and BallZ visual additions.
+ * The character sheet intentionally reuses the stock D&D5e v2 visual language:
+ * lozenges, meters, cards, pills, gold buttons, and inventory sections.
+ * No Dragon Ball mechanics are implemented in this stylesheet.
+ */
+.dnd5e2.sheet.actor.character {
+  --dnd5e-sheet-sidebar-width: 230px;
+  --dnd5e-sheet-header-right-width: 280px;
+}
+.dnd5e2.sheet.actor.character:not(.minimized, .minimizing, .maximizing) { min-width: 800px; }
+
+.dnd5e2.sheet.actor.character .meter.dbz-ki .progress::before {
+  background: linear-gradient(to right, #173f68 0%, var(--dnd5e-color-blue) 100%);
+  border-inline-end: none;
+}
+.dnd5e2.sheet.actor.character .meter.dbz-stamina .progress::before {
+  background: linear-gradient(to right, #76551f 0%, var(--dnd5e-color-gold) 100%);
+  border-inline-end: none;
+}
+.dnd5e2.sheet.actor.character .dbz-resource-group .dbz-calculated-max {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-10);
+  white-space: nowrap;
+}
+
+/* Core DBZ values use the same lozenge art as Initiative, Speed, and Proficiency. */
+.dnd5e2.sheet.actor.character .dbz-lozenges {
+  margin-top: 8px;
+  padding-bottom: 2px;
+}
+.dnd5e2.sheet.actor.character .dbz-lozenges .lozenge:nth-child(2) { margin-top: 0; }
+.dnd5e2.sheet.actor.character .dbz-lozenges .lozenge.overloaded {
+  filter: drop-shadow(0 0 6px var(--dnd5e-color-red));
+}
+.dnd5e2.sheet.actor.character .dbz-lozenges .lozenge.overloaded .label { color: var(--dnd5e-color-red); }
+.dnd5e2.sheet.actor.character .dbz-lozenge-input {
+  width: 46px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: center;
+}
+.dnd5e2.sheet.actor.character .dbz-lozenge-fraction {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1px;
+  font-size: 17px !important;
+}
+.dnd5e2.sheet.actor.character .dbz-lozenge-fraction .dbz-lozenge-input { width: 20px; }
+.dnd5e2.sheet.actor.character .dbz-lozenge-fraction .separator { color: var(--dnd5e-color-gold); }
+.dnd5e2.sheet.actor.character .dbz-power-level .value {
+  max-width: 64px;
+  overflow: hidden;
+  font-size: 14px !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dnd5e2.sheet.actor.character .dbz-power-level .label { font-size: 8px !important; }
+
+/* Resource configuration stays inside the standard filigree box and uses normal sheet form styling. */
+.dnd5e2.sheet.actor.character filigree-box.dbz-resources { margin-top: .5rem; }
+.dnd5e2.sheet.actor.character .dbz-resource-config {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: .25rem .4rem .4rem;
+}
+.dnd5e2.sheet.actor.character .dbz-resource-config > li {
+  display: grid;
+  grid-template-columns: minmax(72px, 1fr) 42px 42px 42px 48px;
+  gap: 4px;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 0;
+  border-bottom: var(--dnd5e-border-separator-faint);
+}
+.dnd5e2.sheet.actor.character .dbz-resource-config > li:last-child { border-bottom: 0; }
+.dnd5e2.sheet.actor.character .dbz-resource-config > li.summary {
+  grid-template-columns: 1fr 40px 1fr 40px;
+  padding-top: 6px;
+}
+.dnd5e2.sheet.actor.character .dbz-resource-config .name {
+  color: var(--color-text-primary);
+  font-family: var(--dnd5e-font-roboto-condensed);
+  font-weight: 700;
+}
+.dnd5e2.sheet.actor.character .dbz-resource-config .derived,
+.dnd5e2.sheet.actor.character .dbz-resource-config .effective {
+  color: var(--color-text-secondary);
+  text-align: center;
+  font-family: var(--dnd5e-font-roboto);
+  font-weight: 700;
+}
+.dnd5e2.sheet.actor.character .dbz-resource-config .danger { color: var(--dnd5e-color-red); }
+.dnd5e2.sheet.actor.character .dbz-resource-config input {
+  width: 100%;
+  min-width: 0;
+  height: 24px;
+  text-align: center;
+}
+.dnd5e2.sheet.actor.character .dbz-resource-hints {
+  display: grid;
+  grid-template-columns: minmax(72px, 1fr) 42px 42px 48px;
+  gap: 4px;
+  padding: 0 .4rem .4rem;
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-9);
+  text-align: center;
+}
+.dnd5e2.sheet.actor.character .dbz-resource-hints span:first-child { text-align: left; }
+
+/* Dedicated DBZ tabs visually behave like standard D&D5e actor tabs. */
+.dnd5e2.sheet.actor.character :is(.dbz-forms-tab, .dbz-techniques-tab) {
+  gap: 12px;
+  padding-block: 8px;
+}
+.dnd5e2.sheet.actor.character .dbz-status-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .25rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+.dnd5e2.sheet.actor.character .dbz-status-strip .pill {
+  align-items: center;
+  gap: 4px;
+}
+.dnd5e2.sheet.actor.character .dbz-status-strip .pill strong { color: var(--color-text-title); }
+.dnd5e2.sheet.actor.character .dbz-status-strip.overloaded .danger { font-weight: 700; }
+
+.dnd5e2.sheet.actor.character .dbz-overview-card,
+.dnd5e2.sheet.actor.character .dbz-actions-card,
+.dnd5e2.sheet.actor.character .dbz-maneuvers {
+  margin: 0;
+  padding: 0;
+}
+.dnd5e2.sheet.actor.character .dbz-overview-card > .header h3,
+.dnd5e2.sheet.actor.character .dbz-actions-card > .header h3,
+.dnd5e2.sheet.actor.character .dbz-maneuvers > .header h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dnd5e2.sheet.actor.character .dbz-overview-info {
+  gap: 0;
+}
+.dnd5e2.sheet.actor.character .dbz-overview-info > div {
+  min-width: 0;
+  gap: 5px;
+}
+.dnd5e2.sheet.actor.character .dbz-overview-info .description { flex: 1.35; }
+.dnd5e2.sheet.actor.character .dbz-overview-info .slots-info { flex: 1; }
+.dnd5e2.sheet.actor.character .dbz-overview-info .value {
+  color: var(--color-text-secondary);
+  font-family: var(--dnd5e-font-roboto-condensed);
+  font-size: var(--font-size-11);
+  line-height: 1.25;
+  text-align: center;
+}
+.dnd5e2.sheet.actor.character .dbz-overview-info .pills { justify-content: center; }
+
+.dnd5e2.sheet.actor.character .dbz-action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  padding: 8px;
+}
+.dnd5e2.sheet.actor.character .dbz-action-button {
+  width: auto;
+  height: auto;
+  min-width: 0;
+  min-height: 42px;
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 0 6px;
+  padding: 5px 8px;
+  text-align: left;
+}
+.dnd5e2.sheet.actor.character .dbz-action-button > i {
+  grid-row: 1 / -1;
+  color: var(--dnd5e-color-gold);
+  font-size: var(--font-size-14);
+}
+.dnd5e2.sheet.actor.character .dbz-action-button .name {
+  overflow: hidden;
+  font-family: var(--dnd5e-font-roboto);
+  font-size: var(--font-size-11);
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dnd5e2.sheet.actor.character .dbz-action-button .summary {
+  overflow: hidden;
+  color: var(--color-text-secondary);
+  font-family: var(--dnd5e-font-roboto-condensed);
+  font-size: var(--font-size-9);
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dnd5e2.sheet.actor.character .dbz-card-hint {
+  margin: 0;
+  padding: 6px 8px 0;
+  color: var(--color-text-secondary);
+  font-family: var(--dnd5e-font-roboto-condensed);
+  font-size: var(--font-size-10);
+}
+.dnd5e2.sheet.actor.character .dbz-maneuver-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  padding: 8px;
+}
+.dnd5e2.sheet.actor.character .dbz-maneuver-grid .gold-button {
+  width: auto;
+  height: auto;
+  min-width: 0;
+  min-height: 36px;
+  border: none;
+  background: var(--dnd5e-color-black);
+  color: var(--dnd5e-color-gold);
+  box-shadow: 0 0 6px var(--dnd5e-shadow-45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  padding: 4px 6px;
+}
+.dnd5e2.sheet.actor.character .dbz-maneuver-grid strong {
+  max-width: 100%;
+  overflow: hidden;
+  font-family: var(--dnd5e-font-roboto);
+  font-size: var(--font-size-10);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dnd5e2.sheet.actor.character .dbz-maneuver-grid small {
+  color: var(--color-text-secondary);
+  font-family: var(--dnd5e-font-roboto-condensed);
+  font-size: var(--font-size-8);
+}
+.dnd5e2.sheet.actor.character .dbz-forms-tab .item[data-group-active="true"] .item-row {
+  background: color-mix(in srgb, var(--dnd5e-color-gold) 9%, transparent);
+}
+.dnd5e2.sheet.actor.character .dbz-forms-tab .item[data-group-active="true"] .title {
+  color: var(--dnd5e-color-gold);
+  font-weight: 700;
+}
+
+.dbz-usage-dialog .form-group {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) minmax(90px, 140px);
+  align-items: center;
+  gap: 8px;
+  margin-block: 6px;
+}
+.dbz-usage-dialog input, .dbz-usage-dialog select { width: 100%; }
+

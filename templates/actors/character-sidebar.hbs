@@ -124,6 +124,46 @@
                 </div>
             </div>
 
+            {{!-- Dragon Ball Core Stats - visually uses the stock D&D5e lozenge language --}}
+            <div class="lozenges dbz-lozenges" aria-label="{{ localize 'DBZ.Resources' }}">
+
+                {{!-- Power --}}
+                <div class="lozenge dbz-power {{#if system.attributes.power.overload}}overloaded{{/if}}"
+                     data-tooltip="{{#if system.attributes.power.overload}}DBZ.PowerOverload{{else}}DBZ.PowerThreshold{{/if}}">
+                    <div class="value">
+                        {{#if actor.isOwner}}
+                        <input type="text" class="uninput dbz-lozenge-input" name="system.attributes.power.value"
+                               data-dtype="Number" value="{{ system.attributes.power.value }}" data-tooltip="DBZ.BasePower">
+                        {{else}}
+                        <span>{{ system.attributes.power.total }}</span>
+                        {{/if}}
+                    </div>
+                    <div class="label roboto-condensed-upper">{{ localize "DBZ.Power" }}</div>
+                </div>
+
+                {{!-- God Ki --}}
+                <div class="lozenge dbz-god-ki" data-tooltip="DBZ.GodKi">
+                    <div class="value dbz-lozenge-fraction">
+                        {{#if actor.isOwner}}
+                        <input type="text" class="uninput dbz-lozenge-input" name="system.attributes.godKi.value"
+                               data-dtype="Number" data-max="{{ system.attributes.godKi.effectiveMax }}"
+                               value="{{ system.attributes.godKi.value }}">
+                        {{else}}
+                        <span>{{ system.attributes.godKi.value }}</span>
+                        {{/if}}
+                        <span class="separator">&sol;</span>
+                        <span class="max">{{ system.attributes.godKi.effectiveMax }}</span>
+                    </div>
+                    <div class="label roboto-condensed-upper">{{ localize "DBZ.GodKi" }}</div>
+                </div>
+
+                {{!-- Power Level --}}
+                <div class="lozenge dbz-power-level" data-tooltip="DBZ.PowerLevelFormulaShort">
+                    <div class="value"><span>{{ dnd5e-numberFormat system.attributes.powerLevel }}</span></div>
+                    <div class="label roboto-condensed-upper">{{ localize "DBZ.PowerLevel" }}</div>
+                </div>
+            </div>
+
             {{!-- Hit Points --}}
             <div class="meter-group">
                 <div class="label roboto-condensed-upper">
@@ -214,47 +254,6 @@
                     </div>
                 </div>
                 {{/with}}
-            </div>
-
-            {{!-- Power, God Ki, and Power Level --}}
-            <div class="dbz-core-stats">
-                <div class="dbz-stat-card power{{#if system.attributes.power.overload}} overloaded{{/if}}"
-                     data-tooltip="{{#if system.attributes.power.overload}}DBZ.PowerOverload{{else}}DBZ.PowerThreshold{{/if}}">
-                    <div class="dbz-stat-label roboto-condensed-upper">{{ localize "DBZ.Power" }}</div>
-                    <div class="dbz-stat-value">
-                        {{#if actor.isOwner}}
-                        <input type="text" class="uninput" name="system.attributes.power.value" data-dtype="Number"
-                               value="{{ system.attributes.power.value }}" data-tooltip="DBZ.BasePower">
-                        {{else}}
-                        <span>{{ system.attributes.power.total }}</span>
-                        {{/if}}
-                    </div>
-                    <div class="dbz-stat-meta roboto-condensed-upper">
-                        {{ localize "DBZ.TotalPower" }} {{ system.attributes.power.total }}{{#if system.attributes.power.formBonus}} ({{ dnd5e-formatModifier system.attributes.power.formBonus }} {{ localize "DBZ.FormsShort" }}){{/if}} · {{ localize "DBZ.PowerThreshold" }} {{ system.attributes.power.threshold }}
-                    </div>
-                </div>
-
-                <div class="dbz-stat-card god-ki">
-                    <div class="dbz-stat-label roboto-condensed-upper">{{ localize "DBZ.GodKi" }}</div>
-                    <div class="dbz-stat-value dbz-fraction">
-                        {{#if actor.isOwner}}
-                        <input type="text" class="uninput" name="system.attributes.godKi.value" data-dtype="Number"
-                               data-max="{{ system.attributes.godKi.effectiveMax }}" value="{{ system.attributes.godKi.value }}">
-                        {{else}}
-                        <span>{{ system.attributes.godKi.value }}</span>
-                        {{/if}}
-                        <span class="separator">&sol;</span><span>{{ system.attributes.godKi.effectiveMax }}</span>
-                    </div>
-                    <div class="dbz-stat-meta roboto-condensed-upper">{{ localize "DBZ.Resource" }}</div>
-                </div>
-
-                <div class="dbz-stat-card power-level">
-                    <div>
-                        <div class="dbz-stat-label roboto-condensed-upper">{{ localize "DBZ.PowerLevel" }}</div>
-                        <div class="dbz-stat-meta roboto-condensed-upper">{{ localize "DBZ.PowerLevelFormulaShort" }}</div>
-                    </div>
-                    <div class="dbz-stat-value"><span>{{ dnd5e-numberFormat system.attributes.powerLevel }}</span></div>
-                </div>
             </div>
 
             {{!-- Hit Dice --}}

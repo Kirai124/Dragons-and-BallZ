@@ -2,11 +2,13 @@
 
 Eigenständiges Foundry-VTT-System für das Homebrew-Regelwerk **Dragons and BallZ** auf Basis der übernommenen D&D5e-/ApplicationV2-Architektur für Foundry VTT 14.
 
-## Status: v1.0.0 – kompletter Fünf-Schritte-Unterbau
+## Status: v1.1.0 – kompletter Fünf-Schritte-Unterbau
 
 Die erste vollständige Systemrunde ist abgeschlossen. Der Standard-D&D5e-ApplicationV2-Look bleibt erhalten, während Charakterressourcen, Charaktererstellung, Regelwerks-Compendiums, Dragon-Ball-Kampfworkflows und eine eigene QA-/Diagnoseschicht integriert sind.
 
 ### Character Sheet
+
+**v1.1.0 Visual Refresh:** Der Character Sheet orientiert sich wieder direkt am offiziellen D&D5e-v2-Look. Header, Grundproportionen, Sidebar, Lozenges, Meter, Cards, Pills, Gold Buttons, Typografie und Inventarlisten verwenden die vorhandene D&D5e-Designsprache. Die Dragon-Ball-spezifischen Werte und Tabs bleiben vollständig erhalten; diese Änderung ist rein visuell.
 
 - Eigene Ressourcen für **Ki**, **Temporary Ki**, **Stamina**, **Temporary Stamina**, **God Ki**, **Power**, **Power Level** und **Ki Rank**.
 - Eigene Skills **Spirit**, **Ki Control** und **Technology**.
@@ -51,7 +53,7 @@ Der v1.0-Content-Audit korrigiert außerdem mehrere beim ursprünglichen Import 
 
 ### Qualitätssicherung / Schritt 5
 
-Neben `npm run validate` besitzt v1.0 jetzt echte Node-Tests für den DBZ-Regelparser, Compendium-Qualität, korrigierte Form-Daten, Lokalisierung und die finalen Character-Sheet-/Workflow-Exports.
+Neben `npm run validate` besitzt das System echte Node-Tests für den DBZ-Regelparser, Compendium-Qualität, korrigierte Form-Daten, Lokalisierung und die finalen Character-Sheet-/Workflow-Exports.
 
 ```bash
 npm install

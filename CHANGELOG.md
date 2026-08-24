@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0 - Official D&D5e Character Sheet Visual Alignment
+
+- Reworked only the Character Sheet presentation to match the official D&D5e v2 visual language.
+- Dragon Ball mechanics, DataModels, compendiums, advancements, combat workflows, Forms, Techniques, and automation are unchanged.
+- Power, God Ki, and Power Level now use the standard D&D5e lozenge presentation.
+- Ki and Stamina retain their functionality but use the stock D&D5e meter structure.
+- Transformation and Technique tabs now use stock D&D5e cards, pills, gold buttons, typography, spacing, and inventory sections.
+- Removed the custom oversized sidebar/minimum-width visual override so the sheet returns to the standard D&D5e proportions.
+
 ## 1.0.0
 
 - Finaler Schritt-5-Polish für das Character Sheet mit DBZ-Live-Statusleiste.

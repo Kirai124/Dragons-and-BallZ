@@ -1,6 +1,6 @@
 {
   "name": "dragons-and-ballz",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Dragons and BallZ - Foundry VTT system",
   "scripts": {
     "build:css": "lessc less/dragons-and-ballz.less dragons-and-ballz.css --source-map",
