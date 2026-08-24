@@ -28,7 +28,7 @@ export default class BastionSettingsConfig extends BaseSettingsConfig {
   async _preparePartContext(partId, context, options) {
     context = await super._preparePartContext(partId, context, options);
     context.fields = BastionSetting.schema.fields;
-    context.source = game.settings.get("dnd5e", "bastionConfiguration");
+    context.source = game.settings.get("dragons-and-ballz", "bastionConfiguration");
     return context;
   }
 }

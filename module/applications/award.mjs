@@ -105,7 +105,7 @@ export default class Award extends Application5e {
     }, {});
     context.destinations = Award.prepareDestinations(this.transferDestinations, this.award.savedDestinations);
     context.each = this.award.each ?? false;
-    context.hideXP = game.settings.get("dnd5e", "levelingMode") === "noxp";
+    context.hideXP = game.settings.get("dragons-and-ballz", "levelingMode") === "noxp";
     context.noPrimaryParty = !game.actors.party && !this.isPartyAward;
     context.xp = this.award.xp ?? this.origin?.system.details?.xp?.value;
 
@@ -196,7 +196,7 @@ export default class Award extends Application5e {
    */
   _saveDestinations(destinations) {
     const target = this.isPartyAward ? this.origin : game.user;
-    target.setFlag("dnd5e", "awardDestinations", destinations);
+    target.setFlag("dragons-and-ballz", "awardDestinations", destinations);
   }
 
   /* -------------------------------------------- */
@@ -385,7 +385,7 @@ export default class Award extends Application5e {
 
       // Otherwise show the UI with defaults
       else {
-        const savedDestinations = game.user.getFlag("dnd5e", "awardDestinations");
+        const savedDestinations = game.user.getFlag("dragons-and-ballz", "awardDestinations");
         const app = new Award({ award: { currency, xp, each, savedDestinations } });
         app.render({ force: true });
       }

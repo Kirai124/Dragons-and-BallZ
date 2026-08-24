@@ -561,7 +561,7 @@ export default class DamageApplicationElement extends ChatTrayElement {
       const options = this.getMergedOptions(target.value);
       await token?.actor?.applyDamage(this.damages, { ...options, isDelta: true, origin: this.chatMessage });
     }
-    if ( game.settings.get("dnd5e", "autoCollapseChatTrays") !== "manual" ) {
+    if ( game.settings.get("dragons-and-ballz", "autoCollapseChatTrays") !== "manual" ) {
       this.open = false;
     }
   }

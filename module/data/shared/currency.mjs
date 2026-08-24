@@ -25,9 +25,9 @@ export default class CurrencyTemplate extends SystemDataModel {
    * @returns {number}
    */
   get currencyWeight() {
-    if ( !game.settings.get("dnd5e", "currencyWeight") ) return 0;
+    if ( !game.settings.get("dragons-and-ballz", "currencyWeight") ) return 0;
     const count = Object.values(this.currency).reduce((count, value) => count + value, 0);
-    const currencyPerWeight = game.settings.get("dnd5e", "metricWeightUnits")
+    const currencyPerWeight = game.settings.get("dragons-and-ballz", "metricWeightUnits")
       ? CONFIG.DND5E.encumbrance.currencyPerWeight.metric
       : CONFIG.DND5E.encumbrance.currencyPerWeight.imperial;
     return count / currencyPerWeight;

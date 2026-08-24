@@ -89,11 +89,11 @@ export default class AttackActivity extends ActivityMixin(BaseAttackActivityData
     const buildConfig = this._buildAttackConfig.bind(this);
 
     const rollConfig = foundry.utils.mergeObject({
-      ability: this.item.getFlag("dnd5e", `last.${this.id}.ability`),
-      ammunition: this.item.getFlag("dnd5e", `last.${this.id}.ammunition`),
-      attackMode: this.item.getFlag("dnd5e", `last.${this.id}.attackMode`),
-      halflingLucky: this.actor?.getFlag("dnd5e", "halflingLucky"),
-      mastery: this.item.getFlag("dnd5e", `last.${this.id}.mastery`),
+      ability: this.item.getFlag("dragons-and-ballz", `last.${this.id}.ability`),
+      ammunition: this.item.getFlag("dragons-and-ballz", `last.${this.id}.ammunition`),
+      attackMode: this.item.getFlag("dragons-and-ballz", `last.${this.id}.attackMode`),
+      halflingLucky: this.actor?.getFlag("dragons-and-ballz", "halflingLucky"),
+      mastery: this.item.getFlag("dragons-and-ballz", `last.${this.id}.mastery`),
       target: targets.length === 1 ? targets[0].ac : undefined
     }, config);
 
@@ -196,7 +196,7 @@ export default class AttackActivity extends ActivityMixin(BaseAttackActivityData
     else if ( rollConfig.attackMode ) rolls[0].options.attackMode = rollConfig.attackMode;
     if ( rolls[0].options.mastery ) flags.mastery = rolls[0].options.mastery;
     if ( canUpdate && !foundry.utils.isEmpty(flags) && (this.actor && this.actor.items.has(this.item.id)) ) {
-      await this.item.setFlag("dnd5e", `last.${this.id}`, flags);
+      await this.item.setFlag("dragons-and-ballz", `last.${this.id}`, flags);
     }
 
     /**
@@ -260,7 +260,7 @@ export default class AttackActivity extends ActivityMixin(BaseAttackActivityData
       "rolls.attack", `rolls.attack.${this.getActionType(attackMode)}`
     ], { rules: { category: "attack", actor: this.actor, item: this.item, rollData: data } }) : {};
     const options = CONFIG.Dice.D20Roll.mergeOptions({
-      elvenAccuracy: this.actor?.getFlag("dnd5e", "elvenAccuracy")
+      elvenAccuracy: this.actor?.getFlag("dragons-and-ballz", "elvenAccuracy")
         && CONFIG.DND5E.characterFlags.elvenAccuracy.abilities.includes(ability),
       maximum,
       minimum

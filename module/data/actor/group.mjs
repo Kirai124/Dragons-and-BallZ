@@ -335,7 +335,7 @@ export default class GroupData extends GroupTemplate {
       .map(({ actor }) => !config.targets || config.targets.includes(actor.id) ? actor : null)
       .filter(_ => _);
 
-    config.advanceTime = game.settings.get("dnd5e", "calendarConfig").enabled;
+    config.advanceTime = game.settings.get("dragons-and-ballz", "calendarConfig").enabled;
 
     // Create a rest chat message
     if ( !config.autoRest ) {
@@ -384,7 +384,7 @@ export default class GroupData extends GroupTemplate {
      */
     Hooks.callAll("dnd5e.groupRestCompleted", this.parent, results);
 
-    if ( config.advanceBastionTurn && game.user.isGM && game.settings.get("dnd5e", "bastionConfiguration").enabled ) {
+    if ( config.advanceBastionTurn && game.user.isGM && game.settings.get("dragons-and-ballz", "bastionConfiguration").enabled ) {
       await dnd5e.bastion.advanceAllBastions();
     }
 

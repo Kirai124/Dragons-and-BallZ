@@ -189,7 +189,7 @@ export default class ActivityUsageDialog extends Dialog5e {
    * @protected
    */
   async _prepareConcentrationContext(context, options) {
-    if ( !this.activity.requiresConcentration || game.settings.get("dnd5e", "disableConcentration")
+    if ( !this.activity.requiresConcentration || game.settings.get("dragons-and-ballz", "disableConcentration")
       || !this._shouldDisplay("concentration") ) return context;
     context.hasConcentration = true;
     context.notes = [];
@@ -202,7 +202,7 @@ export default class ActivityUsageDialog extends Dialog5e {
     }];
     if ( this.config.concentration?.begin ) {
       const existingConcentration = Array.from(this.actor.concentration.effects).map(effect => {
-        const item = effect.getFlag("dnd5e", "item");
+        const item = effect.getFlag("dragons-and-ballz", "item");
         return {
           value: effect.id,
           label: item?.data?.name ?? this.actor.items.get(item?.id)?.name

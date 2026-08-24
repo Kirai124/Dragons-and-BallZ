@@ -96,7 +96,7 @@ export default class BaseSummonActivityData extends BaseActivityData {
   get summonedCreatures() {
     if ( !this.actor ) return [];
     return dnd5e.registry.summons.creatures(this.actor)
-      .filter(i => i?.getFlag("dnd5e", "summon.origin") === this.uuid);
+      .filter(i => i?.getFlag("dragons-and-ballz", "summon.origin") === this.uuid);
   }
 
   /* -------------------------------------------- */

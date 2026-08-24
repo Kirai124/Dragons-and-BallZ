@@ -20,7 +20,7 @@ export default class ChatLog5e extends foundry.applications.sidebar.tabs.ChatLog
    * Apply the configured chat log theme.
    */
   static applyTheme() {
-    const theme = game.settings.get("dnd5e", "chatLogTheme");
+    const theme = game.settings.get("dragons-and-ballz", "chatLogTheme");
     for ( const element of foundry.applications.detached.querySelectorAll(".chat-log, .chat-popout") ) {
       element.classList.remove("themed", "theme-light", "theme-dark");
       if ( theme ) element.classList.add("themed", `theme-${theme}`);

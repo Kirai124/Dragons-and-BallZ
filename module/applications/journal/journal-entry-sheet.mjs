@@ -190,7 +190,7 @@ export default class JournalEntrySheet5e extends foundry.applications.sheets.jou
    * @internal
    */
   static async _injectNavigation(entry, html) {
-    const nav = entry.getFlag("dnd5e", "navigation");
+    const nav = entry.getFlag("dragons-and-ballz", "navigation");
     if ( !nav ) return;
     const getDocument = id => entry.pack ? entry.collection.getDocument(id) : entry.collection.get(id);
     const previous = nav.previous ? await getDocument(nav.previous) : null;

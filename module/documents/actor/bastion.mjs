@@ -278,7 +278,7 @@ export default class Bastion {
    */
   initializeUI() {
     const turnButton = document.getElementById("bastion-turn");
-    const { button, enabled } = game.settings.get("dnd5e", "bastionConfiguration");
+    const { button, enabled } = game.settings.get("dragons-and-ballz", "bastionConfiguration");
 
     if ( !enabled || !button || !game.user.isGM) {
       turnButton?.remove();

@@ -91,7 +91,7 @@ export default class ItemMessageData extends ChatMessageDataModel {
   _onRender(element) {
     super._onRender(element);
     element.classList.add("compact");
-    if ( game.settings.get("dnd5e", "autoCollapseItemCards") ) {
+    if ( game.settings.get("dragons-and-ballz", "autoCollapseItemCards") ) {
       element.querySelectorAll(".card-header, .card-description").forEach(el => el.classList.add("collapsed"));
     }
   }

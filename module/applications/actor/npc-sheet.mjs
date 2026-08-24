@@ -294,8 +294,8 @@ export default class NPCActorSheet extends BaseActorSheet {
       context.showDeathSaves = context.important && !context.system.attributes.hp.value;
       context.showInitiativeScore = dnd5e.settings.rulesVersion === "modern";
     }
-    context.showLoyalty = context.important && game.settings.get("dnd5e", "loyaltyScore") && game.user.isGM;
-    context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get("dnd5e", "allowRests"));
+    context.showLoyalty = context.important && game.settings.get("dragons-and-ballz", "loyaltyScore") && game.user.isGM;
+    context.showRests = game.user.isGM || (this.actor.isOwner && game.settings.get("dragons-and-ballz", "allowRests"));
 
     return context;
   }
@@ -364,7 +364,7 @@ export default class NPCActorSheet extends BaseActorSheet {
     });
 
     // Skills & Tools
-    const skillSetting = game.settings.get("dnd5e", "defaultSkills");
+    const skillSetting = game.settings.get("dragons-and-ballz", "defaultSkills");
     context.skills = this._prepareSkillsTools(context, "skills")
       .filter(v => v.prof.multiplier || skillSetting.has(v.key) || v.roll.bonus || v.bonuses.passive);
     context.tools = this._prepareSkillsTools(context, "tools");

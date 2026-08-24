@@ -311,7 +311,7 @@ export default class PhysicalItemTemplate extends SystemDataModel {
     if ( !this.properties?.has("gear") ) return this.parent;
     let clone;
     const change = { "flags.dnd5e.gearSource": this.parent.uuid };
-    const flags = this.parent.getFlag("dnd5e", "gear") ?? {};
+    const flags = this.parent.getFlag("dragons-and-ballz", "gear") ?? {};
     if ( this.metadata.compendiumGearSource && this.parent._stats.compendiumSource && (flags.preserve !== true) ) {
       const item = await fromUuid(this.parent._stats.compendiumSource);
       const name = (flags.preserveName === true ? this.parent._source.name : flags.preserveName) ?? item?.name;
@@ -348,7 +348,7 @@ export default class PhysicalItemTemplate extends SystemDataModel {
    */
   gearPresentationData() {
     const compendiumSrc = fromUuidSync(this.parent._stats.compendiumSource, { strict: false });
-    const flags = this.parent.getFlag("dnd5e", "gear") ?? {};
+    const flags = this.parent.getFlag("dragons-and-ballz", "gear") ?? {};
     const useCompendiumCopy = this.metadata.compendiumGearSource && compendiumSrc && (flags.preserve !== true);
     const enchantment = this.parent.effects.get(flags.effectId);
 

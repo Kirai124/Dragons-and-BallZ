@@ -52,7 +52,7 @@ export default class SummonActivity extends ActivityMixin(BaseSummonActivityData
    * @type {boolean}
    */
   get canSummon() {
-    return game.user.can("TOKEN_CREATE") && (game.user.isGM || game.settings.get("dnd5e", "allowSummoning"));
+    return game.user.can("TOKEN_CREATE") && (game.user.isGM || game.settings.get("dragons-and-ballz", "allowSummoning"));
   }
 
   /* -------------------------------------------- */

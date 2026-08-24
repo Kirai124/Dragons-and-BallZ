@@ -134,9 +134,9 @@ export default class VehicleActorSheet extends BaseActorSheet {
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
     context.options = {
-      showAbilities: this.actor.getFlag("dnd5e", "showVehicleAbilities"),
-      showInitiative: this.actor.getFlag("dnd5e", "showVehicleInitiative"),
-      showQuality: this.actor.getFlag("dnd5e", "showVehicleQuality")
+      showAbilities: this.actor.getFlag("dragons-and-ballz", "showVehicleAbilities"),
+      showInitiative: this.actor.getFlag("dragons-and-ballz", "showVehicleInitiative"),
+      showQuality: this.actor.getFlag("dragons-and-ballz", "showVehicleQuality")
     };
     return context;
   }
@@ -326,7 +326,7 @@ export default class VehicleActorSheet extends BaseActorSheet {
    */
   async _prepareDraftAnimals() {
     const { baseUnits, draftMultiplier } = CONFIG.DND5E.encumbrance;
-    const unitSystem = game.settings.get("dnd5e", "metricWeightUnits") ? "metric" : "imperial";
+    const unitSystem = game.settings.get("dragons-and-ballz", "metricWeightUnits") ? "metric" : "imperial";
     const units = baseUnits.default[unitSystem];
     return Promise.all(this.actor.system.draft.value.map(async uuid => {
       const actor = await fromUuid(uuid);
@@ -422,7 +422,7 @@ export default class VehicleActorSheet extends BaseActorSheet {
       || context.itemCategories.features?.length
       || context.itemCategories.stations?.length
       || context.system.draft?.value.length
-      || this.actor.getFlag("dnd5e", "showVehicleAbilities");
+      || this.actor.getFlag("dragons-and-ballz", "showVehicleAbilities");
     this.element.classList.toggle("has-stations", !!hasStations);
   }
 

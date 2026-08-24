@@ -60,7 +60,7 @@ export default class TokenDocument5e extends SystemFlagsMixin(TokenDocument) {
    * @protected
    */
   _applySenseVision() {
-    if ( !game.settings.get("dnd5e", "senseVisionSync") ) return;
+    if ( !game.settings.get("dragons-and-ballz", "senseVisionSync") ) return;
     const senses = this.actor?.system?.attributes?.senses;
     if ( senses ) TokenDocument5e.applySenseOverrides(senses, this);
   }
@@ -223,7 +223,7 @@ export default class TokenDocument5e extends SystemFlagsMixin(TokenDocument) {
       actionConfig.getCostFunction = (...args) => this.getMovementActionCostFunction(type, ...args);
     }
     CONFIG.Token.movement.actions.crawl.getCostFunction = token => {
-      const noAutomation = game.settings.get("dnd5e", "movementAutomation") === "none";
+      const noAutomation = game.settings.get("dragons-and-ballz", "movementAutomation") === "none";
       const { actor } = token;
       const actorMovement = actor?.system.attributes?.movement;
       const hasMovement = actorMovement !== undefined;
@@ -259,7 +259,7 @@ export default class TokenDocument5e extends SystemFlagsMixin(TokenDocument) {
    * @returns {TokenMovementActionCostFunction}
    */
   static getMovementActionCostFunction(type, token, options) {
-    const noAutomation = game.settings.get("dnd5e", "movementAutomation") === "none";
+    const noAutomation = game.settings.get("dragons-and-ballz", "movementAutomation") === "none";
     const { actor } = token;
     const actorMovement = actor?.system.attributes?.movement;
     const walkFallback = CONFIG.DND5E.movementTypes[type]?.walkFallback;
@@ -495,7 +495,7 @@ export default class TokenDocument5e extends SystemFlagsMixin(TokenDocument) {
 
     if ( this.actor?.system.isNPC && !this.actorLink
       && foundry.utils.getProperty(this.actor, "system.attributes.hp.formula")?.trim().length ) {
-      const autoRoll = options.dnd5e?.autoRollNPCHP ?? game.settings.get("dnd5e", "autoRollNPCHP");
+      const autoRoll = options.dnd5e?.autoRollNPCHP ?? game.settings.get("dragons-and-ballz", "autoRollNPCHP");
       if ( autoRoll === "no" ) return;
       const roll = await this.actor.rollNPCHitPoints({ chatMessage: autoRoll === "yes" });
       const update = {
@@ -513,7 +513,7 @@ export default class TokenDocument5e extends SystemFlagsMixin(TokenDocument) {
   /** @inheritDoc */
   _onRelatedUpdate(update={}, operation={}) {
     super._onRelatedUpdate(update, operation);
-    if ( !game.settings.get("dnd5e", "senseVisionSync") ) return;
+    if ( !game.settings.get("dragons-and-ballz", "senseVisionSync") ) return;
     const senses = this.actor?.system?.attributes?.senses;
     if ( !senses ) return;
 
@@ -558,7 +558,7 @@ export default class TokenDocument5e extends SystemFlagsMixin(TokenDocument) {
   _onDelete(options, userId) {
     super._onDelete(options, userId);
 
-    const origin = this.actor?.getFlag("dnd5e", "summon.origin");
+    const origin = this.actor?.getFlag("dragons-and-ballz", "summon.origin");
     if ( origin ) {
       const { collection, primaryId } = foundry.utils.parseUuid(origin);
       dnd5e.registry.summons.untrack(collection?.get?.(primaryId)?.uuid, this.actor.uuid);

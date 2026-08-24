@@ -50,7 +50,7 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
    */
   get canTransform() {
     if ( this.transform.mode === "form" ) return this.actor.isOwner;
-    return game.user.can("ACTOR_CREATE") && (game.user.isGM || game.settings.get("dnd5e", "allowPolymorphing"));
+    return game.user.can("ACTOR_CREATE") && (game.user.isGM || game.settings.get("dragons-and-ballz", "allowPolymorphing"));
   }
 
   /* -------------------------------------------- */
@@ -114,7 +114,7 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
       if ( profile ) {
         const uuid = this.transform.mode ? await this.queryActor(profile) : profile.uuid;
         if ( uuid ) {
-          if ( results.message instanceof ChatMessage ) results.message.setFlag("dnd5e", "transform.uuid", uuid);
+          if ( results.message instanceof ChatMessage ) results.message.setFlag("dragons-and-ballz", "transform.uuid", uuid);
           else foundry.utils.setProperty(results.message, "flags.dnd5e.transform.uuid", uuid);
         }
       }
@@ -167,7 +167,7 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
    */
   static async #transformActor(event, target, message) {
     if ( this.transform.mode === "form" ) {
-      await this.#transformToForm(message.getFlag("dnd5e", "transform.profile"));
+      await this.#transformToForm(message.getFlag("dragons-and-ballz", "transform.profile"));
       return;
     }
 
@@ -178,9 +178,9 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
       return;
     }
 
-    const profileId = message.getFlag("dnd5e", "transform.profile");
+    const profileId = message.getFlag("dragons-and-ballz", "transform.profile");
     const profile = this.profiles.find(p => p._id === profileId) || this.profiles[0];
-    const uuid = message.getFlag("dnd5e", "transform.uuid") ?? await this.queryActor(profile);
+    const uuid = message.getFlag("dragons-and-ballz", "transform.uuid") ?? await this.queryActor(profile);
     const source = await fromUuid(uuid);
     if ( !source ) {
       ui.notifications.warn("DND5E.TRANSFORM.Warning.SourceActor");

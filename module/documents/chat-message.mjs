@@ -55,7 +55,7 @@ export default class ChatMessage5e extends ChatMessage {
    */
   get shouldDisplayChallenge() {
     if ( game.user.isGM || (this.author === game.user) ) return true;
-    switch ( game.settings.get("dnd5e", "challengeVisibility") ) {
+    switch ( game.settings.get("dragons-and-ballz", "challengeVisibility") ) {
       case "all": return true;
       case "player": return !this.author?.isGM;
       default: return false;
@@ -122,7 +122,7 @@ export default class ChatMessage5e extends ChatMessage {
     if ( foundry.utils.getType(this.system?.getHTML) === "function" ) {
       await this.system.getHTML(html, options);
     } else {
-      if ( game.settings.get("dnd5e", "autoCollapseItemCards") ) {
+      if ( game.settings.get("dragons-and-ballz", "autoCollapseItemCards") ) {
         html.querySelectorAll(".description.collapsible").forEach(el => el.classList.add("collapsed"));
       }
       await this._enrichChatCard(html);
@@ -149,7 +149,7 @@ export default class ChatMessage5e extends ChatMessage {
    */
   _collapseTrays(html) {
     let collapse;
-    switch ( game.settings.get("dnd5e", "autoCollapseChatTrays") ) {
+    switch ( game.settings.get("dragons-and-ballz", "autoCollapseChatTrays") ) {
       case "always": collapse = true; break;
       case "never":
       case "manual": collapse = false; break;
@@ -504,7 +504,7 @@ export default class ChatMessage5e extends ChatMessage {
       const notifications = document.getElementById("chat-notifications");
       if ( notifications ) notifications.dataset.gmUser = "";
     }
-    if ( !game.settings.get("dnd5e", "autoCollapseItemCards") ) {
+    if ( !game.settings.get("dragons-and-ballz", "autoCollapseItemCards") ) {
       requestAnimationFrame(() => {
         // FIXME: Allow time for transitions to complete. Adding a transitionend listener does not appear to work, so
         // the transition time is hard-coded for now.
@@ -572,13 +572,13 @@ export default class ChatMessage5e extends ChatMessage {
    * @returns {Activity|void}
    */
   getAssociatedActivity({ scaled=false }={}) {
-    const uuid = this.system.activity?.uuid ?? this.getFlag("dnd5e", "activity.uuid");
+    const uuid = this.system.activity?.uuid ?? this.getFlag("dragons-and-ballz", "activity.uuid");
     const activity = fromUuidSync(uuid, { strict: false });
     if ( activity ) {
       const scaling = scaled ? this.system.scaling : null;
       return scaling ? activity.item.scaledClone(scaling).system.activities.get(activity.id) : activity;
     }
-    const id = this.system.activity?.id ?? this.getFlag("dnd5e", "activity.id");
+    const id = this.system.activity?.id ?? this.getFlag("dragons-and-ballz", "activity.id");
     return this.getAssociatedItem({ scaled })?.system.activities?.get(id);
   }
 
@@ -601,7 +601,7 @@ export default class ChatMessage5e extends ChatMessage {
    * @returns {Item5e|void}
    */
   getAssociatedItem({ scaled=false }={}) {
-    const uuid = this.system.item?.uuid ?? this.getFlag("dnd5e", "item.uuid");
+    const uuid = this.system.item?.uuid ?? this.getFlag("dragons-and-ballz", "item.uuid");
     const item = fromUuidSync(uuid, { strict: false });
     const scaling = scaled ? this.system.scaling : null;
     if ( item ) return scaling ? item.scaledClone(scaling) : item;
@@ -618,8 +618,8 @@ export default class ChatMessage5e extends ChatMessage {
    * @returns {object|void}
    */
   #getStoredItemData() {
-    const id = this.system.item?.id ?? this.getFlag("dnd5e", "item.id");
-    return this.system.deltas?.deleted?.find(i => i._id === id) ?? this.getFlag("dnd5e", "item.data");
+    const id = this.system.item?.id ?? this.getFlag("dragons-and-ballz", "item.id");
+    return this.system.deltas?.deleted?.find(i => i._id === id) ?? this.getFlag("dragons-and-ballz", "item.data");
   }
 
   /* -------------------------------------------- */
@@ -652,7 +652,7 @@ export default class ChatMessage5e extends ChatMessage {
    * @type {ChatMessage5e}
    */
   getOriginatingMessage() {
-    return this.system.origin ?? game.messages.get(this.getFlag("dnd5e", "originatingMessage")) ?? this;
+    return this.system.origin ?? game.messages.get(this.getFlag("dragons-and-ballz", "originatingMessage")) ?? this;
   }
 
   /* -------------------------------------------- */
@@ -662,7 +662,7 @@ export default class ChatMessage5e extends ChatMessage {
    * origin message's effects tray also.
    */
   #showOriginSelection() {
-    if ( game.settings.get("dnd5e", "autoCollapseChatTrays") === "always" ) return;
+    if ( game.settings.get("dragons-and-ballz", "autoCollapseChatTrays") === "always" ) return;
     const origin = this.getOriginatingMessage();
     if ( origin === this ) return;
     const query = `[data-message-id="${origin.id}"]`;

@@ -172,7 +172,7 @@ export default class ItemListControlsElement extends MaybeAdoptable {
    * @type {TabPreferences5e}
    */
   get prefs() {
-    return game.user.getFlag("dnd5e", `sheetPrefs.${this.app.document.type}.tabs.${this.tab}`);
+    return game.user.getFlag("dragons-and-ballz", `sheetPrefs.${this.app.document.type}.tabs.${this.tab}`);
   }
 
   /* -------------------------------------------- */
@@ -484,8 +484,8 @@ export default class ItemListControlsElement extends MaybeAdoptable {
     const { action } = event.currentTarget.dataset;
     const flag = `sheetPrefs.${this.app.document.type}.tabs.${this.tab}.${action}`;
     const modes = Object.keys(action === "group" ? this.#groups : this.#modes);
-    const current = Math.max(0, modes.indexOf(game.user.getFlag("dnd5e", flag)));
-    await game.user.setFlag("dnd5e", flag, modes[(current + 1) % modes.length]);
+    const current = Math.max(0, modes.indexOf(game.user.getFlag("dragons-and-ballz", flag)));
+    await game.user.setFlag("dragons-and-ballz", flag, modes[(current + 1) % modes.length]);
     if ( action === "group" ) {
       this._initGrouping();
       this._applyGrouping();

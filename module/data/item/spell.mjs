@@ -161,7 +161,7 @@ export default class SpellData extends ItemDataModel.mixin(ActivitiesTemplate, I
     if ( !this.sourceItem ) return "";
     let sourceItem = this.parent?.actor?.identifiedItems.get(this.sourceItem)?.first();
     if ( sourceItem && (sourceItem.type !== "class") && (sourceItem.type !== "subclass") ) {
-      sourceItem = this.parent?.actor?.items.get(sourceItem.getFlag("dnd5e", "advancementRoot")?.slice(0, 16));
+      sourceItem = this.parent?.actor?.items.get(sourceItem.getFlag("dragons-and-ballz", "advancementRoot")?.slice(0, 16));
     }
     if ( sourceItem?.type === "class" ) return sourceItem.identifier;
     if ( sourceItem?.type === "subclass" ) return sourceItem.system.classIdentifier ?? "";
@@ -275,13 +275,13 @@ export default class SpellData extends ItemDataModel.mixin(ActivitiesTemplate, I
    */
   get linkedActivity() {
     const relative = this.parent.actor;
-    const uuid = this.parent.getFlag("dnd5e", "cachedFor");
+    const uuid = this.parent.getFlag("dragons-and-ballz", "cachedFor");
     if ( !relative || !uuid ) return null;
     const data = foundry.utils.parseUuid(uuid, { relative });
     const [itemId, , activityId] = (data?.embedded ?? []).slice(-3);
     return relative.items.get(itemId)?.system.activities?.get(activityId) ?? null;
     // TODO: Swap back to fromUuidSync once https://github.com/foundryvtt/foundryvtt/issues/11214 is resolved
-    // return fromUuidSync(this.parent.getFlag("dnd5e", "cachedFor"), { relative, strict: false }) ?? null;
+    // return fromUuidSync(this.parent.getFlag("dragons-and-ballz", "cachedFor"), { relative, strict: false }) ?? null;
   }
 
   /* -------------------------------------------- */
@@ -566,7 +566,7 @@ export default class SpellData extends ItemDataModel.mixin(ActivitiesTemplate, I
         // Fallback to detecting from flags.
         if ( !grantingItem ) {
           // Check for advancement-granted spells.
-          const advancementOrigin = this.parent.getFlag("dnd5e", "advancementOrigin");
+          const advancementOrigin = this.parent.getFlag("dragons-and-ballz", "advancementOrigin");
           if ( advancementOrigin ) {
             const [itemId] = advancementOrigin.split(".");
             grantingItem = this.parent.actor.items.get(itemId);
@@ -681,7 +681,7 @@ export default class SpellData extends ItemDataModel.mixin(ActivitiesTemplate, I
   /** @inheritDoc */
   getRollData(...options) {
     const data = super.getRollData(...options);
-    data.item.level = data.item.level + (this.parent.getFlag("dnd5e", "scaling")
+    data.item.level = data.item.level + (this.parent.getFlag("dragons-and-ballz", "scaling")
       ?? (this.level !== 0 ? this.scalingIncrease : 0));
     return data;
   }

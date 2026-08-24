@@ -164,7 +164,7 @@ export default class Combat5e extends Combat {
     }];
     const shouldDelete = effect => {
       // Don't delete dependent effects, as these will be deleted via the 5e dependency registry
-      if ( effect.getFlag("dnd5e", "dependentOn") ) return false;
+      if ( effect.getFlag("dragons-and-ballz", "dependentOn") ) return false;
 
       // Don't delete item-bound effects which aren't applied enchantments
       if ( !effect.isAppliedEnchantment && (effect.parent instanceof Item) ) return false;

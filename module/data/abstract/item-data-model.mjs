@@ -60,7 +60,7 @@ export default class ItemDataModel extends SystemDataModel {
    * @type {Item5e|void}
    */
   get advancementRootItem() {
-    return this.parent?.actor?.items.get(this.parent.getFlag("dnd5e", "advancementRoot")?.split(".")?.[0]);
+    return this.parent?.actor?.items.get(this.parent.getFlag("dragons-and-ballz", "advancementRoot")?.split(".")?.[0]);
   }
 
   /* -------------------------------------------- */
@@ -287,7 +287,7 @@ export default class ItemDataModel extends SystemDataModel {
     Object.assign(context, {
       name, type, img, price, uses, extras,
       config: CONFIG.DND5E,
-      controlHints: game.settings.get("dnd5e", "controlHints"),
+      controlHints: game.settings.get("dragons-and-ballz", "controlHints"),
       description: await TextEditor.enrichHTML(description || "", enrichmentOptions),
       labels: foundry.utils.deepClone((activity ?? this.parent).labels),
       properties: PropertyField.getLabels(context.properties.filter(p => !p.identity), {

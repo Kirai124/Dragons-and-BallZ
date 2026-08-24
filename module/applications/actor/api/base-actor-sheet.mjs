@@ -58,7 +58,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
   constructor(options={}) {
     // Set initial size based on saved size
     const key = `${options.document?.type}${options.document?.limited ? ":limited" : ""}`;
-    const { width, height } = game.user.getFlag("dnd5e", `sheetPrefs.${key}`) ?? {};
+    const { width, height } = game.user.getFlag("dragons-and-ballz", `sheetPrefs.${key}`) ?? {};
     options.position ??= {};
     if ( width && !("width" in options.position) ) options.position.width = width;
     if ( height && !("height" in options.position) ) options.position.height = height;
@@ -219,7 +219,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
         ? this.actor.system.source.rules === "2024"
         : dnd5e.settings.rulesVersion === "modern",
       rollableClass: this.isEditable ? "rollable" : "",
-      sidebarCollapsed: !!game.user.getFlag("dnd5e", this._sidebarCollapsedKeyPath),
+      sidebarCollapsed: !!game.user.getFlag("dragons-and-ballz", this._sidebarCollapsedKeyPath),
       system: this.actor.system,
       user: game.user,
       warnings: foundry.utils.deepClone(this.actor._preparationWarnings)
@@ -630,7 +630,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
       method = spellcasting?.getSpellSlotKey?.(level) ?? method;
 
       // Spells from items
-      if ( spell.getFlag("dnd5e", "cachedFor") ) {
+      if ( spell.getFlag("dragons-and-ballz", "cachedFor") ) {
         method = "item";
         if ( !spell.system.linkedActivity?.displayInSpellbook ) return;
         registerSection(method);
@@ -997,7 +997,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
       sourceLabel = grantingItem?.name;
     } else {
       // Check spells added from advancements
-      const advancementOrigin = item.getFlag("dnd5e", "advancementOrigin");
+      const advancementOrigin = item.getFlag("dragons-and-ballz", "advancementOrigin");
       if ( advancementOrigin ) {
         const [itemId] = advancementOrigin.split(".");
         const grantingItem = item.parent.items.get(itemId);
@@ -1163,7 +1163,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
 
     // Collapse sidebar
     if ( this.tabGroups.primary ) {
-      const sidebarCollapsed = !!game.user.getFlag("dnd5e", this._sidebarCollapsedKeyPath);
+      const sidebarCollapsed = !!game.user.getFlag("dragons-and-ballz", this._sidebarCollapsedKeyPath);
       this.element.classList.toggle("sidebar-collapsed", sidebarCollapsed);
     }
 
@@ -1254,7 +1254,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     const classId = event.target.closest("[data-item-id]")?.dataset.itemId;
     if ( !delta || !classId ) return;
     const classItem = this.actor.items.get(classId);
-    if ( !game.settings.get("dnd5e", "disableAdvancements") ) {
+    if ( !game.settings.get("dragons-and-ballz", "disableAdvancements") ) {
       const manager = AdvancementManager.forLevelChange(this.actor, classId, delta);
       if ( manager.steps.length ) {
         if ( delta > 0 ) return this._renderChild(manager);
@@ -1286,7 +1286,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     }));
 
     // Toggle sidebar
-    const sidebarCollapsed = game.user.getFlag("dnd5e", this._sidebarCollapsedKeyPath);
+    const sidebarCollapsed = game.user.getFlag("dragons-and-ballz", this._sidebarCollapsedKeyPath);
     if ( sidebarCollapsed !== undefined ) this._toggleSidebar(sidebarCollapsed);
   }
 
@@ -1466,7 +1466,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     if ( height !== "auto" ) prefs.height = height;
     if ( foundry.utils.isEmpty(prefs) ) return;
     const key = `${this.actor.type}${this.actor.limited ? ":limited": ""}`;
-    game.user.setFlag("dnd5e", `sheetPrefs.${key}`, prefs);
+    game.user.setFlag("dragons-and-ballz", `sheetPrefs.${key}`, prefs);
   }
 
   /* -------------------------------------------- */
@@ -1608,7 +1608,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
    */
   static #toggleSidebar(event, target) {
     const collapsed = this._toggleSidebar();
-    game.user.setFlag("dnd5e", this._sidebarCollapsedKeyPath, collapsed);
+    game.user.setFlag("dragons-and-ballz", this._sidebarCollapsedKeyPath, collapsed);
   }
 
   /* -------------------------------------------- */
@@ -1645,7 +1645,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
       if ( value ) continue;
 
       // Keep the flag for synthetic actor overrides
-      if ( this.actor.isToken && this.actor.parent.baseActor.getFlag("dnd5e", key) ) continue;
+      if ( this.actor.isToken && this.actor.parent.baseActor.getFlag("dragons-and-ballz", key) ) continue;
 
       delete submitData.flags.dnd5e[key];
       if ( foundry.utils.hasProperty(this.document._source, `flags.dnd5e.${key}`) ) {
@@ -1753,16 +1753,16 @@ export default class BaseActorSheet extends PrimarySheetMixin(
 
   /** @override */
   async _onDropActor(event, actor) {
-    const canPolymorph = game.user.isGM || (this.actor.isOwner && game.settings.get("dnd5e", "allowPolymorphing"));
+    const canPolymorph = game.user.isGM || (this.actor.isOwner && game.settings.get("dragons-and-ballz", "allowPolymorphing"));
     if ( !canPolymorph || (this.tabGroups.primary === "bastion") ) return;
 
     // Configure the transformation
     const settings = await TransformDialog.promptSettings(this.actor, actor, {
-      transform: { settings: game.settings.get("dnd5e", "transformationSettings") },
+      transform: { settings: game.settings.get("dragons-and-ballz", "transformationSettings") },
       windowId: this.window?.windowId
     });
     if ( !settings ) return;
-    await game.settings.set("dnd5e", "transformationSettings", settings.toObject());
+    await game.settings.set("dragons-and-ballz", "transformationSettings", settings.toObject());
 
     return this.actor.transformInto(actor, settings);
   }
@@ -1860,7 +1860,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
     behavior ??= event._behavior;
     const itemsWithoutAdvancement = items.filter(i => !i.system.advancement?.size);
     const multipleAdvancements = (items.length - itemsWithoutAdvancement.length) > 1;
-    if ( multipleAdvancements && !game.settings.get("dnd5e", "disableAdvancements") ) {
+    if ( multipleAdvancements && !game.settings.get("dragons-and-ballz", "disableAdvancements") ) {
       ui.notifications.warn("DND5E.WarnCantAddMultipleAdvancements");
       items = itemsWithoutAdvancement;
     }
@@ -1928,7 +1928,7 @@ export default class BaseActorSheet extends PrimarySheetMixin(
 
     // Bypass normal creation flow for any items with advancement
     if ( actor.system.metadata?.supportsAdvancement && !foundry.utils.isEmpty(itemData.system.advancement)
-        && !game.settings.get("dnd5e", "disableAdvancements") ) {
+        && !game.settings.get("dragons-and-ballz", "disableAdvancements") ) {
       // Ensure that this item isn't violating the singleton rule
       const dataModel = CONFIG.Item.dataModels[itemData.type];
       const singleton = dataModel?.metadata.singleton ?? false;

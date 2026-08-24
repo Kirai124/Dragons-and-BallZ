@@ -186,14 +186,14 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
 
   /** @inheritDoc */
   get isTemporary() {
-    return !this.isConcealed && (super.isTemporary || !!this.getFlag("dnd5e", "isTemporary"));
+    return !this.isConcealed && (super.isTemporary || !!this.getFlag("dragons-and-ballz", "isTemporary"));
   }
 
   /* -------------------------------------------- */
 
   /** @inheritDoc */
   get isExpiryTrackable() {
-    return super.isExpiryTrackable && !this.getFlag("dnd5e", "isTemporary");
+    return super.isExpiryTrackable && !this.getFlag("dragons-and-ballz", "isTemporary");
   }
 
   /* -------------------------------------------- */
@@ -705,7 +705,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
       const message = game.messages.get(chatMessageOrigin);
       item = message?.getAssociatedItem();
       const activity = message?.getAssociatedActivity();
-      profile = activity?.effects.find(e => e._id === message?.getFlag("dnd5e", "use.enchantmentProfile"));
+      profile = activity?.effects.find(e => e._id === message?.getFlag("dragons-and-ballz", "use.enchantmentProfile"));
     } else if ( enchantmentProfile && activityId ) {
       let activity;
       const origin = await fromUuid(this.origin);
@@ -1125,7 +1125,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
    */
   static async endConcentrationDialog(actor, effects) {
     const choices = effects.reduce((acc, effect) => {
-      const item = effect.getFlag("dnd5e", "item");
+      const item = effect.getFlag("dragons-and-ballz", "item");
       acc[effect.id] = item?.data?.name ?? actor.items.get(item?.id)?.name ?? _loc("DND5E.CONCENTRATION.NoSource");
       return acc;
     }, {});
@@ -1179,7 +1179,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
    * @returns {Array<ActiveEffect5e|Item5e>}
    */
   getDependents() {
-    return (this.getFlag("dnd5e", "dependents") || []).reduce((arr, { uuid }) => {
+    return (this.getFlag("dragons-and-ballz", "dependents") || []).reduce((arr, { uuid }) => {
       let doc;
       // TODO: Remove this special casing once https://github.com/foundryvtt/foundryvtt/issues/11214 is resolved
       if ( this.parent.pack && uuid.includes(this.parent.uuid) ) {

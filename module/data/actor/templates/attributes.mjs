@@ -373,7 +373,7 @@ export default class AttributesFields {
     const encumbrance = this.attributes.encumbrance ??= {};
     const baseUnits = CONFIG.DND5E.encumbrance.baseUnits[this.parent.type]
       ?? CONFIG.DND5E.encumbrance.baseUnits.default;
-    const unitSystem = game.settings.get("dnd5e", "metricWeightUnits") ? "metric" : "imperial";
+    const unitSystem = game.settings.get("dragons-and-ballz", "metricWeightUnits") ? "metric" : "imperial";
     const { attributes } = this;
 
     // Get the total weight from items
@@ -383,7 +383,7 @@ export default class AttributesFields {
 
     // [Optional] add Currency Weight (for non-transformed actors)
     const currency = this.currency;
-    if ( game.settings.get("dnd5e", "currencyWeight") && currency ) {
+    if ( game.settings.get("dragons-and-ballz", "currencyWeight") && currency ) {
       const numCoins = Object.values(currency).reduce((val, denom) => val + Math.max(denom, 0), 0);
       const currencyPerWeight = config.currencyPerWeight[unitSystem];
       weight += convertWeight(
@@ -696,7 +696,7 @@ export default class AttributesFields {
     if ( !Number.isInteger(changes.total) || (changes.total === 0) ) return;
 
     this.parent._displayTokenEffect(changes);
-    if ( !game.settings.get("dnd5e", "disableConcentration") && (userId === game.userId)
+    if ( !game.settings.get("dragons-and-ballz", "disableConcentration") && (userId === game.userId)
       && (options.dnd5e?.concentrationCheck !== false)
       && (changes.total < 0) && ((changes.temp < 0) || (curr.value < curr.effectiveMax)) ) {
       this.parent.challengeConcentration({ dc: this.parent.getConcentrationDC(-changes.total) });

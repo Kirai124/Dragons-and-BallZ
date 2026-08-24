@@ -27,8 +27,8 @@ export default class BaseCalendarHUD extends Application5e {
    * @type {boolean}
    */
   static get shouldDisplay() {
-    return (game.settings.get("dnd5e", "calendarConfig")?.enabled || false)
-      && (game.settings.get("dnd5e", "calendarPreferences")?.visible || false);
+    return (game.settings.get("dragons-and-ballz", "calendarConfig")?.enabled || false)
+      && (game.settings.get("dragons-and-ballz", "calendarPreferences")?.visible || false);
   }
 
   /* -------------------------------------------- */

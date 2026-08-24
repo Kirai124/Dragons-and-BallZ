@@ -52,7 +52,7 @@ export default class JournalNavigationConfig extends DocumentSheet5e {
   /** @inheritDoc */
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
-    const data = this.document.getFlag("dnd5e", "navigation") ?? {};
+    const data = this.document.getFlag("dragons-and-ballz", "navigation") ?? {};
     const entryOptions = getCollectionDocumentOptions(this.document.collection, {
       disabled: entry => entry._id === this.document.id
     });

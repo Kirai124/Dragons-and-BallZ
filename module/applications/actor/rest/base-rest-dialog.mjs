@@ -134,7 +134,7 @@ export default class BaseRestDialog extends Dialog5e {
       hd: this.actor.system.attributes?.hd,
       hp: this.actor.system.attributes?.hp,
       isGroup: this.isPartyGroup,
-      variant: game.settings.get("dnd5e", "restVariant")
+      variant: game.settings.get("dragons-and-ballz", "restVariant")
     };
     if ( this.promptNewDay ) context.fields.push({
       disabled: !!this.config.request,
@@ -147,7 +147,7 @@ export default class BaseRestDialog extends Dialog5e {
       value: context.config.newDay
     });
 
-    if ( context.isGroup && game.settings.get("dnd5e", "calendarConfig").enabled ) {
+    if ( context.isGroup && game.settings.get("dragons-and-ballz", "calendarConfig").enabled ) {
       const duration = convertTime(this.duration, "minute", { strict: false });
       context.duration = {
         fields: [
@@ -199,7 +199,7 @@ export default class BaseRestDialog extends Dialog5e {
     }
 
     if ( this.isPartyGroup ) {
-      const restSettings = this.actor.getFlag("dnd5e", "restSettings") ?? {};
+      const restSettings = this.actor.getFlag("dragons-and-ballz", "restSettings") ?? {};
       context.request = [
         {
           field: new BooleanField({
@@ -241,7 +241,7 @@ export default class BaseRestDialog extends Dialog5e {
     const data = foundry.utils.expandObject(formData.object);
     if ( this.isPartyGroup ) {
       data.targets = filteredKeys(data.targets ?? {});
-      this.actor.setFlag("dnd5e", "restSettings", data);
+      this.actor.setFlag("dragons-and-ballz", "restSettings", data);
     }
     if ( foundry.utils.isPlainObject(data.duration) ) {
       data.duration = convertTime(data.duration.value, data.duration.unit, { strict: false, to: "minute" }).value;

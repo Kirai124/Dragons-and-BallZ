@@ -451,7 +451,7 @@ export default function ActivityMixin(Base) {
           || (!linked && hasSpellSlotConsumption);
       }
 
-      const levelingFlag = this.item.getFlag("dnd5e", "spellLevel");
+      const levelingFlag = this.item.getFlag("dragons-and-ballz", "spellLevel");
       if ( levelingFlag ) {
         // Handle fixed scaling from spell scrolls
         config.scaling = false;
@@ -478,7 +478,7 @@ export default function ActivityMixin(Base) {
         config.scaling ??= 0;
       }
 
-      if ( this.requiresConcentration && !game.settings.get("dnd5e", "disableConcentration") ) {
+      if ( this.requiresConcentration && !game.settings.get("dragons-and-ballz", "disableConcentration") ) {
         config.concentration ??= {};
         config.concentration.begin ??= true;
         const { effects } = this.actor.concentration;
@@ -508,7 +508,7 @@ export default function ActivityMixin(Base) {
      * @protected
      */
     async _prepareUsageScaling(usageConfig, messageConfig, item) {
-      const levelingFlag = this.item.getFlag("dnd5e", "spellLevel");
+      const levelingFlag = this.item.getFlag("dragons-and-ballz", "spellLevel");
       if ( levelingFlag ) {
         usageConfig.scaling = Math.max(0, levelingFlag.value - levelingFlag.base);
       } else if ( this.isSpell ) {
@@ -607,7 +607,7 @@ export default function ActivityMixin(Base) {
             const otherLinkedActivity = linkedActivity.type === "forward"
               ? linkedActivity.item.system.activities.get(linkedActivity.activity.id) : linkedActivity;
             if ( updates.delete.includes(linkedActivity.item.id)
-              && (this.item.getFlag("dnd5e", "cachedFor") === otherLinkedActivity?.relativeUUID) ) {
+              && (this.item.getFlag("dragons-and-ballz", "cachedFor") === otherLinkedActivity?.relativeUUID) ) {
               updates.delete.push(this.item.id);
             }
           } else if ( results?.length ) {
@@ -877,7 +877,7 @@ export default function ActivityMixin(Base) {
       }, {});
       if ( canUpdate && !foundry.utils.isEmpty(lastDamageTypes)
         && (this.actor && this.actor.items.has(this.item.id)) ) {
-        await this.item.setFlag("dnd5e", `last.${this.id}.damageType`, lastDamageTypes);
+        await this.item.setFlag("dragons-and-ballz", `last.${this.id}.damageType`, lastDamageTypes);
       }
 
       /**
@@ -1116,11 +1116,11 @@ export default function ActivityMixin(Base) {
     static async placeTemplateBehaviors(region, options, userId) {
       if ( !game.user.isActiveGM || (options.dnd5e?.createActivityBehaviors === false) ) return;
 
-      const activity = await fromUuid(region.getFlag("dnd5e", "activity"));
+      const activity = await fromUuid(region.getFlag("dragons-and-ballz", "activity"));
       const behaviors = activity?.applicableBehaviors;
       if ( !behaviors?.length ) return;
 
-      const token = fromUuidSync(region.getFlag("dnd5e", "origin"));
+      const token = fromUuidSync(region.getFlag("dragons-and-ballz", "origin"));
       const toCreate = [];
       for ( const behavior of behaviors ) {
         const data = behavior.config.createBehaviorData(activity, { token });
@@ -1182,7 +1182,7 @@ export default function ActivityMixin(Base) {
      */
     getLinkedActivity(relativeUUID) {
       if ( !this.actor ) return null;
-      relativeUUID ??= this.item.getFlag("dnd5e", "cachedFor");
+      relativeUUID ??= this.item.getFlag("dragons-and-ballz", "cachedFor");
       return fromUuidSync(relativeUUID, { relative: this.actor, strict: false });
     }
 

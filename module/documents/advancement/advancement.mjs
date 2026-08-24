@@ -270,7 +270,7 @@ export default class Advancement extends PseudoDocumentMixin(BaseAdvancementData
   /** @inheritDoc */
   async delete(options={}) {
     if ( this.item.actor?.system.metadata?.supportsAdvancement
-        && !game.settings.get("dnd5e", "disableAdvancements") ) {
+        && !game.settings.get("dragons-and-ballz", "disableAdvancements") ) {
       const manager = dnd5e.applications.advancement.AdvancementManager
         .forDeletedAdvancement(this.item.actor, this.item.id, this.id);
       if ( manager.steps.length ) return manager.render(true);
@@ -344,7 +344,7 @@ export default class Advancement extends PseudoDocumentMixin(BaseAdvancementData
       _id: id ?? foundry.utils.randomID(),
       "flags.dnd5e.sourceId": uuid,
       "flags.dnd5e.advancementOrigin": advancementOrigin,
-      "flags.dnd5e.advancementRoot": this.item.getFlag("dnd5e", "advancementRoot") ?? advancementOrigin
+      "flags.dnd5e.advancementRoot": this.item.getFlag("dragons-and-ballz", "advancementRoot") ?? advancementOrigin
     }, { keepId: true }).toObject();
   }
 

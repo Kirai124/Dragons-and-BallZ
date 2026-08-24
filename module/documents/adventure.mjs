@@ -19,7 +19,7 @@ export default class Adventure5e extends foundry.documents.Adventure {
    * @type {AdventureImportAction[]}
    */
   get importActions() {
-    let actions = this.getFlag("dnd5e", "importActions")
+    let actions = this.getFlag("dragons-and-ballz", "importActions")
       ?? CONFIG.DND5E.adventure.config[this.uuid]?.importActions
       ?? CONFIG.DND5E.adventure.config[this.compendium?.metadata.packageName]?.importActions
       ?? [];
@@ -75,7 +75,7 @@ export default class Adventure5e extends foundry.documents.Adventure {
    * @type {AdventureImportPostHandler}
    */
   static async activateScene(config, importResult, importOptions) {
-    const sceneId = config.initialScene ?? this.getFlag("dnd5e", "initialScene");
+    const sceneId = config.initialScene ?? this.getFlag("dragons-and-ballz", "initialScene");
     const scene = game.scenes.get(sceneId);
     if ( !scene ) {
       console.warn(_loc("DND5E.ADVENTURE.Warning.SceneMissing", { adventure: this.name, id: sceneId }));
@@ -108,8 +108,8 @@ export default class Adventure5e extends foundry.documents.Adventure {
    */
   static async customizeWorld(config, importResult, importOptions) {
     const quickstart = this.quickstartConfig?.world ?? {};
-    const background = config.joinBackground ?? this.getFlag("dnd5e", "joinBackground") ?? quickstart.background;
-    const description = config.joinDescription ?? this.getFlag("dnd5e", "joinDescription") ?? quickstart.description;
+    const background = config.joinBackground ?? this.getFlag("dragons-and-ballz", "joinBackground") ?? quickstart.background;
+    const description = config.joinDescription ?? this.getFlag("dragons-and-ballz", "joinDescription") ?? quickstart.description;
     if ( !background && !description ) return;
     const worldData = { background, description, action: "editWorld", id: game.world.id };
     await foundry.utils.fetchJsonWithTimeout(foundry.utils.getRoute("setup"), {
@@ -129,7 +129,7 @@ export default class Adventure5e extends foundry.documents.Adventure {
    * @type {AdventureImportPostHandler}
    */
   static async displayJournal(config, importResult, importOptions) {
-    const journalId = config.initialJournal ?? this.getFlag("dnd5e", "initialJournal");
+    const journalId = config.initialJournal ?? this.getFlag("dragons-and-ballz", "initialJournal");
     const journal = journalId?.length === 16 ? game.journal.get(journalId) : await fromUuid(journalId);
     if ( !journal || !((journal instanceof JournalEntry) || (journal instanceof JournalEntryPage)) ) {
       console.warn(_loc("DND5E.ADVENTURE.Warning.JournalMissing", { adventure: this.name, id: journalId }));

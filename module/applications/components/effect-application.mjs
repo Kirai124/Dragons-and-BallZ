@@ -312,7 +312,7 @@ export default class EffectApplicationElement extends ChatTrayElement {
       }
     }
     if ( operations.length ) await foundry.documents.modifyBatch(operations);
-    if ( game.settings.get("dnd5e", "autoCollapseChatTrays") !== "manual" ) {
+    if ( game.settings.get("dragons-and-ballz", "autoCollapseChatTrays") !== "manual" ) {
       this.querySelector(".collapsible").dispatchEvent(new PointerEvent("click", { bubbles: true, cancelable: true }));
     }
   }

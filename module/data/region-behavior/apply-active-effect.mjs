@@ -147,7 +147,7 @@ export default class ApplyActiveEffect5eRegionBehaviorType extends foundry.data.
    * @returns {Promise<ActiveEffectData[]>}  The data of Active Effects that should be created.
    */
   async #getEffectsToCreate(actor, effects) {
-    const origin = await fromUuid(this.region.getFlag("dnd5e", "activity"));
+    const origin = await fromUuid(this.region.getFlag("dragons-and-ballz", "activity"));
     const toCreate = [];
     for ( const effect of effects ) {
       if ( !effect ) continue;

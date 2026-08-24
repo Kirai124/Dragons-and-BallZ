@@ -101,7 +101,7 @@ export default class EnchantActivity extends ActivityMixin(BaseEnchantActivityDa
 
   /** @override */
   onRenderChatCard(message, element) {
-    const enchantmentProfile = message.getFlag("dnd5e", "use.enchantmentProfile");
+    const enchantmentProfile = message.getFlag("dragons-and-ballz", "use.enchantmentProfile");
     if ( !enchantmentProfile || !message.isContentVisible ) return;
 
     // Ensure concentration is still being maintained

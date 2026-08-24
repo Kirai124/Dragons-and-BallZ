@@ -205,7 +205,7 @@ export async function migrateWorld({ bypassVersionCheck=false }={}) {
   if ( legacyFolder ) legacyFolder.update({ name: "D&D Legacy Content" });
 
   // Set the migration as complete
-  game.settings.set("dnd5e", "systemMigrationVersion", game.system.version);
+  game.settings.set("dragons-and-ballz", "systemMigrationVersion", game.system.version);
   progress.element?.classList.add(hasErrors ? "warning" : "success");
   progress.update({ message: "MIGRATION.DND5E.World.Complete", format: { version }, pct: 1 });
 }
@@ -481,7 +481,7 @@ export async function migrateSettings() {
     ?.find(s => s.key === "dnd5e.disableExperienceTracking")?.value;
   const levelingMode = game.settings.storage.get("world")?.find(s => s.key === "dnd5e.levelingMode")?.value;
   if ( (disableExperienceTracking !== undefined) && (levelingMode === undefined) ) {
-    await game.settings.set("dnd5e", "levelingMode", "noxp");
+    await game.settings.set("dragons-and-ballz", "levelingMode", "noxp");
   }
   // Migrate Disable Movement Automation to Movement Automation
   const disableMovementAutomation = game.settings.storage.get("world")
@@ -489,7 +489,7 @@ export async function migrateSettings() {
   const movementAutomation = game.settings.storage.get("world")
     ?.find(s => s.key === "dnd5e.movementAutomation")?.value;
   if ( (disableMovementAutomation !== undefined) && (movementAutomation === undefined) ) {
-    await game.settings.set("dnd5e", "movementAutomation", disableMovementAutomation ? "none" : "full");
+    await game.settings.set("dragons-and-ballz", "movementAutomation", disableMovementAutomation ? "none" : "full");
   }
 }
 
@@ -648,13 +648,13 @@ export function migrateItemData(item, itemData, migrationData, flags={}) {
   if ( (itemData.type === "spell") && !itemData.system?.sourceItem && flags.actorData?.items ) {
     // Try to identify the granting item from advancement or cast-activity flags.
     let grantingItemData;
-    const advancementOrigin = item.getFlag("dnd5e", "advancementOrigin");
+    const advancementOrigin = item.getFlag("dragons-and-ballz", "advancementOrigin");
     if ( advancementOrigin ) {
       const [itemId] = advancementOrigin.split(".");
       grantingItemData = flags.actorData.items.find(i => i._id === itemId);
     }
     if ( !grantingItemData ) {
-      const cachedFor = item.getFlag("dnd5e", "cachedFor");
+      const cachedFor = item.getFlag("dragons-and-ballz", "cachedFor");
       if ( cachedFor ) {
         const { embedded } = foundry.utils.parseUuid(cachedFor, { relative: item.parent }) ?? {};
         const [, itemId] = embedded ?? [];

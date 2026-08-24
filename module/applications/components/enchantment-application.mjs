@@ -157,7 +157,7 @@ export default class EnchantmentApplicationElement extends MaybeAdoptable {
     }
 
     this.enchantmentActivity.applyEnchantment(
-      this.chatMessage.getFlag("dnd5e", "use.enchantmentProfile"),
+      this.chatMessage.getFlag("dragons-and-ballz", "use.enchantmentProfile"),
       droppedItem,
       { chatMessage: this.chatMessage, concentration }
     );

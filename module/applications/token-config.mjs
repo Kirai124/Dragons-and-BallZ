@@ -87,7 +87,7 @@ export class TokenConfig5e extends foundry.applications.sheets.TokenConfig {
    * @protected
    */
   _applySenseSyncNotice(html) {
-    if ( !game.settings.get("dnd5e", "senseVisionSync") ) return;
+    if ( !game.settings.get("dragons-and-ballz", "senseVisionSync") ) return;
     const actor = this.actor ?? this.object?.actor;
     const senses = actor?.system?.attributes?.senses;
     if ( !senses ) return;

@@ -70,7 +70,7 @@ export default class GroupActorSheet extends MultiActorSheet {
 
   /** @inheritDoc */
   get inventorySource() {
-    const inventorySource = this.actor.getFlag("dnd5e", "inventorySource") ?? "group";
+    const inventorySource = this.actor.getFlag("dragons-and-ballz", "inventorySource") ?? "group";
     const { primaryVehicle } = this.actor.system;
     if ( (inventorySource === "vehicle") && primaryVehicle?.isOwner ) return primaryVehicle;
     return super.inventorySource;
@@ -102,7 +102,7 @@ export default class GroupActorSheet extends MultiActorSheet {
    * @protected
    */
   async _prepareHeaderContext(context, options) {
-    context.showXP = game.settings.get("dnd5e", "levelingMode") !== "noxp";
+    context.showXP = game.settings.get("dragons-and-ballz", "levelingMode") !== "noxp";
     context.travelPace = this.actor.system.getTravelPace();
     return context;
   }
@@ -248,7 +248,7 @@ export default class GroupActorSheet extends MultiActorSheet {
     const { pct, max, value } = encumbrance;
     const defaultUnits = CONFIG.DND5E.encumbrance.baseUnits.default;
     const baseUnits = CONFIG.DND5E.encumbrance.baseUnits[actor.type] ?? defaultUnits;
-    const systemUnits = game.settings.get("dnd5e", "metricWeightUnits") ? "metric" : "imperial";
+    const systemUnits = game.settings.get("dragons-and-ballz", "metricWeightUnits") ? "metric" : "imperial";
     context.encumbrance = {
       pct,
       max: convertWeight(max, baseUnits[systemUnits], defaultUnits[systemUnits]),
@@ -365,7 +365,7 @@ export default class GroupActorSheet extends MultiActorSheet {
    */
   static #onAward() {
     new Award({
-      award: { savedDestinations: this.actor.getFlag("dnd5e", "awardDestinations") },
+      award: { savedDestinations: this.actor.getFlag("dragons-and-ballz", "awardDestinations") },
       origin: this.actor
     }).render({ force: true });
   }
@@ -443,7 +443,7 @@ export default class GroupActorSheet extends MultiActorSheet {
    */
   static #onToggleInventory(event, target) {
     const { inventory } = target.dataset;
-    this.actor.setFlag("dnd5e", "inventorySource", inventory);
+    this.actor.setFlag("dragons-and-ballz", "inventorySource", inventory);
   }
 
   /* -------------------------------------------- */

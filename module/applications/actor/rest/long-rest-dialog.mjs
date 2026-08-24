@@ -32,7 +32,7 @@ export default class LongRestDialog extends BaseRestDialog {
   async _prepareContext(options) {
     const context = await super._prepareContext(options);
 
-    const { enabled } = game.settings.get("dnd5e", "bastionConfiguration");
+    const { enabled } = game.settings.get("dragons-and-ballz", "bastionConfiguration");
     if ( game.user.isGM && context.isGroup && enabled ) context.fields.unshift({
       field: new BooleanField({ label: _loc("DND5E.Bastion.Action.BastionTurn") }),
       input: context.inputs.createCheckboxInput,

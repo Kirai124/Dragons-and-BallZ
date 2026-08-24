@@ -364,7 +364,7 @@ export default class InventoryElement extends (foundry.applications.elements.Ado
       icon: "fa-solid fa-scroll",
       group: "action",
       visible: () => {
-        const isSpell = (item.type === "spell") && !item.getFlag("dnd5e", "cachedFor");
+        const isSpell = (item.type === "spell") && !item.getFlag("dragons-and-ballz", "cachedFor");
         const canEdit = this.actor.isOwner && !this.actor.collection.locked;
         return isSpell && canEdit;
       },
@@ -413,7 +413,7 @@ export default class InventoryElement extends (foundry.applications.elements.Ado
         const isPrepared = CONFIG.DND5E.spellcasting[item.system.method]?.prepares;
         const isAlways = item.system.prepared === CONFIG.DND5E.spellPreparationStates.always.value;
         const canEdit = item.isOwner && !compendiumLocked;
-        return !item.hasRecharge && isPrepared && !isAlways && canEdit && !item.getFlag("dnd5e", "cachedFor");
+        return !item.hasRecharge && isPrepared && !isAlways && canEdit && !item.getFlag("dragons-and-ballz", "cachedFor");
       },
       onClick: (event, target) => this._onAction(target, "prepare", { event })
     }, {

@@ -209,7 +209,7 @@ export default class CalendarHUD extends BaseCalendarHUD {
    * @param {CalendarTimeDeltas} [deltas={}]  Information on the time change deltas.
    */
   async renderCore(deltas={}) {
-    const prefs = game.settings.get("dnd5e", "calendarPreferences");
+    const prefs = game.settings.get("dragons-and-ballz", "calendarPreferences");
     const dateFormatter = CONFIG.DND5E.calendar.formatters.find(f => f.value === prefs.formatters.date);
     this.element.querySelector(".calendar-date").innerText = dateFormatter ? game.time.calendar.format(
       game.time.components, dateFormatter.formatter

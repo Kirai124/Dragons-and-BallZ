@@ -233,7 +233,7 @@ export default class EncounterActorSheet extends MultiActorSheet {
     new Award({
       award: {
         currency: { ...this.actor.system.currency },
-        savedDestinations: this.actor.getFlag("dnd5e", "awardDestinations"),
+        savedDestinations: this.actor.getFlag("dragons-and-ballz", "awardDestinations"),
         xp: await this.actor.system.getXPValue()
       }
     }).render({ force: true });

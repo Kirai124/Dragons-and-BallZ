@@ -298,8 +298,8 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
       case "package": packs = this._onTogglePackage(target); break;
       default: return;
     }
-    const setting = { ...game.settings.get("dnd5e", "packSourceConfiguration"), ...packs };
-    await game.settings.set("dnd5e", "packSourceConfiguration", setting);
+    const setting = { ...game.settings.get("dragons-and-ballz", "packSourceConfiguration"), ...packs };
+    await game.settings.set("dragons-and-ballz", "packSourceConfiguration", setting);
     this.render();
   }
 
@@ -342,7 +342,7 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
    */
   static collateSources() {
     const sources = new Set();
-    const setting = game.settings.get("dnd5e", "packSourceConfiguration");
+    const setting = game.settings.get("dragons-and-ballz", "packSourceConfiguration");
     for ( const { collection, documentName } of game.packs ) {
       if ( (documentName !== "Actor") && (documentName !== "Item") ) continue;
       if ( setting[collection] !== false ) sources.add(collection);

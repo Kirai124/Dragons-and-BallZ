@@ -203,7 +203,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
    * @type {boolean}
    */
   get isRider() {
-    return !!this.item.getFlag("dnd5e", "riders.activity")?.includes?.(this.id);
+    return !!this.item.getFlag("dragons-and-ballz", "riders.activity")?.includes?.(this.id);
   }
 
   /* -------------------------------------------- */
@@ -213,7 +213,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
    * @type {boolean}
    */
   get isScaledScroll() {
-    return !!this.item.getFlag("dnd5e", "spellLevel");
+    return !!this.item.getFlag("dragons-and-ballz", "spellLevel");
   }
 
   /* -------------------------------------------- */
@@ -864,7 +864,7 @@ export default class BaseActivityData extends foundry.abstract.DataModel {
   _processDamagePart(damage, rollConfig, rollData, index=0, { formulaOptions, rules }={}) {
     const scaledFormula = damage.scaledFormula(rollConfig.scaling ?? rollData.scaling, formulaOptions);
     const parts = scaledFormula ? [scaledFormula] : [];
-    const lastType = this.item.getFlag("dnd5e", `last.${this.id}.damageType.${index}`);
+    const lastType = this.item.getFlag("dragons-and-ballz", `last.${this.id}.damageType.${index}`);
     const data = { ...rollData, roll: foundry.utils.deepClone(rollData.roll ?? {}) };
     data.roll.damage ??= {};
     data.roll.damage.type = (damage.types.has(lastType) ? lastType : null) ?? damage.types.first();

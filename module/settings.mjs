@@ -18,32 +18,32 @@ const { StringField } = foundry.data.fields;
  * Register all of the system's keybindings.
  */
 export function registerSystemKeybindings() {
-  game.keybindings.register("dnd5e", "skipDialogNormal", {
+  game.keybindings.register("dragons-and-ballz", "skipDialogNormal", {
     name: "KEYBINDINGS.DND5E.SkipDialogNormal",
     editable: [{ key: "ShiftLeft" }, { key: "ShiftRight" }]
   });
 
-  game.keybindings.register("dnd5e", "skipDialogAdvantage", {
+  game.keybindings.register("dragons-and-ballz", "skipDialogAdvantage", {
     name: "KEYBINDINGS.DND5E.SkipDialogAdvantage",
     editable: [{ key: "AltLeft" }, { key: "AltRight" }]
   });
 
-  game.keybindings.register("dnd5e", "skipDialogDisadvantage", {
+  game.keybindings.register("dragons-and-ballz", "skipDialogDisadvantage", {
     name: "KEYBINDINGS.DND5E.SkipDialogDisadvantage",
     editable: [{ key: "ControlLeft" }, { key: "ControlRight" }, { key: "OsLeft" }, { key: "OsRight" }]
   });
 
-  game.keybindings.register("dnd5e", "dragCopy", {
+  game.keybindings.register("dragons-and-ballz", "dragCopy", {
     name: "KEYBINDINGS.DND5E.DragCopy",
     editable: [{ key: "ControlLeft" }, { key: "ControlRight" }, { key: "AltLeft" }, { key: "AltRight" }]
   });
 
-  game.keybindings.register("dnd5e", "dragMove", {
+  game.keybindings.register("dragons-and-ballz", "dragMove", {
     name: "KEYBINDINGS.DND5E.DragMove",
     editable: [{ key: "ShiftLeft" }, { key: "ShiftRight" }, { key: "OsLeft" }, { key: "OsRight" }]
   });
 
-  game.keybindings.register("dnd5e", "toggleSheetMode", {
+  game.keybindings.register("dragons-and-ballz", "toggleSheetMode", {
     name: "KEYBINDINGS.DND5E.ToggleSheetMode",
     editable: [{ key: "KeyE", modifiers: ["Shift"] }],
     onDown: () => {
@@ -54,7 +54,7 @@ export function registerSystemKeybindings() {
     }
   });
 
-  game.keybindings.register("dnd5e", "openCompendiumBrowser", {
+  game.keybindings.register("dragons-and-ballz", "openCompendiumBrowser", {
     name: "KEYBINDINGS.DND5E.OpenCompendiumBrowser",
     editable: [{ key: "KeyB", modifiers: ["Shift"] }],
     onDown: () => {
@@ -74,7 +74,7 @@ export function registerSystemKeybindings() {
  */
 export function registerSystemSettings() {
   // Internal System Migration Version
-  game.settings.register("dnd5e", "systemMigrationVersion", {
+  game.settings.register("dragons-and-ballz", "systemMigrationVersion", {
     name: "System Migration Version",
     scope: "world",
     config: false,
@@ -83,14 +83,14 @@ export function registerSystemSettings() {
   });
 
   // Polymorph Settings
-  game.settings.register("dnd5e", "transformationSettings", {
+  game.settings.register("dragons-and-ballz", "transformationSettings", {
     scope: "client",
     config: false,
     type: TransformationSetting
   });
 
   // Rules version
-  game.settings.register("dnd5e", "rulesVersion", {
+  game.settings.register("dragons-and-ballz", "rulesVersion", {
     name: "SETTINGS.DND5E.RULESVERSION.Name",
     hint: "SETTINGS.DND5E.RULESVERSION.Hint",
     scope: "world",
@@ -105,7 +105,7 @@ export function registerSystemSettings() {
   });
 
   // Movement automation
-  game.settings.register("dnd5e", "movementAutomation", {
+  game.settings.register("dragons-and-ballz", "movementAutomation", {
     name: "SETTINGS.DND5E.AUTOMATION.Movement.Name",
     hint: "SETTINGS.DND5E.AUTOMATION.Movement.Hint",
     scope: "world",
@@ -120,7 +120,7 @@ export function registerSystemSettings() {
   });
 
   // Falling automation
-  game.settings.register("dnd5e", "disableFalling", {
+  game.settings.register("dragons-and-ballz", "disableFalling", {
     config: true,
     default: false,
     hint: "SETTINGS.DND5E.AUTOMATION.Falling.Hint",
@@ -130,7 +130,7 @@ export function registerSystemSettings() {
   });
 
   // Sense-to-token vision sync
-  game.settings.register("dnd5e", "senseVisionSync", {
+  game.settings.register("dragons-and-ballz", "senseVisionSync", {
     name: "SETTINGS.DND5E.AUTOMATION.SenseVision.Name",
     hint: "SETTINGS.DND5E.AUTOMATION.SenseVision.Hint",
     scope: "world",
@@ -143,7 +143,7 @@ export function registerSystemSettings() {
   });
 
   // Allow rotating square templates
-  game.settings.register("dnd5e", "gridAlignedSquareTemplates", {
+  game.settings.register("dragons-and-ballz", "gridAlignedSquareTemplates", {
     name: "SETTINGS.5eGridAlignedSquareTemplatesN",
     hint: "SETTINGS.5eGridAlignedSquareTemplatesL",
     scope: "world",
@@ -153,7 +153,7 @@ export function registerSystemSettings() {
   });
 
   // Loyalty
-  game.settings.register("dnd5e", "loyaltyScore", {
+  game.settings.register("dragons-and-ballz", "loyaltyScore", {
     name: "SETTINGS.DND5E.LOYALTY.Name",
     hint: "SETTINGS.DND5E.LOYALTY.Hint",
     scope: "world",
@@ -163,7 +163,7 @@ export function registerSystemSettings() {
   });
 
   // Piety
-  game.settings.register("dnd5e", "pietyScore", {
+  game.settings.register("dragons-and-ballz", "pietyScore", {
     name: "SETTINGS.DND5E.PIETY.Name",
     hint: "SETTINGS.DND5E.PIETY.Hint",
     scope: "world",
@@ -173,7 +173,7 @@ export function registerSystemSettings() {
   });
 
   // Disable Advancements
-  game.settings.register("dnd5e", "disableAdvancements", {
+  game.settings.register("dragons-and-ballz", "disableAdvancements", {
     name: "SETTINGS.5eNoAdvancementsN",
     hint: "SETTINGS.5eNoAdvancementsL",
     scope: "world",
@@ -183,7 +183,7 @@ export function registerSystemSettings() {
   });
 
   // Disable Concentration Tracking
-  game.settings.register("dnd5e", "disableConcentration", {
+  game.settings.register("dragons-and-ballz", "disableConcentration", {
     name: "SETTINGS.5eNoConcentrationN",
     hint: "SETTINGS.5eNoConcentrationL",
     scope: "world",
@@ -193,7 +193,7 @@ export function registerSystemSettings() {
   });
 
   // Disable Exhaustion Automation
-  game.settings.register("dnd5e", "disableExhaustion", {
+  game.settings.register("dragons-and-ballz", "disableExhaustion", {
     name: "SETTINGS.5eNoExhaustionN",
     hint: "SETTINGS.5eNoExhaustionL",
     scope: "world",
@@ -204,7 +204,7 @@ export function registerSystemSettings() {
   });
 
   // Collapse Item Cards (by default)
-  game.settings.register("dnd5e", "autoCollapseItemCards", {
+  game.settings.register("dragons-and-ballz", "autoCollapseItemCards", {
     name: "SETTINGS.5eAutoCollapseCardN",
     hint: "SETTINGS.5eAutoCollapseCardL",
     scope: "client",
@@ -217,7 +217,7 @@ export function registerSystemSettings() {
   });
 
   // Collapse Chat Card Trays
-  game.settings.register("dnd5e", "autoCollapseChatTrays", {
+  game.settings.register("dragons-and-ballz", "autoCollapseChatTrays", {
     name: "SETTINGS.DND5E.COLLAPSETRAYS.Name",
     hint: "SETTINGS.DND5E.COLLAPSETRAYS.Hint",
     scope: "client",
@@ -233,7 +233,7 @@ export function registerSystemSettings() {
   });
 
   // Chat log theme
-  game.settings.register("dnd5e", "chatLogTheme", {
+  game.settings.register("dragons-and-ballz", "chatLogTheme", {
     config: true,
     hint: "SETTINGS.DND5E.CHATLOG.Hint",
     name: "SETTINGS.DND5E.CHATLOG.Name",
@@ -252,7 +252,7 @@ export function registerSystemSettings() {
   });
 
   // Allow Player use of Effect Application Tray
-  game.settings.register("dnd5e", "allowPlayerEffectsTray", {
+  game.settings.register("dragons-and-ballz", "allowPlayerEffectsTray", {
     name: "SETTINGS.DND5E.PERMISSIONS.AllowEffects.Name",
     hint: "SETTINGS.DND5E.PERMISSIONS.AllowEffects.Hint",
     scope: "world",
@@ -262,7 +262,7 @@ export function registerSystemSettings() {
   });
 
   // Allow Rests from Sheet
-  game.settings.register("dnd5e", "allowRests", {
+  game.settings.register("dragons-and-ballz", "allowRests", {
     name: "SETTINGS.DND5E.PERMISSIONS.AllowRests.Name",
     hint: "SETTINGS.DND5E.PERMISSIONS.AllowRests.Hint",
     scope: "world",
@@ -272,7 +272,7 @@ export function registerSystemSettings() {
   });
 
   // Allow Polymorphing
-  game.settings.register("dnd5e", "allowPolymorphing", {
+  game.settings.register("dragons-and-ballz", "allowPolymorphing", {
     name: "SETTINGS.DND5E.PERMISSIONS.AllowTransformation.Name",
     hint: "SETTINGS.DND5E.PERMISSIONS.AllowTransformation.Hint",
     scope: "world",
@@ -282,7 +282,7 @@ export function registerSystemSettings() {
   });
 
   // Allow Summoning
-  game.settings.register("dnd5e", "allowSummoning", {
+  game.settings.register("dragons-and-ballz", "allowSummoning", {
     name: "SETTINGS.DND5E.PERMISSIONS.AllowSummoning.Name",
     hint: "SETTINGS.DND5E.PERMISSIONS.AllowSummoning.Hint",
     scope: "world",
@@ -292,7 +292,7 @@ export function registerSystemSettings() {
   });
 
   // Metric Length Weights
-  game.settings.register("dnd5e", "metricLengthUnits", {
+  game.settings.register("dragons-and-ballz", "metricLengthUnits", {
     name: "SETTINGS.DND5E.METRIC.LengthUnits.Name",
     hint: "SETTINGS.DND5E.METRIC.LengthUnits.Hint",
     scope: "world",
@@ -302,7 +302,7 @@ export function registerSystemSettings() {
   });
 
   // Metric Volume Weights
-  game.settings.register("dnd5e", "metricVolumeUnits", {
+  game.settings.register("dragons-and-ballz", "metricVolumeUnits", {
     name: "SETTINGS.DND5E.METRIC.VolumeUnits.Name",
     hint: "SETTINGS.DND5E.METRIC.VolumeUnits.Hint",
     scope: "world",
@@ -312,7 +312,7 @@ export function registerSystemSettings() {
   });
 
   // Metric Unit Weights
-  game.settings.register("dnd5e", "metricWeightUnits", {
+  game.settings.register("dragons-and-ballz", "metricWeightUnits", {
     name: "SETTINGS.DND5E.METRIC.WeightUnits.Name",
     hint: "SETTINGS.DND5E.METRIC.WeightUnits.Hint",
     scope: "world",
@@ -322,7 +322,7 @@ export function registerSystemSettings() {
   });
 
   // Strict validation
-  game.settings.register("dnd5e", "strictValidation", {
+  game.settings.register("dragons-and-ballz", "strictValidation", {
     scope: "world",
     config: false,
     type: Boolean,
@@ -330,7 +330,7 @@ export function registerSystemSettings() {
   });
 
   // Compendium Browser source exclusion
-  game.settings.registerMenu("dnd5e", "packSourceConfiguration", {
+  game.settings.registerMenu("dragons-and-ballz", "packSourceConfiguration", {
     name: "DND5E.CompendiumBrowser.Sources.Name",
     label: "DND5E.CompendiumBrowser.Sources.Label",
     hint: "DND5E.CompendiumBrowser.Sources.Hint",
@@ -339,7 +339,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "packSourceConfiguration", {
+  game.settings.register("dragons-and-ballz", "packSourceConfiguration", {
     name: "Pack Source Configuration",
     scope: "world",
     config: false,
@@ -356,7 +356,7 @@ export function registerSystemSettings() {
   });
 
   // Bastions
-  game.settings.registerMenu("dnd5e", "bastionConfiguration", {
+  game.settings.registerMenu("dragons-and-ballz", "bastionConfiguration", {
     name: "DND5E.Bastion.Configuration.Name",
     label: "DND5E.Bastion.Configuration.Label",
     hint: "DND5E.Bastion.Configuration.Hint",
@@ -365,7 +365,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "bastionConfiguration", {
+  game.settings.register("dragons-and-ballz", "bastionConfiguration", {
     name: "Bastion Configuration",
     scope: "world",
     config: false,
@@ -379,7 +379,7 @@ export function registerSystemSettings() {
   });
 
   // Calendar Settings
-  game.settings.registerMenu("dnd5e", "calendarConfiguration", {
+  game.settings.registerMenu("dragons-and-ballz", "calendarConfiguration", {
     name: "DND5E.CALENDAR.Configuration.Name",
     label: "DND5E.CALENDAR.Configuration.Label",
     hint: "DND5E.CALENDAR.Configuration.Hint",
@@ -387,7 +387,7 @@ export function registerSystemSettings() {
     type: CalendarSettingsConfig
   });
 
-  game.settings.register("dnd5e", "calendar", {
+  game.settings.register("dragons-and-ballz", "calendar", {
     name: "DND5E.CALENDAR.FIELDS.calendar.label",
     hint: "DND5E.CALENDAR.FIELDS.calendar.hint",
     scope: "world",
@@ -400,7 +400,7 @@ export function registerSystemSettings() {
     requiresReload: true
   });
 
-  game.settings.register("dnd5e", "calendarConfig", {
+  game.settings.register("dragons-and-ballz", "calendarConfig", {
     name: "Calendar Configuration",
     scope: "world",
     config: false,
@@ -411,7 +411,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "calendarPreferences", {
+  game.settings.register("dragons-and-ballz", "calendarPreferences", {
     name: "Calendar Preferences",
     scope: "user",
     config: false,
@@ -420,7 +420,7 @@ export function registerSystemSettings() {
   });
 
   // Combat Settings
-  game.settings.registerMenu("dnd5e", "combatConfiguration", {
+  game.settings.registerMenu("dragons-and-ballz", "combatConfiguration", {
     name: "SETTINGS.DND5E.COMBAT.Name",
     label: "SETTINGS.DND5E.COMBAT.Label",
     hint: "SETTINGS.DND5E.COMBAT.Hint",
@@ -429,7 +429,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "autoRecharge", {
+  game.settings.register("dragons-and-ballz", "autoRecharge", {
     name: "SETTINGS.DND5E.NPCS.AutoRecharge.Name",
     hint: "SETTINGS.DND5E.NPCS.AutoRecharge.Hint",
     scope: "world",
@@ -443,7 +443,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "autoRollNPCHP", {
+  game.settings.register("dragons-and-ballz", "autoRollNPCHP", {
     name: "SETTINGS.DND5E.NPCS.AutoRollNPCHP.Name",
     hint: "SETTINGS.DND5E.NPCS.AutoRollNPCHP.Hint",
     scope: "world",
@@ -457,7 +457,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "criticalDamageModifiers", {
+  game.settings.register("dragons-and-ballz", "criticalDamageModifiers", {
     name: "SETTINGS.DND5E.CRITICAL.MultiplyModifiers.Name",
     hint: "SETTINGS.DND5E.CRITICAL.MultiplyModifiers.Hint",
     scope: "world",
@@ -466,7 +466,7 @@ export function registerSystemSettings() {
     default: false
   });
 
-  game.settings.register("dnd5e", "criticalDamageMaxDice", {
+  game.settings.register("dragons-and-ballz", "criticalDamageMaxDice", {
     name: "SETTINGS.DND5E.CRITICAL.MaxDice.Name",
     hint: "SETTINGS.DND5E.CRITICAL.MaxDice.Hint",
     scope: "world",
@@ -475,7 +475,7 @@ export function registerSystemSettings() {
     default: false
   });
 
-  game.settings.register("dnd5e", "encounterPlacementBehavior", {
+  game.settings.register("dragons-and-ballz", "encounterPlacementBehavior", {
     name: "SETTINGS.DND5E.ENCOUNTERS.EncounterPlacementBehavior.Name",
     hint: "SETTINGS.DND5E.ENCOUNTERS.EncounterPlacementBehavior.Hint",
     scope: "world",
@@ -489,7 +489,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "initiativeDexTiebreaker", {
+  game.settings.register("dragons-and-ballz", "initiativeDexTiebreaker", {
     name: "SETTINGS.DND5E.COMBAT.DexTiebreaker.Name",
     hint: "SETTINGS.DND5E.COMBAT.DexTiebreaker.Hint",
     scope: "world",
@@ -498,7 +498,7 @@ export function registerSystemSettings() {
     type: Boolean
   });
 
-  game.settings.register("dnd5e", "initiativeGroupCombatants", {
+  game.settings.register("dragons-and-ballz", "initiativeGroupCombatants", {
     name: "SETTINGS.DND5E.COMBAT.InitiativeGroupCombatants.Name",
     hint: "SETTINGS.DND5E.COMBAT.InitiativeGroupCombatants.Hint",
     scope: "world",
@@ -507,7 +507,7 @@ export function registerSystemSettings() {
     type: Boolean
   });
 
-  game.settings.register("dnd5e", "initiativeGroupRoll", {
+  game.settings.register("dragons-and-ballz", "initiativeGroupRoll", {
     name: "SETTINGS.DND5E.COMBAT.InitiativeGroupRoll.Name",
     hint: "SETTINGS.DND5E.COMBAT.InitiativeGroupRoll.Hint",
     scope: "world",
@@ -516,7 +516,7 @@ export function registerSystemSettings() {
     type: Boolean
   });
 
-  game.settings.register("dnd5e", "initiativeScore", {
+  game.settings.register("dragons-and-ballz", "initiativeScore", {
     name: "SETTINGS.DND5E.COMBAT.InitiativeScore.Name",
     hint: "SETTINGS.DND5E.COMBAT.InitiativeScore.Hint",
     scope: "world",
@@ -530,7 +530,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "autoApplyDowned", {
+  game.settings.register("dragons-and-ballz", "autoApplyDowned", {
     name: "SETTINGS.DND5E.COMBAT.AutoApplyDowned.Name",
     hint: "SETTINGS.DND5E.COMBAT.AutoApplyDowned.Hint",
     scope: "world",
@@ -546,7 +546,7 @@ export function registerSystemSettings() {
   });
 
   // Variant Rules
-  game.settings.registerMenu("dnd5e", "variantRulesConfiguration", {
+  game.settings.registerMenu("dragons-and-ballz", "variantRulesConfiguration", {
     name: "SETTINGS.DND5E.VARIANT.Name",
     label: "SETTINGS.DND5E.VARIANT.Label",
     hint: "SETTINGS.DND5E.VARIANT.Hint",
@@ -555,7 +555,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "allowFeats", {
+  game.settings.register("dragons-and-ballz", "allowFeats", {
     name: "SETTINGS.DND5E.VARIANT.AllowFeats.Name",
     hint: "SETTINGS.DND5E.VARIANT.AllowFeats.Hint",
     scope: "world",
@@ -564,7 +564,7 @@ export function registerSystemSettings() {
     type: Boolean
   });
 
-  game.settings.register("dnd5e", "currencyWeight", {
+  game.settings.register("dragons-and-ballz", "currencyWeight", {
     name: "SETTINGS.DND5E.VARIANT.CurrencyWeight.Name",
     hint: "SETTINGS.DND5E.VARIANT.CurrencyWeight.Hint",
     scope: "world",
@@ -573,7 +573,7 @@ export function registerSystemSettings() {
     type: Boolean
   });
 
-  game.settings.register("dnd5e", "encumbrance", {
+  game.settings.register("dragons-and-ballz", "encumbrance", {
     name: "SETTINGS.DND5E.VARIANT.Encumbrance.Name",
     hint: "SETTINGS.DND5E.VARIANT.Encumbrance.Hint",
     scope: "world",
@@ -587,7 +587,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "honorScore", {
+  game.settings.register("dragons-and-ballz", "honorScore", {
     name: "SETTINGS.DND5E.VARIANT.HonorScore.Name",
     hint: "SETTINGS.DND5E.VARIANT.HonorScore.Hint",
     scope: "world",
@@ -597,7 +597,7 @@ export function registerSystemSettings() {
     requiresReload: true
   });
 
-  game.settings.register("dnd5e", "levelingMode", {
+  game.settings.register("dragons-and-ballz", "levelingMode", {
     name: "SETTINGS.DND5E.VARIANT.LevelingMode.Name",
     hint: "SETTINGS.DND5E.VARIANT.LevelingMode.Hint",
     scope: "world",
@@ -611,7 +611,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "proficiencyModifier", {
+  game.settings.register("dragons-and-ballz", "proficiencyModifier", {
     name: "SETTINGS.DND5E.VARIANT.ProficiencyModifier.Name",
     hint: "SETTINGS.DND5E.VARIANT.ProficiencyModifier.Hint",
     scope: "world",
@@ -624,7 +624,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "restVariant", {
+  game.settings.register("dragons-and-ballz", "restVariant", {
     name: "SETTINGS.DND5E.VARIANT.Rest.Name",
     hint: "SETTINGS.DND5E.VARIANT.Rest.Hint",
     scope: "world",
@@ -638,7 +638,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "sanityScore", {
+  game.settings.register("dragons-and-ballz", "sanityScore", {
     name: "SETTINGS.DND5E.VARIANT.SanityScore.Name",
     hint: "SETTINGS.DND5E.VARIANT.SanityScore.Hint",
     scope: "world",
@@ -649,7 +649,7 @@ export function registerSystemSettings() {
   });
 
   // Visibility Settings
-  game.settings.registerMenu("dnd5e", "visibilityConfiguration", {
+  game.settings.registerMenu("dragons-and-ballz", "visibilityConfiguration", {
     name: "SETTINGS.DND5E.VISIBILITY.Name",
     label: "SETTINGS.DND5E.VISIBILITY.Label",
     hint: "SETTINGS.DND5E.VISIBILITY.Hint",
@@ -658,7 +658,7 @@ export function registerSystemSettings() {
     restricted: true
   });
 
-  game.settings.register("dnd5e", "attackRollVisibility", {
+  game.settings.register("dragons-and-ballz", "attackRollVisibility", {
     name: "SETTINGS.DND5E.VISIBILITY.Attack.Name",
     hint: "SETTINGS.DND5E.VISIBILITY.Attack.Hint",
     scope: "world",
@@ -672,7 +672,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "bloodied", {
+  game.settings.register("dragons-and-ballz", "bloodied", {
     name: "SETTINGS.DND5E.BLOODIED.Name",
     hint: "SETTINGS.DND5E.BLOODIED.Hint",
     scope: "world",
@@ -686,7 +686,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "challengeVisibility", {
+  game.settings.register("dragons-and-ballz", "challengeVisibility", {
     name: "SETTINGS.DND5E.VISIBILITY.Challenge.Name",
     hint: "SETTINGS.DND5E.VISIBILITY.Challenge.Hint",
     scope: "world",
@@ -700,7 +700,7 @@ export function registerSystemSettings() {
     }
   });
 
-  game.settings.register("dnd5e", "concealItemDescriptions", {
+  game.settings.register("dragons-and-ballz", "concealItemDescriptions", {
     name: "SETTINGS.DND5E.VISIBILITY.ItemDescriptions.Name",
     hint: "SETTINGS.DND5E.VISIBILITY.ItemDescriptions.Hint",
     scope: "world",
@@ -710,7 +710,7 @@ export function registerSystemSettings() {
   });
 
   // Primary Group
-  game.settings.register("dnd5e", "primaryParty", {
+  game.settings.register("dragons-and-ballz", "primaryParty", {
     name: "Primary Party",
     scope: "world",
     config: false,
@@ -720,7 +720,7 @@ export function registerSystemSettings() {
   });
 
   // Control hints
-  game.settings.register("dnd5e", "controlHints", {
+  game.settings.register("dragons-and-ballz", "controlHints", {
     name: "DND5E.Controls.Name",
     hint: "DND5E.Controls.Hint",
     scope: "client",
@@ -730,7 +730,7 @@ export function registerSystemSettings() {
   });
 
   // NPC sheet default skills
-  game.settings.register("dnd5e", "defaultSkills", {
+  game.settings.register("dragons-and-ballz", "defaultSkills", {
     name: "SETTINGS.DND5E.DEFAULTSKILLS.Name",
     hint: "SETTINGS.DND5E.DEFAULTSKILLS.Hint",
     type: new foundry.data.fields.SetField(
@@ -769,7 +769,7 @@ function cacheSettings() {
  * Register additional settings after modules have had a chance to initialize to give them a chance to modify choices.
  */
 export function registerDeferredSettings() {
-  game.settings.register("dnd5e", "defaultDocumentSubtypes", {
+  game.settings.register("dragons-and-ballz", "defaultDocumentSubtypes", {
     name: "Default Document Subtypes",
     scope: "client",
     config: false,
