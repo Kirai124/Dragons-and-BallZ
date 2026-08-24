@@ -144,78 +144,78 @@ Hooks.once("init", function() {
 
   // Register sheet application classes
   const DocumentSheetConfig = foundry.applications.apps.DocumentSheetConfig;
-  DocumentSheetConfig.registerSheet(ActiveEffect, "dnd5e", applications.activeEffect.ActiveEffectSheet5e, {
+  DocumentSheetConfig.registerSheet(ActiveEffect, "dragons-and-ballz", applications.activeEffect.ActiveEffectSheet5e, {
     makeDefault: true,
     label: "DND5E.SheetClass.ActiveEffect"
   });
 
   DocumentSheetConfig.unregisterSheet(Actor, "core", foundry.appv1.sheets.ActorSheet);
-  DocumentSheetConfig.registerSheet(Actor, "dnd5e", applications.actor.CharacterActorSheet, {
+  DocumentSheetConfig.registerSheet(Actor, "dragons-and-ballz", applications.actor.CharacterActorSheet, {
     types: ["character"],
     makeDefault: true,
     label: "DND5E.SheetClass.Character"
   });
-  DocumentSheetConfig.registerSheet(Actor, "dnd5e", applications.actor.NPCActorSheet, {
+  DocumentSheetConfig.registerSheet(Actor, "dragons-and-ballz", applications.actor.NPCActorSheet, {
     types: ["npc"],
     makeDefault: true,
     label: "DND5E.SheetClass.NPC"
   });
-  DocumentSheetConfig.registerSheet(Actor, "dnd5e", applications.actor.VehicleActorSheet, {
+  DocumentSheetConfig.registerSheet(Actor, "dragons-and-ballz", applications.actor.VehicleActorSheet, {
     types: ["vehicle"],
     makeDefault: true,
     label: "DND5E.SheetClass.Vehicle"
   });
-  DocumentSheetConfig.registerSheet(Actor, "dnd5e", applications.actor.GroupActorSheet, {
+  DocumentSheetConfig.registerSheet(Actor, "dragons-and-ballz", applications.actor.GroupActorSheet, {
     types: ["group"],
     makeDefault: true,
     label: "DND5E.SheetClass.Group"
   });
-  DocumentSheetConfig.registerSheet(Actor, "dnd5e", applications.actor.EncounterActorSheet, {
+  DocumentSheetConfig.registerSheet(Actor, "dragons-and-ballz", applications.actor.EncounterActorSheet, {
     types: ["encounter"],
     makeDefault: true,
     label: "DND5E.SheetClass.Encounter"
   });
 
-  DocumentSheetConfig.registerSheet(Adventure, "dnd5e", applications.adventure.AdventureImporter5e, {
+  DocumentSheetConfig.registerSheet(Adventure, "dragons-and-ballz", applications.adventure.AdventureImporter5e, {
     canBeDefault: false,
     label: "DND5E.SheetClass.AdventureImporter"
   });
 
   DocumentSheetConfig.unregisterSheet(Item, "core", foundry.appv1.sheets.ItemSheet);
-  DocumentSheetConfig.registerSheet(Item, "dnd5e", applications.item.ItemSheet5e, {
+  DocumentSheetConfig.registerSheet(Item, "dragons-and-ballz", applications.item.ItemSheet5e, {
     makeDefault: true,
     label: "DND5E.SheetClass.Item"
   });
-  DocumentSheetConfig.unregisterSheet(Item, "dnd5e", applications.item.ItemSheet5e, { types: ["container"] });
-  DocumentSheetConfig.registerSheet(Item, "dnd5e", applications.item.ContainerSheet, {
+  DocumentSheetConfig.unregisterSheet(Item, "dragons-and-ballz", applications.item.ItemSheet5e, { types: ["container"] });
+  DocumentSheetConfig.registerSheet(Item, "dragons-and-ballz", applications.item.ContainerSheet, {
     makeDefault: true,
     types: ["container"],
     label: "DND5E.SheetClass.Container"
   });
 
-  DocumentSheetConfig.registerSheet(JournalEntry, "dnd5e", applications.journal.JournalEntrySheet5e, {
+  DocumentSheetConfig.registerSheet(JournalEntry, "dragons-and-ballz", applications.journal.JournalEntrySheet5e, {
     makeDefault: true,
     label: "DND5E.SheetClass.JournalEntry"
   });
-  DocumentSheetConfig.registerSheet(JournalEntry, "dnd5e", applications.journal.JournalSheet5e, {
+  DocumentSheetConfig.registerSheet(JournalEntry, "dragons-and-ballz", applications.journal.JournalSheet5e, {
     makeDefault: false,
     canConfigure: false,
     canBeDefault: false,
     label: "DND5E.SheetClass.JournalEntrySheetLegacy"
   });
-  DocumentSheetConfig.registerSheet(JournalEntryPage, "dnd5e", applications.journal.JournalClassPageSheet, {
+  DocumentSheetConfig.registerSheet(JournalEntryPage, "dragons-and-ballz", applications.journal.JournalClassPageSheet, {
     label: "DND5E.SheetClass.ClassSummary",
     types: ["class", "subclass"]
   });
-  DocumentSheetConfig.registerSheet(JournalEntryPage, "dnd5e", applications.journal.JournalMapLocationPageSheet, {
+  DocumentSheetConfig.registerSheet(JournalEntryPage, "dragons-and-ballz", applications.journal.JournalMapLocationPageSheet, {
     label: "DND5E.SheetClass.MapLocation",
     types: ["map"]
   });
-  DocumentSheetConfig.registerSheet(JournalEntryPage, "dnd5e", applications.journal.JournalRulePageSheet, {
+  DocumentSheetConfig.registerSheet(JournalEntryPage, "dragons-and-ballz", applications.journal.JournalRulePageSheet, {
     label: "DND5E.SheetClass.Rule",
     types: ["rule"]
   });
-  DocumentSheetConfig.registerSheet(JournalEntryPage, "dnd5e", applications.journal.JournalSpellListPageSheet, {
+  DocumentSheetConfig.registerSheet(JournalEntryPage, "dragons-and-ballz", applications.journal.JournalSpellListPageSheet, {
     label: "DND5E.SheetClass.SpellList",
     types: ["spells"]
   });
@@ -223,23 +223,23 @@ Hooks.once("init", function() {
   DocumentSheetConfig.unregisterSheet(RegionBehavior, "core", foundry.applications.sheets.RegionBehaviorConfig, {
     types: ["dnd5e.difficultTerrain", "dnd5e.rotateArea"]
   });
-  DocumentSheetConfig.registerSheet(RegionBehavior, "dnd5e", applications.regionBehavior.DifficultTerrainConfig, {
+  DocumentSheetConfig.registerSheet(RegionBehavior, "dragons-and-ballz", applications.regionBehavior.DifficultTerrainConfig, {
     label: "DND5E.SheetClass.DifficultTerrain",
     types: ["dnd5e.difficultTerrain"]
   });
-  DocumentSheetConfig.registerSheet(RegionBehavior, "dnd5e", applications.regionBehavior.RotateAreaConfig, {
+  DocumentSheetConfig.registerSheet(RegionBehavior, "dragons-and-ballz", applications.regionBehavior.RotateAreaConfig, {
     label: "DND5E.SheetClass.RotateArea",
     types: ["dnd5e.rotateArea"]
   });
 
-  DocumentSheetConfig.registerSheet(RollTable, "dnd5e", applications.RollTableSheet5e, {
+  DocumentSheetConfig.registerSheet(RollTable, "dragons-and-ballz", applications.RollTableSheet5e, {
     makeDefault: true,
     label: "DND5E.SheetClass.RollTable"
   });
 
   CONFIG.Token.prototypeSheetClass = applications.PrototypeTokenConfig5e;
   DocumentSheetConfig.unregisterSheet(TokenDocument, "core", foundry.applications.sheets.TokenConfig);
-  DocumentSheetConfig.registerSheet(TokenDocument, "dnd5e", applications.TokenConfig5e, {
+  DocumentSheetConfig.registerSheet(TokenDocument, "dragons-and-ballz", applications.TokenConfig5e, {
     label: "DND5E.SheetClass.Token"
   });
 
