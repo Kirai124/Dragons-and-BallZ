@@ -1,0 +1,39 @@
+{
+  "_id": "3025d860c545096f",
+  "name": "Perfected Divinity",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>U7/U6</em></p>\n<p><strong>Requires: Divine Combination</strong>\nYou have decided to master the full capabilities of your Super Saiyan God, keeping the ki within your body to enhance all capabilities. You may now apply <em>Super Saiyan Grade 4</em> to the <em>Super Saiyan God</em> <strong>Power-Up</strong>.</p>\n<p>When you would end this <strong>Power-Up</strong>, your aura bursts out in a moment of uncontrolled power. You gain +4 <strong>Power Bonus</strong> until the end of your next turn. Afterwards gaining 2 <em>Ranks of Exhaustion</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "perfected-divinity",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Divine Combination",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5549,
+        "endLine": 5557
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

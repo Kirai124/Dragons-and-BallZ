@@ -1,0 +1,39 @@
+{
+  "_id": "e371faef96a6b06e",
+  "name": "Crane Strike",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  10 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>          Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>Make a <em>Combo Attack Roll</em> against a target of your choice within range, dealing your <em>Unarmed Strike Damage Die</em> on a hit and lowering the <strong>AC</strong> of the target by 1 for their next 2 rounds.\nA target cannot be affected by this or a similar effect from a technique more than once at a time.</p>\n",
+      "chat": ""
+    },
+    "identifier": "crane-strike",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "melee",
+    "kiCost": "10 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6518,
+        "endLine": 6530
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

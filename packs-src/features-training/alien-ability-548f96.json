@@ -1,0 +1,40 @@
+{
+  "_id": "548f9673a65d76c1",
+  "name": "Alien Ability",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Choose one <em>Damage Type</em> from the list below, this can not be changed later. You gain the option to change the <em>Damage Type</em> of your <strong>Techniques/Spells</strong>, <em>Unarmed Strikes</em>, and <em>Basic Ki Blasts</em> to this <em>Damage Type</em>.</p>\n<ul>\n<li>Fire</li>\n<li>Cold</li>\n<li>Lightning</li>\n<li>Thunder</li>\n<li>Force</li>\n<li>Psychic</li>\n<li>Poison</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "alien-alien-ability",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1314,
+        "endLine": 1324
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Alien"
+    }
+  }
+}

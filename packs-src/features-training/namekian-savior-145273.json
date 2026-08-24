@@ -1,0 +1,39 @@
+{
+  "_id": "1452736c5fdc8bd8",
+  "name": "Namekian Savior",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Fusing with at least 3 Namekians and either Orange or Red-Eyed Namekian</strong>\nYou are the hero the <em>Namekian Book of Prophecy</em> spoke of. You can now use <em>Super Namekian</em> and your <strong>Required Transformation</strong> as a <strong>Combination Transformation</strong> known as <em>Namekian Savior</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "namekian-savior",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Fusing with at least 3 Namekians and either Orange or Red-Eyed Namekian",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5878,
+        "endLine": 5885
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

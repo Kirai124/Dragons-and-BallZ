@@ -1,0 +1,42 @@
+{
+  "_id": "759acc0046ec9f11",
+  "name": "Javelin",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 5,000 Zeni | <strong>Damage:</strong> 1d6 Piercing | <strong>Weapon Properties:</strong> Thrown (range 30/120)</p>\n",
+      "chat": ""
+    },
+    "identifier": "javelin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9459,
+        "endLine": 9470
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

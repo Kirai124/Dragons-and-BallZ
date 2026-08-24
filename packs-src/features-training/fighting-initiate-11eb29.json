@@ -1,0 +1,39 @@
+{
+  "_id": "11eb29872eb379fd",
+  "name": "Fighting Initiate",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your martial training has helped you develop a particular style of fighting. As a result, you learn one Fighting Style option of your choice from the Warrior Class. If you already have a style, the one you choose must be different.</p>\n<p>Whenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the Warrior Class that you don't have.</p>\n",
+      "chat": ""
+    },
+    "identifier": "fighting-initiate",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5279,
+        "endLine": 5284
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

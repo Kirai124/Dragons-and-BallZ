@@ -1,0 +1,40 @@
+{
+  "_id": "518f01e642c984a1",
+  "name": "Magical Shape-Shifters",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Years of hiding have made Neko Majins a master of hiding their true self.</p>\n<p>At <strong>Level</strong> 1 you know the <em>Disguise Self</em> and <em>Alter Self</em> <strong>Spells</strong> as if through the <em>Mysticism</em> <strong>Class Feature</strong> except their duration becomes 8 hours.</p>\n<p>At <strong>Level</strong> 10 you also gain the <em>Polymorph</em> <strong>Spell</strong> as if through the <em>Mysticism</em> <strong>Class Feature</strong>.\nThese <strong>Spells</strong> can only target yourself.</p>\n",
+      "chat": ""
+    },
+    "identifier": "neko-majin-magical-shape-shifters",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2026,
+        "endLine": 2034
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Neko Majin"
+    }
+  }
+}

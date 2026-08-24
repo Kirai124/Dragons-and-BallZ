@@ -1,0 +1,40 @@
+{
+  "_id": "25c664c3dfed2354",
+  "name": "Konastian",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 to any Ability Score</li>\n</ul>\n<p>Your Konatsian blood has manifested into warrior potential.</p>\n<p>You gain a bonus to Static Bonus with all melee attacks and techniques while wielding a simple or martial weapon that you are proficient with equal to your Ki Rank. You may also use any weapon that gains this benefit in place of an unarmed strike for a melee technique.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-konastian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1561,
+        "endLine": 1567
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

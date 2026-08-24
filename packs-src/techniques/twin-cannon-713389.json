@@ -1,0 +1,39 @@
+{
+  "_id": "713389708badc22d",
+  "name": "Twin Cannon",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  45 Ki</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Instant Galick gun</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  120 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Beam</li>\n</ul>\n<p>The user fires a purple beam from each hand. Make 2 <em>Beam Attack Rolls</em> dealing 6d6 <em>Ki Damage</em> on each successful hit. Each <em>Beam Attack Roll</em> can target a different target in range.</p>\n",
+      "chat": ""
+    },
+    "identifier": "twin-cannon",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "beam",
+    "kiCost": "45 Ki",
+    "castingTime": "1 Action",
+    "range": "120 Feet",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Instant Galick gun*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8476,
+        "endLine": 8494
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "89fbe5a4ff755ebf",
+  "name": "Paralysis Shocker",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  35 Ki</li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  30 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          1 Minute (Concentration)</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>Choose a target within range, The target must make a <em>Strength Saving Throw</em> or be <em>Paralyzed</em> for the duration. As an Action on their turn, the target may attempt to make the save again to free themself.</p>\n",
+      "chat": ""
+    },
+    "identifier": "paralysis-shocker",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "omni",
+    "kiCost": "35 Ki",
+    "castingTime": "1 Action",
+    "range": "30 Feet",
+    "duration": "1 Minute (Concentration)",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8336,
+        "endLine": 8348
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "79bf36b5316bd564",
+  "name": "Amazing Impact",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  12 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>          Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A stomach shot designed to knock the wind out of an opponent.</p>\n<p>Make a <em>Combo Attack Roll</em> dealing your <em>Unarmed Strike Damage Die</em> + 2d10 <em>Bludgeoning Damage</em> on a hit and the target cannot take Reactions until the start of their next turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "amazing-impact",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "12 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6675,
+        "endLine": 6687
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

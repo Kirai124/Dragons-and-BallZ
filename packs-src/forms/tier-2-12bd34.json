@@ -1,0 +1,41 @@
+{
+  "_id": "12bd34416a7cda94",
+  "name": "Tier 2",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>2 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 20 ft.</li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "tier-2",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Potential Unlock",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "action",
+    "powerBonus": 2,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Non-Race Specific; Potential Unlock"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4735,
+        "endLine": 4740
+      },
+      "formFamily": "Potential Unlock"
+    }
+  }
+}

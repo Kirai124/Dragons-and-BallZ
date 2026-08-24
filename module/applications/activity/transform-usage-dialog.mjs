@@ -16,7 +16,7 @@ export default class TransformUsageDialog extends ActivityUsageDialog {
   static PARTS = {
     ...super.PARTS,
     creation: {
-      template: "systems/dnd5e/templates/activity/transform-usage-creation.hbs"
+      template: "systems/dragons-and-ballz/templates/activity/transform-usage-creation.hbs"
     }
   };
 

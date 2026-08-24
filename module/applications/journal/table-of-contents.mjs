@@ -35,7 +35,7 @@ export default class TableOfContentsCompendium extends foundry.applications.side
   static PARTS = {
     article: {
       root: true,
-      template: "systems/dnd5e/templates/journal/table-of-contents.hbs"
+      template: "systems/dragons-and-ballz/templates/journal/table-of-contents.hbs"
     }
   };
 

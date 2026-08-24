@@ -1,0 +1,33 @@
+{
+  "_id": "26dd51ad254da04a",
+  "name": "Pulling the Z-Sword",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Lodged and sealed in an indestructable stone collumn, removing the <em>Z-Sword</em> is a herculean task of almost divine proportions. To succeed in removing the sword you must succeed in 3 <strong>DC 20</strong> <em>Athletics Checks</em> or take 1 <em>Rank of Exhaustion</em> on a failure as you end up slipping off the blade with skinned hands.\nYou may add half of your current <strong>Power Bonus</strong> to this <em>Athletics Checks</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "pulling-the-z-sword",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "ordeal",
+    "boonCost": 0,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "ordeal"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3336,
+        "endLine": 3340
+      }
+    }
+  }
+}

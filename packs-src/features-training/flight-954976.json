@@ -1,0 +1,39 @@
+{
+  "_id": "954976c9658feeba",
+  "name": "Flight",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You may take this <strong>Heroic Feature</strong> repeatedly to gain a 15 foot <em>Flight Speed</em> or increase your current <em>Flight Speed</em> by 15 feet.</p>\n",
+      "chat": ""
+    },
+    "identifier": "flight",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6150,
+        "endLine": 6152
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

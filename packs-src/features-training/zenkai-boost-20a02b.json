@@ -1,0 +1,40 @@
+{
+  "_id": "20a02b15ff349267",
+  "name": "Zenkai Boost",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>When pushed to near death the saiyan spirit is known to rebel against the threat of death, creating a stronger warrior when they are pushed to near death.</p>\n<p>Whenever you fail a <em>Death Saving Throw</em>, roll a <em>d20 Check</em> with a DC starting at 8, increasing by 2 each time you succeed. On a Success you gain 1 <em>Training Boon</em>. You may use this <em>Training Boon</em> immedietly or as soon as you regain conciousness for the chance at a second <em>Zenkai Boost</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "saiyans-zenkai-boost",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1089,
+        "endLine": 1092
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Saiyans"
+    }
+  }
+}

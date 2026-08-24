@@ -24,7 +24,7 @@ export default class ItemChoiceAdvancement extends ItemGrantAdvancement {
       },
       order: 50,
       icon: "icons/magic/symbols/cog-orange-red.webp",
-      typeIcon: "systems/dnd5e/icons/svg/item-choice.svg",
+      typeIcon: "systems/dragons-and-ballz/icons/svg/item-choice.svg",
       title: _loc("DND5E.ADVANCEMENT.ItemChoice.Title"),
       hint: _loc("DND5E.ADVANCEMENT.ItemChoice.Hint"),
       multiLevel: true,

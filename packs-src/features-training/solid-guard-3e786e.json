@@ -1,0 +1,39 @@
+{
+  "_id": "3e786ee112fcea9f",
+  "name": "Solid Guard",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you use the <em>Block</em> <strong>Manuever</strong>, you may spend twice as much <strong>Stamina</strong> to take 1/4 damage instead of half.</p>\n",
+      "chat": ""
+    },
+    "identifier": "solid-guard",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6333,
+        "endLine": 6338
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

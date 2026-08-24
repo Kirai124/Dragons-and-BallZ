@@ -1,0 +1,139 @@
+{
+  "_id": "fafb0bb6eca4e8c1",
+  "name": "Greys",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/greys.webp",
+  "system": {
+    "description": {
+      "value": "<h3>History</h3>\n<p>Once a peaceful and spiritual people, the Greys lived simplistic prosperity. Using their incredible strength they tilled the land to their whims and grew kingdom sized farms. Peace rained until a mysterious threat appeared, single-handedly almost causing this race to go extinct. Luckily a few survived and escaped off of their plundered home.</p>\n<h3>Physical Description</h3>\n<p>Purple and humanoid, Greys are hairless with tympaniums in place of ears. They range from 6 to 9 feet once they reach maturity, with overly defined musculature and almost pitch black eyes.</p>\n<h3>Society</h3>\n<p>Since the destruction of their Homeworld the Greys have become wanderers, some even leaving the bounds of their Ancestral Universe 11 and propagating in other universes.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p>Constitution +2 or Strength +2, Wisdom +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet</p>\n<h4>Languages</h4>\n<p>You can speak Common and 1 additional <em>Language</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Ki Control</em> and <em>Athletics Skills</em></p>\n<h3>Racial Features</h3>\n<h4>Raw Talent</h4>\n<p>Greys find themselves regularly surpassing the limitations of other races. A single <em>Ability Score Maximum</em> of your choice is increased by 4.</p>\n<h4>Combative Nature</h4>\n<p>Once per Long Rest, you may initiate a <strong>Clash</strong> without spending <strong>Stamina</strong> or <strong>Ki</strong>. This becomes once per Short Rest at <strong>level 10</strong>.</p>\n<h4>Maximum Power</h4>\n<p>You gain the <em>Full Power</em> <strong>Transformation</strong> at <strong>Level 5</strong> and the <em>Super Full Power</em> <strong>Transformation</strong> at <strong>Level 10</strong>.</p>\n<h4>Destructive Strikes</h4>\n<p>Whenever you make an <em>Unarmed Strike</em> or <strong>Melee Technique</strong> you may spend <strong>Stamina</strong> to give yourself a <em>Static Boost</em> equal to the amount spent for that casting. You may not spend more than half of your <em>Proficiency Bonus</em>, rounded up, in <strong>Stamina</strong> in this manner for a single attack roll.</p>\n<h4>Meditative State</h4>\n<p>As an Action on your turn, you may enter a special meditation stance to regain 10x your <strong>Ki Rank</strong> in <strong>Ki</strong>. You may extend this meditation into your Bonus Action to gain an additional 50% of that amount.</p>\n",
+      "chat": ""
+    },
+    "identifier": "greys",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "434799dd17688780": {
+        "_id": "434799dd17688780",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "con": 2,
+            "str": 2
+          },
+          "locked": [],
+          "points": 1
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Constitution +2 or Strength +2, Wisdom +1"
+      },
+      "6352a33a400df37a": {
+        "_id": "6352a33a400df37a",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:ath",
+            "skills:kic"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Ki Control and Athletics Skills"
+      },
+      "f008b003fe309ff7": {
+        "_id": "f008b003fe309ff7",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and 1 additional Language of your choice."
+      },
+      "589d5d1ba8d6c76a": {
+        "_id": "589d5d1ba8d6c76a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a0c5409874a60f09",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b3bd8fe1ab038f8a",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.611557bdf39d0e2c",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1192a08464c11b59",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.c1640faea80dd0f7",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1784,
+        "endLine": 1830
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "61698aa68e9657ab",
+  "name": "Divine Shot",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> Special</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Ranged Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Round</li>\n<li><strong>Range:</strong> Self</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>Setting aside everything for the shot, you begin pouring your Ki into the next attack.</p>\n<p>You may spend an amount of <strong>Ki</strong> up to a max equal to 5x your <strong>Character Level</strong>. At the beginning of your next turn, you may make a <em>Combo Attack Roll</em>, no <em>Action Economy</em> required. On a hit, you deal your <em>Weapon Damage Die</em> + 2d12 <em>Ki Damage</em> for every incrememnts of 10 <strong>Ki</strong> that you spend.</p>\n<p>While within the round, all creatures have Advantage on <em>Attack Rolls</em> against you and you have Disadvantage on <em>Dexterity Saving Throws</em> you make.</p>\n<p>When you would <em>Charge</em> this <strong>Technique</strong>, the <em>Action Economy</em> for the <em>Charge</em> is 1 Round.</p>\n",
+      "chat": ""
+    },
+    "identifier": "divine-shot",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "weapon",
+    "kiCost": "Special",
+    "castingTime": "1 Round",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Ranged Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7526,
+        "endLine": 7544
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

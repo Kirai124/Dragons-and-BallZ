@@ -1,0 +1,39 @@
+{
+  "_id": "b9839826ac28259b",
+  "name": "Aggressive Aura",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your aura has become so powerful that it pushes away attacks. Your <strong>AC</strong> increases by 1.</p>\n<p>This <strong>Heroic Feature</strong> can be taken an amount of times equal to your <strong>Ki Rank.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "aggressive-aura",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6065,
+        "endLine": 6070
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

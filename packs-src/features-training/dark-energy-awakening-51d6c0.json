@@ -1,0 +1,39 @@
+{
+  "_id": "51d6c0d2d63b8c76",
+  "name": "Dark Energy Awakening",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain the <em>Dark Energy</em> <strong>Power-Up</strong> and do not need to make <em>Berserk Saving Throws.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "dark-energy-awakening",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5852,
+        "endLine": 5853
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

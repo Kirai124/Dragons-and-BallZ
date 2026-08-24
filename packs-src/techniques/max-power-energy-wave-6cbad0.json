@@ -1,0 +1,39 @@
+{
+  "_id": "6cbad0e7b12bd759",
+  "name": "Max Power Energy Wave",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 8 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 60 Feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Beam</li>\n</ul>\n<p>Fire a pure beam of energy with the full force of your Ki. Make a <em>Beam Attack Roll</em> dealing Xd6, where X is your <em>Wisdom Modifier.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "max-power-energy-wave",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "beam",
+    "kiCost": "8 Ki",
+    "castingTime": "1 Action",
+    "range": "60 Feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7716,
+        "endLine": 7730
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

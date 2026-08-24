@@ -1,0 +1,143 @@
+{
+  "_id": "254ec86d5dd88aa4",
+  "name": "Chronin",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/chronin.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>History</h3>\n<p>A secretive and long lived race, Chronins wander the galaxy learning and improving. Born with the innate ability to store excess time, generations of this has changed their biology to such a degree that they can live for hundreds if not thousands of years. Chronins tend to only have children in their final years, only raising thier children through their brief youth before leaving them to their own devices.</p>\n<h3>Physical Description</h3>\n<p>Purple and almost humanoid, Chronins are hairless with tympaniums in place of ears. They can range between 5 and 7 feet tall at maturity and can live between 1000 and 2000 years.</p>\n<h3>Society</h3>\n<p>Due to their upbringing Chronins rarely ever spend time around others of their species, instead traveling the stars for somewhere they may call home.</p>\n<p>Many Chronins become scientists and scholars, using their ability to manipulate time to persue the betterment of the future and eternal life; others still relish in their abilities, becoming mercinaries or assassins with deadly efficiency.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p>Wisdom +2 or Dexterity +2, Intellegence +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>You can speak Common and 1 additional <em>Language</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain any 2 <em>Skills</em> of your choice.</p>\n<h3>Racial Features</h3>\n<h4>Blood of Time</h4>\n<p>At <strong>Level 1</strong>, you gain the <em>Time Storage</em> <strong>Trained Feature</strong> and you can hold 1 additional <em>Time Point</em>.</p>\n<h4>High-Speed Reactions</h4>\n<p><strong>Manuevers</strong> require 1 less <strong>Stamina</strong> to use, to a minimum of 1.</p>\n<h4>Adaptability</h4>\n<p>Your race survives on it's ability to learn and adapt to threats. Whenever you are hit with a <em>Critical Hit</em>, roll a <em>d20 Check</em> with a DC starting at 12, increasing by 2 each time you succeed. On a successful check you gain 1 <strong>Training Boon</strong>. These <strong>Training Boons</strong> must be used immediately or at the start of your next turn.</p>\n<h4>Nomadic Tendencies</h4>\n<p>Due to generations of lonely upbringing and long lifespans, Chronins gain an additional 1 <strong>Training Boon</strong> when <strong>Training Solo</strong>.</p>\n<h4>Millenial Learning Curve</h4>\n<p>Chronins have unique brain chemistry to support their extremely long lifespans of thousands of years, due to this they are able to compartmentalize specific knowledge so that it can be remembered and improved on easily.</p>\n<p>At <strong>1st Level</strong> you gain 3 <em>Skill, Tool, or Item Proficiencies</em> of your choice. Each time your <em>Proficiency Bonus</em> increases you gain an additional proficiency of your choice. You may instead gain <em>Expertise</em> in a <em>Skill</em> you already have proficiency in.</p>\n",
+      "chat": ""
+    },
+    "identifier": "chronin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "8358e7a4d80c33a9": {
+        "_id": "8358e7a4d80c33a9",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "wis": 2,
+            "dex": 2
+          },
+          "locked": [],
+          "points": 1
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Wisdom +2 or Dexterity +2, Intellegence +1"
+      },
+      "b049b764225b89dd": {
+        "_id": "b049b764225b89dd",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain any 2 Skills of your choice."
+      },
+      "9fb08236fb19595b": {
+        "_id": "9fb08236fb19595b",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and 1 additional Language of your choice."
+      },
+      "5e19cf3939e4dd26": {
+        "_id": "5e19cf3939e4dd26",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.242353aa0dbf58bb",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ace359079b3b84e8",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5f91e240c7dd1db8",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.0f285d8c4fd08eb7",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f3835b78fbd5a1ca",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1639,
+        "endLine": 1694
+      }
+    }
+  }
+}

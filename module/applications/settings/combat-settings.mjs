@@ -16,19 +16,19 @@ export default class CombatSettingsConfig extends BaseSettingsConfig {
   /** @override */
   static PARTS = {
     initiative: {
-      template: "systems/dnd5e/templates/settings/base-config.hbs"
+      template: "systems/dragons-and-ballz/templates/settings/base-config.hbs"
     },
     criticals: {
-      template: "systems/dnd5e/templates/settings/base-config.hbs"
+      template: "systems/dragons-and-ballz/templates/settings/base-config.hbs"
     },
     npcs: {
-      template: "systems/dnd5e/templates/settings/base-config.hbs"
+      template: "systems/dragons-and-ballz/templates/settings/base-config.hbs"
     },
     conditions: {
-      template: "systems/dnd5e/templates/settings/base-config.hbs"
+      template: "systems/dragons-and-ballz/templates/settings/base-config.hbs"
     },
     encounterPlacement: {
-      template: "systems/dnd5e/templates/settings/base-config.hbs"
+      template: "systems/dragons-and-ballz/templates/settings/base-config.hbs"
     },
     footer: {
       template: "templates/generic/form-footer.hbs"

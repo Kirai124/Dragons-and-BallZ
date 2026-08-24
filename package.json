@@ -1,10 +1,13 @@
 {
   "name": "dragons-and-ballz",
-  "version": "0.4.0-dnd5e-base",
+  "version": "1.0.0",
   "description": "Dragons and BallZ - Foundry VTT system",
   "scripts": {
-    "build:css": "lessc less/dragons-and-ballz.less css/dragons-and-ballz.css --source-map",
-    "watch": "less-watch-compiler less/ css/dragons-and-ballz.css.watch --source-map"
+    "build:css": "lessc less/dragons-and-ballz.less dragons-and-ballz.css --source-map",
+    "watch": "less-watch-compiler less/ . --source-map",
+    "validate": "node scripts/validate-system.mjs",
+    "build:packs": "node scripts/build-nedb-packs.mjs",
+    "test": "node --test tests/*.test.mjs && node scripts/validate-system.mjs"
   },
   "devDependencies": {
     "less": "^4.6.7",

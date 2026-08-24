@@ -1,0 +1,42 @@
+{
+  "_id": "d9d1c5726148092b",
+  "name": "Armor Proficiency",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p>Anyone can put on a suit of armor or strap a shield to an arm. Only those proficient in the armor’s use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor that you lack proficiency with, you have disadvantage on any <em>ability check, saving throw, or attack roll</em> that involves <strong>Strength</strong> or <strong>Dexterity</strong>, and you can’t cast <strong>Spells</strong> or <strong>Techniques</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "armor-proficiency",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9242,
+        "endLine": 9245
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

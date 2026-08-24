@@ -1,0 +1,39 @@
+{
+  "_id": "83d1da74999852bc",
+  "name": "Action Surge",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional Action on top of your regular Action and a possible Bonus\naction. Once you use this <strong>Heroic Feature</strong>, you must finish a Short or Long rest before you can use it again.</p>\n<p>This Action must be used to take the <em>Attack Action</em>, <em>Ki Blast Action</em>, cast a <strong>Spell</strong> or <strong>Technique</strong>, use an item, or take the <em>Dash, Dodge</em>, or <em>Disengage Action</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "action-surge",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "This Action must be used to take the *Attack Action*, *Ki Blast Action*, cast a **Spell** or **Technique**, use an item, or take the *Dash, Dodge*, or *Disengage Action*.",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6059,
+        "endLine": 6064
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

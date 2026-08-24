@@ -30,7 +30,7 @@ export default class SplitStackDialog extends Dialog5e {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/apps/split-stack-dialog.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/split-stack-dialog.hbs"
     }
   };
 

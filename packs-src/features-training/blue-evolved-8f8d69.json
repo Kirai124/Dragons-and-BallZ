@@ -1,0 +1,39 @@
+{
+  "_id": "8f8d698926b1b3bd",
+  "name": "Blue Evolved",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>U7/U6/Ancient/Mutant</em></p>\n<p><strong>Requires: Super Saiyan God Evolution</strong>\nYou may now use <em>Super Saiyan God Evolution</em> instead of <em>Super Saiyan God</em> for the <em>Super Saiyan Blue</em> <strong>Combination Transformation</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "blue-evolved",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Super Saiyan God Evolution",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5541,
+        "endLine": 5548
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

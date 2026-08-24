@@ -23,7 +23,7 @@ export default class ModifyItemConfig extends AdvancementConfig {
   static PARTS = {
     ...super.PARTS,
     changes: {
-      template: "systems/dnd5e/templates/advancement/modify-item-config-changes.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/modify-item-config-changes.hbs"
     }
   };
 

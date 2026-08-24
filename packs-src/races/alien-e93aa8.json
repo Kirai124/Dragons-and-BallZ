@@ -1,0 +1,140 @@
+{
+  "_id": "e93aa840294ab21c",
+  "name": "Alien",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/alien.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<p><em>For specific alien races for the main manual please submit your ideas to the discord</em></p>\n<h3>History</h3>\n<p>Aliens are wide spread and varied with almost no 2 races appearing again.</p>\n<h3>Physical Description</h3>\n<p>Humanoid, marshmallow-like, or fruit shaped; Aliens come in all shapes and sizes.</p>\n<h3>Society</h3>\n<p>Aliens are spread across the stars and universes and most of them are normally not too special.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p>Any one <strong>Ability Score</strong> +2, Any one <strong>Ability Score</strong> +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>You can speak common and 1 additional <em>Language</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain any 2 <em>Skills</em> of your choice.</p>\n<h3>Racial Features</h3>\n<h4>Xeno Resistances</h4>\n<p>You gain <em>Resistance</em> against any 1 <em>Damage Type</em> of your choice, this can not be changed later.</p>\n<p>&lt;br&gt;</p>\n<h4>Alien Ability</h4>\n<p>Choose one <em>Damage Type</em> from the list below, this can not be changed later. You gain the option to change the <em>Damage Type</em> of your <strong>Techniques/Spells</strong>, <em>Unarmed Strikes</em>, and <em>Basic Ki Blasts</em> to this <em>Damage Type</em>.</p>\n<ul>\n<li>Fire</li>\n<li>Cold</li>\n<li>Lightning</li>\n<li>Thunder</li>\n<li>Force</li>\n<li>Psychic</li>\n<li>Poison</li>\n</ul>\n<h4>Alien Skill</h4>\n<p>You gain a <strong>Technique</strong> every time you <strong>Level-Up</strong> to 20 and 2 <strong>Techniques</strong> every level beyond. You also gain 1 additional <em>Training Boon</em> each time you have a <strong>Training Arc</strong>.</p>\n<h4>Maximum Power</h4>\n<p>You gain the <em>Full Power</em> <strong>Transformation</strong> at <strong>Level 5</strong> and the <em>Super Full Power</em> <strong>Transformation</strong> at <strong>Level 10</strong>.</p>\n<h4>Alien Battle Instincts</h4>\n<p>Once per Short or Long Rest, you can enter the <em>Enraged Condition</em> as a Bonus Action on your turn. Each time you use this after the first you gain 1 <strong>Rank of Exhaustion</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "alien",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "d4ff49fb84595465": {
+        "_id": "d4ff49fb84595465",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {},
+          "locked": [],
+          "points": 3
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Any one **Ability Score** +2, Any one **Ability Score** +1"
+      },
+      "2d962c6628aa6719": {
+        "_id": "2d962c6628aa6719",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain any 2 Skills of your choice."
+      },
+      "ec793eba4c4dfb86": {
+        "_id": "ec793eba4c4dfb86",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak common and 1 additional Language of your choice."
+      },
+      "6c2f9b94d21c7a19": {
+        "_id": "6c2f9b94d21c7a19",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.0417100b2527e9bb",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.548f9673a65d76c1",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.57aca92c6733bb1e",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.90dc43a2e3dc82a0",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a34a6740091824f0",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1279,
+        "endLine": 1342
+      }
+    }
+  }
+}

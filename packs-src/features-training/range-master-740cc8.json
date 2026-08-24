@@ -1,0 +1,39 @@
+{
+  "_id": "740cc8d5c878b3ca",
+  "name": "Range Master",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Choose one <strong>Ki Technique</strong> type from Beam, Blast, Barrage or Omni. All <strong>Techniques</strong> with that type have their Range inxreased by 50%.</p>\n<p>This <strong>Heroic Feature</strong> came taken a second time, to either increase the range of the chosen type by another 50% or to choose another type of <strong>Ki Technique</strong> to gain the benefit instead.</p>\n",
+      "chat": ""
+    },
+    "identifier": "range-master",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6308,
+        "endLine": 6312
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

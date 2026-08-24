@@ -1,0 +1,39 @@
+{
+  "_id": "1e763200cbde9442",
+  "name": "Moderately Armored",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have trained to master the use of medium armor and shields, gaining the following benefits:</p>\n<ul>\n<li>Increase your Strength or Dexterity score by 1, to a maximum of your current Ability Score Maximum.</li>\n<li>You gain proficiency with medium armor and shields.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "moderately-armored",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5359,
+        "endLine": 5364
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

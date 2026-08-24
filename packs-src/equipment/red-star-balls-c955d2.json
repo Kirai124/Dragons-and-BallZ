@@ -1,0 +1,42 @@
+{
+  "_id": "c955d21a62ce9c62",
+  "name": "Red Star Balls",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Red Star Dragon Balls</em> are the most commonly found kind of <strong>Dragon Balls.</strong> A set of <em>Red Star Dragon Balls</em> can be used a number of times equal to their maker's <em>Proficiency Bonus</em> before they become inert or create <em>Shadow Dragons</em> to expel the negative energy. A set of <em>Red Star Dragon Balls</em> can create one of two kinds of <strong>Wishing Dragons</strong>, listed below:</p>\n<h5>Gift Dragon</h5>\n<p><em>Gift</em> are true wish granters and as such are heavily tied to the power of their creator, being unable to pull off feats beyond them. <em>Gift Dragons</em> will attempt to satisfy a wish to the best of their abilities have even been known to warn others of possible consequences to their wish.</p>\n<h5>Deal Dragon</h5>\n<p><em>Deal Dragons</em> are much more rare, even among <strong>Wishing Dragons</strong>, allowing them to take something they view as\nan equal deal to perform greater wishes than <em>Gift Dragons</em>. <em>Deal Dragons</em> are crafty and almost never tell the user the <em>complete</em> truth in regards to the cost, such as telling the user what they are spending but neglecting to say how <em><strong>MUCH</strong></em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "red-star-balls",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 10037,
+        "endLine": 10050
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

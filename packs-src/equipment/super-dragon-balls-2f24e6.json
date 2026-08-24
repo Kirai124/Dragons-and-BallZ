@@ -1,0 +1,42 @@
+{
+  "_id": "2f24e6ae1536ff08",
+  "name": "Super Dragon Balls",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p>The original set of planet sized dragon balls created by the dragon god Zalama. These orbs are scattered across the multiverse and are said to be able to grant any wish without limitation.</p>\n",
+      "chat": ""
+    },
+    "identifier": "super-dragon-balls",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 10054,
+        "endLine": 10066
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

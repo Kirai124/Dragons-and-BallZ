@@ -1,0 +1,39 @@
+{
+  "_id": "c8297501329e6984",
+  "name": "Indomitable",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You can reroll a <em>Saving Throw</em> that you fail with a bonus to the roll equal to your <strong>Character Level</strong>. If you do so, you must use the new roll, and you can't use this feature again until you finish a Long Rest.</p>\n",
+      "chat": ""
+    },
+    "identifier": "indomitable",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6175,
+        "endLine": 6177
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

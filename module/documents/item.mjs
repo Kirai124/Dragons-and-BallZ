@@ -12,6 +12,7 @@ import ActivitiesTemplate from "../data/item/templates/activities.mjs";
 import PhysicalItemTemplate from "../data/item/templates/physical-item.mjs";
 import PropertyField from "../data/shared/property-field.mjs";
 import { formatIdentifier, staticID } from "../utils.mjs";
+import { useForm as useDragonBallForm, useTechnique as useDragonBallTechnique } from "../dragonball-workflows.mjs";
 import Scaling from "./scaling.mjs";
 import Proficiency from "./actor/proficiency.mjs";
 import SelectChoices from "./actor/select-choices.mjs";
@@ -36,7 +37,7 @@ const TextEditor = foundry.applications.ux.TextEditor.implementation;
 export default class Item5e extends SystemDocumentMixin(Item) {
 
   /** @override */
-  static DEFAULT_ICON = "systems/dnd5e/icons/svg/documents/item.svg";
+  static DEFAULT_ICON = "systems/dragons-and-ballz/icons/svg/documents/item.svg";
 
   /* -------------------------------------------- */
 
@@ -739,6 +740,11 @@ export default class Item5e extends SystemDocumentMixin(Item) {
    *                                                                   activities and was posted directly to chat.
    */
   async use(config={}, dialog={}, message={}) {
+    // Dragons and BallZ custom document types use the handbook combat workflows rather than
+    // pretending to be D&D spells. This keeps the inherited activity engine intact for actual spells.
+    if ( this.actor && (this.type === "technique") ) return useDragonBallTechnique(this, config);
+    if ( this.actor && (this.type === "form") ) return useDragonBallForm(this, config);
+
     let event = config.event;
     const activities = this.system.activities?.filter(a => a.canUse);
     if ( activities?.length ) {

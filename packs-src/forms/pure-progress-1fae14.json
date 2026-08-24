@@ -1,0 +1,41 @@
+{
+  "_id": "1fae1411231973b8",
+  "name": "Pure Progress",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Power-Up</strong>\nYour power grows to adapts to the enemy to the best of your ability:</p>\n<ul>\n<li>+1 <strong>Power Bonus</strong> at the start of your turn, to a maximum to half your <em>Proficiency Bonus</em>, rounded down</li>\n<li>Your <em>Unarmed Damage Die</em> becomes equal to the highest <em>Unarmed Strike or Weapon Damage Die</em> from a hostile creature that targets you, reverting back at the end of this <strong>Form</strong></li>\n<li>Increase all <em>Movement Speed</em> by 5 ft. per every <strong>Power</strong> you have from this <strong>Form</strong></li>\n<li>Your <strong>Stamina Upkeep</strong> equal your <strong>Ki Rank</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "pure-progress",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Pure Progress",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "",
+    "activation": "bonus",
+    "powerBonus": 1,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Non-Race Specific; Pure Progress"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4808,
+        "endLine": 4817
+      },
+      "formFamily": "Pure Progress"
+    }
+  }
+}

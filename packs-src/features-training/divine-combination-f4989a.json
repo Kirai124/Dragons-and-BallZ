@@ -1,0 +1,39 @@
+{
+  "_id": "f4989ac43bcea2e5",
+  "name": "Divine Combination",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>U7/U6/Ancient/Mutant</em></p>\n<p><strong>Requires: Realm of the Gods</strong>\nYou may use your <strong>Forms</strong> from the <strong>Realm of the Gods Feat</strong> as a <strong>Combination Transformation</strong> known as <em>Super Saiyan God Super Saiyan</em> or shortened as <em>Super Saiyan Blue.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "divine-combination",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Realm of the Gods",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5527,
+        "endLine": 5533
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

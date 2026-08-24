@@ -1,0 +1,39 @@
+{
+  "_id": "6ebde389f76b66b2",
+  "name": "Destructive Rampage",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  40 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  Self(100 foot Radius)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>You dart around a large area attacking in rapid succession.\nMake 5 combo attack rolls dealing your <em>Unarmed Strike Damage Die</em> on a hit before returning to your starting location.</p>\n",
+      "chat": ""
+    },
+    "identifier": "destructive-rampage",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "40 Ki",
+    "castingTime": "1 Action",
+    "range": "Self(100 foot Radius)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6897,
+        "endLine": 6908
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "e4f76fa8aeb8bc13",
+  "name": "Flexible Weapon Technique",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>When you are using a <em>Finesse</em> or <em>Ranged Weapon</em>, you may instead use <em>Dexterity</em> as your <strong>Weapon Technique</strong> <em>Ability Score</em> instead of <em>Strength</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "flexible-weapon-technique",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6148,
+        "endLine": 6149
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

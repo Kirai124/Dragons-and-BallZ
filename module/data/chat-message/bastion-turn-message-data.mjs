@@ -46,7 +46,7 @@ export default class BastionTurnMessageData extends ChatMessageDataModel {
       claimGold: BastionTurnMessageData.#onClaimGold,
       viewItem: BastionTurnMessageData.#onViewItem
     },
-    template: "systems/dnd5e/templates/chat/bastion-turn-summary.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/bastion-turn-summary.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */

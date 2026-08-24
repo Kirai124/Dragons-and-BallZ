@@ -1,0 +1,42 @@
+{
+  "_id": "48af004fef99dd63",
+  "name": "Weapon Proficiency",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your race, class, and feats can grant you proficiency with certain weapons or categories of weapons. The two categories are simple and martial. Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners. Martial weapons, including swords, axes, and polearms, require more specialized training to use effectively. Most warriors use martial weapons because these weapons put their fighting style and training to best use.</p>\n<p>Proficiency with a weapon allows you to add your proficiency bonus to the attack roll for any attack you make with that weapon. If you make an attack roll using a weapon with which you lack proficiency, you do not add your proficiency bonus to the attack roll.</p>\n",
+      "chat": ""
+    },
+    "identifier": "weapon-proficiency",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9367,
+        "endLine": 9371
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

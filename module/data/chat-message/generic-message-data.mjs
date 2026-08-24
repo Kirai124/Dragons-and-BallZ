@@ -17,6 +17,6 @@ export default class GenericMessageData extends RollMessageData {
 
   /** @inheritDoc */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
-    template: "systems/dnd5e/templates/chat/generic-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/generic-card.hbs"
   }, { inplace: false }));
 }

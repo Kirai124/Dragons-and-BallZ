@@ -1,0 +1,40 @@
+{
+  "_id": "57aca92c6733bb1e",
+  "name": "Alien Skill",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain a <strong>Technique</strong> every time you <strong>Level-Up</strong> to 20 and 2 <strong>Techniques</strong> every level beyond. You also gain 1 additional <em>Training Boon</em> each time you have a <strong>Training Arc</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "alien-alien-skill",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1325,
+        "endLine": 1327
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Alien"
+    }
+  }
+}

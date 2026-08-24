@@ -1,0 +1,40 @@
+{
+  "_id": "b6b1d355438eda87",
+  "name": "Computer Eyes",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your eyes are mechanical, granting you +3 on any <em>Perception Checks</em> involving sight. As an Action on your turn, you can see in high detail up to 1 mile so long as you hold <em>Concentration</em>.</p>\n<p>At <strong>Level 10</strong> gain a new an improved scanner. This functions as true sight as long as the creature is not undead, has been dead for 5 hours, or is obscured by an external extreme temperature. This <strong>Feature</strong> can be activated and deactivated as an Action and it can be activated for a total of 1 hour per Long Rest.</p>\n",
+      "chat": ""
+    },
+    "identifier": "android-computer-eyes",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1366,
+        "endLine": 1372
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Android"
+    }
+  }
+}

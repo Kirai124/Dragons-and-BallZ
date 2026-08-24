@@ -1,0 +1,39 @@
+{
+  "_id": "6bd6db6caa2a06db",
+  "name": "Blood of Sesa",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain one feature from the <em>Esoteric Arts</em> <strong>Class Feature.</strong></p>\n<p>This feat can be taken twice.</p>\n",
+      "chat": ""
+    },
+    "identifier": "blood-of-sesa",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5825,
+        "endLine": 5830
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

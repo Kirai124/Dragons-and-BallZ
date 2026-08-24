@@ -1,0 +1,42 @@
+{
+  "_id": "fe436d23ef46e107",
+  "name": "Waterskin",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ2,000 | <strong>Weight:</strong> 5 lb(full)</p>\n",
+      "chat": ""
+    },
+    "identifier": "waterskin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 5.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9784,
+        "endLine": 9815
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

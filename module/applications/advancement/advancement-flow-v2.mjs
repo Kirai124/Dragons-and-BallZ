@@ -29,10 +29,10 @@ export default class AdvancementFlow extends Application5e {
   /** @override */
   static PARTS = {
     header: {
-      template: "systems/dnd5e/templates/advancement/advancement-flow-header.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/advancement-flow-header.hbs"
     },
     content: {
-      template: "systems/dnd5e/templates/advancement/advancement-flow-summary.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/advancement-flow-summary.hbs"
     }
   };
 

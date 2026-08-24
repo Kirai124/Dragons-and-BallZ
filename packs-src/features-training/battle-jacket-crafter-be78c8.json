@@ -1,0 +1,39 @@
+{
+  "_id": "be78c8528025fbe7",
+  "name": "Battle Jacket Crafter",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Requires: Technology Skill</em>\nYou are a master at modifying armor, allowing you to add mechanical enhancements  to them. You may spend 8 hours and 50% of an armor's total <em>Zeni Cost</em> in supplies to permanently add a single effect to a piece of <em>Light Armor</em>. Each time a modification is added you add the expended Zeni to the armor's cost.</p>\n<p>This feat can be taken again twice allowing you to modify <em>Medium Armor</em> as well as add  an additional modification on <em>Light Armor</em>, and then allowing you to modify <em>Heavy Armor</em> as well as add an <em>additional</em> modification on <em>Light and Medium Armor</em>.</p>\n<p>Modifications that have limited uses recharge at dawn.\nModification options include:</p>\n<h5>Adrenaline Injector</h5>\n<p>*Requires: <strong>Battery Pack Class Feature***\nYou can now use your **Battery Pack Class Feature</strong> as if it were <strong>Stamina</strong>.</p>\n<h5>Buster Plates</h5>\n<p>You have installed new armor plating to reduce impacts. You may reduce all <em>Bludgeoning, Slashing, and Piercing Damage</em> by an amount equal to your <em>Intellegence Modifier.</em></p>\n<h5>Combat Systems</h5>\n<p>You gain one rank of the <em>Light-Weight Condition.</em></p>\n<h5>Defensive AI</h5>\n<p>You have developed an artifical intellegence that is design to help get you out of dange in combat. A number of times per day equal to half of your <em>Intellegence Modifier</em> per day you may use <strong>Wild Sense</strong> without expending <em><strong>Stamina</strong></em>.</p>\n<h5>Deflectors</h5>\n<p>You have installed new energy shields to dispel attacks. You may reduce all <em>Fire, Cold, Lightning, Radiant, and Ki Damage</em> by an amount equal to your <em>Intellegence Modifier.</em></p>\n<h5>Energy Overload</h5>\n<p>As an action on your turn you may enter the <em>Super-Charged Condition</em> for a number of rounds equal to your <em>Intellegence Modifier.</em></p>\n<h5>Enviroment Suit</h5>\n<p>You can breathe in space or underwater for a number of hours per day equal to your <em>Intellegence Modifier.</em></p>\n<h5>Light Weight Polymer</h5>\n<p>This modification allows you to reconstitute the armor with new materials. You may reduce the classification of a set of <em>Medium or Heavy Armor</em> by 1 step.</p>\n<p>(Heavy &gt; Medium &gt; Light)\nStrength Requirements for this armor also drop by 3, minimum 10.</p>\n<h5>Scanners</h5>\n<p>You have made a <strong>Rank 2 Scouter</strong> a part of the equipment. This scouter does not explode if it scans above it's rank.</p>\n<p>You may take this a second time to upgrade the scouter to <strong>Rank 4.</strong></p>\n<h5>Shields</h5>\n<p>You have developed energy shields that can protect you. A number of times per day equal to half of your <em>Intellegence Modifier</em> per day you may <strong>Block</strong> without expending <em><strong>Stamina</strong></em>.</p>\n<h5>Strength Augmenters</h5>\n<p>As an action on your turn you may enter the <em>Empowered Condition</em> for a number of rounds equal to your <em>Intellegence Modifier.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "battle-jacket-crafter",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Technology Skill; Requires: **Battery Pack Class Feature",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5142,
+        "endLine": 5195
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

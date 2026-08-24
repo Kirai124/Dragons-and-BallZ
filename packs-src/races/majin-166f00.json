@@ -1,0 +1,139 @@
+{
+  "_id": "166f00d536a893a0",
+  "name": "Majin",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/majin.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>Physical Description</h3>\n<p>Majins have skin coming in various shades in colors, most commonly pink. Their body types come in all shapes and sizes. Skin is made of an elastic, goo like substance. Majin have a single tentacle emitting from their forehead can be used to make ranged attacks. They tend to live until destroyed, with no apparent age limit.</p>\n<h3>History</h3>\n<p>The original Majin Buu was an ancient evil, sealed within the Earth, but converted to a peaceful lifestyle after meeting Mr.Satan (World Martial Arts Champion) and became well-known as one of his promising pupils. Eventually, Buu became obsessed with understanding the concept of “love”, a realization which led him to split into two entities: the original Buu, and a new, female Buu. They instantly fell in love and reproduced over generations, leading to the current population. They have been accepted into society with open arms thanks to the efforts of Mr. Satan, and their personalities all represent parts of Buu.</p>\n<h3>Society</h3>\n<p>Majins were able to fit into society with varying degrees of success due to both the efforts of Mr. Satan and Earth’s inclusion into the Galactic Patrol. Some that represent the darker parts of Buu live in outcast and seclusion, but the majority of Majin settled in the cities and spend their days binging on treats. Some that found affiliation with smaller villages left the city to see more of the world and adventure.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase:</h4>\n<p>Constitution +2 or Charisma +2, Dexterity +1</p>\n<h4>Speed:</h4>\n<p>Your <em>Base Walking Speed</em> is 30 feet.</p>\n<h4>Language</h4>\n<p>You can speak Common and 2 other <em>Languages</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Arcana</em> and <em>Survival Skills</em></p>\n<h3>Racial Features</h3>\n<h4>Form Fit</h4>\n<p>You can squeeze through a space as narrow as 1 inch wide, leaving behind all items that can not also fit. You also have Advantage on all <em>Skill Checks</em> you make to initiate or escape a <em>Grapple Check</em>.</p>\n<h4>Magical Stretch</h4>\n<p>Your putty-like body gives you <em>Resistance</em> to <em>Nonmagical Bludgeoning, Piercing,</em> and <em>Slashing Damage</em>. Your <em>Unarmed Strikes/Weapon Attack Rolls</em> and <strong>Melee/Melee Weapon Techniques</strong> all gain an additional 5 feet of the <em>Reach Property</em> equal to a third of your <em>Proficiency Bonus</em>, rounded up.</p>\n<h4>Magical Nature</h4>\n<p>You have Advantage on all <em>Intelligence, Charisma</em>, and <em>Wisdom Saving Throws</em> against magic.</p>\n<h4>Majin Regenerate</h4>\n<p>Your body is capable of reconstructing itself. As an Action you can heal yourself an amount equal to Ki points spent. You can spend <strong>Ki</strong> when you would hit 0 <strong>HP</strong> equal to the amount of <em>Damage</em> that would put you below 1, to instead drop to 1 <strong>HP</strong>.</p>\n<p>At <strong>Level 5</strong>, so long as you are not under the effects of <em>Ki Exhaustion,</em> you may spend a Bonus Action to regenerate a lost limb.</p>\n<h4>Majin Absorption</h4>\n<p>At <strong>Level 10</strong>, Majins have  access to the legendary power of Majin Buu himself.  Candy Beam is added to your <strong>Learnable Technique List</strong>, and it's <strong>Ki Rank</strong> matches your own, and you can benefit from its second ability.</p>\n<h5>Candy Beam</h5>\n<h2><em>Rank X Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  30 Ki</li>\n<li><strong>Range:</strong>  60 Feet</li>\n<li><strong>Duration:</strong> 1 Minute (concentration)</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>Target one object or creature in your range, they must make a <em>Constitution Saving Throw</em>, turning the object or target (and all of their equipment) into a choice of food of your choice on a failure. Creatures affected by this have their <em>Base Walk Speed</em> set to 5 feet and their <em>Unarmed Strike Damage Die</em> turned into 1d4 if not already lower. Candy Creatures also can’t use <strong>Techniques/Spells</strong>. A Candy Creature may attempt the <em>Saving Throw</em> again as an Action on their turn to end this effect.</p>\n<p>If a creature grapples the candy creature, they may attempt to eat them as an Action. Deal <em>Damage</em> equal to your <em>Unarmed Damage Die</em> + your <em>Constitution Modifier</em>, if you reduce the target to zero in this manner you eat them. If you eat the candy creature you restore your own <strong>Ki</strong> and <strong>Stamina</strong> by the amount the Candy Creature had remaining, if you are a <em>Majin</em> then you may CHOOSE to assimilate the target gaining the following effects:</p>\n<ul>\n<li>You learn all <strong>Techniques</strong> and <em>Languages</em> of the assimilated,. If the assimilated has more <em>Mastery Ranks</em> in a <strong>Technique</strong> that you know, you gain those <em>Mastery Ranks</em>.</li>\n<li>If they have any <strong>Ability Scores</strong> higher than yours you may add +1 to those <strong>Ability Scores</strong>, this may increase it above your <em>Ability Score Maximum</em>.<ul>\n<li>If none of their <strong>Ability Scores</strong> surpass yours you gain +1 to whichever <strong>Ability Score</strong> was their highest.</li>\n</ul>\n</li>\n<li>You gain visual quirks resembling the entities that you assimilated.</li>\n<li>You may only gain this benefit a number of times equal to your <em>Constitution Modifier</em>.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "majin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "9dcc19b6fc3c984c": {
+        "_id": "9dcc19b6fc3c984c",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "con": 2,
+            "cha": 2
+          },
+          "locked": [],
+          "points": 1
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Constitution +2 or Charisma +2, Dexterity +1"
+      },
+      "5ff843f880978f07": {
+        "_id": "5ff843f880978f07",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:arc",
+            "skills:sur"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Arcana and Survival Skills"
+      },
+      "88b6d8e3e355998a": {
+        "_id": "88b6d8e3e355998a",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and 2 other Languages of your choice."
+      },
+      "af8da1e169483b94": {
+        "_id": "af8da1e169483b94",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.124b46c8af50431f",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3ab3fc186f4369f3",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5f963aa8d5e98938",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ba6455ddb3a2bfaa",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d5e79435eb5cbdaa",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1831,
+        "endLine": 1910
+      }
+    }
+  }
+}

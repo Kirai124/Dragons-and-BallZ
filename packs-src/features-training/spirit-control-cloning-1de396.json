@@ -1,0 +1,33 @@
+{
+  "_id": "1de396ce4689dfe2",
+  "name": "Spirit Control Cloning",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As an Action on your turn, you may create a number of clones up to your <em>Proficieny Bonus</em> for 2 <strong>Stamina</strong> per clone. These clones dissipate as a free action whenever you choose or after 1 minute passes. These clones are extensions of you and share all of your current <strong>Resources, Features, Forms,</strong> and <em>Conditions.</em> At the end of your turn you may have any number of clones move up to your <em>Movement Speed</em> and take a single Action or Bonus Action that you can take.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-control-cloning",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3414,
+        "endLine": 3415
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "cc7a20ce9ddf62d1",
+  "name": "Red Eyes Of The Ceralian",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Ceralians are born with a strange quirk, a single hyper-evolved red eye. You gain access to the <em>Red Eye</em> <strong>Forms</strong> as laid out in the <strong>Forms Chapter</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ceralians-red-eyes-of-the-ceralian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 828,
+        "endLine": 829
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Ceralians"
+    }
+  }
+}

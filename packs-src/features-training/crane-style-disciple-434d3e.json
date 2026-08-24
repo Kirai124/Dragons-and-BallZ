@@ -1,0 +1,33 @@
+{
+  "_id": "434d3e927a51c4ee",
+  "name": "Crane Style Disciple",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The <strong>AC Bonus</strong> from the <em>Crane Style</em> <strong>Stance</strong> is increaesd by 1.</p>\n",
+      "chat": ""
+    },
+    "identifier": "crane-style-disciple",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Crane School"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3365,
+        "endLine": 3367
+      }
+    }
+  }
+}

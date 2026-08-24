@@ -49,16 +49,16 @@ export default class ActivityUsageDialog extends Dialog5e {
   /** @override */
   static PARTS = {
     scaling: {
-      template: "systems/dnd5e/templates/activity/activity-usage-scaling.hbs"
+      template: "systems/dragons-and-ballz/templates/activity/activity-usage-scaling.hbs"
     },
     concentration: {
-      template: "systems/dnd5e/templates/activity/activity-usage-concentration.hbs"
+      template: "systems/dragons-and-ballz/templates/activity/activity-usage-concentration.hbs"
     },
     consumption: {
-      template: "systems/dnd5e/templates/activity/activity-usage-consumption.hbs"
+      template: "systems/dragons-and-ballz/templates/activity/activity-usage-consumption.hbs"
     },
     creation: {
-      template: "systems/dnd5e/templates/activity/activity-usage-creation.hbs"
+      template: "systems/dragons-and-ballz/templates/activity/activity-usage-creation.hbs"
     },
     footer: {
       template: "templates/generic/form-footer.hbs"

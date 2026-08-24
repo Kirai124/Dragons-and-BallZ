@@ -5,6 +5,9 @@ import ContextMenu5e from "../context-menu.mjs";
 import BaseActorSheet from "./api/base-actor-sheet.mjs";
 import Item5e from "../../documents/item.mjs";
 import * as Trait from "../../documents/actor/trait.mjs";
+import {
+  concealKi, getBasicKiBlastStats, getFormSummary, getTechniqueSummary, senseKi, useBasicKiBlast, useClash, useManeuver
+} from "../../dragonball-workflows.mjs";
 
 const TextEditor = foundry.applications.ux.TextEditor.implementation;
 
@@ -21,6 +24,11 @@ export default class CharacterActorSheet extends BaseActorSheet {
   /** @override */
   static DEFAULT_OPTIONS = {
     actions: {
+      basicKiBlast: CharacterActorSheet.#basicKiBlast,
+      clash: CharacterActorSheet.#clash,
+      maneuver: CharacterActorSheet.#maneuver,
+      concealKi: CharacterActorSheet.#concealKi,
+      senseKi: CharacterActorSheet.#senseKi,
       deleteFavorite: CharacterActorSheet.#deleteFavorite,
       deleteOccupant: CharacterActorSheet.#deleteOccupant,
       findItem: CharacterActorSheet.#findItem,
@@ -42,70 +50,76 @@ export default class CharacterActorSheet extends BaseActorSheet {
   /** @override */
   static PARTS = {
     header: {
-      template: "systems/dnd5e/templates/actors/character-header.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/character-header.hbs"
     },
     sidebar: {
       container: { classes: ["main-content"], id: "main" },
-      template: "systems/dnd5e/templates/actors/character-sidebar.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/character-sidebar.hbs"
     },
     details: {
       classes: ["col-2"],
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/character-details.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/tabs/character-details.hbs",
       scrollable: [""]
     },
     inventory: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/character-inventory.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/tabs/character-inventory.hbs",
       templates: [
-        "systems/dnd5e/templates/inventory/inventory.hbs", "systems/dnd5e/templates/inventory/activity.hbs",
-        "systems/dnd5e/templates/inventory/encumbrance.hbs", "systems/dnd5e/templates/inventory/containers.hbs"
+        "systems/dragons-and-ballz/templates/inventory/inventory.hbs", "systems/dragons-and-ballz/templates/inventory/activity.hbs",
+        "systems/dragons-and-ballz/templates/inventory/encumbrance.hbs", "systems/dragons-and-ballz/templates/inventory/containers.hbs"
       ],
       scrollable: [""]
     },
     features: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/character-features.hbs",
-      templates: ["systems/dnd5e/templates/inventory/inventory.hbs", "systems/dnd5e/templates/inventory/activity.hbs"],
+      template: "systems/dragons-and-ballz/templates/actors/tabs/character-features.hbs",
+      templates: ["systems/dragons-and-ballz/templates/inventory/inventory.hbs", "systems/dragons-and-ballz/templates/inventory/activity.hbs"],
       scrollable: [""]
     },
-    spells: {
+    forms: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/creature-spells.hbs",
-      templates: ["systems/dnd5e/templates/inventory/inventory.hbs", "systems/dnd5e/templates/inventory/activity.hbs"],
+      template: "systems/dragons-and-ballz/templates/actors/tabs/character-forms.hbs",
+      templates: ["systems/dragons-and-ballz/templates/inventory/inventory.hbs", "systems/dragons-and-ballz/templates/inventory/activity.hbs"],
+      scrollable: [""]
+    },
+    techniques: {
+      container: { classes: ["tab-body"], id: "tabs" },
+      template: "systems/dragons-and-ballz/templates/actors/tabs/character-techniques.hbs",
+      templates: ["systems/dragons-and-ballz/templates/inventory/inventory.hbs", "systems/dragons-and-ballz/templates/inventory/activity.hbs"],
       scrollable: [""]
     },
     effects: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/actor-effects.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/tabs/actor-effects.hbs",
       scrollable: [""]
     },
     biography: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/character-biography.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/tabs/character-biography.hbs",
       scrollable: [""]
     },
     bastion: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/character-bastion.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/tabs/character-bastion.hbs",
       scrollable: [""]
     },
     specialTraits: {
       classes: ["flexcol"],
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/creature-special-traits.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/tabs/creature-special-traits.hbs",
       scrollable: [""]
     },
     abilityScores: {
-      template: "systems/dnd5e/templates/actors/character-ability-scores.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/character-ability-scores.hbs"
     },
     warnings: {
-      template: "systems/dnd5e/templates/actors/parts/actor-warnings-dialog.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/parts/actor-warnings-dialog.hbs"
     },
     tabs: {
       id: "tabs",
       classes: ["tabs-right"],
-      template: "systems/dnd5e/templates/shared/sidebar-tabs.hbs"
+      template: "systems/dragons-and-ballz/templates/shared/sidebar-tabs.hbs"
     }
   };
 
@@ -127,9 +141,10 @@ export default class CharacterActorSheet extends BaseActorSheet {
   /** @override */
   static TABS = [
     { tab: "details", label: "DND5E.Details", icon: "fas fa-cog" },
-    { tab: "inventory", label: "DND5E.Inventory", svg: "systems/dnd5e/icons/svg/backpack.svg" },
+    { tab: "inventory", label: "DND5E.Inventory", svg: "systems/dragons-and-ballz/icons/svg/backpack.svg" },
     { tab: "features", label: "DND5E.Features", icon: "fas fa-list" },
-    { tab: "spells", label: "TYPES.Item.spellPl", icon: "fas fa-book" },
+    { tab: "forms", label: "DBZ.Transformations", icon: "fas fa-burst" },
+    { tab: "techniques", label: "DBZ.TechniquesCombat", icon: "fas fa-hand-fist" },
     { tab: "effects", label: "DND5E.EFFECT.Tab", icon: "fas fa-bolt" },
     { tab: "biography", label: "DND5E.Biography", icon: "fas fa-feather" },
     { tab: "bastion", label: "DND5E.Bastion.Label", icon: "fas fa-chess-rook", condition: this.hasBastion },
@@ -154,7 +169,8 @@ export default class CharacterActorSheet extends BaseActorSheet {
     features: { name: "", properties: new Set() },
     effects: { name: "", properties: new Set() },
     inventory: { name: "", properties: new Set() },
-    spells: { name: "", properties: new Set() }
+    forms: { name: "", properties: new Set() },
+    techniques: { name: "", properties: new Set() }
   };
 
   /* -------------------------------------------- */
@@ -187,7 +203,6 @@ export default class CharacterActorSheet extends BaseActorSheet {
       },
       isCharacter: true
     };
-    context.spellbook = this._prepareSpellbook(context);
     return context;
   }
 
@@ -203,11 +218,12 @@ export default class CharacterActorSheet extends BaseActorSheet {
       case "details": return this._prepareDetailsContext(context, options);
       case "effects": return this._prepareEffectsContext(context, options);
       case "features": return this._prepareFeaturesContext(context, options);
+      case "forms": return this._prepareFormsContext(context, options);
       case "header": return this._prepareHeaderContext(context, options);
       case "inventory": return this._prepareInventoryContext(context, options);
       case "sidebar": return this._prepareSidebarContext(context, options);
       case "specialTraits": return this._prepareSpecialTraitsContext(context, options);
-      case "spells": return this._prepareSpellsContext(context, options);
+      case "techniques": return this._prepareTechniquesContext(context, options);
       default: return context;
     }
   }
@@ -425,7 +441,11 @@ export default class CharacterActorSheet extends BaseActorSheet {
       this.actor.system.details.background instanceof Item5e ? {
         columns, id: "background", label: "DND5E.FeaturesBackground", order: 2000, groups: { origin: "background" }
       } : null,
-      { columns, id: "other", label: "DND5E.FeaturesOther", order: 3000, groups: { origin: "other" } }
+      { columns, id: "other", label: "DND5E.FeaturesOther", order: 3000, groups: { origin: "other" } },
+      { columns, id: "dbz-training", label: "DBZ.ITEM.Training", order: 4200, groups: { dbzType: "training" } },
+      { columns, id: "dbz-subraces", label: "DBZ.ITEM.Subraces", order: 4300, groups: { dbzType: "subrace" } },
+      { columns, id: "dbz-feats", label: "DBZ.ITEM.Feats", order: 4400, groups: { dbzType: "feat" } },
+      { columns, id: "dbz-other", label: "DND5E.FeaturesOther", order: 4500, groups: { dbzType: "other" } }
     ].filter(_ => _);
     sections[0].items = [...(context.itemCategories.features ?? []), ...context.subclasses];
     context.sections = Inventory.prepareSections(sections);
@@ -451,7 +471,8 @@ export default class CharacterActorSheet extends BaseActorSheet {
           label: "DND5E.FilterGroupOrigin",
           dataset: { icon: "fa-solid fa-layer-group", classes: "active" }
         },
-        { key: "activation", label: "DND5E.FilterGroupOrigin", dataset: { icon: "fa-solid fa-layer-group" } }
+        { key: "activation", label: "DND5E.FilterGroupOrigin", dataset: { icon: "fa-solid fa-layer-group" } },
+        { key: "dbzType", label: "DBZ.ITEM.GroupByType", dataset: { icon: "fa-solid fa-bolt" } }
       ]
     };
 
@@ -581,6 +602,100 @@ export default class CharacterActorSheet extends BaseActorSheet {
       return obj;
     }, { label: CONFIG.DND5E.movementTypes.walk?.label, value: 0 });
 
+    return context;
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Prepare the dedicated Transformations tab.
+   */
+  async _prepareFormsContext(context, options) {
+    const Inventory = customElements.get(this.options.elements.inventory);
+    const columns = Inventory.mapColumns(["controls"]);
+    const forms = (context.itemCategories.forms ?? []).sort((a, b) => a.name.localeCompare(b.name, game.i18n.lang));
+    const transformations = forms.filter(i => !/powerUp/i.test(i.system.category));
+    const powerUps = forms.filter(i => /powerUp/i.test(i.system.category));
+    context.sections = Inventory.prepareSections([
+      { columns, id: "transformations", label: "DBZ.Transformations", order: 100, items: transformations },
+      { columns, id: "power-ups", label: "DBZ.PowerUps", order: 200, items: powerUps }
+    ]);
+    context.listControls = {
+      label: "DBZ.SearchTransformations",
+      list: "forms",
+      filters: [],
+      sorting: [
+        { key: "a", label: "SIDEBAR.SortModeAlpha", dataset: { icon: "fa-solid fa-arrow-down-a-z" } },
+        { key: "m", label: "SIDEBAR.SortModeManual", dataset: { icon: "fa-solid fa-arrow-down-short-wide" } }
+      ],
+      grouping: []
+    };
+    context.activeForms = this.actor.getFlag("dragons-and-ballz", "activeForms") ?? [];
+    context.dbzStatus = this._prepareDragonBallStatus();
+    return context;
+  }
+
+  /* -------------------------------------------- */
+
+  /** Prepare the compact Dragon Ball combat status shown on the two dedicated DBZ tabs. */
+  _prepareDragonBallStatus() {
+    const attributes = this.actor.system.attributes;
+    const activeFormIds = this.actor.getFlag("dragons-and-ballz", "activeForms") ?? [];
+    const charging = this.actor.getFlag("dragons-and-ballz", "chargingTechnique");
+    const chargingItem = charging?.itemId ? this.actor.items.get(charging.itemId) : null;
+    const conceal = this.actor.getFlag("dragons-and-ballz", "concealKi");
+    return {
+      ki: `${formatNumber(attributes.ki?.available ?? attributes.ki?.value ?? 0)}/${formatNumber(attributes.ki?.effectiveMax ?? 0)}`,
+      stamina: `${formatNumber(attributes.stamina?.available ?? attributes.stamina?.value ?? 0)}/${formatNumber(attributes.stamina?.effectiveMax ?? 0)}`,
+      godKi: `${formatNumber(attributes.godKi?.value ?? 0)}/${formatNumber(attributes.godKi?.effectiveMax ?? 0)}`,
+      kiRank: attributes.kiRank ?? 0,
+      power: attributes.power?.total ?? attributes.power?.value ?? 0,
+      threshold: attributes.power?.threshold ?? 0,
+      overload: attributes.power?.overload ?? 0,
+      powerLevel: formatNumber(Math.round(attributes.powerLevel ?? 0)),
+      activeForms: activeFormIds.length,
+      charging: !!charging,
+      chargingName: chargingItem?.name ?? "",
+      chargeRounds: charging?.rounds ?? 0,
+      concealed: !!conceal,
+      apparentPowerLevel: conceal?.powerLevel ?? null
+    };
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Prepare the Ki Attacks / Melee Maneuvers tab. Legacy spell documents are retained in a Magic section.
+   */
+  async _prepareTechniquesContext(context, options) {
+    const Inventory = customElements.get(this.options.elements.inventory);
+    const columns = Inventory.mapColumns(["controls"]);
+    const entries = context.itemCategories.techniques ?? [];
+    const techniques = entries.filter(i => i.type === "technique");
+    const spells = entries.filter(i => i.type === "spell");
+    const ki = techniques.filter(i => ["blast", "beam", "barrage", "omni", "otherKi"].includes(i.system.techniqueType));
+    const martial = techniques.filter(i => ["melee", "weapon"].includes(i.system.techniqueType));
+    const stances = techniques.filter(i => i.system.techniqueType === "stance");
+    const byName = (a, b) => a.name.localeCompare(b.name, game.i18n.lang);
+    ki.sort(byName); martial.sort(byName); stances.sort(byName); spells.sort(byName);
+    context.sections = Inventory.prepareSections([
+      { columns, id: "ki-attacks", label: "DBZ.KiAttacks", order: 100, items: ki },
+      { columns, id: "melee-maneuvers", label: "DBZ.MeleeManeuvers", order: 200, items: martial },
+      { columns, id: "stances", label: "DBZ.Stances", order: 300, items: stances },
+      { columns, id: "magic", label: "DBZ.Magic", order: 400, items: spells }
+    ]);
+    context.basicKiBlast = getBasicKiBlastStats(this.actor);
+    context.dbzStatus = this._prepareDragonBallStatus();
+    context.listControls = {
+      label: "DBZ.SearchTechniques",
+      list: "techniques",
+      filters: [],
+      sorting: [
+        { key: "a", label: "SIDEBAR.SortModeAlpha", dataset: { icon: "fa-solid fa-arrow-down-a-z" } },
+        { key: "m", label: "SIDEBAR.SortModeManual", dataset: { icon: "fa-solid fa-arrow-down-short-wide" } }
+      ],
+      grouping: []
+    };
     return context;
   }
 
@@ -775,8 +890,11 @@ export default class CharacterActorSheet extends BaseActorSheet {
       case "background": return new Set(["background"]);
       case "class": return new Set(["classes"]);
       case "facility": return new Set(["facilities"]);
+      case "form": return new Set(["forms"]);
       case "race": return new Set(["species"]);
+      case "spell": return new Set(["techniques"]);
       case "subclass": return new Set(["subclasses"]);
+      case "technique": return new Set(["techniques"]);
       default: return super._assignItemCategories(item);
     }
   }
@@ -867,6 +985,24 @@ export default class CharacterActorSheet extends BaseActorSheet {
     ctx.groups.activation = item.system.properties?.has("trait") || !item.system.activities?.size
       ? "passive"
       : "active";
+
+    // Dragons and BallZ combat entries receive compact subtitles while retaining the stock D&D5e inventory row.
+    if ( item.type === "technique" ) {
+      const summary = getTechniqueSummary(this.actor, item);
+      ctx.subtitle = summary.subtitle;
+      ctx.clickAction = "use";
+    } else if ( item.type === "form" ) {
+      const summary = getFormSummary(this.actor, item);
+      ctx.subtitle = `${summary.active ? `● ${_loc("DBZ.Active")}` : `○ ${_loc("DBZ.Inactive")}`} · ${summary.subtitle}`;
+      ctx.clickAction = "use";
+      ctx.groups.active = summary.active ? "true" : "false";
+    }
+
+    // Dragons and BallZ content can be regrouped without replacing the stock D&D5e feature presentation.
+    ctx.groups.dbzType = ["technique", "form", "training", "subrace", "feat"].includes(item.type)
+      ? item.type
+      : "other";
+    if ( item.type === "subrace" ) ctx.groups.origin = "species";
   }
 
   /* -------------------------------------------- */
@@ -918,7 +1054,6 @@ export default class CharacterActorSheet extends BaseActorSheet {
 
     if ( !this.actor.limited ) {
       this._renderAttunement(context, options);
-      this._renderSpellbook(context, options);
     }
 
     // Show death tray at 0 HP
@@ -931,6 +1066,46 @@ export default class CharacterActorSheet extends BaseActorSheet {
 
   /* -------------------------------------------- */
   /*  Event Listeners and Handlers                */
+  /* -------------------------------------------- */
+
+  /** Use the handbook Basic Ki Blast action. */
+  static async #basicKiBlast(event, target) {
+    if ( !this.actor?.isOwner ) return;
+    return useBasicKiBlast(this.actor);
+  }
+
+  /* -------------------------------------------- */
+
+  /** Start a handbook Clash using the selected/targeted Techniques. */
+  static async #clash(event, target) {
+    if ( !this.actor?.isOwner ) return;
+    return useClash(this.actor);
+  }
+
+  /* -------------------------------------------- */
+
+  /** Use one of the universal handbook Stamina Maneuvers. */
+  static async #maneuver(event, target) {
+    if ( !this.actor?.isOwner ) return;
+    return useManeuver(this.actor, target.dataset.maneuver);
+  }
+
+  /* -------------------------------------------- */
+
+  /** Roll the handbook Sense Ki action. */
+  static async #senseKi(event, target) {
+    if ( !this.actor?.isOwner ) return;
+    return senseKi(this.actor);
+  }
+
+  /* -------------------------------------------- */
+
+  /** Toggle the handbook Conceal Ki action. */
+  static async #concealKi(event, target) {
+    if ( !this.actor?.isOwner ) return;
+    return concealKi(this.actor);
+  }
+
   /* -------------------------------------------- */
 
   /**

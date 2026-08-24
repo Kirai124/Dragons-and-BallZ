@@ -1,0 +1,41 @@
+{
+  "_id": "5031f502b9eb6f31",
+  "name": "Super Android",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Transformation</em></p>\n<p>Through extreme modifications or merging of other technologies, you can temporarily become more than your original design.</p>\n<ul>\n<li>+4 <em><strong>Power Bonus</strong></em></li>\n<li>You deal +2d6 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speeds</em> by 40 feet</li>\n<li>You gain +2 to your <strong>AC</strong></li>\n<li>3 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "super-android",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "God Forms",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "action",
+    "powerBonus": 4,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Androids; God Forms"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3852,
+        "endLine": 3862
+      },
+      "formFamily": "God Forms"
+    }
+  }
+}

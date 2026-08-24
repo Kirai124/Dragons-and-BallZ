@@ -1,0 +1,39 @@
+{
+  "_id": "0b362ed45c17d106",
+  "name": "Hurricane Kick",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  8 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>          Self (10-foot cone)</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>You perform a devastating round house kick with enough force to send a shockwave away from you. Creatures in a range must make a <em>Dexterity Saving Throw</em>, taking your <em>Unarmed Strike Damage Die</em> + 2d6 <em>Bludgeoning Damage</em> and being <em>Launched</em> 10 feet on a failed save. On a successful save, they take half damage and are not <em>Launched</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "hurricane-kick",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "melee",
+    "kiCost": "8 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (10-foot cone)",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6585,
+        "endLine": 6595
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

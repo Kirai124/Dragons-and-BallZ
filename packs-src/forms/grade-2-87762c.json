@@ -1,0 +1,41 @@
+{
+  "_id": "87762c01062d9f76",
+  "name": "Grade 2",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The Super Saiyan’s muscle mass increases drastically, slowing them slightly but increasing their raw power.</p>\n<ul>\n<li>+1 <strong>Power Bonus</strong></li>\n<li>You deal +1d4 to all <em>Damage Rolls</em></li>\n<li>Decrease all <em>Movement Speed</em> by 10 ft.</li>\n<li>+1 Rank of <strong>Bulk</strong></li>\n<li>1 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "grade-2",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Super Saiyan Grades",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "1 Stamina",
+    "activation": "action",
+    "powerBonus": 1,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Saiyans; Super Saiyan Grades"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4167,
+        "endLine": 4175
+      },
+      "formFamily": "Super Saiyan Grades"
+    }
+  }
+}

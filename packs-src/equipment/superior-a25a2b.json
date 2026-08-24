@@ -1,0 +1,42 @@
+{
+  "_id": "a25a2b746d58f88f",
+  "name": "Superior",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ20,000,000 | <strong>Ki Regained:</strong> 8d6+8</p>\n",
+      "chat": ""
+    },
+    "identifier": "superior",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20000000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9560,
+        "endLine": 9566
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

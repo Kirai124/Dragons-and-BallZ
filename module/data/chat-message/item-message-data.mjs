@@ -61,7 +61,7 @@ export default class ItemMessageData extends ChatMessageDataModel {
 
   /** @inheritDoc */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
-    template: "systems/dnd5e/templates/chat/item-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/item-card.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */

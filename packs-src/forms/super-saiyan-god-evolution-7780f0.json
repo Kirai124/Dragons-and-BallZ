@@ -1,0 +1,41 @@
+{
+  "_id": "7780f024e173d4b5",
+  "name": "Super Saiyan God Evolution",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Power-Up</em></p>\n<p>You may push your <em>Super Saiyan God</em> to further heights, your God Transformation becoming a darker coloration and your body becoming more defined.</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>You deal +3d6 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 30 ft.</li>\n<li>You gain +2 to your <strong>AC.</strong></li>\n<li>+2 Ranks of <strong>Bulk</strong></li>\n<li>5 <strong>Stamina Upkeep</strong></li>\n</ul>\n<h6>Divine Saiyan Forms</h6>\n<p>Occasionally a Saiyan is born with divine blood or one can be created through body snatching. Regardless when these holy or infernal Saiyans reach the level of the gods their forms are slightly altered.</p>\n<p>When a creature with the Celestial or Fiend tags uses Super Saiyan God they gain an additional +1 Power and have the color of their hair and aura slightly altered. This change in color overrides all Super Saiyan Transformations.</p>\n<p>These forms appear pink for Celestials and blood red for Infernals.</p>\n",
+      "chat": ""
+    },
+    "identifier": "super-saiyan-god-evolution",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Super Saiyan God",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "5 Stamina",
+    "activation": "bonus",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Saiyan God Form; Super Saiyan God"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4453,
+        "endLine": 4473
+      },
+      "formFamily": "Super Saiyan God"
+    }
+  }
+}

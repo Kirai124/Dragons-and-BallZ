@@ -1,0 +1,39 @@
+{
+  "_id": "9484b8bf0fcb2ad2",
+  "name": "Weapon Master",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Choose one <em>Weapon</em> that you are proficient with, you may now increase the <em>Damage Die</em> you deal with these weapons by 1 step.</p>\n",
+      "chat": ""
+    },
+    "identifier": "weapon-master",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6379,
+        "endLine": 6381
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

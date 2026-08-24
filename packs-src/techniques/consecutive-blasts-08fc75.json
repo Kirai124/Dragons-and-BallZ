@@ -1,0 +1,39 @@
+{
+  "_id": "08fc75aa9297f63a",
+  "name": "Consecutive Blasts",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 8 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Self (15 Cone)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Barrage</li>\n</ul>\n<p>Fire numerous small ki blasts in close range. All targets in range must make a <em>Dexterity Saving Throw</em> or take 2d12 <em>Ki Damage</em>, half on a successful save.</p>\n",
+      "chat": ""
+    },
+    "identifier": "consecutive-blasts",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "barrage",
+    "kiCost": "8 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (15 Cone)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7606,
+        "endLine": 7621
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

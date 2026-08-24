@@ -1,0 +1,42 @@
+{
+  "_id": "e637885515d609f7",
+  "name": "Club",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 1,000 Zeni | <strong>Damage:</strong> 1d4\tBludgeoning | <strong>Weapon Properties:</strong> Light</p>\n",
+      "chat": ""
+    },
+    "identifier": "club",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9459,
+        "endLine": 9470
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

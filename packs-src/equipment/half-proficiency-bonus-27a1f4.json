@@ -1,0 +1,42 @@
+{
+  "_id": "27a1f495bfd6f8f5",
+  "name": "Half Proficiency Bonus",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p>You add half your proficiency bonus to your AC as long as you have ki. When you run out of ki, you no longer add half your proficiency bonus to your AC.</p>\n<p><strong>Note:</strong> The half proficiency bonus in question is written into the details of <em>Unarmored Defense</em> features and functions as described above.</p>\n<h5>Light Armor</h5>\n<p>Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility. If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.</p>\n<p><strong>Padded Gi:</strong> Your armor is little more than clothing with heavy stuffing in it. The padding around the joints makes it difficult to make fine movements.</p>\n<p><strong>Light Battle Armor:</strong> Basic and light battle armor guarding bare neccessities.</p>\n<h5>Medium Armor</h5>\n<p>Medium armor offers more protection than light armor, but it also impairs movement more. If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class.</p>\n<p><strong>Medium Battle Armor:</strong>\nArmor made from an advanced alloy to resist falling apart to energy attacks.</p>\n<p><strong>Medium Elite Armor:</strong> This armor is protective and easy to move in, perfect for a front line elite.</p>\n<h5>Heavy Armor</h5>\n<p>Of all the armor categories, heavy armor offers the best protection. These suits of armor cover the entire body and are designed to stop a wide range of attacks. Only proficient warriors can manage their weight and bulk.</p>\n<p>Heavy armor doesn’t let you add your Dexterity modifier to your Armor Class, but it also doesn’t penalize you if your Dexterity modifier is negative.</p>\n<p><strong>Heavy Battle Armor:</strong>\nSingular durable elastic armor pieces.</p>\n<p><strong>Heavy Elite Armor:</strong>\nPlated or scaled body armor made to mold to the body</p>\n<h5>Donning and Doffing Armor</h5>\n<table>\n<thead>\n<tr>\n  <th style=\"text-align:center\">Category</th>\n  <th style=\"text-align:left\">Don</th>\n  <th style=\"text-align:left\">Doff</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td style=\"text-align:center\">Light Armor</td>\n  <td style=\"text-align:left\">1 minute</td>\n  <td style=\"text-align:left\">1 minute</td>\n</tr>\n<tr>\n  <td style=\"text-align:center\">Medium Armor</td>\n  <td style=\"text-align:left\">5 minutes</td>\n  <td style=\"text-align:left\">1 minute</td>\n</tr>\n</tbody>\n</table>\n<p>| Heavy Armor | 10 minutes | 5 minutes\n| Shield | 1 action | 1 action |</p>\n",
+      "chat": ""
+    },
+    "identifier": "half-proficiency-bonus",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9258,
+        "endLine": 9304
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

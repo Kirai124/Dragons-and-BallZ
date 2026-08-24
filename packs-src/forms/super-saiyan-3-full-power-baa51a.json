@@ -1,0 +1,41 @@
+{
+  "_id": "baa51ae201813da8",
+  "name": "Super Saiyan 3 Full Power",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<p>You gain the full strength of your dark ki combined with your Super Saiyan State. Awakening an enhanced version of Super Saiyan 3 with red eyes as opposed to blue eyes and a darkened ki. You must have the “Dark Ki” Power-Up Active in order to transform</p>\n<ul>\n<li>+4 <strong>Power Bonus</strong></li>\n<li>You deal +1d10 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 20 Ft.</li>\n<li>When you would cast a <strong>Technique</strong>, you may spend an amount of stamina equal to half the ki rank, changing the damage type to necrotic.</li>\n<li>5 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "super-saiyan-3-full-power",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Ancient Super Saiyan",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "5 Stamina",
+    "activation": "action",
+    "powerBonus": 4,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Ancient Saiyan; Ancient Super Saiyan"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4421,
+        "endLine": 4433
+      },
+      "formFamily": "Ancient Super Saiyan"
+    }
+  }
+}

@@ -16,7 +16,7 @@ export default class SpellSlotsConfig extends BaseConfigSheet {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/actors/config/spell-slots-config.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/config/spell-slots-config.hbs"
     }
   };
 

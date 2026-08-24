@@ -1,0 +1,40 @@
+{
+  "_id": "8bc726aae79b3a0f",
+  "name": "Neko Majin",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Charisma</li>\n</ul>\n<p>Your DNA is made up of a mystical species known for their copycat capabilities. you gain the <em>Eagled-Eyed Adaptation</em> <strong>Heroic Feature</strong> but you may use it a number of times per long rest equal to your Proficiency Bonus. You can memorize a number of <strong>Techniques</strong> equal to half your <strong>Intelligence Modifier</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-neko-majin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1587,
+        "endLine": 1591
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "1de086c66aef0934",
+  "name": "Ultimate Android",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Power-Up</em></p>\n<p>You have learned to seamlessly mix your ki with your mechanical energy source, pushing your mechanisms “Even further beyond!”</p>\n<ul>\n<li>+3 <em><strong>Power Bonus</strong></em></li>\n<li>You deal +2d8 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speeds</em> by 20 feet</li>\n<li>You gain +1 to your <strong>AC</strong></li>\n<li>3 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "ultimate-android",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "God Forms",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "bonus",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Androids; God Forms"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3863,
+        "endLine": 3875
+      },
+      "formFamily": "God Forms"
+    }
+  }
+}

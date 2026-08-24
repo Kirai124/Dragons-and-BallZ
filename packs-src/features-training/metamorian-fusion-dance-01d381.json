@@ -1,0 +1,33 @@
+{
+  "_id": "01d381b4e5d79268",
+  "name": "Metamorian Fusion Dance",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The fusion method made by the Metamorians. This is considered a rank 2 <em><strong>Technique</strong></em>. You do not have proficiency in this technique when you first learn it. You must wait 1 hour before you may use this technique again.</p>\n<p>As an action on your turn you may initiate the <em>Fusion Dance</em> with a willing character capable of using it within 5 feet of you. Both participants must make Dexterity (Performance) checks to properly do the fusion dance. If both participants roll above a 15 then the fusion is a success. When you fuse you gain the <em>Fusion Tag</em> and add all <strong>Class Features, Racial Features, Trained Features, Customization Options, Techniques/Spells,</strong> and <strong>Transformations</strong> of both participants. <em>Movement Speed</em>, <strong>HP, Stamina,</strong> and <strong>Ki</strong> calculation are directly dependent on the <em>Skill Check</em> results</p>\n<ul>\n<li>For a successful Performance check you succeed in your half of the Fusion Dance:<ul>\n<li>The Fusion gains a +2 <strong>Power Bonus</strong> upon completion</li>\n<li>You add half of your base <em>Movement Speed</em> to the <em>Fusion</em> upon completion</li>\n<li>You add your <strong>Maximum HP, Ki,</strong> and <strong>Stamina</strong> to the <em>Fusion</em> upon completion</li>\n</ul>\n</li>\n<li>For a failed Performance check you misjudged your half of the Fusion Dance:<ul>\n<li>The Fusion gains a -2 <strong>Power Bonus</strong> upon completion</li>\n<li>You add half of your base <em>Movement Speed</em> to the <em>Fusion</em> upon completion</li>\n<li>You add half your <strong>Maximum HP, Ki,</strong> and <strong>Stamina</strong> to the <em>Fusion</em> upon completion</li>\n</ul>\n</li>\n</ul>\n<p>Regardless of the <em>Performance Check</em> successes both fusees must designate 3 of their <strong>Ability Scores</strong>, with no overlap, to be used for the fusion. Anytime you fuse with that individual again using the <em>Fusing Dance</em> you will assume this specific <em>Fusion</em>.</p>\n<p>Fusion requires 3 <strong>Stamina Upkeep</strong>. The Fusion ends when the fused characters Stamina reaches 0. When the <em>Fusion</em> ends damage taken and <strong>Ki</strong> and <strong>Stamina</strong> used is split as evenly as possible and distributed between the fusees.</p>\n<p>In the event that a <em>Metamorian Fusion</em> hits 0 <strong>HP</strong>, they defuse and both participants begin making <em>Death Saving Throws</em></p>\n<h6>Metamorian Equipment</h6>\n<p>When 2 characters fuse using this method, unlike a true fusing of equipment like with the <em>Potara Earrings</em>, a <em>Metamorian Fusion</em> has all <em>Armor</em> replaced with clothes in the Metamorian style. You may choose what <em>Weapons</em> you had prior to the fusion to keep and which get melded into your form for the duration of the <em>Fusion.</em></p>\n<h6>Limitations</h6>\n<p>Characters may only fuse with this method if they are of the same size category and no more than 1 <strong>Character Level</strong> apart.</p>\n<h6>No one's Trained!</h6>\n<p>The <em>Fusion Dance</em> is a unique ability in that anyone of <strong>Ki Rank 2</strong> or higher can use this feature. So long as someone who knows it is present and capable of instructing you for at least 1 hour you may use the fusion dance with Disadvantage for the next 24 hours.</p>\n<p>If the instructor is present for the attempt to instruct you then roll without disadvantage.</p>\n<h6>Self Taught! Kinda....</h6>\n<p>Due to the strange nature of this feature it is possible for 2 people to be instructed on how to use this feature and then have a <strong>Training Arc with a Partner</strong> together to fully learn the feature together for the cost of 2 Training Boons each.</p>\n<p>Alternatively, you may have a <strong>Training Arc with a Partner</strong> together with someone that knows the <em>Fusion Dance</em> and gain advantage on <em>Fusion Dances</em> with that person for 2 <strong>Training Boons</strong> each.</p>\n",
+      "chat": ""
+    },
+    "identifier": "metamorian-fusion-dance",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": 2,
+    "requirements": "",
+    "tags": "trained feature; Metamoran"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3530,
+        "endLine": 3581
+      }
+    }
+  }
+}

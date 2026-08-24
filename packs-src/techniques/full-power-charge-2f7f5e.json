@@ -1,0 +1,39 @@
+{
+  "_id": "2f7f5e33630e44da",
+  "name": "Full Power Charge",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Technique</em></h2>\n<ul>\n<li><strong>Prerequisites:</strong> <em>Charge</em></li>\n<li><strong>Casting Time:</strong>  Special</li>\n<li><strong>Range:</strong>  Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Other</li>\n</ul>\n<p>By taking a moment to center your energy you can restore your <strong>Ki.</strong> Regain 30 + <em>Wisdom Modifier</em> <strong>Ki</strong> if used as an Action, or 3d10 + <em>Wisdom Modifier</em> <strong>Ki</strong> as an Bonus action.</p>\n",
+      "chat": ""
+    },
+    "identifier": "full-power-charge",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "otherKi",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "*Charge*",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8876,
+        "endLine": 8890
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

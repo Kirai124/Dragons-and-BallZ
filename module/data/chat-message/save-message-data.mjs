@@ -40,7 +40,7 @@ export default class SaveMessageData extends RollMessageData {
       breakConcentration: SaveMessageData.#breakConcentration,
       resistSave: SaveMessageData.#resistSave
     },
-    template: "systems/dnd5e/templates/chat/save-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/save-card.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */

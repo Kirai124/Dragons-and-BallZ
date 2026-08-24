@@ -1,0 +1,42 @@
+{
+  "_id": "99593b35d0d088a1",
+  "name": "Tier 4 Scouter",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p>Using this headgear like device you may search for ki without the feature as an action.</p>\n<p>If you scan someone with more than a +9 Power bonus or 20 levels in a class with Ki this device explodes.</p>\n",
+      "chat": ""
+    },
+    "identifier": "tier-4-scouter",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9918,
+        "endLine": 9924
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

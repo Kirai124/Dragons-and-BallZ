@@ -1,0 +1,40 @@
+{
+  "_id": "3e072ffb26b75532",
+  "name": "Divine Talent",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>Level 1</strong> you add the <em>Kaio-Ken</em> <strong>Forms</strong> to your <strong>Learnable Technique List</strong>, but <em>Kaio-Ken!</em> and <em>Kaio-Ken x4!</em> become <strong>Ki Rank 2</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "shinling-divine-talent",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1261,
+        "endLine": 1263
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Shinling"
+    }
+  }
+}

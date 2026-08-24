@@ -1,0 +1,41 @@
+{
+  "_id": "d200b985dcc7d3ce",
+  "name": "Burning Ultra Ego",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Transformation</em></p>\n<p>When your body and mind are in sync with only 1 objective ahead “Destroy”. You may enter a transformation of Destruction called Ultra Ego, ultimately characterized by its ability to grow in power as your fighting spirit grows.</p>\n<ul>\n<li>+5 <strong>Power Bonus</strong></li>\n<li>You deal +2d8 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 60 ft.</li>\n<li>You gain +4 to your <strong>AC.</strong></li>\n<li>6 <strong>Stamina Activation</strong>, 5 <strong>Stamina Upkeep</strong></li>\n<li>While in this form you have a rising pool of <em>Destruction Energy</em>. At the end of each of your turns while this is active you gain 2d6 added to this pool of <em>Destruction Energy</em>.  You may do the following features with these <em>Destruction Energy Dice</em>:</li>\n</ul>\n<p><em><strong>Fighting Spirit.</strong></em> Your form relies on your fighting spirit and you can burn your destruction energy to help restart your destructive blaze.</p>\n<p>As an Action, you may roll any number of dice from your <em>Destruction Energy Dice</em> and gain that amount of <strong>Temporary HP</strong> or <strong>Temporary Ki</strong> equal to the total rolled. You may not use this <strong>Feature</strong> again until all previous <strong>Temporary HP</strong> or <strong>Temporary Ki</strong> gained through this feature are depleted.\n<em><strong>Destroy.</strong></em> Your fuel your ki attacks with the power of destruction.</p>\n<p>When you land an <em>Attack Roll</em> or <strong>Technique</strong> you may spend any number of dice from your <em>Destruction Energy Dice</em> and add that much <em>Destruction Damage</em>.\n<em><strong>Neverending Destruction</strong></em> You burn the energy of destruction like a star to keep it alight.</p>\n<p>As an Action, you may spend any number of <em>Destruction Energy Dice</em> and gain 1 <strong>Temporary Stamina</strong> for each die spent. You may not use this <strong>Feature</strong> again until all previous <strong>Temporary Stamina</strong> gained through this <strong>Feature</strong> are depleted.</p>\n<p>{{note</p>\n",
+      "chat": ""
+    },
+    "identifier": "burning-ultra-ego",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Ultra Ego",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "5 Stamina",
+    "activation": "action",
+    "powerBonus": 5,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Non-Race Specific; Ultra Ego"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4980,
+        "endLine": 5007
+      },
+      "formFamily": "Ultra Ego"
+    }
+  }
+}

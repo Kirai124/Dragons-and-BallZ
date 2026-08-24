@@ -1,0 +1,40 @@
+{
+  "_id": "f9515e5d110c0c3d",
+  "name": "Evolutionary Tactics",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You are driven by your instincts to improve and adapt to survive. You gain a <strong>Technique</strong> every time you <strong>Level-Up</strong> to 20 and 2 <strong>Techniques</strong> every level beyond. You also gain 1 additional <em>Training Boon</em> each time you have a <strong>Training Arc</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "beastmen-evolutionary-tactics",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 759,
+        "endLine": 763
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Beastmen"
+    }
+  }
+}

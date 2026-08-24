@@ -1,0 +1,39 @@
+{
+  "_id": "11a5a497f3f401bb",
+  "name": "Flurry",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 8 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>A quick rush using whatever is in your hands. Roll 2 <em>Combo Attack Rolls</em> dealing your <em>Weapon Damage Die</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "flurry",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "weapon",
+    "kiCost": "8 Ki",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7165,
+        "endLine": 7177
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

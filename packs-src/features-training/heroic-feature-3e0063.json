@@ -1,0 +1,40 @@
+{
+  "_id": "3e006345a1a95044",
+  "name": "Heroic Feature",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Gain 2 features from the <strong>Heroic Features List</strong>. Every time you get this <strong>Class Feature</strong> after the first time, you gain 1 additional <strong>Heroic Feature</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "blaster-heroic-feature",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2883,
+        "endLine": 2888
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Blaster"
+    }
+  }
+}

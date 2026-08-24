@@ -1,0 +1,39 @@
+{
+  "_id": "5f09bb967b771980",
+  "name": "Monkey Artistey King",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>U7/Ancient/Mutant</em></p>\n<p><strong>Requires: Limit Breaker</strong>\nYou may use <em>Super Saiyan God</em> and <em>Super Saiyan 4</em> as a <strong>Combination Transformation</strong> known as <em>Super Saiyan 4 Limit Breaker.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "monkey-artistey-king",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Limit Breaker",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5606,
+        "endLine": 5627
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

@@ -17,6 +17,6 @@ export default class HitDieMessageData extends RollMessageData {
 
   /** @inheritDoc */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
-    template: "systems/dnd5e/templates/chat/hit-die-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/hit-die-card.hbs"
   }, { inplace: false }));
 }

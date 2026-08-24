@@ -1,0 +1,39 @@
+{
+  "_id": "92c75ad75c9290bb",
+  "name": "Kaio-ken Mastery",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Kaio-ken!</strong>\nReduce the HP cost of all <em>Kaio-Ken</em> <strong>Forms</strong> by 1 (minimum 1).</p>\n<p>This <strong>Feat</strong> may be taken a number of times equal to your <strong>Ki Rank</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "kaio-ken-mastery",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Kaio-ken!",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5997,
+        "endLine": 6002
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

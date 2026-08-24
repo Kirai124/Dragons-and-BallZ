@@ -26,7 +26,7 @@ export default class TransformActivity extends ActivityMixin(BaseTransformActivi
   static metadata = Object.freeze(
     foundry.utils.mergeObject(super.metadata, {
       type: "transform",
-      img: "systems/dnd5e/icons/svg/activity/transform.svg",
+      img: "systems/dragons-and-ballz/icons/svg/activity/transform.svg",
       title: "DND5E.TRANSFORM.Title",
       hint: "DND5E.TRANSFORM.Hint",
       sheetClass: TransformSheet,

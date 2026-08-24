@@ -1,0 +1,40 @@
+{
+  "_id": "532e2d0d8aae8815",
+  "name": "Super Saiyan",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The golden form of legend. At <strong>Level 5</strong> and beyond, the first time you enter the <em>Enraged</em> condition you turn <em>Super Saiyan 1</em> and can access it from that point on.</p>\n<p>You also have access to learning the <em>Super Saiyan Grades</em> <strong>Power-ups</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "saiyans-super-saiyan",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1093,
+        "endLine": 1097
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Saiyans"
+    }
+  }
+}

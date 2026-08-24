@@ -1,0 +1,39 @@
+{
+  "_id": "f884590ba20749bd",
+  "name": "All Out!",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  6 Ki</li>\n<li><strong>Casting Time:</strong>  1 Bonus Action</li>\n<li><strong>Range:</strong>          Melee</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Until the end of your turn</li>\n</ul>\n<p>By igniting your ki pathways you may speed up the circulation of the energy in your body. For the duration, all damage dealt by your <strong>Melee Techniques</strong> is increased by 1 damage step, this does not change the <em>Unarmed Strike Damage Die</em> portion of the <em>Damage</em> if it has one.</p>\n<p>(1d4&gt;1d6&gt;1d8&gt;1d10&gt;1d12&gt;2d6,&gt; etc)</p>\n",
+      "chat": ""
+    },
+    "identifier": "all-out",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "melee",
+    "kiCost": "6 Ki",
+    "castingTime": "1 Bonus Action",
+    "range": "Melee",
+    "duration": "Until the end of your turn",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6494,
+        "endLine": 6506
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

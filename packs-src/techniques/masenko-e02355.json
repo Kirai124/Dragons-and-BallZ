@@ -1,0 +1,39 @@
+{
+  "_id": "e023558b2ed0f07b",
+  "name": "Masenko",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 12 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 80 feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Beam</li>\n</ul>\n<p>Placing your hands to your forehead you fire out a small but powerful beam of yellow energy. Roll a <em>Beam Attack Roll</em> dealing 6d6 <em>Ki Damage</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "masenko",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "beam",
+    "kiCost": "12 Ki",
+    "castingTime": "1 Action",
+    "range": "80 feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7954,
+        "endLine": 7966
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

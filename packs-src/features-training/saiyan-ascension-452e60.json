@@ -1,0 +1,39 @@
+{
+  "_id": "452e60efaa9c2498",
+  "name": "Saiyan Ascension",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>U7/U6</em>\nSuper Saiyan, the ultimate power of the Saiyan race, many don’t have the skill to take it “even further beyond”.</p>\n<p>This feat can only be taken after <em>Super Saiyan 1</em> is unlocked. This <strong>Feat</strong> can be taken twice, the first time granting you <em>Super Saiyan 2</em> <strong>Transformation</strong>, the second time giving you <em>Super Saiyan 3</em> <strong>Transformation</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "saiyan-ascension",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5507,
+        "endLine": 5519
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

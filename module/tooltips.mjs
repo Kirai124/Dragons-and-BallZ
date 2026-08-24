@@ -227,7 +227,7 @@ export default class Tooltips5e {
 
     this.tooltip.classList.add("dnd5e-tooltip", "passive-tooltip", "dnd5e2");
     this.tooltip.innerHTML = await foundry.applications.handlebars.renderTemplate(
-      "systems/dnd5e/templates/journal/passive-tooltip.hbs", context
+      "systems/dragons-and-ballz/templates/journal/passive-tooltip.hbs", context
     );
     game.tooltip._setAnchor(TooltipManager.TOOLTIP_DIRECTIONS.DOWN);
   }

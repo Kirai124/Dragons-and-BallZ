@@ -44,11 +44,11 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
   static PARTS = {
     sidebar: {
       id: "sidebar",
-      template: "systems/dnd5e/templates/compendium/sources-sidebar.hbs"
+      template: "systems/dragons-and-ballz/templates/compendium/sources-sidebar.hbs"
     },
     packs: {
       id: "packs",
-      template: "systems/dnd5e/templates/compendium/sources-packs.hbs"
+      template: "systems/dragons-and-ballz/templates/compendium/sources-packs.hbs"
     }
   };
 
@@ -176,7 +176,7 @@ export default class CompendiumBrowserSettingsConfig extends Application5e {
         const { packageName, flags } = metadata;
         let tag = "";
         // Special case handling for D&D SRD.
-        if ( packageName === "dnd5e" ) {
+        if ( packageName === "dragons-and-ballz" ) {
           tag = flags?.["dragons-and-ballz"]?.sourceBook?.replace("SRD ", "");
         }
         return {

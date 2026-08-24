@@ -1,0 +1,39 @@
+{
+  "_id": "1e2803fc714c672b",
+  "name": "Spirit Burst",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action on your turn you may gain +3 <strong>Power</strong> until the end of your turn. If you do so you can't use this feature again until you finish a Short or Long Rest.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-burst",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6327,
+        "endLine": 6329
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

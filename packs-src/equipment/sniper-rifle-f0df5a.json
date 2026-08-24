@@ -1,0 +1,42 @@
+{
+  "_id": "f0df5ae4f2831898",
+  "name": "Sniper Rifle",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 750,000 Zeni | <strong>Damage:</strong> 1d12 Piercing | <strong>Weapon Properties:</strong> Ammunition (range 200/800), heavy, two-handed, loading, Magazine (6)</p>\n",
+      "chat": ""
+    },
+    "identifier": "sniper-rifle",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 750000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9511,
+        "endLine": 9517
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

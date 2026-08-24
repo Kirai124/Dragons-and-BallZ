@@ -111,7 +111,7 @@ function copyCompendiumContent() {
     fs.mkdirSync(path.dirname(dest), { recursive: true });
 
     let data = fs.readFileSync(src, "utf8");
-    data = data.replaceAll("modules/dnd-free-rules/icons/", "systems/dnd5e/icons/");
+    data = data.replaceAll("modules/dnd-free-rules/icons/", "systems/dragons-and-ballz/icons/");
     console.info(`Writing ${dest}...`);
     fs.writeFileSync(dest, data, { mode: 0o644 });
   }

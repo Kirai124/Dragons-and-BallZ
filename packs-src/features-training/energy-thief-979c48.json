@@ -1,0 +1,40 @@
+{
+  "_id": "979c4822ada44e4d",
+  "name": "Energy Thief",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, you may radiate a 10 foot radius of Stamina draining energy. This radius increases by 10 feet each time your <em>Proficiency Bonus</em> increases. This <strong>Feature</strong> requires concentration to maintain and cost at least 20 <strong>Ki</strong>.</p>\n<p>Whenever a creature enters this space or begin/ends it's turn in the radius you absorb 1 Stamina per 20 ki spent to maintain this feature.</p>\n<p>All <strong>Stamina</strong> gained in this way over your maximum becomes <strong>Temporary Stamina</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "sateery-energy-thief",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2079,
+        "endLine": 2085
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Sateery"
+    }
+  }
+}

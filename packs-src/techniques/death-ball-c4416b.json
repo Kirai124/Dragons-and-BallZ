@@ -1,0 +1,39 @@
+{
+  "_id": "c4416b5f15b4525e",
+  "name": "Death Ball",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  Special</li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  100 Feet (40 foot radius sphere)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Blast</li>\n</ul>\n<p>A ball of energy is created on the user's finger and thrown before exploding. For 15 <strong>Ki</strong> you may choose a point within range, targets in the technique's radius must make a <em>Dexterity Saving Throw</em> taking 5d10 <em>Ki Damage</em> on a failure, taking half damage on a success.</p>\n<p>You may spend additional sets of 15 <strong>Ki</strong> upon casting to add 2d10 <em>Ki Damage</em> and increase the sphere radius by 5 feet.</p>\n",
+      "chat": ""
+    },
+    "identifier": "death-ball",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "blast",
+    "kiCost": "Special",
+    "castingTime": "1 Action",
+    "range": "100 Feet (40 foot radius sphere)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8107,
+        "endLine": 8124
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

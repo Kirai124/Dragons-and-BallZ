@@ -1,0 +1,40 @@
+{
+  "_id": "632fd138dc67180b",
+  "name": "Big-Gete Features",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<h5>Metal Wire Construction</h5>\n<p>You have the ability to stitch your body back together with your control of the micromachines making up your body. As an Action on your turn you may spend <strong>Ki</strong> to heal yourself, 1 <strong>HP</strong> for every 2 <strong>Ki</strong> spent.</p>\n<p>Additionally you gain the ability to unravel your form temporarily to attempt to grapple a target. As an Action on your turn you may make an unarmed strike against a target in melee range, dealing 0 damage and <em>Grappling</em> the target on a hit. You may grapple targets 1 <em>Size Category</em> larger than usual in this way.</p>\n<h5>Big Gete Star Cloning</h5>\n<p>As an Action on your turn you may spend <strong>Hit Die</strong> to create lesser copies of yourself. Each clone costs 2 <strong>Hit Dice</strong> that you can not regain until the clone is killed or dispelled as an Action on your turn. Clones have the following traits and features:</p>\n<ul>\n<li>You may create a maximum number of clones equal to half your Proficiency Bonus, rounded down.</li>\n<li>All clones have your <em>Ability Score and Class Features</em> with half your Proficiency Bonus rounded down.</li>\n<li>Each Clone has HP equal to the maximum amount of a single <strong>Hit Die</strong> spent in the creation, taking the higher leveled option in the event of <em>Multi-Classing.</em><ul>\n<li>For Example: a Mystic/Bruiser (lvl 6/4) would use their Mystic <strong>Hit Die</strong> due to having more levels in that class.</li>\n</ul>\n</li>\n<li>Clones use <em>your</em> <strong>Ki</strong> for <strong>Techniques</strong> and <strong>Features</strong> and have no access to <strong>Stamina</strong>.</li>\n<li>Clones have thier turn immedietly following yours in initiative but only have a Single Action per turn to <strong>Cast a Technique</strong> or take the <strong>Attack, Dash, Disengage, or Dodge Actions</strong>.</li>\n</ul>\n<h5>Draining Grapple</h5>\n<p>Whenever you have a target <em>Grappled</em> you may use your Bonus Action to drain 1d4 <strong>Stamina</strong> from the target.</p>\n",
+      "chat": ""
+    },
+    "identifier": "cyborg-big-gete-features",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2310,
+        "endLine": 2331
+      },
+      "contentCategory": "subraceVariant",
+      "grantedBy": "Cyborg"
+    }
+  }
+}

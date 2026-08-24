@@ -1,0 +1,39 @@
+{
+  "_id": "97737b678fe31dcf",
+  "name": "Kiai!",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 5 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  Self (5 foot radius)</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Omni</li>\n</ul>\n<p>Send out a pulse of ki outwards from yourself. All creatures must make a <em>Strength Saving Throw</em> or be <em>Launched</em> 15 feet, being pushed back 5 Feet on a save.</p>\n",
+      "chat": ""
+    },
+    "identifier": "kiai",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "omni",
+    "kiCost": "5 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (5 foot radius)",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7661,
+        "endLine": 7674
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

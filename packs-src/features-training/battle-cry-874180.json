@@ -1,0 +1,40 @@
+{
+  "_id": "8741802a4fb480b5",
+  "name": "Battle Cry",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Ogres have a natural ability to inspire anger and aggression from those near them.</p>\n<p>You gain the following <strong>Omni Technique</strong> and it's rank matches your <strong>Ki Rank</strong>:</p>\n<h5>Battle Cry</h5>\n<p><em>Rank X Omni Technique</em></p>\n<p><strong>Cost:</strong>   1 Stamina\n<strong>Casting Time:</strong>   1 Bonus Action\n<strong>Range:</strong>          30 Feet\n<strong>Duration:</strong>       Special</p>\n<p>You attempt to compel a creature into a duel. One creature that you can see within range must make a <em>Wisdom Saving Throw</em>. On a failed save, the creature is drawn to you, compelled by your aggressive demand. For the duration, it has Disadvantage on <em>Attack Rolls</em> against creatures other than you, and must make a <em>Wisdom Saving Throw</em> each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this <em>Saving Throw</em>, this <strong>Technique</strong> doesn’t restrict the target’s movement for that turn.</p>\n<p>The effects ends if you attack any unaffected creature, if you cast a <strong>Spell/Technique</strong> that targets a hostile creature other than a target, or if you end your turn more than 30 feet away from a target.</p>\n<p>For each additional <strong>Stamina</strong> you spend you may force an additional target in your range to make the <em>Saving Throw</em> as well, to a maximum number of targets equal to your <em>Proficiency Bonus</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ogre-battle-cry",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1026,
+        "endLine": 1054
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Ogre"
+    }
+  }
+}

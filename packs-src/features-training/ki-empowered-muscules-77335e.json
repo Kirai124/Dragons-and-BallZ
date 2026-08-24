@@ -1,0 +1,39 @@
+{
+  "_id": "77335ec9573ec1ea",
+  "name": "Ki Empowered Muscules",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you may gain a <em>Rank of Exhaustion</em> to gain the <em>Empowered Condtion</em> for a number of rounds equal to your <strong>Ki Rank.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "ki-empowered-muscules",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6199,
+        "endLine": 6204
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "c541f66339c07cf6",
+  "name": "Tier 1 Scouter",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p>Using this handheld Binocular like device you may search for ki without the feature as an action.</p>\n<p>If you scan someone with more than a +3 Power bonus or 5 levels in a class with Ki this device explodes.</p>\n",
+      "chat": ""
+    },
+    "identifier": "tier-1-scouter",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9896,
+        "endLine": 9901
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

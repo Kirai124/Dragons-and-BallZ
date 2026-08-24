@@ -1,0 +1,39 @@
+{
+  "_id": "cdf0a327e474a83b",
+  "name": "Dynamite Strike",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>   5 Ki</li>\n<li><strong>Casting Time:</strong> When you take the <em>Attack Action</em> or roll a <em>Combo Attack Roll</em></li>\n<li><strong>Range:</strong>          Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>Your attacks ignite with small explosions when they connect.</p>\n<p>You deal an additional 1d6 <em>Fire Damage</em> for the duration of the <em>Attack Action</em> or <strong>Technique</strong> that triggered this <strong>Technique's</strong> casting.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dynamite-strike",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "melee",
+    "kiCost": "5 Ki",
+    "castingTime": "When you take the *Attack Action* or roll a *Combo Attack Roll*",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6544,
+        "endLine": 6557
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

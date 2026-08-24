@@ -1,0 +1,39 @@
+{
+  "_id": "84e8754abe0fed52",
+  "name": "True Body",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires Fourth Form</strong>\nYou have finally removed the limiters on your body and taken on your true form.</p>\n<p>You always appear to be in your Final Form, though you don’t gain the full benefits of the <strong>Transformation</strong>. You may no longer use the <em>Second, Third, or Fourth Form</em> <strong>Transformations</strong> but gain 2 <em>Ranks of the Light-Weight Condition</em>. You also gain +5 to <strong>Stamina</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "true-body",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires Fourth Form",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5781,
+        "endLine": 5787
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

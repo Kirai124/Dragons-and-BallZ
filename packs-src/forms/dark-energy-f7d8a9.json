@@ -1,0 +1,41 @@
+{
+  "_id": "f7d8a988db7dc5cd",
+  "name": "Dark Energy",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite: Ancient Saiyan or Ate the Fruit of the Tree of Might at level 10 or beyond.</strong>\n<strong>Power-Up</strong>\nYou must be of the <strong>Evil Alignment</strong> to gain this form. If you are of the <strong>Good</strong> or <strong>Neutral Alignment</strong> and gain this form, you must make a <em>Wisdom Saving Throw</em> against <strong>DC 25</strong>, on a failure, you gain the <em>Berserk Condition</em>. You lose access to the <em>Super Saiyan God</em> <strong>Power-Up</strong>.</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>You deal +1d8 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 30 ft.</li>\n<li>3 <strong>Stamina Upkeep</strong></li>\n</ul>\n<h5>Dark Energy Techniques</h5>\n<h6>Dark Weapons</h6>\n<p><em>Rank 3 Ki Technique</em></p>\n<p><strong>Ki Cost:</strong>   20 Ki\n<strong>Prerequisites:</strong>   <em>Dark Energy</em>\n<strong>Casting Time:</strong>   1 Bonus Action\n<strong>Range:</strong>          Self\n<strong>Type:</strong>     Omni\n<strong>Duration:</strong>       Upkeep (5 Ki)</p>\n<p>You begin to form hands from your dark aura, allowing you to attack from a distance even while restrained or bound. All melee attacks that you make gain a reach of 20. Additionally if you would get disadvantage on an attack that is not from the <em>Blinded</em> or <em>Invisible Conditions</em>, you may ignore it if you attack a creature further than 5 feet from you.</p>\n<p>Each time you <em>Master</em> this <strong>Technique</strong>, you increase the reach by 10</p>\n<h6>Dark Corruption</h6>\n<p><em>Rank 4 Ki Technique</em></p>\n<p><strong>Ki Cost:</strong>   50 Ki\n<strong>Prerequisites:</strong>   <em>Dark Energy</em>\n<strong>Casting Time:</strong>   1 Action\n<strong>Range:</strong>          Self (5 foot radius)\n<strong>Type:</strong>     Omni\n<strong>Duration:</strong>       1 Minute</p>\n<p>The Evil Aura engulfs any creature within it, forcing them to go on an evil Berserker Rage against anyone except you. All targets in range must make a <em>Wisdom Saving Throw</em>, on a failure they gain the <em>Dark Energy</em> <strong>Power-Up</strong>. Targets of <em>Good/Neutral Alignment</em> immedietly fail <em>Dark Energy's</em> <em>Wisdom Saving Throw.</em></p>\n<p>Saiyans with <em>Super Saiyan God</em> can be effected by this <strong>Technique</strong> without losing <em>Super Saiyan God</em>. Targets under the effect of this <strong>Technique</strong> can not target you with <em>Attack Rolls</em>, <strong>Techniques, Spells,</strong> or <strong>Features</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dark-energy",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Non-Race Specific",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "bonus",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "Prerequisite: Ancient Saiyan or Ate the Fruit of the Tree of Might at level 10 or beyond.; Prerequisites:**   *Dark Energy",
+    "tags": "Non-Race Specific"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4818,
+        "endLine": 4868
+      },
+      "formFamily": "Non-Race Specific"
+    }
+  }
+}

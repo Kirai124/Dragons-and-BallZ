@@ -1,0 +1,39 @@
+{
+  "_id": "e0ade5385767917d",
+  "name": "Ki Blast Barrage",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 12 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 90 Feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Barrage</li>\n</ul>\n<p>Fire a flurry of energy attacks. Make a <em>Blast Attack Roll</em> dealing 4d6 <em>Ki Damage</em> on a hit. This <strong>Technique</strong> can have its <em>Casting Time</em> reduced by 1 step by spending double the <strong>Ki Cost</strong> upon casting.</p>\n<p>(1 Action &gt; 1 Bonus Action &gt; 1 Reaction)</p>\n",
+      "chat": ""
+    },
+    "identifier": "ki-blast-barrage",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "barrage",
+    "kiCost": "12 Ki",
+    "castingTime": "1 Action",
+    "range": "90 Feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7675,
+        "endLine": 7689
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

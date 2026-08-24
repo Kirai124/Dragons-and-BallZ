@@ -1,0 +1,39 @@
+{
+  "_id": "4a433e83b1b32069",
+  "name": "Redirect Attack",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>When a creature misses you with an attack with an attack roll, you can spend 1 <strong>Stamina</strong> as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you.</p>\n",
+      "chat": ""
+    },
+    "identifier": "redirect-attack",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6316,
+        "endLine": 6318
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

@@ -28,15 +28,15 @@ export default class CalendarHUD extends BaseCalendarHUD {
   static PARTS = {
     startButtons: {
       classes: ["calendar-buttons"],
-      template: "systems/dnd5e/templates/apps/calendar-buttons.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/calendar-buttons.hbs"
     },
     core: {
       classes: ["calendar-core"],
-      template: "systems/dnd5e/templates/apps/calendar-core.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/calendar-core.hbs"
     },
     endButtons: {
       classes: ["calendar-buttons"],
-      template: "systems/dnd5e/templates/apps/calendar-buttons.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/calendar-buttons.hbs"
     }
   };
 

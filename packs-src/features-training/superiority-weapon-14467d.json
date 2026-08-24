@@ -1,0 +1,40 @@
+{
+  "_id": "14467d8234d9cae8",
+  "name": "Superiority: Weapon",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You are naturally adept at Weapon combat. You gain +1 <em>Static Bonus</em> added to all <em>Martial</em> and <em>Simple Weapon Attacks</em> and <strong>Weapon Techniques</strong>. This increases to +2 at <strong>Level 7</strong>, +3 at <strong>Level 13</strong>, and +4 at <strong>Level 19</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "konatsian-superiority-weapon",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 914,
+        "endLine": 916
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Konatsian"
+    }
+  }
+}

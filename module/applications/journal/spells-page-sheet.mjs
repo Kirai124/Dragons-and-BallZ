@@ -32,11 +32,11 @@ export default class JournalSpellListPageSheet extends JournalEntryPageHandlebar
     header: super.EDIT_PARTS.header,
     config: {
       classes: ["standard-form"],
-      template: "systems/dnd5e/templates/journal/spell/config.hbs"
+      template: "systems/dragons-and-ballz/templates/journal/spell/config.hbs"
     },
     list: {
       classes: ["right", "spell-list"],
-      template: "systems/dnd5e/templates/journal/spell/list.hbs"
+      template: "systems/dragons-and-ballz/templates/journal/spell/list.hbs"
     }
   };
 
@@ -46,7 +46,7 @@ export default class JournalSpellListPageSheet extends JournalEntryPageHandlebar
   static VIEW_PARTS = {
     content: {
       root: true,
-      template: "systems/dnd5e/templates/journal/spell/view.hbs"
+      template: "systems/dragons-and-ballz/templates/journal/spell/view.hbs"
     }
   };
 
@@ -76,7 +76,7 @@ export default class JournalSpellListPageSheet extends JournalEntryPageHandlebar
   _configureRenderParts(options) {
     const parts = super._configureRenderParts(options);
     if ( ("content" in parts) && this.options.displayAsTable ) {
-      parts.content.template = "systems/dnd5e/templates/journal/spell/table.hbs";
+      parts.content.template = "systems/dragons-and-ballz/templates/journal/spell/table.hbs";
     }
     return parts;
   }

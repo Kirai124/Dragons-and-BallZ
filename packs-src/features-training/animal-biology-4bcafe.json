@@ -1,0 +1,40 @@
+{
+  "_id": "4bcafeb2c360d1dc",
+  "name": "Animal Biology",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>You must choose 1</strong></p>\n<p>Your animal nature has resulted in you taking the distinct form of a family of animals, granting you certain features.</p>\n<h5>Mammalian</h5>\n<p>You have a set of powerful claws. Your <em>Unarmed Strikes</em> can deal <em>Slashing Damage</em>.</p>\n<h5>Fish</h5>\n<p>You are capable of breathing air as well as underwater. You also gain a 30 foot <em>Swim Speed</em> that increases by 15 feet each time your <strong>Ki Rank</strong> increases.</p>\n<h5>Avian</h5>\n<p>You are a master of arial combat. You gain a 30 foot <em>Fly Speed.</em> You may only use this <em>Fly Speed</em> while you are not wielding a <em>Weapon</em> in your hand. Your <strong>AC</strong> increases while in the air by one third of your <em>Proficiency Modifier</em>, rounded down.</p>\n",
+      "chat": ""
+    },
+    "identifier": "beastmen-animal-biology",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 773,
+        "endLine": 791
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Beastmen"
+    }
+  }
+}

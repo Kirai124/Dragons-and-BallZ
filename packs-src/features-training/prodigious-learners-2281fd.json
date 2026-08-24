@@ -1,0 +1,40 @@
+{
+  "_id": "2281fd9ce310cba6",
+  "name": "Prodigious Learners",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You are a natural master of replicating what you see.</p>\n<p>You begin the game at <strong>Level 1</strong> with the <em>Eagled-Eyed Adaptation</em> <strong>Heroic Feature</strong> but you may use it a number of times per long rest equal to your <em>Proficiency Bonus</em>. You can memorize a number of <strong>Techniques</strong> equal to your <strong>Intellegence Modifier</strong> at a time, replacing one of your choice if you were to exceed your maximum.</p>\n",
+      "chat": ""
+    },
+    "identifier": "neko-majin-prodigious-learners",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2022,
+        "endLine": 2025
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Neko Majin"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "f7140d085c15fbe8",
+  "name": "Brave Flurry",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 25 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 30 feet</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>You fire a flurry of blasts from your weapon, basing it out of the type of weapon that you wield. Make a number of <em>Combo Attack Rolls</em> equal to half of your <em>Proficiency Bonus</em>, each dealing your <em>Weapon Damage Die</em> on a hit. Each attack may target a different target or each can indiviually be sent at the same.</p>\n",
+      "chat": ""
+    },
+    "identifier": "brave-flurry",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "weapon",
+    "kiCost": "25 Ki",
+    "castingTime": "1 Action",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7413,
+        "endLine": 7426
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

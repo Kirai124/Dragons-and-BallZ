@@ -32,6 +32,7 @@ import * as rules from "./module/rules/_module.mjs";
 import Tooltips5e from "./module/tooltips.mjs";
 import * as utils from "./module/utils.mjs";
 import DragDrop5e from "./module/drag-drop.mjs";
+import * as dragonball from "./module/dragonball-workflows.mjs";
 
 /* -------------------------------------------- */
 /*  Define Module Structure                     */
@@ -44,6 +45,7 @@ globalThis.dnd5e = {
   dataModels,
   dice,
   documents,
+  dragonball,
   enrichers,
   Filter,
   inserts,
@@ -60,6 +62,12 @@ globalThis.dnd5e = {
 
 Hooks.once("init", function() {
   globalThis.dnd5e = game.dnd5e = Object.assign(game.system, globalThis.dnd5e);
+
+  // Register template helpers before anything in init can trigger an Application render.
+  // This is intentionally early because Foundry V14 may render CreateDocumentDialog
+  // while other system initialization is still in progress.
+  utils.registerHandlebarsHelpers();
+
   utils.log(`Initializing the D&D Fifth Game System - Version ${dnd5e.version}\n${DND5E.ASCII}`);
 
   // Record Configuration Values
@@ -76,7 +84,7 @@ Hooks.once("init", function() {
   CONFIG.Combatant.documentClass = documents.Combatant5e;
   CONFIG.CombatantGroup.documentClass = documents.CombatantGroup5e;
   CONFIG.Item.collection = dataModels.collection.Items5e;
-  CONFIG.Item.compendiumIndexFields.push("system.container", "system.identifier");
+  CONFIG.Item.compendiumIndexFields.push("system.container", "system.identifier", "system.rank", "system.category", "system.family", "system.techniqueType", "system.parentRace");
   CONFIG.Item.documentClass = documents.Item5e;
   CONFIG.JournalEntryPage.documentClass = documents.JournalEntryPage5e;
   CONFIG.Token.documentClass = documents.TokenDocument5e;
@@ -86,7 +94,7 @@ Hooks.once("init", function() {
   CONFIG.Token.movement.TerrainData = dataModels.TerrainData5e;
   CONFIG.User.documentClass = documents.User5e;
   CONFIG.time.roundTime = 6;
-  Roll.TOOLTIP_TEMPLATE = "systems/dnd5e/templates/chat/roll-breakdown.hbs";
+  Roll.TOOLTIP_TEMPLATE = "systems/dragons-and-ballz/templates/chat/roll-breakdown.hbs";
   CONFIG.Dice.BasicDie = CONFIG.Dice.terms.d = dice.BasicDie;
   CONFIG.Dice.BasicRoll = dice.BasicRoll;
   CONFIG.Dice.DamageRoll = dice.DamageRoll;
@@ -110,8 +118,8 @@ Hooks.once("init", function() {
   game.dnd5e.tooltips = new Tooltips5e();
 
   // Remove honor & sanity from configuration if they aren't enabled
-  if ( !game.settings.get("dnd5e", "honorScore") ) delete DND5E.abilities.hon;
-  if ( !game.settings.get("dnd5e", "sanityScore") ) delete DND5E.abilities.san;
+  if ( !game.settings.get("dragons-and-ballz", "honorScore") ) delete DND5E.abilities.hon;
+  if ( !game.settings.get("dragons-and-ballz", "sanityScore") ) delete DND5E.abilities.san;
 
   // Legacy rules.
   if ( dnd5e.settings.rulesVersion === "legacy" ) applyLegacyRules();
@@ -243,8 +251,7 @@ Hooks.once("init", function() {
     label: "DND5E.SheetClass.Token"
   });
 
-  // Preload Handlebars helpers & partials
-  utils.registerHandlebarsHelpers();
+  // Preload Handlebars partials. Helpers were registered at the start of init.
   utils.preloadHandlebarsTemplates();
 
   // Enrichers
@@ -280,7 +287,7 @@ function _configureCalendar() {
    */
   if ( Hooks.call("dnd5e.setupCalendar") === false ) return;
 
-  const calendar = game.settings.get("dnd5e", "calendar");
+  const calendar = game.settings.get("dragons-and-ballz", "calendar");
   const calendarConfig = CONFIG.DND5E.calendar.calendars.find(c => c.value === calendar);
   if ( calendarConfig ) {
     CONFIG.time.worldCalendarConfig = calendarConfig.config;
@@ -320,8 +327,8 @@ function _configureTrackableAttributes() {
 
   CONFIG.Actor.trackableAttributes = {
     character: {
-      bar: [...creature.bar, "resources.primary", "resources.secondary", "resources.tertiary", "details.xp"],
-      value: [...creature.value]
+      bar: [...creature.bar, "attributes.ki", "attributes.stamina", "resources.primary", "resources.secondary", "resources.tertiary", "details.xp"],
+      value: [...creature.value, "attributes.godKi.value", "attributes.power.total", "attributes.powerLevel", "attributes.kiRank"]
     },
     npc: {
       bar: [...creature.bar, "resources.legact", "resources.legres"],
@@ -366,6 +373,7 @@ function _configureConsumableAttributes() {
     ...Object.keys(DND5E.abilities).map(ability => `abilities.${ability}.value`),
     "attributes.ac.flat",
     "attributes.hp.value",
+    "attributes.ki.value", "attributes.stamina.value", "attributes.godKi.value",
     "attributes.exhaustion",
     ...Object.keys(DND5E.senses).map(sense => `attributes.senses.ranges.${sense}`),
     ...Object.keys(DND5E.movementTypes).map(type => `attributes.movement.${type}`),
@@ -387,20 +395,20 @@ function _configureFonts() {
     Roboto: {
       editor: true,
       fonts: [
-        { urls: ["systems/dnd5e/fonts/roboto/Roboto-Regular.woff2"] },
-        { urls: ["systems/dnd5e/fonts/roboto/Roboto-Bold.woff2"], weight: "bold" },
-        { urls: ["systems/dnd5e/fonts/roboto/Roboto-Italic.woff2"], style: "italic" },
-        { urls: ["systems/dnd5e/fonts/roboto/Roboto-BoldItalic.woff2"], weight: "bold", style: "italic" }
+        { urls: ["systems/dragons-and-ballz/fonts/roboto/Roboto-Regular.woff2"] },
+        { urls: ["systems/dragons-and-ballz/fonts/roboto/Roboto-Bold.woff2"], weight: "bold" },
+        { urls: ["systems/dragons-and-ballz/fonts/roboto/Roboto-Italic.woff2"], style: "italic" },
+        { urls: ["systems/dragons-and-ballz/fonts/roboto/Roboto-BoldItalic.woff2"], weight: "bold", style: "italic" }
       ]
     },
     "Roboto Condensed": {
       editor: true,
       fonts: [
-        { urls: ["systems/dnd5e/fonts/roboto-condensed/RobotoCondensed-Regular.woff2"] },
-        { urls: ["systems/dnd5e/fonts/roboto-condensed/RobotoCondensed-Bold.woff2"], weight: "bold" },
-        { urls: ["systems/dnd5e/fonts/roboto-condensed/RobotoCondensed-Italic.woff2"], style: "italic" },
+        { urls: ["systems/dragons-and-ballz/fonts/roboto-condensed/RobotoCondensed-Regular.woff2"] },
+        { urls: ["systems/dragons-and-ballz/fonts/roboto-condensed/RobotoCondensed-Bold.woff2"], weight: "bold" },
+        { urls: ["systems/dragons-and-ballz/fonts/roboto-condensed/RobotoCondensed-Italic.woff2"], style: "italic" },
         {
-          urls: ["systems/dnd5e/fonts/roboto-condensed/RobotoCondensed-BoldItalic.woff2"], weight: "bold",
+          urls: ["systems/dragons-and-ballz/fonts/roboto-condensed/RobotoCondensed-BoldItalic.woff2"], weight: "bold",
           style: "italic"
         }
       ]
@@ -408,8 +416,8 @@ function _configureFonts() {
     "Roboto Slab": {
       editor: true,
       fonts: [
-        { urls: ["systems/dnd5e/fonts/roboto-slab/RobotoSlab-Regular.ttf"] },
-        { urls: ["systems/dnd5e/fonts/roboto-slab/RobotoSlab-Bold.ttf"], weight: "bold" }
+        { urls: ["systems/dragons-and-ballz/fonts/roboto-slab/RobotoSlab-Regular.ttf"] },
+        { urls: ["systems/dragons-and-ballz/fonts/roboto-slab/RobotoSlab-Bold.ttf"], weight: "bold" }
       ]
     }
   });
@@ -558,6 +566,13 @@ Hooks.once("ready", function() {
     }
   });
   Hooks.on("updateWorldTime", dataModels.calendar.CalendarData5e.onTimePassage);
+  Hooks.on("updateCombat", async (combat, changed) => {
+    if ( !game.user.isGM || !("turn" in changed || "round" in changed) ) return;
+    const previousActor = combat.combatants.get(combat.previous?.combatantId)?.actor;
+    if ( previousActor?.system?.isCharacter ) await dragonball.processTurnEnd(previousActor, combat);
+    const actor = combat.combatant?.actor;
+    if ( actor?.system?.isCharacter ) await dragonball.processTurnStart(actor, combat);
+  });
 
   // Adjust sourced items on actors now that compendium UUID redirects have been initialized
   game.actors.forEach(a => a.sourcedItems._redirectKeys());
@@ -593,23 +608,21 @@ Hooks.once("ready", function() {
 async function _handleMigration() {
   if ( !game.user.isGM ) return;
 
-  const cv = game.settings.get("dnd5e", "systemMigrationVersion") || game.world.flags.dnd5e?.version;
-  const totalDocuments = game.actors.size + game.scenes.size + game.items.size;
-  if ( !cv && totalDocuments === 0 ) return game.settings.set("dnd5e", "systemMigrationVersion", game.system.version);
-  if ( cv && !foundry.utils.isNewerVersion(game.system.flags.needsMigrationVersion, cv) ) return;
+  const namespace = "dragons-and-ballz";
+  const currentVersion = game.settings.get(namespace, "systemMigrationVersion")
+    || game.world.flags[namespace]?.version
+    || game.world.flags.dnd5e?.version;
 
-  // Compendium pack folder migration.
-  if ( foundry.utils.isNewerVersion("3.0.0", cv) ) {
-    migrations.reparentCompendiums("DnD5e SRD Content", "D&D SRD Content");
+  // The inherited dnd5e migration suite targets dnd5e semantic versions and
+  // must not be run against Dragons and BallZ 0.x documents. Until DBZ-specific
+  // migrations are introduced, record the installed version without mutating
+  // world documents. This also prevents V14 startup errors from missing dnd5e
+  // migration manifest flags.
+  if ( currentVersion !== game.system.version ) {
+    await game.settings.set(namespace, "systemMigrationVersion", game.system.version);
   }
-
-  // Perform the migration
-  if ( cv && foundry.utils.isNewerVersion(game.system.flags.compatibleMigrationVersion, cv) ) {
-    ui.notifications.error("MIGRATION.DND5E.Warning.VersionTooOld", { permanent: true });
-  }
-
-  await migrations.migrateWorld();
 }
+
 
 /* -------------------------------------------- */
 /*  System Styling                              */
@@ -623,7 +636,7 @@ Hooks.on("renderGamePause", (app, html) => {
   container.append(...html.children);
   html.append(container);
   const img = html.querySelector("img");
-  img.src = "systems/dnd5e/ui/official/ampersand.svg";
+  img.src = "systems/dragons-and-ballz/ui/official/ampersand.svg";
   img.className = "";
 });
 
@@ -700,6 +713,7 @@ export {
   dataModels,
   dice,
   documents,
+  dragonball,
   enrichers,
   Filter,
   inserts,

@@ -1,0 +1,39 @@
+{
+  "_id": "615d7975333115f1",
+  "name": "Durable",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Hardy and resilient, you gain the following benefits:</p>\n<ul>\n<li>Increase your Constitution score by 1, to a maximum of your current Ability Score Maximum.</li>\n<li>When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "durable",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5273,
+        "endLine": 5278
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

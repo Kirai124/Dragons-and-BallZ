@@ -1,0 +1,66 @@
+{
+  "_id": "e9284464f9d5d9f2",
+  "name": "Hybrids",
+  "type": "subrace",
+  "img": "systems/dragons-and-ballz/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Must be a Humanoid Race</strong></p>\n<p>Humanoid races are blessed with adaptable DNA capable of mixing with a variety of other Species.</p>\n<p>Choose 1 <strong>Humanoid Race</strong> other than your current <strong>Race</strong>, you may replace up to 3 <strong>Racial Features</strong> with <strong>Racial Features</strong> from the choosen <strong>Race</strong> or the following feature:</p>\n<h3>Explosive Temper</h3>\n<p>Your DNA is strong but slightly unstable. Your anger can get ahead of you sometimes but it certainly can come in useful on the battlefield. Once per long rest you may enter the <em>Enraged Condition</em> as a Bonus Action.</p>\n<p>&lt;br&gt;&lt;br&gt;</p>\n",
+      "chat": ""
+    },
+    "identifier": "hybrids",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "parentRace": "",
+    "requirements": "Must be a Humanoid Race",
+    "tags": "subrace",
+    "advancement": {
+      "f9f2ab883c74c165": {
+        "_id": "f9f2ab883c74c165",
+        "type": "ItemChoice",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e19eac7ab12b32b2",
+              "sort": 0
+            }
+          ],
+          "restriction": {
+            "level": "",
+            "list": [],
+            "subtype": "",
+            "type": ""
+          },
+          "sorting": "a",
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Hybrid Replacement Feature",
+        "hint": "Optional handbook replacement feature."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2358,
+        "endLine": 2375
+      }
+    }
+  }
+}

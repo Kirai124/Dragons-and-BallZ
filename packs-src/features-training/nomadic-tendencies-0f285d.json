@@ -1,0 +1,40 @@
+{
+  "_id": "0f285d8c4fd08eb7",
+  "name": "Nomadic Tendencies",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Due to generations of lonely upbringing and long lifespans, Chronins gain an additional 1 <strong>Training Boon</strong> when <strong>Training Solo</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "chronin-nomadic-tendencies",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1678,
+        "endLine": 1680
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Chronin"
+    }
+  }
+}

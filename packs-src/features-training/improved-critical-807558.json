@@ -1,0 +1,39 @@
+{
+  "_id": "80755899e9959f19",
+  "name": "Improved Critical",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Attack Rolls made from your <em>Attack Action</em>'and <em>Ki Blast Action</em> have their <em>Critical Threat Range</em> increased by 1. This <strong>Heroic Feature</strong> can be taken a second time.</p>\n",
+      "chat": ""
+    },
+    "identifier": "improved-critical",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6171,
+        "endLine": 6174
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "b50419d2e8688d1e",
+  "name": "Plot Armor",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Once per Long Rest, when you are subject to a <em>Critical Hit</em> you may treat it as if it was not a <em>Critical Hit.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "plot-armor",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6285,
+        "endLine": 6288
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

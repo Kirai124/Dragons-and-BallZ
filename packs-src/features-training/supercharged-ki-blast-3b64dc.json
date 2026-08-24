@@ -1,0 +1,39 @@
+{
+  "_id": "3b64dceeec9504f8",
+  "name": "Supercharged Ki Blast",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your <em>Basic Ki Blast's</em> <em>Damage Die</em> is increased by 1 stage. This <strong>Heroic Feature</strong> can be taken up to 3 times.</p>\n",
+      "chat": ""
+    },
+    "identifier": "supercharged-ki-blast",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6339,
+        "endLine": 6341
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

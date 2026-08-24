@@ -1,0 +1,33 @@
+{
+  "_id": "633f5030760ab974",
+  "name": "Metamorian Equipment",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>When 2 characters fuse using this method, unlike a true fusing of equipment like with the <em>Potara Earrings</em>, a <em>Metamorian Fusion</em> has all <em>Armor</em> replaced with clothes in the Metamorian style. You may choose what <em>Weapons</em> you had prior to the fusion to keep and which get melded into your form for the duration of the <em>Fusion.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "metamorian-equipment",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Metamoran"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3553,
+        "endLine": 3554
+      }
+    }
+  }
+}

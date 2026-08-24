@@ -1,0 +1,33 @@
+{
+  "_id": "49c6b8c54013f61b",
+  "name": "Phycic Prowess",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have learned to use your energy as an extension of your body. You may make <em>Grapple Checks</em> instead of dealing damage with your <em>Basic Ki Blast.</em> To maintain the <em>Grapple</em> on a target you must maintain <em>Concentration</em> and use <em>Spirit</em> instead of <em>Athletics</em> when making contested <em>Grapple Checks</em> with the target.</p>\n",
+      "chat": ""
+    },
+    "identifier": "phycic-prowess",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Crane School"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3374,
+        "endLine": 3379
+      }
+    }
+  }
+}

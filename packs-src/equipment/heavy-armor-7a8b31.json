@@ -1,0 +1,42 @@
+{
+  "_id": "7a8b31bbf7712b33",
+  "name": "Heavy Armor",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Don:</strong> 10 minutes | <strong>Doff:</strong> 5 minutes</p>\n",
+      "chat": ""
+    },
+    "identifier": "heavy-armor",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9292,
+        "endLine": 9297
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

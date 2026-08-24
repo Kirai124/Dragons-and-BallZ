@@ -1,0 +1,42 @@
+{
+  "_id": "4054c96f681828d5",
+  "name": "Rope, hempen (50 feet)",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ10,000 | <strong>Weight:</strong> 10 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "rope-hempen-50-feet",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 10.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9784,
+        "endLine": 9815
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

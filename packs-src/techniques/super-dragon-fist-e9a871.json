@@ -1,0 +1,39 @@
+{
+  "_id": "e9a87161bb64a936",
+  "name": "Super Dragon Fist",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  75 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>          Self (100 ft line)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>Create the visage of the eternal dragon and punch it out and through enemies in front of you. Creatures in Range must make a Dexterity Saving Throw or take your <em>Unarmed Strike Damage Die</em> + 10d12 <em>Ki Damage</em>, half on a success.</p>\n",
+      "chat": ""
+    },
+    "identifier": "super-dragon-fist",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "melee",
+    "kiCost": "75 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (100 ft line)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7125,
+        "endLine": 7145
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

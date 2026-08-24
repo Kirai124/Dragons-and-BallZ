@@ -1,0 +1,41 @@
+{
+  "_id": "cde390174d28205f",
+  "name": "Super Saiyan 4",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<p>In this form, the Saiyan’s hair color differs, the same goes for the tail and the body is covered in red fur. A Saiyan in this form also possesses a shadow trim around their eyes and over the eyelids that varies in color, such as crimson.</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>You deal +1d8 to all <em>Damage Rolls</em></li>\n<li>You gain the <em><strong>Empowered</strong></em> Condition</li>\n<li>Increase all <em>Movement Speed</em> by 30 ft.</li>\n<li>You gain a +2 to your Maximum and Current <strong>Strength</strong> and <strong>Dexterity</strong> Ability Score</li>\n<li>4 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p>This <strong>Form</strong> counts as the <strong>Family</strong> that you chose from the <em>Saiyan Genetics</em> <strong>Racial Feature</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "super-saiyan-4",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Oozaru",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "4 Stamina",
+    "activation": "action",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Saiyans; Oozaru"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4106,
+        "endLine": 4120
+      },
+      "formFamily": "Oozaru"
+    }
+  }
+}

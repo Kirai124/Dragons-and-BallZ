@@ -1,0 +1,42 @@
+{
+  "_id": "ad0be970eb6383e7",
+  "name": "Fruit of the Tree of Might",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Wondrous Item, Legendary</em>\nA fruit created by the <em>Tree of Might</em>, also known as the Fruit of the Kais. However growing the tree drains planets out of their energy until nothing is left. You may as a bonus action eat the fruit, each time giving you 2 <strong>Training Boons</strong>. You may benefit from eating multiple fruits.</p>\n<p>If you are at <strong>Ki Rank 3</strong>, you may eat the Fruit of the Tree of Might, giving you access to the <em>Dark Energy</em> <strong>Power-Up</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "fruit-of-the-tree-of-might",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9943,
+        "endLine": 9952
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

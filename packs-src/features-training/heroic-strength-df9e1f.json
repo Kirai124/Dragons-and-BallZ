@@ -1,0 +1,40 @@
+{
+  "_id": "df9e1fc1b56e1c24",
+  "name": "Heroic Strength",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your strength of spirit pushes past normal limitations. When you attack with an <em>Unarmed Strike</em> or a <em>Weapon Attack Roll</em> using <strong>Strength</strong> that you are proficient with, you may replace the <em>Damage Die</em> with the <em>Damage Die</em> shown in the <strong>Heroic Strength Table</strong> above.</p>\n",
+      "chat": ""
+    },
+    "identifier": "hero-heroic-strength",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3123,
+        "endLine": 3126
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Hero"
+    }
+  }
+}

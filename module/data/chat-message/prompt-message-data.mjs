@@ -75,7 +75,7 @@ export default class PromptMessageData extends ChatMessageDataModel {
       endConcentration: PromptMessageData.#endConcentration,
       roll: PromptMessageData.#roll
     },
-    template: "systems/dnd5e/templates/chat/prompt-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/prompt-card.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */

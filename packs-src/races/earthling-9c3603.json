@@ -1,0 +1,147 @@
+{
+  "_id": "9c3603320dc97f5a",
+  "name": "Earthling",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Humanoid</strong></p>\n<h3>Physical Description</h3>\n<p>They come in all shapes and sizes; some are weak, some are strong, some are bald, some have three eyes. Earthlings can be strong in their own right, but have less physical capability than other races.</p>\n<h3>History</h3>\n<p>The dominant race of Earth, Earthlings have held the planet for as long as sentient life has existed there, protecting it time and time again with the help of the more powerful and clever among them.</p>\n<h3>Society</h3>\n<p>The majority population of earth. Earthlings can live in monasteries, cities, villages, etc. Since being accepted into the Galactic Patrol, they have grown tolerant/understanding of other races.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase</h4>\n<p>Increase all <strong>Ability Scores</strong> by 1 &lt;u&gt;OR&lt;/u&gt; increase 2 by 1 and gain a <strong>Feat</strong>.</p>\n<h4>Speed</h4>\n<p>You have a <em>Base Movement Speed</em> of 30 feet.</p>\n<h4>Language</h4>\n<p>You can speak Common and 1 additional <em>Language</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain any 2 <em>Skills</em> of your choice.</p>\n<h3>Racial Features</h3>\n<h4>Natural Talent</h4>\n<p>You gain an <em>Ability Score Improvement</em> at <strong>level 1</strong>.</p>\n<h4>Hard Work</h4>\n<p>What they lack in flashy transformation earthlings make up for with an endless drive for greatness. You gain a <strong>Technique</strong> every time you <strong>Level-Up</strong> to 20 and 2 <strong>Techniques</strong> every level beyond. You also gain 1 additional <em>Training Boon</em> each time you have a <strong>Training Arc</strong>.</p>\n<h4>Earthling Spirit</h4>\n<p>Increase the <em>Ability Score Maximum</em> of one <strong>Ability Score</strong> of your choice by 2. Additionally at an <em>Ability Score Improvement</em>, you gain 4 points to distribute, rather than the usual 3.</p>\n<h4>Master of Many</h4>\n<p>Due to their wide range in variety amongst your race, you gain a free proficiency in any <em>Skill</em> or any <em>Tool</em> of their choice. You gain an additional <em>Skill</em> of your choice at levels 7 and 13. If you choose a <em>Skill</em> you already have proficiency in you gain <em>Expertise</em> in it.</p>\n<h4>Power-Up Proficiency</h4>\n<p>Due to their adaptive nature Earthlings have a 2nd <strong>Power-Up Slot</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "earthling",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Humanoid"
+    },
+    "advancement": {
+      "ec34f5135bd65b33": {
+        "_id": "ec34f5135bd65b33",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 1,
+            "dex": 1,
+            "con": 1,
+            "int": 1,
+            "wis": 1,
+            "cha": 1
+          },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Increase all **Ability Scores** by 1 <u>OR</u> increase 2 by 1 and gain a **Feat**. The handbook also permits its listed alternate feat option; this advancement uses the all-scores +1 option."
+      },
+      "d81e50ec008c8e92": {
+        "_id": "d81e50ec008c8e92",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain any 2 Skills of your choice."
+      },
+      "8c3426b26616defa": {
+        "_id": "8c3426b26616defa",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and 1 additional Language of your choice."
+      },
+      "d2172fb8cb983efa": {
+        "_id": "d2172fb8cb983efa",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.93554a3e197b42c1",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a7b50cc1eeeb9585",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3001254dbf77e7ae",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.780e08562a0bdb8d",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1730e4709136b7f2",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 841,
+        "endLine": 884
+      }
+    }
+  }
+}

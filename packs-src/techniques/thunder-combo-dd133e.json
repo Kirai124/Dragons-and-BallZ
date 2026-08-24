@@ -1,0 +1,39 @@
+{
+  "_id": "dd133e1dad69f7ff",
+  "name": "Thunder Combo",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  20 Ki</li>\n<li><strong>Casting Time:</strong> When you take the <em>Attack Action</em></li>\n<li><strong>Range:</strong>  Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          For the duration of the <em>Attack Action.</em></li>\n</ul>\n<p>You focus all your power into speed into a series of fast moving attacks.</p>\n<p>For the duration of this <strong>Technique</strong> you gain additional <em>Movement Speed</em> equal to your <em>Base Movement Speed</em> and gain an additional 2d6 <em>Thunder Damage</em> for each 10 feet you move in a straight line between Attack Rolls.</p>\n",
+      "chat": ""
+    },
+    "identifier": "thunder-combo",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "20 Ki",
+    "castingTime": "When you take the *Attack Action*",
+    "range": "Melee",
+    "duration": "For the duration of the *Attack Action.*",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7031,
+        "endLine": 7043
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

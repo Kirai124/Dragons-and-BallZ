@@ -1,0 +1,39 @@
+{
+  "_id": "ac0ab5f161e3110e",
+  "name": "Powered-Up To The Limit",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain an additional <strong>Power-Up Slot.</strong> <strong>Forms</strong> using this slot cost +2 <strong>Stamina Upkeep</strong>.</p>\n<p>This <strong>Heroic Feature</strong> can be taken an additional 2 times to reduce the additional <strong>Stamina Upkeep</strong> by 1 each time.</p>\n",
+      "chat": ""
+    },
+    "identifier": "powered-up-to-the-limit",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6291,
+        "endLine": 6297
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

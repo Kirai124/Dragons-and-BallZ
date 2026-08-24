@@ -1,0 +1,139 @@
+{
+  "_id": "249229db6022804b",
+  "name": "Ceralians",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/cerelian.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Humanoid</strong></p>\n<h3>Physical Description</h3>\n<p>Cerealians look similar to Human-type Earthlings, though they all seem to have green-colored hair and have an average lifespan of 200 years, Their right eyes have also evolved to grant them incredible visual acuity, having a merged iris and pupil, which is deep red in color.</p>\n<h3>History</h3>\n<p>The Cerealians were once the inhabitants of Cereal and coexisted with a tribe of Namekians who settled on the planet after traveling from another realm. Around Age 733, the Cerealian homeworld was ravaged by the Frieza Force and its Saiyan Army. Using the full moon, the Saiyans transformed into Great Apes and annihilated nearly all of the population and their cities. Fortunately, a powerful Cerealian warrior named Flayk was able to destroy the planet's moon causing the Saiyans to revert to their base forms. Unfortunately, the invaders were still too powerful for the Cerealian and Namekian inhabitants to handle; fortunately, a handful of ceralians survived and scattered throughout the universe.</p>\n<h3>Society</h3>\n<p>Little is known about Ceralian Society since the loss of their homeworld, most are solitary nomads in the galaxy.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase</h4>\n<p>Wisdom +2, Dexterity +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walking Speed</em> is 30 feet.</p>\n<h4>Language</h4>\n<p>You can speak Common and 1 other language of your choice.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Perception</em> and <em>Technology Skills</em></p>\n<h3>Racial Features</h3>\n<h4>Ceralian Focus</h4>\n<p>As a Bonus Action on your turn you may spend 1 <strong>Stamina</strong> to gain advantage on all <em>Ranged Weapon Attack Rolls</em> and <em>Basic Ki Blasts</em> until the end of your next turn. You may do this a number of times equal to your <em>Proficiency Bonus</em> per Long Rest.</p>\n<h4>Tenacity</h4>\n<p>Once per Long Rest when you would hit 0 <strong>HP</strong> you instead drop to 1.</p>\n<h4>Sharpshooter</h4>\n<p>You <em>Basic Ki Blast</em> has it’s Damage Die increased by 2 steps (1d4&gt;1d6&gt;1d8&gt;1d10&gt;1d12&gt;2d6&gt;2d8&gt;etc) and it's range is doubled. Each time your <strong>Ki Rank</strong> increases, increase the range by an additional 30/90 feet.</p>\n<p>This does not effect <strong>Techniques</strong>.</p>\n<h4>Red Eyes Of The Ceralian</h4>\n<p>Ceralians are born with a strange quirk, a single hyper-evolved red eye. You gain access to the <em>Red Eye</em> <strong>Forms</strong> as laid out in the <strong>Forms Chapter</strong>.</p>\n<h4>Hyper Reflexes</h4>\n<p>Your brain is evolved to take on more information than others. You have 2 Reactions per round.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ceralians",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Humanoid"
+    },
+    "advancement": {
+      "dc1f747f105c46b1": {
+        "_id": "dc1f747f105c46b1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "wis": 2,
+            "dex": 1
+          },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Wisdom +2, Dexterity +1"
+      },
+      "c8edcae46b021638": {
+        "_id": "c8edcae46b021638",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:prc",
+            "skills:tec"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Perception and Technology Skills"
+      },
+      "9a828fd5b7960f71": {
+        "_id": "9a828fd5b7960f71",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and 1 other language of your choice."
+      },
+      "c9b448ad48d085aa": {
+        "_id": "c9b448ad48d085aa",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.27a6af2e0fca316b",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.97840466a40056f9",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3dcc3403d1a7eccf",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.cc7a20ce9ddf62d1",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ac1e34c601848728",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 792,
+        "endLine": 840
+      }
+    }
+  }
+}

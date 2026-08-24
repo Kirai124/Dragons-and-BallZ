@@ -1,0 +1,39 @@
+{
+  "_id": "62124478e6dc09ea",
+  "name": "Spirit Buster",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Other Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  Special</li>\n<li><strong>Casting Time:</strong>  1 Bonus Action</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Range:</strong>  Self (10 foot radius)</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Other</li>\n</ul>\n<p>All creatures in a 10 foot radius of you must make a <em>Strength Saving Throw</em> against your <strong>Omni Save DC</strong> or be <em>Launched</em> 15 feet away from you for every 10 <strong>Ki</strong> you spend during the casting of this <strong>Technique</strong>, and half as far on a success.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-buster",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "otherKi",
+    "kiCost": "Special",
+    "castingTime": "1 Bonus Action",
+    "range": "Self (10 foot radius)",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9070,
+        "endLine": 9082
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

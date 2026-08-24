@@ -1,0 +1,39 @@
+{
+  "_id": "bf2a94bb015b0131",
+  "name": "Darkness Flurry Attack",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 12 Ki per <em>Combo Attack Roll</em></li>\n<li><strong>Casting Prerequsite:</strong> 1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>You gather ki throughout your body and focus onto enhancing your speed, you may make a number of <em>Combo Attack Roll</em> up to a max of your <em>Proficiency Bonus</em>. On each hit, you deal your <em>Weapon Damage Die</em> plus  your <em>Weapon Damage Ability Modifier</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "darkness-flurry-attack",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "weapon",
+    "kiCost": "12 Ki per *Combo Attack Roll*",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7456,
+        "endLine": 7467
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

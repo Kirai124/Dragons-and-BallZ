@@ -11,7 +11,7 @@ export default class ItemGrantFlow extends AdvancementFlow {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/advancement/item-grant-flow-v2.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/item-grant-flow-v2.hbs"
     }
   };
 

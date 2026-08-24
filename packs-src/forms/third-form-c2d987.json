@@ -1,0 +1,41 @@
+{
+  "_id": "c2d987de7721ae0c",
+  "name": "Third Form",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<p>The arcosian’s body elongates to that of a Xenomorph.</p>\n<ul>\n<li>+2 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 10 ft.</li>\n<li>You gain the <em><strong>Super-Charged</strong></em> Condition</li>\n<li>Increase all <em>Ki Technique</em> range by 30 ft.</li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p><strong>Gained at Level 10</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "third-form",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Gates of Power",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "action",
+    "powerBonus": 2,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "Gained at Level 10",
+    "tags": "Arcosian; Gates of Power"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3891,
+        "endLine": 3903
+      },
+      "formFamily": "Gates of Power"
+    }
+  }
+}

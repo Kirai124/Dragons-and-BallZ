@@ -17,7 +17,7 @@ export default class OrderActivity extends ActivityMixin(BaseOrderActivityData) 
   /** @inheritDoc */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
     type: "order",
-    img: "systems/dnd5e/icons/svg/activity/order.svg",
+    img: "systems/dragons-and-ballz/icons/svg/activity/order.svg",
     title: "DND5E.FACILITY.Order.Issue",
     usage: {
       dialog: OrderUsageDialog,

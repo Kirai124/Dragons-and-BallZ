@@ -22,7 +22,7 @@ export default class HitDiceConfig extends BaseConfigSheet {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/actors/config/hit-dice-config.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/config/hit-dice-config.hbs"
     }
   };
 

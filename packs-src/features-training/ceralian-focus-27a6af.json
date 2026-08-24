@@ -1,0 +1,40 @@
+{
+  "_id": "27a6af2e0fca316b",
+  "name": "Ceralian Focus",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action on your turn you may spend 1 <strong>Stamina</strong> to gain advantage on all <em>Ranged Weapon Attack Rolls</em> and <em>Basic Ki Blasts</em> until the end of your next turn. You may do this a number of times equal to your <em>Proficiency Bonus</em> per Long Rest.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ceralians-ceralian-focus",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 817,
+        "endLine": 819
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Ceralians"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "683cc5792fa51d9a",
+  "name": "Bedroll",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ10,000 | <strong>Weight:</strong> 7 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "bedroll",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 7.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9723,
+        "endLine": 9775
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -20,9 +20,9 @@ export default class ContainerSheet extends ItemSheet5e {
   static PARTS = {
     ...super.PARTS,
     contents: {
-      template: "systems/dnd5e/templates/items/contents.hbs",
+      template: "systems/dragons-and-ballz/templates/items/contents.hbs",
       templates: [
-        "systems/dnd5e/templates/inventory/inventory.hbs", "systems/dnd5e/templates/inventory/encumbrance.hbs"
+        "systems/dragons-and-ballz/templates/inventory/inventory.hbs", "systems/dragons-and-ballz/templates/inventory/encumbrance.hbs"
       ],
       scrollable: [""]
     }

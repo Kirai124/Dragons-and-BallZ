@@ -1,0 +1,33 @@
+{
+  "_id": "71a9104dd2e1e715",
+  "name": "Size Manipulation",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You may cast the Enlarge/Reduce Spell on <strong>yourself</strong> as a Bonus Action on your turn. This <strong>Spell</strong> is cast as if through the <em>Mysticism</em> <strong>Class Feature</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "size-manipulation",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3435,
+        "endLine": 3437
+      }
+    }
+  }
+}

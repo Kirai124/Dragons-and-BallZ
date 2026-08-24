@@ -20,7 +20,7 @@ export default class RollMessageData extends ChatMessageDataModel {
    * Template used to render each individual roll within the message.
    * @type {string}
    */
-  static ROLL_TEMPLATE = "systems/dnd5e/templates/chat/parts/roll.hbs";
+  static ROLL_TEMPLATE = "systems/dragons-and-ballz/templates/chat/parts/roll.hbs";
 
   /* -------------------------------------------- */
   /*  Model Configuration                         */

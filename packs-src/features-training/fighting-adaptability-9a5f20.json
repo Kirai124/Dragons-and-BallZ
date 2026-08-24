@@ -1,0 +1,39 @@
+{
+  "_id": "9a5f20aa4414d7df",
+  "name": "Fighting Adaptability",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisites: 20+ Constitution</strong></p>\n<p>Your fighting grows in the middle of battle, allowing you to adapt and even match the strongest opponent there. You gain the <em>Pure-Progress</em> <strong>Power-Up</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "fighting-adaptability",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Prerequisites: 20+ Constitution",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5131,
+        "endLine": 5134
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

@@ -16,12 +16,12 @@ export default class EnchantSheet extends ActivitySheet {
   static PARTS = {
     ...super.PARTS,
     effect: {
-      template: "systems/dnd5e/templates/activity/enchant-effect.hbs",
+      template: "systems/dragons-and-ballz/templates/activity/enchant-effect.hbs",
       templates: [
-        "systems/dnd5e/templates/activity/parts/activity-effects.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-effect-level-limit.hbs",
-        "systems/dnd5e/templates/activity/parts/enchant-effect-settings.hbs",
-        "systems/dnd5e/templates/activity/parts/enchant-restrictions.hbs"
+        "systems/dragons-and-ballz/templates/activity/parts/activity-effects.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-effect-level-limit.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/enchant-effect-settings.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/enchant-restrictions.hbs"
       ]
     }
   };
@@ -44,7 +44,7 @@ export default class EnchantSheet extends ActivitySheet {
     effect.activityOptions = this.item.system.activities
       .filter(a => a.id !== this.activity.id)
       .map(a => ({ value: a.id, label: a.name, selected: effect.data.riders.activity.has(a.id) }));
-    effect.additionalSettings = "systems/dnd5e/templates/activity/parts/enchant-effect-settings.hbs";
+    effect.additionalSettings = "systems/dragons-and-ballz/templates/activity/parts/enchant-effect-settings.hbs";
     effect.effectOptions = this.item.effects
       .filter(e => e.type === "base")
       .map(e => ({ value: e.id, label: e.name, selected: effect.data.riders.effect.has(e.id) }));

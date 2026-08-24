@@ -55,34 +55,34 @@ export default class ItemSheet5e extends PrimarySheetMixin(DocumentSheet5e) {
   /** @override */
   static PARTS = {
     header: {
-      template: "systems/dnd5e/templates/items/header.hbs"
+      template: "systems/dragons-and-ballz/templates/items/header.hbs"
     },
     tabs: {
-      template: "systems/dnd5e/templates/shared/horizontal-tabs.hbs",
+      template: "systems/dragons-and-ballz/templates/shared/horizontal-tabs.hbs",
       templates: ["templates/generic/tab-navigation.hbs"]
     },
     activities: {
-      template: "systems/dnd5e/templates/items/activities.hbs",
+      template: "systems/dragons-and-ballz/templates/items/activities.hbs",
       templates: [
-        "systems/dnd5e/templates/inventory/columns/uses.hbs",
-        "systems/dnd5e/templates/shared/activities.hbs"
+        "systems/dragons-and-ballz/templates/inventory/columns/uses.hbs",
+        "systems/dragons-and-ballz/templates/shared/activities.hbs"
       ],
       scrollable: [""]
     },
     advancement: {
-      template: "systems/dnd5e/templates/items/advancement.hbs",
+      template: "systems/dragons-and-ballz/templates/items/advancement.hbs",
       scrollable: [""]
     },
     description: {
-      template: "systems/dnd5e/templates/items/description.hbs",
+      template: "systems/dragons-and-ballz/templates/items/description.hbs",
       scrollable: [""]
     },
     details: {
-      template: "systems/dnd5e/templates/items/details.hbs",
+      template: "systems/dragons-and-ballz/templates/items/details.hbs",
       scrollable: [""]
     },
     effects: {
-      template: "systems/dnd5e/templates/items/effects.hbs",
+      template: "systems/dragons-and-ballz/templates/items/effects.hbs",
       scrollable: [""]
     }
   };
@@ -543,12 +543,12 @@ export default class ItemSheet5e extends PrimarySheetMixin(DocumentSheet5e) {
     if ( advancement.classRestriction === "primary" ) {
       tags.push({
         label: "DND5E.AdvancementClassRestrictionPrimary",
-        icon: "systems/dnd5e/icons/svg/original-class.svg"
+        icon: "systems/dragons-and-ballz/icons/svg/original-class.svg"
       });
     } else if ( advancement.classRestriction === "secondary" ) {
       tags.push({
         label: "DND5E.AdvancementClassRestrictionSecondary",
-        icon: "systems/dnd5e/icons/svg/multiclass.svg"
+        icon: "systems/dragons-and-ballz/icons/svg/multiclass.svg"
       });
     }
     return tags;

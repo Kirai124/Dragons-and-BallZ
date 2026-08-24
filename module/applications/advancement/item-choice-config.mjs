@@ -19,23 +19,23 @@ export default class ItemChoiceConfig extends ItemSharedConfig {
   static PARTS = {
     config: {
       container: { classes: ["column-container"], id: "column-left" },
-      template: "systems/dnd5e/templates/advancement/advancement-controls-section.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/advancement-controls-section.hbs"
     },
     details: {
       container: { classes: ["column-container"], id: "column-left" },
-      template: "systems/dnd5e/templates/advancement/item-choice-config-details.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/item-choice-config-details.hbs"
     },
     spellConfig: {
       container: { classes: ["column-container"], id: "column-left" },
-      template: "systems/dnd5e/templates/advancement/advancement-spell-config-section.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/advancement-spell-config-section.hbs"
     },
     items: {
       container: { classes: ["column-container"], id: "column-center" },
-      template: "systems/dnd5e/templates/advancement/item-choice-config-items.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/item-choice-config-items.hbs"
     },
     levels: {
       container: { classes: ["column-container"], id: "column-right" },
-      template: "systems/dnd5e/templates/advancement/item-choice-config-levels.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/item-choice-config-levels.hbs"
     }
   };
 

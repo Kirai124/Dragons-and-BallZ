@@ -1,0 +1,33 @@
+{
+  "_id": "69d4ddd11281f0e4",
+  "name": "Spirit Bomb",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>&quot;Give me strength, from the forests, and rushing brooks and streams. For people everywhere who can't protect themselves... for the animals of the wild, and for life it's self. Give me strength for them. Thank you.&quot;</p>\n<p>You gain the <em>Spirit Bomb</em> <strong>Technique</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-bomb",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; North Kaio"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3636,
+        "endLine": 3658
+      }
+    }
+  }
+}

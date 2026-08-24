@@ -1,0 +1,42 @@
+{
+  "_id": "ca109d0236dfb902",
+  "name": "Greataxe",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 300,000 Zeni | <strong>Damage:</strong> 1d12 Slashing | <strong>Weapon Properties:</strong> Heavy, Two-Handed</p>\n",
+      "chat": ""
+    },
+    "identifier": "greataxe",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 300000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9488,
+        "endLine": 9507
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

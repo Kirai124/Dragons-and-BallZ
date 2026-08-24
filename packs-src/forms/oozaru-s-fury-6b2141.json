@@ -1,0 +1,41 @@
+{
+  "_id": "6b2141f3ee9bd86a",
+  "name": "Oozaru's Fury",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Power-Up</em></p>\n<p>Gained by the “Blood of the Great Ape” feat\nThe power of the great ape form was perfected in the normal body. The Saiyan’s hair spikes up but retains its natural color while their eyes turn golden. The Saiyan’s body also bulks up considerably, this however doesn’t affect their speed.</p>\n<ul>\n<li>Your <em>Unarmed Strike</em> and <em>Melee Technique Damage Die</em> are increased by 1 step.</li>\n<li>+1 Rank of <strong>Bulk</strong></li>\n<li>You gain the <em><strong>Empowered</strong></em> Condition.</li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "oozaru-s-fury",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Oozaru",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "bonus",
+    "powerBonus": 0,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Saiyans; Oozaru"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4081,
+        "endLine": 4091
+      },
+      "formFamily": "Oozaru"
+    }
+  }
+}

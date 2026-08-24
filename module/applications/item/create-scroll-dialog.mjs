@@ -43,7 +43,7 @@ export default class CreateScrollDialog extends Dialog5e {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/apps/spell-scroll-dialog.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/spell-scroll-dialog.hbs"
     }
   };
 

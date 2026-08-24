@@ -1,0 +1,39 @@
+{
+  "_id": "0cbecce64876c5ec",
+  "name": "Big Bang Final Flash",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  90 Ki</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Big Bang Attack</em> and <em>Final Flash</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self (150 foot line)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Beam</li>\n</ul>\n<p>The user forms two Big Bang Attacks in his hands and put them together forming a larger blue version of the Final Flash. Targets in range must make a <em>Dexterity Saving Throw</em> taking 12d12 <em>Ki Damage</em> on a fail, half on a success.</p>\n",
+      "chat": ""
+    },
+    "identifier": "big-bang-final-flash",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "beam",
+    "kiCost": "90 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (150 foot line)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Big Bang Attack* and *Final Flash*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8497,
+        "endLine": 8509
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

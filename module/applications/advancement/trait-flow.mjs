@@ -25,7 +25,7 @@ export default class TraitFlow extends AdvancementFlow {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/advancement/trait-flow.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/trait-flow.hbs"
     }
   };
 

@@ -1,0 +1,39 @@
+{
+  "_id": "0424c7d057f3e594",
+  "name": "Skirmish",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  18 Ki</li>\n<li><strong>Casting Prerequisite:</strong>  1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>A wild flurry of swings that is hard to match. Make a <em>Combo Attack Roll</em>, on a hit dealing your <em>Weapon Damage Die</em> + 2d6 <em>Damage</em>. This <strong>Technique</strong> has Advantage on <strong>Clashes</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "skirmish",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "weapon",
+    "kiCost": "18 Ki",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7371,
+        "endLine": 7383
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

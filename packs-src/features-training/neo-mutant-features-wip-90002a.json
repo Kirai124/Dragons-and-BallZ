@@ -1,0 +1,40 @@
+{
+  "_id": "90002af870b721dc",
+  "name": "Neo-Mutant Features (WIP)",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<h5>Liquid Metal Form</h5>\n<p>As an Action on your turn while you are making contact with metal outside of your own body you may sink into it, gaining a 60 foot movement speed while you are in this form. While in this form you can not be seen and you have <em>Advantage</em> on <em>Ki Stealth Checks</em> while submerged in the material.</p>\n<p>While in this form you still take damage if your space is attacked. You may not cast <strong>Techniques/Spells</strong> or make <em>Attack Rolls</em> while in this form.</p>\n<p>While in this state you may &quot;swim&quot; through all connected metal as well as see through the material to it's closest available line of sight. You may not use your Action or Bonus Actions to do anything except remove yourself from the metal or take the <em>Dash Action</em>.</p>\n<h5>Shape Form</h5>\n<p>As a Bonus Action on your turn you may spend 1 <strong>Stamina</strong> and convert your <em>Unarmed Strike</em> into a <em>Melee Weapon</em> of your choice until you change it's shape again as another Bonus Action.</p>\n<p>Returning to your original form does not require spending <strong>Stamina</strong>.</p>\n<p><em>Weapon Attacks Rolls</em> and <strong>Techniques</strong> made with weapons made by this feature gain a <em>Static Bonus</em> equal to your <strong>Ki Rank</strong>.</p>\n<h5>Superiority: Combat</h5>\n<p>Choose one class of <strong>Technique</strong>: <em>Beam, Blast, Barrage, Omni, Weapon, or Melee.</em> You gain +1 <em>Static Bonus</em> when using this type of <strong>Technique</strong>. At <strong>Level 7</strong> this becomes +2 and at <strong>Level 13</strong> you get to pick a second type of <strong>Technique</strong> to gain this bonus as well.</p>\n<p>At <strong>Level 18</strong> you get an additional +1 <em>Static Bonus</em> that you can place on any class of <strong>Technique</strong>, regardless of if you choose that category previously.</p>\n",
+      "chat": ""
+    },
+    "identifier": "cyborg-neo-mutant-features-wip",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2332,
+        "endLine": 2357
+      },
+      "contentCategory": "subraceVariant",
+      "grantedBy": "Cyborg"
+    }
+  }
+}

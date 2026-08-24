@@ -1,0 +1,41 @@
+{
+  "_id": "10c8f12d863d28fc",
+  "name": "Kaio-Ken!",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 10 ft.</li>\n<li>1 <strong>Hit Point Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "kaio-ken",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": 1,
+    "family": "Non-Race Specific",
+    "resource": "other",
+    "activationCost": "",
+    "upkeepCost": "1 Hit Point",
+    "activation": "action",
+    "powerBonus": 1,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Non-Race Specific"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4625,
+        "endLine": 4628
+      },
+      "formFamily": "Non-Race Specific"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "2a5246bf6076b09b",
+  "name": "Saiyan Style",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><strong>Prerequisites:</strong> Strength ≥ 15</li>\n</ul>\n<p>A ferocious and strength orriented fighting style</p>\n<ul>\n<li>+1 <em>Static Bonus</em> to <em>Unarmed Strikes</em> and <strong>Melee/Melee Weapon Techniques</strong> that use your <strong>Strength.</strong></li>\n<li><strong>Melee/Melee Weapon Techniques</strong> have their <em>Damage Die</em> increased by 1 step.</li>\n<li>Your <em>Dexterity Modifier</em> is treated as one lower for <strong>AC</strong> calculation.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "saiyan-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "stance",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Passive",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "Strength ≥ 15",
+    "tags": "stance"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9144,
+        "endLine": 9153
+      },
+      "techniqueSection": "stance"
+    }
+  }
+}

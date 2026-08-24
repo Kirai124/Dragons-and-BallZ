@@ -1,0 +1,40 @@
+{
+  "_id": "0417100b2527e9bb",
+  "name": "Xeno Resistances",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain <em>Resistance</em> against any 1 <em>Damage Type</em> of your choice, this can not be changed later.</p>\n<p>&lt;br&gt;</p>\n",
+      "chat": ""
+    },
+    "identifier": "alien-xeno-resistances",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1308,
+        "endLine": 1313
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Alien"
+    }
+  }
+}

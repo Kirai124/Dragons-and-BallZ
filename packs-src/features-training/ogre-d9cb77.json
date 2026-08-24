@@ -1,0 +1,40 @@
+{
+  "_id": "d9cb7733be8a31cf",
+  "name": "Ogre",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Constitution</li>\n</ul>\n<p>Your Ogre durability has surfaced allowing you to fight with the tenacity of the Otherworld.</p>\n<p>As an action on your turn you may spend stamina to gain Xd12, where X is equal to the stamina spent, and gain Temporary HP equal to the total. This health disappears after 1 hour or whenever you gain additional Temporary HP.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-ogre",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1592,
+        "endLine": 1598
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

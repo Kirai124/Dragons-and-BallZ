@@ -1,0 +1,41 @@
+{
+  "_id": "93855eec82ebe65c",
+  "name": "Legendary Grade 4",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You master the rage and instead channel it through your controlled Super Saiyan, losing the raw strength but gaining a mastery of the form as you learn to control your rage through your Super Saiyan state</p>\n<ul>\n<li>+2 <strong>Power Bonus</strong></li>\n<li>This form does not take up your <strong>Transformation Slot</strong>.</li>\n<li>1 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p><em><strong>The Combination Form of *Controlled Super Saiyan 1* and *Legendary Grade 4* can be activated as a *Bonus Action*.</strong></em></p>\n",
+      "chat": ""
+    },
+    "identifier": "legendary-grade-4",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Legendary Grades",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "1 Stamina",
+    "activation": "action",
+    "powerBonus": 2,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Mutant Saiyan; Legendary Grades"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4328,
+        "endLine": 4348
+      },
+      "formFamily": "Legendary Grades"
+    }
+  }
+}

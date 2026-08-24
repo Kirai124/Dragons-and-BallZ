@@ -1,0 +1,33 @@
+{
+  "_id": "bcaa35b475780a69",
+  "name": "Spirit Conversion",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, you may artificially create <strong>Stamina</strong> for 15 <strong>Ki</strong> per <strong>Stamina</strong> that you create.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-conversion",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3446,
+        "endLine": 3447
+      }
+    }
+  }
+}

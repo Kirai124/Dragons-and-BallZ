@@ -1,0 +1,39 @@
+{
+  "_id": "260d6c5a5a3e2d46",
+  "name": "Parapara Dance",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  35 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  30 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          1 Minute (concentration)</li>\n<li><strong>Type:</strong>  Other</li>\n</ul>\n<p>Choose a number of creatures that you can see within range equal to your <em>Charisma Modifier</em>. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be <em>Charmed</em> are immune to this <strong>Technique</strong>.</p>\n<p>A dancing creature must use all its movement to dance without leaving its space and has Disadvantage on <em>Dexterity Saving Throws</em> and <em>Attack Rolls</em>. While the target is affected by this <strong>Technique</strong>, other creatures have Advantage on <em>Attack Rolls</em> against it. As an Action, a dancing creature makes a <em>Wisdom Saving Throw</em> against your <strong>Omni Save DC</strong> to regain control of itself. On a successful save, the effect ends.</p>\n",
+      "chat": ""
+    },
+    "identifier": "parapara-dance",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "otherKi",
+    "kiCost": "35 Ki",
+    "castingTime": "1 Action",
+    "range": "30 Feet",
+    "duration": "1 Minute (concentration)",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8981,
+        "endLine": 8997
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

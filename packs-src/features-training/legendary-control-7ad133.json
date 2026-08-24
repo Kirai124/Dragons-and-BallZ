@@ -1,0 +1,39 @@
+{
+  "_id": "7ad1339f7771b807",
+  "name": "Legendary Control",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Full Power Super Saiyan</em> and <em>Legendary Power</em> Feat.</strong>\nYou channel the level of power to a point where you have gained a full control of the output of your full strength. You can master <em>Controlled Super Saiyan</em> as if it was a <strong>Technique</strong> to learn the <strong>Legendary Grades Power-Ups</strong> to use alongside it.</p>\n<p>When you learn the <em>Legendary Grade 4</em> <strong>Power-Up</strong>, you may begin mastering <em>Super Saiyan Full Power</em> as well to gain the same benefit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "legendary-control",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Full Power Super Saiyan* and *Legendary Power* Feat.",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5745,
+        "endLine": 5754
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

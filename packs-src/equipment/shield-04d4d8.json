@@ -1,0 +1,50 @@
+{
+  "_id": "04d4d8ff7e03bf33",
+  "name": "Shield",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Armor Class:</strong> +2</p>\n<p><strong>Stealth:</strong> -</p>\n<p>See Chapter 10: Equipment for the full armor rules.</p>\n",
+      "chat": ""
+    },
+    "identifier": "shield",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100000,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "shield",
+      "subtype": ""
+    },
+    "armor": {
+      "value": 2,
+      "magicalBonus": "",
+      "dex": 0
+    },
+    "proficient": null,
+    "properties": [],
+    "strength": 0
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9235,
+        "endLine": 9385
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "b6c9c4132ff73d26",
+  "name": "Power Strike",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  5 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>          Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A single target of your choice within range must make a <em>Strength Saving Throw</em> or take your <em>Unarmed Strike Damage Die</em> and being being <em>Launched</em> a total of 5x your <em>Strength Modifier</em> feet on a failure, half damage and no knockback on a success.</p>\n<p>If the target is <em>Launched</em> into a solid structure they may break through it at half speed, taking 1d6 for each 5 feet they travel through it.</p>\n",
+      "chat": ""
+    },
+    "identifier": "power-strike",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "melee",
+    "kiCost": "5 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6625,
+        "endLine": 6636
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

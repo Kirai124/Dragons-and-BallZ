@@ -1,0 +1,39 @@
+{
+  "_id": "7b193c533cc51040",
+  "name": "Blood of the Great Ape",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>U7/Ancient/Mutant, lv 3+</em>\nA Saiyan alpha in ancient times was said to be a Great Ape as a man. You are a new one.</p>\n<p>You gain the <em>Oozaru's Fury</em> <strong>Transformation</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "blood-of-the-great-ape",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5578,
+        "endLine": 5584
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

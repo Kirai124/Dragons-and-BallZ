@@ -1,0 +1,42 @@
+{
+  "_id": "7879d1244d291d1f",
+  "name": "Soap",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ200 | <strong>Weight:</strong> -</p>\n",
+      "chat": ""
+    },
+    "identifier": "soap",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9784,
+        "endLine": 9815
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

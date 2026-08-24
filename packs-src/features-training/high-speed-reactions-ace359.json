@@ -1,0 +1,40 @@
+{
+  "_id": "ace359079b3b84e8",
+  "name": "High-Speed Reactions",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Manuevers</strong> require 1 less <strong>Stamina</strong> to use, to a minimum of 1.</p>\n",
+      "chat": ""
+    },
+    "identifier": "chronin-high-speed-reactions",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1669,
+        "endLine": 1673
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Chronin"
+    }
+  }
+}

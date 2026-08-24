@@ -1,0 +1,40 @@
+{
+  "_id": "3b55e25eca8cd391",
+  "name": "Android/Cyborg",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As opposed to DNA, the specific cybernetic parts were applied to yourbody, enhancing your bodies capability. You gain 1 Rank of <em>Light Weight</em>. If you absorb a creature that has the Cyborg Subrace, you must choose between the Main Race or the Cyborg Subrace.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-android-cyborg",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1520,
+        "endLine": 1523
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

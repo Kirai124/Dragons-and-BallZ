@@ -1,0 +1,40 @@
+{
+  "_id": "8e6f256e3675181f",
+  "name": "Unifying Presence",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>6th Level</strong> your unifying presence enhances the party’s ability to resist all manner of external attacks. As a Reaction to you or a creature that you can see making a <em>Saving Throw</em>, a number creatures of your choice (including yourself) up to your <em>Charisma Modifier</em> may add your charisma bonus to that <em>Saving Throw</em>. You can use this <strong>Feature</strong> after the rolls are made but not after the results are said. You must wait until you finish a Long Rest before you can use it again.</p>\n",
+      "chat": ""
+    },
+    "identifier": "hero-unifying-presence",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3187,
+        "endLine": 3190
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Hero"
+    }
+  }
+}

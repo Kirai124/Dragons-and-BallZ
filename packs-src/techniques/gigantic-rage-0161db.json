@@ -1,0 +1,39 @@
+{
+  "_id": "0161db6ee2c94865",
+  "name": "Gigantic Rage",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  45 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>Grab the opponent before verociously attacking them. Make a <em>Combo Attack Roll</em> dealing your Unarmed Strike Damage Die + 4d12 <em>Bludgeoning Damage</em> and leaves the target <em>Prone</em> on a hit.</p>\n<p>If you have the <em>Enraged Condition</em> this <strong>Technique</strong> has Advantage.</p>\n",
+      "chat": ""
+    },
+    "identifier": "gigantic-rage",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "45 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6952,
+        "endLine": 6966
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

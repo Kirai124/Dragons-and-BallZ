@@ -20,11 +20,11 @@ export default class AbilityScoreImprovementConfig extends AdvancementConfig {
   static PARTS = {
     ...super.PARTS,
     details: {
-      template: "systems/dnd5e/templates/advancement/ability-score-improvement-config-details.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/ability-score-improvement-config-details.hbs"
     },
     scores: {
-      template: "systems/dnd5e/templates/advancement/ability-score-improvement-config-scores.hbs",
-      templates: ["systems/dnd5e/templates/advancement/parts/advancement-ability-score-control.hbs"]
+      template: "systems/dragons-and-ballz/templates/advancement/ability-score-improvement-config-scores.hbs",
+      templates: ["systems/dragons-and-ballz/templates/advancement/parts/advancement-ability-score-control.hbs"]
     }
   };
 

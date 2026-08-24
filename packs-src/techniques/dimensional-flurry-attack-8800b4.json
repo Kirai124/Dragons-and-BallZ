@@ -1,0 +1,39 @@
+{
+  "_id": "8800b40423d410ce",
+  "name": "Dimensional Flurry Attack",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 40 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 1 Target that you can see or 1 Target that you can find through <em>Sense Ki.</em></li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>Your attacks strike with the force to open wormholes. Make a number of <em>Combo Attack Roll</em> equal to half your Proficiency Bonus, rounded up, against a target in  range. On each hit, they take your <em>Weapon Damage Die</em> + 1d6 <em>Ki Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dimensional-flurry-attack",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "weapon",
+    "kiCost": "40 Ki",
+    "castingTime": "1 Action",
+    "range": "1 Target that you can see or 1 Target that you can find through *Sense Ki.*",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7512,
+        "endLine": 7525
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

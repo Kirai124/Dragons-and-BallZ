@@ -1,0 +1,41 @@
+{
+  "_id": "67e31db4d4a28ff8",
+  "name": "Second Form",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<p>The arcosian’s body grows and your horns extend upwards like a bull</p>\n<ul>\n<li>+1 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 5 ft.</li>\n<li>You gain the Empowered Condition.</li>\n<li>1 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p><strong>Gained at Level 5</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "second-form",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Gates of Power",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "1 Stamina",
+    "activation": "action",
+    "powerBonus": 1,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "Gained at Level 5",
+    "tags": "Arcosian; Gates of Power"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3879,
+        "endLine": 3890
+      },
+      "formFamily": "Gates of Power"
+    }
+  }
+}

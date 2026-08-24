@@ -1,0 +1,41 @@
+{
+  "_id": "62dab0d238a92684",
+  "name": "Red Eyed Focus",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Power-Up</em></p>\n<p>Your Eye has reached its full potential and is even better than before.</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>You gain a +2 to all <strong>Wisdom (Perception) Checks</strong></li>\n<li>The range of all <em>Basic Ki Blasts</em> and <em>Ki Techniques</em> increase by 50% (1/2)</li>\n<li>Your <em>Critical Threat Range</em> increases by 1</li>\n<li>3 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p><strong>At level 10 this Power-Up replaces “Red Eye Activation”</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "red-eyed-focus",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Red Eye",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "bonus",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "At level 10 this Power-Up replaces “Red Eye Activation”",
+    "tags": "Ceralian; Red Eye"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4489,
+        "endLine": 4501
+      },
+      "formFamily": "Red Eye"
+    }
+  }
+}

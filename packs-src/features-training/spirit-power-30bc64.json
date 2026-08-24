@@ -1,0 +1,33 @@
+{
+  "_id": "30bc64f5c12c3c85",
+  "name": "Spirit Power",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain a <em>Static Bonus</em> to <em>Basic Ki Blasts</em> and <strong>Ki Techniques</strong> equal to your <strong>Ki Rank</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-power",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3448,
+        "endLine": 3450
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "aa56f3a704f27a9c",
+  "name": "Third Eye Awakening",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have become enlighnted in a way that has physically awakened a third eye on your forehead. You gain the following benefits.</p>\n<ul>\n<li>Your <strong>Power Bonus</strong> also boosts your <em>Perception</em> and <em>Sense Ki Skill Checks</em> as your third eye is sharpened alongside your body.</li>\n<li>Your <em>Critical Threat Range</em> is increased by 1.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "third-eye-awakening",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5896,
+        "endLine": 5902
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

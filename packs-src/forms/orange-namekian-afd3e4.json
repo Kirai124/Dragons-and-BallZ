@@ -1,0 +1,41 @@
+{
+  "_id": "afd3e41bf0d42710",
+  "name": "Orange Namekian",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Transformation</em></p>\n<p>The user’s crevices in their body disappear and they grow larger and broader as well as becoming a vibrant orange.</p>\n<ul>\n<li>+4 <strong>Power Bonus</strong></li>\n<li>You deal +1d10 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 40 ft.</li>\n<li>You gain the <em>Empowered Condition</em></li>\n<li>4 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "orange-namekian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "God Forms",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "4 Stamina",
+    "activation": "action",
+    "powerBonus": 4,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Namekians; God Forms"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4019,
+        "endLine": 4029
+      },
+      "formFamily": "God Forms"
+    }
+  }
+}

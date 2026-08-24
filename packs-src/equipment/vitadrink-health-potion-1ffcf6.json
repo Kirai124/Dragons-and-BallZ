@@ -1,0 +1,42 @@
+{
+  "_id": "1ffcf607ad3fdb62",
+  "name": "Vitadrink (Health Potion)",
+  "type": "consumable",
+  "img": "systems/dragons-and-ballz/icons/svg/items/consumable.svg",
+  "system": {
+    "description": {
+      "value": "<p>Made from the extract of Senzu Beans this bitter green beverage heals minor wounds stabalizes the endangered.</p>\n<table>\n<thead>\n<tr>\n  <th style=\"text-align:left\">Size</th>\n  <th style=\"text-align:center\">Cost</th>\n  <th style=\"text-align:center\">Health Regained</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td style=\"text-align:left\">Lesser</td>\n  <td style=\"text-align:center\">Ƶ50,000</td>\n  <td style=\"text-align:center\">1d4+1</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Vitadrink</td>\n  <td style=\"text-align:center\">Ƶ500,000</td>\n  <td style=\"text-align:center\">2d4+2</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Greater</td>\n  <td style=\"text-align:center\">Ƶ2,000,000</td>\n  <td style=\"text-align:center\">4d4+4</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Superior</td>\n  <td style=\"text-align:center\">Ƶ20,000,000</td>\n  <td style=\"text-align:center\">8d4+8</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Supreme</td>\n  <td style=\"text-align:center\">Ƶ200,000,000</td>\n  <td style=\"text-align:center\">10d4+10</td>\n</tr>\n</tbody>\n</table>\n",
+      "chat": ""
+    },
+    "identifier": "vitadrink-health-potion",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9569,
+        "endLine": 9580
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "feed19fb8f575ff1",
+  "name": "Laser Sniper Rifle",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 1,500,000 Zeni | <strong>Damage:</strong> 1d12 Radiant | <strong>Weapon Properties:</strong> Ammunition (range 200/800), heavy, two-handed, loading, Magazine (6)</p>\n",
+      "chat": ""
+    },
+    "identifier": "laser-sniper-rifle",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1500000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9537,
+        "endLine": 9541
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

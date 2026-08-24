@@ -1,0 +1,31 @@
+{
+  "_id": "a37045019c8c4de8",
+  "name": "Reincarnation",
+  "type": "subrace",
+  "img": "systems/dragons-and-ballz/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p>Sometimes people die and they pass on to the higher or lower planes, sometimes they are brought back to life in their bodies and continue their lives where they left off, and on even rarer occasions they are reborn into new bodies carrying with them a fraction of their previous lives abilities.</p>\n<p>When you are a reincarnation you choose up to 3 <strong>Racial Features</strong> from your previous life and replace your new <strong>Racial Features</strong> with them.</p>\n<p>If your new body is physically incapable of specific <strong>Forms</strong> such as ones granted through <em>Gates of Power</em>, they instead grant cosmetic changes to skin/hair/eyes/aura to imitate the visual flair, this does not effect the functionality of the <strong>Forms</strong> themselves.\n<strong>Androids can not reincarnate.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "reincarnation",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "parentRace": "",
+    "requirements": "",
+    "tags": "subrace",
+    "advancement": {}
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2376,
+        "endLine": 2386
+      }
+    }
+  }
+}

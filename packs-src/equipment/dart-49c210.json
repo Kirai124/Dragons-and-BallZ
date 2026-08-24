@@ -1,0 +1,42 @@
+{
+  "_id": "49c21085c81b57f8",
+  "name": "Dart",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 500 Zeni | <strong>Damage:</strong> 1d4 Piercing | <strong>Weapon Properties:</strong> Finesse, thrown (range 20/60)</p>\n",
+      "chat": ""
+    },
+    "identifier": "dart",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 500.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9476,
+        "endLine": 9481
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

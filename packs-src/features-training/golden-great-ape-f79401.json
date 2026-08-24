@@ -1,0 +1,39 @@
+{
+  "_id": "f79401f1db54234e",
+  "name": "Golden Great Ape",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Super Saiyan 4</em> and <em>Saiyan Elite</em> Feat.</strong>\nYou no longer need to make control checks for using Super Saiyan while using Great Ape.  While using <em>Great Ape</em> you may now use <em>Super Saiyan 2</em> but make <em>Berserk Checks</em> at disadvantage while it is active.</p>\n",
+      "chat": ""
+    },
+    "identifier": "golden-great-ape",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Super Saiyan 4* and *Saiyan Elite* Feat.",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5637,
+        "endLine": 5641
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

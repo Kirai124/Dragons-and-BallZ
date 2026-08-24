@@ -1,0 +1,39 @@
+{
+  "_id": "e1d270c6027882f4",
+  "name": "Shining Attack",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 14 Ki</li>\n<li><strong>Casting Prerequisite:</strong>  1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Reaction, when a creature would succeed a saving throw against a <strong>Technique/Spell</strong> casted by you.</li>\n<li><strong>Range:</strong> Movement Speed</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> No</li>\n</ul>\n<p>You take advantage of their focus in their success and go up to a creature, making an attack to set you up for the next one. Make a <em>Combo Attack Roll</em>, on a hit dealing your <em>Weapon Damage Die</em> + 1d10 <em>Damage</em> and the creature cannot react to the next attack from you or an allied creature.</p>\n",
+      "chat": ""
+    },
+    "identifier": "shining-attack",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "weapon",
+    "kiCost": "14 Ki",
+    "castingTime": "1 Reaction, when a creature would succeed a saving throw against a **Technique/Spell** casted by you.",
+    "range": "Movement Speed",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7358,
+        "endLine": 7370
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

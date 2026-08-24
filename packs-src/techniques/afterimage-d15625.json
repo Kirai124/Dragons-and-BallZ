@@ -1,0 +1,39 @@
+{
+  "_id": "d15625ced056c88f",
+  "name": "Afterimage",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  5 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Range:</strong>  Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          1 Minute (Concentration)</li>\n<li><strong>Type:</strong>  Other</li>\n</ul>\n<p>Move so quickly you leave a mirage of yourself behind.  For the duration of this <strong>Technique</strong>, your <strong>AC</strong> increases by 2.</p>\n",
+      "chat": ""
+    },
+    "identifier": "afterimage",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "otherKi",
+    "kiCost": "5 Ki",
+    "castingTime": "1 Action",
+    "range": "Self",
+    "duration": "1 Minute (Concentration)",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8851,
+        "endLine": 8863
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

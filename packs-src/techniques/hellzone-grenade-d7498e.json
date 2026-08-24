@@ -1,0 +1,39 @@
+{
+  "_id": "d7498e8a8951f9f5",
+  "name": "Hellzone Grenade",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  10x Ki per ki orb</li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  120 Feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          1 Minute (Concentration)</li>\n<li><strong>Type:</strong>  Barrage</li>\n</ul>\n<p>Select a number of locations in range up to but not exceeding your <em>Proficiency Bonus</em>, for 10 <strong>Ki</strong> per location you may leave behind an orb of ki. At any moment you may choose to detonate any number of these orbs. All creatures within 5 Feet of these orbs must make a <em>Dexterity Saving Throw</em> or take 3d6 <em>Ki Damage</em>, half on a success.</p>\n<p>Alternatively you may spend your Action to send all created ki orbs at a target of your choice, or take the collective damage of all ki orbs. The target makes one <em>Dexterity Saving Throw</em> for all created ki orbs taking their collective damage on a fail, halved on a success.</p>\n",
+      "chat": ""
+    },
+    "identifier": "hellzone-grenade",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "barrage",
+    "kiCost": "10x Ki per ki orb",
+    "castingTime": "1 Action",
+    "range": "120 Feet",
+    "duration": "1 Minute (Concentration)",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8211,
+        "endLine": 8226
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

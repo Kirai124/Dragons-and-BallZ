@@ -19,7 +19,7 @@ export default class ForwardActivity extends ActivityMixin(BaseForwardActivityDa
   static metadata = Object.freeze(
     foundry.utils.mergeObject(super.metadata, {
       type: "forward",
-      img: "systems/dnd5e/icons/svg/activity/forward.svg",
+      img: "systems/dragons-and-ballz/icons/svg/activity/forward.svg",
       title: "DND5E.FORWARD.Title",
       hint: "DND5E.FORWARD.Hint",
       sheetClass: ForwardSheet

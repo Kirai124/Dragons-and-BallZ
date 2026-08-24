@@ -1,0 +1,41 @@
+{
+  "_id": "035cd2b3c1bf6fe4",
+  "name": "Ultra Ego",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Transformation</em></p>\n<p>The ultimate destructive ability, finally complete, the user's ki attacks and punches will make the complete erasure of a creature, erasing not only their bodies, but their soul, never ending up in another world.</p>\n<ul>\n<li>+4 <strong>Power Bonus</strong></li>\n<li>You deal +2d6 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 40 ft.</li>\n<li>5 <strong>Stamina Activation</strong>, 4 <strong>Stamina Upkeep</strong></li>\n<li>While in this form you have a rising pool of <em>Destruction Energy</em>. At the end of each of your turns while this is active you gain 2d4 added to this pool of <em>Destruction Energy</em>. You may do the following features with these <em>Destruction Energy Dice</em>:</li>\n</ul>\n<p><em><strong>Fighting Spirit.</strong></em> Your form relies on your fighting spirit and you can burn your destruction energy to help restart your destructive blaze.</p>\n<p>As an Action, you may roll any number of dice from your <em>Destruction Pool</em> and gain that amount of <strong>Temporary HP</strong> or <strong>Temporary Ki</strong> equal to the total rolled. You may not use this <strong>Feature</strong> again until all previous <strong>Temporary HP</strong> or <strong>Temporary Ki</strong> gained through this feature are depleted.\n<em><strong>Destroy.</strong></em> Your fuel your ki attacks with the power of destruction.</p>\n<p>When you land an <em>Attack Roll</em> or <strong>Technique</strong> you may spend any number of dice from your <em>Destruction Energy Dice</em> and add that much <em>Destruction Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ultra-ego",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Ultra Ego",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "4 Stamina",
+    "activation": "action",
+    "powerBonus": 4,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Non-Race Specific; Ultra Ego"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4958,
+        "endLine": 4979
+      },
+      "formFamily": "Ultra Ego"
+    }
+  }
+}

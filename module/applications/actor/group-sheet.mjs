@@ -27,30 +27,30 @@ export default class GroupActorSheet extends MultiActorSheet {
   /** @override */
   static PARTS = {
     header: {
-      template: "systems/dnd5e/templates/actors/group/header.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/group/header.hbs"
     },
     tabs: {
-      template: "systems/dnd5e/templates/shared/horizontal-tabs.hbs",
+      template: "systems/dragons-and-ballz/templates/shared/horizontal-tabs.hbs",
       templates: ["templates/generic/tab-navigation.hbs"]
     },
     members: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/group/members.hbs",
-      templates: ["systems/dnd5e/templates/actors/group/member.hbs"],
+      template: "systems/dragons-and-ballz/templates/actors/group/members.hbs",
+      templates: ["systems/dragons-and-ballz/templates/actors/group/member.hbs"],
       scrollable: [""]
     },
     inventory: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/group/inventory.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/group/inventory.hbs",
       templates: [
-        "systems/dnd5e/templates/inventory/inventory.hbs", "systems/dnd5e/templates/inventory/activity.hbs",
-        "systems/dnd5e/templates/inventory/containers.hbs", "systems/dnd5e/templates/inventory/encumbrance.hbs"
+        "systems/dragons-and-ballz/templates/inventory/inventory.hbs", "systems/dragons-and-ballz/templates/inventory/activity.hbs",
+        "systems/dragons-and-ballz/templates/inventory/containers.hbs", "systems/dragons-and-ballz/templates/inventory/encumbrance.hbs"
       ],
       scrollable: [".sidebar", ".body"]
     },
     biography: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/group/biography.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/group/biography.hbs",
       scrollable: [""]
     }
   };

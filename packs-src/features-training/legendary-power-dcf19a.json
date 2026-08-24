@@ -1,0 +1,39 @@
+{
+  "_id": "dcf19aeb6a8eb8c1",
+  "name": "Legendary Power",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Wrestling Control</em> and <em>Berserker Super Saiyan 2***\nAs you draw out more power in your controlled state your hair spikes up straight and lighting arcs around you occasionally. You gain the *Controlled Super Saiyan 2</em> **Transformation</strong>.</p>\n<p>**This Feat must be obtained through <em>Training Boons</em> or by completing an *Ordeal***</p>\n",
+      "chat": ""
+    },
+    "identifier": "legendary-power",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Wrestling Control* and *Berserker Super Saiyan 2; This Feat must be obtained through *Training Boons* or by completing an *Ordeal",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5733,
+        "endLine": 5739
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

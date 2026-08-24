@@ -1,0 +1,39 @@
+{
+  "_id": "94e4d675436650c5",
+  "name": "Crane Style",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><strong>Prerequisites:</strong> <em>Unarmored</em> <strong>AC</strong> ≥ 14+</li>\n</ul>\n<p>The rival style to the Turtle School focusing on defense. Fills their ranks by  targeting the naturally gifted.</p>\n<ul>\n<li>You gain +1 to your <strong>AC</strong> so long as you are not <em>Surprised.</em></li>\n<li>Once per <em>Short Rest</em> you may <strong>Block</strong> or <strong>Wild Sense</strong> without expending <strong>Stamina</strong>.</li>\n<li>You gain a 10 foot <em>Fly Speed</em> or increase your current <em>Fly Speed</em> by 10 feet.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "crane-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "stance",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Passive",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "*Unarmored* **AC** ≥ 14+",
+    "tags": "stance"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9112,
+        "endLine": 9121
+      },
+      "techniqueSection": "stance"
+    }
+  }
+}

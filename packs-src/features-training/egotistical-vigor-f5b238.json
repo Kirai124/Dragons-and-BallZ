@@ -1,0 +1,39 @@
+{
+  "_id": "f5b238daf0f69b94",
+  "name": "Egotistical Vigor",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Egostitical Strength</strong>\nYour destruction burns with even more vigor and adds it to the power of your <em>Destruction</em>. You gain the following benefits:</p>\n<ul>\n<li>When you would use <strong>Fighting Spirit</strong>, you gain an additional amount of <strong>Temporary HP</strong> or <strong>Temporary Ki</strong> points equal to half your <strong>Character Level</strong>, rounded up.</li>\n<li>When you would use <strong>Destroy</strong>, you deal an additional damage equal to half your <strong>Character Level</strong>, rounded up.</li>\n<li>When you would use <strong>Neverending Destruction</strong>, you gain additional <strong>Temporary Stamina</strong> equal to 1/4 of your <strong>Character Level</strong>, rounded up.</li>\n</ul>\n<p>You may pick this <strong>Feat</strong> multiple times, when you do, you choose one of these benefits to double the benefit's amount. You may not choose a benefit more than once.</p>\n",
+      "chat": ""
+    },
+    "identifier": "egotistical-vigor",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Egostitical Strength",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6029,
+        "endLine": 6039
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

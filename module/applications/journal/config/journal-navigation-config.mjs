@@ -25,7 +25,7 @@ export default class JournalNavigationConfig extends DocumentSheet5e {
   /** @override */
   static PARTS = {
     form: {
-      template: "systems/dnd5e/templates/journal/config/navigation-config.hbs"
+      template: "systems/dragons-and-ballz/templates/journal/config/navigation-config.hbs"
     }
   };
 

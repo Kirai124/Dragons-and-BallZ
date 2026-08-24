@@ -1,0 +1,39 @@
+{
+  "_id": "647b3f0e22c78d57",
+  "name": "Turtle Style",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><strong>Prerequisites:</strong> Dexterity ≥ 13</li>\n</ul>\n<p>The trusty Turtle School, focusing on overwhelming foes with swift flowing martial arts.</p>\n<ul>\n<li>+1 <em>Static Bonus</em> for <em>Unarmed Strikes</em> and <strong>Melee Techniques</strong>.</li>\n<li>When you use your Action to make an <em>Unarmed Strike</em> you may make an additional <em>Unarmed Strike</em> as part of that Action.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "turtle-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "stance",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Passive",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "Dexterity ≥ 13",
+    "tags": "stance"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9105,
+        "endLine": 9111
+      },
+      "techniqueSection": "stance"
+    }
+  }
+}

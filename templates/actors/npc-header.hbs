@@ -6,7 +6,7 @@
         {{!-- Portrait --}}
         {{#if editable}}
         <label class="slide-toggle header-interactable">
-            <input type="checkbox" name="flags.dnd5e.showTokenPortrait" {{ checked portrait.token }}>
+            <input type="checkbox" name="flags.dragons-and-ballz.showTokenPortrait" {{ checked portrait.token }}>
             {{#if portrait.token}}
             {{ localize "DOCUMENT.Token" }}
             <i class="fas fa-toggle-on" inert></i>
@@ -36,7 +36,7 @@
                 <button type="button" class="{{ rollableClass }} death-save unbutton" data-action="roll"
                         data-type="deathSave" data-tooltip="DND5E.DeathSaveRoll"
                         aria-label="{{ localize 'DND5E.DeathSaveRoll' }}">
-                    <dnd5e-icon src="systems/dnd5e/icons/svg/statuses/dead-outline.svg"></dnd5e-icon>
+                    <dnd5e-icon src="systems/dragons-and-ballz/icons/svg/statuses/dead-outline.svg"></dnd5e-icon>
                 </button>
 
                 {{#with system.attributes.death}}

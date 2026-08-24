@@ -1,0 +1,39 @@
+{
+  "_id": "48e5d1bd7990d387",
+  "name": "Ultimate Form",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Ki Rank 3</strong></p>\n<p>You may choose 1 <strong>Transformation</strong> and 1 <strong>Power-Up</strong> that you have access to, these become a new <strong>Combination Transformation</strong> with a name unique to you. This new <strong>Combinatation Form</strong> retains all activation requirements as the <strong>Forms</strong> that make it up.\nThe <strong>Forms</strong> you pick can not both have the <strong>Godly Tag</strong> or already be a <strong>Combination Form</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ultimate-form",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Ki Rank 3",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5196,
+        "endLine": 5204
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

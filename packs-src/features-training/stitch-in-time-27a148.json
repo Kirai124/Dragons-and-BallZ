@@ -1,0 +1,33 @@
+{
+  "_id": "27a148a1e6346e2a",
+  "name": "Stitch in Time",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>1 Time Point</em>\nAs an Action on your turn, you may peak into the timestream to see the past of a Person or Object that you are touching.\nThis ability allows you to rewind your or someone else's connection to the flow of time, allowing you to watch echoes of the past to see scenes of the past in perfect clarity. It is up to the <strong>DM</strong> to determine what you see.</p>\n",
+      "chat": ""
+    },
+    "identifier": "stitch-in-time",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Time Skip"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3489,
+        "endLine": 3496
+      }
+    }
+  }
+}

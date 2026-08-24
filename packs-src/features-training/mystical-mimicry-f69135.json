@@ -1,0 +1,40 @@
+{
+  "_id": "f6913534b71b7e7b",
+  "name": "Mystical Mimicry",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You're ability to shape shift is so incredible that it allows you to mimic another's very DNA.</p>\n<p>As a Reaction to seeing a creature activate a <strong>Form</strong> you may memorize that <strong>Form</strong> for your own use, even if it is a <strong>Racial Form</strong>. You must have <strong>God Ki</strong> to copy a <strong>Godly Form.</strong>\nYou keep this specific <strong>Form</strong> and may activate it at a later form, if you were to use this <strong>Feature</strong> again you may replace your current memorized <strong>Form</strong>, ending the <strong>Form</strong> if it was active.</p>\n",
+      "chat": ""
+    },
+    "identifier": "neko-majin-mystical-mimicry",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2035,
+        "endLine": 2041
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Neko Majin"
+    }
+  }
+}

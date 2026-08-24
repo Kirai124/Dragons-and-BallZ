@@ -1,0 +1,40 @@
+{
+  "_id": "e7616fb0bd3bb688",
+  "name": "Quicker then the rest",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your <em>Base Walk Speed</em> is 2x your race’s <em>Base Walk Speed</em> and you can <em>Dash</em> as a Bonus Action on your turn. While you are under the effects of the <em>Dash Actin</em>, you may travel vertically or horizontally across any surface, such as up walls or across water so long as you do not end your turn there, falling if you do.</p>\n",
+      "chat": ""
+    },
+    "identifier": "speedster-quicker-then-the-rest",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2231,
+        "endLine": 2232
+      },
+      "contentCategory": "subraceFeature",
+      "grantedBy": "Speedster"
+    }
+  }
+}

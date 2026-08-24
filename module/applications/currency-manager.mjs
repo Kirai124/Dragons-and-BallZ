@@ -40,10 +40,10 @@ export default class CurrencyManager extends Application5e {
       template: "templates/generic/tab-navigation.hbs"
     },
     convert: {
-      template: "systems/dnd5e/templates/apps/currency-manager-convert.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/currency-manager-convert.hbs"
     },
     transfer: {
-      template: "systems/dnd5e/templates/apps/currency-manager-transfer.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/currency-manager-transfer.hbs"
     }
   };
 

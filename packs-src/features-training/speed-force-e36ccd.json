@@ -1,0 +1,40 @@
+{
+  "_id": "e36ccd671b549145",
+  "name": "Speed Force",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You're quick, some may even call you &quot;The Fastest Thing Alive&quot;. At <strong>1st Level</strong> you gain the <em>Mach 1</em> <strong>Power-Up</strong> and you gain access to each subsequent <em>Speed Force</em> <strong>Power-Up</strong> each time you <strong>Rank Up</strong>.</p>\n<h5>Speed Force Power-Ups</h5>\n<p>You move faster than anyone else and nothing can get in your way. You gain <em>Mach 1</em> at <strong>Level 3</strong> and it <strong>Ranks Up</strong> each time your <strong>Ki Rank</strong> increases. You do not lose access to previous Power-Ups.</p>\n<p>When you use these <strong>Power-Ups</strong> outside of <strong>Combat</strong>, you pay the <strong>Stamina</strong> cost every minute. While this <strong>Power-Up</strong> is active you may travel vertically or horizontally across any surface, such as up walls or across water so long as you do not end your turn there, falling if you do.</p>\n<h6>Mach 1</h6>\n<ul>\n<li>You gain +1 <em>Static Bonus</em> to <em>Melee/Melee Weapon Attack Rolls</em> and <em>Melee/Melee Weapon</em> <strong>Techniques</strong>.</li>\n<li>Double your <em>Walk</em> and <em>Fly Speed</em>.</li>\n<li>1 <strong>Stamina Upkeep</strong></li>\n</ul>\n<h6>Mach 10</h6>\n<ul>\n<li>You gain +1 <em>Static Bonus</em> to <em>Melee/Melee Weapon Attack Rolls</em> and <em>Melee/Melee Weapon</em> <strong>Techniques</strong>.</li>\n<li>Triple your <em>Walk</em> and <em>Fly Speed</em>.</li>\n<li>You gain an additional attack as part of the <em>Attack Action</em> or when making <em>Basic Ki Blasts</em> as an Action.</li>\n<li>You do not provoke <em>Attacks of Opprotunity.</em></li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n<h6>Mach 100</h6>\n<ul>\n<li>You gain +2 <em>Static Bonus</em> to <em>Melee/Melee Weapon Attack Rolls</em> and <em>Melee/Melee Weapon</em> <strong>Techniques</strong>.</li>\n<li>Quadruple your <em>Walk</em> and <em>Fly Speed</em>.</li>\n<li>You gain an additional attack as part of the <em>Attack Action</em> or when making <em>Basic Ki Blasts</em> as an Action.</li>\n<li>You gain an additional Reaction each round.</li>\n<li>You do not provoke <em>Attacks of Opprotunity.</em></li>\n<li>4 <strong>Stamina Upkeep</strong></li>\n</ul>\n<h6>Light Speed</h6>\n<ul>\n<li>You gain +2 <em>Static Bonus</em> to <em>Melee/Melee Weapon Attack Rolls</em> and <em>Melee/Melee Weapon</em> <strong>Techniques</strong>.</li>\n<li>Quintuple (5x) your <em>Walk</em> and <em>Fly Speed</em>.</li>\n<li>You gain an additional 2 attacks as part of the <em>Attack Action</em> or when making <em>Basic Ki Blasts</em> as an Action.</li>\n<li>You gain an additional Reaction each round.</li>\n<li>You do not provoke <em>Attacks of Opprotunity.</em></li>\n<li>6 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "speedster-speed-force",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2233,
+        "endLine": 2285
+      },
+      "contentCategory": "subraceFeature",
+      "grantedBy": "Speedster"
+    }
+  }
+}

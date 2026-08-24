@@ -1,0 +1,74 @@
+{
+  "_id": "37704b0fd302bfca",
+  "name": "Cyborg",
+  "type": "subrace",
+  "img": "systems/dragons-and-ballz/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p>This subrace is unavailable for Androids</p>\n<h3>Variants</h3>\n<p>Cyborgs come in 3 major variants: <em>Cybernetic, Gete-star,</em> and <em>Neo-Mutant Metal</em> and you may replace up to 3 <strong>Racial Features</strong> from your base race with the <strong>Racial Features</strong> from your chosen variant.</p>\n<h4>Cybernetic Features</h4>\n<h5>Battery Powered</h5>\n<p>You do not suffer negative effects from not eating. You are incapable of regaining <strong>Ki</strong> from a <strong>Technique</strong> or <strong>Item</strong>, instead have a 4 <strong>Ki</strong> per round regen, this increases by 4 again at <strong>Levels 4, 7, 10, 13, 16,</strong> and <strong>19.</strong></p>\n<h5>Infinite Stamina Engine</h5>\n<p>You regain 1 <strong>Stamina</strong> at the start of each of your turns as your internal core gives you energy constantly. This can not be improved in any way.</p>\n<h5>Artificial Limitation Remover</h5>\n<p>Increase 2 <em>Ability Score Maximums</em> of your choice by 2.</p>\n<h4>Big-Gete Features</h4>\n<h5>Metal Wire Construction</h5>\n<p>You have the ability to stitch your body back together with your control of the micromachines making up your body. As an Action on your turn you may spend <strong>Ki</strong> to heal yourself, 1 <strong>HP</strong> for every 2 <strong>Ki</strong> spent.</p>\n<p>Additionally you gain the ability to unravel your form temporarily to attempt to grapple a target. As an Action on your turn you may make an unarmed strike against a target in melee range, dealing 0 damage and <em>Grappling</em> the target on a hit. You may grapple targets 1 <em>Size Category</em> larger than usual in this way.</p>\n<h5>Big Gete Star Cloning</h5>\n<p>As an Action on your turn you may spend <strong>Hit Die</strong> to create lesser copies of yourself. Each clone costs 2 <strong>Hit Dice</strong> that you can not regain until the clone is killed or dispelled as an Action on your turn. Clones have the following traits and features:</p>\n<ul>\n<li>You may create a maximum number of clones equal to half your Proficiency Bonus, rounded down.</li>\n<li>All clones have your <em>Ability Score and Class Features</em> with half your Proficiency Bonus rounded down.</li>\n<li>Each Clone has HP equal to the maximum amount of a single <strong>Hit Die</strong> spent in the creation, taking the higher leveled option in the event of <em>Multi-Classing.</em><ul>\n<li>For Example: a Mystic/Bruiser (lvl 6/4) would use their Mystic <strong>Hit Die</strong> due to having more levels in that class.</li>\n</ul>\n</li>\n<li>Clones use <em>your</em> <strong>Ki</strong> for <strong>Techniques</strong> and <strong>Features</strong> and have no access to <strong>Stamina</strong>.</li>\n<li>Clones have thier turn immedietly following yours in initiative but only have a Single Action per turn to <strong>Cast a Technique</strong> or take the <strong>Attack, Dash, Disengage, or Dodge Actions</strong>.</li>\n</ul>\n<h5>Draining Grapple</h5>\n<p>Whenever you have a target <em>Grappled</em> you may use your Bonus Action to drain 1d4 <strong>Stamina</strong> from the target.</p>\n<h4>Neo-Mutant Features (WIP)</h4>\n<h5>Liquid Metal Form</h5>\n<p>As an Action on your turn while you are making contact with metal outside of your own body you may sink into it, gaining a 60 foot movement speed while you are in this form. While in this form you can not be seen and you have <em>Advantage</em> on <em>Ki Stealth Checks</em> while submerged in the material.</p>\n<p>While in this form you still take damage if your space is attacked. You may not cast <strong>Techniques/Spells</strong> or make <em>Attack Rolls</em> while in this form.</p>\n<p>While in this state you may &quot;swim&quot; through all connected metal as well as see through the material to it's closest available line of sight. You may not use your Action or Bonus Actions to do anything except remove yourself from the metal or take the <em>Dash Action</em>.</p>\n<h5>Shape Form</h5>\n<p>As a Bonus Action on your turn you may spend 1 <strong>Stamina</strong> and convert your <em>Unarmed Strike</em> into a <em>Melee Weapon</em> of your choice until you change it's shape again as another Bonus Action.</p>\n<p>Returning to your original form does not require spending <strong>Stamina</strong>.</p>\n<p><em>Weapon Attacks Rolls</em> and <strong>Techniques</strong> made with weapons made by this feature gain a <em>Static Bonus</em> equal to your <strong>Ki Rank</strong>.</p>\n<h5>Superiority: Combat</h5>\n<p>Choose one class of <strong>Technique</strong>: <em>Beam, Blast, Barrage, Omni, Weapon, or Melee.</em> You gain +1 <em>Static Bonus</em> when using this type of <strong>Technique</strong>. At <strong>Level 7</strong> this becomes +2 and at <strong>Level 13</strong> you get to pick a second type of <strong>Technique</strong> to gain this bonus as well.</p>\n<p>At <strong>Level 18</strong> you get an additional +1 <em>Static Bonus</em> that you can place on any class of <strong>Technique</strong>, regardless of if you choose that category previously.</p>\n",
+      "chat": ""
+    },
+    "identifier": "cyborg",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "parentRace": "",
+    "requirements": "This subrace is unavailable for Androids",
+    "tags": "subrace",
+    "advancement": {
+      "914d901cee9fe9de": {
+        "_id": "914d901cee9fe9de",
+        "type": "ItemChoice",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.fdc8a959412f3fde",
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.632fd138dc67180b",
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.90002af870b721dc",
+              "sort": 2
+            }
+          ],
+          "restriction": {
+            "level": "",
+            "list": [],
+            "subtype": "",
+            "type": ""
+          },
+          "sorting": "a",
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Cyborg Variant",
+        "hint": "Choose the Cyborg variant defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2286,
+        "endLine": 2357
+      }
+    }
+  }
+}

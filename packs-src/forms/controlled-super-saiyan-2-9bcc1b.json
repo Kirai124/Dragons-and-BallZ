@@ -1,0 +1,41 @@
+{
+  "_id": "9bcc1b61d1856dff",
+  "name": "Controlled Super Saiyan 2",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 25 ft.</li>\n<li>You deal +1d6 to all <em>Damage Rolls</em></li>\n<li>+1 Rank of <strong>Bulk</strong></li>\n<li>3 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "controlled-super-saiyan-2",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Super Saiyan Berserk",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "action",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Mutant Saiyan; Super Saiyan Berserk"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4241,
+        "endLine": 4251
+      },
+      "formFamily": "Super Saiyan Berserk"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "_id": "0af0bb4385fa3f5e",
+  "name": "Yardratian",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/Yardratian.webp",
+  "system": {
+    "description": {
+      "value": "<h3>Physical Description</h3>\n<p>A relitively small race in comparison to most, standing between 3 and 5 feet tall, Yardratians are a peaceful and deeply spiritual people. Seperated between 2 visual destinct but otherwise virtually identical species. The breed standing closer to 5 feet tend to be Pink with wrinkled skin and multicolored spots while the smaller breed are smooth skinned and come in a wide variety and gradient of colors.</p>\n<h3>History</h3>\n<p>Not much is known of the ancient history of the Yardratians as most important knowledge is only known by their leader: The Great Elder. Very occasionally a yardratian is born with incredible combat potential and they are quickly exiled after their training is complete to become the guardian of the planet.</p>\n<h3>Society</h3>\n<p>The planet of Yardrat funtions as a planetary wide monastary, preaching the understanding and masterery of the Spirit inside of everything. They are an incredibly peaceful people who under normal circumstances never leave their home planet.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase</h4>\n<p>Wisdom +2 or Intelligence +2, Charisma +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Language</h4>\n<p>You can speak Common and one additional <em>Language</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Ki Control</em> and <em>History Skills</em>.</p>\n<h3>Racial Features</h3>\n<h4>Superiority: Ki Attack</h4>\n<p>Choose one class of <strong>Ki Technique</strong>: <em>Beam, Blast, Barrage</em>, or <em>Omni</em>. You gain +1 to <em>Static Bonus</em> when using this type of <strong>Ki Technique</strong>. At <strong>Level 7</strong> this becomes +2 and at <strong>Level 13</strong> you get to pick a second type of <strong>Ki Technique</strong> to gain this bonus.</p>\n<p>At <strong>Level 18</strong> you get an +1 <em>Static Bonus</em> that you can place on any class of <strong>Ki Technique</strong>, regardless of if you choose that category previously.</p>\n<h4>Rigorous Dicipline</h4>\n<p>Yardratians are famous for their training methods and determination. You gain a <strong>Technique</strong> every time you <strong>Level-Up</strong> to 20 and 2 <strong>Techniques</strong> every level beyond. You also gain 1 additional <em>Training Boon</em> each time you have a <strong>Training Arc</strong>.</p>\n<h4>Spirit Control</h4>\n<p>At <strong>Level 1</strong> you gain 1 <em>Spirit Control</em> <strong>Trained Feature</strong> of your choice. You also gain an additional <em>Spirit Control</em> <strong>Trained Feature</strong> each time your <strong>Ki Rank</strong> increases.</p>\n<h4>Powerful Energy</h4>\n<p>You <em>Basic Ki Blast</em> has it's <em>Damage Die</em> increased by 1 step. (1d4&gt;1d6&gt;1d8&gt;1d10&gt;1d12&gt;2d6&gt;2d8&gt;etc)</p>\n<h4>Masters of Spirit</h4>\n<p>You have spent your life in tune with your own spirit and due to this you can manipulate it with little effort.</p>\n<p>You gain the option to reduce the casting time of any <em>Spirit Control</em> <strong>Trained Feature</strong> you use by 1 step.</p>\n<p>(Action&gt;Bonus Action&gt;Reaction)</p>\n",
+      "chat": ""
+    },
+    "identifier": "yardratian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "d50e4aa3f150f656": {
+        "_id": "d50e4aa3f150f656",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "cha": 1
+          },
+          "locked": [],
+          "points": 2
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Wisdom +2 or Intelligence +2, Charisma +1 Put the +2 into Wisdom or Intelligence as required by the handbook."
+      },
+      "5c3fc0402f9e5849": {
+        "_id": "5c3fc0402f9e5849",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:his",
+            "skills:kic"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Ki Control and History Skills."
+      },
+      "489c7edbec9c833d": {
+        "_id": "489c7edbec9c833d",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and one additional Language of your choice."
+      },
+      "f40c0d30df51e685": {
+        "_id": "f40c0d30df51e685",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a56046f1260b8cdd",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6b7974f807747642",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f6236d13e41d9e70",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.62779c52c3d5b1df",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6bd8b0d74e8cedd6",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2166,
+        "endLine": 2216
+      }
+    }
+  }
+}

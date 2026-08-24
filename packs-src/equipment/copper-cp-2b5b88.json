@@ -1,0 +1,42 @@
+{
+  "_id": "2b5b8849dd57a17b",
+  "name": "Copper (CP)",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ƶ:</strong> 100 | <strong>CP:</strong> 1 | <strong>SP:</strong> 1/10 | <strong>EP:</strong> 1/50 | <strong>GP:</strong> 1/100 | <strong>PP:</strong> 1/1,000</p>\n",
+      "chat": ""
+    },
+    "identifier": "copper-cp",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9211,
+        "endLine": 9218
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

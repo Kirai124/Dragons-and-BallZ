@@ -1,0 +1,39 @@
+{
+  "_id": "cf19887ef7fb5bdd",
+  "name": "Emperor's Barrage",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  10x Ki</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Death Beam</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  120 Feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Barrage</li>\n</ul>\n<p>The user sends a barrage of death beams in front of them. One target of your choice must make a Dexterity Saving Throw dealing Xd12 <em>Magical Piercing Damage</em> per 10 <strong>Ki</strong> spent during the casting of this <strong>Technique</strong>, half on a success.</p>\n<p>The maximum <em>Damage Dice Amount</em>, before charging is calculated, can not exceed double your <em>Proficiency Bonus</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "emperor-s-barrage",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "barrage",
+    "kiCost": "10x Ki",
+    "castingTime": "1 Action",
+    "range": "120 Feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Death Beam*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8582,
+        "endLine": 8596
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

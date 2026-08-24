@@ -1,0 +1,42 @@
+{
+  "_id": "3ab68daac4fc0bcc",
+  "name": "Sack",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ100 | <strong>Weight:</strong> 1/2 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "sack",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9784,
+        "endLine": 9815
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

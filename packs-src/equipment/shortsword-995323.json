@@ -1,0 +1,42 @@
+{
+  "_id": "9953230d33279e3f",
+  "name": "Shortsword",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 100,000 Zeni | <strong>Damage:</strong> 1d6  Piercing | <strong>Weapon Properties:</strong> Finesse, Light</p>\n",
+      "chat": ""
+    },
+    "identifier": "shortsword",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9488,
+        "endLine": 9507
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

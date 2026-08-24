@@ -1,0 +1,40 @@
+{
+  "_id": "24658954c54a4d6b",
+  "name": "Cerealian",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Dexterity</li>\n</ul>\n<p>You feel the effect of your keen Cerealian DNA, Once per short rest you gain an extra reaction on your turn. You also gain the tenacity of a cerellian, Once per long rest if you fall to 0 Hit points you instead fall to 1 and you now bear the crimson eyes of a Cerealian, You gain access to the Red-Eye Activation Power Up</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-cerealian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1534,
+        "endLine": 1539
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

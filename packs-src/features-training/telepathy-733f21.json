@@ -1,0 +1,40 @@
+{
+  "_id": "733f213099167a59",
+  "name": "Telepathy",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Namekians can speak telepathically to anyone within a mile that they know well. This range is increased to 10 miles at <strong>Level 5</strong>, Continent-wide at <strong>Level 10</strong>, Planet-wide at <strong>Level 15</strong>, and Galaxy-wide at <strong>Level 20</strong>.</p>\n<p>If you can <strong>Sense Ki</strong> you can use this feature on any creature who's ki you can sense.</p>\n",
+      "chat": ""
+    },
+    "identifier": "namekian-telepathy",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1937,
+        "endLine": 1951
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Namekian"
+    }
+  }
+}

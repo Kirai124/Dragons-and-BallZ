@@ -1,0 +1,33 @@
+{
+  "_id": "ffc57a7837ba4da9",
+  "name": "Evil Containment Wave",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Special Rank Technique</em></h2>\n<ul>\n<li><strong>Casting Cost:</strong>  5 <strong>Hit Die</strong>, this can reduce you below zero <strong>Hit Die</strong></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Prerequisites:</strong> 1 Jar (or any other sealable container) and 1 Sealing Tag that cost 10,000 Zeni each</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  30 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>You use an empty bottle and seal a creature within range that you can see. The target of this <strong>Technique</strong> must make a <em>Constitution Saving Throw</em>, with advantage during <strong>Combat</strong>. Creatures who fail are immediately sealed within the jar and can only be let free if a creature spends an Action to unseal them.</p>\n<p>While in the <em>Jar</em>, a creature gains the <em>Paralyzed Condition</em>, even if they would be immune to it. They do not age, do need to eat, breathe, or sleep. The <em>Jar</em> has 1 <strong>Hit Point</strong> and has an <strong>AC</strong> of 5. If the <em>Jar</em> is within a creature's inventory, the <em>Jar</em> cannot be targeted.\n<strong>Hit Die</strong> expended to cast this <strong>Technique</strong> can never be recovered. You die at the completion of this <strong>Technique</strong> if your <strong>Hit Die</strong> would hit Zero or below.</p>\n",
+      "chat": ""
+    },
+    "identifier": "evil-containment-wave",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "Prerequisites:** 1 Jar (or any other sealable container) and 1 Sealing Tag that cost 10,000 Zeni each",
+    "tags": "trained feature; Turtle School"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3385,
+        "endLine": 3402
+      }
+    }
+  }
+}

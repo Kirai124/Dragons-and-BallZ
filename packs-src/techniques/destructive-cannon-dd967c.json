@@ -1,0 +1,39 @@
+{
+  "_id": "dd967c092b0f0b18",
+  "name": "Destructive Cannon",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  50 Ki</li>\n<li><strong>Prerequisites:</strong>   1 Star in <em>Burning Attack</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  60 Feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Blast</li>\n</ul>\n<p>Make a large ki ball at your side before launching it at highspeed toward the opponent. Roll a <em>Blast Attack Roll</em> dealing your <em>Basic Ki Blast Damage Die</em> + 6d12 <em>Fire Damage</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "destructive-cannon",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "blast",
+    "kiCost": "50 Ki",
+    "castingTime": "1 Action",
+    "range": "60 Feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Burning Attack*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8566,
+        "endLine": 8581
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

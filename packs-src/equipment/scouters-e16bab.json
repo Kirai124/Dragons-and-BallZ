@@ -1,0 +1,42 @@
+{
+  "_id": "e16bab6f7909ea6d",
+  "name": "Scouters",
+  "type": "tool",
+  "img": "systems/dragons-and-ballz/icons/svg/items/tool.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> - | <strong>Weight:</strong> -</p>\n",
+      "chat": ""
+    },
+    "identifier": "scouters",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9848,
+        "endLine": 9871
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

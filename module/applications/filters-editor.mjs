@@ -27,7 +27,7 @@ export default class FiltersEditor extends Application5e {
   /** @override */
   static PARTS = {
     editor: {
-      template: "systems/dnd5e/templates/apps/filters-editor.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/filters-editor.hbs"
     }
   };
 

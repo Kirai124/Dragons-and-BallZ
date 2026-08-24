@@ -22,8 +22,8 @@ export default class AbilityScoreImprovementFlow extends AdvancementFlow {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/advancement/ability-score-improvement-flow.hbs",
-      templates: ["systems/dnd5e/templates/advancement/parts/advancement-ability-score-control.hbs"]
+      template: "systems/dragons-and-ballz/templates/advancement/ability-score-improvement-flow.hbs",
+      templates: ["systems/dragons-and-ballz/templates/advancement/parts/advancement-ability-score-control.hbs"]
     }
   };
 
@@ -70,7 +70,7 @@ export default class AbilityScoreImprovementFlow extends AdvancementFlow {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       dragDrop: [{ dropSelector: "form" }],
-      template: "systems/dnd5e/templates/advancement/ability-score-improvement-flow.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/ability-score-improvement-flow.hbs"
     });
   }
 

@@ -1,0 +1,42 @@
+{
+  "_id": "61bd18ef2d3ca9a0",
+  "name": "Spellcasting Focus",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ100,000 | <strong>Weight:</strong> 3 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "spellcasting-focus",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9784,
+        "endLine": 9815
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

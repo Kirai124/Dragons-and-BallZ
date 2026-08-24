@@ -71,7 +71,7 @@ export default class AdvancementMigrationDialog extends Dialog5e {
         }
       ],
       content: await foundry.applications.handlebars.renderTemplate(
-        "systems/dnd5e/templates/advancement/advancement-migration-dialog.hbs",
+        "systems/dragons-and-ballz/templates/advancement/advancement-migration-dialog.hbs",
         { item, advancements: advancementContext }
       ),
       rejectClose: false,

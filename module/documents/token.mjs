@@ -239,7 +239,7 @@ export default class TokenDocument5e extends SystemFlagsMixin(TokenDocument) {
       canSelect: false,
       costMultiplier: 0,
       icon: "fa-solid fa-arrow-down-long",
-      img: "systems/dnd5e/icons/svg/statuses/falling.svg",
+      img: "systems/dragons-and-ballz/icons/svg/statuses/falling.svg",
       label: "DND5E.FALLING.MovementAction",
       measure: false,
       order: 9,

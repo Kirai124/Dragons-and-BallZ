@@ -1,0 +1,42 @@
+{
+  "_id": "081d7092a2fd70a6",
+  "name": "Shenron Scale",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p>This is a scale of the eternal dragon Shenron and it reacts when near a dragon ball. When the user is within 10 miles of a dragon ball the scale will glow brightly and when focused on the user will know the general direction of the dragon ball.</p>\n",
+      "chat": ""
+    },
+    "identifier": "shenron-scale",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9940,
+        "endLine": 9942
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

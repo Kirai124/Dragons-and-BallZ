@@ -1,0 +1,33 @@
+{
+  "_id": "191f453d34e553b9",
+  "name": "Instant Transmission",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>A fantastical ability that allows you to cross vast distances in an instance. As a <em>Bonus Action</em> or <em>Action</em> on your turn, you may spend 1 <strong>Stamina</strong> to teleport to a location that you can see.</p>\n<p>Whenever you successfully locate a target using <em>Sense Ki,</em> you may spend <strong>Stamina</strong> to teleport to them, as your Reaction to locating them or as your Action or Bonus Action so long as you can you continue to <em>Sense Ki</em>. You must spend 2 <strong>Stamina</strong> if they are on the same <em>Planet</em>, 3 <strong>Stamina</strong> if they are in the same <em>Solar System</em>, 4 <strong>Stamina</strong> if they are in the same <em>Universe</em>, or 5 <strong>Stamina</strong> if they are in the <em>Other World</em>/<em>Divine Realm</em> of your own <em>Universe</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "instant-transmission",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3424,
+        "endLine": 3429
+      }
+    }
+  }
+}

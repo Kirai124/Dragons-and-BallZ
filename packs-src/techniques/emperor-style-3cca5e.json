@@ -1,0 +1,39 @@
+{
+  "_id": "3cca5e8512e0ad59",
+  "name": "Emperor Style",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><strong>Prerequisites:</strong> Dexterity ≥ 15 and Wisdom ≥ 13</li>\n</ul>\n<p>A fighting style made to use fast deadly strikes.</p>\n<ul>\n<li>As an Action, you may make a single <em>Unarmed Strike</em> or <em>Weapon Attack</em> at advantage.</li>\n<li>+1 <em>Static Bonus</em> to <strong>Barrage Techniques</strong></li>\n<li>You gain +1 to your <strong>AC</strong> so long as you are not <em>Surprised.</em></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "emperor-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "stance",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Passive",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "Dexterity ≥ 15 and Wisdom ≥ 13",
+    "tags": "stance"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9154,
+        "endLine": 9162
+      },
+      "techniqueSection": "stance"
+    }
+  }
+}

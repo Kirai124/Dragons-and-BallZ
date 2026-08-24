@@ -1,0 +1,39 @@
+{
+  "_id": "7c62b25e058ffe7b",
+  "name": "Supernova",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  Special</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Death Ball</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  200 Feet (30 foot radius)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Blast</li>\n</ul>\n<p>A monstrous version of the death ball. For 25 <strong>Ki</strong> you may choose a point within range, targets in the technique's radius must make a <em>Dexterity Saving Throw</em> taking 5d12 <em>Ki Damage</em> on a failure, taking half damage on a success.</p>\n<p>You may spend additional sets of 25 <strong>Ki</strong> upon casting to add 2d12 <em>Ki Damage</em> and increase the sphere radius by 10 feet.</p>\n",
+      "chat": ""
+    },
+    "identifier": "supernova",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "blast",
+    "kiCost": "Special",
+    "castingTime": "1 Action",
+    "range": "200 Feet (30 foot radius)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Death Ball*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8815,
+        "endLine": 8831
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

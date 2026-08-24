@@ -1,0 +1,39 @@
+{
+  "_id": "cec5c9b83b9f7c7e",
+  "name": "Focus",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  10 Ki per +1</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Bonus Action</li>\n<li><strong>Range:</strong> Self</li>\n<li><strong>Duration:</strong> Upkeep</li>\n<li><strong>Chargeable:</strong> No</li>\n</ul>\n<p>You funnel your energy into your held weapon to empower it. For each 10 <strong>Ki</strong> you spend when casting casting this technique, to a maximum of 30 <strong>Ki</strong>, your equipped weapon gains a +1 <em>Static Bonus</em> and a +1 to Damage Rolls until the start of your next turn.</p>\n<p><strong>This Technique can not be mastered.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "focus",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "weapon",
+    "kiCost": "10 Ki per +1",
+    "castingTime": "1 Bonus Action",
+    "range": "Self",
+    "duration": "Upkeep",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7325,
+        "endLine": 7340
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

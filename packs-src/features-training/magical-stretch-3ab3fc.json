@@ -1,0 +1,40 @@
+{
+  "_id": "3ab3fc186f4369f3",
+  "name": "Magical Stretch",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your putty-like body gives you <em>Resistance</em> to <em>Nonmagical Bludgeoning, Piercing,</em> and <em>Slashing Damage</em>. Your <em>Unarmed Strikes/Weapon Attack Rolls</em> and <strong>Melee/Melee Weapon Techniques</strong> all gain an additional 5 feet of the <em>Reach Property</em> equal to a third of your <em>Proficiency Bonus</em>, rounded up.</p>\n",
+      "chat": ""
+    },
+    "identifier": "majin-magical-stretch",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1862,
+        "endLine": 1864
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Majin"
+    }
+  }
+}

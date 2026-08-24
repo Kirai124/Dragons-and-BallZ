@@ -40,7 +40,7 @@ export default class AdvancementConfig extends FormApplication {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["dnd5e", "advancement", "dialog"],
-      template: "systems/dnd5e/templates/advancement/advancement-config.hbs",
+      template: "systems/dragons-and-ballz/templates/advancement/advancement-config.hbs",
       width: 400,
       height: "auto",
       submitOnChange: true,

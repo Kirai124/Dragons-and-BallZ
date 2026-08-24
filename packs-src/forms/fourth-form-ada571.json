@@ -1,0 +1,41 @@
+{
+  "_id": "ada57118d2935942",
+  "name": "Fourth Form",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<p>The arcosian shrinks down to their true form.</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>You deal +1d6 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 25 ft.</li>\n<li>When a creature would fail a <strong>Ki Technique's</strong> <em>Saving Throw</em> by 10 or more, they take additional <em>Damage</em> equal to double your Proficiency Bonus</li>\n<li>3 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p><strong>Gained Level 15</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "fourth-form",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Gates of Power",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "action",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "Gained Level 15",
+    "tags": "Arcosian; Gates of Power"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3904,
+        "endLine": 3916
+      },
+      "formFamily": "Gates of Power"
+    }
+  }
+}

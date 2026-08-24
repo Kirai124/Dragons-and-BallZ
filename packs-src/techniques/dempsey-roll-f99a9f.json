@@ -1,0 +1,39 @@
+{
+  "_id": "f99a9f810c1df683",
+  "name": "Dempsey Roll",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  Special</li>\n<li><strong>Casting Time:</strong>  1 Reaction, which you take when a creature targets you with a <em>Melee Attack Roll</em> or <strong>Melee/Melee Weapon Technique</strong>.</li>\n<li><strong>Range:</strong>          Melee</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Until the start of your next turn</li>\n</ul>\n<p>An expertly done boxer's counter. For the duration, each time a <em>Melee Attack Roll</em> or <strong>Melee/Melee Weapon Technique</strong> that targets you, you can spend 8 <strong>Ki</strong>. When you do, you attempt to duck and weave granting yourself +2 to your <strong>AC</strong> against the triggering attack and then immediately make one <em>Unarmed Strike</em> in response.\nEach time you <em>Master</em> this <strong>Technique</strong> you may reduce the <strong>Ki Cost</strong> per punch by 1 or increase the <strong>AC</strong> bonus by 1 each time.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dempsey-roll",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "melee",
+    "kiCost": "Special",
+    "castingTime": "1 Reaction, which you take when a creature targets you with a *Melee Attack Roll* or **Melee/Melee Weapon Technique**.",
+    "range": "Melee",
+    "duration": "Until the start of your next turn",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6531,
+        "endLine": 6543
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

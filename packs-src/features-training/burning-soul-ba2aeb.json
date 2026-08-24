@@ -1,0 +1,40 @@
+{
+  "_id": "ba2aeb38a2409bb5",
+  "name": "Burning Soul",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Due to their supposed connection or perhaps some other strange genetic trait, Sekhmen-jin can choose to turn any <em>Ki Damage</em> they deal into <em>Fire Damage</em>. At <strong>Level 10</strong> this ignores <em>Resistance</em> and treats <em>Immunity</em> as <em>Resistance</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "sekhmen-jin-burning-soul",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2145,
+        "endLine": 2148
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Sekhmen-jin"
+    }
+  }
+}

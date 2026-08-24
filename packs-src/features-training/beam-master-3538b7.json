@@ -1,0 +1,39 @@
+{
+  "_id": "3538b75b97728dcc",
+  "name": "Beam Master",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain a <em>+1 Static Bonus</em> to <strong>Beam Techniques</strong> and add half of your <em>Constitution Modifier</em> to their <em>Damage Rolls</em>.</p>\n<p>This <strong>Heroic Feature</strong> can be taken a second time to gain an addition +1 <em>Static Bonus</em> and you may now add your total <em>Constitution Modifier</em> to their <em>Damage Rolls</em> instead of half.</p>\n",
+      "chat": ""
+    },
+    "identifier": "beam-master",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6079,
+        "endLine": 6083
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

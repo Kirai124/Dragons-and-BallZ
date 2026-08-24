@@ -1,0 +1,42 @@
+{
+  "_id": "61b4b5fed3a5348f",
+  "name": "Laser Pistol Magazine",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 100,000 Zeni</p>\n",
+      "chat": ""
+    },
+    "identifier": "laser-pistol-magazine",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9437,
+        "endLine": 9445
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

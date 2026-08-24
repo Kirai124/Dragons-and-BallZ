@@ -1,0 +1,41 @@
+{
+  "_id": "9fb6b25772b6e791",
+  "name": "Demon god’s Mantle",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Rank 4 Power-Up</em></p>\n<p>You gain a coat of demonic energy as you draw directly upon your connection to Sesa.</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 15 ft.</li>\n<li>You gain an additional +1 <strong>Static Bonus</strong> to <em>Spells</em> and <em>Ki Techniques</em></li>\n<li>You may cast <em>Spells</em> from the infernal legacy feature as a bonus action on your turn.</li>\n<li>3 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "demon-gods-mantle",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": 4,
+    "family": "Energy of Sesa's Family",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "bonus",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Mashin-Jins; Energy of Sesa's Family"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4566,
+        "endLine": 4577
+      },
+      "formFamily": "Energy of Sesa's Family"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<fieldset>
+    <legend>{{ localize "DBZ.ITEM.TrainingDetails" }}</legend>
+    {{ formField fields.category value=source.category choices=trainingCategories localize=true rootId=partId }}
+    {{ formField fields.boonCost value=source.boonCost rootId=partId }}
+    {{ formField fields.durationWeeks value=source.durationWeeks rootId=partId }}
+    {{ formField fields.kiRank value=source.kiRank placeholder="—" rootId=partId }}
+    {{ formField fields.requirements value=source.requirements rootId=partId }}
+    {{ formField fields.tags value=source.tags rootId=partId }}
+</fieldset>

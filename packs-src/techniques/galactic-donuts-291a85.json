@@ -1,0 +1,39 @@
+{
+  "_id": "291a8526c526333d",
+  "name": "Galactic Donuts",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  30 Ki</li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  120 Feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          1 Minute (Concentration)</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>The user creates a ring construct of ki to restrain the user. One target of you choice within range must make a <em>Strength Saving Throw</em> or be <em>Grappled</em> by the construct, remaking the <em>Saving Throw</em> as an <em>Action</em> on their turn to escape. While you are <em>Concentrating</em> on this <strong>Tehnique</strong> you may spend 30 <strong>Ki</strong> as an Action and throw an additional <em>Galactic Donut</em>, you may have a nymber of <em>Galactic Donuts</em> created at one time equal to your <strong>Ki Rank.</strong> If a target has more than a single <em>Galactic Donut</em> <em>Grappling</em> them, they are <em>Restrained</em> for the duration.</p>\n<p>Whenever you are <em>Concentrating</em> on this <strong>Technique</strong> you may use your Bonus Action to detonate all <em>Galactic Donuts</em>, dealing 4d8 <em>Ki Damage</em> to all targets affected by <em>Galactic Donuts</em> and ending this <strong>Technique</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "galactic-donuts",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "omni",
+    "kiCost": "30 Ki",
+    "castingTime": "1 Action",
+    "range": "120 Feet",
+    "duration": "1 Minute (Concentration)",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8190,
+        "endLine": 8210
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

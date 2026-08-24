@@ -1,0 +1,39 @@
+{
+  "_id": "d9ffc4d39adb0742",
+  "name": "The Ol' One-Two",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  3 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>          Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A staple of trained combat, a quick combo from a boxing stance. Roll a <em>Combo Attack Roll</em>, dealing your <em>Unarmed Strike Damage Die</em> + 2d4 <em>Bludgeoning Damage</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "the-ol-one-two",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "melee",
+    "kiCost": "3 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6648,
+        "endLine": 6658
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

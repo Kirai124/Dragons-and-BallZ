@@ -1,0 +1,39 @@
+{
+  "_id": "02bb8475a61982b6",
+  "name": "Ki Empowerment",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  20 ki</li>\n<li><strong>Casting Time:</strong>  1 action</li>\n<li><strong>Prerequisites:</strong>  <em>Strength Score</em> ≥ 16</li>\n<li><strong>Range:</strong>  Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          1 Minute (concentration)</li>\n<li><strong>Type:</strong>  Other</li>\n</ul>\n<p>Multiplies carrying and lifting capacities by 22.5 times normal until the start of your next turn after the <em>Duration</em>. If stressed to maximum this technique will cause detrimental effects to the user’s body (at the DM's discretion) (does not affect unarmed damage).</p>\n<ul>\n<li>16 Strength= 18,000 lbs</li>\n<li>17 Strength= 19,125 lbs</li>\n<li>18 Strength= 20,250 lbs</li>\n<li>19 Strength= 21,375 lbs</li>\n<li>20 Strength= 22,500 lbs</li>\n<li>21 Strength= 23,625 lbs</li>\n<li>22 Strength= 24,750 lbs</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "ki-empowerment",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "otherKi",
+    "kiCost": "20 ki",
+    "castingTime": "1 action",
+    "range": "Self",
+    "duration": "1 Minute (concentration)",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "*Strength Score* ≥ 16",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8930,
+        "endLine": 8951
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "a34a6740091824f0",
+  "name": "Alien Battle Instincts",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Once per Short or Long Rest, you can enter the <em>Enraged Condition</em> as a Bonus Action on your turn. Each time you use this after the first you gain 1 <strong>Rank of Exhaustion</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "alien-alien-battle-instincts",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1331,
+        "endLine": 1342
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Alien"
+    }
+  }
+}

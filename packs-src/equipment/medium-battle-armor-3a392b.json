@@ -1,0 +1,50 @@
+{
+  "_id": "3a392b6fc42111b9",
+  "name": "Medium Battle Armor",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Armor Class:</strong> 13 + Dexterity Modifier (max 2) + Half Proficiency Bonus</p>\n<p><strong>Stealth:</strong> -</p>\n<p>See Chapter 10: Equipment for the full armor rules.</p>\n",
+      "chat": ""
+    },
+    "identifier": "medium-battle-armor",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 500000,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "medium",
+      "subtype": ""
+    },
+    "armor": {
+      "value": 13,
+      "magicalBonus": "",
+      "dex": 2
+    },
+    "proficient": null,
+    "properties": [],
+    "strength": 0
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9235,
+        "endLine": 9385
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -20,7 +20,7 @@ export default class LongRestDialog extends BaseRestDialog {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/actors/rest/long-rest.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/rest/long-rest.hbs"
     }
   };
 

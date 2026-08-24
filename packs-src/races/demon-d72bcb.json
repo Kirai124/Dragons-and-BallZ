@@ -1,0 +1,130 @@
+{
+  "_id": "d72bcb1e3cfd47de",
+  "name": "Demon",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/demon.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>History</h3>\n<p>Demons as a whole lack a generally accepted history, with many of them springing up from nothingness from negative emotion, collective conciousness, or manifested fears.</p>\n<p>Rarely long living demons find solace in each other and birth demons that are more free thinking, lacking the &quot;programming&quot; of other demons created from specific concious thought such as a nightmare demon.</p>\n<h3>Physical Description</h3>\n<p>Demons can come in many varieties, usually resembling the domain or concept they are connected to. <em>True Demons</em>, as they are sometimes called, are the results of demon marriages and appear extremely humanoid in comparison to other demons.</p>\n<h3>Society</h3>\n<p>Demons that reside in <em>Other World</em> tend to build a strict heirarchy based on strength, with the most powerful among them becoming <em>The Demon King.</em> Outside of this strength oriented society many demons find themself aimless, wandering to find meaning or entertainment wherever they may stumble across it.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p>Any one <strong>Ability Score</strong> +2, Any one <strong>Ability Score</strong> +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>You can speak Common and Infernal</p>\n<h4>Skills</h4>\n<p>You gain the <em>Intimidation</em> and <em>Spirit Skills</em></p>\n<h3>Racial Features</h3>\n<h4>Superiority: Combat</h4>\n<p>Choose one class of <strong>Technique</strong>: <em>Beam, Blast, Barrage, Omni, Weapon, or Melee.</em> You gain +1 <em>Static Bonus</em> when using this type of <strong>Technique</strong>. At <strong>Level 7</strong> this becomes +2 and at <strong>Level 13</strong> you get to pick a second type of <strong>Technique</strong> to gain this bonus as well.</p>\n<p>At <strong>Level 18</strong> you get an additional +1 <em>Static Bonus</em> that you can place on any class of <strong>Technique</strong>, regardless of if you choose that category previously.</p>\n<h4>The Weight of Heaven and HFIL</h4>\n<p>You carry on your shoulders the metaphysical weight of the realms as a curse, this however has only served to strengthen you.. You gain the <strong>Infernal Tag</strong> and at <strong>Levels 5, 10, 15, and 20</strong> you gain the <em>Weight Training</em> <strong>Feat.</strong> If you already have the <em>Weight Training</em> <strong>Feat</strong> to its maximum, than you gain the <em>Weight Acclimation</em> <strong>Feat</strong> instead.</p>\n<h4>Hellish Resistance</h4>\n<p>You gain Resistance to 1 <em>Damage Type</em> of your choice, this can not be changed later.</p>\n<h4>Hellish Fortitude</h4>\n<p>You have improved durability due to your unnatural body. All <strong>Hit Die</strong> you gain are increased by 1 step.</p>\n<p>(1d6&gt;1d8&gt;1d10&gt;1d12&gt;2d6)</p>\n<h4>Demonic Ability</h4>\n<p>You possess an ability of your choice based on your hellish nature.</p>\n<h5>Dark Magic</h5>\n<p>You gain access to 1 branch of magic of your choice as if through the <em>Mysticism</em> <em><strong>Class Feature</strong></em>, additionally you may use <em>Constitution</em> as your <em>Spell Casting Modifier</em> for the <em>Mysticism</em> <em><strong>Class Feature</strong></em>.</p>\n<h5>Demonic Wings</h5>\n<p>You possess a pair of bat-like wings that protrude from your back granting you a <em>Fly Speed</em> of 15x your <strong>Ki Rank.</strong></p>\n<h5>Elementalist</h5>\n<p>Choose one <em>Damage Type</em> from the list below, this can not be changed later, anytime you cast a <strong>Technique</strong> you may spend <strong>Stamina</strong> equal to it's <strong>Rank</strong> to change it's <em>Damage Type</em> to your chosen <em>Damage Type</em>.</p>\n<ul>\n<li>Fire</li>\n<li>Cold</li>\n<li>Lightning</li>\n<li>Thunder</li>\n<li>Force</li>\n<li>Psychic</li>\n<li>Poison</li>\n</ul>\n<h5>Esoteric Gift</h5>\n<p>You gain 1 <em>Esoteric Art</em> from the <em>Esoteric Arts</em> <strong>Class Feature.</strong></p>\n<h5>Fiendish Power</h5>\n<p>Whenever you make an <em>Unarmed Strike</em> or <strong>Melee Technique</strong> you may spend <strong>Stamina</strong> to give yourself a <strong>Static Boost</strong> equal to the amount spent for that casting. You may not spend more than half of your <em>Proficiency Bonus</em>, rounded up, in <strong>Stamina</strong> in this manner for a single attack roll.</p>\n<h5>Hardened Body</h5>\n<p>You are naturally tougher than others, you gain a bonus to <strong>AC</strong> equal to your <strong>Ki Rank.</strong></p>\n<h5>Unstable Biology</h5>\n<p>You have the ability to break down your physical structure on a whim to avoid harm. Your <strong>Wild Sense Manuever</strong> can now be used on <em>Strength</em> and <em>Constitution Saving Throws</em> as well to completly ignore effects on a success, if there would still be an effect.</p>\n",
+      "chat": ""
+    },
+    "identifier": "demon",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "467d108be04d3b6c": {
+        "_id": "467d108be04d3b6c",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {},
+          "locked": [],
+          "points": 3
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Any one **Ability Score** +2, Any one **Ability Score** +1"
+      },
+      "b1f30a9cc397a61e": {
+        "_id": "b1f30a9cc397a61e",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:itm",
+            "skills:spi"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Intimidation and Spirit Skills"
+      },
+      "b3e6b04b2839e2d3": {
+        "_id": "b3e6b04b2839e2d3",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "languages:standard:common",
+            "languages:exotic:infernal"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and Infernal"
+      },
+      "30375196462bcdbe": {
+        "_id": "30375196462bcdbe",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.067717378a7dc4bb",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5486efaa465354ee",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6e0070be673ef353",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8f7c045b51cce17f",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ed6bafd5358980d7",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1695,
+        "endLine": 1783
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "20ebb599a4f35f30",
+  "name": "Eagle-Eyed Adaptation",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Once per Long Rest when you see a <strong>Technique</strong> of no more than a single <strong>Ki Rank</strong> higher than you are that you could learn, you may memorize it.</p>\n<p>Until you replace this move you may cast it without gaining your <em>Proficiency Bonus</em>. This <strong>Technique</strong> remains memorized until you replace it with a different <strong>Technique</strong>. If you learn the <strong>Technique</strong> that you have memorized it instantly gains 1 <em>Rank of Mastery</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "eagle-eyed-adaptation",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6134,
+        "endLine": 6139
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

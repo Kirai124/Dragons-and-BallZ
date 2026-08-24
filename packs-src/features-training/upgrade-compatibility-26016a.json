@@ -1,0 +1,40 @@
+{
+  "_id": "26016a78112d83fa",
+  "name": "Upgrade Compatibility",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You are more than a simple machine. You gain the <em>Construct</em> <strong>Tag</strong> and can not gain the <em>Ki Control</em> <strong>Heroic Feature</strong> through <strong>Training</strong> or <strong>Level Up.</strong></p>\n<p>Additionally you begin with the <em>Arm Missle</em> <strong>Technique</strong> and it's <strong>Ki Rank</strong> is equal to your own.</p>\n<h5>Arm Missile</h5>\n<p><em>Rank ? Melee Technique</em></p>\n<ul>\n<li><strong>Casting Time:</strong>   1 action</li>\n<li><strong>Range:</strong>          120 feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>       Instantaneous</li>\n</ul>\n<p>Fire your forearm off like a rocket before it returns and replaces itself on your arm. Make a combo attack roll against a target in range dealing your unarmed damage die + Xd4 <em>Force Damage</em> where X is your <em>Proficiency Bonus</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "android-upgrade-compatibility",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1381,
+        "endLine": 1404
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Android"
+    }
+  }
+}

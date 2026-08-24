@@ -1,0 +1,28 @@
+{
+  "source": "message.txt",
+  "counts": {
+    "races": 25,
+    "backgrounds": 14,
+    "classes": 4,
+    "features-training": 396,
+    "forms": 78,
+    "techniques": 178,
+    "equipment": 227
+  },
+  "total": 922,
+  "types": {
+    "race": 21,
+    "subrace": 4,
+    "background": 14,
+    "class": 4,
+    "feat": 340,
+    "training": 56,
+    "form": 78,
+    "technique": 178,
+    "weapon": 53,
+    "loot": 110,
+    "tool": 37,
+    "consumable": 4,
+    "equipment": 23
+  }
+}

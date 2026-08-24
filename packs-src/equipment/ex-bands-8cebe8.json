@@ -1,0 +1,42 @@
+{
+  "_id": "8cebe80297697d67",
+  "name": "EX Bands",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p>These small armbands contain within them splicing technology made in an attempt to replicate the capabilities of the <em>Metamorian Fusion Dance</em>.</p>\n<p>Once per day, so long as you are wearing an <em>EX Band</em> and are within 5 feet of another creature also weaing an <em>EX Band</em>, you may as an Action perform the <em>Metamorian Fusion Dance</em> with the other creature regardless of whether or not you or the creature know it. Fusions made in this manner are always a Success though have the following changes</p>\n<ul>\n<li>You do not gain a <strong>Power Bonus</strong> from the Success of the Fusion</li>\n<li>Fusion has its <strong>Stamina Upkeep</strong> reduced to 1.</li>\n</ul>\n<p>This process results in an EX Fusion, a new unique Fusion seperate from your traditional <em>Metamorian Fusion</em> result with the other creature, if one exists. This Fusion has a melding of <strong>Equipment</strong> of the Fusees and you may choose what <em>Armor</em> is melded into your form, if more than one set would be available.</p>\n<h4>Maxi Fusion</h4>\n<p>The EX Bands have an additional feature, an even larger, more encompassing fusion known as a <em>Maxi Fusion.</em> As an Action on your turn you may ready your Action to preform a Maxi Fusion. To complete the Maxi Fusion at least 2 others, but no more than 4, who are wearing <em>EX Bands</em> can ready their Action to join, or initiate if at 3-5 members, the <em>Maxi Fusion</em>.</p>\n<p>A <strong>Three-Member</strong> <em>Maxi Fusion</em> is an <em>EX Fusion</em> with the following changes:</p>\n<ul>\n<li>The Fusion has its <strong>Stamina Upkeep</strong> increased by 1<ul>\n<li>this increases by an additional 1 for each additional member of the <em>Maxi Fusion</em></li>\n</ul>\n</li>\n<li>The Fusion gains a +1 <strong>Power Bonus</strong><ul>\n<li>this increases by an additional 1 for each additional member of the <em>Maxi Fusion</em></li>\n</ul>\n</li>\n<li>The Fusion's <em>Size Category</em> is one higher then the members of the <em>Maxi-Fusion.</em><ul>\n<li>This increases by an additional <em>Size Category</em> for each additional member of the <em>Maxi Fusion</em></li>\n</ul>\n</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "ex-bands",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9980,
+        "endLine": 10024
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

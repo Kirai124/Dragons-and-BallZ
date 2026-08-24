@@ -1,0 +1,25 @@
+<section class="tab {{ tab.cssClass }} dbz-forms-tab" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
+<section class="dbz-status-strip {{#if dbzStatus.overload}}overloaded{{/if}}">
+    <span><strong>{{ localize "DBZ.KiRank" }}</strong> {{ dbzStatus.kiRank }}</span>
+    <span><strong>{{ localize "DBZ.Ki" }}</strong> {{ dbzStatus.ki }}</span>
+    <span><strong>{{ localize "DBZ.Stamina" }}</strong> {{ dbzStatus.stamina }}</span>
+    <span><strong>{{ localize "DBZ.GodKi" }}</strong> {{ dbzStatus.godKi }}</span>
+    <span><strong>{{ localize "DBZ.Power" }}</strong> {{ dbzStatus.power }}/{{ dbzStatus.threshold }}</span>
+    <span><strong>{{ localize "DBZ.PowerLevel" }}</strong> {{ dbzStatus.powerLevel }}</span>
+    {{#if dbzStatus.activeForms}}<span class="active"><i class="fa-solid fa-burst"></i> {{ dbzStatus.activeForms }} {{ localize "DBZ.FormsShort" }}</span>{{/if}}
+    {{#if dbzStatus.charging}}<span class="charging"><i class="fa-solid fa-battery-half"></i> {{ localize "DBZ.Charging" }}: {{ dbzStatus.chargingName }} ({{ dbzStatus.chargeRounds }})</span>{{/if}}
+    {{#if dbzStatus.concealed}}<span class="concealed"><i class="fa-solid fa-eye-slash"></i> {{ localize "DBZ.KiConcealed" }}</span>{{/if}}
+    {{#if dbzStatus.overload}}<span class="danger"><i class="fa-solid fa-triangle-exclamation"></i> {{ localize "DBZ.PowerOverload" }} +{{ dbzStatus.overload }}</span>{{/if}}
+</section>
+    <section class="dbz-tab-intro card">
+        <div>
+            <h2>{{ localize "DBZ.Transformations" }}</h2>
+            <p>{{ localize "DBZ.TransformationsHint" }}</p>
+        </div>
+        <div class="dbz-slot-hint">
+            <span><i class="fa-solid fa-burst"></i> {{ localize "DBZ.OneTransformationSlot" }}</span>
+            <span><i class="fa-solid fa-bolt"></i> {{ localize "DBZ.OnePowerUpSlot" }}</span>
+        </div>
+    </section>
+    {{> "systems/dragons-and-ballz/templates/inventory/inventory.hbs" keepEmpty=true }}
+</section>

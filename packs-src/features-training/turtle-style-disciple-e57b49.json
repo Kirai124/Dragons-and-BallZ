@@ -1,0 +1,33 @@
+{
+  "_id": "e57b49c17ce2db47",
+  "name": "Turtle Style Disciple",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The <em>Static Bonus</em> from the <em>Turtle Style</em> <strong>Stance</strong> is increased by 1.</p>\n",
+      "chat": ""
+    },
+    "identifier": "turtle-style-disciple",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Turtle School"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3406,
+        "endLine": 3409
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "5c98aefd1012c541",
+  "name": "Healers Kit",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ50,000 | <strong>Weight:</strong> 3 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "healers-kit",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 3.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9723,
+        "endLine": 9775
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -21,7 +21,7 @@ export default class CheckActivity extends ActivityMixin(BaseCheckActivityData) 
   static metadata = Object.freeze(
     foundry.utils.mergeObject(super.metadata, {
       type: "check",
-      img: "systems/dnd5e/icons/svg/activity/check.svg",
+      img: "systems/dragons-and-ballz/icons/svg/activity/check.svg",
       title: "DND5E.CHECK.Title",
       hint: "DND5E.CHECK.Hint",
       sheetClass: CheckSheet,

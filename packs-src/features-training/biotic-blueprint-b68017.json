@@ -1,0 +1,40 @@
+{
+  "_id": "b68017cbbfb87785",
+  "name": "Biotic Blueprint",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The design philosophy of your creation differs from scientist to scientist. Are you a complete being that has had traits hand picked from the races of the universe or are you perhaps an imperfect being that must absorb more beings to become the perfect life form.</p>\n<h5>Incomplete Creation:</h5>\n<p>Your journey is to become the ultimate lifeform. You Start with 2 Genetic Makeup features.</p>\n<p>You’ve been designed to improve you have the ability to absorb other life forms including other androids through a tail or an intergrated weapon within your body called <strong>Life Drain</strong> to make an unarmed strike. You decrease the damage step by 1 when dealing damage using <strong>Life Drain</strong> but you may choose to deal damage to their hit poitns or ki points. Dealing damage in this way gives you an amount of ki points equal to the damage dealt.</p>\n<p>Beyond absorbing them, you may additionally gain their skills and abilities by fulling intergrating them within you. You may target a creature using <strong>Life Drain</strong>. If you would bring a creature down to 0 hit points by a <strong>Life Drain</strong> attack, you may choose to absorb them into you. You may alternatively target a creature that is willing <strong>and not charmed</strong>, you may automatically absorb the creature as an action.</p>\n<p>You may integrate a number of creatures equal to half of your Constitution Modifier. When you would absorb a creature from <strong>Life Drain</strong>, you gain the following benefits:</p>\n<ul>\n<li><p>You gain the benefit of an additional Genetic Makeup of the race you had absorbed. You do not gain the additional bonus to your Ability Score.</p>\n</li>\n<li><p>You learn all techniques and languages of the assimilated, this will not improve a move you have if you already have it to a higher degree of mastery but if they have an improved version you do get it.</p>\n</li>\n<li><p>If they have any ability scores higher than yours you may add +1 to those scores, this may increase it above a Ability Score maximum.</p>\n<ul>\n<li>If none of their Ability Scores surpass yours you gain +1 to whichever Ability Score was their highest.</li>\n</ul>\n</li>\n<li><p>You gain the <em>Fusion Tag</em> when you absorb a creature this way</p>\n</li>\n</ul>\n<h5>Artificial Warrior:</h5>\n<p>You are a warrior that had its genetic makeup cherry picked, You gain 3 Genetic Makeup features. You may pick the DNA Specialization Feat two additional times, ignoring all limitation</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-biotic-blueprint",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1478,
+        "endLine": 1511
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

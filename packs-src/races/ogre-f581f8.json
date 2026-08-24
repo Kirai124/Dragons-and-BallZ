@@ -1,0 +1,133 @@
+{
+  "_id": "f581f836fb2c7057",
+  "name": "Ogre",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/ogre.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Humanoid</strong></p>\n<h3>Physical Description</h3>\n<p>Ranging in sizes from 3 to 8 feet tall, Ogres are universally strong and durable with horns and skin of vibrant shades of reds and blues.</p>\n<h3>History</h3>\n<p>Originally hailing from the otherworld, planets like Earth have allowed them to cross over through locations like Frypan Mountain to find better lives outside the confines of the Spiritual Realm.</p>\n<h3>Society</h3>\n<p>Ogres in the Otherworld tend to make their living as patrollers and guardians of hell and other otherworld systems, likewise many mortal realm ogres make a name for themselves and powerful warriors and champions, using their supernatural physical capabilities to give them the edge.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Improvement</h4>\n<p>Constitution +2, Strength +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>You know Common and Infernal</p>\n<h4>Skills</h4>\n<p>You gain the <em>Survival</em> and <em>Intimidation Skills</em>.</p>\n<h3>Racial features</h3>\n<h4>Muscular Durability</h4>\n<p>Your body is unnaturally durable. You gain a bonus to your <strong>AC</strong> equal to your <strong>Ki Rank.</strong></p>\n<h4>Ogre Stamina</h4>\n<p>Your unique biology makes you longer winded than most species. You gain +1 <strong>Stamina</strong> at <strong>Level 1</strong> and everytime you <strong>Level Up</strong>.</p>\n<h4>Ogre's Endurance</h4>\n<p>As an Action on your turn, you may spend <strong>Stamina</strong> to gain Xd12 <strong>Temporary HP</strong> where X is equal to the <strong>Stamina</strong> spent. This <strong>Temporary HP</strong> disappears after 1 hour or whenever you gain another source of <strong>Temporary HP</strong>.</p>\n<h4>Superiority: Unarmed</h4>\n<p>You are naturally adept at hand-to-hand combat. You gain +1 <em>Static Bonus</em> added to all <em>Unarmed Strikes</em> and <strong>Melee Techniques</strong> . This increases to +2 at <strong>Level 7</strong>, +3 at <strong>Level 13</strong>, and +4 at <strong>Level 19</strong>.</p>\n<h4>Battle Cry</h4>\n<p>Ogres have a natural ability to inspire anger and aggression from those near them.</p>\n<p>You gain the following <strong>Omni Technique</strong> and it's rank matches your <strong>Ki Rank</strong>:</p>\n<h5>Battle Cry</h5>\n<p><em>Rank X Omni Technique</em></p>\n<p><strong>Cost:</strong>   1 Stamina\n<strong>Casting Time:</strong>   1 Bonus Action\n<strong>Range:</strong>          30 Feet\n<strong>Duration:</strong>       Special</p>\n<p>You attempt to compel a creature into a duel. One creature that you can see within range must make a <em>Wisdom Saving Throw</em>. On a failed save, the creature is drawn to you, compelled by your aggressive demand. For the duration, it has Disadvantage on <em>Attack Rolls</em> against creatures other than you, and must make a <em>Wisdom Saving Throw</em> each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this <em>Saving Throw</em>, this <strong>Technique</strong> doesn’t restrict the target’s movement for that turn.</p>\n<p>The effects ends if you attack any unaffected creature, if you cast a <strong>Spell/Technique</strong> that targets a hostile creature other than a target, or if you end your turn more than 30 feet away from a target.</p>\n<p>For each additional <strong>Stamina</strong> you spend you may force an additional target in your range to make the <em>Saving Throw</em> as well, to a maximum number of targets equal to your <em>Proficiency Bonus</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ogre",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Humanoid"
+    },
+    "advancement": {
+      "89edfd6c5780ae23": {
+        "_id": "89edfd6c5780ae23",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "con": 2,
+            "str": 1
+          },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Constitution +2, Strength +1"
+      },
+      "4843f9e937b3688d": {
+        "_id": "4843f9e937b3688d",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:itm",
+            "skills:sur"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Survival and Intimidation Skills."
+      },
+      "2374a83183d55028": {
+        "_id": "2374a83183d55028",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "languages:standard:common",
+            "languages:exotic:infernal"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You know Common and Infernal"
+      },
+      "47b3dc8cef239c8d": {
+        "_id": "47b3dc8cef239c8d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.762d426952993cc7",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.17ef471a2dba0dae",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.759b50637d364f83",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.dd453b256cf2a19a",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8741802a4fb480b5",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 990,
+        "endLine": 1054
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "94a8390d945340e4",
+  "name": "Namekian Armada",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Fusing with at least 2 Namekians</strong>\nYou carry with you the might of Planet Namek. You can now use <em>Super Namekian</em> and <em>Namekian Split</em> as a <strong>Combination Transformation</strong> known as <em>Namekian Hero</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "namekian-armada",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Fusing with at least 2 Namekians",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5873,
+        "endLine": 5877
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

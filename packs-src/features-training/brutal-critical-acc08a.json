@@ -1,0 +1,39 @@
+{
+  "_id": "acc08a507ca9b7c5",
+  "name": "Brutal Critical",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You can roll one additional <em>Damage Die</em> when determining the extra damage for a <strong>Critical Hit</strong> with a <em>Melee Attack Roll</em> or a <strong>Melee/Melee Weapon Technique</strong>.\nThis <strong>Heroic Feature</strong> can be taken up to three times.</p>\n",
+      "chat": ""
+    },
+    "identifier": "brutal-critical",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6093,
+        "endLine": 6098
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

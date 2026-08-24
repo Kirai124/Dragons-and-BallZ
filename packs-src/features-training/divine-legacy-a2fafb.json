@@ -1,0 +1,40 @@
+{
+  "_id": "a2fafb3437b0fccf",
+  "name": "Divine Legacy",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You slowly unlock the full power of the <em>Divine Realm</em>. You gain access to <em>Shin-jin</em> <strong>Feats</strong>.</p>\n<p>At <strong>1st Level</strong>, you know the <em>Sacred Flame</em> <strong>Cantrip</strong>. When you reach <strong>3rd Level</strong>, you gain the <em>Prayer of Healing</em> <strong>Spell</strong>. When you reach <strong>5th Level</strong>, you gain the <em>Mass Healing Word</em> <strong>Spell</strong>. These <strong>Spells</strong> are cast through the <strong>Mysticism Feature</strong> but can not be casted at a higher <strong>Spell Level.</strong></p>\n<p>At <strong>10th Level</strong> you may cast these spells at a higher <strong>Spell Level</strong> as if through the <strong>Mysticism Feature</strong>.</p>\n<p>At <strong>15th Level</strong> you may add any 3 <strong>Spells</strong>  of 5th level or below to this feature that deal <em>Radiant Damage</em>, grants <strong>HP</strong> or <strong>Temporary HP</strong>, or otherwise restores or heals a target.</p>\n",
+      "chat": ""
+    },
+    "identifier": "shinling-divine-legacy",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1246,
+        "endLine": 1255
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Shinling"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "9c903cd71232593b",
+  "name": "Handaxe",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 50,000 Zeni | <strong>Damage:</strong> 1d6 Slashing | <strong>Weapon Properties:</strong> Light, thrown (range 20/60)</p>\n",
+      "chat": ""
+    },
+    "identifier": "handaxe",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 50000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9459,
+        "endLine": 9470
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

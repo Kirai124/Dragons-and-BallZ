@@ -1,0 +1,39 @@
+{
+  "_id": "801b6ef43a309085",
+  "name": "Deadly Strike",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  20 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>Collect all of your energy to your arms for a lightning fast attack. Roll a <em>Combo Attack Roll</em> dealing your <em>Weapon Damage Die</em> + 3d8 damage on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "deadly-strike",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "weapon",
+    "kiCost": "20 Ki",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7285,
+        "endLine": 7297
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

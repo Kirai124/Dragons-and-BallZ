@@ -1,0 +1,40 @@
+{
+  "_id": "281b2085730b41ee",
+  "name": "Magical Upbringing",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain access to 1 branch of magic of your choice.</p>\n",
+      "chat": ""
+    },
+    "identifier": "konatsian-magical-upbringing",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 908,
+        "endLine": 910
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Konatsian"
+    }
+  }
+}

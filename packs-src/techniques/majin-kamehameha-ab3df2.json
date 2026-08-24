@@ -1,0 +1,39 @@
+{
+  "_id": "ab3df2da5b640291",
+  "name": "Majin Kamehameha",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  25 Ki</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Dark Kamehameha</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  80 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Beam</li>\n</ul>\n<p>Form a powerful but condensed Kamehameha fueled by dark energy to strike a single target. Make a <em>Beam Attack Roll</em> dealing 6d10 <em>Ki Damage</em> on a successful hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "majin-kamehameha",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "beam",
+    "kiCost": "25 Ki",
+    "castingTime": "1 Action",
+    "range": "80 Feet",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Dark Kamehameha*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8295,
+        "endLine": 8310
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

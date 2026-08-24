@@ -1,0 +1,40 @@
+{
+  "_id": "dd453b256cf2a19a",
+  "name": "Superiority: Unarmed",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You are naturally adept at hand-to-hand combat. You gain +1 <em>Static Bonus</em> added to all <em>Unarmed Strikes</em> and <strong>Melee Techniques</strong> . This increases to +2 at <strong>Level 7</strong>, +3 at <strong>Level 13</strong>, and +4 at <strong>Level 19</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ogre-superiority-unarmed",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1022,
+        "endLine": 1025
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Ogre"
+    }
+  }
+}

@@ -39,6 +39,74 @@
             </ul>
         </filigree-box>
 
+        {{!-- Dragons and BallZ Resources --}}
+        <filigree-box class="dbz-resources">
+            <h3>
+                <i class="fas fa-bolt" inert></i>
+                <span class="roboto-upper">{{ localize "DBZ.Resources" }}</span>
+            </h3>
+            <ul class="dbz-resource-config unlist">
+                <li>
+                    <span class="name">{{ localize "DBZ.Ki" }}</span>
+                    <span class="derived">{{ system.attributes.ki.calculatedMax }}</span>
+                    {{#if editable}}
+                    <input type="text" name="system.attributes.ki.classModifier" data-dtype="Number"
+                           value="{{ source.attributes.ki.classModifier }}" data-tooltip="DBZ.FallbackClassKiModifier"
+                           aria-label="{{ localize 'DBZ.FallbackClassKiModifier' }}">
+                    <input type="text" name="system.attributes.ki.bonus" data-dtype="Number"
+                           value="{{ source.attributes.ki.bonus }}" data-tooltip="DBZ.ResourceBonus"
+                           aria-label="{{ localize 'DBZ.ResourceBonus' }}">
+                    <input type="text" name="system.attributes.ki.max" data-dtype="Number"
+                           value="{{ source.attributes.ki.max }}" placeholder="—" data-tooltip="DBZ.ResourceMaxOverride"
+                           aria-label="{{ localize 'DBZ.ResourceMaxOverride' }}">
+                    {{else}}
+                    <span class="effective">{{ system.attributes.ki.effectiveMax }}</span>
+                    {{/if}}
+                </li>
+                <li>
+                    <span class="name">{{ localize "DBZ.Stamina" }}</span>
+                    <span class="derived">{{ system.attributes.stamina.calculatedMax }}</span>
+                    {{#if editable}}
+                    <span class="spacer"></span>
+                    <input type="text" name="system.attributes.stamina.bonus" data-dtype="Number"
+                           value="{{ source.attributes.stamina.bonus }}" data-tooltip="DBZ.ResourceBonus"
+                           aria-label="{{ localize 'DBZ.ResourceBonus' }}">
+                    <input type="text" name="system.attributes.stamina.max" data-dtype="Number"
+                           value="{{ source.attributes.stamina.max }}" placeholder="—" data-tooltip="DBZ.ResourceMaxOverride"
+                           aria-label="{{ localize 'DBZ.ResourceMaxOverride' }}">
+                    {{else}}
+                    <span class="effective">{{ system.attributes.stamina.effectiveMax }}</span>
+                    {{/if}}
+                </li>
+                <li>
+                    <span class="name">{{ localize "DBZ.GodKi" }}</span>
+                    <span class="derived">{{ system.attributes.godKi.calculatedMax }}</span>
+                    {{#if editable}}
+                    <span class="spacer"></span><span class="spacer"></span>
+                    <input type="text" name="system.attributes.godKi.max" data-dtype="Number"
+                           value="{{ source.attributes.godKi.max }}" placeholder="—" data-tooltip="DBZ.ResourceMaxOverride"
+                           aria-label="{{ localize 'DBZ.ResourceMaxOverride' }}">
+                    {{else}}
+                    <span class="effective">{{ system.attributes.godKi.effectiveMax }}</span>
+                    {{/if}}
+                </li>
+                <li class="summary">
+                    <span class="name">{{ localize "DBZ.PowerThreshold" }}</span>
+                    <span class="effective">{{ system.attributes.power.threshold }}</span>
+                    <span class="name">{{ localize "DBZ.PowerOverload" }}</span>
+                    <span class="effective{{#if system.attributes.power.overload}} danger{{/if}}">{{ system.attributes.power.overload }}</span>
+                </li>
+            </ul>
+            {{#if editable}}
+            <div class="dbz-resource-hints roboto-condensed-upper">
+                <span>{{ localize "DBZ.CalculatedMax" }}</span>
+                <span>{{ localize "DBZ.ClassKiModifier" }}</span>
+                <span>{{ localize "DBZ.ResourceBonus" }}</span>
+                <span>{{ localize "DBZ.ResourceMaxOverride" }}</span>
+            </div>
+            {{/if}}
+        </filigree-box>
+
     </div>
 
     {{!-- Background, Saving Throws, Proficiencies, & Senses --}}
@@ -210,7 +278,7 @@
 {{#*inline ".ability-prof"}}
 <li data-ability="{{ @key }}" class="{{ class }}">
     {{#if isConcentration}}
-    <dnd5e-icon src="systems/dnd5e/icons/svg/statuses/concentrating.svg"></dnd5e-icon>
+    <dnd5e-icon src="systems/dragons-and-ballz/icons/svg/statuses/concentrating.svg"></dnd5e-icon>
     {{else}}
     <proficiency-cycle type="ability" name="{{ path }}.proficient" data-tooltip aria-label="{{ hover }}"
                        value="{{#if @root.editable}}{{ source.proficient }}{{else}}{{ proficient }}{{/if}}"

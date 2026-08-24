@@ -1,0 +1,40 @@
+{
+  "_id": "a553a305c8c7467f",
+  "name": "Namekian",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Wisdom</li>\n</ul>\n<p>The DNA of the noble Namekians flows through you. You gain their elastic limbs, Your Unarmed Strikes gains the reach property. Namekians are also known to regrow their own limbs. As an action you may spend 2 ki to heal 1 hit points and 30 ki points to regrow a lost limb.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-namekian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1582,
+        "endLine": 1586
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

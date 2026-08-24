@@ -27,22 +27,22 @@ export default class ActiveEffectSheet5e extends ApplicationV2Mixin(ActiveEffect
   /** @override */
   static PARTS = {
     header: {
-      template: "systems/dnd5e/templates/effects/effect-header.hbs"
+      template: "systems/dragons-and-ballz/templates/effects/effect-header.hbs"
     },
     tabs: {
       template: "templates/generic/tab-navigation.hbs"
     },
     details: {
-      template: "systems/dnd5e/templates/effects/effect-details.hbs",
+      template: "systems/dragons-and-ballz/templates/effects/effect-details.hbs",
       scrollable: [""]
     },
     duration: {
       template: "templates/sheets/active-effect/duration.hbs"
     },
     changes: {
-      template: "systems/dnd5e/templates/effects/effect-changes.hbs",
+      template: "systems/dragons-and-ballz/templates/effects/effect-changes.hbs",
       templates: [
-        "systems/dnd5e/templates/effects/columns/value.hbs"
+        "systems/dragons-and-ballz/templates/effects/columns/value.hbs"
       ],
       scrollable: ["ol.changes"]
     }

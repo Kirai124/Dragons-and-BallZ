@@ -1,0 +1,39 @@
+{
+  "_id": "ba046c3aa0b14f78",
+  "name": "Ki Weapon",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  45 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Upkeep (15 Ki)</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>The user creates a complete weapon construct made of ki. You create and wield a <em>Melee Weapon</em> of your choice with the following statistics:</p>\n<h5>Ki-Weapon</h5>\n<ul>\n<li>You are proficient in this <em>Weapon</em></li>\n<li><em>Attack Rolls</em> and <strong>Techniques</strong> with this weapon can use your <em>Omni Attack Roll and Save DCs.</em></li>\n<li>This <em>Weapon</em> deal the choosen <em>Weapon Damage Die</em> + 3d6 <em>Ki Damage</em></li>\n<li><strong>Weapon Techniques</strong> using this <em>Weapon</em> can be treated as a <strong>Ki Technique</strong> for the sake of <strong>Clashes</strong>.</li>\n<li>You can not be disarmed of this <em>Weapon</em>.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "ki-weapon",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "omni",
+    "kiCost": "45 Ki",
+    "castingTime": "1 Action",
+    "range": "Self",
+    "duration": "Upkeep (15 Ki)",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8664,
+        "endLine": 8695
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

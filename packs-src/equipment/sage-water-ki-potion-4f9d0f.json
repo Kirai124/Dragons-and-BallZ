@@ -1,0 +1,42 @@
+{
+  "_id": "4f9d0f3dbf533416",
+  "name": "Sage Water (Ki Potion)",
+  "type": "consumable",
+  "img": "systems/dragons-and-ballz/icons/svg/items/consumable.svg",
+  "system": {
+    "description": {
+      "value": "<p>Sage Water is water pulled from the same spring that feeds the great Senzu Orchard. Drinking this water soothes the soul and restores your Ki points.</p>\n<table>\n<thead>\n<tr>\n  <th style=\"text-align:left\">Size</th>\n  <th style=\"text-align:center\">Cost</th>\n  <th style=\"text-align:center\">Ki Regained</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td style=\"text-align:left\">Lesser</td>\n  <td style=\"text-align:center\">Ƶ50,000</td>\n  <td style=\"text-align:center\">1d6+1</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Sage Water</td>\n  <td style=\"text-align:center\">Ƶ500,000</td>\n  <td style=\"text-align:center\">2d6+2</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Greater</td>\n  <td style=\"text-align:center\">Ƶ2,000,000</td>\n  <td style=\"text-align:center\">4d6+4</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Superior</td>\n  <td style=\"text-align:center\">Ƶ20,000,000</td>\n  <td style=\"text-align:center\">8d6+8</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Supreme</td>\n  <td style=\"text-align:center\">Ƶ200,000,000</td>\n  <td style=\"text-align:center\">10d6+10</td>\n</tr>\n</tbody>\n</table>\n",
+      "chat": ""
+    },
+    "identifier": "sage-water-ki-potion",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9557,
+        "endLine": 9568
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "27b1ffd09d7257f7",
+  "name": "Phoenix Plant",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p>Eating this plant makes you immune to the affects of aging for 50 years.</p>\n",
+      "chat": ""
+    },
+    "identifier": "phoenix-plant",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9937,
+        "endLine": 9939
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

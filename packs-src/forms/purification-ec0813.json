@@ -1,0 +1,41 @@
+{
+  "_id": "ec08137c55b9ad7c",
+  "name": "Purification",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Power-Up</em></p>\n<p>You access the pure form of a Majin, turning into a child-like version, but despite of the small size, you are full of uncontrollable power.</p>\n<ul>\n<li>+2 <strong>Power Bonus</strong></li>\n<li>You deal +1d6 to all <em>Damage Rolls</em></li>\n<li>All <em>Techniques</em> may use your Charisma Modifier in replace of the original Ability Modifier</li>\n<li>When you would deal damage with a <em>Technique</em>, you deal additional damage equal to your Charisma Modifier (Minimum 1)</li>\n<li>You gain the <em><strong>Berserk</strong></em> Condition.</li>\n</ul>\n<p><strong>Gained at Level 10</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "purification",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Majin",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "",
+    "activation": "bonus",
+    "powerBonus": 2,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "Gained at Level 10",
+    "tags": "Majin"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4521,
+        "endLine": 4542
+      },
+      "formFamily": "Majin"
+    }
+  }
+}

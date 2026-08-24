@@ -1,0 +1,41 @@
+{
+  "_id": "35581e108eee5160",
+  "name": "True Ultra Instinct",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Transformation</em></p>\n<p>You have taken Ultra Instinct to its natural conclusion using not only your combat knowledge and training but who you are as a person, a fighter, and a soul culminating into a form with full mind and emotion.</p>\n<ul>\n<li>+5 <strong>Power Bonus</strong></li>\n<li>You deal +2d10 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 90 ft.</li>\n<li>You gain +4 to your <strong>AC.</strong></li>\n<li>You gain 2 additional Reactions that can be used for <strong>Maneuvers</strong> or <strong>Techniques</strong> that has a casting time of a Reaction</li>\n<li>6 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p>{{note</p>\n",
+      "chat": ""
+    },
+    "identifier": "true-ultra-instinct",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Ultra Instinct",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "6 Stamina",
+    "activation": "action",
+    "powerBonus": 5,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Non-Race Specific; Ultra Instinct"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4905,
+        "endLine": 4917
+      },
+      "formFamily": "Ultra Instinct"
+    }
+  }
+}

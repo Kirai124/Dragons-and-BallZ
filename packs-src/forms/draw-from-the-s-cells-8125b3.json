@@ -1,0 +1,41 @@
+{
+  "_id": "8125b32fc7986b7f",
+  "name": "Draw from the S-cells",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Power-Up</em></p>\n<p>The Saiyan pulls power from their S-cells without tapping into the super Saiyan transformation, though their aura still shines with a golden hue.</p>\n<ul>\n<li>You deal +2 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 5 ft.</li>\n<li>1 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p><strong>Gained at Level 5 but is gained earlier if the “S-cell Awakening” feat is taken</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "draw-from-the-s-cells",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Ancient Saiyan Power",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "1 Stamina",
+    "activation": "bonus",
+    "powerBonus": 0,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "Gained at Level 5 but is gained earlier if the “S-cell Awakening” feat is taken",
+    "tags": "Ancient Saiyan; Ancient Saiyan Power"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4365,
+        "endLine": 4375
+      },
+      "formFamily": "Ancient Saiyan Power"
+    }
+  }
+}

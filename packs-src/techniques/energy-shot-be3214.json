@@ -1,0 +1,39 @@
+{
+  "_id": "be3214a019563c9a",
+  "name": "Energy Shot",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 30 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Ranged Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>Ammo be damned, you pour your ki straight through your weapon. Make a <em>Combo Attack Roll</em>, ignoring all form of bonus to <strong>AC</strong> from <strong>Techniques/Spells</strong>. On a hit, you deal your <em>Weapon Damage Die</em> + 5d6 <em>Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "energy-shot",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "weapon",
+    "kiCost": "30 Ki",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Ranged Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7468,
+        "endLine": 7484
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

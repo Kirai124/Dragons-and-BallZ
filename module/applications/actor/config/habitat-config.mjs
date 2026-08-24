@@ -12,7 +12,7 @@ export default class HabitatConfig extends BaseConfigSheet {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/actors/config/habitat-config.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/config/habitat-config.hbs"
     }
   };
 

@@ -1,0 +1,39 @@
+{
+  "_id": "16a5fe4ac492f2ec",
+  "name": "Team  Player",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Once per Long Rest you may use the <em>Tag Team Attack</em> <strong>Manuever</strong> without expending <strong>Stamina</strong>.</p>\n<p>This <strong>Heroic Feature</strong> can be taken a second time to make it recharge on a Short or Long Rest.</p>\n",
+      "chat": ""
+    },
+    "identifier": "team-player",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6350,
+        "endLine": 6353
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

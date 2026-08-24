@@ -1,0 +1,42 @@
+{
+  "_id": "4c1f23f55915767a",
+  "name": "Black Star Balls",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Black Star Dragon Balls</em> are an extremely rare and powerful set that result in excessive amounts of <em>Negative Energy</em> but with seemingly no limitations. If the <em>Black Star Dragon Balls</em> are not recollected on the Planet that the wish was made on before they recharge, the Planet that the wish was made on is destroyed.</p>\n",
+      "chat": ""
+    },
+    "identifier": "black-star-balls",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 10051,
+        "endLine": 10053
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

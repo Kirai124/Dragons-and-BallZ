@@ -1,0 +1,40 @@
+{
+  "_id": "1c637a5478d5e04d",
+  "name": "Natural Innocence",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your soul is bright and shining, even the most evil of Neko Majin radiates joy. You have advantage on all <em>Saving Throws</em> against being <em>Berserk, Charmed, or Frightened</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "neko-majin-natural-innocence",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2042,
+        "endLine": 2044
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Neko Majin"
+    }
+  }
+}

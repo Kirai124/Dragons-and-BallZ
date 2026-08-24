@@ -1,0 +1,39 @@
+{
+  "_id": "70b2406d67372419",
+  "name": "Heavy strikes",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your <em>Unarmed Strike Damage Die</em> is increased by 1 step as long as the <em>Attack Roll</em> is made using <strong>Strength</strong>. This <strong>Heroic Feature</strong> can be taken up to 3 times.</p>\n",
+      "chat": ""
+    },
+    "identifier": "heavy-strikes",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6156,
+        "endLine": 6158
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

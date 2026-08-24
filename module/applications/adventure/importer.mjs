@@ -13,7 +13,7 @@ export default class AdventureImporter5e extends ApplicationV2Mixin(AdventureImp
   static PARTS = {
     ...super.PARTS,
     body: {
-      template: "systems/dnd5e/templates/adventure/importer.hbs"
+      template: "systems/dragons-and-ballz/templates/adventure/importer.hbs"
     }
   };
 

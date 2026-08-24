@@ -23,7 +23,7 @@ export default class ItemGrantAdvancement extends Advancement {
       },
       order: 40,
       icon: "icons/sundries/books/book-open-purple.webp",
-      typeIcon: "systems/dnd5e/icons/svg/item-grant.svg",
+      typeIcon: "systems/dragons-and-ballz/icons/svg/item-grant.svg",
       title: _loc("DND5E.ADVANCEMENT.ItemGrant.Title"),
       hint: _loc("DND5E.ADVANCEMENT.ItemGrant.Hint"),
       apps: {
@@ -39,7 +39,7 @@ export default class ItemGrantAdvancement extends Advancement {
    * The item types that are supported in Item Grant.
    * @type {Set<string>}
    */
-  static VALID_TYPES = new Set(["feat", "spell", "consumable", "container", "equipment", "loot", "tool", "weapon"]);
+  static VALID_TYPES = new Set(["feat", "training", "form", "technique", "spell", "consumable", "container", "equipment", "loot", "tool", "weapon"]);
 
   /* -------------------------------------------- */
   /*  Display Methods                             */

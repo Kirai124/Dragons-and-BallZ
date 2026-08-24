@@ -1,0 +1,40 @@
+{
+  "_id": "b8bd43a68f07344e",
+  "name": "Alien",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 to any Ability Score</li>\n</ul>\n<p>You were created with extra terrestrial DNA. You gain resistances to a damage type of your choice, Youre are also granted access to the full power transformation at Level 5 and Once per long rest, you can enter the Enraged Condition as a bonus action on your turn. Each time you use this past the first you gain 2 level of exhaustion.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-alien",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1515,
+        "endLine": 1519
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

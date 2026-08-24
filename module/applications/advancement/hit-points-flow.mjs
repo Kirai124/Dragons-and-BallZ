@@ -20,7 +20,7 @@ export default class HitPointsFlow extends AdvancementFlow {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/advancement/hit-points-flow.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/hit-points-flow.hbs"
     }
   };
 

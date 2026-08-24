@@ -1,0 +1,40 @@
+{
+  "_id": "6b7974f807747642",
+  "name": "Rigorous Dicipline",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Yardratians are famous for their training methods and determination. You gain a <strong>Technique</strong> every time you <strong>Level-Up</strong> to 20 and 2 <strong>Techniques</strong> every level beyond. You also gain 1 additional <em>Training Boon</em> each time you have a <strong>Training Arc</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "yardratian-rigorous-dicipline",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2190,
+        "endLine": 2193
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Yardratian"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "8360f2d684ebd5ed",
+  "name": "Mashin-jin",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Cannot be taken with Shinling DNA</em></p>\n<ul>\n<li>+1 Constitution</li>\n</ul>\n<p>You have the blood of demons in you. You gain access to Mahshin-jin power ups\nAnd resistance to fire and necrotic damage. You can also empower an attack with demonic energy, when you deal damage you may use a bonus action to change its damage type to necrotic.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-mashin-jin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1573,
+        "endLine": 1581
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

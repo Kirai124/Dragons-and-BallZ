@@ -1,0 +1,39 @@
+{
+  "_id": "cacc4697e7f1685e",
+  "name": "Advanced Demonic Bloodline",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain 1 <strong>Feature</strong> from the <em>Demonic Ability</em> <strong>Racial Feature</strong> that you do not already have.</p>\n",
+      "chat": ""
+    },
+    "identifier": "advanced-demonic-bloodline",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5854,
+        "endLine": 5861
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

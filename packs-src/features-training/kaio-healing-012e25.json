@@ -1,0 +1,33 @@
+{
+  "_id": "012e25d29a7cadf7",
+  "name": "Kaio Healing",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have a pool of healing power that replenishes when you take a Long Rest. With that pool, you can restore a total number of <strong>HP</strong> equal to <em>Proficinecy Bonus</em> x 10. You may, as an Action on your turn, place your hand on a creature and heal them any number of <strong>HP</strong> in your pool that you choose.</p>\n<p>You may increase this pool by 5 <strong>HP</strong> for the cost of one <strong>Training Boon.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "kaio-healing",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Supreme Kai"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3665,
+        "endLine": 3669
+      }
+    }
+  }
+}

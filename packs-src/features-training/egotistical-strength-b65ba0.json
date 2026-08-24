@@ -1,0 +1,39 @@
+{
+  "_id": "b65ba078d6975f70",
+  "name": "Egotistical Strength",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Complete Ultra Ego</strong>\nWhen you would transform into any <strong>Form</strong> that has: <em>Ultra Ego</em> in its name, it has its <strong>Stamina Upkeep</strong> reduced by 1, minimum of 1. Additionally, you gain an additional <em>Destruction Die</em> at the end of your turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "egotistical-strength",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Complete Ultra Ego",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6024,
+        "endLine": 6028
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

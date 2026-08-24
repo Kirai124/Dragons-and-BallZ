@@ -1,0 +1,39 @@
+{
+  "_id": "a29141743d0544a3",
+  "name": "Kamehame HAHA",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  10 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Prerequisites:</strong> <em>Kamehameha</em> or <em>Kamekameha</em></li>\n<li><strong>Range:</strong>  10 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          1 Round</li>\n<li><strong>Type:</strong>  Other</li>\n</ul>\n<p>The user starts to charge what appears to be the Kamehameha but instead of a beam a small explosion of confetti shoots out. One target of your choice must make an <em>Intellegence Saving Throw</em> against your <strong>Omni or Beam Save DC</strong>, your choice, or be <em>Stunned</em> until the start of their next turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "kamehame-haha",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "otherKi",
+    "kiCost": "10 Ki",
+    "castingTime": "1 Action",
+    "range": "10 Feet",
+    "duration": "1 Round",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "*Kamehameha* or *Kamekameha*",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8891,
+        "endLine": 8904
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

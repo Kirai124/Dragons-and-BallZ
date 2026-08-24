@@ -1,0 +1,40 @@
+{
+  "_id": "067717378a7dc4bb",
+  "name": "Superiority: Combat",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Choose one class of <strong>Technique</strong>: <em>Beam, Blast, Barrage, Omni, Weapon, or Melee.</em> You gain +1 <em>Static Bonus</em> when using this type of <strong>Technique</strong>. At <strong>Level 7</strong> this becomes +2 and at <strong>Level 13</strong> you get to pick a second type of <strong>Technique</strong> to gain this bonus as well.</p>\n<p>At <strong>Level 18</strong> you get an additional +1 <em>Static Bonus</em> that you can place on any class of <strong>Technique</strong>, regardless of if you choose that category previously.</p>\n",
+      "chat": ""
+    },
+    "identifier": "demon-superiority-combat",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1721,
+        "endLine": 1725
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Demon"
+    }
+  }
+}

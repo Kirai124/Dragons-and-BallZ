@@ -1,0 +1,40 @@
+{
+  "_id": "fdc8a959412f3fde",
+  "name": "Cybernetic Features",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<h5>Battery Powered</h5>\n<p>You do not suffer negative effects from not eating. You are incapable of regaining <strong>Ki</strong> from a <strong>Technique</strong> or <strong>Item</strong>, instead have a 4 <strong>Ki</strong> per round regen, this increases by 4 again at <strong>Levels 4, 7, 10, 13, 16,</strong> and <strong>19.</strong></p>\n<h5>Infinite Stamina Engine</h5>\n<p>You regain 1 <strong>Stamina</strong> at the start of each of your turns as your internal core gives you energy constantly. This can not be improved in any way.</p>\n<h5>Artificial Limitation Remover</h5>\n<p>Increase 2 <em>Ability Score Maximums</em> of your choice by 2.</p>\n",
+      "chat": ""
+    },
+    "identifier": "cyborg-cybernetic-features",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2292,
+        "endLine": 2309
+      },
+      "contentCategory": "subraceVariant",
+      "grantedBy": "Cyborg"
+    }
+  }
+}

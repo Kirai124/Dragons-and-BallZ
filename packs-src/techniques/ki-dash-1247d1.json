@@ -1,0 +1,39 @@
+{
+  "_id": "1247d12f3ba21c87",
+  "name": "Ki-Dash",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  10 Ki</li>\n<li><strong>Casting Time:</strong>  1 Bonus Action</li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Range:</strong>  Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Other</li>\n</ul>\n<p>Immediately move up to your <em>Base Movement Speed</em> without provoking <em>Attacks of Opportunity</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ki-dash",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "otherKi",
+    "kiCost": "10 Ki",
+    "castingTime": "1 Bonus Action",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8905,
+        "endLine": 8929
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

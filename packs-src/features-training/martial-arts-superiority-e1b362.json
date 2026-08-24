@@ -1,0 +1,39 @@
+{
+  "_id": "e1b362588553a445",
+  "name": "Martial Arts Superiority",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You are a master of the battle field and gain special benefits while in combat.</p>\n<h4>Tactics</h4>\n<p>You learn 2 <em>Martial Arts Maneuvers</em> of your choice. When you use the Attack Action to make a <em>Weapon Attack</em> or <em>Unarmed Strike</em> you may choose to use a <em>Martial Arts Maneuvers</em> with it. Many <em>Martial Arts Maneuvers</em> enhance an attack in some way. You can use only one <em>Martial Arts Maneuvers</em> per attack.</p>\n<h4>Superiority Dice</h4>\n<p>You have 2 <em>Superiority Dice</em>, which are d4s. A <em>Superiority Die</em> is expended when you use it. You regain all of your expended <em>Superiority Dice</em> when you finish a Short or Long Rest. You may roll additional <em>Superiority Dice</em> by spending 1 <strong>Stamina</strong> per Die.\nTaking this <strong>Heroic Feature</strong> again gives you either 2 new <em>Martial Arts Manuevers</em>, 2 more <em>Superiority Dice</em> or to increase the size of your <em>Superiority Diee</em> by 1 step to a max of d12.</p>\n",
+      "chat": ""
+    },
+    "identifier": "martial-arts-superiority",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6221,
+        "endLine": 6232
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

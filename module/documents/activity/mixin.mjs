@@ -1358,7 +1358,7 @@ export default function ActivityMixin(Base) {
         { since: "DnD5e 6.0", until: "DnD5e 6.2", once: true }
       );
       return foundry.applications.handlebars.renderTemplate(
-        chatCard ?? "systems/dnd5e/templates/chat/activity-card.hbs", await this._usageChatContext(message)
+        chatCard ?? "systems/dragons-and-ballz/templates/chat/activity-card.hbs", await this._usageChatContext(message)
       );
     }
   }

@@ -32,6 +32,9 @@
     {{ formField fields.hd.fields.additional value=source.hd.additional localize=true rootId=partId }}
     {{/if}}
 
+    {{!-- Dragons and BallZ Ki progression --}}
+    {{ formField fields.kiModifier value=source.kiModifier localize=true rootId=partId }}
+
     {{!-- Class Properties --}}
     {{ formField fields.properties options=properties.options input=inputs.createMultiCheckboxInput stacked=true
                  classes="checkbox-grid checkbox-grid-3" }}

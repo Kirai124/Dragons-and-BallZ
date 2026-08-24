@@ -1,0 +1,39 @@
+{
+  "_id": "e4933e19a9b21e4e",
+  "name": "Demon Style",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><strong>Prerequisites:</strong> Wisdom ≥ 15</li>\n</ul>\n<p>The defensive and thoughtful style of Majunior, the son of the Demon King Piccolo.</p>\n<ul>\n<li>You may take the <em>Dodge Action</em> as a Bonus Action.</li>\n<li>all <strong>Beam/Barrage Techniques</strong> gain +50% range</li>\n<li>You may add half of your <em>Proficiency Bonus</em> to <em>Concentration Checks</em>.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "demon-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "stance",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Passive",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "Wisdom ≥ 15",
+    "tags": "stance"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9131,
+        "endLine": 9143
+      },
+      "techniqueSection": "stance"
+    }
+  }
+}

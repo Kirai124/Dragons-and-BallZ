@@ -1,0 +1,39 @@
+{
+  "_id": "d362bbc86adc7549",
+  "name": "Superiority: Awakening",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have the ability to awaken your internal potential, be it physical or spiritual. You gain 1 of the following:</p>\n<h4>Superiority: Ki</h4>\n<p>Choose one class of <em><strong>Techniques</strong></em>: Beam, Blast, Barrage, or Omni. You gain a +1 <em>Static Bonus</em> when using this type of <strong>Ki Technique</strong>. At <strong>Level 7</strong> this becomes a +2 <em>Static Bonus</em> and at <strong>Level 13</strong> you get to pick a second available type of <strong>Technique</strong> to gain this bonus. At <strong>Level 18</strong> you get a +1 <em>Static Bonus</em> that you can place on any available type of <strong>Technique</strong>, regardless of if you choose that category previously.</p>\n<h4>Superiority: Melee/Weapons</h4>\n<p>Choose one class of <em><strong>Techniques</strong></em>: Melee or Weapons. You gain a +1 <em>Static Bonus</em> added to all <em>Attack Rolls</em> and <em><strong>Techniques</strong></em> of that type. This increases to +2 at <strong>Level 7</strong>, +3 at <strong>Level 13</strong>, and +4 at <strong>Level 19</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "superiority-awakening",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5903,
+        "endLine": 5912
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "bdabb4da255da5ca",
+  "name": "Great Awakening",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires God Ki</strong></p>\n<p>If your <strong>Race</strong> has more than one <strong>God Form</strong> available you may gain one that you did <strong>not</strong> gain when you obtained <strong>God Ki.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "great-awakening",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "Requires God Ki",
+    "tags": "trained feature; Angel"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3712,
+        "endLine": 3729
+      }
+    }
+  }
+}

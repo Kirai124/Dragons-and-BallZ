@@ -1,0 +1,143 @@
+{
+  "_id": "71c5b90b01771988",
+  "name": "Konatsian",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/konatsian.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Humanoid</strong></p>\n<h3>Physical Description</h3>\n<p>Konatsians are shown to look similar to Human-type Earthlings, but with large pointed ears and unique hair styles. Extraordinary members of the race, such as Tapion, are able to utilize ki and other energies. It can also be shown that a select few are excellent swordsmen and are able to use magic and advanced technology.</p>\n<h3>History</h3>\n<p>The Konatsians once waged war against power hungry aliens known as the Kashvar, who re-awakened the ancient monster Hirudegarn. This war caused nearly half of the Konatsians to perish, until eventually an enchanted sword, and two ocarinas are found. With these, Tapion, his brother Minotia, and a powerful wizard defeated Hirudegarn, and the creature's two halves were sealed inside of the brothers. Tapion and Minotia then were in turn sealed into enchanted music boxes themselves, and sent into space, were they drifted for a thousand years, until being found by Hoi.</p>\n<h3>Society</h3>\n<p>The konatsian's are a mixed bag of progress, with both medievil architechture and space grade technology.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase</h4>\n<p>Increase all <strong>Ability Scores</strong> by 1 &lt;u&gt;OR&lt;/u&gt; increase 2 by 1 and gain a <strong>Feat</strong>.</p>\n<h4>Speed</h4>\n<p>Your <em>Base Movement Speed</em> is 30</p>\n<h4>Language</h4>\n<p>You can speak Common and one additional <em>Language</em> of your choice</p>\n<h4>Skills</h4>\n<p>You gain the <em>Athletics</em> and <em>Arcana Skills</em>.</p>\n<h3>Racial Features</h3>\n<h4>Space Knights</h4>\n<p>Due to your upbringing on the fringes of the ancient and modern worlds has left you with a very unique set of skills. You gain proficiency in <em>Martial Weapons</em> and the <em>Technology Skill</em>.</p>\n<h4>Magical Upbringing</h4>\n<p>You gain access to 1 branch of magic of your choice.</p>\n<h4>Magic Blood</h4>\n<p>You have advantage on <em>Saving Throws</em> against being <em>Charmed</em>, and magic can't put you to sleep or <em>Enrage</em> you.</p>\n<h4>Superiority: Weapon</h4>\n<p>You are naturally adept at Weapon combat. You gain +1 <em>Static Bonus</em> added to all <em>Martial</em> and <em>Simple Weapon Attacks</em> and <strong>Weapon Techniques</strong>. This increases to +2 at <strong>Level 7</strong>, +3 at <strong>Level 13</strong>, and +4 at <strong>Level 19</strong>.</p>\n<h4>Heroic Nature</h4>\n<p>At <strong>Level 1</strong> you gain a single <strong>Heroic Feature</strong>. This does not count as gaining a <strong>Heroic Feature</strong> as a <strong>Class Feature</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "konatsian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Humanoid"
+    },
+    "advancement": {
+      "5925b172d7ef2292": {
+        "_id": "5925b172d7ef2292",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 1,
+            "dex": 1,
+            "con": 1,
+            "int": 1,
+            "wis": 1,
+            "cha": 1
+          },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Increase all **Ability Scores** by 1 <u>OR</u> increase 2 by 1 and gain a **Feat**. The handbook also permits its listed alternate feat option; this advancement uses the all-scores +1 option."
+      },
+      "9d7545df29f9d3e4": {
+        "_id": "9d7545df29f9d3e4",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:arc",
+            "skills:ath"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Athletics and Arcana Skills."
+      },
+      "13313badcaa0748d": {
+        "_id": "13313badcaa0748d",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and one additional Language of your choice"
+      },
+      "753ea6949147cb8e": {
+        "_id": "753ea6949147cb8e",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.957e66a7533812ce",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.281b2085730b41ee",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.93e88f32f25884a5",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.14467d8234d9cae8",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.c9b62976e404fdc7",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 885,
+        "endLine": 929
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "1fd002856deff812",
+  "name": "Magical Weakness",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have <em>Resistance</em> to <em>Ki Damage</em> but have <em>Disadvantage</em> on all <em>Saving Throws</em> from <strong>Spells</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "sateery-magical-weakness",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2092,
+        "endLine": 2095
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Sateery"
+    }
+  }
+}

@@ -17,7 +17,7 @@ export default class ModifyItemAdvancement extends Advancement {
       },
       order: 55,
       icon: "icons/skills/trades/smithing-anvil-silver-red.webp",
-      typeIcon: "systems/dnd5e/icons/svg/advancement/modify-item.svg",
+      typeIcon: "systems/dragons-and-ballz/icons/svg/advancement/modify-item.svg",
       title: _loc("DND5E.ADVANCEMENT.ModifyItem.Title"),
       hint: _loc("DND5E.ADVANCEMENT.ModifyItem.Hint"),
       apps: {

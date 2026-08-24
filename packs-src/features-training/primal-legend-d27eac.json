@@ -1,0 +1,39 @@
+{
+  "_id": "d27eacddb59dad38",
+  "name": "Primal Legend",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Full Power Super Saiyan</em> and *Super Saiyan 4.***\nUsing your full-power and Super Saiyan 4 has become second nature and can maintain without a second slot. You may use Super Saiyan-Full Power and Super Saiyan 4 as a **Combination Transformation</strong> known as <em>Super Saiyan 4 Full Power</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "primal-legend",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Full Power Super Saiyan* and *Super Saiyan 4.",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5762,
+        "endLine": 5779
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

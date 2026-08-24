@@ -1,0 +1,33 @@
+{
+  "_id": "863efc50d0b89834",
+  "name": "Chronal Mastery",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>5 Time Points</em>\nThe user has complete mastery over time itself. As an Action you may touch 1 creature, completely reverse the last round of combat for the target. This reverses death, expended <strong>Resources</strong> such as <strong>HP, Ki,</strong> and <strong>Stamina</strong>, as well as limited use <strong>Features</strong>.</p>\n<p>If used outside of combat the effect's scope increases to up to 1 minute.</p>\n",
+      "chat": ""
+    },
+    "identifier": "chronal-mastery",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Time Skip"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3515,
+        "endLine": 3528
+      }
+    }
+  }
+}

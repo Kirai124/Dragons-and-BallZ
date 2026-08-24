@@ -1,0 +1,39 @@
+{
+  "_id": "3155a1cc5e4b440d",
+  "name": "DNA Specialization",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Prerequisite: Level 5+</p>\n<p>Pick one race from your Genetic Makeup, you gain the corresponding bonuses listed below. This cannot be changed later:</p>\n<h4>Alien</h4>\n<p>You now only receive 1 level of exhaustion from going past your enraged limit. You also gain the Full Power Transformation.</p>\n<h4>Arcosian</h4>\n<p>You gain access to all Arcosian Transformation/Power Ups and Racial Feats</p>\n<h4>Beastmen</h4>\n<p>You gain the Animal Biology Feature from Beastmen and you may 1/3rd of your proficiency bonus to your AC while not wearing armor</p>\n<h4>Cerealian</h4>\n<p>You gain access to all Cerealian Power-ups and permanently get an additional reaction on your turn.</p>\n<h4>Chronin</h4>\n<p>You gain the ability to turn 1 Stamina into 2 Time Points. And gain access to the Quickened Storage Feat</p>\n<h4>Demon</h4>\n<p>You gain Resistance to 1 <em>Damage Type</em> of your chocie and you gain access to all Demon Feats.</p>\n<h4>Earthling</h4>\n<p>You gain access to all Earthling Power Ups and racial feats</p>\n<h4>Greys</h4>\n<p>Your Ability Score maximum increase by an additional 2 and meditation now gives 10 times your ki rank. You also gain the full power transformation</p>\n<h4>Konastian</h4>\n<p>You gain access to 1 Branch of Magic of your choice as if you gained the Mysticism Feature and you have advantage on saving throws against being charmed.</p>\n<h4>Majin</h4>\n<p>Your unarmed strikes gain an additional 5ft equal to your proficiency bonus/3 rounded down. You regeneration now becomes 1 Ki for 1 HP.</p>\n<h4>Mashin-jin</h4>\n<p>You gain access to all Mashin-jin Transformations and Power Ups and gain access to racial feats. You gain the Infernal tag.</p>\n<h4>Namekian</h4>\n<p>You gain access to all Namekian Transformations and Power Ups and Racial Feats</p>\n<h4>Neko Majin</h4>\n<p>You may now copy a number of abilities equal to your Intelligence Modifier and you gain the <strong>Mystical Mimicry</strong> Feature from Neko Majin. You additionally gain access to all Neko majin Feats</p>\n<h4>Ogre</h4>\n<p>Increase your maximum stamina by an amount equal to your level and you gain an additional +1 stamina every time you level up from this point.</p>\n<h4>Sateery</h4>\n<p>You gain the Energy Thief feature and gain the Full Power Transformation</p>\n<h4>Saiyan</h4>\n<p>You grow a saiyan Tail. choose between Berserker Saiyan or Universe 7 Saiyan you gain access to all the transformations of the chosen archetype. You also gain access to saiyan racial feats.</p>\n<h4>Shinling</h4>\n<p>You gain the Celestial tag and gain access to Racial Feats</p>\n<h4>Skehmen-jin</h4>\n<p>You can now enrage once per short rest. You also gain the ability to change any damage you deal into fire damage.</p>\n<h4>Yardratian</h4>\n<p>You gain an additional spirit control feature at rank 2 and rank 4, if you are already past or at these ranks you gain them at this time.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dna-specialization",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Prerequisite: Level 5+",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5919,
+        "endLine": 5989
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

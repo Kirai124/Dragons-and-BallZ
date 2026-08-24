@@ -1,0 +1,33 @@
+{
+  "_id": "b0ceb21f8a4b0469",
+  "name": "Training to Wield the Z-Sword",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Attuning</strong> to the <em>Z-Sword</em> is an <strong>Ordeal</strong> by itself. This 8 hour <em>Ritual</em> leaves you with 1 <em>Rank of Exhaustion.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "training-to-wield-the-z-sword",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "ordeal",
+    "boonCost": 0,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "ordeal"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3341,
+        "endLine": 3352
+      }
+    }
+  }
+}

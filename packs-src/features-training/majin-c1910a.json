@@ -1,0 +1,40 @@
+{
+  "_id": "c1910a15b08b4a73",
+  "name": "Majin",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Constitution</li>\n</ul>\n<p>The blood of the mystical majin courses through your veins, your body becomes elastic and has the consistency of rubber, your unarmed strikes gain the reach property. Along with this your body has been engineered to repair itself, as an action you may spend ki to heal at a 2:1 ratio. With your malleable body you also gain the ability to squeeze into a space at least 1 inch wide.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-majin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1568,
+        "endLine": 1572
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

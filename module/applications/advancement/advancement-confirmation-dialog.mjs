@@ -23,7 +23,7 @@ export default class AdvancementConfirmationDialog extends Dialog5e {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/advancement/advancement-confirmation-dialog.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/advancement-confirmation-dialog.hbs"
     }
   };
 

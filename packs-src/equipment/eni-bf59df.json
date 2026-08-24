@@ -1,0 +1,42 @@
+{
+  "_id": "bf59df3fdc54cb41",
+  "name": "Ƶeni (Ƶ)",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ƶ:</strong> 1 | <strong>CP:</strong> 1/100 | <strong>SP:</strong> 1/1,000 | <strong>EP:</strong> 1/5,000 | <strong>GP:</strong> 1/10,000 | <strong>PP:</strong> 1/100,000</p>\n",
+      "chat": ""
+    },
+    "identifier": "eni",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9211,
+        "endLine": 9218
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

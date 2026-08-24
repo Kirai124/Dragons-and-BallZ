@@ -1,0 +1,39 @@
+{
+  "_id": "b97b5f1b6f4627da",
+  "name": "Second Nature",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have become so attuned to a <strong>Transformation</strong> you may use it in a <strong>Power-Up Slot</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "second-nature",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6319,
+        "endLine": 6320
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

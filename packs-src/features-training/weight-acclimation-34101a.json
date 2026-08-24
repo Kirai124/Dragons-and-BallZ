@@ -1,0 +1,39 @@
+{
+  "_id": "34101aeb15546225",
+  "name": "Weight Acclimation",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Can be taken a number of times equal to Ranks in the &quot;Weight Training&quot; feat.</strong></p>\n<p>You have fully acclimated your body to the heightened weight of your training and can treat it as your standard gravity.</p>\n<p>Whenever you are not under the <em>Heavy Weight Condition</em> you benefit from the <em>Light Weight Condition</em> equal to the amount of times you have taken this <strong>Feat</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "weight-acclimation",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5108,
+        "endLine": 5115
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

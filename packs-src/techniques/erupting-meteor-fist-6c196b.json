@@ -1,0 +1,39 @@
+{
+  "_id": "6c196b0520a09c34",
+  "name": "Erupting Meteor Fist",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  30 Ki</li>\n<li><strong>Prerequisites:</strong> Meteor Strike, Lightning Jab</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  Melee (20 foot cone)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>Strike out with a supercharged punch strong enough to send a burning shockwave through the air. All targets in range must make a <em>Strength Saving Throw</em> or be knocked <em>Prone</em> and take 2d12 <em>Bludgeoning Damage</em> + 2d6 <em>Fire Damage</em> on a fail, taking half damage and are not <em>Prone</em> on a Success.</p>\n<p>If a Target is within <em>Melee Range</em> you may roll a <em>Combo Attack Roll</em> dealing 2d12 <em>Bludgeoning Damage</em> + 2d6 <em>Fire Damage</em> on a hit.  Targets hit with this <em>Combo Attack Roll</em> fail the <em>Strength Saving Throw</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "erupting-meteor-fist",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "30 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee (20 foot cone)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "Meteor Strike, Lightning Jab",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6925,
+        "endLine": 6938
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

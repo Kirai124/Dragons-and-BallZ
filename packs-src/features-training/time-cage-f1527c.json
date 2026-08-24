@@ -1,0 +1,33 @@
+{
+  "_id": "f1527c1792c8595e",
+  "name": "Time Cage",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>3 Time Points</em>\nChoose 1 creature or object within 60 feet. They must make a <em>Charisma Saving Throw</em> against your <strong>Omni Save DC</strong> or gain the <em>Frozen in Time</em> <strong>Condition</strong> until the start of your next turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "time-cage",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Time Skip"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3509,
+        "endLine": 3514
+      }
+    }
+  }
+}

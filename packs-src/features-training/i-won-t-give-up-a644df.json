@@ -1,0 +1,39 @@
+{
+  "_id": "a644dfc2f1620469",
+  "name": "I won't give up!",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Once per Long Rest when you are reduced to zero <strong>HP</strong> you may use your Reaction and roll any amount of your <strong>Hit Die</strong> and heal that amount.</p>\n",
+      "chat": ""
+    },
+    "identifier": "i-won-t-give-up",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6162,
+        "endLine": 6164
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

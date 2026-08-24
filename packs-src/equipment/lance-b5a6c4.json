@@ -1,0 +1,42 @@
+{
+  "_id": "b5a6c4e478508096",
+  "name": "Lance",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 100,000 Zeni | <strong>Damage:</strong> 1d12 Piercing | <strong>Weapon Properties:</strong> Reach, special</p>\n",
+      "chat": ""
+    },
+    "identifier": "lance",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9488,
+        "endLine": 9507
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

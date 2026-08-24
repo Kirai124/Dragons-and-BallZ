@@ -27,7 +27,7 @@ export default class EffectChangeConfig extends DocumentSheet5e {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/effects/change-config.hbs"
+      template: "systems/dragons-and-ballz/templates/effects/change-config.hbs"
     },
     footer: {
       template: "templates/generic/form-footer.hbs"

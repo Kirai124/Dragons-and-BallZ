@@ -9,7 +9,7 @@ export default class ScaleValueFlow extends AdvancementFlow {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/advancement/scale-value-flow.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/scale-value-flow.hbs"
     }
   };
 

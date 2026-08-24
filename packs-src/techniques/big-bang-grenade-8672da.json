@@ -1,0 +1,39 @@
+{
+  "_id": "8672da851d0697d1",
+  "name": "Big Bang Grenade",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  25x Ki per ki orb</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Big Bang Attack</em> and <em>Hellzone Grenade</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  200 feet</li>\n<li><strong>Type:</strong>  Barrage</li>\n</ul>\n<p>Select a number of locations in range up to but not exceeding your <em>Proficiency Bonus</em>, for 25 <strong>Ki</strong> per location you may leave behind an orb of ki. At any moment you may choose to detonate any number of these orbs. All creatures within 10 Feet of these orbs must make a <em>Dexterity Saving Throw</em> or take 5d6 <em>Ki Damage</em>, half on a success.</p>\n<p>Alternatively you may spend your Action to send all created ki orbs at a target of your choice, or take the collective damage of all ki orbs. The target and all creatures within 5 feet of them must make one <em>Dexterity Saving Throw</em> for all created ki orbs taking their collective damage on a fail, halved on a success.</p>\n",
+      "chat": ""
+    },
+    "identifier": "big-bang-grenade",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "barrage",
+    "kiCost": "25x Ki per ki orb",
+    "castingTime": "1 Action",
+    "range": "200 feet",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Big Bang Attack* and *Hellzone Grenade*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8510,
+        "endLine": 8522
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

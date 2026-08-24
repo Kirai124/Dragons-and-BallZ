@@ -22,11 +22,11 @@ export default class TransformSheet extends ActivitySheet {
   static PARTS = {
     ...super.PARTS,
     effect: {
-      template: "systems/dnd5e/templates/activity/transform-effect.hbs",
+      template: "systems/dragons-and-ballz/templates/activity/transform-effect.hbs",
       templates: [
         ...super.PARTS.effect.templates,
-        "systems/dnd5e/templates/activity/parts/transform-profiles.hbs",
-        "systems/dnd5e/templates/activity/parts/transform-settings.hbs"
+        "systems/dragons-and-ballz/templates/activity/parts/transform-profiles.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/transform-settings.hbs"
       ]
     }
   };

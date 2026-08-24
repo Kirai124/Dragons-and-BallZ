@@ -43,7 +43,7 @@ export default class RequestMessageData extends ChatMessageDataModel {
     actions: {
       handleRequest: RequestMessageData.#handleRequest
     },
-    template: "systems/dnd5e/templates/chat/request-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/request-card.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */

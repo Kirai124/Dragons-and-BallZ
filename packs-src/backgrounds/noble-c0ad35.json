@@ -1,0 +1,1179 @@
+{
+  "_id": "c0ad3558982bf103",
+  "name": "Noble",
+  "type": "background",
+  "img": "systems/dragons-and-ballz/icons/svg/items/background.svg",
+  "system": {
+    "description": {
+      "value": "<p>&lt;br&gt;</p>\n<p><em>Choose this Background if your Character was born in a Noble Bloodline</em></p>\n<ul>\n<li>Gain Proficiency in the Persuasion and Intimidation Skill.</li>\n<li>Gain proficiency in 2 <strong>Tool Kits</strong> of your choice.</li>\n<li>Gain 1 <strong>Heroic Feature</strong> or 1 <strong>Feat</strong> that you fit the requirements for.</li>\n<li>Gain one rank 2 <em><strong>Techniques</strong></em> or two rank 1 <em><strong>Technique</strong></em> that you fit the requirements for.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "noble",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "advancement": {
+      "b11b5299167c9c36": {
+        "_id": "b11b5299167c9c36",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:itm",
+            "skills:per"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Background Skills",
+        "hint": "Persuasion and Intimidation"
+      },
+      "a662a1dfb270d0cb": {
+        "_id": "a662a1dfb270d0cb",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "tool:*"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Choose two tool proficiencies."
+      },
+      "412ec129241ca71c": {
+        "_id": "412ec129241ca71c",
+        "type": "ItemChoice",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.83d1da74999852bc",
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.bf2495022c075029",
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.cacc4697e7f1685e",
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b9839826ac28259b",
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9369581db4f2e2b8",
+              "sort": 4
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.dfa03ba2b5671086",
+              "sort": 5
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5e8a5a16bf5c57e5",
+              "sort": 6
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.0b2ad58e2cb97896",
+              "sort": 7
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.13adebd3ea212986",
+              "sort": 8
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.be78c8528025fbe7",
+              "sort": 9
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3538b75b97728dcc",
+              "sort": 10
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5b18dc6646c9a127",
+              "sort": 11
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.95c33194278068bc",
+              "sort": 12
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6e89675545b6ac71",
+              "sort": 13
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.fda416742c199d04",
+              "sort": 14
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6bd6db6caa2a06db",
+              "sort": 15
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.7b193c533cc51040",
+              "sort": 16
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8f8d698926b1b3bd",
+              "sort": 17
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.acc08a507ca9b7c5",
+              "sort": 18
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.74f48f5db583df0f",
+              "sort": 19
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.bb92b3f3301c00e4",
+              "sort": 20
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5a5a7a35c5a66d48",
+              "sort": 21
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6cf89efd87e48b7c",
+              "sort": 22
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e6169e4a04410f53",
+              "sort": 23
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.0d2c864bda03e136",
+              "sort": 24
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ac599d63d4960ea3",
+              "sort": 25
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.51d6c0d2d63b8c76",
+              "sort": 26
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d847d2d6984fbea2",
+              "sort": 27
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.48762a775809b99c",
+              "sort": 28
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ddffca3f88513470",
+              "sort": 29
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a10036ae7e0c5741",
+              "sort": 30
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e6cfeb57cf5aad8d",
+              "sort": 31
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.627ebd0a49a76e3f",
+              "sort": 32
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f4989ac43bcea2e5",
+              "sort": 33
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f4d746053e60ee7b",
+              "sort": 34
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3155a1cc5e4b440d",
+              "sort": 35
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b5cbbb78707cedb0",
+              "sort": 36
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.27524cd078b960bb",
+              "sort": 37
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3c1e6d2363043c43",
+              "sort": 38
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.615d7975333115f1",
+              "sort": 39
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.c0bef7a02fe24ada",
+              "sort": 40
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.20ebb599a4f35f30",
+              "sort": 41
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.60ec0c5f44597c9a",
+              "sort": 42
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b65ba078d6975f70",
+              "sort": 43
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f5b238daf0f69b94",
+              "sort": 44
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3c160ec1d89f1b48",
+              "sort": 45
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d1fa059087160791",
+              "sort": 46
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.14e21b13ec8ede9a",
+              "sort": 47
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.c0a1ecedb32bf4d4",
+              "sort": 48
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9a5f20aa4414d7df",
+              "sort": 49
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.11eb29872eb379fd",
+              "sort": 50
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.bd0c46947fb6678b",
+              "sort": 51
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f2e28b6b41855ae6",
+              "sort": 52
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e4f76fa8aeb8bc13",
+              "sort": 53
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.954976c9658feeba",
+              "sort": 54
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.20d1439279e911cb",
+              "sort": 55
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6169bd935d23182d",
+              "sort": 56
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f79401f1db54234e",
+              "sort": 57
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5bf46b9320c82d2c",
+              "sort": 58
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.35877ae5db835104",
+              "sort": 59
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.0ac8a01c676b4112",
+              "sort": 60
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b205a09cfe5e471f",
+              "sort": 61
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.27438b1a268e8f24",
+              "sort": 62
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.70b2406d67372419",
+              "sort": 63
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.4e3af5551820a7a2",
+              "sort": 64
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.87b05a7c6db33b94",
+              "sort": 65
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8890779ff1927833",
+              "sort": 66
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a644dfc2f1620469",
+              "sort": 67
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.87985d6e4827a856",
+              "sort": 68
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.835eb1eeb245c947",
+              "sort": 69
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.80755899e9959f19",
+              "sort": 70
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.c8297501329e6984",
+              "sort": 71
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b8316c41ca51ab08",
+              "sort": 72
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.60624178966557bb",
+              "sort": 73
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9f5f141d0cace287",
+              "sort": 74
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.92c75ad75c9290bb",
+              "sort": 75
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.97b11522f805fda1",
+              "sort": 76
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b5a1cb039d677752",
+              "sort": 77
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.77335ec9573ec1ea",
+              "sort": 78
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.32268e7e17a75d50",
+              "sort": 79
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.975e42037539ba02",
+              "sort": 80
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.7ad1339f7771b807",
+              "sort": 81
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5946a4c8c5f99936",
+              "sort": 82
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.40764c0e357e7f71",
+              "sort": 83
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.dcf19aeb6a8eb8c1",
+              "sort": 84
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5c3f53abfc246b58",
+              "sort": 85
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d8fe0887886bb384",
+              "sort": 86
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.cbfe23cd3527f147",
+              "sort": 87
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8c60aebfacf2e9e2",
+              "sort": 88
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a059295a06af898a",
+              "sort": 89
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.60b0fc6d17ac7eb5",
+              "sort": 90
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e1b362588553a445",
+              "sort": 91
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6fe4375a5b798292",
+              "sort": 92
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e10625d96093adf0",
+              "sort": 93
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.c7d9b1ad4517f598",
+              "sort": 94
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9cb156813ff1bee8",
+              "sort": 95
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1e763200cbde9442",
+              "sort": 96
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5f09bb967b771980",
+              "sort": 97
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.94a8390d945340e4",
+              "sort": 98
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1452736c5fdc8bd8",
+              "sort": 99
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a543bde0f5267ced",
+              "sort": 100
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.489efa010d138965",
+              "sort": 101
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.84a5e9d34e35b736",
+              "sort": 102
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8b63b2e54916cf86",
+              "sort": 103
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3025d860c545096f",
+              "sort": 104
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.2d520dd86c12314a",
+              "sort": 105
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b8dd5dda3829bf47",
+              "sort": 106
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b50419d2e8688d1e",
+              "sort": 107
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.fda2b4998c977bd3",
+              "sort": 108
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.acccefec9a0fd18b",
+              "sort": 109
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ac0ab5f161e3110e",
+              "sort": 110
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f4c23ce153d06073",
+              "sort": 111
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e42fdc9381ae56ac",
+              "sort": 112
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d27eacddb59dad38",
+              "sort": 113
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.54ba07931d787936",
+              "sort": 114
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.740cc8d5c878b3ca",
+              "sort": 115
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.70722110089e9ad7",
+              "sort": 116
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.52b01461c90b0e62",
+              "sort": 117
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.4a433e83b1b32069",
+              "sort": 118
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f71853419033db24",
+              "sort": 119
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d646e0a2636cb43a",
+              "sort": 120
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.452e60efaa9c2498",
+              "sort": 121
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.72ab221ff81a07b9",
+              "sort": 122
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3cf5447e0fba3207",
+              "sort": 123
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b97b5f1b6f4627da",
+              "sort": 124
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.36a8c50eec4ee2ec",
+              "sort": 125
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.7ceb56774983299b",
+              "sort": 126
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8d3ec40d4c1933ee",
+              "sort": 127
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.79a0edb0353739d8",
+              "sort": 128
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.bfffeb1e4ab13dc9",
+              "sort": 129
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.08205b69d032c039",
+              "sort": 130
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.201768cbe75734cc",
+              "sort": 131
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f2245c5f21741ab0",
+              "sort": 132
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.63f8b047544d6add",
+              "sort": 133
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ce16a4fe9a16ddd1",
+              "sort": 134
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3e786ee112fcea9f",
+              "sort": 135
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6b1bbc8cd9968688",
+              "sort": 136
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9a475e42d5bef2cb",
+              "sort": 137
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9498dd181533f3d4",
+              "sort": 138
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1e2803fc714c672b",
+              "sort": 139
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8de1457e71f3207e",
+              "sort": 140
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.4698f13c5f06c341",
+              "sort": 141
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5bab286def296792",
+              "sort": 142
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3b64dceeec9504f8",
+              "sort": 143
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d362bbc86adc7549",
+              "sort": 144
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5dd3b3a911bf76f5",
+              "sort": 145
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.4776cc1e55024597",
+              "sort": 146
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.16a5fe4ac492f2ec",
+              "sort": 147
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.0b6fec048a838621",
+              "sort": 148
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.49612b10c0f1afe1",
+              "sort": 149
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ec447abf6a8582d1",
+              "sort": 150
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ed40f5e1c2671516",
+              "sort": 151
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.4f919899e05a62a3",
+              "sort": 152
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.deeee023b9523f09",
+              "sort": 153
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.aa56f3a704f27a9c",
+              "sort": 154
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5b40c6b06ad20cee",
+              "sort": 155
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6ad11859758056bf",
+              "sort": 156
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f0f0461d9c5fb41c",
+              "sort": 157
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8604ec47d2e9eaca",
+              "sort": 158
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.84e8754abe0fed52",
+              "sort": 159
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b5bc6924dd869c18",
+              "sort": 160
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.48e5d1bd7990d387",
+              "sort": 161
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.729b64aaa122dec7",
+              "sort": 162
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.daa8cb8e976df160",
+              "sort": 163
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.762d04814d9be9c0",
+              "sort": 164
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.18538c2266351ba5",
+              "sort": 165
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.61677a932c563cf1",
+              "sort": 166
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9484b8bf0fcb2ad2",
+              "sort": 167
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.34101aeb15546225",
+              "sort": 168
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.bf93423cbfe904dc",
+              "sort": 169
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9ce65d3cb0dcd0d8",
+              "sort": 170
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f35c1c4876bf5a16",
+              "sort": 171
+            }
+          ],
+          "restriction": {
+            "level": "",
+            "list": [],
+            "subtype": "",
+            "type": ""
+          },
+          "sorting": "a",
+          "spell": null,
+          "type": "feat"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Feat or Heroic Feature",
+        "hint": "Choose one Heroic Feature or Feat that you meet the requirements for."
+      },
+      "3c7a35507637819c": {
+        "_id": "3c7a35507637819c",
+        "type": "ItemChoice",
+        "configuration": {
+          "allowDrops": false,
+          "choices": {
+            "0": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "pool": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.f884590ba20749bd",
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.20f657a5d896b2e7",
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.a6067bfe9f5b1066",
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.08fc75aa9297f63a",
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.e371faef96a6b06e",
+              "sort": 4
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.94e4d675436650c5",
+              "sort": 5
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.e4933e19a9b21e4e",
+              "sort": 6
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.f99a9f810c1df683",
+              "sort": 7
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.28eac6d76b0a7d57",
+              "sort": 8
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.cdf0a327e474a83b",
+              "sort": 9
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.3cca5e8512e0ad59",
+              "sort": 10
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.3b9483ba87f5a2aa",
+              "sort": 11
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.2e170866510aefeb",
+              "sort": 12
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.11a5a497f3f401bb",
+              "sort": 13
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.d58fe96bcb4acd9b",
+              "sort": 14
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.c5d93e83cb889197",
+              "sort": 15
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.1468cdb4e190570e",
+              "sort": 16
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.0b362ed45c17d106",
+              "sort": 17
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.d0c73823bda3dbf7",
+              "sort": 18
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.26627f7ca6cfec51",
+              "sort": 19
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.a29141743d0544a3",
+              "sort": 20
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.d418eee7cddae971",
+              "sort": 21
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.e0ade5385767917d",
+              "sort": 22
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.bb5fa4ff514b6d0f",
+              "sort": 23
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.daab2b7d8192f36d",
+              "sort": 24
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.bee084f969e831d1",
+              "sort": 25
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.97737b678fe31dcf",
+              "sort": 26
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.d9aebbeaddfc3b3d",
+              "sort": 27
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.46550b50d3a6f02b",
+              "sort": 28
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.6cbad0e7b12bd759",
+              "sort": 29
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.e66cb9e1f395f861",
+              "sort": 30
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.e69fcc2ef303584f",
+              "sort": 31
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.b6c9c4132ff73d26",
+              "sort": 32
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.9efcb3127a664145",
+              "sort": 33
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.45068f6c6c80b0f8",
+              "sort": 34
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.edf2257fbf1550e4",
+              "sort": 35
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.2a5246bf6076b09b",
+              "sort": 36
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.8cabe900dd5662c1",
+              "sort": 37
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.042aa82bf265aab8",
+              "sort": 38
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.95369b81b7f88476",
+              "sort": 39
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.d9ffc4d39adb0742",
+              "sort": 40
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.647b3f0e22c78d57",
+              "sort": 41
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.bf1db251125cb944",
+              "sort": 42
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.10860e1afa61fb21",
+              "sort": 43
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.cb3a7047d3796dfc",
+              "sort": 44
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.d15625ced056c88f",
+              "sort": 45
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.79bf36b5316bd564",
+              "sort": 46
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.9ead963b184866ef",
+              "sort": 47
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.11739458cab4ebda",
+              "sort": 48
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.475d64f5703ee283",
+              "sort": 49
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.7c1814d58712e1de",
+              "sort": 50
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.92571cf7a14baaf7",
+              "sort": 51
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.308cf695959262ae",
+              "sort": 52
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.6d0217cbb8b81d57",
+              "sort": 53
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.a13a7a9a0b2f54b9",
+              "sort": 54
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.7dffcd4e2b16850a",
+              "sort": 55
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.f1b37c63fd3ee25b",
+              "sort": 56
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.3d680389dd5a2a19",
+              "sort": 57
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.6856fe0f05138452",
+              "sort": 58
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.56ba79d653f463b2",
+              "sort": 59
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.801b6ef43a309085",
+              "sort": 60
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.277a900e79acb287",
+              "sort": 61
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.6f95bf0477a28ce2",
+              "sort": 62
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.d485d8fbbf7f58dc",
+              "sort": 63
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.de63718657cf4aa4",
+              "sort": 64
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.1c217055cb3f2b59",
+              "sort": 65
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.57b693ec8c646a87",
+              "sort": 66
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.8c56987358b25769",
+              "sort": 67
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.cec5c9b83b9f7c7e",
+              "sort": 68
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.06ae5c0809a42cdc",
+              "sort": 69
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.849e1356a34efe2f",
+              "sort": 70
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.c1883f6eac41123c",
+              "sort": 71
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.59ac32587aef47b5",
+              "sort": 72
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.1247d12f3ba21c87",
+              "sort": 73
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.02bb8475a61982b6",
+              "sort": 74
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.a28f636fbcc26cfc",
+              "sort": 75
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.e023558b2ed0f07b",
+              "sort": 76
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.03196baf371ca0b3",
+              "sort": 77
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.f9349ae1580948c8",
+              "sort": 78
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.f72fca06c4df80ee",
+              "sort": 79
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.1d905700fc8f7fdf",
+              "sort": 80
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.bdb801be8e758c5e",
+              "sort": 81
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.a411dd6735e44e9c",
+              "sort": 82
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.e1d270c6027882f4",
+              "sort": 83
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.0424c7d057f3e594",
+              "sort": 84
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.ffcdb9eb5210d70a",
+              "sort": 85
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.62124478e6dc09ea",
+              "sort": 86
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.eb9c3be3ca0ce4ec",
+              "sort": 87
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.de80675f2432ca3f",
+              "sort": 88
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.64a40227e8cd4e7c",
+              "sort": 89
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.techniques.Item.ad81fb854cb93699",
+              "sort": 90
+            }
+          ],
+          "restriction": {
+            "level": "",
+            "list": [],
+            "subtype": "",
+            "type": ""
+          },
+          "sorting": "a",
+          "spell": null,
+          "type": "technique"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": "Starting Technique",
+        "hint": "Handbook: choose one Rank 2 Technique OR two Rank 1 Techniques. This picker starts with one choice; add a second Rank 1 manually when using that branch."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2439,
+        "endLine": 2447
+      }
+    }
+  }
+}

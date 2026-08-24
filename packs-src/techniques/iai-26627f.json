@@ -1,0 +1,39 @@
+{
+  "_id": "26627f7ca6cfec51",
+  "name": "Iai!",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Weapon technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  10 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Reaction, when you are targeted by a <em>Melee Attack Roll</em> or <strong>Melee Technique</strong> by a creature in your <em>Melee Range</em>.</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> No</li>\n</ul>\n<p>You draw and swipe with your weapon at lightning speed. Make a  <em>Combo Attack Roll</em> dealing your <em>Weapon Damage Die</em> and grants disadvantage on the triggering attack roll.</p>\n",
+      "chat": ""
+    },
+    "identifier": "iai",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "weapon",
+    "kiCost": "10 Ki",
+    "castingTime": "1 Reaction, when you are targeted by a *Melee Attack Roll* or **Melee Technique** by a creature in your *Melee Range*.",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7178,
+        "endLine": 7190
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

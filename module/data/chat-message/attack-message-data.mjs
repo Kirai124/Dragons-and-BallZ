@@ -35,12 +35,12 @@ export default class AttackMessageData extends RollMessageData {
 
   /** @inheritDoc */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
-    template: "systems/dnd5e/templates/chat/attack-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/attack-card.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */
 
-  static ROLL_TEMPLATE = "systems/dnd5e/templates/chat/parts/roll-compact.hbs";
+  static ROLL_TEMPLATE = "systems/dragons-and-ballz/templates/chat/parts/roll-compact.hbs";
 
   /* -------------------------------------------- */
   /*  Properties                                  */

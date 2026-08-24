@@ -1,0 +1,39 @@
+{
+  "_id": "35877ae5db835104",
+  "name": "Grappler",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:</p>\n<ul>\n<li>You have advantage on attack rolls against a creature you are grappling.</li>\n<li>You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "grappler",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5285,
+        "endLine": 5290
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

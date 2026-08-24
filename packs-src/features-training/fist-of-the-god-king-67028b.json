@@ -1,0 +1,33 @@
+{
+  "_id": "67028b2452043200",
+  "name": "Fist of the God King",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>While perhaps arrogantly named, the Kaio-Ken is an incredibly powerful ability that quickly and forcibly multiplies the user's abilities while tearing the body apart with the backlash.</p>\n<p>You gain the <em>Kaio-Ken!</em> <strong>Power-Up</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "fist-of-the-god-king",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; North Kaio"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3631,
+        "endLine": 3635
+      }
+    }
+  }
+}

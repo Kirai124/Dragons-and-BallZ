@@ -1,0 +1,39 @@
+{
+  "_id": "56ba79d653f463b2",
+  "name": "Deadly Dance",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  15 Ki</li>\n<li><strong>Casting Time:</strong> 1 Bonus Action</li>\n<li><strong>Range:</strong> Self</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Until the start of your next turn.</li>\n</ul>\n<p>For the duration of this <strong>Technique</strong>, if you hit a creature with the <em>Attack Action</em>, <em>Ki Blast Action</em>, or a <strong>Technique</strong> this turn it can not make <em>Attacks of Opprotunity</em> until the end of their next turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "deadly-dance",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "15 Ki",
+    "castingTime": "1 Bonus Action",
+    "range": "Self",
+    "duration": "Until the start of your next turn.",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6754,
+        "endLine": 6767
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

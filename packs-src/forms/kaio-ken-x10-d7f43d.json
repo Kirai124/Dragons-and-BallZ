@@ -1,0 +1,41 @@
+{
+  "_id": "d7f43dc4d857ed95",
+  "name": "Kaio-Ken x10!",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+2 <strong>Power Bonus</strong></li>\n<li>You deal +1d4 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 15 ft.</li>\n<li>You gain the <em>Super-Charged Condition</em></li>\n<li>3 <strong>Hit Point Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "kaio-ken-x10",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": 2,
+    "family": "Non-Race Specific",
+    "resource": "other",
+    "activationCost": "",
+    "upkeepCost": "3 Hit Point",
+    "activation": "action",
+    "powerBonus": 2,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Non-Race Specific"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4635,
+        "endLine": 4640
+      },
+      "formFamily": "Non-Race Specific"
+    }
+  }
+}

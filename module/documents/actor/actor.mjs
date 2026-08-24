@@ -43,7 +43,7 @@ import ConditionData from "../../data/active-effect/condition.mjs";
 export default class Actor5e extends SystemDocumentMixin(Actor) {
 
   /** @override */
-  static DEFAULT_ICON = "systems/dnd5e/icons/svg/documents/actor.svg";
+  static DEFAULT_ICON = "systems/dragons-and-ballz/icons/svg/documents/actor.svg";
 
   /* -------------------------------------------- */
 
@@ -795,7 +795,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       isBar: true
     }, updates) === false ) return this;
 
-    const context = options.origin?.getFlag?.("dnd5e", "context");
+    const context = options.origin?.getFlag?.("dragons-and-ballz", "context");
     await this.update(updates, context ? { dnd5e: context } : {});
 
     /**
@@ -921,6 +921,28 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
         d.active.multiplier = 0;
         d.active.threshold = true;
       });
+    }
+
+    // Dragons & BallZ universal Stamina Maneuvers. Block halves all incoming damage until
+    // the start of the actor's next turn. Wild Sense turns a successful-save half-damage
+    // application into zero damage for the same duration.
+    if ( this.system.isCharacter && (damages.amount > 0) ) {
+      const maneuvers = this.getFlag("dragons-and-ballz", "maneuvers") ?? {};
+      const wildSense = maneuvers.wildSense && Number(options.multiplier ?? 1) > 0 && Number(options.multiplier ?? 1) < 1;
+      if ( maneuvers.block || wildSense ) {
+        damages.amount = 0;
+        for ( const d of damages ) {
+          if ( d.value <= 0 || (d.type in CONFIG.DND5E.healingTypes) || ["temphp", "maximum"].includes(d.type) ) continue;
+          if ( wildSense ) {
+            d.value = 0;
+            d.active.dbzWildSense = true;
+          } else {
+            d.value = Math.trunc(d.value / 2);
+            d.active.dbzBlock = true;
+          }
+          damages.amount += d.value;
+        }
+      }
     }
 
     /**
@@ -1441,6 +1463,17 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       ruleBonus: bonus
     }, { ...rollData });
 
+    // Dragons & BallZ Power modifies Spirit and Ki Control checks directly.
+    // This mirrors the handbook rule and ensures the actual d20 roll matches the displayed skill total.
+    if ( (type === "skill") && this.system.isCharacter && ["spi", "kic"].includes(process.skill) ) {
+      const power = Number(this.system.attributes?.power?.total ?? this.system.attributes?.power?.value ?? 0);
+      const dbzPowerSkill = process.skill === "spi" ? power : -power;
+      if ( dbzPowerSkill ) {
+        parts.push("@dbzPowerSkill");
+        data.dbzPowerSkill = dbzPowerSkill;
+      }
+    }
+
     // Add condition reductions.
     this.addConditionRollReduction(parts, data);
 
@@ -1557,6 +1590,25 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       ruleBonus: bonus,
       cover: (config.ability === "dex") && (type === "save") ? this.system.attributes?.ac?.cover : null
     }, rollData);
+
+    // Dragons and BallZ: every two ranks of Power modify all Saving Throws by one.
+    if ( (type === "save") && this.system.isCharacter ) {
+      const power = Number(this.system.attributes?.power?.total ?? this.system.attributes?.power?.value ?? 0);
+      const dbzPowerSave = Math.trunc(power / 2);
+      if ( dbzPowerSave ) {
+        parts.push("@dbzPowerSave");
+        data.dbzPowerSave = dbzPowerSave;
+      }
+    }
+
+    // Block automatically fails Dexterity Saving Throws for its duration. Retain the roll
+    // for normal Foundry chat/automation, but force its target beyond any achievable result.
+    if ( (type === "save") && (config.ability === "dex") && this.system.isCharacter
+      && this.getFlag("dragons-and-ballz", "maneuvers")?.block ) {
+      config.target = Number.MAX_SAFE_INTEGER;
+      config.options ??= {};
+      config.options.displayResult = true;
+    }
 
     const rollConfig = foundry.utils.mergeObject({
       halflingLucky: this.getFlag("dragons-and-ballz", "halflingLucky")
@@ -2285,6 +2337,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     this._getRestHitDiceRecovery(config, result);
     this._getRestHitPointRecovery(config, result);
     this._getRestResourceRecovery(config, result);
+    this._getRestDragonBallResourceRecovery(config, result);
     this._getRestSpellRecovery(config, result);
     await this._getRestItemUsesRecovery(config, result);
 
@@ -2536,6 +2589,47 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     for ( let [k, r] of Object.entries(this.system.resources ?? {}) ) {
       if ( Number.isNumeric(r.max) && ((recoverShortRestResources && r.sr) || (recoverLongRestResources && r.lr)) ) {
         result.updateData[`system.resources.${k}.value`] = Number(r.max);
+      }
+    }
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Recover Dragons and BallZ character resources according to the handbook.
+   * Ki and Stamina recover half of their maximum on a short rest and fully on a long rest.
+   * God Ki recovers one point on a long rest.
+   * @param {RestConfiguration} [config={}]  Rest configuration.
+   * @param {RestResult} [result={}]         Rest result being constructed.
+   * @protected
+   */
+  _getRestDragonBallResourceRecovery(config={}, result={}) {
+    if ( !this.system.isCharacter ) return;
+    const attributes = this.system.attributes;
+    if ( !attributes?.ki || !attributes?.stamina ) return;
+    result.updateData ??= {};
+
+    const recover = (key, full=false) => {
+      const resource = attributes[key];
+      const max = Math.max(0, Number(resource.effectiveMax ?? resource.max ?? 0));
+      const current = Math.max(0, Number(resource.value ?? 0));
+      const recovered = full ? max : Math.floor(max / 2);
+      const value = full ? max : Math.min(max, current + recovered);
+      if ( value !== current ) result.updateData[`system.attributes.${key}.value`] = value;
+    };
+
+    if ( config.type === "short" ) {
+      recover("ki");
+      recover("stamina");
+    } else if ( config.type === "long" ) {
+      recover("ki", true);
+      recover("stamina", true);
+      const godKi = attributes.godKi;
+      if ( godKi ) {
+        const max = Math.max(0, Number(godKi.effectiveMax ?? godKi.max ?? 0));
+        const current = Math.max(0, Number(godKi.value ?? 0));
+        const value = Math.min(max, current + 1);
+        if ( value !== current ) result.updateData["system.attributes.godKi.value"] = value;
       }
     }
   }

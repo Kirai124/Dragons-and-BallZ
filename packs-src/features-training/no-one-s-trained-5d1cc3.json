@@ -1,0 +1,33 @@
+{
+  "_id": "5d1cc3d4c5e16805",
+  "name": "No one's Trained!",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The <em>Fusion Dance</em> is a unique ability in that anyone of <strong>Ki Rank 2</strong> or higher can use this feature. So long as someone who knows it is present and capable of instructing you for at least 1 hour you may use the fusion dance with Disadvantage for the next 24 hours.</p>\n<p>If the instructor is present for the attempt to instruct you then roll without disadvantage.</p>\n",
+      "chat": ""
+    },
+    "identifier": "no-one-s-trained",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": 2,
+    "requirements": "",
+    "tags": "trained feature; Metamoran"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3558,
+        "endLine": 3564
+      }
+    }
+  }
+}

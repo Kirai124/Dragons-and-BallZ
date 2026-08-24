@@ -1,0 +1,40 @@
+{
+  "_id": "957e66a7533812ce",
+  "name": "Space Knights",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Due to your upbringing on the fringes of the ancient and modern worlds has left you with a very unique set of skills. You gain proficiency in <em>Martial Weapons</em> and the <em>Technology Skill</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "konatsian-space-knights",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 904,
+        "endLine": 907
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Konatsian"
+    }
+  }
+}

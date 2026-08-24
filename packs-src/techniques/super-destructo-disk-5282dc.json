@@ -1,0 +1,39 @@
+{
+  "_id": "5282dcf9ddf1c452",
+  "name": "Super Destructo Disk",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  40 Ki</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Destructo Disk</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self (120 foot line)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>Super charge the spin of the destructo disk making it almost unseeable to the eye. Targets in range must make a <em>Dexterity Saving Throw</em> dealing 8d12 <em>Ki Damage</em> on a fail, no damage on a success. This <strong>Technique</strong> deals double damage to structures and <em>Constructs</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "super-destructo-disk",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "omni",
+    "kiCost": "40 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (120 foot line)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Destructo Disk*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8377,
+        "endLine": 8389
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

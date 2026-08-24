@@ -1,0 +1,62 @@
+{
+  "_id": "11970df57f1a9945",
+  "name": "Speedster",
+  "type": "subrace",
+  "img": "systems/dragons-and-ballz/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p>Blessed with the gift of super speed for one reason or another, you are the embodiment of &quot;Gotta go fast&quot;.</p>\n<h3>Sub-race features</h3>\n<h4>Like the Wind</h4>\n<p>While you are taking the <em>Dash Action</em> you are unaffected by <em>Difficult Terrain</em>.</p>\n<h4>Quicker then the rest</h4>\n<p>Your <em>Base Walk Speed</em> is 2x your race’s <em>Base Walk Speed</em> and you can <em>Dash</em> as a Bonus Action on your turn. While you are under the effects of the <em>Dash Actin</em>, you may travel vertically or horizontally across any surface, such as up walls or across water so long as you do not end your turn there, falling if you do.</p>\n<h4>Speed Force</h4>\n<p>You're quick, some may even call you &quot;The Fastest Thing Alive&quot;. At <strong>1st Level</strong> you gain the <em>Mach 1</em> <strong>Power-Up</strong> and you gain access to each subsequent <em>Speed Force</em> <strong>Power-Up</strong> each time you <strong>Rank Up</strong>.</p>\n<h5>Speed Force Power-Ups</h5>\n<p>You move faster than anyone else and nothing can get in your way. You gain <em>Mach 1</em> at <strong>Level 3</strong> and it <strong>Ranks Up</strong> each time your <strong>Ki Rank</strong> increases. You do not lose access to previous Power-Ups.</p>\n<p>When you use these <strong>Power-Ups</strong> outside of <strong>Combat</strong>, you pay the <strong>Stamina</strong> cost every minute. While this <strong>Power-Up</strong> is active you may travel vertically or horizontally across any surface, such as up walls or across water so long as you do not end your turn there, falling if you do.</p>\n<h6>Mach 1</h6>\n<ul>\n<li>You gain +1 <em>Static Bonus</em> to <em>Melee/Melee Weapon Attack Rolls</em> and <em>Melee/Melee Weapon</em> <strong>Techniques</strong>.</li>\n<li>Double your <em>Walk</em> and <em>Fly Speed</em>.</li>\n<li>1 <strong>Stamina Upkeep</strong></li>\n</ul>\n<h6>Mach 10</h6>\n<ul>\n<li>You gain +1 <em>Static Bonus</em> to <em>Melee/Melee Weapon Attack Rolls</em> and <em>Melee/Melee Weapon</em> <strong>Techniques</strong>.</li>\n<li>Triple your <em>Walk</em> and <em>Fly Speed</em>.</li>\n<li>You gain an additional attack as part of the <em>Attack Action</em> or when making <em>Basic Ki Blasts</em> as an Action.</li>\n<li>You do not provoke <em>Attacks of Opprotunity.</em></li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n<h6>Mach 100</h6>\n<ul>\n<li>You gain +2 <em>Static Bonus</em> to <em>Melee/Melee Weapon Attack Rolls</em> and <em>Melee/Melee Weapon</em> <strong>Techniques</strong>.</li>\n<li>Quadruple your <em>Walk</em> and <em>Fly Speed</em>.</li>\n<li>You gain an additional attack as part of the <em>Attack Action</em> or when making <em>Basic Ki Blasts</em> as an Action.</li>\n<li>You gain an additional Reaction each round.</li>\n<li>You do not provoke <em>Attacks of Opprotunity.</em></li>\n<li>4 <strong>Stamina Upkeep</strong></li>\n</ul>\n<h6>Light Speed</h6>\n<ul>\n<li>You gain +2 <em>Static Bonus</em> to <em>Melee/Melee Weapon Attack Rolls</em> and <em>Melee/Melee Weapon</em> <strong>Techniques</strong>.</li>\n<li>Quintuple (5x) your <em>Walk</em> and <em>Fly Speed</em>.</li>\n<li>You gain an additional 2 attacks as part of the <em>Attack Action</em> or when making <em>Basic Ki Blasts</em> as an Action.</li>\n<li>You gain an additional Reaction each round.</li>\n<li>You do not provoke <em>Attacks of Opprotunity.</em></li>\n<li>6 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "speedster",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "parentRace": "",
+    "requirements": "You move faster than anyone else and nothing can get in your way. You gain *Mach 1* at **Level 3** and it **Ranks Up** each time your **Ki Rank** increases. You do not lose access to previous Power-Ups.",
+    "tags": "subrace",
+    "advancement": {
+      "1065e40c8fc87df8": {
+        "_id": "1065e40c8fc87df8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.0206eeb275222b0c",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e7616fb0bd3bb688",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e36ccd671b549145",
+              "optional": false,
+              "sort": 2
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Subrace Features",
+        "hint": ""
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2223,
+        "endLine": 2285
+      }
+    }
+  }
+}

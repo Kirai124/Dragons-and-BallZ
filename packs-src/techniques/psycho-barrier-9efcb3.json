@@ -1,0 +1,39 @@
+{
+  "_id": "9efcb3127a664145",
+  "name": "Psycho Barrier",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 10 Ki per +1 bonus</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Reaction when you are forced to make a <em>Constitution, Dexterity</em>, or <em>Strength Saving Throw</em></li>\n<li><strong>Range:</strong>  Self</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Omni</li>\n</ul>\n<p>Form a barrier of ki around you granting you a +1 bonus to the triggering <em>Saving Throw</em>. You may not increase this bonus beyond a +3 in this way.</p>\n",
+      "chat": ""
+    },
+    "identifier": "psycho-barrier",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "omni",
+    "kiCost": "10 Ki per +1 bonus",
+    "castingTime": "1 Reaction when you are forced to make a *Constitution, Dexterity*, or *Strength Saving Throw*",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7731,
+        "endLine": 7743
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

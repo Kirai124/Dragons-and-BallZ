@@ -1,0 +1,39 @@
+{
+  "_id": "5e8a5a16bf5c57e5",
+  "name": "Athlete",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have undergone extensive physical training to gain the following benefits:</p>\n<ul>\n<li>Increase your Strength or Dexterity score by 1, to a maximum of your current Ability Score Maximum.</li>\n<li>When you are prone, standing up uses only 5 feet of your movement.</li>\n<li>Climbing doesn't cost you extra movement.</li>\n<li>You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "athlete",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5220,
+        "endLine": 5229
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

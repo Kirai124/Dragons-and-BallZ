@@ -28,7 +28,7 @@ export default class CompendiumTOCConfig extends Application5e {
   /** @override */
   static PARTS = {
     form: {
-      template: "systems/dnd5e/templates/journal/config/compendium-toc-config.hbs"
+      template: "systems/dragons-and-ballz/templates/journal/config/compendium-toc-config.hbs"
     }
   };
 

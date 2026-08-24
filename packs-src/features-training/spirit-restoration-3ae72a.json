@@ -1,0 +1,33 @@
+{
+  "_id": "3ae72a79c94475ad",
+  "name": "Spirit Restoration",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You can use your mastery of <em>Spirit Control</em>  to stimulate the body's healing process through ki. As an Action you may touch yourself or another creature, you and/or the creature being healed may spend <strong>Ki</strong> to restore 2 <strong>HP</strong> per <strong>Ki</strong> spent collectively.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-restoration",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3451,
+        "endLine": 3461
+      }
+    }
+  }
+}

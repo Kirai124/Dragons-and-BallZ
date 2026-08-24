@@ -1,0 +1,39 @@
+{
+  "_id": "28eac6d76b0a7d57",
+  "name": "Dodon Ray",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 4 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Self (40 foot line)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Beam</li>\n</ul>\n<p>A small beam shot from the finger causes an explosion on impact.  Targets in range must make a <em>Dexterity Saving Throw</em> or take 3d4 <em>Force Damage</em>, half on a successful save.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dodon-ray",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "beam",
+    "kiCost": "4 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (40 foot line)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7593,
+        "endLine": 7605
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

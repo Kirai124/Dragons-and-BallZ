@@ -18,7 +18,7 @@ export default class BaseSettingsConfig extends Application5e {
       closeOnSubmit: true,
       handler: BaseSettingsConfig.#onCommitChanges
     },
-    namespace: "dnd5e"
+    namespace: "dragons-and-ballz"
   };
 
   /* -------------------------------------------- */
@@ -26,7 +26,7 @@ export default class BaseSettingsConfig extends Application5e {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/settings/base-config.hbs"
+      template: "systems/dragons-and-ballz/templates/settings/base-config.hbs"
     },
     footer: {
       template: "templates/generic/form-footer.hbs"
@@ -49,7 +49,7 @@ export default class BaseSettingsConfig extends Application5e {
 
   /**
    * Create the field data for a specific setting.
-   * @param {string} name  Setting key within the dnd5e namespace.
+   * @param {string} name  Setting key within the Dragons and BallZ namespace.
    * @returns {object}
    */
   createSettingField(name) {

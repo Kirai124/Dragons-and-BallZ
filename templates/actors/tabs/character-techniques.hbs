@@ -1,0 +1,62 @@
+<section class="tab {{ tab.cssClass }} dbz-techniques-tab" data-tab="{{ tab.id }}" data-group="{{ tab.group }}">
+<section class="dbz-status-strip {{#if dbzStatus.overload}}overloaded{{/if}}">
+    <span><strong>{{ localize "DBZ.KiRank" }}</strong> {{ dbzStatus.kiRank }}</span>
+    <span><strong>{{ localize "DBZ.Ki" }}</strong> {{ dbzStatus.ki }}</span>
+    <span><strong>{{ localize "DBZ.Stamina" }}</strong> {{ dbzStatus.stamina }}</span>
+    <span><strong>{{ localize "DBZ.GodKi" }}</strong> {{ dbzStatus.godKi }}</span>
+    <span><strong>{{ localize "DBZ.Power" }}</strong> {{ dbzStatus.power }}/{{ dbzStatus.threshold }}</span>
+    <span><strong>{{ localize "DBZ.PowerLevel" }}</strong> {{ dbzStatus.powerLevel }}</span>
+    {{#if dbzStatus.activeForms}}<span class="active"><i class="fa-solid fa-burst"></i> {{ dbzStatus.activeForms }} {{ localize "DBZ.FormsShort" }}</span>{{/if}}
+    {{#if dbzStatus.charging}}<span class="charging"><i class="fa-solid fa-battery-half"></i> {{ localize "DBZ.Charging" }}: {{ dbzStatus.chargingName }} ({{ dbzStatus.chargeRounds }})</span>{{/if}}
+    {{#if dbzStatus.concealed}}<span class="concealed"><i class="fa-solid fa-eye-slash"></i> {{ localize "DBZ.KiConcealed" }}</span>{{/if}}
+    {{#if dbzStatus.overload}}<span class="danger"><i class="fa-solid fa-triangle-exclamation"></i> {{ localize "DBZ.PowerOverload" }} +{{ dbzStatus.overload }}</span>{{/if}}
+</section>
+    <section class="dbz-combat-actions">
+        <button type="button" class="dbz-action-card basic-ki" data-action="basicKiBlast">
+            <span class="icon"><i class="fa-solid fa-circle-radiation"></i></span>
+            <span class="content">
+                <strong>{{ localize "DBZ.BasicKiBlast" }}</strong>
+                <small>{{ localize "DBZ.AttackBonus" }} {{ dnd5e-formatModifier basicKiBlast.attack }} · {{ localize "DBZ.Damage" }} {{ basicKiBlast.damage }} · {{ localize "DBZ.Range" }} {{ basicKiBlast.range }}</small>
+            </span>
+        </button>
+        <button type="button" class="dbz-action-card clash" data-action="clash">
+            <span class="icon"><i class="fa-solid fa-burst"></i></span>
+            <span class="content">
+                <strong>{{ localize "DBZ.Clash" }}</strong>
+                <small>{{ localize "DBZ.ClashHint" }}</small>
+            </span>
+        </button>
+        <button type="button" class="dbz-action-card sense-ki" data-action="senseKi">
+            <span class="icon"><i class="fa-solid fa-eye"></i></span>
+            <span class="content">
+                <strong>{{ localize "DBZ.SenseKi" }}</strong>
+                <small>{{ localize "DBZ.SenseKiHint" }}</small>
+            </span>
+        </button>
+        <button type="button" class="dbz-action-card conceal-ki" data-action="concealKi">
+            <span class="icon"><i class="fa-solid fa-eye-slash"></i></span>
+            <span class="content">
+                <strong>{{ localize "DBZ.ConcealKi" }}</strong>
+                <small>{{ localize "DBZ.ConcealKiHint" }}</small>
+            </span>
+        </button>
+    </section>
+    <section class="dbz-maneuvers card">
+        <header>
+            <h3><i class="fa-solid fa-bolt"></i> {{ localize "DBZ.StaminaManeuvers" }}</h3>
+            <small>{{ localize "DBZ.StaminaManeuversHint" }}</small>
+        </header>
+        <div class="dbz-maneuver-grid">
+            <button type="button" data-action="maneuver" data-maneuver="block"><strong>{{ localize "DBZ.Block" }}</strong><small>3 {{ localize "DBZ.Stamina" }}</small></button>
+            <button type="button" data-action="maneuver" data-maneuver="burstAttack"><strong>{{ localize "DBZ.BurstAttack" }}</strong><small>{{ localize "DBZ.VariableCost" }}</small></button>
+            <button type="button" data-action="maneuver" data-maneuver="counter"><strong>{{ localize "DBZ.Counter" }}</strong><small>5 {{ localize "DBZ.Stamina" }}</small></button>
+            <button type="button" data-action="maneuver" data-maneuver="deflection"><strong>{{ localize "DBZ.Deflection" }}</strong><small>{{ localize "DBZ.VariableCost" }}</small></button>
+            <button type="button" data-action="maneuver" data-maneuver="interception"><strong>{{ localize "DBZ.Interception" }}</strong><small>3 {{ localize "DBZ.Stamina" }}</small></button>
+            <button type="button" data-action="maneuver" data-maneuver="spike"><strong>{{ localize "DBZ.SpikeFollowUp" }}</strong><small>2+ {{ localize "DBZ.Stamina" }}</small></button>
+            <button type="button" data-action="maneuver" data-maneuver="tagTeam"><strong>{{ localize "DBZ.TagTeamAttack" }}</strong><small>5 {{ localize "DBZ.Stamina" }}</small></button>
+            <button type="button" data-action="maneuver" data-maneuver="powerStrike"><strong>{{ localize "DBZ.PowerStrike" }}</strong><small>{{ localize "DBZ.VariableCost" }}</small></button>
+            <button type="button" data-action="maneuver" data-maneuver="wildSense"><strong>{{ localize "DBZ.WildSense" }}</strong><small>3 {{ localize "DBZ.Stamina" }}</small></button>
+        </div>
+    </section>
+    {{> "systems/dragons-and-ballz/templates/inventory/inventory.hbs" keepEmpty=true }}
+</section>

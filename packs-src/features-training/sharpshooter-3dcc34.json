@@ -1,0 +1,40 @@
+{
+  "_id": "3dcc3403d1a7eccf",
+  "name": "Sharpshooter",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You <em>Basic Ki Blast</em> has it’s Damage Die increased by 2 steps (1d4&gt;1d6&gt;1d8&gt;1d10&gt;1d12&gt;2d6&gt;2d8&gt;etc) and it's range is doubled. Each time your <strong>Ki Rank</strong> increases, increase the range by an additional 30/90 feet.</p>\n<p>This does not effect <strong>Techniques</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ceralians-sharpshooter",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 824,
+        "endLine": 827
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Ceralians"
+    }
+  }
+}

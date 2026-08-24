@@ -1,0 +1,39 @@
+{
+  "_id": "2190095ae2730d53",
+  "name": "Pressure Sign",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  40 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A true and confidant strike. Make a <em>Combo Attack Roll</em> dealing your <em>Unarmed Strike Damage Die</em> + 3d12 <em>Bludgeoning Damage</em> on a hit. This <strong>Technique</strong> has Advantage in <em>Clash Checks</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "pressure-sign",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "40 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7005,
+        "endLine": 7017
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

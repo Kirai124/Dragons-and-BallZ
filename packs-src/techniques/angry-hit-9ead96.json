@@ -1,0 +1,39 @@
+{
+  "_id": "9ead963b184866ef",
+  "name": "Angry Hit",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  20 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 60 feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A charge attack where you close in and seemingly disappear, then strike a hit as soon as you appear in front of your opponent.</p>\n<p>Choose a target within your move distance, you vanish and appear in a chosen location within 5 feet of them without provoking <em>Attacks of Opportunity</em> and make a <em>Combo Attack Roll</em> dealing your <em>Unarmed Strike Damage Die</em> + 2d12 <em>Bludgeoning Damage</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "angry-hit",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "20 Ki",
+    "castingTime": "1 Action",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6688,
+        "endLine": 6701
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

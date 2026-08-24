@@ -1,0 +1,39 @@
+{
+  "_id": "46550b50d3a6f02b",
+  "name": "Magic Style",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><strong>Prerequisites:</strong> <strong>Mysticism/Mysticism: Burst Class Feature</strong></li>\n</ul>\n<p>You can draw the most out of your spells.</p>\n<ul>\n<li>+1 <em>Static Bonus</em> to <strong>Spells</strong></li>\n<li>Choose 1 <em>School of Magic</em>; while in this <strong>Stance</strong> the base range of all <strong>Spells</strong> of this school with a range greater than self or touch by 50%, this can not be changed later.</li>\n<li>You get 1 <em>Metamagic Option</em> of your choice, that cannot be changed later, that you may only use while in this <strong>Stance.</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "magic-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "stance",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Passive",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "**Mysticism/Mysticism: Burst Class Feature**",
+    "tags": "stance"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9171,
+        "endLine": 9181
+      },
+      "techniqueSection": "stance"
+    }
+  }
+}

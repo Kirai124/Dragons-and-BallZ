@@ -1,0 +1,40 @@
+{
+  "_id": "e2008dfd04f59322",
+  "name": "Superiority Improvement",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>10th Level</strong>, your <em>Superiority Dice</em> turn into d10s. At <strong>18th Level</strong>, they turn into d12s.</p>\n",
+      "chat": ""
+    },
+    "identifier": "martial-artist-superiority-improvement",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2685,
+        "endLine": 2687
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Martial Artist"
+    }
+  }
+}

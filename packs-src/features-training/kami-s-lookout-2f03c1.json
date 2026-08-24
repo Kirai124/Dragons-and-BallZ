@@ -1,0 +1,33 @@
+{
+  "_id": "2f03c1f40e1d18b9",
+  "name": "Kami's Lookout",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Ki Rank 2</strong>\nYou have been taught how to place a piece of your soul into an area, pulling it from the ground into your own floating sanctum.</p>\n<p>As an 8 hour <em>Ritual</em> you may meditate, placing your soul into the planet or a structure no larger than an island, causing it to rip from the ground and fly into the sky. While on your <em>Lookout</em>, you have advantage on all <em>Sense Ki Checks</em> you make. At the center of your island resides a spiritual place, from this location you may spend an Action and gain a <em>Rank of Exhaustion</em> to teleport you and any creatures you are touching to the <em>Gates of Otherworld</em>.</p>\n<p>You may use this <strong>Trained Feature</strong> so long as you are at the <em>Gates of Otherworld</em> or <em>Yemma's Reception Desk</em> to transport you and any creatures you are touching to your <em>Lookout.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "kami-s-lookout",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": 2,
+    "requirements": "Requires: Ki Rank 2",
+    "tags": "trained feature; Guardian of the Dragon Balls"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3603,
+        "endLine": 3610
+      }
+    }
+  }
+}

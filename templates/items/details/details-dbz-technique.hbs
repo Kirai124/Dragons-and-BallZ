@@ -1,0 +1,23 @@
+<fieldset>
+    <legend>{{ localize "DBZ.ITEM.TechniqueDetails" }}</legend>
+    <div class="form-group split-group">
+        <label>{{ localize "DBZ.ITEM.TechniqueIdentity" }}</label>
+        <div class="form-fields">
+            {{ formField fields.rank value=source.rank label="DBZ.ITEM.KiRank" localize=true classes="label-top" rootId=partId }}
+            {{ formField fields.techniqueType value=source.techniqueType choices=techniqueTypes localize=true label="DBZ.ITEM.TechniqueType" classes="label-top" rootId=partId }}
+        </div>
+    </div>
+    {{ formField fields.kiCost value=source.kiCost rootId=partId }}
+    {{ formField fields.castingTime value=source.castingTime rootId=partId }}
+    {{ formField fields.range value=source.range rootId=partId }}
+    {{ formField fields.duration value=source.duration rootId=partId }}
+    {{ formField fields.chargeable value=source.chargeable input=inputs.createCheckboxInput rootId=partId }}
+</fieldset>
+
+<fieldset>
+    <legend>{{ localize "DBZ.ITEM.Mastery" }}</legend>
+    {{ formField fields.mastery value=source.mastery rootId=partId }}
+    {{ formField fields.staticBonus value=source.staticBonus rootId=partId }}
+    {{ formField fields.requirements value=source.requirements rootId=partId }}
+    {{ formField fields.tags value=source.tags rootId=partId }}
+</fieldset>

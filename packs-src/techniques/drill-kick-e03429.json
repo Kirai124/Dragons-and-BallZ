@@ -1,0 +1,39 @@
+{
+  "_id": "e0342921a53a3893",
+  "name": "Drill Kick",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  35 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  Melee</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A fast spinning dropkick that throws the target off balance.</p>\n<p>Make a <em>Combo Attack Roll</em> dealing your <em>Unarmed Strike Damage Die</em> + 3d12 <em>Bludgeoning Damage</em> on a hit. This <strong>Technique</strong> ignores <em>Proficiency Bonuses</em> to the target's <strong>AC</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "drill-kick",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "35 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6909,
+        "endLine": 6924
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

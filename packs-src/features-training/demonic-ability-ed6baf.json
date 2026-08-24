@@ -1,0 +1,40 @@
+{
+  "_id": "ed6bafd5358980d7",
+  "name": "Demonic Ability",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You possess an ability of your choice based on your hellish nature.</p>\n<h5>Dark Magic</h5>\n<p>You gain access to 1 branch of magic of your choice as if through the <em>Mysticism</em> <em><strong>Class Feature</strong></em>, additionally you may use <em>Constitution</em> as your <em>Spell Casting Modifier</em> for the <em>Mysticism</em> <em><strong>Class Feature</strong></em>.</p>\n<h5>Demonic Wings</h5>\n<p>You possess a pair of bat-like wings that protrude from your back granting you a <em>Fly Speed</em> of 15x your <strong>Ki Rank.</strong></p>\n<h5>Elementalist</h5>\n<p>Choose one <em>Damage Type</em> from the list below, this can not be changed later, anytime you cast a <strong>Technique</strong> you may spend <strong>Stamina</strong> equal to it's <strong>Rank</strong> to change it's <em>Damage Type</em> to your chosen <em>Damage Type</em>.</p>\n<ul>\n<li>Fire</li>\n<li>Cold</li>\n<li>Lightning</li>\n<li>Thunder</li>\n<li>Force</li>\n<li>Psychic</li>\n<li>Poison</li>\n</ul>\n<h5>Esoteric Gift</h5>\n<p>You gain 1 <em>Esoteric Art</em> from the <em>Esoteric Arts</em> <strong>Class Feature.</strong></p>\n<h5>Fiendish Power</h5>\n<p>Whenever you make an <em>Unarmed Strike</em> or <strong>Melee Technique</strong> you may spend <strong>Stamina</strong> to give yourself a <strong>Static Boost</strong> equal to the amount spent for that casting. You may not spend more than half of your <em>Proficiency Bonus</em>, rounded up, in <strong>Stamina</strong> in this manner for a single attack roll.</p>\n<h5>Hardened Body</h5>\n<p>You are naturally tougher than others, you gain a bonus to <strong>AC</strong> equal to your <strong>Ki Rank.</strong></p>\n<h5>Unstable Biology</h5>\n<p>You have the ability to break down your physical structure on a whim to avoid harm. Your <strong>Wild Sense Manuever</strong> can now be used on <em>Strength</em> and <em>Constitution Saving Throws</em> as well to completly ignore effects on a success, if there would still be an effect.</p>\n",
+      "chat": ""
+    },
+    "identifier": "demon-demonic-ability",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1746,
+        "endLine": 1783
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Demon"
+    }
+  }
+}

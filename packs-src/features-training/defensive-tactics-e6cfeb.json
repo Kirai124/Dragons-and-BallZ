@@ -1,0 +1,39 @@
+{
+  "_id": "e6cfeb57cf5aad8d",
+  "name": "Defensive Tactics",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Each time you take this Heroic Feature, reduce the Stamina Cost for <em>Block, Clash, Deflection, Interception,</em> and <em>Wild Sense</em> by 1 (minimum 1).</p>\n",
+      "chat": ""
+    },
+    "identifier": "defensive-tactics",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6117,
+        "endLine": 6119
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

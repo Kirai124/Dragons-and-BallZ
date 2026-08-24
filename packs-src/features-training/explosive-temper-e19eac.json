@@ -1,0 +1,40 @@
+{
+  "_id": "e19eac7ab12b32b2",
+  "name": "Explosive Temper",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your DNA is strong but slightly unstable. Your anger can get ahead of you sometimes but it certainly can come in useful on the battlefield. Once per long rest you may enter the <em>Enraged Condition</em> as a Bonus Action.</p>\n<p>&lt;br&gt;&lt;br&gt;</p>\n",
+      "chat": ""
+    },
+    "identifier": "hybrids-explosive-temper",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2365,
+        "endLine": 2375
+      },
+      "contentCategory": "subraceFeature",
+      "grantedBy": "Hybrids"
+    }
+  }
+}

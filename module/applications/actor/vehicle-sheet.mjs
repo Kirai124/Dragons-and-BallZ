@@ -49,47 +49,47 @@ export default class VehicleActorSheet extends BaseActorSheet {
   /** @override */
   static PARTS = {
     sidebarCollapser: {
-      template: "systems/dnd5e/templates/actors/parts/sidebar-collapser.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/parts/sidebar-collapser.hbs"
     },
     sidebar: {
-      template: "systems/dnd5e/templates/actors/vehicle/sidebar.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/vehicle/sidebar.hbs",
       templates: [
-        "systems/dnd5e/templates/actors/parts/actor-trait-line.hbs",
-        "systems/dnd5e/templates/actors/parts/actor-trait-pills.hbs"
+        "systems/dragons-and-ballz/templates/actors/parts/actor-trait-line.hbs",
+        "systems/dragons-and-ballz/templates/actors/parts/actor-trait-pills.hbs"
       ],
       scrollable: [""]
     },
     stations: {
-      template: "systems/dnd5e/templates/actors/vehicle/stations.hbs",
-      templates: ["systems/dnd5e/templates/inventory/inventory.hbs", "systems/dnd5e/templates/inventory/activity.hbs"],
+      template: "systems/dragons-and-ballz/templates/actors/vehicle/stations.hbs",
+      templates: ["systems/dragons-and-ballz/templates/inventory/inventory.hbs", "systems/dragons-and-ballz/templates/inventory/activity.hbs"],
       scrollable: [""]
     },
     tabs: {
       classes: ["tabs-right"],
-      template: "systems/dnd5e/templates/shared/sidebar-tabs.hbs"
+      template: "systems/dragons-and-ballz/templates/shared/sidebar-tabs.hbs"
     },
     inventory: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/actor-inventory.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/tabs/actor-inventory.hbs",
       templates: [
-        "systems/dnd5e/templates/inventory/inventory.hbs", "systems/dnd5e/templates/inventory/activity.hbs",
-        "systems/dnd5e/templates/inventory/containers.hbs", "systems/dnd5e/templates/inventory/encumbrance.hbs"
+        "systems/dragons-and-ballz/templates/inventory/inventory.hbs", "systems/dragons-and-ballz/templates/inventory/activity.hbs",
+        "systems/dragons-and-ballz/templates/inventory/containers.hbs", "systems/dragons-and-ballz/templates/inventory/encumbrance.hbs"
       ],
       scrollable: [""]
     },
     crew: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/vehicle/crew.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/vehicle/crew.hbs",
       scrollable: [""]
     },
     effects: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/actor-effects.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/tabs/actor-effects.hbs",
       scrollable: [""]
     },
     description: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/vehicle/description.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/vehicle/description.hbs",
       scrollable: [""]
     }
   };
@@ -98,7 +98,7 @@ export default class VehicleActorSheet extends BaseActorSheet {
 
   /** @override */
   static TABS = [
-    { tab: "inventory", label: "DND5E.VEHICLE.Tabs.Cargo", svg: "systems/dnd5e/icons/svg/backpack.svg" },
+    { tab: "inventory", label: "DND5E.VEHICLE.Tabs.Cargo", svg: "systems/dragons-and-ballz/icons/svg/backpack.svg" },
     { tab: "crew", label: "DND5E.VEHICLE.Tabs.CrewPassengers", icon: "fa-solid fa-users",
       condition: this.vehicleHasCrew },
     { tab: "effects", label: "DND5E.Effects", icon: "fas fa-bolt" },

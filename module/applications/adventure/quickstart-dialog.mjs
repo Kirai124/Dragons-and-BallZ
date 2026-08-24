@@ -54,7 +54,7 @@ export default class AdventureQuickstartDialog extends Dialog5e {
     }
 
     context.content = await foundry.applications.handlebars.renderTemplate(
-      "systems/dnd5e/templates/shared/fields/formlist.hbs",
+      "systems/dragons-and-ballz/templates/shared/fields/formlist.hbs",
       { actions: { legend: "ADVENTURE.ImportHeaderOptions", fields: Object.values(importActions) } }
     );
 

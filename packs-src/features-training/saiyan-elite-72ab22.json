@@ -1,0 +1,39 @@
+{
+  "_id": "72ab221ff81a07b9",
+  "name": "Saiyan Elite",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Saiyan Tail</em> Racial Feature</strong>\nA high-class Saiyan is able to control their abilities and weaknesses, unlike the standard low class.</p>\n<p>You automatically pass checks to control the <em>Great Ape</em> <strong>Power-Up</strong> while not in a <strong>Super Saiyan Family Form</strong> and your <em>Saiyan Tail</em> <strong>Racial Feature</strong> no longer enforces <em>Restrained</em> when <em>Grappled</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "saiyan-elite",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Saiyan Tail* Racial Feature",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5630,
+        "endLine": 5636
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

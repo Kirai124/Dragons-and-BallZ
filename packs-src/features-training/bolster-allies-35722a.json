@@ -1,0 +1,40 @@
+{
+  "_id": "35722ae85f28cb63",
+  "name": "Bolster allies",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action choose a number of creatures equal to or less than your <em>Charisma Modifier</em>, within 120 feet who can see or hear you. They gain 1d8 + your <em>Charisma Modifier</em> + your <strong>Hero</strong> level in <strong>Temporary HP</strong>. These last for 1 hour. You must finish a Long Rest before you can use it again.</p>\n",
+      "chat": ""
+    },
+    "identifier": "hero-bolster-allies",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3120,
+        "endLine": 3122
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Hero"
+    }
+  }
+}

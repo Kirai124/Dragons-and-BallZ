@@ -1,0 +1,41 @@
+{
+  "_id": "e6fa72f9b97692ae",
+  "name": "Great Ape (Power-Up)",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Power-Up</em></p>\n<p>When the light of a full moon or another similar celestial body hits a Saiyan’s eyes when they have a tail they become the mighty Great Ape. A Saiyan who does not have the blinded condition can make a <strong>DC 15</strong> <em>Wisdom Save</em> to avoid looking at the object and avoid transforming.</p>\n<ul>\n<li>When this <strong>Form</strong> activates and at the start of each turn you are in this form you must make a <strong>DC 15</strong> <em>Wisdom Saving Throw</em> to remain in control. If you fail this <em>Saving Throw</em>, hand control of your character to the DM for the remainder of the form.</li>\n<li>+2 <strong>Power Bonus</strong></li>\n<li>You gain your <em>Maximum HP</em> in <em>Temporary HP.</em></li>\n<li>+4 Ranks of <strong>Bulk</strong></li>\n<li>Your Size Category becomes <em>Huge</em></li>\n<li>You deal 2d8 to <em>Damage Rolls</em> dealt by your <em>Unarmed Strike</em> and <em>Basic Ki Blasts</em></li>\n<li>You can not use <strong>Techniques</strong> in this form</li>\n<li>Your Natural <strong>AC</strong> becomes 15 plus your <em>Constitution Modifier</em> plus half <em>Proficiency Bonus.</em></li>\n<li>You may be grappled by targets smaller than you (by your tail), you are treated as grappled but do not reduce your <em>Movement Speed</em> to Zero. While grappled in this way melee attacks against you have advantage as they attack your tail.</li>\n<li>You have advantage on attack rolls against the creature that is grappling you.</li>\n<li>This Power-Up lasts for 1 Hour or until you are knocked unconscious, your tail is removed, or the celestial body that triggered the transformation is no longer visible to you for 1 minute.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "great-ape-power-up",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Oozaru",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "",
+    "activation": "bonus",
+    "powerBonus": 2,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Saiyans; Oozaru"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4055,
+        "endLine": 4071
+      },
+      "formFamily": "Oozaru"
+    }
+  }
+}

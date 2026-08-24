@@ -1,0 +1,40 @@
+{
+  "_id": "080c86cf8acee7f8",
+  "name": "Skehmen-jin",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Strength or +1 Dexterity</li>\n</ul>\n<p>You gain the abilities and traits of the slothful Skehmen-jin. You gain their trait of being extremely difficult to kill you gain proficiency in Dexterity Saving throws. If you already have that proficiency you may choose 1 saving throw that you do not already have proficiency in. You also become a perfect being of rest, Whenever you take a short rest you restore full stamina instead of half. Youre demeanor can also change on a dime You gain the ability to, once per long rest, enter an empowered state of “Enraged”. This condition lasts for a number of rounds equal to half your proficiency bonus. Each time you use this feather past the first you gain 2 levels of exhaustion.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-skehmen-jin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1617,
+        "endLine": 1622
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

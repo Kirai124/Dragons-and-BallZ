@@ -1,0 +1,39 @@
+{
+  "_id": "2d520dd86c12314a",
+  "name": "Perfected Ultra Instinct",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: 5 ranks of <em>Ultra Instinct Mastery</em> Feat and <em>Mastered Ultra Instinct</em>.</strong>\nYou have stopped considering Ultra Instinct Omen as a <strong>Form</strong>, now considering it truly as part of your base without any of the drawbacks. You may now go into <em>Ultra Instinct Omen</em> at will. Additionally <em>Ultra Instinct Omen</em> no longer has a <strong>Stamina Upkeep</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "perfected-ultra-instinct",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: 5 ranks of *Ultra Instinct Mastery* Feat and *Mastered Ultra Instinct*.",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6017,
+        "endLine": 6022
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

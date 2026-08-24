@@ -1,0 +1,40 @@
+{
+  "_id": "15f578e23e26d828",
+  "name": "Combat Superiority",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Starting at <strong>2nd Level</strong>, you learn three <strong>Matial Arts Maneuvers</strong> of your choice. Many <strong>Matial Arts Maneuvers</strong> enhance an attack in some way. You can use only one <strong>Matial Arts Maneuver</strong> per attack. You learn two additional <strong>Matial Arts Maneuvers</strong> of your choice at <strong>7th, 10th,</strong> and <strong>15th Level</strong>. Each time you learn new <strong>Matial Arts Maneuvers</strong>, you can also replace one <strong>Matial Arts Maneuver</strong> you know with a different one.\n<strong>Matial Arts Maneuvers</strong> will be detailed at the end of this chapter.</p>\n<h4>Superiority Dice</h4>\n<p>You have four <em>Superiority Dice</em>, which are d8s. A <em>Superiority Die</em> is expended when you use it. You regain all of your expended <em>Superiority Dice</em> when you finish a Short or Long Rest. You gain another <em>Superiority Die</em> at <strong>7th Level</strong> and one more at <strong>15th Level</strong>.</p>\n<h4>Saving Throws</h4>\n<p>Some of your <strong>Matial Arts Maneuvers</strong> require your target to make a saving throw to resist the <strong>Matial Arts Maneuver's</strong> effects. The <em>Saving Throw DC</em> is calculated as follows:\n<strong>Matial Arts Maneuver Save DC</strong> = 8 + your <em>Proficiency Bonus</em> + your <em>Strength</em> or <em>Dexterity Modifier</em> (your choice)</p>\n",
+      "chat": ""
+    },
+    "identifier": "martial-artist-combat-superiority",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2642,
+        "endLine": 2654
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Martial Artist"
+    }
+  }
+}

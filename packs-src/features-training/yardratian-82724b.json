@@ -1,0 +1,40 @@
+{
+  "_id": "82724b6d46ba6dc8",
+  "name": "Yardratian",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Wisdom</li>\n</ul>\n<p>Your Yardratian DNA has manifested as a natural spirit contol. At level 1 you gain 1 Spirit Control Feature of your choice. You also gain an additional feature at Ki Rank 3.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-yardratian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1623,
+        "endLine": 1638
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

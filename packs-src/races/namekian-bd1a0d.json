@@ -1,0 +1,133 @@
+{
+  "_id": "bd1a0d9c45474aa6",
+  "name": "Namekian",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/namekian.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>Physical Description</h3>\n<p>Namekians have primarily green skin, though the whole rainbow exsists among them, with patches of translucent skin that exposes their inner muscles. They all have antennas on their head and large, pointed ears that allow them to hear over great distance.They come in a very large variety of body types ranging from short and round to tall and lean/stocky. Namekians are known for their regenerative abilities and stretchable limbs. They are genderless with no distinguishing traits and reproduce asexually through eggs that come from the mouth.</p>\n<h3>History</h3>\n<p>Namekians are usually very intelligent and gentle creatures. Those that take up fighting usually only do so in order to protect themselves and others. Namekians have much knowledge about alchemy, magic, and technology. At some point, they were a thriving species very involved in trading through space. The species came to fruition through their creation of the dragonballs, powerful orbs that contained wish-granting dragons. Through these means, they were able to make their home a place of many resources.</p>\n<h3>Society</h3>\n<p>Namekians do not have armies or participate in war unless absolutely necessary. The peaceful nature of their species allowed for them to live several generations with little need to protect themselves. Still, every village has a guardian who has been trained in the ways of martial arts and watches over the town. All guardians report to a Guru, usually the oldest and wisest among them, and the creator of the planet’s currently used dragon balls. After the onslaught of Frieza’s men on planet Namek, many were trained in self-defense. This led to the establishment of barracks in each village with small groups of warriors that assist the presiding guardian when necessary.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p>Constitution +1, Wisdom +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>You can speak Common and Namekian.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Arcana</em> and <em>Insight Skills</em></p>\n<h3>Racial Features</h3>\n<h4>Namekian Biology</h4>\n<p>Namekians do not eat and survive only off of water. Due to this liquid nature namekians are able to stretch thier limbs for combat and utility purposes.</p>\n<p>Your <em>Unarmed Strikes</em>, <em>Melee Weapon Attacks</em> and <strong>Melee/Melee Weapon Techniques</strong> gain 5 feet of the <em>Reach Property</em> equal to your <strong>Ki Rank</strong>. When you make a <em>Grapple Check</em> you count as 1 <em>Size Category</em> larger for each rank of <em>Reach Property</em>.</p>\n<h4>Telepathy</h4>\n<p>Namekians can speak telepathically to anyone within a mile that they know well. This range is increased to 10 miles at <strong>Level 5</strong>, Continent-wide at <strong>Level 10</strong>, Planet-wide at <strong>Level 15</strong>, and Galaxy-wide at <strong>Level 20</strong>.</p>\n<p>If you can <strong>Sense Ki</strong> you can use this feature on any creature who's ki you can sense.</p>\n<h4>Namekian Fusion</h4>\n<p>Namekians have the unique ability to assimilate others of their race into themselves to become what is known as a Super Namekian. As an Action you may fuse with one willing Namekian that you can touch.  Once you Fuse with another namekian you gain these benefits:</p>\n<ul>\n<li>You gain the <em>Super Namekian</em> <strong>Transformation</strong> and the ability to learn <em>Namekian Split</em>.</li>\n<li>You learn all <strong>Techniques</strong> and <em>Languages</em> of the assimilated. If the assimilated has more <em>Mastery Ranks</em> in a <strong>Technique</strong> that you know, you gain those <em>Mastery Ranks</em>.</li>\n<li>If they have any <strong>Ability Scores</strong> higher than yours you may add +1 to those <strong>Ability Scores</strong>, this may increase it above your <em>Ability Score Maximum</em>.<ul>\n<li>If none of their <strong>Ability Scores</strong> surpass yours you gain +1 to whichever <strong>Ability Score</strong> was their highest.</li>\n</ul>\n</li>\n<li>You may only assimilate a number of Namekians equal to your <em>Constitution Modifier</em>.</li>\n<li>You gain the <strong>Fusion Tag</strong> and lose all benefits from this feature that you have gained if you ever lose this Tag, expelling those you have fused with in this manner in the proccess.</li>\n</ul>\n<h4>True Namekian Split</h4>\n<p>Namekians have the ability to permenantly split themselves into 2 diametricly opposed people.\nAt an action on your turn, you may split into 2. <strong>Class Levels, HP, KI,</strong> and <strong>Stamina</strong> are split as evenly as possible amoung the now 2 unique entities.</p>\n<p>If these two entities were to fuse through Namekian Fusion then both characters are fully added together when one is assimilated.</p>\n<h4>Namekian Type</h4>\n<p>At <strong>Level 1</strong> a Namekian must designate what type: Warrior Clan, Dragon Clan, or Dark Namekian.</p>\n<h5>Warrior Clan</h5>\n<p>Namekians born for combat that can utilize the monsterous Titan form.</p>\n<ul>\n<li>Increase <em>Dexterity</em> and <em>Strength Scores</em> by 1.</li>\n<li>You gain the <em>Titan Namekian</em> <strong>Transformation</strong>.</li>\n<li>Warriors Regeneration<ul>\n<li>A Warrior can use his natural energy to repair his body. As an Action you may heal yourself 1 <strong>HP</strong> for every 2 <strong>Ki</strong> you spend.</li>\n<li>As an Action you may regenerate a lost limb for 30 <strong>Ki</strong>.</li>\n</ul>\n</li>\n</ul>\n<h5>Dragon Clan</h5>\n<p>Those attuned to the spirit of Zalama the dragon god. these namekians are spiritually gifted and some even manage to emulate Zalama himself by creating Dragon Balls.</p>\n<ul>\n<li>Increase <em>Intellegence</em> and <em>Wisdom Scores</em> by 1</li>\n<li>Dragon's Blessing<ul>\n<li>A Dragon Namekian can use his natural energy to repair his body at an alarming rate. As an action you may heal yourself 1 <strong>HP</strong> for every 1 <strong>Ki</strong> you spend.</li>\n<li>As an Action you may regenerate a limb that you have lost for 15 <strong>Ki</strong>.</li>\n<li>A Dragon Namekian is even capable of healing others with a touch. As an action you may heal a creature that you can touch for 1 <strong>HP</strong> for every 2 <strong>Ki</strong> you spend.</li>\n</ul>\n</li>\n</ul>\n<h5>Dark Namekian</h5>\n<p>These Namekians are hardier than most and are usually demonized in Namekian Society due to their duller colors and lack of distinct Namekian abilities. Dark Namekians have mastered their own regenerative capability, some say they evolved purely to combat the raging discrimination they once faced.</p>\n<ul>\n<li>Increase <em>Constitution Score</em> by 2</li>\n<li>Demonic Regeneration<ul>\n<li>You may heal yourself as an Action or Bonus Action, 2 <strong>HP</strong> for every 1 <strong>Ki</strong> spent.</li>\n<li>You can use an action and 5 <strong>Ki</strong> to regenerate a lost limb.</li>\n</ul>\n</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "namekian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "cc99d090008a48e9": {
+        "_id": "cc99d090008a48e9",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "con": 1,
+            "wis": 1
+          },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Constitution +1, Wisdom +1"
+      },
+      "edce8aaa3d4bac76": {
+        "_id": "edce8aaa3d4bac76",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:arc",
+            "skills:ins"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Arcana and Insight Skills"
+      },
+      "df258d381a952033": {
+        "_id": "df258d381a952033",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "languages:standard:common",
+            "languages:standard:namekian"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and Namekian."
+      },
+      "5a33d5f449e10ebb": {
+        "_id": "5a33d5f449e10ebb",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.6ae72278df6e28fd",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.733f213099167a59",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.05d734cce700cffe",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.bccd74ad815d0183",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.0886195b61302998",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1911,
+        "endLine": 1999
+      }
+    }
+  }
+}

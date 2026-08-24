@@ -1,0 +1,143 @@
+{
+  "_id": "8c4a4d48be6ae6f9",
+  "name": "Beastmen",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Humanoid</strong></p>\n<h3>Physical Description</h3>\n<p>Humanoid animals, ranging in height similar to Earthlings.</p>\n<h3>History</h3>\n<p>A company known as &quot;Magical Pharmaceuticals&quot; produced a drug known as Animorphaline that caused temporary shapeshifting into a humanoid beast form. During the production of this drug a knock-off was released and sold as the original product that forced permanant transformation into this form.</p>\n<h3>Society</h3>\n<p>After the incident many Earthlings and other humanoid races become these Beastmen and have since reintegrated into society, raising families and continuing their lives.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase</h4>\n<p>Increase all <strong>Ability Scores</strong> by 1 &lt;u&gt;OR&lt;/u&gt; increase 2 by 1 and choose a <strong>Feat</strong>.</p>\n<h4>Speed</h4>\n<p>You have a <em>Base Movement Speed</em> of 35 feet.</p>\n<h4>Language</h4>\n<p>You can speak Common and 1 other language of your choice.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Nature</em> and <em>Survival Skills.</em></p>\n<h3>Racial Features</h3>\n<p><strong>If you take a Sub-Race with this race you may not replace Animal Biology</strong></p>\n<h4>Animal Reflexes</h4>\n<p>Your animal nature gives you senses and reaction time. You gain a bonus to your <strong>AC</strong> equal to your <strong>Ki Rank</strong>.</p>\n<h4>Evolutionary Tactics</h4>\n<p>You are driven by your instincts to improve and adapt to survive. You gain a <strong>Technique</strong> every time you <strong>Level-Up</strong> to 20 and 2 <strong>Techniques</strong> every level beyond. You also gain 1 additional <em>Training Boon</em> each time you have a <strong>Training Arc</strong>.</p>\n<h4>Animal Nature</h4>\n<p>You have the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the GM's discretion.</p>\n<h4>Predator or Prey</h4>\n<p><strong>Choose 1</strong></p>\n<h5>Predator</h5>\n<p>You have advantage on <em>Unarmed Strikes</em> and <em>Weapon Attack Rolls</em> against a creature if at least one of your allies is within 5 feet of the creature you are targeting.</p>\n<h5>Prey</h5>\n<p>You can take the <strong>Dash, Dodge, or Disengage Actions</strong> as a Bonus Action on your turn.</p>\n<h4>Animal Biology</h4>\n<p><strong>You must choose 1</strong></p>\n<p>Your animal nature has resulted in you taking the distinct form of a family of animals, granting you certain features.</p>\n<h5>Mammalian</h5>\n<p>You have a set of powerful claws. Your <em>Unarmed Strikes</em> can deal <em>Slashing Damage</em>.</p>\n<h5>Fish</h5>\n<p>You are capable of breathing air as well as underwater. You also gain a 30 foot <em>Swim Speed</em> that increases by 15 feet each time your <strong>Ki Rank</strong> increases.</p>\n<h5>Avian</h5>\n<p>You are a master of arial combat. You gain a 30 foot <em>Fly Speed.</em> You may only use this <em>Fly Speed</em> while you are not wielding a <em>Weapon</em> in your hand. Your <strong>AC</strong> increases while in the air by one third of your <em>Proficiency Modifier</em>, rounded down.</p>\n",
+      "chat": ""
+    },
+    "identifier": "beastmen",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "35"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Humanoid"
+    },
+    "advancement": {
+      "2f293b0871a1bd3b": {
+        "_id": "2f293b0871a1bd3b",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 1,
+            "dex": 1,
+            "con": 1,
+            "int": 1,
+            "wis": 1,
+            "cha": 1
+          },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Increase all **Ability Scores** by 1 <u>OR</u> increase 2 by 1 and choose a **Feat**. The handbook also permits its listed alternate feat option; this advancement uses the all-scores +1 option."
+      },
+      "e277f2d5edec0e74": {
+        "_id": "e277f2d5edec0e74",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:nat",
+            "skills:sur"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Nature and Survival Skills."
+      },
+      "d375364f15315000": {
+        "_id": "d375364f15315000",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and 1 other language of your choice."
+      },
+      "6991c293d1429910": {
+        "_id": "6991c293d1429910",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5fddfb6b1f3a623c",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f9515e5d110c0c3d",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d82dc084f7c14d3b",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.317109fa224563e4",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.4bcafeb2c360d1dc",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 738,
+        "endLine": 791
+      }
+    }
+  }
+}

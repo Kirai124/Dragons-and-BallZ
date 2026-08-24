@@ -1,0 +1,33 @@
+{
+  "_id": "d3e283834f15e3dd",
+  "name": "Telepathy",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have been taught to reach outward to communicate telepathically. You may now communicate telepathically with any creature that you can sense through <em>Sense Ki.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "telepathy",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Guardian of the Dragon Balls"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3613,
+        "endLine": 3627
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "6f95bf0477a28ce2",
+  "name": "Destructo Disk",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  20 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self (90 foot line)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>A frisbee like attack that can cut through almost anything. Targets in range must make a <em>Dexterity Saving Throw</em> dealing 6d12 <em>Ki Damage</em> on a fail, no damage on a success. This <strong>Technique</strong> deals double damage to structures and <em>Constructs</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "destructo-disk",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "omni",
+    "kiCost": "20 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (90 foot line)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7842,
+        "endLine": 7857
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

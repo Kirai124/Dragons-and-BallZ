@@ -1,0 +1,27 @@
+<fieldset>
+    <legend>{{ localize "DBZ.ITEM.FormDetails" }}</legend>
+    {{ formField fields.category value=source.category choices=formCategories localize=true rootId=partId }}
+    {{ formField fields.rank value=source.rank placeholder="—" rootId=partId }}
+    {{ formField fields.family value=source.family rootId=partId }}
+    {{ formField fields.activation value=source.activation choices=formActivations localize=true rootId=partId }}
+    {{ formField fields.resource value=source.resource choices=formResources localize=true rootId=partId }}
+    <div class="form-group split-group">
+        <label>{{ localize "DBZ.ITEM.FormCosts" }}</label>
+        <div class="form-fields">
+            {{ formField fields.activationCost value=source.activationCost label="DBZ.ITEM.ActivationCost" localize=true classes="label-top" rootId=partId }}
+            {{ formField fields.upkeepCost value=source.upkeepCost label="DBZ.ITEM.UpkeepCost" localize=true classes="label-top" rootId=partId }}
+        </div>
+    </div>
+    {{ formField fields.powerBonus value=source.powerBonus rootId=partId }}
+    {{ formField fields.requirements value=source.requirements rootId=partId }}
+    {{ formField fields.tags value=source.tags rootId=partId }}
+</fieldset>
+
+<fieldset>
+    <legend>{{ localize "DBZ.ITEM.FormTags" }}</legend>
+    {{ formField fields.godly value=source.godly input=inputs.createCheckboxInput rootId=partId }}
+    {{ formField fields.berserker value=source.berserker input=inputs.createCheckboxInput rootId=partId }}
+    {{#if source.berserker}}
+    {{ formField fields.berserkDC value=source.berserkDC rootId=partId }}
+    {{/if}}
+</fieldset>

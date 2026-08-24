@@ -1,0 +1,39 @@
+{
+  "_id": "3c160ec1d89f1b48",
+  "name": "Emperial Wrath",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires &quot;Hubris of Midus&quot; Feat.</strong>\nHistory is written by the powerful. It's time to change the books.</p>\n<p>You gain the <em>Obsidian Form</em> <strong>Power-Up</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "emperial-wrath",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires \"Hubris of Midus\" Feat.",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5795,
+        "endLine": 5801
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

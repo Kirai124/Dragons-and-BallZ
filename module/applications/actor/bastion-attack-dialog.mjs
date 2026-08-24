@@ -38,7 +38,7 @@ export default class BastionAttackDialog extends Dialog5e {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/apps/bastion-attack-dialog.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/bastion-attack-dialog.hbs"
     }
   };
 

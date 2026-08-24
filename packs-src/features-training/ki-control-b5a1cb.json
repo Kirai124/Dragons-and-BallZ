@@ -1,0 +1,39 @@
+{
+  "_id": "b5a1cb039d677752",
+  "name": "Ki Control",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have gained an intimate knowledge of how to sense ki around you and hide your own from detection.</p>\n<h4>Sense Ki</h4>\n<p>As an Action on your turn, you may feel outwards for living creatures or creatures with a <em>Power Level</em> that are not <em>Concealing</em> their <em>Ki</em> or are an <em>Android</em>, <em>Cyborg</em>, or otherwise a <em>Construct</em>.</p>\n<p>Make a <em>Wisdom (Perception) Check</em> at a range listed below based on your <strong>Ki Rank</strong>. You have an inate sense of the location and <em>Power Level</em> of any creature you sense with this method so long as you hold <em>Concentration</em> and they are within your range.</p>\n<p>Creatures have a unique <em>Ki Signature</em> that you are capable of recognizing when felt at a later time. You may be able to feel similarities between the <em>Ki Signatures</em> of family members and particularly powerful individuals can even make their <em>Alignment</em> known upon sensing their <em>Ki Signature.</em></p>\n<ul>\n<li>At rank 1 you have a range of your current Continent</li>\n<li>At rank 2 you have a range of your current Planet</li>\n<li>At rank 3 you have a range of your current Solar System</li>\n<li>At rank 4 you have a range of your current Galaxy</li>\n</ul>\n<h4>Conceal Ki</h4>\n<p>As an Action on your turn you may attempt to pool together all of your energy so that it can not be sensed. Make a <em>Wisdom (Ki Control) Check</em> to supress your <em>Power Level</em> and set a <strong>DC</strong> for any <em>Sense Ki Checks</em> against you. You may also lower your <em>Power Level</em> to any number below your current <em>Power Level</em>. These effects last so long as you hold <em>Concentration</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ki-control",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6178,
+        "endLine": 6198
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

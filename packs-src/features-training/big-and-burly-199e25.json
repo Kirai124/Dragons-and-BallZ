@@ -1,0 +1,40 @@
+{
+  "_id": "199e25e3d67bdce2",
+  "name": "Big and Burly",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>A grey flare's his energy eager to take every shot flying his way, once the barrage ends it's his chance to close the distance and once he did that, the fight was over.</p>\n<p>A young Saiyan roars in excitement, this was the first time he had fought all out in months, too bad none of them could deal any serious damage against him.</p>\n<p>Bruisers are terrors of the battlefield, capable of resisting attacks and dishing out incredible melee damage. Many bruisers become seen as paragons of pure strength.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bruiser-big-and-burly",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2946,
+        "endLine": 2952
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Bruiser"
+    }
+  }
+}

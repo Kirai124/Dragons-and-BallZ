@@ -1,0 +1,42 @@
+{
+  "_id": "96c1487430da8d2b",
+  "name": "Clothes, Fine",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ150,000 | <strong>Weight:</strong> 6 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "clothes-fine",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 6.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 150000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9723,
+        "endLine": 9775
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

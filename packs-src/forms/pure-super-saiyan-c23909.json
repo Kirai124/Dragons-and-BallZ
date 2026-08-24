@@ -1,0 +1,41 @@
+{
+  "_id": "c23909a95fa4427b",
+  "name": "Pure Super Saiyan",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<p>The ancient saiyan’s more powerful version of super Saiyan, the Saiyan’s eyes turn a shining emerald, and their hair spikes up and turns such a deep gold it appears to be solid gold. Their aura is enough to levitate small rocks.</p>\n<ul>\n<li>+1 <strong>Power Bonus</strong></li>\n<li>You deal +1d6 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 10 ft.</li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "pure-super-saiyan",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Ancient Super Saiyan",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "action",
+    "powerBonus": 1,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Ancient Saiyan; Ancient Super Saiyan"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4400,
+        "endLine": 4410
+      },
+      "formFamily": "Ancient Super Saiyan"
+    }
+  }
+}

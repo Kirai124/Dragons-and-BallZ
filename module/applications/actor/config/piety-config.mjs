@@ -16,7 +16,7 @@ export default class PietyConfig extends BaseConfigSheet {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/actors/config/piety-config.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/config/piety-config.hbs"
     }
   };
 

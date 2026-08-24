@@ -1,0 +1,39 @@
+{
+  "_id": "5b18dc6646c9a127",
+  "name": "Beyond SSGSS 2",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Beyond SSGSS</em> and <em>Super Saiyan 3***\nYou have the ability to use *Super Saiyan 3 and Super Saiyan God</em> as a **Combination Transformation</strong>. This <strong>Combination Form</strong> is known as <em>Super Saiyan God Super Saiyan 3</em> or shortened to <em>Super Saiyan Blue 3.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "beyond-ssgss-2",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Beyond SSGSS* and *Super Saiyan 3",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5663,
+        "endLine": 5677
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

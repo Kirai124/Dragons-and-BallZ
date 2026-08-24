@@ -1,0 +1,33 @@
+{
+  "_id": "44b22c206a943e71",
+  "name": "Milk Run",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The essence of the <em>Milk Run</em> is simple, your task is to deliver all of the milk in to the population of an island in a single day on foot. By spending 1 day you may attempt 3 consecutive <strong>DC 15</strong> <em>Athletics Checks</em> to succeed this task.</p>\n",
+      "chat": ""
+    },
+    "identifier": "milk-run",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "ordeal",
+    "boonCost": 0,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "ordeal"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3327,
+        "endLine": 3329
+      }
+    }
+  }
+}

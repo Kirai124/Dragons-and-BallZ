@@ -20,10 +20,10 @@ export default class CalendarSettingsConfig extends BaseSettingsConfig {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/settings/base-config.hbs"
+      template: "systems/dragons-and-ballz/templates/settings/base-config.hbs"
     },
     preferences: {
-      template: "systems/dnd5e/templates/settings/base-config.hbs"
+      template: "systems/dragons-and-ballz/templates/settings/base-config.hbs"
     },
     footer: {
       template: "templates/generic/form-footer.hbs"

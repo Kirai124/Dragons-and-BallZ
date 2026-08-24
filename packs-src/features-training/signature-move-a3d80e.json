@@ -1,0 +1,40 @@
+{
+  "_id": "a3d80eb42f2c457e",
+  "name": "Signature  Move",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>10th Level</strong> you may take a Long Rest to familiarize yourself with a specific <strong>Technique</strong> for constant use. Choose a <strong>Ki Technique</strong> that has a <em>Saving Throw</em> or an <em>Attack Roll</em>, you gain a <em>Static Bonus</em> to that <strong>Technique</strong> equal to your <strong>Ki Rank</strong>.\nYou may take a Long Rest and change your Signature Move.</p>\n<p>At <strong>17th Level</strong> you may designate 2 additional <strong>Techniques</strong> to gain this benefit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "blaster-signature-move",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2905,
+        "endLine": 2911
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Blaster"
+    }
+  }
+}

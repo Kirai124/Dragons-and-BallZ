@@ -1,0 +1,39 @@
+{
+  "_id": "201768cbe75734cc",
+  "name": "Skilled",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in any combination of three skills or tools of your choice.</p>\n",
+      "chat": ""
+    },
+    "identifier": "skilled",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5429,
+        "endLine": 5431
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

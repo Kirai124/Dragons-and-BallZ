@@ -1,0 +1,40 @@
+{
+  "_id": "93554a3e197b42c1",
+  "name": "Natural Talent",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain an <em>Ability Score Improvement</em> at <strong>level 1</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "earthling-natural-talent",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 859,
+        "endLine": 860
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Earthling"
+    }
+  }
+}

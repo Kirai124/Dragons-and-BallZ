@@ -23,7 +23,7 @@ export default class EnchantActivity extends ActivityMixin(BaseEnchantActivityDa
   static metadata = Object.freeze(
     foundry.utils.mergeObject(super.metadata, {
       type: "enchant",
-      img: "systems/dnd5e/icons/svg/activity/enchant.svg",
+      img: "systems/dragons-and-ballz/icons/svg/activity/enchant.svg",
       title: "DND5E.ENCHANT.Title",
       hint: "DND5E.ENCHANT.Hint",
       sheetClass: EnchantSheet,

@@ -1,0 +1,39 @@
+{
+  "_id": "ffcdb9eb5210d70a",
+  "name": "Solar Flare",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 12 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Self (60 foot cone)</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Omni</li>\n</ul>\n<p>The user concentrates Ki in front of their eyes and sends a blinding light forward. All targets in range must make a <em>Constitution Saving Throw</em> or be <em>Blinded</em> until the end of their next turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "solar-flare",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "omni",
+    "kiCost": "12 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (60 foot cone)",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8011,
+        "endLine": 8023
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

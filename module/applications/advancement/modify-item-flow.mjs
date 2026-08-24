@@ -9,7 +9,7 @@ export default class ModifyItemFlow extends AdvancementFlow {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/advancement/modify-item-flow.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/modify-item-flow.hbs"
     }
   }
 

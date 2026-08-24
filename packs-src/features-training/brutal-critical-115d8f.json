@@ -1,0 +1,40 @@
+{
+  "_id": "115d8f146cf4ca4f",
+  "name": "Brutal Critical",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at <strong>9th Level</strong>, you can roll one additional weapon damage die when determining the extra damage for a <strong>Critical Hit</strong> a <em>Melee Attack</em> or <strong>Melee/Melee Weapon Technique</strong>.</p>\n<p>This increases to two additional dice at <strong>13th Level</strong> and three additional dice at <strong>17th Level</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bruiser-brutal-critical",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3028,
+        "endLine": 3031
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Bruiser"
+    }
+  }
+}

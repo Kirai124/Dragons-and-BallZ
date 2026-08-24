@@ -1,0 +1,40 @@
+{
+  "_id": "b1a4827e9aa36f67",
+  "name": "Ki Master",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>20th Level</strong> once per Long Rest, when you hit enter <em>Ki Exhaustion</em> you may instead choose to regain half of your <strong>Maximum Ki</strong> as <strong>Temporary Ki</strong>. This <strong>Temporary Ki</strong> lasts for 1 minute of combat before dispelling. You may not gain <strong>Temporary Ki</strong> in any way while this <strong>Feature</strong> is ongoing.</p>\n",
+      "chat": ""
+    },
+    "identifier": "blaster-ki-master",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2914,
+        "endLine": 2918
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Blaster"
+    }
+  }
+}

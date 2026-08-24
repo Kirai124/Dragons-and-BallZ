@@ -1,0 +1,42 @@
+{
+  "_id": "d004733155e071f6",
+  "name": "Tier 1",
+  "type": "tool",
+  "img": "systems/dragons-and-ballz/icons/svg/items/tool.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ250,000 | <strong>Weight:</strong> -</p>\n",
+      "chat": ""
+    },
+    "identifier": "tier-1",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 250000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9848,
+        "endLine": 9871
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "6bf67834347c314b",
+  "name": "Greatsword",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 500,000 Zeni | <strong>Damage:</strong> 2d6 Slashing | <strong>Weapon Properties:</strong> Heavy, Two-Handed</p>\n",
+      "chat": ""
+    },
+    "identifier": "greatsword",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 500000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9488,
+        "endLine": 9507
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

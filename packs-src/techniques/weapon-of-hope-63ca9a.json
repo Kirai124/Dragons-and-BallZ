@@ -1,0 +1,39 @@
+{
+  "_id": "63ca9aec1f96c12b",
+  "name": "Weapon of Hope",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 100 Ki</li>\n<li><strong>Casting Prerequisite:</strong>  1 <em>Simple or Martial Weapon</em> that you are proficient with &amp; Spirit Bomb</li>\n<li><strong>Casting Time:</strong> Special</li>\n<li><strong>Range:</strong> Self</li>\n<li><strong>Duration:</strong> Special</li>\n<li><strong>Chargeable:</strong> No</li>\n</ul>\n<p>When you would absorb a <em>Spirit Bomb</em>, you may channel the ki into your weapon. Your <em>Weapon Damage Die</em> becomes half the <em>Damage</em> of the <em>Spirit Bomb</em>. This <strong>Technique</strong> has a duration of 1 Round per <em>Spirit Bomb Size</em>. Once the duration of this <strong>Technique</strong> ends, you gain 2 <em>Ranks of Exhaustion</em> per size of the <em>Spirit Bomb</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "weapon-of-hope",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "weapon",
+    "kiCost": "100 Ki",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Special",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Weapon* that you are proficient with & Spirit Bomb",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7580,
+        "endLine": 7590
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

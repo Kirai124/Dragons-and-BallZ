@@ -1,0 +1,39 @@
+{
+  "_id": "e16062c222e26722",
+  "name": "Special Beam Cannon",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  Special</li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self (100 foot line)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Beam</li>\n</ul>\n<p>A very powerful move that resembles a drill. Targets in range must make a <em>Dexterity Saving Throw</em> or take Xd10 <em>Ki Damage</em> on a hit, where X is for how many sets of 5 <strong>Ki</strong> you expend during the casting of this <strong>Technique</strong>, Half on a save.</p>\n<p>The maximum <em>Damage Dice Amount</em>, before charging is calculated, can not exceed your total <strong>Character Level</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "special-beam-cannon",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "beam",
+    "kiCost": "Special",
+    "castingTime": "1 Action",
+    "range": "Self (100 foot line)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8362,
+        "endLine": 8376
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

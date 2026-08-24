@@ -1,0 +1,42 @@
+{
+  "_id": "44b804734c462df6",
+  "name": "Rifle Magazine",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 80,000 Zeni</p>\n",
+      "chat": ""
+    },
+    "identifier": "rifle-magazine",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 80000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9437,
+        "endLine": 9445
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

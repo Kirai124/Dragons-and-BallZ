@@ -1,0 +1,33 @@
+{
+  "_id": "4533c49525d38fbb",
+  "name": "Spirit Amplification",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you use your Action for <em>Basic Ki Blasts</em> or <strong>Ki Techniques</strong>, you may spend <strong>Stamina</strong> to give yourself a <em>Static Bonus</em> equal to the <strong>Stamina</strong> spent, max of 10.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-amplification",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3438,
+        "endLine": 3440
+      }
+    }
+  }
+}

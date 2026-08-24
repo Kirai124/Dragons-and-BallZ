@@ -1,0 +1,40 @@
+{
+  "_id": "6bd8b0d74e8cedd6",
+  "name": "Masters of Spirit",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have spent your life in tune with your own spirit and due to this you can manipulate it with little effort.</p>\n<p>You gain the option to reduce the casting time of any <em>Spirit Control</em> <strong>Trained Feature</strong> you use by 1 step.</p>\n<p>(Action&gt;Bonus Action&gt;Reaction)</p>\n",
+      "chat": ""
+    },
+    "identifier": "yardratian-masters-of-spirit",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2199,
+        "endLine": 2216
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Yardratian"
+    }
+  }
+}

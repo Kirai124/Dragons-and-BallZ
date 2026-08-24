@@ -1,0 +1,33 @@
+{
+  "_id": "5ed0b885be9b6573",
+  "name": "Kai-Kai",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>For 7 <strong>Stamina</strong> you may cast the <em>Teleportation</em> <strong>Spell</strong> with Advantage on your <em>Destination Roll</em>. This may move you between the <em>Other World</em>, <em>Mortal Realm</em>, and <em>Land of the Kais</em> but not between <em>Universes</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "kai-kai",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Supreme Kai"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3662,
+        "endLine": 3664
+      }
+    }
+  }
+}

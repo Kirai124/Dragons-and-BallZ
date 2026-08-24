@@ -1,0 +1,39 @@
+{
+  "_id": "ad81fb854cb93699",
+  "name": "Vulcan Cannon",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  14 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Ranged Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong> 3x Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>You begin to charge your weapon to make a barrage of projectiles launched towards the enemy. Make a <em>Combo Attack Roll</em> against a target that you can see in range, on a hit dealing your <em>Weapon Damage Die</em> + 4d6 <em>Ki Damage</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "vulcan-cannon",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "weapon",
+    "kiCost": "14 Ki",
+    "castingTime": "1 Action",
+    "range": "3x Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Ranged Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7400,
+        "endLine": 7411
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

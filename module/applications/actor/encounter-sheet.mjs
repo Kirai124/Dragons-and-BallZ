@@ -33,26 +33,26 @@ export default class EncounterActorSheet extends MultiActorSheet {
   /** @override */
   static PARTS = {
     header: {
-      template: "systems/dnd5e/templates/actors/encounter/header.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/encounter/header.hbs"
     },
     tabs: {
-      template: "systems/dnd5e/templates/shared/horizontal-tabs.hbs",
+      template: "systems/dragons-and-ballz/templates/shared/horizontal-tabs.hbs",
       templates: ["templates/generic/tab-navigation.hbs"]
     },
     members: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/encounter/members.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/encounter/members.hbs",
       scrollable: [""]
     },
     inventory: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/tabs/actor-inventory.hbs",
-      templates: ["systems/dnd5e/templates/inventory/inventory.hbs"],
+      template: "systems/dragons-and-ballz/templates/actors/tabs/actor-inventory.hbs",
+      templates: ["systems/dragons-and-ballz/templates/inventory/inventory.hbs"],
       scrollable: [""]
     },
     description: {
       container: { classes: ["tab-body"], id: "tabs" },
-      template: "systems/dnd5e/templates/actors/group/biography.hbs",
+      template: "systems/dragons-and-ballz/templates/actors/group/biography.hbs",
       scrollable: [""]
     }
   };

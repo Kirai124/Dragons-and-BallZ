@@ -15,6 +15,7 @@
  * @property {string} hd.denomination              Denomination of hit dice available as defined in `DND5E.hitDieTypes`.
  * @property {number} hd.spent                     Number of hit dice consumed.
  * @property {number} levels                       Current number of levels in this class.
+ * @property {number} kiModifier                   Ki gained per class level in addition to CON and WIS modifiers.
  * @property {object} primaryAbility
  * @property {Set<string>} primaryAbility.value    List of primary abilities used by this class.
  * @property {boolean} primaryAbility.all          If multiple abilities are selected, does multiclassing require all

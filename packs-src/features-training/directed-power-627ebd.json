@@ -1,0 +1,39 @@
+{
+  "_id": "627ebd0a49a76e3f",
+  "name": "Directed Power",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You may now add half of your <strong>Power Bonus</strong> to <em>Athletics</em> and <em>Acrobatics Skill Checks</em>. You may take this <strong>Heroic Feature</strong> a second time to add your entire <strong>Power Bonus</strong> instead of half.</p>\n",
+      "chat": ""
+    },
+    "identifier": "directed-power",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6120,
+        "endLine": 6122
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "5a271ba8c3a6ac44",
+  "name": "Chronin",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Dexterity</li>\n</ul>\n<p>With the blood of the Adapting Chronins you gain their innate ability to control time and gain access to Chronal Manipulation. The chronins are able to adapt quickly and learn as they fight Whenever you are hit with a critical hit roll a d20 check with a DC starting at 12, increasing by 2 each time you succeed. On a Successful check you gain 1 training boon. These boons must be used immediately at the start of your next turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-chronin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1540,
+        "endLine": 1544
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

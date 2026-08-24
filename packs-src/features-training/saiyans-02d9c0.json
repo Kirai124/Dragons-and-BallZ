@@ -1,0 +1,40 @@
+{
+  "_id": "02d9c032622077f6",
+  "name": "Saiyans",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 Strength or Dexterity</li>\n</ul>\n<p>You where created with the cells of the prideful warrior race. You gain the saiyans ability to bounce back from near death. Whenever you fail a death saving throw roll a d20 check with a DC starting at 8, increasing by 2 each time you succeed. On a Successful check you gain 1 training boon. You may use this boon immedietly or as soon as you regain conciousness for the chance at a second zenkai boost. You also gain access to the super saiyan transformation up to super saiyan 2.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-saiyans",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1599,
+        "endLine": 1603
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

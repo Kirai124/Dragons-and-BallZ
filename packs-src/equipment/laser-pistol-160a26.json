@@ -1,0 +1,42 @@
+{
+  "_id": "160a265741b63c58",
+  "name": "Laser Pistol",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 500,000 Zeni | <strong>Damage:</strong> 1d6 Radiant | <strong>Weapon Properties:</strong> Ammunition (range 80/320), loading, Magazine (15)</p>\n",
+      "chat": ""
+    },
+    "identifier": "laser-pistol",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 500000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9537,
+        "endLine": 9541
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

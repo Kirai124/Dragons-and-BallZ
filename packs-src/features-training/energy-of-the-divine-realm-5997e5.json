@@ -1,0 +1,40 @@
+{
+  "_id": "5997e56e41712453",
+  "name": "Energy of the Divine Realm",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>When you use your Action to take the <em>Attack Action</em> or use a <strong>Technique</strong>, you may also expend your Bonus Action to empower it with divine energy. Change the <em>Damage Type</em> of the attack you are using to <em>Radiant Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "shinling-energy-of-the-divine-realm",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1264,
+        "endLine": 1275
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Shinling"
+    }
+  }
+}

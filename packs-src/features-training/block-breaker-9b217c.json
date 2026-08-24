@@ -1,0 +1,40 @@
+{
+  "_id": "9b217ccdc6828f81",
+  "name": "Block Breaker",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Starting at <strong>7th Level</strong>, once per Long Rest, when a target attempts to <strong>Block</strong> a <em>Melee Attack</em> or <strong>Melee/Melee Weapon Technique</strong> you may expend your reaction to power through, negating their <strong>Block</strong>.</p>\n<p>You gain an additional use of this <strong>Feature</strong> at <strong>11th Level</strong> and it recharges on a Short Rest at 15th Level.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bruiser-block-breaker",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3022,
+        "endLine": 3027
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Bruiser"
+    }
+  }
+}

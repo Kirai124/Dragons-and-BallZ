@@ -1,0 +1,42 @@
+{
+  "_id": "1036306ffdbfd2c1",
+  "name": "Laser Sniper Magazine",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 200,000 Zeni</p>\n",
+      "chat": ""
+    },
+    "identifier": "laser-sniper-magazine",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9437,
+        "endLine": 9445
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

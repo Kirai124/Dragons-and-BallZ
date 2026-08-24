@@ -1,0 +1,42 @@
+{
+  "_id": "bc6b6eb34d4e64c5",
+  "name": "Pick, miner's",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ20,000 | <strong>Weight:</strong> 10 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "pick-miner-s",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 10.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9784,
+        "endLine": 9815
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

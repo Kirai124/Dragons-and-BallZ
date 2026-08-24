@@ -1,0 +1,40 @@
+{
+  "_id": "ba6455ddb3a2bfaa",
+  "name": "Majin Regenerate",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your body is capable of reconstructing itself. As an Action you can heal yourself an amount equal to Ki points spent. You can spend <strong>Ki</strong> when you would hit 0 <strong>HP</strong> equal to the amount of <em>Damage</em> that would put you below 1, to instead drop to 1 <strong>HP</strong>.</p>\n<p>At <strong>Level 5</strong>, so long as you are not under the effects of <em>Ki Exhaustion,</em> you may spend a Bonus Action to regenerate a lost limb.</p>\n",
+      "chat": ""
+    },
+    "identifier": "majin-majin-regenerate",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1868,
+        "endLine": 1881
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Majin"
+    }
+  }
+}

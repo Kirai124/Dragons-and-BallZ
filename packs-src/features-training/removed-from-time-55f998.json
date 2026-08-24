@@ -1,0 +1,33 @@
+{
+  "_id": "55f998016a926153",
+  "name": "Removed From Time",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>3 Time Points</em>\nThe user can remove himself from the prime material plane, temporarily allowing attacks to pass right through you. You are still visible and can still be seen and heard.</p>\n<p>As a Reaction on your turn whenever you are subject to an <em>Attack Roll</em> or forced to make a <em>Saving Throw</em>, you may cause all effects to miss you until the start of your next turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "removed-from-time",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Time Skip"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3502,
+        "endLine": 3508
+      }
+    }
+  }
+}

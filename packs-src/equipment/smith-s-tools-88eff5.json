@@ -1,0 +1,42 @@
+{
+  "_id": "88eff54a0e47c461",
+  "name": "Smith's tools",
+  "type": "tool",
+  "img": "systems/dragons-and-ballz/icons/svg/items/tool.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ200,000 | <strong>Weight:</strong> 8 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "smith-s-tools",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 8.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9821,
+        "endLine": 9840
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

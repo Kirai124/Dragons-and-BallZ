@@ -1,0 +1,39 @@
+{
+  "_id": "6d0217cbb8b81d57",
+  "name": "Burning Rush",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  20 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>          Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A flurry of flaming strikes at the opponent. Roll 4 <em>Combo Attack Rolls</em> to any target in your melee range dealing 2d6 <em>Fire Damage</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "burning-rush",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "20 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6729,
+        "endLine": 6740
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

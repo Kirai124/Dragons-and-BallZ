@@ -1,0 +1,39 @@
+{
+  "_id": "d418eee7cddae971",
+  "name": "Kamekameha",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 5</li>\n<li><strong>Prerequisites:</strong> none</li>\n<li><strong>Casting Time:</strong> 1 action</li>\n<li><strong>Range:</strong> 60 feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Beam</li>\n</ul>\n<p>A variant of the Kamehameha named by Goten. A smaller, less focused Kamehameha. Make a <em>Beam Attack Roll</em> dealing 2d6 <em>Ki Damage</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "kamekameha",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "beam",
+    "kiCost": "5",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "none",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7648,
+        "endLine": 7660
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

@@ -19,10 +19,10 @@ export default class CastSheet extends ActivitySheet {
   static PARTS = {
     ...super.PARTS,
     effect: {
-      template: "systems/dnd5e/templates/activity/cast-effect.hbs",
+      template: "systems/dragons-and-ballz/templates/activity/cast-effect.hbs",
       templates: [
-        "systems/dnd5e/templates/activity/parts/cast-spell.hbs",
-        "systems/dnd5e/templates/activity/parts/cast-details.hbs"
+        "systems/dragons-and-ballz/templates/activity/parts/cast-spell.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/cast-details.hbs"
       ]
     }
   };

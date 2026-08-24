@@ -1,0 +1,39 @@
+{
+  "_id": "de63718657cf4aa4",
+  "name": "Evil Whirlwind",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  20 ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Self (10 foot radius)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A dynamic attack that kicks the surrounding area to pieces.\nAll Creatures within the range must make a <em>Dexterity Saving Throw</em> or take your <em>Unarmed Strike Damage Die</em> + 3d6 <em>Bludgeoning Damage</em>, half on a save.</p>\n",
+      "chat": ""
+    },
+    "identifier": "evil-whirlwind",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "20 ki",
+    "castingTime": "1 Action",
+    "range": "Self (10 foot radius)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6781,
+        "endLine": 6793
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

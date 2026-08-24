@@ -14,7 +14,7 @@ export default class JournalRulePageSheet extends foundry.applications.sheets.jo
     header: super.EDIT_PARTS.header,
     content: super.EDIT_PARTS.content,
     tooltip: {
-      template: "systems/dnd5e/templates/journal/page-rule-edit.hbs"
+      template: "systems/dragons-and-ballz/templates/journal/page-rule-edit.hbs"
     },
     footer: super.EDIT_PARTS.footer
   };

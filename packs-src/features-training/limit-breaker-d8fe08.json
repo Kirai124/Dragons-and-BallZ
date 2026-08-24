@@ -1,0 +1,39 @@
+{
+  "_id": "d8fe0887886bb384",
+  "name": "Limit Breaker",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>U7/Ancient/Mutant</em></p>\n<p><strong>Requires &quot;Realm of the Gods&quot; and Super Saiyan 4</strong>\nYou have became so used to your transformation combonations that you can even mix the peaks of mortal and gods. You can use Super Saiyan God as a <strong>Power-Up</strong> while <em>Super Saiyan 4</em> is active.</p>\n",
+      "chat": ""
+    },
+    "identifier": "limit-breaker",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires \"Realm of the Gods\" and Super Saiyan 4",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5599,
+        "endLine": 5605
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

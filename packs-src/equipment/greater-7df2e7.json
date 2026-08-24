@@ -1,0 +1,42 @@
+{
+  "_id": "7df2e7ed6d031a9a",
+  "name": "Greater",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ2,000,000 | <strong>Ki Regained:</strong> 4d6+4</p>\n",
+      "chat": ""
+    },
+    "identifier": "greater",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2000000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9560,
+        "endLine": 9566
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

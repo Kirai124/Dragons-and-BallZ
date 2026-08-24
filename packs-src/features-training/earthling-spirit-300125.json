@@ -1,0 +1,40 @@
+{
+  "_id": "3001254dbf77e7ae",
+  "name": "Earthling Spirit",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Increase the <em>Ability Score Maximum</em> of one <strong>Ability Score</strong> of your choice by 2. Additionally at an <em>Ability Score Improvement</em>, you gain 4 points to distribute, rather than the usual 3.</p>\n",
+      "chat": ""
+    },
+    "identifier": "earthling-earthling-spirit",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 863,
+        "endLine": 867
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Earthling"
+    }
+  }
+}

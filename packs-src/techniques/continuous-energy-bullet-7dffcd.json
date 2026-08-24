@@ -1,0 +1,39 @@
+{
+  "_id": "7dffcd4e2b16850a",
+  "name": "Continuous Energy Bullet",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 10 Ki per Ki Blast</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 120 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Barrage</li>\n</ul>\n<p>Fire a barrage of individual ki blasts. Roll a <em>Barrage Attack Roll</em>, each dealing your <em>Basic Ki Blast Damage Die</em> on a hit. You can fire a number of ki blasts up to a max of your <em>Proficiency Bonus.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "continuous-energy-bullet",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "barrage",
+    "kiCost": "10 Ki per Ki Blast",
+    "castingTime": "1 Action",
+    "range": "120 Feet",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7800,
+        "endLine": 7815
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

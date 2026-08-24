@@ -18,7 +18,7 @@ export default class SizeConfig extends AdvancementConfig {
   static PARTS = {
     ...super.PARTS,
     details: {
-      template: "systems/dnd5e/templates/advancement/size-config-details.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/size-config-details.hbs"
     }
   };
 

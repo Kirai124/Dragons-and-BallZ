@@ -1,0 +1,39 @@
+{
+  "_id": "7d32a59037a5c8b6",
+  "name": "Instant Kamehameha",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  25 Ki</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Kamehameha</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  100 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Beam</li>\n</ul>\n<p>Form a powerful but condensed Kamehameha to strike a single target. Make a <em>Beam Attack Roll</em> dealing 6d8 <em>Ki Damage</em> on a successful hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "instant-kamehameha",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "beam",
+    "kiCost": "25 Ki",
+    "castingTime": "1 Action",
+    "range": "100 Feet",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Kamehameha*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8281,
+        "endLine": 8294
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

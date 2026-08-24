@@ -1,0 +1,39 @@
+{
+  "_id": "9ce65d3cb0dcd0d8",
+  "name": "Wrestling Control",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Berserker Super Saiyan***\nYou have learned to draw less power from your seemingly endless reservoir so you can remain in control. Shrinking to barely larger than your standard frames you gain bright green pupils and hair and have control of your mind once again. You gain the *Controlled Super Saiyan</em> **Transformation.</strong></p>\n<p>**This Feat must be obtained through <em>Training Boons</em> or by completing an *Ordeal***</p>\n",
+      "chat": ""
+    },
+    "identifier": "wrestling-control",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Berserker Super Saiyan; This Feat must be obtained through *Training Boons* or by completing an *Ordeal",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5726,
+        "endLine": 5732
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

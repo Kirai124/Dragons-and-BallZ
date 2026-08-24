@@ -1,0 +1,42 @@
+{
+  "_id": "6a2b7c1eff1d3cd8",
+  "name": "Senzu Bean",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ1,000,000,000</p>\n",
+      "chat": ""
+    },
+    "identifier": "senzu-bean",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1000000000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9614,
+        "endLine": 9616
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

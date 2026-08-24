@@ -1,0 +1,39 @@
+{
+  "_id": "475d64f5703ee283",
+  "name": "Aura Shield",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 40 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Reaction, when you would take <em>Damage</em> or when you use a <strong>Defensive Manuever</strong></li>\n<li><strong>Range:</strong> Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Omni</li>\n</ul>\n<p>The user concentrates their aura into a palpable wall of force. For the duration of the <em>Damaging Effect</em> or <strong>Defensive Manuever</strong>, you gain Resistance against one <em>Damage Type</em> of your choice.</p>\n",
+      "chat": ""
+    },
+    "identifier": "aura-shield",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "omni",
+    "kiCost": "40 Ki",
+    "castingTime": "1 Reaction, when you would take *Damage* or when you use a **Defensive Manuever**",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7774,
+        "endLine": 7786
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

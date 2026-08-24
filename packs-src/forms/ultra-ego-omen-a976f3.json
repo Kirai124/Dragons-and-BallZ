@@ -1,0 +1,41 @@
+{
+  "_id": "a976f313918dc1c7",
+  "name": "Ultra Ego Omen",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Transformation</em></p>\n<p>The ultimate destruction ability, though incomplete, the user begins its first stages in the mindset of the God of Destruction with one single goal, to destroy.</p>\n<ul>\n<li>+4 <strong>Power Bonus</strong></li>\n<li>You deal +2d4 to all <em>Damage Rolls</em></li>\n<li>Increase your <em>Movement Speed</em> by 20 ft.</li>\n<li>4 <strong>Stamina Activation</strong>, 3 <strong>Stamina Upkeep</strong></li>\n<li>While in this form you have a rising pool of <em>Destruction Energy</em>. At the end of each of your turns while this is active you gain 1d8 added to this pool of <em>Destruction Energy</em>. You may do the following features with these <em>Destruction Energy Dice</em>:</li>\n</ul>\n<p><em><strong>Destroy.</strong></em> Your fuel your ki attacks with the power of destruction.</p>\n<p>When you land an <em>Attack Roll</em> or <strong>Technique</strong> you may spend any number of dice from your <em>Destruction Energy Dice</em> and add that much <em>Destruction Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ultra-ego-omen",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Ultra Ego",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "action",
+    "powerBonus": 4,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Non-Race Specific; Ultra Ego"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4934,
+        "endLine": 4957
+      },
+      "formFamily": "Ultra Ego"
+    }
+  }
+}

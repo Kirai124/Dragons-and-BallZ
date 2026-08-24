@@ -1,0 +1,33 @@
+{
+  "_id": "687ba58ec086e72f",
+  "name": "Dragon Ball Improvement",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Dragon Ball Creation</strong>\nYou have learned the ancient rite to improve your <em>Set of Dragon Balls</em>. As an hour long <em>Ritual</em>, you may increase the <em>Wish Count</em> by 1 or halve the <em>Recharge Time</em> of your <em>Set of Dragon Balls.</em>\n<strong>This Trained Feature can only be learned once.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "dragon-ball-improvement",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "Requires: Dragon Ball Creation",
+    "tags": "trained feature; Guardian of the Dragon Balls"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3594,
+        "endLine": 3602
+      }
+    }
+  }
+}

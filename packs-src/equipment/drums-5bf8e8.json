@@ -1,0 +1,42 @@
+{
+  "_id": "5bf8e846e1b9a3d0",
+  "name": "Drums",
+  "type": "tool",
+  "img": "systems/dragons-and-ballz/icons/svg/items/tool.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ60,000 | <strong>Weight:</strong> -</p>\n",
+      "chat": ""
+    },
+    "identifier": "drums",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 60000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9848,
+        "endLine": 9871
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

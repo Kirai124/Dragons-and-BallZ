@@ -1,0 +1,139 @@
+{
+  "_id": "415a4b4c1bf4d3a5",
+  "name": "Sekhmen-jin",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/sekhmen-jin.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>History</h3>\n<p>A long time ago on a desert planet who's name time has forgotten, this race exsisted as gods over the common folk. Legend tells of a true god appearing one day, taking the Pharoh away and destroying his planet in retribution for his hubris. Thankfully Phelines exsisted out in the stars and the species lived on.</p>\n<h3>Physical Description</h3>\n<p>Standing between 4 and 6 feet fully grown, Phelines come in many skin tones with varying degrees of hair. Due to the nature of their homeworld Phelines from their home star sector universally tend to be hairless with skin that is shades of pink or purple.</p>\n<h3>Society</h3>\n<p>On their home planet they exsisted as a theocratic monarchy, though each believed themselves to be the blood creations of a much older god. This common believe led them to lead by strength and combat alone while being praised by the other species of their planet.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p>Dexterity +2 or Strength +2, Constitution +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>You can speak Common and 1 additional <em>Language</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Survival</em> and <em>Acrobatics Skills</em>.</p>\n<h3>Racial Features</h3>\n<h4>9 Lives</h4>\n<p>You are extremely hard to kill, you gain proficiency in <em>Dexterity Saving throws</em>. If you already have that proficiency you may choose 1 <em>Saving Throw</em> that you do not already have proficiency in.</p>\n<h4>Predatory Combat</h4>\n<p>Your predatory nature shines when in combat. Your <em>Unarmed Strikes</em> can deal <em>Slashing Damage</em> and have their <em>Unarmed Strike Damage Die</em> increased by 1 step.</p>\n<p>On your turn if you take the <em>Attack Action</em>, <em>Ki Blast Action</em> or use a <strong>Technique</strong> that deals damage before you move or take any other action you gain +1 Power until the start of your next turn.</p>\n<h4>Burning Soul</h4>\n<p>Due to their supposed connection or perhaps some other strange genetic trait, Sekhmen-jin can choose to turn any <em>Ki Damage</em> they deal into <em>Fire Damage</em>. At <strong>Level 10</strong> this ignores <em>Resistance</em> and treats <em>Immunity</em> as <em>Resistance</em>.</p>\n<h4>Predatory Rage</h4>\n<p>As a Bonus Action on your turn you can enter the <em>Enraged Condition</em>, this condition lasts for a number of rounds equal to your <em>Proficiency Bonus</em>.</p>\n<p>You may use this feature once per Long Rest, each additional time you choose to use this feature you gain 2 <em>Ranks of Exhaustion</em>.</p>\n<h4>Cat Nap</h4>\n<p>Sleep is good, especially for you. Once per day, when you take a Short Rest you restore full <strong>Stamina</strong> instead of half.</p>\n",
+      "chat": ""
+    },
+    "identifier": "sekhmen-jin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "dad704edf7631224": {
+        "_id": "dad704edf7631224",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "dex": 2,
+            "str": 2
+          },
+          "locked": [],
+          "points": 1
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Dexterity +2 or Strength +2, Constitution +1"
+      },
+      "e20fc1dee6b8ca50": {
+        "_id": "e20fc1dee6b8ca50",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:acr",
+            "skills:sur"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Survival and Acrobatics Skills."
+      },
+      "16418b7dca75fd56": {
+        "_id": "16418b7dca75fd56",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak Common and 1 additional Language of your choice."
+      },
+      "1b470d4bb9dc7ac8": {
+        "_id": "1b470d4bb9dc7ac8",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1e031eaad13d2f7e",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8eb9a71d586945de",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ba2aeb38a2409bb5",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.e88cd56fdb795dac",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.56cb3c6bb643d835",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2113,
+        "endLine": 2165
+      }
+    }
+  }
+}

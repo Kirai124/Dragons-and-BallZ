@@ -1,0 +1,136 @@
+{
+  "_id": "3b85adefe2847964",
+  "name": "Android",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/android.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>Physical description</h3>\n<p>Identical to their designer's Race but completely mechanical.</p>\n<h3>History</h3>\n<p>They’re hard to find, but certain scientists have the potential to turn you into an android. These cyborgs appear like Earthlings, but have far extended capability and power. However, they have little room for advancement without mechanical upgrades.</p>\n<h3>Society</h3>\n<p>Androids do not have their own society, instead they blend in with Earthling society. While most retain their old personality, some may have their brains reprogrammed when becoming an android.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase</h4>\n<p>Any one <strong>Ability Score</strong> +2, Any one <strong>Ability Score</strong> +1.</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walking Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>Common and 1 other <em>Language</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Technology</em> and <em>History Skills</em>.</p>\n<h3>Racial Features</h3>\n<h4>Battery Powered</h4>\n<p>You have an internal power core that keeps you fueled. You do not suffer negative effects from not eating. You are incapable of regaining <strong>Ki</strong> from a <strong>Technique</strong> or <strong>Item</strong>, instead having a 4 <strong>Ki</strong> per round regen, this increases by 4 again at <strong>Levels 4, 7, 10, 13, 16,</strong> and <strong>19.</strong></p>\n<h4>Computer Eyes</h4>\n<p>Your eyes are mechanical, granting you +3 on any <em>Perception Checks</em> involving sight. As an Action on your turn, you can see in high detail up to 1 mile so long as you hold <em>Concentration</em>.</p>\n<p>At <strong>Level 10</strong> gain a new an improved scanner. This functions as true sight as long as the creature is not undead, has been dead for 5 hours, or is obscured by an external extreme temperature. This <strong>Feature</strong> can be activated and deactivated as an Action and it can be activated for a total of 1 hour per Long Rest.</p>\n<h4>Diagnostics and Soft Reset</h4>\n<p>As an Android you do not need to sleep and can not be forced to fall asleep by any means.</p>\n<p>To benefit from a <em>Long Rest</em> you must instead go into a repair mode where your systems fix themself. You may do light activity during this 4 hour rest period, alternatively you may benefit from a Short Rest in 10 minutes.</p>\n<h4>Modular Stamina Engine</h4>\n<p>They actually did it, they made a perfect generator! You regain 1 <strong>Stamina</strong> at the start of every round. You may take the <em>General Upgrade</em> <strong>Feat</strong> and use every point to increase this bonus by 1 a single time.</p>\n<h4>Upgrade Compatibility</h4>\n<p>You are more than a simple machine. You gain the <em>Construct</em> <strong>Tag</strong> and can not gain the <em>Ki Control</em> <strong>Heroic Feature</strong> through <strong>Training</strong> or <strong>Level Up.</strong></p>\n<p>Additionally you begin with the <em>Arm Missle</em> <strong>Technique</strong> and it's <strong>Ki Rank</strong> is equal to your own.</p>\n<h5>Arm Missile</h5>\n<h2><em>Rank ? Melee Technique</em></h2>\n<ul>\n<li><strong>Casting Time:</strong>   1 action</li>\n<li><strong>Range:</strong>          120 feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>       Instantaneous</li>\n</ul>\n<p>Fire your forearm off like a rocket before it returns and replaces itself on your arm. Make a combo attack roll against a target in range dealing your unarmed damage die + Xd4 <em>Force Damage</em> where X is your <em>Proficiency Bonus</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "android",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "8247f2d3b26e1d99": {
+        "_id": "8247f2d3b26e1d99",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {},
+          "locked": [],
+          "points": 3
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Any one **Ability Score** +2, Any one **Ability Score** +1."
+      },
+      "543b3e27d081d3da": {
+        "_id": "543b3e27d081d3da",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:his",
+            "skills:tec"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Technology and History Skills."
+      },
+      "b3a539ad3d579975": {
+        "_id": "b3a539ad3d579975",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "Common and 1 other Language of your choice."
+      },
+      "cfda7677eb22fd0f": {
+        "_id": "cfda7677eb22fd0f",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.121030f0307c8f3c",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b6b1d355438eda87",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a681611fc8fbf27a",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.cef90d0255e641e7",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.26016a78112d83fa",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1343,
+        "endLine": 1404
+      }
+    }
+  }
+}

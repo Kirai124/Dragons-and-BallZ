@@ -1,0 +1,39 @@
+{
+  "_id": "7e89da4816d64e49",
+  "name": "Tribeam",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>HP Cost:</strong>  5x HP</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>  120 Feet (30 foot cube)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Blast</li>\n</ul>\n<p>The user channels their own life force into their hands and fires it out as a square box.</p>\n<p>Choose a location you can see within 120 feet. All creatures in the <em>Cube's</em> range must make a <em>Dexterity Saving Throw</em> or take Xd10 <em>Ki Damage</em> on a hit, where X is for how many sets of 5 <strong>HP</strong> you expend during the casting of this <strong>Technique</strong>, Half on a save.</p>\n",
+      "chat": ""
+    },
+    "identifier": "tribeam",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "blast",
+    "kiCost": "0",
+    "castingTime": "1 Action",
+    "range": "120 Feet (30 foot cube)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8460,
+        "endLine": 8475
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

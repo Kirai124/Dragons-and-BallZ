@@ -1,0 +1,40 @@
+{
+  "_id": "431188534c6ab72c",
+  "name": "Ki Enhanced Abilities",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have learned to supercharge your attacks with your ki making your attacks hit with unearthly force. Wearing <em>Armor</em> does not affect this <strong>Feature</strong>. You gain the following benefits when unarmed:</p>\n<ul>\n<li>You can use a d4 in place of your <em>Unarmed Strike's Damage Die</em>. This die increases as you gain <strong>Blaster Levels</strong>, as shown on the table above. You may use <em>Wisdom</em> as your <em>Modifier</em> for <em>Unarmed Strikes</em>.</li>\n<li>Your <em>Basic Ki Blast Damage Die</em> increases as you gain <strong>Blaster Levels</strong>, as shown on the table above.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "blaster-ki-enhanced-abilities",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2872,
+        "endLine": 2876
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Blaster"
+    }
+  }
+}

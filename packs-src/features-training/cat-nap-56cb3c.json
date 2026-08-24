@@ -1,0 +1,40 @@
+{
+  "_id": "56cb3c6bb643d835",
+  "name": "Cat Nap",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Sleep is good, especially for you. Once per day, when you take a Short Rest you restore full <strong>Stamina</strong> instead of half.</p>\n",
+      "chat": ""
+    },
+    "identifier": "sekhmen-jin-cat-nap",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2154,
+        "endLine": 2165
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Sekhmen-jin"
+    }
+  }
+}

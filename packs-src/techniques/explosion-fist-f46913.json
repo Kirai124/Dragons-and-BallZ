@@ -1,0 +1,39 @@
+{
+  "_id": "f469132e531cb388",
+  "name": "Explosion Fist",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 50 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous (Special)</li>\n</ul>\n<p>A strike to the midsection that explodes into a burst of energy.</p>\n<p>Make a <em>Combo Attack Roll</em> dealing your <em>Unarmed Strike Damage Die</em> + 10d8 <em>Ki Damage</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "explosion-fist",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "melee",
+    "kiCost": "50 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous (Special)",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7099,
+        "endLine": 7113
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

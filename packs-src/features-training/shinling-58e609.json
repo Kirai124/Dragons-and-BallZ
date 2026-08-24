@@ -1,0 +1,40 @@
+{
+  "_id": "58e60982ec69e585",
+  "name": "Shinling",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Cannot be taken with Mashin-Jin DNA</em></p>\n<ul>\n<li>+1 Wisdom</li>\n</ul>\n<p>This rare divine DNA grants you a taste of godhood, You gain access to the Kaioken power up. You also can empower an attack with divine energy, when you deal damage you may use a bonus action to change its damage type to radiant. You also gain resistance to radiant damage.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-shinling",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1609,
+        "endLine": 1616
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

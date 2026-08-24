@@ -1,0 +1,40 @@
+{
+  "_id": "242353aa0dbf58bb",
+  "name": "Blood of Time",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>Level 1</strong>, you gain the <em>Time Storage</em> <strong>Trained Feature</strong> and you can hold 1 additional <em>Time Point</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "chronin-blood-of-time",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1664,
+        "endLine": 1668
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Chronin"
+    }
+  }
+}

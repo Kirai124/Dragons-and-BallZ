@@ -53,7 +53,7 @@ export default class AdvancementManager extends Application5e {
   /** @override */
   static PARTS = {
     manager: {
-      template: "systems/dnd5e/templates/advancement/advancement-manager.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/advancement-manager.hbs"
     }
   };
 
@@ -954,7 +954,7 @@ class AdvancementVisualizer extends Application5e {
   /** @override */
   static PARTS = {
     steps: {
-      template: "systems/dnd5e/templates/advancement/advancement-visualizer.hbs"
+      template: "systems/dragons-and-ballz/templates/advancement/advancement-visualizer.hbs"
     }
   };
 

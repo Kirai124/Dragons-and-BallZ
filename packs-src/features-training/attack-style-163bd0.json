@@ -1,0 +1,40 @@
+{
+  "_id": "163bd03ba6b5b4ba",
+  "name": "Attack Style",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>11th Level</strong> you choose a single type of <strong>Ki Technique</strong>: <em>Blast, Beam, Barrage</em>, or <em>Omni</em>. <strong>Ki Techniques</strong> of that type have their range doubled and gain one round of <strong>Charge</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "blaster-attack-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2912,
+        "endLine": 2913
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Blaster"
+    }
+  }
+}

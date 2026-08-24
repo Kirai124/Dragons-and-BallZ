@@ -1,0 +1,41 @@
+{
+  "_id": "e914dae518bd9e30",
+  "name": "Super Saiyan 3",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<p>The Saiyan’s hair lengthens to their waist and they take on a more Neanderthal look, their foreheads protrude and they lose their eyebrows, and lightning is almost always sparking around them slightly. When a Saiyan takes this form for the first time the world itself seems to take heed, the clouds in the sky will culminate above you, and lightning strikes occasionally.</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>You deal +1d8 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 35 ft.</li>\n<li>3 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "super-saiyan-3",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Super Saiyan",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "action",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Saiyans; Super Saiyan"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4143,
+        "endLine": 4159
+      },
+      "formFamily": "Super Saiyan"
+    }
+  }
+}

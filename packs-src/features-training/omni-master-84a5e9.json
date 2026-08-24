@@ -1,0 +1,39 @@
+{
+  "_id": "84a5e9d34e35b736",
+  "name": "Omni Master",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain a <em>+1 Static Bonus</em> to <strong>Omni Techniques</strong> and add half of your Int mod to damage rolls.</p>\n<p>Can be taken twice.</p>\n",
+      "chat": ""
+    },
+    "identifier": "omni-master",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6277,
+        "endLine": 6281
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

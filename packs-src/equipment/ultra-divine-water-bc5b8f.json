@@ -1,0 +1,42 @@
+{
+  "_id": "bc5b8fc6241d5946",
+  "name": "Ultra Divine Water",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p>When you drink this seemingly normal water you immedietly fall unconcious and begin making death saving throws. If you survive and stabalize yourself naturally then you gain 2 Training Boons.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ultra-divine-water",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9934,
+        "endLine": 9936
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "de80675f2432ca3f",
+  "name": "Surpass Your Limits!",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  15 Ki</li>\n<li><strong>Casting Time:</strong> When you take the <em>Attack Action</em> or cast a <strong>Melee/Melee Weapon Technique</strong></li>\n<li><strong>Range:</strong>          Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Until the start of your next turn</li>\n</ul>\n<p>Push your strikes even FURTHER using Ki. For the duration of this technique you gain +1 <em>Static Bonus</em> to all <em>Melee Attack Rolls</em> and <strong>Melee/Melee Weapon Techniques</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "surpass-your-limits",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "15 Ki",
+    "castingTime": "When you take the *Attack Action* or cast a **Melee/Melee Weapon Technique**",
+    "range": "Self",
+    "duration": "Until the start of your next turn",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6810,
+        "endLine": 6830
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

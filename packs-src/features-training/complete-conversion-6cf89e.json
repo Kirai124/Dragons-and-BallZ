@@ -1,0 +1,39 @@
+{
+  "_id": "6cf89efd87e48b7c",
+  "name": "Complete Conversion",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: a Racial Form currently copied by Mystical Mimicry</strong>\nYou have taken the leap and partially converted your DNA into that of another race. You permanently keep the <strong>Racial Form</strong> you have copied as well as any lower forms in its <strong>Family.</strong> This <strong>Form</strong> now counts as your own and not part of <strong>Mystical Mimicry.</strong></p>\n<p>You may now take <strong>Feats</strong> as if you were that <strong>Race</strong> to gain additional <strong>Forms</strong> in that <strong>Family.</strong>\n<strong>This Feat can never be taken again.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "complete-conversion",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: a Racial Form currently copied by Mystical Mimicry",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5887,
+        "endLine": 5894
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

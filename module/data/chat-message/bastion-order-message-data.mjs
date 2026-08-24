@@ -50,7 +50,7 @@ export default class BastionOrderMessageData extends ChatMessageDataModel {
     actions: {
       pay: BastionOrderMessageData.#onPay
     },
-    template: "systems/dnd5e/templates/chat/bastion-order-summary.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/bastion-order-summary.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */

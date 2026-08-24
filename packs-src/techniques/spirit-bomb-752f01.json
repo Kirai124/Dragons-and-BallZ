@@ -1,0 +1,39 @@
+{
+  "_id": "752f019846dd1bf0",
+  "name": "Spirit Bomb",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Special Rank Technique</em></p>\n<p>The congregation of all living things’ power willing collecting to the call of another. As an action on your turn you begin to charge energy, calling out to the universe around you.</p>\n<p>The user must roll a d100 to determine how much power is given and how long it takes to charge the spirit bomb. If the user has some form of way to ask for the energy, such as telepathy, a successful persuasion check can grant you an additional d100, taking the higher of the two rolls.</p>\n<p>Any allied creature that sees you cast this <strong>Technique</strong> can spend their Reaction to lend their energy, granting a +1 for each creature that does.</p>\n<ul>\n<li>0-10: Energy is refused and the attack won’t form</li>\n<li>11-30: Energy is barely given it takes 3 rounds to charge a micro bomb; 8 to charge a spirit bomb; 12 to charge a super spirit bomb; and 20 to charge a universal</li>\n<li>31-60: Energy is given but only what creatures think they can spare. It takes 2 rounds to charge a micro bomb; 5 to charge a spirit bomb; 8 to charge a super spirit bomb; and 12 to charge a universal</li>\n<li>61-95: Every creature gives every ounce of power they can muster. It takes one round to charge a micro bomb; 3 to charge a spirit bomb; 5 to charge a super spirit bomb; and 8 to charge a universal</li>\n<li>96-100: The universe itself fuels your attack. A microbomb is instantly formed and it goes up a category every round.</li>\n</ul>\n<h5>Damage</h5>\n<ul>\n<li><strong>Rank 1</strong> Micro bomb: 10d12 radiant damage (30 Foot Range)</li>\n<li><strong>Rank 2</strong> Spirit bomb: 30d12 radiant damage (100 Foot range, 30 foot radius)</li>\n<li><strong>Rank 3</strong> Super spirit bomb: 50d12 radiant damage (300 Foot Range, 60 foot radius)</li>\n<li><strong>Rank 4</strong> Universal spirit bomb: 70d12 radiant damage (500 Foot Range, 120 foot radius)<ul>\n<li><strong>Manuevers</strong> can not be used against this.</li>\n</ul>\n</li>\n</ul>\n<p>Choose a target or a location in range, the selected target and targets in the listed radius must make a <em>Dexterity Saving Throw</em> against your highest <strong>Ki Technique Saving Throw DC</strong> or take damage as listed above, half on a successful save.</p>\n<h5>Absorbing a Spirit Bomb</h5>\n<p>Alternativly, you may absorb the <strong>Spirit Bomb</strong> rather than launch it. Absorbing the <em>Micro Spirit Bomb</em> gives you a choice of the following benefits for the next minute:</p>\n<ul>\n<li>50 <strong>Temporary Ki</strong> for each <strong>Ki Rank</strong> of the <strong>Spirit Bomb</strong><ul>\n<li><strong>Techniques</strong> casted with this <strong>Temporary Ki</strong> ignores <em>Resistances</em></li>\n</ul>\n</li>\n<li>+1 <strong>Power Bonus</strong> for each <strong>Ki Rank</strong> of the <strong>Spirit Bomb</strong></li>\n<li>+1 <strong>AC</strong> for each <strong>Ki Rank</strong> of the <strong>Spirit Bomb</strong></li>\n</ul>\n<p>Absorbing a <em>Universal Spirit Bomb</em> grants you a fourth option:</p>\n<ul>\n<li>You gain 1 <strong>Temporary God Ki</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-bomb",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 0,
+    "techniqueType": "otherKi",
+    "kiCost": "Special",
+    "castingTime": "1 Action",
+    "range": "Special",
+    "duration": "Special",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9017,
+        "endLine": 9069
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

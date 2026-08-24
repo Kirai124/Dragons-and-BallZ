@@ -1,0 +1,41 @@
+{
+  "_id": "bfe8de43bae47d3f",
+  "name": "Tier 4 (Bestial Potential)",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Transformation</em>\nYou have begun to pull out the full potential of the god ki inside you. The user’s hair or defining feature becomes white and your eyes turn white.</p>\n<ul>\n<li>+5 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 45 ft.</li>\n<li>Increase all <em>Damage Die</em> by 2 steps<ul>\n<li>1d4&gt;1d6&gt;1d8&gt;1d10&gt;1d12&gt;2d6&gt;etc</li>\n</ul>\n</li>\n<li>5 <strong>Stamina Upkeep</strong>\n<strong>You obtain Tier 4 when you have Tier 3 and aquire God Ki.</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "tier-4-bestial-potential",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Potential Unlock",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "5 Stamina",
+    "activation": "action",
+    "powerBonus": 5,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Non-Race Specific; Potential Unlock"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4750,
+        "endLine": 4763
+      },
+      "formFamily": "Potential Unlock"
+    }
+  }
+}

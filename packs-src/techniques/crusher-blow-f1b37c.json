@@ -1,0 +1,39 @@
+{
+  "_id": "f1b37c63fd3ee25b",
+  "name": "Crusher Blow",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  25 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A supercharged punch that breaks through defenses. Make a <em>Combo Attack Roll</em> dealing your <em>Unarmed Strike Damage Die</em> + 3d12 <em>Bludgeoning Damage</em> on a hit. This damage can not be reduced by any means.</p>\n",
+      "chat": ""
+    },
+    "identifier": "crusher-blow",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "25 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6741,
+        "endLine": 6753
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

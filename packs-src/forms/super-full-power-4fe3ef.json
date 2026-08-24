@@ -1,0 +1,41 @@
+{
+  "_id": "4fe3ef2ea1a38527",
+  "name": "Super Full Power",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Transformation</em></p>\n<p>This Transformation can be learned by anyone as a <strong>Rank 4 Technique</strong> if you have “Full Power”.</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>You gain +2 to your <strong>AC.</strong></li>\n<li>+2 <em>Ranks of Bulk</em></li>\n<li>4 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "super-full-power",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": 4,
+    "family": "Full Strength",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "4 Stamina",
+    "activation": "action",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Non-Race Specific; Full Strength"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4698,
+        "endLine": 4707
+      },
+      "formFamily": "Full Strength"
+    }
+  }
+}

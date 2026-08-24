@@ -1,0 +1,39 @@
+{
+  "_id": "277a900e79acb287",
+  "name": "Death Beam",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 12 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 120 Feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Barrage</li>\n</ul>\n<p>A small beam shot from the finger. Roll a <em>Barrage Attack Roll</em> dealing 2d6 <em>Ki Damage</em> on a hit. After casting this you may, as a Bonus Action, fire an additional <em>Death Beam</em> for half the initial <strong>Ki Cost</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "death-beam",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "barrage",
+    "kiCost": "12 Ki",
+    "castingTime": "1 Action",
+    "range": "120 Feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7829,
+        "endLine": 7841
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

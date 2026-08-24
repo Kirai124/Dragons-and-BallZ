@@ -1,0 +1,41 @@
+{
+  "_id": "973644e5623c58ab",
+  "name": "Titan Namekian",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Power-Up</em></p>\n<p>Grow massive to overwhelm the enemy.</p>\n<ul>\n<li>At <strong>Level 5</strong> you may become a <em>Large</em> category, this increases to <em>Huge</em> at <strong>Level 10</strong> and <em>Gargantuan</em> at <strong>Level 20.</strong></li>\n<li>+1 <strong>Bulk</strong> and <strong>Power Bonus</strong> per each Size Category above your original size.</li>\n<li>2 <strong>Stamina Upkeep</strong> per <em>Size Category</em> raised.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "titan-namekian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Namekians",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "bonus",
+    "powerBonus": 0,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "At **Level 5** you may become a *Large* category, this increases to *Huge* at **Level 10** and *Gargantuan* at **Level 20.",
+    "tags": "Namekians"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3996,
+        "endLine": 4003
+      },
+      "formFamily": "Namekians"
+    }
+  }
+}

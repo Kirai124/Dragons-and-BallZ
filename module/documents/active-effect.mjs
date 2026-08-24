@@ -26,7 +26,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
    * The default icon used for newly created Active Effect documents.
    * @type {string}
    */
-  static DEFAULT_ICON = "systems/dnd5e/icons/svg/documents/active-effect.svg";
+  static DEFAULT_ICON = "systems/dragons-and-ballz/icons/svg/documents/active-effect.svg";
 
   /* -------------------------------------------- */
 
@@ -1345,7 +1345,7 @@ export default class ActiveEffect5e extends DependentDocumentMixin(ActiveEffect)
 
     return {
       content: await foundry.applications.handlebars.renderTemplate(
-        "systems/dnd5e/templates/effects/parts/effect-tooltip.hbs", context
+        "systems/dragons-and-ballz/templates/effects/parts/effect-tooltip.hbs", context
       ),
       classes: ["dnd5e2", "dnd5e-tooltip", "effect-tooltip"]
     };

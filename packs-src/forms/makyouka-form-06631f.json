@@ -1,0 +1,41 @@
+{
+  "_id": "06631f577bc06c4d",
+  "name": "Makyouka Form",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Godly Transformation</em></p>\n<p>You have merged your demon form with your regular form making an insanely powerful demon mode.</p>\n<ul>\n<li>+4 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Damage Die</em> step by 1</li>\n<li>Increase all <em>Movement Speed</em> by 30 ft.</li>\n<li>You gain a +2 to your Maximum and Current <strong>Strength</strong> and <strong>Charisma</strong> Ability Score</li>\n<li>You gain the <em><strong>Super-Charged</strong></em> Condition</li>\n<li>5 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "makyouka-form",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "God Form",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "5 Stamina",
+    "activation": "action",
+    "powerBonus": 4,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": true,
+    "requirements": "",
+    "tags": "Mashin-Jins; God Form"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4593,
+        "endLine": 4612
+      },
+      "formFamily": "God Form"
+    }
+  }
+}

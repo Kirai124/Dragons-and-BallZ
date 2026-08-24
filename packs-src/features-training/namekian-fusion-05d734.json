@@ -1,0 +1,40 @@
+{
+  "_id": "05d734cce700cffe",
+  "name": "Namekian Fusion",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Namekians have the unique ability to assimilate others of their race into themselves to become what is known as a Super Namekian. As an Action you may fuse with one willing Namekian that you can touch.  Once you Fuse with another namekian you gain these benefits:</p>\n<ul>\n<li>You gain the <em>Super Namekian</em> <strong>Transformation</strong> and the ability to learn <em>Namekian Split</em>.</li>\n<li>You learn all <strong>Techniques</strong> and <em>Languages</em> of the assimilated. If the assimilated has more <em>Mastery Ranks</em> in a <strong>Technique</strong> that you know, you gain those <em>Mastery Ranks</em>.</li>\n<li>If they have any <strong>Ability Scores</strong> higher than yours you may add +1 to those <strong>Ability Scores</strong>, this may increase it above your <em>Ability Score Maximum</em>.<ul>\n<li>If none of their <strong>Ability Scores</strong> surpass yours you gain +1 to whichever <strong>Ability Score</strong> was their highest.</li>\n</ul>\n</li>\n<li>You may only assimilate a number of Namekians equal to your <em>Constitution Modifier</em>.</li>\n<li>You gain the <strong>Fusion Tag</strong> and lose all benefits from this feature that you have gained if you ever lose this Tag, expelling those you have fused with in this manner in the proccess.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "namekian-namekian-fusion",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1952,
+        "endLine": 1960
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Namekian"
+    }
+  }
+}

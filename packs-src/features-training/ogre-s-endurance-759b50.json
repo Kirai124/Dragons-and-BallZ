@@ -1,0 +1,40 @@
+{
+  "_id": "759b50637d364f83",
+  "name": "Ogre's Endurance",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As an Action on your turn, you may spend <strong>Stamina</strong> to gain Xd12 <strong>Temporary HP</strong> where X is equal to the <strong>Stamina</strong> spent. This <strong>Temporary HP</strong> disappears after 1 hour or whenever you gain another source of <strong>Temporary HP</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ogre-ogre-s-endurance",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1016,
+        "endLine": 1021
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Ogre"
+    }
+  }
+}

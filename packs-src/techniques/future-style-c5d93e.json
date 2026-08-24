@@ -1,0 +1,39 @@
+{
+  "_id": "c5d93e83cb889197",
+  "name": "Future Style",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><strong>Prerequisites:</strong> Dexterity ≥ 13, 1 <em>Martial Weapon Proficiency</em></li>\n</ul>\n<p>A fighting style based around mixing weapons and ki attacks.</p>\n<ul>\n<li>+2 <em>Static Bonus</em> to attack rolls when using a <strong>Simple or Martial Weapon</strong> to take the attack action</li>\n<li>+1 <em>Static Bonus</em> to <strong>Weapon and Blast Techniques</strong></li>\n<li>If you do a melee weapon attack using a martial or simple weapon that you are proficient with as your action you can fire 2 ki blasts as your bonus action.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "future-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "stance",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Passive",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "Dexterity ≥ 13, 1 *Martial Weapon Proficiency*",
+    "tags": "stance"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9163,
+        "endLine": 9170
+      },
+      "techniqueSection": "stance"
+    }
+  }
+}

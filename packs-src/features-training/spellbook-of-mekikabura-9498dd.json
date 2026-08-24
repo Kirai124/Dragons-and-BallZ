@@ -1,0 +1,39 @@
+{
+  "_id": "9498dd181533f3d4",
+  "name": "Spellbook of Mekikabura",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain 3 <strong>Spells</strong> equal to or below 5th level and can cast them as if through <em>Mysticism</em> <strong>Class Feature.</strong></p>\n<p>This <strong>Feat</strong> can be taken twice.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spellbook-of-mekikabura",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5831,
+        "endLine": 5837
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

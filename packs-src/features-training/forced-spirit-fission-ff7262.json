@@ -1,0 +1,33 @@
+{
+  "_id": "ff72627a239e9a9e",
+  "name": "Forced Spirit Fission",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have the ability to revert energy back to it's original form. In practice this is usually used to seperate fusions and release stolen energy.</p>\n<p>As a Reation you when land an <em>Unarmed Strike</em> or <strong>Melee Technique</strong> or as an Action when you can touch someone, You may spend <strong>Stamina</strong>  to do one of the following additional effects at the end of your attack:</p>\n<ul>\n<li>Targets with the <strong>Fusion Tag</strong> are sperated into their base components for 5 <strong>Stamina</strong>.</li>\n<li>You may reduce the <strong>Ki</strong>, <strong>Temporary Ki</strong>, and any other forms of <strong>Ki</strong> the target may have by 10x the amount of <strong>Stamina</strong> that you spend when you use this <strong>Trained Feature.</strong></li>\n<li>If a target has taken any <strong>Ki</strong>, <strong>HP</strong>, or <strong>Stamina</strong> from a creature in the last minute and the target still has them, you return them to their original owner.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "forced-spirit-fission",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3416,
+        "endLine": 3423
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "21c26ff37ad1fb9a",
+  "name": "Snake Way",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Crossing <em>Snake Way</em> is not easy, factoring multiple aspects, the main two factors being your body’s fortitude and your mind’s will to persevere. You must roll a <strong>DC 15</strong> <em>Constitution Saving Throw</em> and a <strong>DC 10</strong> <em>Charisma Saving Throw</em>. On a failure from either, you end up in HFIL(Hell) as your legs give out from weakness of body or spirit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "snake-way",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "ordeal",
+    "boonCost": 0,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "ordeal"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3333,
+        "endLine": 3335
+      }
+    }
+  }
+}

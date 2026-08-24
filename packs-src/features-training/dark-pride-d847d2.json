@@ -1,0 +1,39 @@
+{
+  "_id": "d847d2d6984fbea2",
+  "name": "Dark Pride",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Dark Energy Power-up</em> and <em>An Age Old Prophecy</em> Feat</strong>\nYour Dark Energy has mutated your Super Saiyan state, accessing a level beyond regular Super Saiyan.</p>\n<p>You gain the <em>Super Saiyan 3 Full Power</em> <strong>Transformation</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dark-pride",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Dark Energy Power-up* and *An Age Old Prophecy* Feat",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5700,
+        "endLine": 5723
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

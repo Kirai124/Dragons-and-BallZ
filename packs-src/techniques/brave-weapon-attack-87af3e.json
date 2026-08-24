@@ -1,0 +1,39 @@
+{
+  "_id": "87af3e5053c16fd9",
+  "name": "Brave Weapon Attack",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 20 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Movement Speed</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>You move to a creature that is within your movement speed, you then make two <em>Combo Attack Rolls</em>. On a hit, you deal your <em>Weapon Damage Die</em>.</p>\n<p>At the end of this <strong>Technique</strong> you may make an additional <em>Weapon Attack</em>, if you hit at least 1 of the <em>Combo Attack Rolls</em>, dealing 2x your <em>Weapon Damage Die</em> on a hit.  If both <em>Combo Attack Rolls</em> hit, you gain <em>Advantage</em> on the <em>Weapon Attack</em>. If this <em>Weapon Attack</em> is a <em>Critcal Hit</em>, it instead deals 4x <em>Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "brave-weapon-attack",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "weapon",
+    "kiCost": "20 Ki",
+    "castingTime": "1 Action",
+    "range": "Movement Speed",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7427,
+        "endLine": 7441
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

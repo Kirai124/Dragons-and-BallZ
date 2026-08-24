@@ -1,0 +1,40 @@
+{
+  "_id": "a56046f1260b8cdd",
+  "name": "Superiority: Ki Attack",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Choose one class of <strong>Ki Technique</strong>: <em>Beam, Blast, Barrage</em>, or <em>Omni</em>. You gain +1 to <em>Static Bonus</em> when using this type of <strong>Ki Technique</strong>. At <strong>Level 7</strong> this becomes +2 and at <strong>Level 13</strong> you get to pick a second type of <strong>Ki Technique</strong> to gain this bonus.</p>\n<p>At <strong>Level 18</strong> you get an +1 <em>Static Bonus</em> that you can place on any class of <strong>Ki Technique</strong>, regardless of if you choose that category previously.</p>\n",
+      "chat": ""
+    },
+    "identifier": "yardratian-superiority-ki-attack",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2184,
+        "endLine": 2189
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Yardratian"
+    }
+  }
+}

@@ -35,9 +35,9 @@ export default class BaseRestDialog extends Dialog5e {
       width: 380
     },
     templates: [
-      "systems/dnd5e/templates/actors/rest/parts/duration.hbs",
-      "systems/dnd5e/templates/actors/rest/parts/hit-dice.hbs",
-      "systems/dnd5e/templates/actors/rest/parts/rest-request.hbs"
+      "systems/dragons-and-ballz/templates/actors/rest/parts/duration.hbs",
+      "systems/dragons-and-ballz/templates/actors/rest/parts/hit-dice.hbs",
+      "systems/dragons-and-ballz/templates/actors/rest/parts/rest-request.hbs"
     ]
   };
 
@@ -47,7 +47,7 @@ export default class BaseRestDialog extends Dialog5e {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/actors/rest/base-rest.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/rest/base-rest.hbs"
     }
   };
 
@@ -167,7 +167,7 @@ export default class BaseRestDialog extends Dialog5e {
         ],
         showSunriseButton: "sunrise" in game.time.calendar
       };
-      context.fields.push({ template: "systems/dnd5e/templates/actors/rest/parts/duration.hbs" });
+      context.fields.push({ template: "systems/dragons-and-ballz/templates/actors/rest/parts/duration.hbs" });
     }
 
     const rest = CONFIG.DND5E.restTypes[this.config.type];

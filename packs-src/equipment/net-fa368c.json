@@ -1,0 +1,42 @@
+{
+  "_id": "fa368c184d6a3aec",
+  "name": "Net",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 10,000 Zeni | <strong>Damage:</strong> - | <strong>Weapon Properties:</strong> Special, thrown (range 5/15)</p>\n",
+      "chat": ""
+    },
+    "identifier": "net",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9511,
+        "endLine": 9517
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

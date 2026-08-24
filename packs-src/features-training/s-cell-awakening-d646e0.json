@@ -1,0 +1,39 @@
+{
+  "_id": "d646e0a2636cb43a",
+  "name": "S-cell Awakening",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have felt the rush of battle, your blood boils at the thought. You dig down into a depth of power unlike anything you’ve felt before and you explode in a golden light.</p>\n<p>You gain the <em>Pure Super Saiyan</em> <strong>Transformation</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "s-cell-awakening",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5680,
+        "endLine": 5685
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

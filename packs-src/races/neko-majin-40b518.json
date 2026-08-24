@@ -1,0 +1,142 @@
+{
+  "_id": "40b518fb66d1801e",
+  "name": "Neko Majin",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/neko-majin.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>History</h3>\n<p>Neko Majins are an incredibly rare and mystical species capable of truly miraculous level of mimicry. Due to their magical nature they were once hunted to near extinction and most live in relative seclusion or small groups of 2 to 3.</p>\n<h3>Physical Description</h3>\n<p>Neko Majins in their true form resemble a small bipedal cat. They are intellegent and understand the <em>concept</em> of clothing, though some don't quite figure out the execution of it.</p>\n<h3>Society</h3>\n<p>Neko Majins no longer have a dedicated society and instead are masters of integrating themselves into any society they find themselves in, changing their behavior, looks, and even identities to match if needed.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p><em>Charisma</em> +2, <em>Constitution</em> <strong>or</strong> <em>Wisdom</em> +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>You can speak common and 1 additional <em>Language</em> of your choice.</p>\n<h4>Skills</h4>\n<p>You gain any 2 <em>Skills</em> of your choice.</p>\n<h3>Racial Features</h3>\n<h4>Prodigious Learners</h4>\n<p>You are a natural master of replicating what you see.</p>\n<p>You begin the game at <strong>Level 1</strong> with the <em>Eagled-Eyed Adaptation</em> <strong>Heroic Feature</strong> but you may use it a number of times per long rest equal to your <em>Proficiency Bonus</em>. You can memorize a number of <strong>Techniques</strong> equal to your <strong>Intellegence Modifier</strong> at a time, replacing one of your choice if you were to exceed your maximum.</p>\n<h4>Magical Shape-Shifters</h4>\n<p>Years of hiding have made Neko Majins a master of hiding their true self.</p>\n<p>At <strong>Level</strong> 1 you know the <em>Disguise Self</em> and <em>Alter Self</em> <strong>Spells</strong> as if through the <em>Mysticism</em> <strong>Class Feature</strong> except their duration becomes 8 hours.</p>\n<p>At <strong>Level</strong> 10 you also gain the <em>Polymorph</em> <strong>Spell</strong> as if through the <em>Mysticism</em> <strong>Class Feature</strong>.\nThese <strong>Spells</strong> can only target yourself.</p>\n<h4>Mystical Mimicry</h4>\n<p>You're ability to shape shift is so incredible that it allows you to mimic another's very DNA.</p>\n<p>As a Reaction to seeing a creature activate a <strong>Form</strong> you may memorize that <strong>Form</strong> for your own use, even if it is a <strong>Racial Form</strong>. You must have <strong>God Ki</strong> to copy a <strong>Godly Form.</strong>\nYou keep this specific <strong>Form</strong> and may activate it at a later form, if you were to use this <strong>Feature</strong> again you may replace your current memorized <strong>Form</strong>, ending the <strong>Form</strong> if it was active.</p>\n<h4>Natural Innocence</h4>\n<p>Your soul is bright and shining, even the most evil of Neko Majin radiates joy. You have advantage on all <em>Saving Throws</em> against being <em>Berserk, Charmed, or Frightened</em>.</p>\n<h4>Small but Legendary</h4>\n<p>At <strong>Level 1</strong> you gain a single <strong>Heroic Feature</strong>. This does not count as gaining a <strong>Heroic Feature</strong> as a <strong>Class Feature</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "neko-majin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "630c8a7a7e8ca507": {
+        "_id": "630c8a7a7e8ca507",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "cha": 2
+          },
+          "locked": [],
+          "points": 1
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "*Charisma* +2, *Constitution* **or** *Wisdom* +1 Choose Constitution or Wisdom for the +1."
+      },
+      "ebbcec02ebf123df": {
+        "_id": "ebbcec02ebf123df",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain any 2 Skills of your choice."
+      },
+      "29ab354feabec410": {
+        "_id": "29ab354feabec410",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak common and 1 additional Language of your choice."
+      },
+      "ce6c5fef0b5a79d0": {
+        "_id": "ce6c5fef0b5a79d0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.2281fd9ce310cba6",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.518f01e642c984a1",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f6913534b71b7e7b",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1c637a5478d5e04d",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3f952f75bf80e023",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2000,
+        "endLine": 2053
+      }
+    }
+  }
+}

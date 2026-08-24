@@ -1,0 +1,39 @@
+{
+  "_id": "d485d8fbbf7f58dc",
+  "name": "Dragon Throw",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 15 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>          10 feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>You make a lunging grab at a target near you before launching them away. Make a Combo Attack Roll, on a hit the user grabs the enemy, spins them around, and <em>Launches</em> them 10x your <em>Strength Modifier</em> feet in any direction. You end this <strong>Technique</strong> in the nearest unoccupied space if it fails and in the target's original square on a success.</p>\n<p>Targets take an additional 1d6 Damage per 10 feet <em>Launched</em> if they hit a solid surface.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dragon-throw",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "15 Ki",
+    "castingTime": "1 Action",
+    "range": "10 feet",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6768,
+        "endLine": 6780
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

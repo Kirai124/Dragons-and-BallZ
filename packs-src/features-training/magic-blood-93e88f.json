@@ -1,0 +1,40 @@
+{
+  "_id": "93e88f32f25884a5",
+  "name": "Magic Blood",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You have advantage on <em>Saving Throws</em> against being <em>Charmed</em>, and magic can't put you to sleep or <em>Enrage</em> you.</p>\n",
+      "chat": ""
+    },
+    "identifier": "konatsian-magic-blood",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 911,
+        "endLine": 913
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Konatsian"
+    }
+  }
+}

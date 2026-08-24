@@ -1,0 +1,41 @@
+{
+  "_id": "a4b48a45ad6e1bd0",
+  "name": "Timeless power",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Power-Up</em></p>\n<p>This is the true raw power of the ancient Saiyans, their bodies bulk slightly like super Saiyans but otherwise look like their base form. Their ki rises off them like steam and they have been known to growl like animals.</p>\n<ul>\n<li>+2 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 15 ft.</li>\n<li>You deal +1d4 to all <em>Damage Rolls</em></li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p><strong>Gained at level 10</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "timeless-power",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Ancient Saiyan Power",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "bonus",
+    "powerBonus": 2,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "Gained at level 10",
+    "tags": "Ancient Saiyan; Ancient Saiyan Power"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4376,
+        "endLine": 4397
+      },
+      "formFamily": "Ancient Saiyan Power"
+    }
+  }
+}

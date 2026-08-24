@@ -1,0 +1,39 @@
+{
+  "_id": "a059295a06af898a",
+  "name": "Magical Power Advancement",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>This <strong>Feat</strong> can be taken a number of times equal to half of your <strong>Ki Rank</strong>, rounded up.</em>\n<strong>Requires- Mysticism: Burst</strong></p>\n<p>You have pushed your magical capabilities beyond their maximum. Increase the <em>Spell Level</em> that you can learn for the <em>Mysticism: Burst</em> <strong>Class Feature</strong> by 1.</p>\n",
+      "chat": ""
+    },
+    "identifier": "magical-power-advancement",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires- Mysticism: Burst",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5135,
+        "endLine": 5141
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

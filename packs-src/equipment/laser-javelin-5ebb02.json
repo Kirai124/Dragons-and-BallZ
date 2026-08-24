@@ -1,0 +1,42 @@
+{
+  "_id": "5ebb0210a17a07e2",
+  "name": "Laser Javelin",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 20,000 Zeni | <strong>Damage:</strong> 1d6 Radiant | <strong>Weapon Properties:</strong> Thrown (range 60/150)</p>\n",
+      "chat": ""
+    },
+    "identifier": "laser-javelin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9527,
+        "endLine": 9534
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "9ba5723dad7e8ed4",
+  "name": "Smoldering Weapon",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 24 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>You attack at such speed that it ignites your weapon and your target. Make a <em>Combo Attack Roll</em>,on a hit you deal your <em>Weapon Damage Die</em> + 6d6 <em>Fire Damage</em>.</p>\n<p>On a hit, the target must make a <em>Constitution Saving Throw</em>, on a failure, they take 2d6 <em>Fire Damage</em> at the start of their next turn where they then must repeat the <em>Saving Throw</em> or repeat the effect on their subsequent turns until they pass or the caster's <strong>Character Level</strong> in Rounds elapses.</p>\n",
+      "chat": ""
+    },
+    "identifier": "smoldering-weapon",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "weapon",
+    "kiCost": "24 Ki",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7442,
+        "endLine": 7455
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

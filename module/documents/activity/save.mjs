@@ -20,7 +20,7 @@ export default class SaveActivity extends ActivityMixin(BaseSaveActivityData) {
   static metadata = Object.freeze(
     foundry.utils.mergeObject(super.metadata, {
       type: "save",
-      img: "systems/dnd5e/icons/svg/activity/save.svg",
+      img: "systems/dragons-and-ballz/icons/svg/activity/save.svg",
       title: "DND5E.SAVE.Title.one",
       hint: "DND5E.SAVE.Hint",
       sheetClass: SaveSheet,

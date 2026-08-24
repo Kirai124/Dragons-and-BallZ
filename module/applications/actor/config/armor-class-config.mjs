@@ -24,10 +24,10 @@ export default class ArmorClassConfig extends BaseConfigSheet {
   /** @override */
   static PARTS = {
     calculation: {
-      template: "systems/dnd5e/templates/actors/config/armor-class-calculation.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/config/armor-class-calculation.hbs"
     },
     config: {
-      template: "systems/dnd5e/templates/actors/config/armor-class-config.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/config/armor-class-config.hbs"
     }
   };
 

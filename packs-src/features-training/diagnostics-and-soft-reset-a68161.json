@@ -1,0 +1,40 @@
+{
+  "_id": "a681611fc8fbf27a",
+  "name": "Diagnostics and Soft Reset",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>As an Android you do not need to sleep and can not be forced to fall asleep by any means.</p>\n<p>To benefit from a <em>Long Rest</em> you must instead go into a repair mode where your systems fix themself. You may do light activity during this 4 hour rest period, alternatively you may benefit from a Short Rest in 10 minutes.</p>\n",
+      "chat": ""
+    },
+    "identifier": "android-diagnostics-and-soft-reset",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1373,
+        "endLine": 1377
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Android"
+    }
+  }
+}

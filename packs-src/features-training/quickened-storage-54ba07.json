@@ -1,0 +1,39 @@
+{
+  "_id": "54ba07931d787936",
+  "name": "Quickened Storage",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your storage speed is even faster then before. You gain the option to turn <strong>Stamina</strong> into <strong>Time Points</strong> as a Bonus Action.</p>\n<p>This <strong>Feat</strong> can be taken a second time to gain the option to do this as a Reaction on your turn. Taking this Feat does not remove your ability to store time points as an Action or Bonus Action if you have that capability already.</p>\n",
+      "chat": ""
+    },
+    "identifier": "quickened-storage",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5846,
+        "endLine": 5850
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

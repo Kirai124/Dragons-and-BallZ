@@ -1,0 +1,39 @@
+{
+  "_id": "e69fcc2ef303584f",
+  "name": "Pincushion",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 12 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Light or Finesse Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>You make a flurrious storm of strikes against a target in range. Roll 3 <em>Combo Attack Rolls</em> dealing your <em>Weapon Damage Die</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "pincushion",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "weapon",
+    "kiCost": "12 Ki",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Light or Finesse Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7204,
+        "endLine": 7215
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "48762a775809b99c",
+  "name": "Dark Saiyan",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Level 10+</strong>\nYou accept the evil within your heart, unleashing it and manifesting it within your aura and the evil within your entire being.</p>\n<p>You gain the <em>Dark Energy</em> <strong>Power-Up</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "dark-saiyan",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Level 10+",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5693,
+        "endLine": 5699
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

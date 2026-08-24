@@ -1,0 +1,40 @@
+{
+  "_id": "317109fa224563e4",
+  "name": "Predator or Prey",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Choose 1</strong></p>\n<h5>Predator</h5>\n<p>You have advantage on <em>Unarmed Strikes</em> and <em>Weapon Attack Rolls</em> against a creature if at least one of your allies is within 5 feet of the creature you are targeting.</p>\n<h5>Prey</h5>\n<p>You can take the <strong>Dash, Dodge, or Disengage Actions</strong> as a Bonus Action on your turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "beastmen-predator-or-prey",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 766,
+        "endLine": 772
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Beastmen"
+    }
+  }
+}

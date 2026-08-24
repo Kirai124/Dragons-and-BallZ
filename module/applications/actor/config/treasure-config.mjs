@@ -15,7 +15,7 @@ export default class TreasureConfig extends BaseConfigSheet {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/actors/config/treasure-config.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/config/treasure-config.hbs"
     }
   };
 

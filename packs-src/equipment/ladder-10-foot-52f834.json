@@ -1,0 +1,42 @@
+{
+  "_id": "52f834140a0ccd6a",
+  "name": "Ladder (10-foot)",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ1,000 | <strong>Weight:</strong> 25 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "ladder-10-foot",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 25.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9723,
+        "endLine": 9775
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

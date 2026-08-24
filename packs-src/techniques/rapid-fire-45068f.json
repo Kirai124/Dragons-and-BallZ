@@ -1,0 +1,39 @@
+{
+  "_id": "45068f6c6c80b0f8",
+  "name": "Rapid Fire!",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 6 Ki</li>\n<li><strong>Prerequisites:</strong> None</li>\n<li><strong>Casting Time:</strong> 1 Bonus Action</li>\n<li><strong>Range:</strong> 60 Feet</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Barrage</li>\n</ul>\n<p>Roll 3 <em>Barrage Attack Rolls</em> dealing your <em>Basic Ki Blast Damage Die</em> on a hit.</p>\n",
+      "chat": ""
+    },
+    "identifier": "rapid-fire",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "barrage",
+    "kiCost": "6 Ki",
+    "castingTime": "1 Bonus Action",
+    "range": "60 Feet",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7744,
+        "endLine": 7756
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "ed40f5e1c2671516",
+  "name": "The Warm-Up Is Over",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Upon removing <em>Weighted Gear</em>, you gain an extra +1 to all <strong>Ability Scores</strong> for the duration of the benefit. This can be taken up to 3 times, increasing the bonus by +1 each time.</p>\n",
+      "chat": ""
+    },
+    "identifier": "the-warm-up-is-over",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6358,
+        "endLine": 6361
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

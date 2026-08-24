@@ -1,0 +1,40 @@
+{
+  "_id": "78bcda42d285550e",
+  "name": "Earthling:",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 to any Ability Score</li>\n</ul>\n<p>Having Human DNA gives you their innate ability to learn and adapt. You gain proficiency in 2 Skills of your choice or Expertise in 1 skill. You also gain access to the super earthling transformation.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android-earthling",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1550,
+        "endLine": 1555
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Bio-Android"
+    }
+  }
+}

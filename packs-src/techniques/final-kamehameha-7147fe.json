@@ -1,0 +1,39 @@
+{
+  "_id": "7147feb6a3a80e8f",
+  "name": "Final Kamehameha",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 80 Ki</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Final Flash</em> and <em>Super Kamehameha</em></li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self (150 foot line)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Beam</li>\n</ul>\n<p>The Super powered combo of Goku and Vegeta’s strongest moves. Two compressed energy spheres forced together into a devestating beam attack. Targets in range must make a <em>Dexterity Saving Throw</em> taking 12d10 <em>Ki Damage</em> on a fail, half on a success.</p>\n",
+      "chat": ""
+    },
+    "identifier": "final-kamehameha",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "beam",
+    "kiCost": "80 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (150 foot line)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Final Flash* and *Super Kamehameha*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8597,
+        "endLine": 8610
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

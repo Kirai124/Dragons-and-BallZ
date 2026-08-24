@@ -1,0 +1,39 @@
+{
+  "_id": "295f049afb84662e",
+  "name": "Rakshasa Claw",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  25 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Bonus Action, when you use your action to take the <em>Attack Action</em>.</li>\n<li><strong>Range:</strong> Self</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> No</li>\n</ul>\n<p>By funneling ki into your weapon you can fire out ki projectiles of your equipped weapon. For the duration of your <em>Attack Action</em> your equipped weapons gain a range of 60 feet and have their <em>Damage Type</em> replaced with <em>Ki Damage</em>. If your weapon already had a range, both its long and short range increases by half its <em>Long Range Distance</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "rakshasa-claw",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "weapon",
+    "kiCost": "25 Ki",
+    "castingTime": "1 Bonus Action, when you use your action to take the *Attack Action*.",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7499,
+        "endLine": 7510
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

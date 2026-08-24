@@ -1,0 +1,42 @@
+{
+  "_id": "d0a6d4331801fb2d",
+  "name": "Silver (SP)",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ƶ:</strong> 1,000 | <strong>CP:</strong> 10 | <strong>SP:</strong> 1 | <strong>EP:</strong> 1/5 | <strong>GP:</strong> 1/10 | <strong>PP:</strong> 1/100</p>\n",
+      "chat": ""
+    },
+    "identifier": "silver-sp",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9211,
+        "endLine": 9218
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

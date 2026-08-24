@@ -1,0 +1,33 @@
+{
+  "_id": "0bf5908093e7d7fc",
+  "name": "Time Storage",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The user can hold a maximum number of <em>Time Points</em> equal to half of their <em>Proficiency Bonus</em>, rounded up. <em>Time Points</em> can be recharged at a rate of 1 <strong>Stamina</strong> per <em>Time Point</em>. As an Action you may convert up to as many <strong>Stamina</strong> into Time Points as you can hold.</p>\n<p>Whenever you are under the effects of a <em>Time Skip</em> you may not create <em>Time Points</em> or use another <strong>Time Skip Feature</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "time-storage",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Time Skip"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3469,
+        "endLine": 3474
+      }
+    }
+  }
+}

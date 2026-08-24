@@ -1,0 +1,41 @@
+{
+  "_id": "aec81716670f5c5a",
+  "name": "Flowing Dark Energy",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Rank 3 Power-Up</em></p>\n<p>Your aura flares a deep blackish red and your eyes glow white. While you have this form active your alignment actively shifts 1 step down. (Good 》 Neutral 》Evil)</p>\n<ul>\n<li>+3 <strong>Power Bonus</strong></li>\n<li>You deal +2d4 to all <em>Damage Rolls</em></li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "flowing-dark-energy",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": 3,
+    "family": "Energy of Sesa's Family",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "bonus",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Mashin-Jins; Energy of Sesa's Family"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4557,
+        "endLine": 4565
+      },
+      "formFamily": "Energy of Sesa's Family"
+    }
+  }
+}

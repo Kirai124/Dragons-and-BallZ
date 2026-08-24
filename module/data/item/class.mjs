@@ -50,6 +50,9 @@ export default class ClassData extends ItemDataModel.mixin(
         spent: new NumberField({ required: true, nullable: false, integer: true, initial: 0, min: 0 })
       }),
       levels: new NumberField({ required: true, nullable: false, integer: true, min: 0, initial: 1 }),
+      kiModifier: new NumberField({
+        required: true, nullable: false, integer: true, initial: 0, label: "DBZ.ClassKiModifier"
+      }),
       primaryAbility: new SchemaField({
         value: new SetField(new StringField()),
         all: new BooleanField({ initial: true })

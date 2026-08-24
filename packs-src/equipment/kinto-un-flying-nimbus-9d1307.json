@@ -1,0 +1,42 @@
+{
+  "_id": "9d1307f9cc9ccf5b",
+  "name": "Kinto'un (Flying Nimbus)",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Can be attuned</em></p>\n<p>This is a medium sized golden cloud passed on to those with pure hearts. Only those with a &quot;Good&quot; alignment can ride on this cloud, all others harmlessly pass through.</p>\n<p>The Kinto'un has an AC of 15 and 10 HP. It is immune to nonmagical slashing, bludgeoning, and piercing damage. While being ridden it has a fly speed of 60 feet  and while not being ridden it has a fly speed of 120 feet. The Kinto'un acts on your turn.</p>\n<p>Whenever you mount the Kinto'un you may choose to attune to it. While you are attuned, as a bonus action on your turn you may shout it's name to the heavens and it appears, picking you up or waiting within 60 feet of you at a location you choose at it flys in as a streak of golden wind. As a bonus action on your turn you may give the Kinto'un a simple command such as: &quot;Get Krillin out of the way&quot; or &quot;Pick up Goten from South City&quot; and it will spend all of it's movement each round to complete this task and return to you to the best of it's ability. If you command it to pick someone up they must also be &quot;Good&quot; alignment or fall through it. If the Kinto'un is given an impossible task it will start it's return the moment it fails.\nVery rarely a <em>Nimbus</em> is created by another creature, giving it a different <em>Alignment</em> or <em>Prerequisite</em> that you must match to be able to ride it.</p>\n",
+      "chat": ""
+    },
+    "identifier": "kinto-un-flying-nimbus",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9967,
+        "endLine": 9979
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "cb3a7047d3796dfc",
+  "name": "Wolf Style",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><strong>Prerequisites:</strong> Dexterity ≥ 15</li>\n</ul>\n<p>A lighting fast fighting style based on sharp strikes and battlefield control.</p>\n<ul>\n<li>You gain +15 <em>Walk Speed</em></li>\n<li>When you cast the <em>Flurry of Blows</em> <strong>Technique</strong> or a <strong>Technique</strong> with <em>Wolf Fang</em> in the name, increase the <em>Damage Die</em> by 1 step.</li>\n<li>+1 <em>Static Bonus</em> to <em>Attack Rolls</em> when you take the <em>Attack Action</em>.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "wolf-style",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "stance",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Passive",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "Dexterity ≥ 15",
+    "tags": "stance"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9122,
+        "endLine": 9130
+      },
+      "techniqueSection": "stance"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "892cd1ef27ce1311",
+  "name": "Legendary Grade 2",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You let control of the Berserker Rage leak out more, increasing your muscle mass drastically but in control</p>\n<ul>\n<li>+1 <strong>Power Bonus</strong></li>\n<li>You deal +1d4 to all <em>Damage Rolls</em></li>\n<li>Decrease all <em>Movement Speed</em> by 15 ft.</li>\n<li>+1 Ranks of <strong>Bulk</strong></li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "legendary-grade-2",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Legendary Grades",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "action",
+    "powerBonus": 1,
+    "berserker": true,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Mutant Saiyan; Legendary Grades"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4308,
+        "endLine": 4317
+      },
+      "formFamily": "Legendary Grades"
+    }
+  }
+}

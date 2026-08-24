@@ -1,0 +1,39 @@
+{
+  "_id": "8c0900a8f8eb2cf7",
+  "name": "All Clear",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  60 Ki</li>\n<li><strong>Casting Time:</strong> 1 Reaction, which you take when subject to a <em>Basic Ki Blast</em> or <strong>Ki Technique</strong></li>\n<li><strong>Range:</strong>  Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A frontal sweeping attack that can negate Ki Waves.\nWhen you are subject to a <em>Basic Ki Blast</em> or <strong>Ki Technique</strong> of <strong>Rank 3</strong> or below, you may use this <strong>Technique</strong> and negate the attack. If the <strong>Technique</strong> is a <strong>Rank 4</strong>, the damage is halved instead.</p>\n",
+      "chat": ""
+    },
+    "identifier": "all-clear",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "60 Ki",
+    "castingTime": "1 Reaction, which you take when subject to a *Basic Ki Blast* or **Ki Technique**",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6833,
+        "endLine": 6844
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "0a97b60492d6b685",
+  "name": "Martial Arts",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your practice of martial arts gives mastery over <em>Unarmed Strikes</em> and <em>Martial Artist Weapons</em>, which are <em>Shortswords</em> and any <em>Simple Melee Weapons</em> without the <em>Heavy</em> or <em>Two-handed Property</em>.</p>\n<p>You gain the following benefits when unarmed or wielding only <em>Martial Artist Weapons</em>:</p>\n<ul>\n<li>Your <em>Unarmed Strikes and Martial Artist Weapons</em> deal damage equal to the <strong>Martial Arts Table</strong> above</li>\n<li>Your <em>Unarmed Strikes</em> and <em>Martial Artist Weapons</em> have the <em>Finesse Property</em> (if they didn’t already), allowing you to use either <em>Dexterity</em> or <em>Strength</em> for <em>Attack</em> and <em>Damage Rolls</em> with them</li>\n<li>When you take the <em>Attack Action</em> with an <em>Unarmed Strike</em> and <em>Martial Artist Weapon</em> on your turn, you may make one <em>Unarmed Strike</em> as a bonus action.</li>\n<li>You may use <em>Dexterity</em> instead of <em>Strength</em> when calculating <em>Attack Roll Bonus</em> and <em>Save DC</em> for <strong>Melee Techniques</strong>.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "martial-artist-martial-arts",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2628,
+        "endLine": 2636
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Martial Artist"
+    }
+  }
+}

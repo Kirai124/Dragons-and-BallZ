@@ -1,0 +1,131 @@
+{
+  "_id": "f49af3dbdeb36d92",
+  "name": "Arcosian",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/arcosian.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>Physical Description</h3>\n<p>Arcosians or Frost Demons are vaguely humanoid aliens born with protective armor/skin, horns, and tails. All Frost Demons are males and they reproduce asexually. When a Frost Demon is born, it immediately covers itself in a thick, unbreakable layer of ice and begins a thawing process which can last a varying number of years. The number of years they remain in thawing determines how powerful they are when they emerge. The longer they thaw, the more powerful they will be. Upon emerging from this thawing period, they are fully grown adult Frost Demons. Afterwards, if it is needed, the Frost Demon will create for himself a varying number of transformations to help keep his power under control.</p>\n<h3>History</h3>\n<p>Frost Demons hail from one of the coldest planets in the Universe, Geyser. Due to the harsh nature of their home the population remains relatively low. However, this did not stop them from making a name for themselves, conquering and trading planets for thousands of years, acting as one of the largest empires in the universe for several years until they were defeated by the saiyans, an act of revenge for the destruction of their planet by Frieza.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase</h4>\n<p>Intelligence +2 or Dexterity +2, Charisma +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 40 feet.</p>\n<h4>Languages</h4>\n<p>You know Common and Cold</p>\n<h4>Skills</h4>\n<p>You gain the <em>Persuasian</em> and <em>Deception Skills</em>.</p>\n<h3>Racial Features</h3>\n<h4>Alien resilience</h4>\n<p>You have no need to breathe and can safely travel through the vacuum of space. You have <em>Resistance</em> to <em>Cold Damage</em>.</p>\n<h4>Alien Brain</h4>\n<p>You are a long living species and as such have a inherently different brain structure. You have advantage on all <em>Intelligence, Charisma, and Wisdom Saving Throws</em> against magic.</p>\n<h4>Exoskeleton</h4>\n<p>Due to your bone-like exoskeleton, you gain a bonus to your <strong>AC</strong> equal to your <strong>Ki Rank.</strong></p>\n<h4>Frozen Fury</h4>\n<p>Once per Long Rest, when you use a <strong>Technique</strong> of any type you may choose to gain a +3 <em>Static Bonus</em> to that casting.</p>\n<h4>Gates of Power</h4>\n<p>Arcosions have a strange life span, being born into their final form before descending into a weakened state until they can handle the full force of their own power. You gain access to <em>Arcosion</em> <strong>Feats</strong> and Arcosion <strong>Forms</strong> as laid out in the <em><strong>Forms</strong></em> chapter.</p>\n",
+      "chat": ""
+    },
+    "identifier": "arcosian",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "40"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "b8f0858bd30617e5": {
+        "_id": "b8f0858bd30617e5",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "int": 2,
+            "dex": 2
+          },
+          "locked": [],
+          "points": 1
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Intelligence +2 or Dexterity +2, Charisma +1"
+      },
+      "cf11944ed008a223": {
+        "_id": "cf11944ed008a223",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:dec"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Persuasian and Deception Skills."
+      },
+      "45f204581ba81422": {
+        "_id": "45f204581ba81422",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You know Common and Cold"
+      },
+      "b8dd73e6d6fd609e": {
+        "_id": "b8dd73e6d6fd609e",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.faca916f2982aabf",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.2288e9b877cf4709",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b651d30909c7a053",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1b881c2e410a7b5a",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.fa831098a8ffc75f",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1405,
+        "endLine": 1449
+      }
+    }
+  }
+}

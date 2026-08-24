@@ -1,0 +1,33 @@
+{
+  "_id": "8759f4560b4c3993",
+  "name": "God Ki Creation",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Can never be learned by another master.</strong></p>\n<p>You have been taught to create and harness the energy of the gods. Your <strong>Maximum God Ki</strong> increases by 1.</p>\n",
+      "chat": ""
+    },
+    "identifier": "god-ki-creation",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Angel"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3704,
+        "endLine": 3707
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "b4bc4e0e1874154b",
+  "name": "Shockwave Strike",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  30 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self (45 foot cone)</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>Punch the air with the sole purpose of destablizing targets in front of you.</p>\n<p>All Targets in range  must make a <em>Strength Saving Throw</em> or be knocked <em>Prone</em> and they can not take Reactions until the end of your next turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "shockwave-strike",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "30 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (45 foot cone)",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7018,
+        "endLine": 7030
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

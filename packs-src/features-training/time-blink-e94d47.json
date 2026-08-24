@@ -1,0 +1,33 @@
+{
+  "_id": "e94d47cdb3077db9",
+  "name": "Time Blink",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>2 Time Points</em>\nWhenever you would use your Movement for your turn you may spend your Reaction to vanish from the timestream momentarily.  You do not provoke <em>Attacks of Opprotunity</em> until the end of your turn.</p>\n",
+      "chat": ""
+    },
+    "identifier": "time-blink",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Time Skip"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3497,
+        "endLine": 3501
+      }
+    }
+  }
+}

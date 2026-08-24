@@ -1,0 +1,39 @@
+{
+  "_id": "3f215e74cd8b1d7d",
+  "name": "Perfect Energy Wave",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 30 Ki</li>\n<li><strong>Prerequisites:</strong> 1 Star in <em>Max Power Energy Wave</em></li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> 60 Feet</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong> Beam</li>\n</ul>\n<p>Fire a ferocious beam of energy with the full force of your Ki. Make a <em>Beam Attack Roll</em> dealing a number of d10 equal to your <em>Wisdom Modifier</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "perfect-energy-wave",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "beam",
+    "kiCost": "30 Ki",
+    "castingTime": "1 Action",
+    "range": "60 Feet",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 Star in *Max Power Energy Wave*",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8349,
+        "endLine": 8361
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

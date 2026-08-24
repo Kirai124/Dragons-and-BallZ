@@ -1,0 +1,40 @@
+{
+  "_id": "2ed15c54668f0d23",
+  "name": "Defensive Aura",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your ki forms an invisible barrier around your body, softening impacts and shielding you from energy.</p>\n<p>While wearing no <em>Armor</em> and not wielding a <em>Shield</em>, your <strong>AC</strong> equals 10 + double your <em>Wisdom Modifier</em>+ half of your <em>Proficiency Bonus</em> (rounded up).</p>\n<p>When you are wearing <em>Armor</em> you may use your <em>Wisdom</em> in place of <em>Dexterity</em> for <strong>AC Calculation</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "blaster-defensive-aura",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2877,
+        "endLine": 2882
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Blaster"
+    }
+  }
+}

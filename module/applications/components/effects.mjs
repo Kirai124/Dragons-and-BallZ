@@ -25,14 +25,14 @@ export default class EffectsElement extends (foundry.applications.elements.Adopt
       width: 70,
       order: 1000,
       priority: 1000,
-      template: "systems/dnd5e/templates/effects/columns/controls.hbs"
+      template: "systems/dragons-and-ballz/templates/effects/columns/controls.hbs"
     },
     detail: {
       id: "detail",
       width: 150,
       order: 100,
       priority: 600,
-      template: "systems/dnd5e/templates/effects/columns/detail.hbs"
+      template: "systems/dragons-and-ballz/templates/effects/columns/detail.hbs"
     }
   };
 
@@ -242,7 +242,7 @@ export default class EffectsElement extends (foundry.applications.elements.Adopt
       },
       {
         label: "DND5E.CONCENTRATION.Action.Break",
-        icon: '<dnd5e-icon src="systems/dnd5e/icons/svg/break-concentration.svg"></dnd5e-icon>',
+        icon: '<dnd5e-icon src="systems/dragons-and-ballz/icons/svg/break-concentration.svg"></dnd5e-icon>',
         group: "state",
         visible: () => isConcentrationEffect,
         onClick: () => this.document.endConcentration(effect)
@@ -370,7 +370,7 @@ export default class EffectsElement extends (foundry.applications.elements.Adopt
       this.app.expandedSections.set(`effects.${effect.id}`, false);
     } else {
       const context = await effect.getPreviewContext({ secrets: effect.isOwner });
-      const template = "systems/dnd5e/templates/effects/parts/effect-summary.hbs";
+      const template = "systems/dragons-and-ballz/templates/effects/parts/effect-summary.hbs";
       const content = await foundry.applications.handlebars.renderTemplate(template, context);
       summary.querySelectorAll(".item-summary").forEach(el => el.remove());
       summary.insertAdjacentHTML("beforeend", content);

@@ -32,7 +32,7 @@ export default class ActivityChoiceDialog extends Application5e {
 
   static PARTS = {
     activities: {
-      template: "systems/dnd5e/templates/activity/activity-choices.hbs"
+      template: "systems/dragons-and-ballz/templates/activity/activity-choices.hbs"
     }
   };
 
@@ -88,7 +88,7 @@ export default class ActivityChoiceDialog extends Application5e {
       controlHint = _loc("DND5E.Controls.Activity.FastForwardHint");
       controlHint = controlHint.replace(
         "<left-click>",
-        `<img src="systems/dnd5e/icons/svg/mouse-left.svg" alt="${_loc("DND5E.Controls.LeftClick")}">`
+        `<img src="systems/dragons-and-ballz/icons/svg/mouse-left.svg" alt="${_loc("DND5E.Controls.LeftClick")}">`
       );
     }
     const activities = this.#item.system.activities

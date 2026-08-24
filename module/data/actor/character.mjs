@@ -1,5 +1,4 @@
 import HitDice from "../../documents/actor/hit-dice.mjs";
-import Proficiency from "../../documents/actor/proficiency.mjs";
 import { defaultUnits, simplifyBonus } from "../../utils.mjs";
 import FormulaField from "../fields/formula-field.mjs";
 import LocalDocumentField from "../fields/local-document-field.mjs";
@@ -12,6 +11,7 @@ import AttributesFields from "./templates/attributes.mjs";
 import CreatureTemplate from "./templates/creature.mjs";
 import DetailsFields from "./templates/details.mjs";
 import TraitsFields from "./templates/traits.mjs";
+import { aggregateFormBonuses } from "../../dragonball-rules.mjs";
 
 const {
   ArrayField, BooleanField, HTMLField, IntegerSortField, NumberField, SchemaField, SetField, StringField
@@ -85,7 +85,25 @@ export default class CharacterData extends CreatureTemplate {
           value: new NumberField({
             min: 1, initial: null, nullable: true, integer: true, label: "DND5E.PIETY.FIELDS.value.label", placeholder: "0"
           }),
-        })
+        }),
+        ki: makeDragonBallResourceField({ label: "DBZ.Ki", classModifier: true }),
+        stamina: makeDragonBallResourceField({ label: "DBZ.Stamina" }),
+        godKi: new SchemaField({
+          value: new NumberField({ required: true, nullable: false, integer: true, min: 0, max: 3, initial: 0, label: "DBZ.GodKi" }),
+          max: new NumberField({ nullable: true, integer: true, min: 0, max: 3, initial: null, label: "DBZ.ResourceMaxOverride" }),
+          calculatedMax: new NumberField({ persisted: false, nullable: false, min: 0, max: 3, initial: 0 }),
+          effectiveMax: new NumberField({ persisted: false, nullable: false, min: 0, max: 3, initial: 0 }),
+          pct: new NumberField({ persisted: false, nullable: false, min: 0, max: 100, initial: 0 })
+        }, { label: "DBZ.GodKi" }),
+        power: new SchemaField({
+          value: new NumberField({ required: true, nullable: false, integer: true, initial: 0, label: "DBZ.Power" }),
+          formBonus: new NumberField({ persisted: false, nullable: false, integer: true, initial: 0 }),
+          total: new NumberField({ persisted: false, nullable: false, integer: true, initial: 0 }),
+          threshold: new NumberField({ persisted: false, nullable: false, integer: true, initial: 0 }),
+          overload: new NumberField({ persisted: false, nullable: false, integer: true, min: 0, initial: 0 })
+        }, { label: "DBZ.Power" }),
+        kiRank: new NumberField({ persisted: false, nullable: false, integer: true, min: 0, max: 4, initial: 0, label: "DBZ.KiRank" }),
+        powerLevel: new NumberField({ persisted: false, nullable: false, min: 0, initial: 0, label: "DBZ.PowerLevel" })
       }, { label: "DND5E.Attributes" }),
       bastion: new SchemaField({
         name: new StringField({ required: true }),
@@ -175,8 +193,9 @@ export default class CharacterData extends CreatureTemplate {
       if ( item.type === "class" ) this.details.level += item.system.levels;
     }
 
-    // Character proficiency bonus
-    this.attributes.prof = Proficiency.calculateMod(this.details.level);
+    // Dragons and BallZ character proficiency bonus: +3 at levels 1-3, then +1 every three levels.
+    const dbzLevel = Math.max(1, this.details.level ?? 1);
+    this.attributes.prof = Math.min(9, 3 + Math.floor((dbzLevel - 1) / 3));
 
     // Experience required for next level
     const { xp, level } = this.details;
@@ -256,6 +275,113 @@ export default class CharacterData extends CreatureTemplate {
       hpOptions.mod = this.abilities[CONFIG.DND5E.defaultAbilities.hitPoints ?? "con"]?.mod ?? 0;
     }
     AttributesFields.prepareHitPoints.call(this, this.attributes.hp, hpOptions);
+    this.prepareDragonBallResources();
+  }
+
+
+  /* -------------------------------------------- */
+
+  /**
+   * Prepare Dragons and BallZ resources derived from the handbook rules.
+   * Stamina maximum is Level + Constitution modifier. Ki gained each level
+   * is Constitution modifier + Wisdom modifier + Class Ki Modifier.
+   * Persisted max fields are optional overrides for features and GM tuning.
+   */
+  prepareDragonBallResources() {
+    const { attributes } = this;
+    const level = Math.max(0, this.details.level ?? 0);
+    const con = this.abilities.con?.mod ?? 0;
+    const wis = this.abilities.wis?.mod ?? 0;
+
+    const stamina = attributes.stamina;
+    stamina.calculatedMax = Math.max(0, level + con + (stamina.bonus ?? 0));
+    stamina.effectiveMax = stamina.max ?? stamina.calculatedMax;
+    stamina.available = Math.max(0, stamina.value ?? 0) + Math.max(0, stamina.temp ?? 0);
+    stamina.pct = stamina.effectiveMax > 0
+      ? Math.clamp(Math.round((Math.max(0, stamina.value ?? 0) / stamina.effectiveMax) * 100), 0, 100)
+      : 0;
+
+    const ki = attributes.ki;
+    // Ki is gained per class level. Each class item carries the handbook's Class Ki Modifier.
+    // The persisted classModifier field remains a fallback for levels which are not represented by a class item.
+    const classes = Object.values(this.parent.classes ?? {});
+    const representedLevels = classes.reduce((sum, cls) => sum + Math.max(0, cls.system?.levels ?? 0), 0);
+    const classKi = classes.reduce((sum, cls) => {
+      const levels = Math.max(0, cls.system?.levels ?? 0);
+      return sum + (levels * (cls.system?.kiModifier ?? 0));
+    }, 0);
+    const fallbackLevels = Math.max(0, level - representedLevels);
+    const fallbackClassKi = fallbackLevels * (ki.classModifier ?? 0);
+    ki.calculatedMax = Math.max(0, (level * (con + wis)) + classKi + fallbackClassKi + (ki.bonus ?? 0));
+    ki.effectiveMax = ki.max ?? ki.calculatedMax;
+    ki.available = Math.max(0, ki.value ?? 0) + Math.max(0, ki.temp ?? 0);
+    ki.pct = ki.effectiveMax > 0
+      ? Math.clamp(Math.round((Math.max(0, ki.value ?? 0) / ki.effectiveMax) * 100), 0, 100)
+      : 0;
+
+    const godKi = attributes.godKi;
+    godKi.calculatedMax = level >= 20 ? 1 : 0;
+    godKi.effectiveMax = godKi.max ?? godKi.calculatedMax;
+    godKi.pct = godKi.effectiveMax > 0
+      ? Math.clamp(Math.round((Math.max(0, godKi.value ?? 0) / godKi.effectiveMax) * 100), 0, 100)
+      : 0;
+
+    // Ki Rank follows the handbook's level breakpoints: 1 / 5 / 10 / 15.
+    attributes.kiRank = level >= 15 ? 4 : level >= 10 ? 3 : level >= 5 ? 2 : level >= 1 ? 1 : 0;
+
+    // Active Forms contribute their listed Power Bonus while the source value remains editable.
+    const activeFormIds = this.parent.getFlag("dragons-and-ballz", "activeForms") ?? [];
+    const activeForms = activeFormIds.map(id => this.parent.items.get(id)).filter(item => item?.type === "form");
+    const formBonuses = aggregateFormBonuses(activeForms);
+    const power = attributes.power;
+    power.formBonus = activeForms.reduce((sum, item) => sum + Number(item.system.powerBonus ?? 0), 0);
+    power.total = Number(power.value ?? 0) + power.formBonus;
+    power.threshold = (attributes.prof ?? 0) + (godKi.value ?? 0);
+    power.overload = Math.max(0, power.total - power.threshold);
+
+    // Power directly improves Spirit checks and penalizes Ki Control checks by the same amount.
+    const powerValue = power.total ?? 0;
+    for ( const [skillId, modifier] of [["spi", powerValue], ["kic", -powerValue]] ) {
+      const skill = this.skills?.[skillId];
+      if ( !skill || !modifier ) continue;
+      skill.bonus += modifier;
+      skill.total += modifier;
+      skill.passive += modifier;
+    }
+
+    const maxHP = attributes.hp.effectiveMax ?? attributes.hp.max ?? 0;
+    attributes.powerLevel = Math.max(0, maxHP * ((ki.value ?? 0) / 2) * ((power.total ?? power.value ?? 0) + 1));
+
+    // Deterministic Form effects: only unambiguous additive AC/movement text is automated.
+    // Conditional/narrative Form benefits stay on the Item description for GM adjudication.
+    if ( formBonuses.movementMultiplier !== 1 || formBonuses.movementFlat ) {
+      for ( const key of Object.keys(attributes.movement?.speeds ?? {}) ) {
+        const current = attributes.movement.speeds[key];
+        if ( Number.isFinite(current) && current > 0 ) {
+          attributes.movement.speeds[key] = Math.floor((current * formBonuses.movementMultiplier) + formBonuses.movementFlat);
+        }
+      }
+    }
+    if ( formBonuses.ac && Number.isFinite(attributes.ac?.value) ) attributes.ac.value += formBonuses.ac;
+
+    // Charging halves the final movement value after deterministic Form movement bonuses are applied.
+    if ( this.parent.getFlag("dragons-and-ballz", "chargingTechnique") ) {
+      for ( const key of Object.keys(attributes.movement?.speeds ?? {}) ) {
+        if ( Number.isFinite(attributes.movement.speeds[key]) && attributes.movement.speeds[key] > 0 ) {
+          attributes.movement.speeds[key] = Math.floor(attributes.movement.speeds[key] / 2);
+        }
+      }
+    }
+
+    // Every two ranks of Power modify AC and all saving throws by one. Roll execution adds the same save bonus.
+    const defensivePower = Math.trunc(powerValue / 2);
+    if ( defensivePower ) {
+      if ( Number.isFinite(attributes.ac?.value) ) attributes.ac.value += defensivePower;
+      for ( const ability of Object.values(this.abilities ?? {}) ) {
+        if ( Number.isFinite(ability.save?.bonus) ) ability.save.bonus += defensivePower;
+        if ( Number.isFinite(ability.save?.value) ) ability.save.value += defensivePower;
+      }
+    }
   }
 
   /* -------------------------------------------- */
@@ -360,6 +486,33 @@ export default class CharacterData extends CreatureTemplate {
 }
 
 /* -------------------------------------------- */
+
+
+/**
+ * Produce a schema field for a Dragons and BallZ consumable resource.
+ * @param {object} options
+ * @param {string} options.label
+ * @param {boolean} [options.classModifier=false]
+ * @returns {SchemaField}
+ */
+function makeDragonBallResourceField({ label, classModifier=false }) {
+  const fields = {
+    value: new NumberField({ required: true, nullable: false, integer: true, min: 0, initial: 0, label }),
+    temp: new NumberField({ required: true, nullable: false, integer: true, min: 0, initial: 0, label: "DBZ.Temp" }),
+    max: new NumberField({ nullable: true, integer: true, min: 0, initial: null, label: "DBZ.ResourceMaxOverride" }),
+    bonus: new NumberField({ required: true, nullable: false, integer: true, initial: 0, label: "DBZ.ResourceBonus" }),
+    calculatedMax: new NumberField({ persisted: false, nullable: false, integer: true, min: 0, initial: 0 }),
+    effectiveMax: new NumberField({ persisted: false, nullable: false, integer: true, min: 0, initial: 0 }),
+    available: new NumberField({ persisted: false, nullable: false, integer: true, min: 0, initial: 0 }),
+    pct: new NumberField({ persisted: false, nullable: false, min: 0, max: 100, initial: 0 })
+  };
+  if ( classModifier ) {
+    fields.classModifier = new NumberField({
+      required: true, nullable: false, integer: true, initial: 0, label: "DBZ.ClassKiModifier"
+    });
+  }
+  return new SchemaField(fields, { label });
+}
 
 /**
  * Produce the schema field for a simple trait.

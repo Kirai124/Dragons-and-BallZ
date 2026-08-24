@@ -1,0 +1,39 @@
+{
+  "_id": "7ceb56774983299b",
+  "name": "Self Indulgence",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Can be taken twice</strong>\nYou are becoming Destruction incarnate. You gain the <em>Ultra Ego</em> <strong>Form</strong>. If you take this <strong>Feat</strong> a second time you gain the <em>Burning Ultra Ego</em> <strong>Form.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "self-indulgence",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6045,
+        "endLine": 6051
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

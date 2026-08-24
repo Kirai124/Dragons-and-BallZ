@@ -346,11 +346,11 @@ export default class DamageApplicationElement extends ChatTrayElement {
         </span>
         <span class="calculated temp">
           <span class="value"></span>
-          <dnd5e-icon src="systems/dnd5e/icons/svg/damage/temphp.svg" inert></dnd5e-icon>
+          <dnd5e-icon src="systems/dragons-and-ballz/icons/svg/damage/temphp.svg" inert></dnd5e-icon>
         </span>
         <span class="calculated temp-max">
           <span class="value"></span>
-          <dnd5e-icon src="systems/dnd5e/icons/svg/damage/maxhp.svg" inert></dnd5e-icon>
+          <dnd5e-icon src="systems/dragons-and-ballz/icons/svg/damage/maxhp.svg" inert></dnd5e-icon>
         </span>
       `);
       pill.toggle = true;
@@ -437,9 +437,9 @@ export default class DamageApplicationElement extends ChatTrayElement {
       const types = change === "threshold" ? (values ? ["threshold"] : []) : Array.from(values ?? []);
       for ( const type of types ) {
         const icon = type === "ALL"
-          ? "systems/dnd5e/icons/svg/damage/all.svg"
+          ? "systems/dragons-and-ballz/icons/svg/damage/all.svg"
           : change === "threshold"
-            ? "systems/dnd5e/icons/svg/damage/threshold.svg"
+            ? "systems/dragons-and-ballz/icons/svg/damage/threshold.svg"
             : (CONFIG.DND5E.damageTypes[type] ?? CONFIG.DND5E.healingTypes[type])?.icon;
         if ( !icon ) continue;
         const { label, mode, pressed, title } = this.getChangeSourceOptions(type, change, options);

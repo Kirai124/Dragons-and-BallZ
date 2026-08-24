@@ -1,0 +1,42 @@
+{
+  "_id": "487ee05797c5350c",
+  "name": "Alchemist's supplies",
+  "type": "tool",
+  "img": "systems/dragons-and-ballz/icons/svg/items/tool.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ500,000 | <strong>Weight:</strong> 8 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "alchemist-s-supplies",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 8.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 500000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9821,
+        "endLine": 9840
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

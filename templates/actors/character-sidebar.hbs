@@ -15,7 +15,7 @@
         <div class="portrait {{#if portrait.token}}token{{/if}}">
             {{#if editable}}
             <label class="slide-toggle roboto-upper">
-                <input type="checkbox" name="flags.dnd5e.showTokenPortrait" {{ checked portrait.token }}>
+                <input type="checkbox" name="flags.dragons-and-ballz.showTokenPortrait" {{ checked portrait.token }}>
                 {{#if portrait.token}}
                 <i class="fas fa-toggle-on" inert></i>
                 {{ localize "DOCUMENT.Token" }}
@@ -164,6 +164,99 @@
                 {{/with}}
             </div>
 
+            {{!-- Ki --}}
+            <div class="meter-group dbz-resource-group">
+                <div class="label roboto-condensed-upper">
+                    <span>{{ localize "DBZ.Ki" }}</span>
+                    <span class="dbz-calculated-max" data-tooltip="DBZ.CalculatedMax">{{ system.attributes.ki.calculatedMax }}</span>
+                </div>
+                {{#with system.attributes.ki}}
+                <div class="meter sectioned hit-points dbz-ki meter-lg">
+                    <div class="progress hit-points" role="meter" aria-valuemin="0" aria-valuenow="{{ value }}"
+                         aria-valuemax="{{ effectiveMax }}" style="--bar-percentage: {{ pct }}%">
+                        <div class="label">
+                            <span class="value">{{ value }}</span>
+                            <span class="separator">&sol;</span>
+                            <span class="max">{{ effectiveMax }}</span>
+                        </div>
+                        <input type="text" name="system.attributes.ki.value" data-dtype="Number"
+                               data-max="{{ effectiveMax }}" placeholder="0" value="{{ value }}" hidden>
+                    </div>
+                    <div class="tmp">
+                        <input type="text" name="system.attributes.ki.temp" data-dtype="Number"
+                               placeholder="{{ localize 'DBZ.Temp' }}" value="{{#if temp}}{{ temp }}{{/if}}">
+                    </div>
+                </div>
+                {{/with}}
+            </div>
+
+            {{!-- Stamina --}}
+            <div class="meter-group dbz-resource-group">
+                <div class="label roboto-condensed-upper">
+                    <span>{{ localize "DBZ.Stamina" }}</span>
+                    <span class="dbz-calculated-max" data-tooltip="DBZ.CalculatedMax">{{ system.attributes.stamina.calculatedMax }}</span>
+                </div>
+                {{#with system.attributes.stamina}}
+                <div class="meter sectioned hit-points dbz-stamina meter-lg">
+                    <div class="progress hit-points" role="meter" aria-valuemin="0" aria-valuenow="{{ value }}"
+                         aria-valuemax="{{ effectiveMax }}" style="--bar-percentage: {{ pct }}%">
+                        <div class="label">
+                            <span class="value">{{ value }}</span>
+                            <span class="separator">&sol;</span>
+                            <span class="max">{{ effectiveMax }}</span>
+                        </div>
+                        <input type="text" name="system.attributes.stamina.value" data-dtype="Number"
+                               data-max="{{ effectiveMax }}" placeholder="0" value="{{ value }}" hidden>
+                    </div>
+                    <div class="tmp">
+                        <input type="text" name="system.attributes.stamina.temp" data-dtype="Number"
+                               placeholder="{{ localize 'DBZ.Temp' }}" value="{{#if temp}}{{ temp }}{{/if}}">
+                    </div>
+                </div>
+                {{/with}}
+            </div>
+
+            {{!-- Power, God Ki, and Power Level --}}
+            <div class="dbz-core-stats">
+                <div class="dbz-stat-card power{{#if system.attributes.power.overload}} overloaded{{/if}}"
+                     data-tooltip="{{#if system.attributes.power.overload}}DBZ.PowerOverload{{else}}DBZ.PowerThreshold{{/if}}">
+                    <div class="dbz-stat-label roboto-condensed-upper">{{ localize "DBZ.Power" }}</div>
+                    <div class="dbz-stat-value">
+                        {{#if actor.isOwner}}
+                        <input type="text" class="uninput" name="system.attributes.power.value" data-dtype="Number"
+                               value="{{ system.attributes.power.value }}" data-tooltip="DBZ.BasePower">
+                        {{else}}
+                        <span>{{ system.attributes.power.total }}</span>
+                        {{/if}}
+                    </div>
+                    <div class="dbz-stat-meta roboto-condensed-upper">
+                        {{ localize "DBZ.TotalPower" }} {{ system.attributes.power.total }}{{#if system.attributes.power.formBonus}} ({{ dnd5e-formatModifier system.attributes.power.formBonus }} {{ localize "DBZ.FormsShort" }}){{/if}} · {{ localize "DBZ.PowerThreshold" }} {{ system.attributes.power.threshold }}
+                    </div>
+                </div>
+
+                <div class="dbz-stat-card god-ki">
+                    <div class="dbz-stat-label roboto-condensed-upper">{{ localize "DBZ.GodKi" }}</div>
+                    <div class="dbz-stat-value dbz-fraction">
+                        {{#if actor.isOwner}}
+                        <input type="text" class="uninput" name="system.attributes.godKi.value" data-dtype="Number"
+                               data-max="{{ system.attributes.godKi.effectiveMax }}" value="{{ system.attributes.godKi.value }}">
+                        {{else}}
+                        <span>{{ system.attributes.godKi.value }}</span>
+                        {{/if}}
+                        <span class="separator">&sol;</span><span>{{ system.attributes.godKi.effectiveMax }}</span>
+                    </div>
+                    <div class="dbz-stat-meta roboto-condensed-upper">{{ localize "DBZ.Resource" }}</div>
+                </div>
+
+                <div class="dbz-stat-card power-level">
+                    <div>
+                        <div class="dbz-stat-label roboto-condensed-upper">{{ localize "DBZ.PowerLevel" }}</div>
+                        <div class="dbz-stat-meta roboto-condensed-upper">{{ localize "DBZ.PowerLevelFormulaShort" }}</div>
+                    </div>
+                    <div class="dbz-stat-value"><span>{{ dnd5e-numberFormat system.attributes.powerLevel }}</span></div>
+                </div>
+            </div>
+
             {{!-- Hit Dice --}}
             {{#with system.attributes.hd}}
             <div class="meter-group">
@@ -212,7 +305,7 @@
                 <button type="button" class="{{ rollableClass }} death-save unbutton" data-action="roll"
                         data-type="deathSave" data-tooltip="DND5E.DeathSaveRoll"
                         aria-label="{{ localize 'DND5E.DeathSaveRoll' }}">
-                    <dnd5e-icon src="systems/dnd5e/icons/svg/statuses/dead.svg"></dnd5e-icon>
+                    <dnd5e-icon src="systems/dragons-and-ballz/icons/svg/statuses/dead.svg"></dnd5e-icon>
                 </button>
                 {{/if}}
 

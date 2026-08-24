@@ -33,7 +33,7 @@ export default class TimePassedMessageData extends ChatMessageDataModel {
 
   /** @inheritDoc */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
-    template: "systems/dnd5e/templates/chat/time-passed-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/time-passed-card.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */

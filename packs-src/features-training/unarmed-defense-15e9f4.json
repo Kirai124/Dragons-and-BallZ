@@ -1,0 +1,40 @@
+{
+  "_id": "15e9f4860eb9a979",
+  "name": "Unarmed Defense",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>1st Level</strong> while wearing no <em>Armor</em> and not wielding a <em>Shield</em>, your <strong>AC</strong> equals 10 + your <em>Dexterity Modifier</em> + your <em>Constitution Modifier</em>+ half of your Proficiency Bonus, rounded up.</p>\n<p>If you are wearing <em>Armor</em>, you use <em>Constitution</em> for <strong>AC</strong> calculation instead of <em>Dexterity</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bruiser-unarmed-defense",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2996,
+        "endLine": 2999
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Bruiser"
+    }
+  }
+}

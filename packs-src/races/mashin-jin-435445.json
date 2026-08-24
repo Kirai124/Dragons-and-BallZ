@@ -1,0 +1,140 @@
+{
+  "_id": "435445c42b27e62d",
+  "name": "Mashin-jin",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/mashin-jin.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Humanoid</strong></p>\n<h3>Physical Description</h3>\n<p>Mashin-jins can be as varied and different as earthlings, kais, or aliens in general having bright skin tones and pointed ears.</p>\n<h3>History</h3>\n<p>Mashin-jin’s, a race born from the first gods ripping the darkness out of the first shin-jin. The darkness that was left was too stubborn to disappear and thus created the first makaioshin Sesa a being of unimaginable darkness. Sesa became so powerful that even the gods together could only seal him away in the depths of darkness.</p>\n<h3>Society</h3>\n<p>Many Eons have passed since that fateful day and, like the rising moon, darkness eventually fell back into the hearts of kais but also light fostered in the heart of the Mashin-jins eventually making them beings of light and darkness like any other race and though they face ridicule they are now members of society. Mashin-jins can pull from their demonic heritage to use acts of magic that drain their stamina, though some become powerful enough to cast larger spells many can’t cast more than a fireball in their lifetimes. Mashin-jins can also pull at the empowered darkness inside of them to achieve their Demon Form making them increasingly aggressive and large, with a power boost to match. The Mashin-jins can even take on the visage of Sesa himself with their Makyouka form, drawing directly from his powers.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase:</h4>\n<p>Wisdom +2, Charisma +1</p>\n<h4>Speed:</h4>\n<p>Your <em>Base Walking Speed</em> is 30 feet.</p>\n<h4>Language</h4>\n<p>Common, Infernal and 1 other <em>Language</em> of your choice</p>\n<h4>Skills</h4>\n<p>You gain the <em>Intimidation</em> and <em>Arcana Skills</em></p>\n<h3>Racial Features</h3>\n<h4>Corrupted Blood of the Shin-jins</h4>\n<p>You have <em>Resistance</em> to <em>Fire</em> and <em>Necrotic Damage</em> as well as Advantage on <em>Spell Saving Throws</em>. Whenever you use the <strong>Block Manuever</strong> your <em>Resistance</em> becomes <em>Immunity</em> and you pass all <em>Spell Saving Throws</em> for the duration.</p>\n<h4>Infernal Legacy</h4>\n<p>You slowly unlock the full power of the <em>Demon Realm</em>. You gain access to <em>Mashin-jin</em> <strong>Feats</strong>.</p>\n<p>At <strong>1st Level</strong>, you know the <em>Thaumaturgy</em> <strong>Cantrip</strong>. When you reach <strong>3rd Level</strong>, you gain the <em>Hellish Rebuke</em> <strong>Spell</strong>. When you reach <strong>5th Level</strong>, you gain the <em>Fireball</em> <strong>Spell</strong>. These <strong>Spells</strong> are cast through the <strong>Mysticism Feature</strong> but can not be casted at a higher <strong>Spell Level.</strong></p>\n<p>At <strong>10th Level</strong> you may cast these spells at a higher <strong>Spell Level</strong> as if through the <strong>Mysticism Feature</strong>.</p>\n<p>At <strong>15th Level</strong> you may add any 3 <strong>Spells</strong> that deal damage of 5th level or below to this feature.</p>\n<h4>Demonic energy</h4>\n<p>Due to the strange energy flowing through you, creatures without <strong>God Ki</strong> treat your <em>Passive Ki Stealth</em> and <em>Ki Stealth Checks</em> as 5 higher than it would actually be.</p>\n<p>You gain the <strong>Fiend Tag</strong> and count as a <em>Kai</em> for the purpose of features such as the <em>Potara Earrings</em>.</p>\n<h4>Demonic Bloodline</h4>\n<p>You hold the blood of the great old one Sesa and have access to <em>Mashin-jin</em> <strong>Forms</strong> as laid out in the <em><strong>Forms Chapter</strong></em>.</p>\n<h4>Energy of the Demon Realm</h4>\n<p>When you use your Action to take the <em>Attack Action</em> or use a <strong>Technique</strong>, you may also expend your Bonus Action to empower it with demonic energy. Change the <em>Damage Type</em> of the attack you are using to <em>Necrotic Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "mashin-jin",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Humanoid"
+    },
+    "advancement": {
+      "a50e78c1507a2653": {
+        "_id": "a50e78c1507a2653",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "wis": 2,
+            "cha": 1
+          },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Wisdom +2, Charisma +1"
+      },
+      "b0a01928f38535cf": {
+        "_id": "b0a01928f38535cf",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:arc",
+            "skills:itm"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Intimidation and Arcana Skills"
+      },
+      "0dcc16d31a441b31": {
+        "_id": "0dcc16d31a441b31",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common",
+            "languages:exotic:infernal"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "Common, Infernal and 1 other Language of your choice"
+      },
+      "8b094fb3632eaa84": {
+        "_id": "8b094fb3632eaa84",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.7d421ffbbd5be128",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b3ef5ae1e731710a",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5e1166de0a954865",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.725bd5c5243a03b7",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.7c1868ee2a33b81f",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 930,
+        "endLine": 989
+      }
+    }
+  }
+}

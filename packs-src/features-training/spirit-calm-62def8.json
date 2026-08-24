@@ -1,0 +1,33 @@
+{
+  "_id": "62def8655c40f51a",
+  "name": "Spirit Calm",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain a 1d4 bonus to all <em>Charm</em> and <em>Berserk Saving Throws</em>. You may <em>Master</em> this feature like a <em><strong>Technique</strong></em> once at <strong>Ki Rank 2, 3,</strong> and <strong>4</strong> increasing the Die size by 1 step each time.</p>\n<p>When this <strong>Trained Feature</strong> has 3 <em>Ranks of Mastery</em>, you may end the <em>Charmed</em> or <em>Berserk Conditions</em> on yourself as a Reaction a number of times equal to your Wisdom Modifier per Long Rest, minimum of 1 time.</p>\n",
+      "chat": ""
+    },
+    "identifier": "spirit-calm",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": 2,
+    "requirements": "",
+    "tags": "trained feature; Spirit Control"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3441,
+        "endLine": 3445
+      }
+    }
+  }
+}

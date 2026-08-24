@@ -1,0 +1,41 @@
+{
+  "_id": "a15f444b2c4a62b8",
+  "name": "Namekian Split",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em><strong>Power-Up</strong></em>\n2 <strong>Stamina Upkeep</strong> per split created.\nThe user draws from the power of those assimilated and expels a clone of himself fueled by them. Each clone has the same Ability Scores as the user but shares the user’s health and ki. Each split has its turn immediately following the caster.</p>\n<p>You may create a number of clones equal to the number of Namekians you have assimilated to a max equal to half your proficiency bonus rounded up.</p>\n<ul>\n<li>This is learned as a <strong>Rank 2 Technique</strong> if <em>Super Namekian</em> is known.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "namekian-split",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": 2,
+    "family": "Namekians",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "bonus",
+    "powerBonus": 0,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Namekians"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4004,
+        "endLine": 4016
+      },
+      "formFamily": "Namekians"
+    }
+  }
+}

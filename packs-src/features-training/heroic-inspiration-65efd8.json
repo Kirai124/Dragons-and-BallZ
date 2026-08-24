@@ -1,0 +1,40 @@
+{
+  "_id": "65efd825eb4c38fa",
+  "name": "Heroic Inspiration",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You can inspire others through stirring words or music. As a Bonus Action on your turn, choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one <strong>Heroic Inspiration Die</strong>, a d6.</p>\n<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one <em>Ability Check, Attack Roll,</em> or <em>Saving Throw</em> they make. The creature can wait until after it rolls the d20 to decide to use the <strong>Heroic Inspiration Die</strong>, but must decide before the DM says whether the roll succeeds or fails. Once the <strong>Heroic Inspiration Die</strong> is rolled, it is lost. A creature can have only one (set of in the case of 2d6) <strong>Heroic Inspiration Die</strong> at a time.</p>\n<p>You can use this feature a number of times equal to your <em>Charisma Modifier</em>, minimum of once. You regain any expended uses when you finish a Long Rest.</p>\n<p>Your <strong>Heroic Inspiration Die</strong> changes when you reach certain <strong>Hero</strong> levels in this class as shown in the <strong>Heroic Presence Table</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "hero-heroic-inspiration",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3127,
+        "endLine": 3144
+      },
+      "contentCategory": "classFeature",
+      "grantedBy": "Hero"
+    }
+  }
+}

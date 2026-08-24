@@ -1,0 +1,33 @@
+{
+  "_id": "a69e73cace178743",
+  "name": "Divine Energy",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain the <strong>Celestial Tag</strong> and all creatures without the <strong>Celestial</strong> or <strong>Infernal Tag</strong> or access to <strong>God Ki</strong> treat your <em>Passive Ki Stealth</em> and <em>Ki Stealth Checks</em> as 5 higher than it would actually be.</p>\n<p>You also count as a <strong>Supreme Kai</strong> for sake of the <em>Potara Earrings</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "divine-energy",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Supreme Kai"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3670,
+        "endLine": 3681
+      }
+    }
+  }
+}

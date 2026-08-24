@@ -1,0 +1,39 @@
+{
+  "_id": "729b64aaa122dec7",
+  "name": "Ultra Instinct Mastery",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: *Complete Ultra Instinct***\nThis **Feat</strong> can be taken 5 times granting the following benefits:</p>\n<ul>\n<li>The first time you take this <strong>Feat</strong>, you can now use <em>Ultra Instinct Omen</em> as a <strong>Power-Up</strong></li>\n<li>The second time you would pick this <strong>Feat</strong>, you would reduce the <strong>Stamina Cost</strong> of <em>Ultra Instinct Omen</em> by 1</li>\n<li>The third time you would pick this <strong>Feat</strong>, you can now use <em>Complete Ultra Instinct</em> as a <strong>Power-Up</strong>.</li>\n<li>The fourth time you would pick this <strong>Feat</strong>, you reduce the <strong>Stamina Cost</strong> of <em>Ultra Instinct Omen</em> and <em>Complete Ultra Instinct</em> by 1.</li>\n<li>The fifth time you would pick this <strong>Feat</strong>, you can now use <em>Mastered Ultra Instinct</em> as a <strong>Power-Up</strong>.</li>\n</ul>\n<p>You do not gain these benefits before you have access to the effected <strong>Forms</strong> without activation restrictions.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ultra-instinct-mastery",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Complete Ultra Instinct",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6004,
+        "endLine": 6016
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

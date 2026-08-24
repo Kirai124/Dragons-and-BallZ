@@ -1,0 +1,42 @@
+{
+  "_id": "cf181c7951cf5987",
+  "name": "Senzu Beans",
+  "type": "consumable",
+  "img": "systems/dragons-and-ballz/icons/svg/items/consumable.svg",
+  "system": {
+    "description": {
+      "value": "<p>Senzu Beans are grown by Korin in Korin Tower. When eaten, a person's physical condition is near-instantly restored to its natural peak. This property makes them immensely useful to carry in battle. As such, since Korin allied himself with Goku and his friends, Korin usually assists them by providing the Dragon Team with a bag of Senzu Beans. However, the supply is limited, as it takes a long time to grow even a single Senzu Bean. Their texture is said to be a cross between an uncooked (or under-ripe) bean and a celery stalk, and Yajirobe states that they taste like fish.</p>\n<p>After eating a Senzu Bean you gain the following benefits:</p>\n<ul>\n<li>Your HP is restored to full.<ul>\n<li>The target's severed body members (fingers, legs, tails, and so on), if any, are restored so long as they are not scarred over.</li>\n</ul>\n</li>\n<li>Your Ki is restored to full.</li>\n<li>Your Stamina is restored to full.</li>\n<li>You are healed up to 7 ranks of exhaustion.</li>\n<li>You are fed for 7 days.</li>\n</ul>\n<p>Each Senzu Bean you eat after the first before a Long Rest will grant you 1 rank of Exhaustion that can only be cured from a Long Rest as your body has trouble withstanding the filling effects of the Senzu Bean</p>\n<table>\n<thead>\n<tr>\n  <th style=\"text-align:left\">Item</th>\n  <th style=\"text-align:center\">Cost</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td style=\"text-align:left\">Senzu Bean</td>\n  <td style=\"text-align:center\">Ƶ1,000,000,000</td>\n</tr>\n</tbody>\n</table>\n",
+      "chat": ""
+    },
+    "identifier": "senzu-beans",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9600,
+        "endLine": 9628
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

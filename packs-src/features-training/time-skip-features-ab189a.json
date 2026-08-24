@@ -1,0 +1,33 @@
+{
+  "_id": "ab189aade372c438",
+  "name": "Time Skip Features",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You gain access to these <strong>Features</strong> whenever you reach the <strong>Time Point Cost</strong> for that feature.</p>\n<h6>Time Skip</h6>\n<p><em>1 Time Point</em>\nThe user’s first steps to chrono mastery, the user stops time for brief moments. As a Bonus Action on your turn or as a <strong>Clash</strong> to any <strong>Technique</strong> you may spend <em>Time Points</em> to give all creatures but you the <em>Frozen in Time Condition</em> as well as grant you additional <em>Movement Speed</em> and <em>Action Economy</em>.</p>\n<p>If used as a <strong>Clash</strong>, the other <strong>Technique</strong> finishes its casting at the end of <em>Time Skip</em> unless you damage them or otherwise hender their ability to cast. You gain the following <em>Movement Speed</em> and <em>Action Economy</em> based on the amount of <em>Time Points</em> you spend:</p>\n<ul>\n<li>1 <em>Time Point</em>: 1 Bonus Action &amp; 10 Feet of Movement</li>\n<li>2 <em>Time Points</em>: 1  Action &amp; 20 Feet of Movement</li>\n<li>3 <em>Time Points</em>: 1 Action and 1 Bonus Action &amp; 30 Feet of Movement</li>\n</ul>\n<p>Alternatively you may expend 3 <em>Time Points</em> at the start of your turn to end the <em>Frozen in Time Condition</em> on yourself.</p>\n<h6>Stitch in Time</h6>\n<p><em>1 Time Point</em>\nAs an Action on your turn, you may peak into the timestream to see the past of a Person or Object that you are touching.\nThis ability allows you to rewind your or someone else's connection to the flow of time, allowing you to watch echoes of the past to see scenes of the past in perfect clarity. It is up to the <strong>DM</strong> to determine what you see.</p>\n<h6>Time Blink</h6>\n<p><em>2 Time Points</em>\nWhenever you would use your Movement for your turn you may spend your Reaction to vanish from the timestream momentarily.  You do not provoke <em>Attacks of Opprotunity</em> until the end of your turn.</p>\n<h6>Removed From Time</h6>\n<p><em>3 Time Points</em>\nThe user can remove himself from the prime material plane, temporarily allowing attacks to pass right through you. You are still visible and can still be seen and heard.</p>\n<p>As a Reaction on your turn whenever you are subject to an <em>Attack Roll</em> or forced to make a <em>Saving Throw</em>, you may cause all effects to miss you until the start of your next turn.</p>\n<h6>Time Cage</h6>\n<p><em>3 Time Points</em>\nChoose 1 creature or object within 60 feet. They must make a <em>Charisma Saving Throw</em> against your <strong>Omni Save DC</strong> or gain the <em>Frozen in Time</em> <strong>Condition</strong> until the start of your next turn.</p>\n<h6>Chronal Mastery</h6>\n<p><em>5 Time Points</em>\nThe user has complete mastery over time itself. As an Action you may touch 1 creature, completely reverse the last round of combat for the target. This reverses death, expended <strong>Resources</strong> such as <strong>HP, Ki,</strong> and <strong>Stamina</strong>, as well as limited use <strong>Features</strong>.</p>\n<p>If used outside of combat the effect's scope increases to up to 1 minute.</p>\n",
+      "chat": ""
+    },
+    "identifier": "time-skip-features",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Time Skip"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3475,
+        "endLine": 3528
+      }
+    }
+  }
+}

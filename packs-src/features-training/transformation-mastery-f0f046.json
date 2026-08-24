@@ -1,0 +1,39 @@
+{
+  "_id": "f0f0461d9c5fb41c",
+  "name": "Transformation Mastery",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Choose one <strong>Form</strong> you know, reduce the <strong>Stamina Upkeep</strong> by 1 (minimum 1) while it is active in your <em>Transformation Slot</em>.</p>\n<p>You may take this <strong>Heroic Feature</strong> no more than 3 times per <strong>Form</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "transformation-mastery",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6370,
+        "endLine": 6375
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

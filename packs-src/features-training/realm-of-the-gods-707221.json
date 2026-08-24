@@ -1,0 +1,39 @@
+{
+  "_id": "70722110089e9ad7",
+  "name": "Realm of the Gods",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>U7/U6/Ancient/Mutant</em></p>\n<p><strong>Requires: Super Saiyan God</strong> and <strong>Super Saiyan 1/Controlled Super Saiyan 1/Legendary Super Saiyan</strong>\nYou have learned to mix Super Saiyan with the energy of the gods and unlocked a new divine level of power. You can use <em>Super Saiyan God</em> as a <strong>Power-Up</strong> while your required <strong>Transformation</strong> listed above is active.</p>\n",
+      "chat": ""
+    },
+    "identifier": "realm-of-the-gods",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Super Saiyan God** and **Super Saiyan 1/Controlled Super Saiyan 1/Legendary Super Saiyan",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5520,
+        "endLine": 5526
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

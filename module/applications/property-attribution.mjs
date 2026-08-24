@@ -37,7 +37,7 @@ export default class PropertyAttribution extends Application5e {
   /** @override */
   static PARTS = {
     attribution: {
-      template: "systems/dnd5e/templates/apps/property-attribution.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/property-attribution.hbs"
     }
   };
 

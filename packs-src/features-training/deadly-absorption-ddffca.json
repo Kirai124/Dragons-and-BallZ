@@ -1,0 +1,39 @@
+{
+  "_id": "ddffca3f88513470",
+  "name": "Deadly absorption:",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Prerequisite: Incomplete Creation</p>\n<p>Your <strong>Life Drain</strong> now deals your Unarmed Damage and you may now use Weapon Techniques with your <strong>Life Drain</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "deadly-absorption",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Prerequisite: Incomplete Creation",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5914,
+        "endLine": 5918
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "_id": "e7414be9eea2dc8c",
+  "name": "Sateery",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/sateery.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<h3>History</h3>\n<p>Not much is known about this ancient magic bearing race. They are very far and few and only occasionly reproduce, immiedietly abandoning their offspring trusting their magic to keep them safe.</p>\n<h3>Physical Description</h3>\n<p>Large and goat-like the Sateery are a race capable of living longer than civilizations and almost none have ever been documented to die of old age.</p>\n<h3>Society</h3>\n<p>One they were a powerful race of magic users, stories suggest they were responsible for teaching the wizard Bibidi magic and were thanked for their generosity with destruction from his later creation, Majin Buu.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p>Wisdom +2 or Charisma +2, Intellegence +1</p>\n<h4>Speed</h4>\n<p>Your <em>Base Walk Speed</em> is 30 feet.</p>\n<h4>Languages</h4>\n<p>You can speak common and 1 additional Language of your choice.</p>\n<h4>Skills</h4>\n<p>You gain the <em>Nature</em> and <em>Arcana Skills</em>.</p>\n<h3>Racial Features</h3>\n<h4>Magical Nature</h4>\n<p>You have access to 1 branch of magic of your choice as if through the <em>Mysticism</em> <em><strong>Class Feature</strong></em>.</p>\n<h4>Energy Thief</h4>\n<p>As an Action, you may radiate a 10 foot radius of Stamina draining energy. This radius increases by 10 feet each time your <em>Proficiency Bonus</em> increases. This <strong>Feature</strong> requires concentration to maintain and cost at least 20 <strong>Ki</strong>.</p>\n<p>Whenever a creature enters this space or begin/ends it's turn in the radius you absorb 1 Stamina per 20 ki spent to maintain this feature.</p>\n<p>All <strong>Stamina</strong> gained in this way over your maximum becomes <strong>Temporary Stamina</strong>.</p>\n<h4>Maximum Power</h4>\n<p>You gain the <em>Full Power</em> <strong>Transformation</strong> at <strong>Level 5</strong> and the <em>Super Full Power</em> <strong>Transformation</strong> at <strong>Level 10</strong>.</p>\n<h4>Magical Weakness</h4>\n<p>You have <em>Resistance</em> to <em>Ki Damage</em> but have <em>Disadvantage</em> on all <em>Saving Throws</em> from <strong>Spells</strong>.</p>\n<h4>Absorbitive biology</h4>\n<p>Your body is naturally capable of gaining power from those you can eat. You can eat a creature of medium size only if they are willing, unconcious, paralyzed, or otherwise incapacitated.</p>\n<ul>\n<li>You learn all <strong>Techniques</strong>, <strong>Trained Features</strong>, and <em>Languages</em> of the assimilated. If the assimilated has more <em>Mastery Ranks</em> in a <strong>Technique</strong> that you know, you gain those <em>Mastery Ranks</em>.</li>\n<li>If they have any <strong>Ability Scores</strong> higher than yours you may add +1 to those <strong>Ability Scores</strong>, this may increase it above your <em>Ability Score Maximum</em>.<ul>\n<li>If none of their <strong>Ability Scores</strong> surpass yours you gain +1 to whichever <strong>Ability Score</strong> was their highest.</li>\n</ul>\n</li>\n<li>You gain visual quirks resembling the entities that you assimilated.</li>\n<li>You gain the <strong>Fusion Character Tag</strong> and lose all benefits from this feature that you have gained if you ever lose this <strong>Tag</strong>, coughing up those you have assimilated if it is lost.</li>\n</ul>\n<p>You may only gain this benefit a number of times equal to your <em>Constitution Modifier</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "sateery",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Alien"
+    },
+    "advancement": {
+      "b163799f134b892d": {
+        "_id": "b163799f134b892d",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "wis": 2,
+            "cha": 2
+          },
+          "locked": [],
+          "points": 1
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Wisdom +2 or Charisma +2, Intellegence +1"
+      },
+      "a237f8a5618ea693": {
+        "_id": "a237f8a5618ea693",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:arc",
+            "skills:nat"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Nature and Arcana Skills."
+      },
+      "bec46b7b183e418e": {
+        "_id": "bec46b7b183e418e",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "You can speak common and 1 additional Language of your choice."
+      },
+      "e16901a91e0cec3d": {
+        "_id": "e16901a91e0cec3d",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.95d17780fbeaf174",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.979c4822ada44e4d",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1cfc188983912893",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.1fd002856deff812",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.2d9b3c985c0873bb",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 2054,
+        "endLine": 2112
+      }
+    }
+  }
+}

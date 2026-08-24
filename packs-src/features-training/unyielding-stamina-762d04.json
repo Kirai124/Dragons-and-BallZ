@@ -1,0 +1,39 @@
+{
+  "_id": "762d04814d9be9c0",
+  "name": "Unyielding Stamina",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your reserves of stamina are deeper than most. Increase your <strong>Stamina</strong> by an amount equal to your <em>Character Level</em> and gain +1 <strong>Stamina</strong> every time you <em>Level-Up</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "unyielding-stamina",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5085,
+        "endLine": 5089
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "b9f3f4151750f219",
+  "name": "Elite Combo",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  65 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong>          Melee</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>Make 8 <em>Combo Attack Rolls</em> against a target of your choice within range dealing your <em>Unarmed Strike Damage Die</em> on a hit. You may move up to 10 Feet between each <em>Combo Attack Roll</em>, without provoking <em>Attacks of Opprotunity.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "elite-combo",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "melee",
+    "kiCost": "65 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7086,
+        "endLine": 7098
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

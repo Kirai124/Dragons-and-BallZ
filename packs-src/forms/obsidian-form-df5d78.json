@@ -1,0 +1,41 @@
+{
+  "_id": "df5d78dfa393cadf",
+  "name": "Obsidian form",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Power-Up</em></p>\n<p>The user’s body turns black except for the area around the mouth, center of the chest, hands, feet, and knees.</p>\n<ul>\n<li>+4 <strong>Power Bonus</strong></li>\n<li>You deal +1d10 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 45 ft.</li>\n<li>You gain +3 to your <strong>AC</strong></li>\n<li>6 <strong>Stamina Activation</strong>, 5 <strong>Stamina Upkeep</strong>.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "obsidian-form",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "powerUp",
+    "rank": null,
+    "family": "Royal Forms",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "5 Stamina",
+    "activation": "bonus",
+    "powerBonus": 4,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Arcosian; Royal Forms"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3962,
+        "endLine": 3979
+      },
+      "formFamily": "Royal Forms"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "33ccf97d33ee50ce",
+  "name": "Time Breaker: Black Hole",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 50 Ki</li>\n<li><strong>Casting Prerequisite:</strong> 1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Weapon's Range</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>You begin to focus your ki into your weapon and then making an attack with enough strength to open up a Black Hole. Make a <em>Combo Attack Roll</em>, on a hit you deal your <em>Weapon Damage Die</em> + 10d6 <em>Damage</em>.</p>\n<p>When a creature would be hit by this, roll 1d8 and transport the target to that Plane. If this <strong>Technique</strong> is <em>Mastered</em> you may choose to roll an additional 1d8 and choose between your rolled options.</p>\n<h5>Black Hole Destination</h5>\n<p>-count:2</p>\n<table>\n<thead>\n<tr>\n  <th style=\"text-align:left\">Plane</th>\n  <th style=\"text-align:center\">1d8</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n  <td style=\"text-align:left\">Mortal Realm</td>\n  <td style=\"text-align:center\">1</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">HFIL</td>\n  <td style=\"text-align:center\">2</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Heaven</td>\n  <td style=\"text-align:center\">3</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Yemma's Palace</td>\n  <td style=\"text-align:center\">4</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">World of The Kais</td>\n  <td style=\"text-align:center\">5</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Realm between Time</td>\n  <td style=\"text-align:center\">6</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Demon Realm</td>\n  <td style=\"text-align:center\">7</td>\n</tr>\n<tr>\n  <td style=\"text-align:left\">Your Choice</td>\n  <td style=\"text-align:center\">8</td>\n</tr>\n</tbody>\n</table>\n",
+      "chat": ""
+    },
+    "identifier": "time-breaker-black-hole",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "weapon",
+    "kiCost": "50 Ki",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7545,
+        "endLine": 7579
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

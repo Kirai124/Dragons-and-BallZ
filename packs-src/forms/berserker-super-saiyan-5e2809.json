@@ -1,0 +1,41 @@
+{
+  "_id": "5e2809be77332778",
+  "name": "Berserker Super Saiyan",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>Berserker Transformation</em></p>\n<p>With the spark of your S-cells and the flood of legendary power, your mind seems ready to slip. Almost doubling in body mass with stark white eyes, your bright emerald hair spikes out in wild directions.</p>\n<ul>\n<li>Starting Berserk DC = 12</li>\n<li>+2 <strong>Power Bonus</strong></li>\n<li>You deal +1d6 to all <em>Damage Rolls</em></li>\n<li>Increase all <em>Movement Speed</em> by 20 ft.</li>\n<li>You gain +1 to <strong>AC</strong></li>\n<li>+1 Rank of <strong>Bulk</strong></li>\n<li>2 <strong>Stamina Upkeep</strong></li>\n</ul>\n<hr />\n<p><strong>Gained at Level 5</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "berserker-super-saiyan",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Super Saiyan Berserk",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "2 Stamina",
+    "activation": "action",
+    "powerBonus": 2,
+    "berserker": true,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "Gained at Level 5",
+    "tags": "Mutant Saiyan; Super Saiyan Berserk"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4201,
+        "endLine": 4216
+      },
+      "formFamily": "Super Saiyan Berserk"
+    }
+  }
+}

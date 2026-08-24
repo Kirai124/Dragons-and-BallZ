@@ -1,0 +1,33 @@
+{
+  "_id": "34e00c74c9b25cdb",
+  "name": "Self Taught! Kinda....",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Due to the strange nature of this feature it is possible for 2 people to be instructed on how to use this feature and then have a <strong>Training Arc with a Partner</strong> together to fully learn the feature together for the cost of 2 Training Boons each.</p>\n<p>Alternatively, you may have a <strong>Training Arc with a Partner</strong> together with someone that knows the <em>Fusion Dance</em> and gain advantage on <em>Fusion Dances</em> with that person for 2 <strong>Training Boons</strong> each.</p>\n",
+      "chat": ""
+    },
+    "identifier": "self-taught-kinda",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Metamoran"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3565,
+        "endLine": 3581
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "d7d6b44da9b757a3",
+  "name": "Light Hammer",
+  "type": "weapon",
+  "img": "systems/dragons-and-ballz/icons/svg/items/weapon.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> 20,000 Zeni | <strong>Damage:</strong> 1d4 Bludgeoning | <strong>Weapon Properties:</strong> Light, thrown (range 20/60)</p>\n",
+      "chat": ""
+    },
+    "identifier": "light-hammer",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9459,
+        "endLine": 9470
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "60ec0c5f44597c9a",
+  "name": "Egotistical Lust",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: Ultra Ego</strong>\nWhen you would take damage, you may spend your Reaction to store the damage within. Until the end of your next turn, you write down the amount of damage you've taken. The next time you would deal damage, you may add the damage that you've accumulated onto the damage you deal.</p>\n",
+      "chat": ""
+    },
+    "identifier": "egotistical-lust",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: Ultra Ego",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6040,
+        "endLine": 6044
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "19f7592ecf1f7568",
+  "name": "Tier 3 (Ultimate Form)",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li><p>+3 <strong>Power Bonus</strong></p>\n</li>\n<li><p>Increase all <em>Movement Speed</em> by 20 ft.</p>\n</li>\n<li><p>Increase all <em>Damage Die</em> step by 1</p>\n<ul>\n<li>1d4&gt;1d6&gt;1d8&gt;1d10&gt;1d12&gt;2d6&gt;etc</li>\n</ul>\n</li>\n<li><p>3 <strong>Stamina Upkeep</strong></p>\n</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "tier-3-ultimate-form",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Potential Unlock",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "3 Stamina",
+    "activation": "action",
+    "powerBonus": 3,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Non-Race Specific; Potential Unlock"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4741,
+        "endLine": 4749
+      },
+      "formFamily": "Potential Unlock"
+    }
+  }
+}

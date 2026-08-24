@@ -1,0 +1,40 @@
+{
+  "_id": "d5e79435eb5cbdaa",
+  "name": "Majin Absorption",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>At <strong>Level 10</strong>, Majins have  access to the legendary power of Majin Buu himself.  Candy Beam is added to your <strong>Learnable Technique List</strong>, and it's <strong>Ki Rank</strong> matches your own, and you can benefit from its second ability.</p>\n<h5>Candy Beam</h5>\n<p><em>Rank X Ki Technique</em></p>\n<ul>\n<li><strong>Ki Cost:</strong>  30 Ki</li>\n<li><strong>Range:</strong>  60 Feet</li>\n<li><strong>Duration:</strong> 1 Minute (concentration)</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>Target one object or creature in your range, they must make a <em>Constitution Saving Throw</em>, turning the object or target (and all of their equipment) into a choice of food of your choice on a failure. Creatures affected by this have their <em>Base Walk Speed</em> set to 5 feet and their <em>Unarmed Strike Damage Die</em> turned into 1d4 if not already lower. Candy Creatures also can’t use <strong>Techniques/Spells</strong>. A Candy Creature may attempt the <em>Saving Throw</em> again as an Action on their turn to end this effect.</p>\n<p>If a creature grapples the candy creature, they may attempt to eat them as an Action. Deal <em>Damage</em> equal to your <em>Unarmed Damage Die</em> + your <em>Constitution Modifier</em>, if you reduce the target to zero in this manner you eat them. If you eat the candy creature you restore your own <strong>Ki</strong> and <strong>Stamina</strong> by the amount the Candy Creature had remaining, if you are a <em>Majin</em> then you may CHOOSE to assimilate the target gaining the following effects:</p>\n<ul>\n<li>You learn all <strong>Techniques</strong> and <em>Languages</em> of the assimilated,. If the assimilated has more <em>Mastery Ranks</em> in a <strong>Technique</strong> that you know, you gain those <em>Mastery Ranks</em>.</li>\n<li>If they have any <strong>Ability Scores</strong> higher than yours you may add +1 to those <strong>Ability Scores</strong>, this may increase it above your <em>Ability Score Maximum</em>.<ul>\n<li>If none of their <strong>Ability Scores</strong> surpass yours you gain +1 to whichever <strong>Ability Score</strong> was their highest.</li>\n</ul>\n</li>\n<li>You gain visual quirks resembling the entities that you assimilated.</li>\n<li>You may only gain this benefit a number of times equal to your <em>Constitution Modifier</em>.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "majin-majin-absorption",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1882,
+        "endLine": 1910
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Majin"
+    }
+  }
+}

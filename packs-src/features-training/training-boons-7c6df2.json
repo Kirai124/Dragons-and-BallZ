@@ -1,0 +1,33 @@
+{
+  "_id": "7c6df2f5a3a3d377",
+  "name": "Training Boons",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><em>&quot;Even a low-class warrior can surpass an elite. With enough hard work.&quot;</em> These words have echoed throughout history and inspired the greatest warriors of history.\nTraining Boons are bonus gained from <strong>Training Arcs</strong>, <strong>Ordeals</strong>, as well as <em><strong>Racial Features</strong></em> like <em>Zenkai Boost</em> and <em>Pure Progress</em>. These bonuses can boost your character in-between level-ups and can provide much needed time to master abilities and unlock <em><strong>Forms</strong></em> or other methods of empowerment.\nFor 1 <strong>Training Boon</strong> you may gain 1 of the following:</p>\n<ul>\n<li>Gain an additional <strong>Hit Die</strong> and <strong>Maximum HP</strong> as if you gained a <strong>Level</strong> based on your most recent <strong>Class Level</strong>.</li>\n<li>Gain <strong>Ki</strong> as if you gained a <strong>Level</strong> based on your most recent <strong>Class Level</strong>.</li>\n<li>Maximum <strong>Stamina</strong> increases by 2.</li>\n<li>Increase your <em>Base Walk Speed</em> by 5 feet</li>\n<li>Gain 1 <em>Rank of Mastery</em> to put in one of your <strong>Techniques</strong>.</li>\n<li>Learn a <strong>Technique</strong> of your <strong>Ki Rank</strong> that you qualify for.<ul>\n<li>You may not trade this <strong>Technique</strong> out on later <em>Level-Ups</em> or <strong>Training Arcs</strong>.</li>\n</ul>\n</li>\n<li>Gain proficiency in a <em>Skill</em> or <em>Toolkit</em> of your choice.\nFor 2 <strong>Training Boons</strong> you may gain 1 of the following:</li>\n<li>You may gain a <strong>Heroic Feature</strong> or a <strong>Feat</strong>.</li>\n<li>Increase an <strong>Ability Score</strong> by 2 or two <strong>Ability Scores</strong> by 1.</li>\n<li>Learn a <strong>Technique</strong> of a single <strong>Ki Rank</strong> higher than you currently are.</li>\n</ul>\n<h3>Gaining Additional Boons</h3>\n<h4>Optional Rule: Training Boon Exchanges</h4>\n<p>Whenever you gain an <strong>Ability Score Improvement</strong> you may replace the amount of points you may allocate into an equal amount of <strong>Training Boons</strong>.</p>\n<p>You may also replace gaining a <strong>Heroic Feature</strong> upon <strong>Level Up</strong> with gaining 2 <strong>Training Boons</strong>.</p>\n<h4>Downtime</h4>\n<p>When dealing with smaller units of <em>Downtime</em>, 10 weeks of <em>Downtime</em> equates to 1 <strong>Training Boon</strong>.  This time does not need to be consecutive.</p>\n<h4>Extreme Conditions</h4>\n<p>If you have a <strong>Training Arc</strong> under conditions such as extreme gravity or harsh enviroments such as a desert planet like <em>Vampa</em> you gain an additional <strong>Training Boon</strong> upon completion.</p>\n<h4>Time Chambers</h4>\n<p>Chambers of time dialation that stretch the passing of time into incredible lengths and comes in multiple variations. Each <em>Time Chamber</em> has a different amount of time covered and bonuses gained.</p>\n<p>You may spend a total of 1 year <em>Inside of a Time Chamber</em> per <strong>Ki Rank</strong> or immedietly roll on the <strong>Indefinite Madness Table</strong> from mental fatigue. You gain an additional year after you obtain <strong>God Ki.</strong></p>\n<h5>Galactic Patrol</h5>\n<p>You may enter this desert like chamber to experience 3 days in the time of 1. Training in this chamber allows for a <strong>Training Arc</strong> in 2 months.</p>\n<h5>Kami's Lookout</h5>\n<p>This massive white expanse is filled with heightened gravity and chaotic weather. A single day in the outside world is 1 year inside this <em>Time Chamber</em>. You also benefit from <em>Extreme Conditions</em> for each <strong>Training Arc</strong> spent in this Chamber.</p>\n<p>Due to the nature of this chamber it is incredibly taxing on the mind of the users, for each <strong>Training Arc</strong> you wish to attempt you must make 3 DC 15 <em>Saving Throws</em> using either your <em>Intellegence, Wisdom,</em> or <em>Charisma Score</em> (your choice) or roll on the <a href=\"https://roll20.net/compendium/dnd5e/Madness#content\">Indefinite Madness Table</a>. If you are in the <em>Time Chamber</em> with at least 1 other person you have Advantage on this roll.</p>\n<p>If you fail this roll you may choose to exit the <em>Time Chamber</em> early instead of rolling on the <em>Madness Table</em>, gaining only 1 <strong>Training Boon</strong> for each successful <em>Saving Throw</em> before you failed, spending 2 months in the chamber for each success.</p>\n",
+      "chat": ""
+    },
+    "identifier": "training-boons",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "boon",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "training boon options"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3259,
+        "endLine": 3322
+      }
+    }
+  }
+}

@@ -43,29 +43,29 @@ export default class ActivitySheet extends PseudoDocumentSheet {
       template: "templates/generic/tab-navigation.hbs"
     },
     identity: {
-      template: "systems/dnd5e/templates/activity/identity.hbs",
+      template: "systems/dragons-and-ballz/templates/activity/identity.hbs",
       templates: [
-        "systems/dnd5e/templates/activity/parts/activity-identity.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-visibility.hbs"
+        "systems/dragons-and-ballz/templates/activity/parts/activity-identity.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-visibility.hbs"
       ]
     },
     activation: {
-      template: "systems/dnd5e/templates/activity/activation.hbs",
+      template: "systems/dragons-and-ballz/templates/activity/activation.hbs",
       templates: [
-        "systems/dnd5e/templates/activity/parts/activity-time.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-targeting.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-consumption.hbs"
+        "systems/dragons-and-ballz/templates/activity/parts/activity-time.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-targeting.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-consumption.hbs"
       ]
     },
     effect: {
-      template: "systems/dnd5e/templates/activity/effect.hbs",
+      template: "systems/dragons-and-ballz/templates/activity/effect.hbs",
       templates: [
-        "systems/dnd5e/templates/activity/parts/activity-behaviors.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-behavior-level-limit.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-behavior-settings.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-effects.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-effect-level-limit.hbs",
-        "systems/dnd5e/templates/activity/parts/activity-effect-settings.hbs"
+        "systems/dragons-and-ballz/templates/activity/parts/activity-behaviors.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-behavior-level-limit.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-behavior-settings.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-effects.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-effect-level-limit.hbs",
+        "systems/dragons-and-ballz/templates/activity/parts/activity-effect-settings.hbs"
       ]
     }
   };
@@ -297,7 +297,7 @@ export default class ActivitySheet extends PseudoDocumentSheet {
           const ctx = {
             data, source,
             additionalFields: data.config.generateFields(source.config, { prefix: `behaviors.${data._index}.config.` }),
-            additionalSettings: "systems/dnd5e/templates/activity/parts/activity-behavior-settings.hbs",
+            additionalSettings: "systems/dragons-and-ballz/templates/activity/parts/activity-behavior-settings.hbs",
             collapsed: this.expandedSections.get(`behaviors.${data._id}`) ? "" : "collapsed",
             config: CONFIG.DND5E.activityBehaviorTypes[data.type],
             fields: this.activity.schema.fields.behaviors.element.fields,
@@ -327,7 +327,7 @@ export default class ActivitySheet extends PseudoDocumentSheet {
           prefix: `effects.${data._index}.`,
           source: context.source.effects[data._index] ?? data,
           contentLink: effectDocument.toAnchor().outerHTML,
-          additionalSettings: "systems/dnd5e/templates/activity/parts/activity-effect-settings.hbs"
+          additionalSettings: "systems/dragons-and-ballz/templates/activity/parts/activity-effect-settings.hbs"
         }) : null;
       }))).filter(_ => _);
     }

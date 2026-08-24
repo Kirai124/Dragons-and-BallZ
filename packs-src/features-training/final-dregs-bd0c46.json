@@ -1,0 +1,39 @@
+{
+  "_id": "bd0c46947fb6678b",
+  "name": "Final dregs",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Once per Long Rest when you reach Zero <strong>Stamina</strong> you gain 5 <strong>Temporary Stamina</strong> for 1 Minute. This <strong>Heroic Feature</strong> can be taken up to 3 times, increasing the amount to 10 and then 15.</p>\n",
+      "chat": ""
+    },
+    "identifier": "final-dregs",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6143,
+        "endLine": 6147
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

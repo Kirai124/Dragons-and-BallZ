@@ -54,7 +54,7 @@ export default class UsageMessageData extends ItemMessageData {
 
   /** @inheritDoc */
   static metadata = Object.freeze(foundry.utils.mergeObject(super.metadata, {
-    template: "systems/dnd5e/templates/chat/usage-card.hbs"
+    template: "systems/dragons-and-ballz/templates/chat/usage-card.hbs"
   }, { inplace: false }));
 
   /* -------------------------------------------- */

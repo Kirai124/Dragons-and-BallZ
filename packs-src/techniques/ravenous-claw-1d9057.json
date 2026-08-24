@@ -1,0 +1,39 @@
+{
+  "_id": "1d905700fc8f7fdf",
+  "name": "Ravenous Claw",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Weapon Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  18 Ki</li>\n<li><strong>Casting Prerequisite:</strong>  1 <em>Simple or Martial Melee Weapon</em> that you are proficient with.</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong> Weapon's Range(15 Foot Cone)</li>\n<li><strong>Duration:</strong> Instantaneous</li>\n<li><strong>Chargeable:</strong> Yes</li>\n</ul>\n<p>By collecting energy in your weapon you can send out energy facsimiles in a cone in front of you. All creatures in the cone must make a dexterity saving throw, taking your <em>Weapon Damage Die</em> + 3d8 <em>Damage</em> and creatures are knocked back to the end of the cone on a failure or half damage and no knockback on a success.</p>\n<p>Whenever you <em>Charge</em> this <strong>Technique</strong>, increase the range of the <em>Cone</em> by 5 feet.</p>\n",
+      "chat": ""
+    },
+    "identifier": "ravenous-claw",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "weapon",
+    "kiCost": "18 Ki",
+    "castingTime": "1 Action",
+    "range": "Weapon's Range(15 Foot Cone)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "1 *Simple or Martial Melee Weapon* that you are proficient with.",
+    "tags": "weapon"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7341,
+        "endLine": 7357
+      },
+      "techniqueSection": "weapon"
+    }
+  }
+}

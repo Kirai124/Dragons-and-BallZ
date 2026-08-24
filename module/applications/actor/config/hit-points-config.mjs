@@ -21,7 +21,7 @@ export default class HitPointsConfig extends BaseConfigSheet {
   /** @override */
   static PARTS = {
     config: {
-      template: "systems/dnd5e/templates/actors/config/hit-points-config.hbs"
+      template: "systems/dragons-and-ballz/templates/actors/config/hit-points-config.hbs"
     }
   };
 

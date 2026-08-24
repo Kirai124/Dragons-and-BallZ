@@ -1,0 +1,33 @@
+{
+  "_id": "7041f9d02520fdc5",
+  "name": "Limitations",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Characters may only fuse with this method if they are of the same size category and no more than 1 <strong>Character Level</strong> apart.</p>\n",
+      "chat": ""
+    },
+    "identifier": "limitations",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "",
+    "tags": "trained feature; Metamoran"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3555,
+        "endLine": 3557
+      }
+    }
+  }
+}

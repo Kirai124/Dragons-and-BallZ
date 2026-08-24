@@ -1,0 +1,39 @@
+{
+  "_id": "03196baf371ca0b3",
+  "name": "Meteor Strike",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 2 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  12 Ki</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self (20 foot cone)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>Strike out with a supercharged punch strong enough to send a shockwave through the air. All targets in range must make a <em>Strength Saving Throw</em> or be knocked <em>Prone</em> and take 2d10 <em>Bludgeoning Damage</em> on a fail, taking half damage and are not <em>Prone</em> on a Success.</p>\n<p>If a Target is within <em>Melee Range</em> you may roll a <em>Combo Attack Roll</em> dealing 2d10 <em>Bludgeoning Damage</em> on a hit.  Targets hit with this <em>Combo Attack Roll</em> fail the <em>Strength Saving Throw</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "meteor-strike",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 2,
+    "techniqueType": "melee",
+    "kiCost": "12 Ki",
+    "castingTime": "1 Action",
+    "range": "Self (20 foot cone)",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6794,
+        "endLine": 6809
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

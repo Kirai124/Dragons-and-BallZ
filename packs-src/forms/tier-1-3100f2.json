@@ -1,0 +1,41 @@
+{
+  "_id": "3100f200b50de1d0",
+  "name": "Tier 1",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<ul>\n<li>+1 <strong>Power Bonus</strong></li>\n<li>Increase all <em>Movement Speed</em> by 10 ft.</li>\n<li>1 <strong>Stamina Upkeep</strong></li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "tier-1",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Potential Unlock",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "1 Stamina",
+    "activation": "action",
+    "powerBonus": 1,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Non-Race Specific; Potential Unlock"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4729,
+        "endLine": 4734
+      },
+      "formFamily": "Potential Unlock"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "0d2c864bda03e136",
+  "name": "Controlled Crazed",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires: <em>Purification</em> Transformation</strong>\nYou master your <em>Purified State</em>, now no longer forcing you into the <em>Berserk Condition</em>. Your Alignment Actively shifts 1 step down (Good &gt; Neutral &gt; Evil) while <em>Purification</em> is active.</p>\n<p>Additionally, you deal half your <em>Charisma Modifier</em> on all <strong>Techniques</strong> and <strong>Spells</strong> instead of full <em>Charisma Modifier</em> and this form drains 3 <strong>Stamina</strong> at the end of your turn. You may alternatively choose to lose control to revert to the original version.</p>\n",
+      "chat": ""
+    },
+    "identifier": "controlled-crazed",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "Requires: *Purification* Transformation",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5863,
+        "endLine": 5869
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

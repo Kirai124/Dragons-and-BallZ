@@ -1,0 +1,42 @@
+{
+  "_id": "2419c46459dde830",
+  "name": "Hetap™",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ1,500,000 | <strong>Stamina Regained:</strong> 1d6+2 | <strong>Exhaustion:</strong> 2</p>\n",
+      "chat": ""
+    },
+    "identifier": "hetaptm",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1500000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9589,
+        "endLine": 9595
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

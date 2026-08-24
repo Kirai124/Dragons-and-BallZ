@@ -1,0 +1,204 @@
+{
+  "_id": "ae1366e0d45c7ba4",
+  "name": "Bio-Android",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/bio-android.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Alien</strong></p>\n<p><em><strong>The Bio-android can not take a subrace or any racial features outside of this race.</strong></em></p>\n<h3>Physical Description</h3>\n<p>Abominations created from the cells of others, Bio-Androids come in all different shapes and sizes.</p>\n<h3>History</h3>\n<p>Several Bio-Androids have been created since Cell, most emerging only within the last 50 years (they take an average of 20 years to create, 5 years to mature).</p>\n<h3>Society</h3>\n<p>Bio-Androids are not very accepted into society because of their uniqueness, making them strange to any race. Still, they are not completely neglected. Those who remember Cell, however are very distrusting to the race.</p>\n<h3>Racial Traits</h3>\n<h4>Ability score increase</h4>\n<p>Designated by Genetic Makeup</p>\n<h4>Speed</h4>\n<p>Your base walking speed is 30ft</p>\n<h4>Languages</h4>\n<p>Common and the languages of the races in your genetic makeup</p>\n<h4>Skills</h4>\n<p>You gain 2 skills of your choice.</p>\n<h3>Racial Features</h3>\n<h4>Unique Physiology</h4>\n<p>Your Creature tag is Monstrosity and your Ki Signiture appears as a strange amalgamation of Signatures. Creatures have advantage on perception checks to find your Ki when you are not actively concealing it.</p>\n<h4>Biotic Blueprint</h4>\n<p>The design philosophy of your creation differs from scientist to scientist. Are you a complete being that has had traits hand picked from the races of the universe or are you perhaps an imperfect being that must absorb more beings to become the perfect life form.</p>\n<h5>Incomplete Creation:</h5>\n<p>Your journey is to become the ultimate lifeform. You Start with 2 Genetic Makeup features.</p>\n<p>You’ve been designed to improve you have the ability to absorb other life forms including other androids through a tail or an intergrated weapon within your body called <strong>Life Drain</strong> to make an unarmed strike. You decrease the damage step by 1 when dealing damage using <strong>Life Drain</strong> but you may choose to deal damage to their hit poitns or ki points. Dealing damage in this way gives you an amount of ki points equal to the damage dealt.</p>\n<p>Beyond absorbing them, you may additionally gain their skills and abilities by fulling intergrating them within you. You may target a creature using <strong>Life Drain</strong>. If you would bring a creature down to 0 hit points by a <strong>Life Drain</strong> attack, you may choose to absorb them into you. You may alternatively target a creature that is willing <strong>and not charmed</strong>, you may automatically absorb the creature as an action.</p>\n<p>You may integrate a number of creatures equal to half of your Constitution Modifier. When you would absorb a creature from <strong>Life Drain</strong>, you gain the following benefits:</p>\n<ul>\n<li><p>You gain the benefit of an additional Genetic Makeup of the race you had absorbed. You do not gain the additional bonus to your Ability Score.</p>\n</li>\n<li><p>You learn all techniques and languages of the assimilated, this will not improve a move you have if you already have it to a higher degree of mastery but if they have an improved version you do get it.</p>\n</li>\n<li><p>If they have any ability scores higher than yours you may add +1 to those scores, this may increase it above a Ability Score maximum.</p>\n<ul>\n<li>If none of their Ability Scores surpass yours you gain +1 to whichever Ability Score was their highest.</li>\n</ul>\n</li>\n<li><p>You gain the <em>Fusion Tag</em> when you absorb a creature this way</p>\n</li>\n</ul>\n<h5>Artificial Warrior:</h5>\n<p>You are a warrior that had its genetic makeup cherry picked, You gain 3 Genetic Makeup features. You may pick the DNA Specialization Feat two additional times, ignoring all limitation</p>\n<h3>Genetic Makeup Features</h3>\n<h4>Alien</h4>\n<ul>\n<li>+1 to any Ability Score</li>\n</ul>\n<p>You were created with extra terrestrial DNA. You gain resistances to a damage type of your choice, Youre are also granted access to the full power transformation at Level 5 and Once per long rest, you can enter the Enraged Condition as a bonus action on your turn. Each time you use this past the first you gain 2 level of exhaustion.</p>\n<h4>Android/Cyborg</h4>\n<p>As opposed to DNA, the specific cybernetic parts were applied to yourbody, enhancing your bodies capability. You gain 1 Rank of <em>Light Weight</em>. If you absorb a creature that has the Cyborg Subrace, you must choose between the Main Race or the Cyborg Subrace.</p>\n<h4>Arcosian</h4>\n<ul>\n<li>+1 Intellegence</li>\n</ul>\n<p>With the DNA of the unstoppable Arcosians your body hardens with natural armor gaining +1 bonus to AC. You also gain access to the gates of power transformations up to 4th form</p>\n<h4>Beastmen</h4>\n<ul>\n<li>+1 to any Ability Score</li>\n</ul>\n<p>Having DNA of animals within your body, you learn to become more animalistic. You gain the <strong>Predator or Prey</strong> feature from Beastmen and you may now comprehend with beasts.</p>\n<h4>Cerealian</h4>\n<ul>\n<li>+1 Dexterity</li>\n</ul>\n<p>You feel the effect of your keen Cerealian DNA, Once per short rest you gain an extra reaction on your turn. You also gain the tenacity of a cerellian, Once per long rest if you fall to 0 Hit points you instead fall to 1 and you now bear the crimson eyes of a Cerealian, You gain access to the Red-Eye Activation Power Up</p>\n<h4>Chronin</h4>\n<ul>\n<li>+1 Dexterity</li>\n</ul>\n<p>With the blood of the Adapting Chronins you gain their innate ability to control time and gain access to Chronal Manipulation. The chronins are able to adapt quickly and learn as they fight Whenever you are hit with a critical hit roll a d20 check with a DC starting at 12, increasing by 2 each time you succeed. On a Successful check you gain 1 training boon. These boons must be used immediately at the start of your next turn.</p>\n<h4>Demon</h4>\n<ul>\n<li>+1 to any Ability Score</li>\n</ul>\n<p>Your DNA is made up of entities of negative emotions, drawing powers from those who come from Other World. You gain a Demonic Ability of your choice from the Demon Race.</p>\n<h4>Earthling:</h4>\n<ul>\n<li>+1 to any Ability Score</li>\n</ul>\n<p>Having Human DNA gives you their innate ability to learn and adapt. You gain proficiency in 2 Skills of your choice or Expertise in 1 skill. You also gain access to the super earthling transformation.</p>\n<h4>Grey’s</h4>\n<ul>\n<li>+1 Strength or +1 Constitution</li>\n</ul>\n<p>The stoic Grey’s DNA has given you their overflowing strength. All your Ability Score maximums increase by 2. Once per long rest you may initiate a clash using half ki. You also learn how to use meditation to regain ki, as an action on your turn you may enter a special meditation stance, floating just over the ground. You regain (5 times your Ki rank) Ki.</p>\n<h4>Konastian</h4>\n<ul>\n<li>+1 to any Ability Score</li>\n</ul>\n<p>Your Konatsian blood has manifested into warrior potential.</p>\n<p>You gain a bonus to Static Bonus with all melee attacks and techniques while wielding a simple or martial weapon that you are proficient with equal to your Ki Rank. You may also use any weapon that gains this benefit in place of an unarmed strike for a melee technique.</p>\n<h4>Majin</h4>\n<ul>\n<li>+1 Constitution</li>\n</ul>\n<p>The blood of the mystical majin courses through your veins, your body becomes elastic and has the consistency of rubber, your unarmed strikes gain the reach property. Along with this your body has been engineered to repair itself, as an action you may spend ki to heal at a 2:1 ratio. With your malleable body you also gain the ability to squeeze into a space at least 1 inch wide.</p>\n<h4>Mashin-jin</h4>\n<p><em>Cannot be taken with Shinling DNA</em></p>\n<ul>\n<li>+1 Constitution</li>\n</ul>\n<p>You have the blood of demons in you. You gain access to Mahshin-jin power ups\nAnd resistance to fire and necrotic damage. You can also empower an attack with demonic energy, when you deal damage you may use a bonus action to change its damage type to necrotic.</p>\n<h4>Namekian</h4>\n<ul>\n<li>+1 Wisdom</li>\n</ul>\n<p>The DNA of the noble Namekians flows through you. You gain their elastic limbs, Your Unarmed Strikes gains the reach property. Namekians are also known to regrow their own limbs. As an action you may spend 2 ki to heal 1 hit points and 30 ki points to regrow a lost limb.</p>\n<h4>Neko Majin</h4>\n<ul>\n<li>+1 Charisma</li>\n</ul>\n<p>Your DNA is made up of a mystical species known for their copycat capabilities. you gain the <em>Eagled-Eyed Adaptation</em> <strong>Heroic Feature</strong> but you may use it a number of times per long rest equal to your Proficiency Bonus. You can memorize a number of <strong>Techniques</strong> equal to half your <strong>Intelligence Modifier</strong></p>\n<h4>Ogre</h4>\n<ul>\n<li>+1 Constitution</li>\n</ul>\n<p>Your Ogre durability has surfaced allowing you to fight with the tenacity of the Otherworld.</p>\n<p>As an action on your turn you may spend stamina to gain Xd12, where X is equal to the stamina spent, and gain Temporary HP equal to the total. This health disappears after 1 hour or whenever you gain additional Temporary HP.</p>\n<h4>Saiyans</h4>\n<ul>\n<li>+1 Strength or Dexterity</li>\n</ul>\n<p>You where created with the cells of the prideful warrior race. You gain the saiyans ability to bounce back from near death. Whenever you fail a death saving throw roll a d20 check with a DC starting at 8, increasing by 2 each time you succeed. On a Successful check you gain 1 training boon. You may use this boon immedietly or as soon as you regain conciousness for the chance at a second zenkai boost. You also gain access to the super saiyan transformation up to super saiyan 2.</p>\n<h4>Sateery</h4>\n<ul>\n<li>+1 Wisdom or +1 Charisma</li>\n</ul>\n<p>The DNA of the mysterious Sateery race grants you access to one branch of magic. You also gain resistance to ki damage but have disadvantage to all spell saving throws.</p>\n<h4>Shinling</h4>\n<p><em>Cannot be taken with Mashin-Jin DNA</em></p>\n<ul>\n<li>+1 Wisdom</li>\n</ul>\n<p>This rare divine DNA grants you a taste of godhood, You gain access to the Kaioken power up. You also can empower an attack with divine energy, when you deal damage you may use a bonus action to change its damage type to radiant. You also gain resistance to radiant damage.</p>\n<h4>Skehmen-jin</h4>\n<ul>\n<li>+1 Strength or +1 Dexterity</li>\n</ul>\n<p>You gain the abilities and traits of the slothful Skehmen-jin. You gain their trait of being extremely difficult to kill you gain proficiency in Dexterity Saving throws. If you already have that proficiency you may choose 1 saving throw that you do not already have proficiency in. You also become a perfect being of rest, Whenever you take a short rest you restore full stamina instead of half. Youre demeanor can also change on a dime You gain the ability to, once per long rest, enter an empowered state of “Enraged”. This condition lasts for a number of rounds equal to half your proficiency bonus. Each time you use this feather past the first you gain 2 levels of exhaustion.</p>\n<h4>Yardratian</h4>\n<ul>\n<li>+1 Wisdom</li>\n</ul>\n<p>Your Yardratian DNA has manifested as a natural spirit contol. At level 1 you gain 1 Spirit Control Feature of your choice. You also gain an additional feature at Ki Rank 3.</p>\n",
+      "chat": ""
+    },
+    "identifier": "bio-android",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "monstrosity",
+      "subtype": "",
+      "custom": ""
+    },
+    "advancement": {
+      "5bcbd7b4017adbb5": {
+        "_id": "5bcbd7b4017adbb5",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain 2 skills of your choice."
+      },
+      "e89924b0f766b8e6": {
+        "_id": "e89924b0f766b8e6",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "languages:standard:common"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "Common and the languages of the races in your genetic makeup"
+      },
+      "16d37ed17c3e41e2": {
+        "_id": "16d37ed17c3e41e2",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.4a2b5c1b44740da2",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b68017cbbfb87785",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.b8bd43a68f07344e",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3b55e25eca8cd391",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.628dc9b93e019d12",
+              "optional": false,
+              "sort": 4
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.9087e07a6599c7e9",
+              "optional": false,
+              "sort": 5
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.24658954c54a4d6b",
+              "optional": false,
+              "sort": 6
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5a271ba8c3a6ac44",
+              "optional": false,
+              "sort": 7
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.ab50543627d2a606",
+              "optional": false,
+              "sort": 8
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.78bcda42d285550e",
+              "optional": false,
+              "sort": 9
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d86037ab57d061ba",
+              "optional": false,
+              "sort": 10
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.25c664c3dfed2354",
+              "optional": false,
+              "sort": 11
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.c1910a15b08b4a73",
+              "optional": false,
+              "sort": 12
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8360f2d684ebd5ed",
+              "optional": false,
+              "sort": 13
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a553a305c8c7467f",
+              "optional": false,
+              "sort": 14
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.8bc726aae79b3a0f",
+              "optional": false,
+              "sort": 15
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d9cb7733be8a31cf",
+              "optional": false,
+              "sort": 16
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.02d9c032622077f6",
+              "optional": false,
+              "sort": 17
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.d3a8f2476a06714d",
+              "optional": false,
+              "sort": 18
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.58e60982ec69e585",
+              "optional": false,
+              "sort": 19
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.080c86cf8acee7f8",
+              "optional": false,
+              "sort": 20
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.82724b6d46ba6dc8",
+              "optional": false,
+              "sort": 21
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1450,
+        "endLine": 1638
+      }
+    }
+  }
+}

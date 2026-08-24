@@ -1,0 +1,40 @@
+{
+  "_id": "6021d7a7208ffc69",
+  "name": "Saiyan Genetics",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Your Saiyan genes vary slightly the mix of Saiyans following the tournament of power. Regardless of your choice, you are eligeble for <em>Super Saiyan God</em> <strong>Form</strong> and it's ritual. You gain access to <em>Saiyan</em> <strong>Feats</strong> and you must choose your bloodline from the following list:</p>\n<ul>\n<li>Universe 7 &quot;The Kaleidoscope of Transformations&quot;</li>\n<li>Universe 6 &quot;Masters of Super Saiyan&quot;</li>\n<li>Mutant Saiyan &quot;Explosive Power&quot;</li>\n<li>Ancient Saiyan &quot;Power of Legends&quot;</li>\n</ul>\n<h5>Universe 7</h5>\n<p>You gain access to <em>Saiyan</em> <strong>Feats</strong> with the <strong>U7 Tag</strong> and <strong>Feats</strong> in the <em>Universe 7 Saiyan</em> section. You also gain the <em>Saiyan Pride</em> and <em>Saiyan Tail</em> <strong>Features</strong>:\nRuthless and battle hungry, Universe 7 Saiyans lived many years as planet conquerors and soldiers with the help of their tail and the mighty great ape transformation.</p>\n<h6>Saiyan Tail</h6>\n<p>Long enough to be wrapped around one's waist. It cannot lift anything over 10 pounds, and is susceptible to pain.</p>\n<p>If your tail is ever severed it will regrow after 1d4 weeks, so long as you are <strong>Level 5</strong> or below. A creature may attempt to make a special <em>Grapple Check</em> against your tail as an Action, having Disadvantage on the check, <em>Restraining</em> the Saiyan on a Success.</p>\n<p>While you have your Tail you may use <strong>Great Ape</strong> <em><strong>Forms</strong></em>.</p>\n<h6>Saiyan Pride</h6>\n<p>Due to your indomitable spirit and pride you have advantage on saves against being <em>Charmed</em> or <em>Frightened</em>. You can not be put to sleep by magical means.</p>\n<h5>Universe 6</h5>\n<p>You gain access to <em>Saiyan</em> <strong>Feats</strong> with the <strong>U6 Tag</strong> and <strong>Feats</strong> in the <em>Universe 6 Saiyan</em> section. You also gain the <em>Super Saiyan Superiority</em> <strong>Feature</strong>:\nOtherwise known as <em>Tail-less Saiyans</em>, these are an alternate, or perhaps even future, evolution to the <em>Universe 7 Saiyans</em>. These Saiyans eventually lost their tails, replacing them with much higher <em>S-Cells</em> numbers. This change resulted in stronger, though slower to obtain, <em>Super Saiyan</em> <strong>Forms.</strong></p>\n<h6>Super Saiyan Superiority</h6>\n<p>Saiyans in Universe 6 got to live a much more peaceful lifestyle, this peace and happiness evolved the saiyans into having higher S-cell counts than Universe 7 Saiyan.</p>\n<ul>\n<li>If you have the <strong>Super Saiyan</strong> feature you unlock <em>Super Saiyan</em> at <strong>Level 8 or above</strong> whenever you first become <em>Enraged</em>.</li>\n<li>Any <strong>Form</strong> with <em>&quot;Super Saiyan&quot;</em> in its name, except for <em>Super Saiyan God</em> and <em>Super Saiyan Grades</em>, takes 1 less <strong>Stamina</strong> per round to maintain to a minimum of 1 <strong>Stamina</strong>.</li>\n<li>Any <strong>Form</strong> with <em>&quot;Super Saiyan&quot;</em> in its name, except <em>Super Saiyan God</em> and <em>Super Saiyan Grades</em>, gains an additional +1 <strong>Power Bonus</strong>.</li>\n</ul>\n<h5>Mutant</h5>\n<p>You gain access to <em>Saiyan</em> <strong>Feats</strong> with the <strong>Mutant Tag</strong> and <strong>Feats</strong> in the <em>Mutant Saiyan</em> section. You gain the <em>S-Cell Overload</em> <strong>Feature</strong> and your choice of one of the following <strong>Features</strong>:</p>\n<ul>\n<li>(a) <em>Uncontrollable Saiyan Power</em> <strong>or</strong> (b) <em>Unstoppable Force</em>\nSaiyans that were born with a genetic mutation and produce incredible amounts of S-cells, unfortunately, many can't control this power.</li>\n</ul>\n<h6>S-Cell Overload</h6>\n<p>If you have the <em>Super Saiyan</em> <em><strong>Racial Feature</strong></em> you gain the <em>Mutant Saiyan</em> <strong>Forms</strong> instead.</p>\n<h6>Uncontrollable Saiyan Power</h6>\n<p>You possess an overly powerful <em>Great Ape</em> <strong>Form</strong>.</p>\n<ul>\n<li>You gain the <em>Saiyan Tail</em> <strong>Feature</strong> from <em>Universe 7 Saiyans</em>.</li>\n<li>You automatically fail all checks to control the <em>Great Ape</em> <strong>Power-Up</strong> but gain an additional +1 Power while in a <strong>Oozaru</strong> <em>family</em> <em><strong>Form</strong></em>.</li>\n<li>If <em>Ozaru Fury</em> is used in Conjunction with a <em>&quot;Berserk Super Saiyan&quot;</em> <em><strong>Form</strong></em> you have disadvantage on your <em>Berserk</em> saving throw.</li>\n<li>Whenever you have the <em>Enraged</em> condition you automatically fail all <em>Berserk</em> Saving Throws.</li>\n</ul>\n<h6>Unstoppable Force</h6>\n<ul>\n<li>You gain an additional +1 <strong>Stamina</strong> at <strong>Level</strong> 1 and everytime you level up.</li>\n<li>Whenever you have the <em>Enraged</em> condition you automatically fail all <em>Berserk</em> Saving Throws.</li>\n<li>You can not gain any <strong>Forms</strong> from the <em>Great Ape</em> <strong>Family</strong>.</li>\n</ul>\n<h5>Ancient</h5>\n<p>You gain access to <em>Saiyan</em> <strong>Feats</strong> with the <strong>Ancient Tag</strong> and feats in the <em>Ancient Saiyan</em> section. You gain the <em>Ancient Power</em>, <em>Prehensile Tail</em>, and <em>Nose For Battle</em> <strong>Features</strong>:\nSaiyans from ancient times before the development of the <em>Great Ape</em> <strong>Form</strong>.</p>\n<h6>Ancient Power</h6>\n<p>If you have the <em>Super Saiyan</em> <em><strong>Racial Feature</strong></em> you gain the <em>Ancient Saiyan</em> <strong>Forms</strong> instead.</p>\n<h6>Prehensile Tail</h6>\n<p>You have a tail identical to <em>&quot;Saiyan Tail&quot;</em> but without the weakness to grappling and the <em>Great Ape</em> <strong>Power-Up</strong>.</p>\n<h6>Nose For Battle</h6>\n<p>Saiyans in ancient times were blessed with the ability to &quot;sniff out&quot; strong foes. Due to their lack of understanding of true Ki capabilities, this was done in a much more true sense. You can sniff out creatures with a Power Level that are not <em>Concealing</em> their Ki.</p>\n<p>As an Action on your turn, make a <em>Wisdom (Perception) Check</em> at Advantage to <em>Sense Ki</em> at a <strong>Continental Scale</strong>. You have an inate sense of the location and <strong>Power Level</strong> of any creature you sense with this method so long as you hold <em>Concentration</em> and they remain on the same Continent as you, or the equivalent distance.\nYou may use this <strong>Feature</strong> at any time and it is not effected by <strong>Ki Exhaustion</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "saiyans-saiyan-genetics",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1098,
+        "endLine": 1213
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Saiyans"
+    }
+  }
+}

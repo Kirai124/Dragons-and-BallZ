@@ -1,0 +1,42 @@
+{
+  "_id": "5d709391f86e326e",
+  "name": "Supreme",
+  "type": "loot",
+  "img": "systems/dragons-and-ballz/icons/svg/items/loot.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ200,000,000 | <strong>Ki Regained:</strong> 10d6+10</p>\n",
+      "chat": ""
+    },
+    "identifier": "supreme",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9560,
+        "endLine": 9566
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

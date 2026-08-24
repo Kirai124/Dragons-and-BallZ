@@ -1,0 +1,39 @@
+{
+  "_id": "996ca1295a85ee54",
+  "name": "Arm Break",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  35 Ki</li>\n<li><strong>Casting Time:</strong> 1 Action</li>\n<li><strong>Range:</strong> Melee</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n</ul>\n<p>A supercharged combo that breaks through defenses.\nMake 2 <em>Combo Attack Rolls</em> dealing your <em>Unarmed Strike Damage Die</em> +3d10 <em>Bludgeoning Damage</em> each on a hit. This <em>Damage</em> cannot be reduced by <strong>Blocking</strong>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "arm-break",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "melee",
+    "kiCost": "35 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6845,
+        "endLine": 6856
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "e66cb9e1f395f861",
+  "name": "Minimum Charge",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 1 Technique</em></h2>\n<ul>\n<li><strong>Casting Time:</strong>  Special</li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Range:</strong>  Self</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous</li>\n<li><strong>Type:</strong>  Other</li>\n</ul>\n<p>By taking a moment to center your energy you can restore your <strong>Ki.</strong> Regain 12 + <em>Wisdom Modifier</em> <strong>Ki</strong> if used as an Action, or 3d4 + <em>Wisdom Modifier</em> <strong>Ki</strong> as an Bonus action.</p>\n",
+      "chat": ""
+    },
+    "identifier": "minimum-charge",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 1,
+    "techniqueType": "otherKi",
+    "kiCost": "0",
+    "castingTime": "Special",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "otherKi"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8967,
+        "endLine": 8980
+      },
+      "techniqueSection": "otherKi"
+    }
+  }
+}

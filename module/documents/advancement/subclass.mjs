@@ -20,7 +20,7 @@ export default class SubclassAdvancement extends Advancement {
       },
       order: 70,
       icon: "icons/skills/trades/mining-pickaxe-yellow-blue.webp",
-      typeIcon: "systems/dnd5e/icons/svg/subclass.svg",
+      typeIcon: "systems/dragons-and-ballz/icons/svg/subclass.svg",
       title: _loc("DND5E.ADVANCEMENT.Subclass.Title"),
       hint: _loc("DND5E.ADVANCEMENT.Subclass.Hint"),
       apps: {

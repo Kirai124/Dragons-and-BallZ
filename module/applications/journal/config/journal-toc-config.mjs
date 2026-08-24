@@ -26,7 +26,7 @@ export default class JournalTOCConfig extends DocumentSheet5e {
   /** @override */
   static PARTS = {
     form: {
-      template: "systems/dnd5e/templates/journal/config/journal-toc-config.hbs"
+      template: "systems/dragons-and-ballz/templates/journal/config/journal-toc-config.hbs"
     }
   };
 

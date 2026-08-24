@@ -1,0 +1,39 @@
+{
+  "_id": "bf93423cbfe904dc",
+  "name": "Weight Training",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>*This <strong>Feat</strong> may be taken once per **Ki Rank***</p>\n<p>Due to your determined weight and gravity training you are able to ignore the negatives of 1 rank of the <em>Heavy Weight Condition</em>, though you still have the condition. Each time you take this <strong>Feat</strong> you may ignore 1 additional rank of the condition.</p>\n",
+      "chat": ""
+    },
+    "identifier": "weight-training",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5102,
+        "endLine": 5107
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

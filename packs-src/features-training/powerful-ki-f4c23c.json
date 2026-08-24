@@ -1,0 +1,39 @@
+{
+  "_id": "f4c23ce153d06073",
+  "name": "Powerful Ki",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You may gain a <em>Rank of Exhaustion</em> to gain the <em>Super-Charged Condtion</em> for a number of rounds equal to your <strong>Ki Rank.</strong></p>\n",
+      "chat": ""
+    },
+    "identifier": "powerful-ki",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 6289,
+        "endLine": 6290
+      },
+      "contentCategory": "heroicFeature"
+    }
+  }
+}

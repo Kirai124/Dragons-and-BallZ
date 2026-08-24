@@ -20,7 +20,7 @@ export default class DamageRollConfigurationDialog extends RollConfigurationDial
   static PARTS = {
     ...super.PARTS,
     formulas: {
-      template: "systems/dnd5e/templates/dice/damage-formulas.hbs"
+      template: "systems/dragons-and-ballz/templates/dice/damage-formulas.hbs"
     }
   };
 

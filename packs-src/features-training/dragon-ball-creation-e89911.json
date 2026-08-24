@@ -1,0 +1,33 @@
+{
+  "_id": "e899110410dc2726",
+  "name": "Dragon Ball Creation",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Must be a Dragon Clan Namekian</strong>\nYou have learned the ancient ways and can create a <em>Set of Dragon Balls</em>. A <em>Set of Dragon Balls</em> can be created by taking anywhere from 2 to 7 equal sized stone spheres that are unblemished and a small statute of the <em>Wishing Dragon</em> you wish to create and preforming an 8 hour ritual praying to Zalama to bestow his blessing on the orbs. These orbs return to stone if you die.</p>\n<p>You may create a set of <em>Red Star Star Dragon Balls</em> of your choice, regardless of your choice it grants a single wish and recharges after 1 year by <em>Earth Standards.</em> Whenever you obtain <strong>God Ki</strong> you may increase the <em>Wish Count</em> by 1 or halve the <em>Recharge Time</em> of your <em>Set of Dragon Balls.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "dragon-ball-creation",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "Must be a Dragon Clan Namekian",
+    "tags": "trained feature; Guardian of the Dragon Balls"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3588,
+        "endLine": 3593
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "49612b10c0f1afe1",
+  "name": "Telekenetic",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You learn to move things with your mind, granting you the following benefits:</p>\n<ul>\n<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of your current Ability Score Maximum.</li>\n<li>You learn the <em>mage hand</em> cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.</li>\n<li>As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved 5 feet toward or away from you. A creature can willingly fail this save.</li>\n</ul>\n",
+      "chat": ""
+    },
+    "identifier": "telekenetic",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 5463,
+        "endLine": 5471
+      },
+      "contentCategory": "feat"
+    }
+  }
+}

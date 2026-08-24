@@ -1,0 +1,42 @@
+{
+  "_id": "70f6d6edbfa17484",
+  "name": "Brewer's supplies",
+  "type": "tool",
+  "img": "systems/dragons-and-ballz/icons/svg/items/tool.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Cost:</strong> Ƶ200,000 | <strong>Weight:</strong> 9 lb</p>\n",
+      "chat": ""
+    },
+    "identifier": "brewer-s-supplies",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 9.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000.0,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9821,
+        "endLine": 9840
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

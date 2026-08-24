@@ -1,0 +1,39 @@
+{
+  "_id": "f4983180551d3b5b",
+  "name": "Super Ghost: Kamikazi Attack",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 3 Ki Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong>  15x Ki per <em>Super Ghost</em></li>\n<li><strong>Prerequisites:</strong>  None</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Self (60 foot)</li>\n<li><strong>Chargeable?:</strong>          Yes</li>\n<li><strong>Duration:</strong>           1 Minute (Concentration)</li>\n<li><strong>Type:</strong>  Omni</li>\n</ul>\n<p>The user spits out a number of identical ghost versions of themselves up to or equal to half of their <em>Proficiency Bonus</em>, rounded up. These are known as <em>Super Ghosts.</em></p>\n<p>The <em>Super Ghosts</em> float harmlessly around you for the duration. As an Action you may fire a <em>Super Ghost</em> at a target within range, rolling an <em>Omni Attack Roll</em> dealing your 2d10 <em>Ki Damage</em> on a hit.</p>\n<p>Whenever you miss with one of these <em>Omni Attack Roll</em> you may use your Reaction to call the <em>Super Ghost</em> back to you before it explodes unnecessarily, a <em>Critical Fail</em> on the <em>Omni Attack Roll</em> will always result in losing the <em>Super Ghost.</em></p>\n",
+      "chat": ""
+    },
+    "identifier": "super-ghost-kamikazi-attack",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 3,
+    "techniqueType": "omni",
+    "kiCost": "15x Ki per *Super Ghost*",
+    "castingTime": "1 Action",
+    "range": "Self (60 foot)",
+    "duration": "1 Minute (Concentration)",
+    "chargeable": true,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "None",
+    "tags": "ki"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 8422,
+        "endLine": 8446
+      },
+      "techniqueSection": "ki"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "a0c5409874a60f09",
+  "name": "Raw Talent",
+  "type": "feat",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Greys find themselves regularly surpassing the limitations of other races. A single <em>Ability Score Maximum</em> of your choice is increased by 4.</p>\n",
+      "chat": ""
+    },
+    "identifier": "greys-raw-talent",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "requirements": "",
+    "type": {
+      "value": "feat",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": 0,
+      "repeatable": false
+    },
+    "properties": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1806,
+        "endLine": 1808
+      },
+      "contentCategory": "racialFeature",
+      "grantedBy": "Greys"
+    }
+  }
+}

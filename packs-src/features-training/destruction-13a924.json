@@ -1,0 +1,33 @@
+{
+  "_id": "13a924f41810bb3e",
+  "name": "Destruction",
+  "type": "training",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p><strong>Requires God Ki</strong></p>\n<p>You have learned the trick to creating destruction energy. Whenever you cast a <strong>Technique/Spell</strong> you may double the casting cost to change the <em>Damage Type</em> to <em>Destruction Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "destruction",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "trainedFeature",
+    "boonCost": 1,
+    "durationWeeks": 0,
+    "kiRank": null,
+    "requirements": "Requires God Ki",
+    "tags": "trained feature; God of Destruction"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 3687,
+        "endLine": 3690
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "_id": "dc7749c2da938706",
+  "name": "Shinling",
+  "type": "race",
+  "img": "systems/dragons-and-ballz/icons/races/shinling.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Humanoid</strong></p>\n<h3>Physical Description</h3>\n<p>Shinling are mostly short humanoids, each with a differing skin coloration, and long, pointed ears. From there, depending on which fruit the individual is born from, their appearances can differ. Shinling born from the ordinary fruit of the World Tree wear black hats with antennas coming out of them and seem to have no hair on their heads and lack noses.\nShinlings are genderless and have extraordinarily long lifespans. Those born of an ordinary fruit can live upwards of 75,000 years. Those born of a golden fruit can live much longer, as the Elder Kaiōshin was several million years old.</p>\n<h3>History</h3>\n<p>The Shinlings are a sparse race. At any time, not counting the Shinling acting as Kaiō or Kaiōshin, there are approximately eighty Shinlings living on their homeworld. Shinlings are born from special fruit that grows on the World Tree on their homeworld. The tree produces two types of fruits: an &quot;ordinary fruit&quot;, which brings forth Shinlings who have the potential to become Kaiō, and a rare &quot;golden fruit&quot;, which produces Shinlings capable of becoming Kaiōshin. Occasionally, there are delinquent Shinling born with evil hearts, and they would become the Makaiō (or Mashin-jin)</p>\n<h3>Society</h3>\n<p>In their homeworld, they live leisurely lives, studying various things at a school-like castle. When a Kaiō passes away, they choose among them by lottery who will take over that Kaiō's place and become the new Kaiō.</p>\n<h3>Racial Traits</h3>\n<h4>Ability Score Increase:</h4>\n<p>Wisdom +2, Charisma +1</p>\n<h4>Speed:</h4>\n<p>Your <em>Base Walking Speed</em> is 30 feet.</p>\n<h4>Language</h4>\n<p>Common, Celestial and 1 other <em>Language</em> of your choice</p>\n<h4>Skills</h4>\n<p>You gain the <em>Insight</em> and <em>Religion Skills</em></p>\n<h3>Racial Features</h3>\n<h4>Blood of the Shin-jins</h4>\n<p>You have <em>Resistance</em> to <em>Radiant Damage</em> as well as Advantage on <em>Spell Saving Throws</em>. Whenever you use the <strong>Block Manuever</strong> your <em>Resistance</em> becomes <em>Immunity</em> and you pass all <em>Spell Saving Throws</em> .</p>\n<h4>Divine Legacy</h4>\n<p>You slowly unlock the full power of the <em>Divine Realm</em>. You gain access to <em>Shin-jin</em> <strong>Feats</strong>.</p>\n<p>At <strong>1st Level</strong>, you know the <em>Sacred Flame</em> <strong>Cantrip</strong>. When you reach <strong>3rd Level</strong>, you gain the <em>Prayer of Healing</em> <strong>Spell</strong>. When you reach <strong>5th Level</strong>, you gain the <em>Mass Healing Word</em> <strong>Spell</strong>. These <strong>Spells</strong> are cast through the <strong>Mysticism Feature</strong> but can not be casted at a higher <strong>Spell Level.</strong></p>\n<p>At <strong>10th Level</strong> you may cast these spells at a higher <strong>Spell Level</strong> as if through the <strong>Mysticism Feature</strong>.</p>\n<p>At <strong>15th Level</strong> you may add any 3 <strong>Spells</strong>  of 5th level or below to this feature that deal <em>Radiant Damage</em>, grants <strong>HP</strong> or <strong>Temporary HP</strong>, or otherwise restores or heals a target.</p>\n<h4>Angelic Energy</h4>\n<p>Due to the strange energy flowing through you, creatures without <strong>God Ki</strong> treat your <em>Passive Ki Stealth</em> and <em>Ki Stealth Checks</em> as 5 higher than it would actually be.</p>\n<p>You gain the <strong>Celestial Tag</strong> and count as a <em>Kai</em> for the purpose of features such as the <em>Potara Earrings</em>.</p>\n<h4>Divine Talent</h4>\n<p>At <strong>Level 1</strong> you add the <em>Kaio-Ken</em> <strong>Forms</strong> to your <strong>Learnable Technique List</strong>, but <em>Kaio-Ken!</em> and <em>Kaio-Ken x4!</em> become <strong>Ki Rank 2</strong>.</p>\n<h4>Energy of the Divine Realm</h4>\n<p>When you use your Action to take the <em>Attack Action</em> or use a <strong>Technique</strong>, you may also expend your Bonus Action to empower it with divine energy. Change the <em>Damage Type</em> of the attack you are using to <em>Radiant Damage</em>.</p>\n",
+      "chat": ""
+    },
+    "identifier": "shinling",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "movement": {
+      "speeds": {
+        "walk": "30"
+      },
+      "units": "ft",
+      "hover": false,
+      "ignoredDifficultTerrain": []
+    },
+    "type": {
+      "value": "",
+      "subtype": "",
+      "custom": "Humanoid"
+    },
+    "advancement": {
+      "e40fe99f9378d9f5": {
+        "_id": "e40fe99f9378d9f5",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "wis": 2,
+            "cha": 1
+          },
+          "locked": [],
+          "points": 0
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Ability Scores",
+        "hint": "Wisdom +2, Charisma +1"
+      },
+      "243ce0d9e0555293": {
+        "_id": "243ce0d9e0555293",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [],
+          "grants": [
+            "skills:ins",
+            "skills:rel"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Skills",
+        "hint": "You gain the Insight and Religion Skills"
+      },
+      "a092cd874b62970e": {
+        "_id": "a092cd874b62970e",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:*"
+              ]
+            }
+          ],
+          "grants": [
+            "languages:standard:common",
+            "languages:exotic:celestial"
+          ],
+          "mode": "default"
+        },
+        "value": {},
+        "level": 0,
+        "title": "Languages",
+        "hint": "Common, Celestial and 1 other Language of your choice"
+      },
+      "e9a8a8e77c03f5a9": {
+        "_id": "e9a8a8e77c03f5a9",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3124866b51071d7f",
+              "optional": false,
+              "sort": 0
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.a2fafb3437b0fccf",
+              "optional": false,
+              "sort": 1
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.f7d5643d60424c54",
+              "optional": false,
+              "sort": 2
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.3e072ffb26b75532",
+              "optional": false,
+              "sort": 3
+            },
+            {
+              "uuid": "Compendium.dragons-and-ballz.features-training.Item.5997e56e41712453",
+              "optional": false,
+              "sort": 4
+            }
+          ],
+          "optional": false,
+          "sorting": "m",
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Racial Features",
+        "hint": "Automatically grants the racial features defined by the handbook."
+      }
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 1214,
+        "endLine": 1275
+      }
+    }
+  }
+}

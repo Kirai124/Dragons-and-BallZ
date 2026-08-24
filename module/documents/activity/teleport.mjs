@@ -24,7 +24,7 @@ export default class TeleportActivity extends ActivityMixin(TeleportActivityData
   static metadata = Object.freeze(
     foundry.utils.mergeObject(super.metadata, {
       type: "teleport",
-      img: "systems/dnd5e/icons/svg/activity/teleport.svg",
+      img: "systems/dragons-and-ballz/icons/svg/activity/teleport.svg",
       title: "DND5E.TELEPORT.Title",
       hint: "DND5E.TELEPORT.Hint",
       sheetClass: TeleportSheet,

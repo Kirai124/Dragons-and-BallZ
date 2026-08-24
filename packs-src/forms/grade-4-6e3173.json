@@ -1,0 +1,41 @@
+{
+  "_id": "6e3173b6f6a80343",
+  "name": "Grade 4",
+  "type": "form",
+  "img": "systems/dragons-and-ballz/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>The Super Saiyan’s muscle mass recedes to just above normal and their hair becomes almost white-yellow.</p>\n<ul>\n<li>+2 <strong>Power Bonus</strong></li>\n<li>This form does not take up your <strong>Transformation Slot</strong>.</li>\n<li>1 <strong>Stamina Upkeep</strong></li>\n</ul>\n<p><em><strong>The Combination Form of *Super Saiyan 1* and *Grade 4* can be activated as a *Bonus Action*.</strong></em></p>\n",
+      "chat": ""
+    },
+    "identifier": "grade-4",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "category": "transformation",
+    "rank": null,
+    "family": "Super Saiyan Grades",
+    "resource": "stamina",
+    "activationCost": "",
+    "upkeepCost": "1 Stamina",
+    "activation": "action",
+    "powerBonus": 2,
+    "berserker": false,
+    "berserkDC": null,
+    "godly": false,
+    "requirements": "",
+    "tags": "Saiyans; Super Saiyan Grades"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 4186,
+        "endLine": 4196
+      },
+      "formFamily": "Super Saiyan Grades"
+    }
+  }
+}

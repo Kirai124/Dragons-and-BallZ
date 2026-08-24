@@ -1,0 +1,39 @@
+{
+  "_id": "8ebe4076d08b6dfd",
+  "name": "Armor Break",
+  "type": "technique",
+  "img": "systems/dragons-and-ballz/icons/svg/items/spell.svg",
+  "system": {
+    "description": {
+      "value": "<h2><em>Rank 4 Melee Technique</em></h2>\n<ul>\n<li><strong>Ki Cost:</strong> 50 Ki</li>\n<li><strong>Prerequisites:</strong> Piercing Punch</li>\n<li><strong>Casting Time:</strong>  1 Action</li>\n<li><strong>Range:</strong>  Melee</li>\n<li><strong>Chargeable?:</strong>          No</li>\n<li><strong>Duration:</strong>          Instantaneous (Special)</li>\n</ul>\n<p>Strike your foe and either shatter their armor or cut their ki connection to their defenses.</p>\n<p>Make a <em>Combo Attack Roll</em> dealing your <em>Unarmed Strike Damage Die</em> on a hit. You also remove one of the following from the target's <strong>AC</strong> calculation.</p>\n<ul>\n<li>Armor Bonus</li>\n<li>Wisdom Modifier</li>\n<li>Constitution Modifier</li>\n</ul>\n<p>This effect lasts for 30 Seconds or until the <em>Armor</em> is repaired.</p>\n",
+      "chat": ""
+    },
+    "identifier": "armor-break",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "rank": 4,
+    "techniqueType": "melee",
+    "kiCost": "50 Ki",
+    "castingTime": "1 Action",
+    "range": "Melee",
+    "duration": "Instantaneous (Special)",
+    "chargeable": false,
+    "mastery": 0,
+    "staticBonus": 0,
+    "requirements": "Piercing Punch",
+    "tags": "melee"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 7047,
+        "endLine": 7073
+      },
+      "techniqueSection": "melee"
+    }
+  }
+}

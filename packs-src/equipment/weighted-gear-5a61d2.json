@@ -1,0 +1,42 @@
+{
+  "_id": "5a61d29024b2482a",
+  "name": "Weighted Gear",
+  "type": "equipment",
+  "img": "systems/dragons-and-ballz/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p>Weighted Gear, whether it be a shirt, bracers, caps, capes, or any other article of clothing, are designed to be worn over or as part of your clothing/armor and is designed to limit the body for explosive power later.</p>\n<p>When you are wearing weighted gear you gain the <strong>Heavy Weight</strong> condition equal to the rank of the gear, by spending a long rest <em>Attuning</em> to your weighted gear you can acclimate your body to it. You may spend 1 Action removing and unattuning to the Weighted Gear on your turn to gain the <strong>Light Weight</strong> Condition of the same rank for the next minute.</p>\n<p>Weighted Gear costs an additional 25% of the normal Zeni cost of the item per rank of the <strong>Heavy Weight</strong> condition. or 250,000 Zeni per rank of the <strong>Heavy Weight</strong> condition on items such as braclets and ankle weights that can be worn without armor.</p>\n",
+      "chat": ""
+    },
+    "identifier": "weighted-gear",
+    "source": {
+      "custom": "Dragons and BallZ Handbook"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 250000,
+      "denomination": "zeni"
+    },
+    "rarity": "",
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "dragons-and-ballz": {
+      "handbook": {
+        "chapter": "Dragons and BallZ Handbook",
+        "startLine": 9337,
+        "endLine": 9360
+      },
+      "contentCategory": "equipment"
+    }
+  }
+}

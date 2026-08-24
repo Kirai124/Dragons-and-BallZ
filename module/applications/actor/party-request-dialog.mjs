@@ -39,7 +39,7 @@ export default class PartyRequestDialog extends Dialog5e {
   static PARTS = {
     ...super.PARTS,
     content: {
-      template: "systems/dnd5e/templates/apps/party-request-dialog.hbs"
+      template: "systems/dragons-and-ballz/templates/apps/party-request-dialog.hbs"
     }
   };
 
