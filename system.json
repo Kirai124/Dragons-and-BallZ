@@ -2,7 +2,7 @@
   "id": "dragons-and-ballz",
   "title": "Dragons and BallZ",
   "description": "Ein eigenständiges Foundry-VTT-System für das homebrew Dragon-Ball-Regelwerk 'Dragons and BallZ' (Basis: dnd5e-Engine, Inhalte werden schrittweise ersetzt).",
-  "version": "0.4.0-dnd5e-base",
+  "version": "0.5.0",
   "compatibility": {
     "minimum": "13.347",
     "verified": "14"
